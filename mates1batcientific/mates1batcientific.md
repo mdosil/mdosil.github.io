@@ -13,7 +13,7 @@ __Bloc 1: Nombres. Polinomis__
 
 # Nombres reals
 ## El conjunt dels nombres reals
-Un [nombre real](https://en.wikipedia.org/wiki/Real_number) és aquell que es pot representar al llarg d'una recta contínua. Per exemple, tots els nombres associats a mesures físiques (longitud, força, pes, etc) són nombres reals. [Exemples de nombres reals](http://www.mathsisfun.com/numbers/real-numbers.html) són: 1, -5, $\sqrt{3}$, $\pi$, $4'15$, $2'\overline{3}$, $\frac{4}{5}$. Al conjunt dels nombres reals se li dóna la lletra __$\mathbb{R}$__.
+Un [nombre real](https://en.wikipedia.org/wiki/Real_number) és aquell que es pot representar al llarg d'una recta contínua. Per exemple, tots els nombres associats a mesures físiques (longitud, força, pes, etc) són nombres reals. [Exemples de nombres reals](http://www.mathsisfun.com/numbers/real-numbers.html) són: $1$, $-5$, $\sqrt{3}$, $\pi$, $4'15$, $2'\overline{3}$, $\frac{4}{5}$. Al conjunt dels nombres reals se li dóna la lletra __$\mathbb{R}$__.
 
 La [__recta numèrica__](https://ca.wikipedia.org/wiki/Recta_num%C3%A8rica) està formada pel conjunt de tots els nombres reals. Els nombres reals són un __conjunt ordenat__ ja que donats dos nombres, sempre podem determinar-ne el més gran: si $a \gt b$ al representar-los sobre la recta, $a$ estarà a la dreta de $b$.
 
