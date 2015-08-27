@@ -19,7 +19,7 @@ La [__recta numèrica__](https://ca.wikipedia.org/wiki/Recta_num%C3%A8rica) est�
 
 Si recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts. 
 
-![*Classificació dels nombres reals*](img/1classificacio_reals.png)
+![*Classificació dels nombres reals*](img/classificacio_reals_1.png)
 
 Els nombres reals es divideixen en __nombres racionals__ __$\mathbb{Q}$__, que són aquells que es poden expressar mitjançant una fracció i els __irracionals__ __$\mathbb{I}$__. Exemples de nombres racionals són $\frac{3}{4}$, $2'5$ i $0.\stackrel\frown{123}$. Els nombres irracionals no es poden expressar com a fracció. El nombre $\pi$ i $\sqrt{5}$ són nombres irracionals.
 
