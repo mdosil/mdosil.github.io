@@ -33,7 +33,8 @@ La relació entre els conjunts $\mathbb{N}$, $\mathbb{Z}$ i $\mathbb{Q}$ és la 
 Els nombres __decimals__ es divideixen en exactes i periòdics. Si el període comença just després de la coma s'anomenen __periòdics purs__  ($0'\stackrel\frown{3}=0'3333....$)i si hi ha alguna xifra que no es repeteix abans s'anomenen __periòdics mixtes__ ($0'2\stackrel\frown{45}=0'2454545....$). Per a tots els nombres decimals podem buscar la seva [fracció generatriu](http://recursostic.educacion.es/secundaria/edad/2esomatematicas_cat/2quincena3/2quincena3_contenidos_3c.htm).
 
 
-## Potències i propietats
+## Potències
+###Propietats
 ## Arrels
 ### Propietats
 ### Operacions
