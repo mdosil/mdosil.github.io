@@ -38,6 +38,10 @@ Representar nombres sobre la recta real és ben fàcil si són racionals. Si est
 
 ![*Representació de $\frac{3}{7}$ sobre la recta real*](img/fraccions_recta_real_1.png)
 
+Per representar radicals irracionals sobre la recta real, cal utilitzar el [teorema de Pitàgores](https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores). A la figura següent s'hi pot veure la representació gràfica de $\sqrt{2}$ ([fitxer geogebra](ggb/arrel_de_dos_1.ggb)).
+
+![*Representació de $\sqrt{2}$ sobre la recta real*](img/arrel_de_dos_1.png)
+
 ### Intervals
 ### Inequacions
 ## Potències

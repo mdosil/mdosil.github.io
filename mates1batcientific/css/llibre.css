@@ -58,7 +58,7 @@ li ul, li ul {
 p, ul, ol {
     font-size: 16px;
     line-height: 24px;
-    max-width: 540px;
+    max-width: 940px;
 }
 pre {
     padding: 0px 24px;
@@ -100,6 +100,13 @@ hr {
     margin: 0 auto 0 0;
     color: #999;
 }
+
+/*For image resizing*/
+img.resize{
+    max-width:100%; /* you can use % */
+    max-height: auto;
+}
+
 
 /* Code below this line is copyright Twitter Inc. */
 
