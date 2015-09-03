@@ -43,6 +43,9 @@ Per representar radicals irracionals sobre la recta real, cal utilitzar el [teor
 ![*Representació de $\sqrt{2}$ sobre la recta real*](img/arrel_de_dos_1.png)
 
 ### Intervals
+
+[Podem entendre un interval com una regió de la recta real](http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm). Agafem com a exemple , un de senzill: *Els nombres més grans que 4*. Si ho representem sobre la recta real obtenim:
+
 ### Inequacions
 ## Potències
 ###Propietats
