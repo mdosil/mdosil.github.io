@@ -48,6 +48,8 @@ Per representar radicals irracionals sobre la recta real, cal utilitzar el [teor
 
 ![*Representació de $x \gt 4$ sobre la recta real*](img/interval1_rectareal_1.png)
 
+Hi ha 3 maneres d'indicar un interval: gràficament (gràfic anterior), mitjançant una desigualtat, $x>4$ i mitjançant un interval: $(4,+\inf))$
+
 ### Inequacions
 ## Potències
 ###Propietats
