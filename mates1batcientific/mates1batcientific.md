@@ -50,9 +50,9 @@ Per representar radicals irracionals sobre la recta real, cal utilitzar el [teor
 
 Hi ha 3 maneres d'indicar un interval: 
 
-+ gràficament (gràfic anterior)
-+ mitjançant una desigualtat, $x>4$
-+ mitjançant un interval: $(4,+\infty))$.
+* gràficament (gràfic anterior)
+* mitjançant una desigualtat, $x>4$
+* mitjançant un interval: $(4,+\infty))$.
 
 ### Inequacions
 ## Potències
