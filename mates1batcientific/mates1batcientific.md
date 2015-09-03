@@ -62,6 +62,8 @@ Els extrems d'un interval són importants. Dir *els nombres més grans que $4$ i
 
  ![*Representació de $x \gt 4 \ge 5$, això és $(4,5\rbrack$, sobre la recta real*](img/interval3_rectareal_1.png)
 
+ Els extrems oberts són aquells que no contenen el nombre (per exemple, els nombres més grans que 4). Els extrems tancats són aquells que sí el contenen (per exemple, més petits __o iguals__ que 5.)
+
 ### Inequacions
 ## Potències
 ###Propietats
