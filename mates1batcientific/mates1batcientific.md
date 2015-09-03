@@ -56,11 +56,11 @@ Hi ha 3 maneres d'indicar un interval:
 
 #### Tipus d'intervals
 
-Els extrems d'un interval són importants. Dir *Els nombres més grans que $4$ i més petits que $5$* no és el mateix que dir *Els nombres més grans que $4$ i més petits o iguals que $5$*:
+Els extrems d'un interval són importants. Dir *els nombres més grans que $4$ i més petits que $5$* no és el mateix que dir *els nombres més grans que $4$ i més petits o iguals que $5$*:
 
  ![*Representació de $x \gt 4 \gt 5$, $(4,5)$ sobre la recta real*](img/interval2_rectareal_1.png)
 
- ![*Representació de $x \gt 4 \ge 5$, $(4,5]$ sobre la recta real*](img/interval3_rectareal_1.png)
+ ![*Representació de $x \gt 4 \ge 5$, $(4,5\]$ sobre la recta real*](img/interval3_rectareal_1.png)
 
 ### Inequacions
 ## Potències
