@@ -65,6 +65,11 @@ Els extrems d'un interval són importants. Dir *els nombres més grans que $4$ i
  Els extrems oberts són aquells que no contenen el nombre (per exemple, els nombres més grans que 4). Els extrems tancats són aquells que sí el contenen (per exemple, més petits __o iguals__ que 5.)
 
 ### Inequacions
+
+Una inequació d'una incògnita és una desigualtat que cal resoldre. En cas d'haver-hi solució, aquesta és un interval sobre la recta real.
+
+
+
 ## Potències
 ###Propietats
 ## Arrels
