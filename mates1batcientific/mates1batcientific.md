@@ -68,7 +68,13 @@ Els extrems d'un interval són importants. Dir *els nombres més grans que $4$ i
 
 Una inequació d'una incògnita és una desigualtat que cal resoldre. En cas d'haver-hi solució, aquesta és un interval sobre la recta real.
 
-
+\begin{align}
+\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+ & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
+ & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{align}
 
 ## Potències
 ###Propietats
