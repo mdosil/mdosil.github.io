@@ -75,7 +75,7 @@ __Exemple 1__
 2x & \ge 3-5 \\
 2x & \ge -2 \\
 x & \ge -1\\
-x & \in \lbrack -1, \infty)
+x & \in \lbrack -1, +\infty)
 
 \end{align}
 
@@ -88,13 +88,17 @@ __Exemple 2__
 -19x & \le -21 \\
 19x & \le 21 \\
 x & \ge \frac{21}{19}\\
-x & \in \lbrack \frac{21}{19}, \infty)
+x & \in \lbrack \frac{21}{19}, +\infty)
 
 \end{align}
 
 En aquest cas, quan canviem de signe a una banda de la desigualtat, cal recordar que la desigualtat canvia de sentit.
 
-![*Solució gràfica de l'exemple 1*](img/interval5_rectareal_1.png)
+![*Solució gràfica de l'exemple 2*](img/interval5_rectareal_1.png)
+
+__Exemple 3__
+
+\begin{cases} 3x + 5y + z \\ 7x – 2y + 4z \\ -6x + 3y + 2z \end{cases}
 
 ## Potències
 ###Propietats
