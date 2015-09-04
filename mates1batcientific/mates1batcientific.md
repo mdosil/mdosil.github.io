@@ -98,7 +98,15 @@ En aquest cas, quan canviem de signe a una banda de la desigualtat, cal recordar
 
 __Exemple 3__
 
-\begin{cases} 3x + 5y + z \\ 7x – 2y + 4z \\ -6x + 3y + 2z \end{cases}
+\begin{cases} 
+3x - 3 \ge 18 \\ 
+4 (x-10) \lt 12 
+\end{cases}
+
+\begin{align}
+3x - 3 \ge 18 \Rightarrow 3x \ge 21 \Rightarrow x \ge 7 \\
+4 (x-10) \lt 12 \Rightarrow 4x - 40 \lt 12 \Rightarrow 4x \lt 52 \Rightarrow x \lt 13
+\end{align}
 
 ## Potències
 ###Propietats
