@@ -68,13 +68,18 @@ Els extrems d'un interval són importants. Dir *els nombres més grans que $4$ i
 
 Una inequació d'una incògnita és una desigualtat que cal resoldre. En cas d'haver-hi solució, aquesta és un interval sobre la recta real.
 
+__Exemple 1__
+
 \begin{align}
 2x+5 & \ge 3 \\
 2x & \ge 3-5 \\
 2x & \ge -2 \\
-x & \ge -1
+x & \ge -1\\
+x & \in \lbrack 1, \infty)
 
 \end{align}
+
+![*Solució gràfica de l'exemple 1*](img/interval4_rectareal_1.png)
 
 ## Potències
 ###Propietats
