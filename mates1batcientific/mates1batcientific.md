@@ -74,8 +74,21 @@ __Exemple 1__
 2x+5 & \ge 3 \\
 2x & \ge 3-5 \\
 2x & \ge -2 \\
+\mathbf{x & \ge -1}\\
+\mathbf{x & \in \lbrack -1, \infty)}
+
+\end{align}
+
+![*Solució gràfica de l'exemple 1*](img/interval4_rectareal_1.png)
+
+__Exemple 2__
+
+\begin{align}
+2x+5 & \ge 3 \\
+2x & \ge 3-5 \\
+2x & \ge -2 \\
 x & \ge -1\\
-x & \in \lbrack 1, \infty)
+x & \in \lbrack -1, \infty)
 
 \end{align}
 
