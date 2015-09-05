@@ -1,0 +1,119 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Nombres reals\n\n\nEl conjunt dels nombres reals\n\n\nEls nombres reals es divideixen en \nnombres racionals\n \n\\mathbb{Q}\n, que s\u00f3n aquells que es poden expressar mitjan\u00e7ant una fracci\u00f3 i els \nirracionals\n \n\\mathbb{I}\n. Exemples de nombres racionals s\u00f3n \n\\frac{3}{4}\n, \n2'5\n i \n0'\\stackrel\\frown{123}\n. Els nombres irracionals no es poden expressar com a fracci\u00f3. El nombre \n\\pi\n i \n\\sqrt{5}\n s\u00f3n nombres irracionals.\nUn \nnombre real\n \u00e9s aquell que es pot representar al llarg d'una recta cont\u00ednua. Per exemple, tots els nombres associats a mesures f\u00edsiques (longitud, for\u00e7a, pes, etc) s\u00f3n nombres reals. \nExemples de nombres reals\n s\u00f3n: \n1\n, \n-5\n, \n\\sqrt{3}\n, \n\\pi\n, \n4'15\n, \n2'\\stackrel\\frown{3}\n, \n\\frac{4}{5}\n. Al conjunt dels nombres reals se li d\u00f3na la lletra \n\\mathbb{R}\n.\n\n\nLa \nrecta num\u00e8rica\n est\u00e0 formada pel conjunt de tots els nombres reals. Els nombres reals s\u00f3n un \nconjunt ordenat\n ja que donats dos nombres, sempre podem determinar-ne el m\u00e9s gran: si \na \\gt b\n al representar-los sobre la recta, \na\n estar\u00e0 a la dreta de \nb\n.\n\n\nSi recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts. \n\n\n\n\nEls nombres reals es divideixen en \nnombres racionals\n \n\\mathbb{Q}\n, que s\u00f3n aquells que es poden expressar mitjan\u00e7ant una fracci\u00f3 i els \nirracionals\n \n\\mathbb{I}\n. Exemples de nombres racionals s\u00f3n \n\\frac{3}{4}\n, \n2'5\n i \n0'\\stackrel\\frown{123}\n. Els nombres irracionals no es poden expressar com a fracci\u00f3. El nombre \n\\pi\n i \n\\sqrt{5}\n s\u00f3n nombres irracionals.\n\n\nEls nombres \nnaturals\n i els \nenters\n ja els coneixeu de cursos anteriors:\n\n\n\n\n(\\mathbb{N}=\\{0, 1, 2, 3, 4,...\\}\n\n\n\\mathbb{Z}=\\{...-4, -3, -2, -1, 0, 1, 2, 3, 4,...\\}\n\n\n\n\nLa relaci\u00f3 entre els conjunts \n\\mathbb{N}\n, \n\\mathbb{Z}\n i \n\\mathbb{Q}\n \u00e9s la seg\u00fcent: \n\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q}\n. Aix\u00f2 vol dir que un nombre natural \u00e9s alhora enter i racional, per exemple.\n\n\nEls nombres \ndecimals\n es divideixen en exactes i peri\u00f2dics. Si el per\u00edode comen\u00e7a just despr\u00e9s de la coma s'anomenen \nperi\u00f2dics purs\n  (\n0'\\stackrel\\frown{3}=0'3333....\n) i si hi ha alguna xifra que no es repeteix abans s'anomenen \nperi\u00f2dics mixtes\n (\n0'2\\stackrel\\frown{45}=0'2454545....\n). Per a tots els nombres decimals podem buscar la seva \nfracci\u00f3 generatriu\n.\n\n\nRecta real\n\n\nRepresentar nombres sobre la recta real \u00e9s ben f\u00e0cil si s\u00f3n racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Per\u00f2 qu\u00e8 passa quan hem de situar per exemple, \n\\frac{3}{7}\n sobre la recta real? Hi ha varis m\u00e8todes. El m\u00e8tode m\u00e9s r\u00e0pid \u00e9s agafar la unitat, fer-ne 7 parts i agafar-ne 3. El m\u00e8tode m\u00e9s exacte \u00e9s utilitzant la t\u00e8cnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'\u00faltima part amb l'\n1\n de la recta real i traces l\u00ednies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecci\u00f3 amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions \n\\frac{1}{7}\n, \n\\frac{2}{7}\n, \n\\frac{3}{7}\n, etc. Si ho desitges, pots descarregar-te el \nfitxer geogebra\n.\n\n\n\n\nPer representar radicals irracionals sobre la recta real, cal utilitzar el \nteorema de Pit\u00e0gores\n. A la figura seg\u00fcent s'hi pot veure la representaci\u00f3 gr\u00e0fica de \n\\sqrt{2}\n (\nfitxer geogebra\n).\n\n\n\n\nIntervals\n\n\nPodem entendre un interval com una regi\u00f3 de la recta real\n. Agafem com a exemple , un de senzill: \nEls nombres m\u00e9s grans que \n4\n. Si ho representem sobre la recta real obtenim:\n\n\n\n\nHi ha 3 maneres d'indicar un interval: \n\n\n\n\ngr\u00e0ficament (gr\u00e0fic anterior)\n\n\nmitjan\u00e7ant una desigualtat, \nx>4\n\n\n\n\nmitjan\u00e7ant un interval: \n(4,+\\infty)\n. \n\n\n\n\nTipus d'intervals\n\n\nEls extrems d'un interval s\u00f3n importants. Dir \nels nombres m\u00e9s grans que \n4\n i m\u00e9s petits que \n5\n no \u00e9s el mateix que dir \nels nombres m\u00e9s grans que \n4\n i m\u00e9s petits o iguals que \n5\n:\n\n\n\n\n\n\nEls extrems oberts s\u00f3n aquells que no contenen el nombre (per exemple, els nombres m\u00e9s grans que \n4)\n. Els extrems tancats s\u00f3n aquells que s\u00ed el contenen (per exemple, m\u00e9s petits \no iguals\n que \n5\n.)\n\n\nInequacions\n\n\nUna inequaci\u00f3 d'una inc\u00f2gnita \u00e9s una desigualtat que cal resoldre. En cas d'haver-hi soluci\u00f3, aquesta \u00e9s un interval sobre la recta real.\n\n\nExemple 1\n\n\n\n\n\\begin{align}\n2x+5 & \\ge 3 \\\\\n2x & \\ge 3-5 \\\\\n2x & \\ge -2 \\\\\nx & \\ge -1\\\\\nx & \\in \\lbrack -1, +\\infty)\n\\end{align}\n\n\n\n\n\n\nExemple 2\n\n\n\n\n\\begin{align}\n-10x+3 & \\le 9x -18 \\\\\n-19x & \\le -21 \\\\\n19x & \\le 21 \\\\\nx & \\ge \\frac{21}{19}\\\\\nx & \\in \\lbrack \\frac{21}{19}, +\\infty)\n\\end{align}\n\n\n\n\nEn aquest cas, quan canviem de signe a una banda de la desigualtat, cal recordar que la desigualtat canvia de sentit.\n\n\n\n\nExemple 3\n\n\n\n\n\\begin{cases} \n3x - 3 \\ge 18 \\\\ \n4 (x-10) \\lt 12 \n\\end{cases}\n\n\n\n\n\n\n\\begin{align}\n3x - 3 \\ge 18 \\Rightarrow 3x \\ge 21 \\Rightarrow x \\ge 7 \\\\\n4 (x-10) \\lt 12 \\Rightarrow 4x - 40 \\lt 12 \\Rightarrow 4x \\lt 52 \\Rightarrow x \\lt 13\n\\end{align}\n\n\n\n\nPot\u00e8ncies\n\n\nPropietats\n\n\nArrels\n\n\nPropietats\n\n\nOperacions\n\n\nRacionalitzaci\u00f3\n\n\nLogaritmes\n\n\nTrigonometria\n\n\nNombres complexos\n\n\nPolinomis\n\n\nVectors en el pla\n\n\nRectes en el pla\n\n\nLlocs geom\u00e8trics\n\n\nFuncions\n\n\nSuccessions\n\n\nL\u00edmits i continu\u00eftat de funcions\n\n\nFunci\u00f3 exponencial i logar\u00edtmica\n\n\nFuncions trigonom\u00e8triques",
+            "title": "Home"
+        },
+        {
+            "location": "/#nombres-reals",
+            "text": "",
+            "title": "Nombres reals"
+        },
+        {
+            "location": "/#el-conjunt-dels-nombres-reals",
+            "text": "Els nombres reals es divideixen en  nombres racionals   \\mathbb{Q} , que s\u00f3n aquells que es poden expressar mitjan\u00e7ant una fracci\u00f3 i els  irracionals   \\mathbb{I} . Exemples de nombres racionals s\u00f3n  \\frac{3}{4} ,  2'5  i  0'\\stackrel\\frown{123} . Els nombres irracionals no es poden expressar com a fracci\u00f3. El nombre  \\pi  i  \\sqrt{5}  s\u00f3n nombres irracionals.\nUn  nombre real  \u00e9s aquell que es pot representar al llarg d'una recta cont\u00ednua. Per exemple, tots els nombres associats a mesures f\u00edsiques (longitud, for\u00e7a, pes, etc) s\u00f3n nombres reals.  Exemples de nombres reals  s\u00f3n:  1 ,  -5 ,  \\sqrt{3} ,  \\pi ,  4'15 ,  2'\\stackrel\\frown{3} ,  \\frac{4}{5} . Al conjunt dels nombres reals se li d\u00f3na la lletra  \\mathbb{R} .  La  recta num\u00e8rica  est\u00e0 formada pel conjunt de tots els nombres reals. Els nombres reals s\u00f3n un  conjunt ordenat  ja que donats dos nombres, sempre podem determinar-ne el m\u00e9s gran: si  a \\gt b  al representar-los sobre la recta,  a  estar\u00e0 a la dreta de  b .  Si recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts.    Els nombres reals es divideixen en  nombres racionals   \\mathbb{Q} , que s\u00f3n aquells que es poden expressar mitjan\u00e7ant una fracci\u00f3 i els  irracionals   \\mathbb{I} . Exemples de nombres racionals s\u00f3n  \\frac{3}{4} ,  2'5  i  0'\\stackrel\\frown{123} . Els nombres irracionals no es poden expressar com a fracci\u00f3. El nombre  \\pi  i  \\sqrt{5}  s\u00f3n nombres irracionals.  Els nombres  naturals  i els  enters  ja els coneixeu de cursos anteriors:   (\\mathbb{N}=\\{0, 1, 2, 3, 4,...\\}  \\mathbb{Z}=\\{...-4, -3, -2, -1, 0, 1, 2, 3, 4,...\\}   La relaci\u00f3 entre els conjunts  \\mathbb{N} ,  \\mathbb{Z}  i  \\mathbb{Q}  \u00e9s la seg\u00fcent:  \\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} . Aix\u00f2 vol dir que un nombre natural \u00e9s alhora enter i racional, per exemple.  Els nombres  decimals  es divideixen en exactes i peri\u00f2dics. Si el per\u00edode comen\u00e7a just despr\u00e9s de la coma s'anomenen  peri\u00f2dics purs   ( 0'\\stackrel\\frown{3}=0'3333.... ) i si hi ha alguna xifra que no es repeteix abans s'anomenen  peri\u00f2dics mixtes  ( 0'2\\stackrel\\frown{45}=0'2454545.... ). Per a tots els nombres decimals podem buscar la seva  fracci\u00f3 generatriu .",
+            "title": "El conjunt dels nombres reals"
+        },
+        {
+            "location": "/#recta-real",
+            "text": "Representar nombres sobre la recta real \u00e9s ben f\u00e0cil si s\u00f3n racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Per\u00f2 qu\u00e8 passa quan hem de situar per exemple,  \\frac{3}{7}  sobre la recta real? Hi ha varis m\u00e8todes. El m\u00e8tode m\u00e9s r\u00e0pid \u00e9s agafar la unitat, fer-ne 7 parts i agafar-ne 3. El m\u00e8tode m\u00e9s exacte \u00e9s utilitzant la t\u00e8cnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'\u00faltima part amb l' 1  de la recta real i traces l\u00ednies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecci\u00f3 amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions  \\frac{1}{7} ,  \\frac{2}{7} ,  \\frac{3}{7} , etc. Si ho desitges, pots descarregar-te el  fitxer geogebra .   Per representar radicals irracionals sobre la recta real, cal utilitzar el  teorema de Pit\u00e0gores . A la figura seg\u00fcent s'hi pot veure la representaci\u00f3 gr\u00e0fica de  \\sqrt{2}  ( fitxer geogebra ).   Intervals  Podem entendre un interval com una regi\u00f3 de la recta real . Agafem com a exemple , un de senzill:  Els nombres m\u00e9s grans que  4 . Si ho representem sobre la recta real obtenim:   Hi ha 3 maneres d'indicar un interval:    gr\u00e0ficament (gr\u00e0fic anterior)  mitjan\u00e7ant una desigualtat,  x>4   mitjan\u00e7ant un interval:  (4,+\\infty) .    Tipus d'intervals  Els extrems d'un interval s\u00f3n importants. Dir  els nombres m\u00e9s grans que  4  i m\u00e9s petits que  5  no \u00e9s el mateix que dir  els nombres m\u00e9s grans que  4  i m\u00e9s petits o iguals que  5 :    Els extrems oberts s\u00f3n aquells que no contenen el nombre (per exemple, els nombres m\u00e9s grans que  4) . Els extrems tancats s\u00f3n aquells que s\u00ed el contenen (per exemple, m\u00e9s petits  o iguals  que  5 .)  Inequacions  Una inequaci\u00f3 d'una inc\u00f2gnita \u00e9s una desigualtat que cal resoldre. En cas d'haver-hi soluci\u00f3, aquesta \u00e9s un interval sobre la recta real.  Exemple 1   \\begin{align}\n2x+5 & \\ge 3 \\\\\n2x & \\ge 3-5 \\\\\n2x & \\ge -2 \\\\\nx & \\ge -1\\\\\nx & \\in \\lbrack -1, +\\infty)\n\\end{align}    Exemple 2   \\begin{align}\n-10x+3 & \\le 9x -18 \\\\\n-19x & \\le -21 \\\\\n19x & \\le 21 \\\\\nx & \\ge \\frac{21}{19}\\\\\nx & \\in \\lbrack \\frac{21}{19}, +\\infty)\n\\end{align}   En aquest cas, quan canviem de signe a una banda de la desigualtat, cal recordar que la desigualtat canvia de sentit.   Exemple 3   \\begin{cases} \n3x - 3 \\ge 18 \\\\ \n4 (x-10) \\lt 12 \n\\end{cases}    \\begin{align}\n3x - 3 \\ge 18 \\Rightarrow 3x \\ge 21 \\Rightarrow x \\ge 7 \\\\\n4 (x-10) \\lt 12 \\Rightarrow 4x - 40 \\lt 12 \\Rightarrow 4x \\lt 52 \\Rightarrow x \\lt 13\n\\end{align}",
+            "title": "Recta real"
+        },
+        {
+            "location": "/#potencies",
+            "text": "Propietats",
+            "title": "Pot\u00e8ncies"
+        },
+        {
+            "location": "/#arrels",
+            "text": "Propietats  Operacions  Racionalitzaci\u00f3",
+            "title": "Arrels"
+        },
+        {
+            "location": "/#logaritmes",
+            "text": "",
+            "title": "Logaritmes"
+        },
+        {
+            "location": "/#trigonometria",
+            "text": "",
+            "title": "Trigonometria"
+        },
+        {
+            "location": "/#nombres-complexos",
+            "text": "",
+            "title": "Nombres complexos"
+        },
+        {
+            "location": "/#polinomis",
+            "text": "",
+            "title": "Polinomis"
+        },
+        {
+            "location": "/#vectors-en-el-pla",
+            "text": "",
+            "title": "Vectors en el pla"
+        },
+        {
+            "location": "/#rectes-en-el-pla",
+            "text": "",
+            "title": "Rectes en el pla"
+        },
+        {
+            "location": "/#llocs-geometrics",
+            "text": "",
+            "title": "Llocs geom\u00e8trics"
+        },
+        {
+            "location": "/#funcions",
+            "text": "",
+            "title": "Funcions"
+        },
+        {
+            "location": "/#successions",
+            "text": "",
+            "title": "Successions"
+        },
+        {
+            "location": "/#limits-i-continuitat-de-funcions",
+            "text": "",
+            "title": "L\u00edmits i continu\u00eftat de funcions"
+        },
+        {
+            "location": "/#funcio-exponencial-i-logaritmica",
+            "text": "",
+            "title": "Funci\u00f3 exponencial i logar\u00edtmica"
+        },
+        {
+            "location": "/#funcions-trigonometriques",
+            "text": "",
+            "title": "Funcions trigonom\u00e8triques"
+        },
+        {
+            "location": "/exercicis/",
+            "text": "Tema 1: Nombres reals\n\n\n\n\nExercici 1\n\n\nExercici 2\n\n\n\n\nTema 2: Trigonometria",
+            "title": "Exercicis"
+        },
+        {
+            "location": "/exercicis/#tema-1-nombres-reals",
+            "text": "Exercici 1  Exercici 2",
+            "title": "Tema 1: Nombres reals"
+        },
+        {
+            "location": "/exercicis/#tema-2-trigonometria",
+            "text": "",
+            "title": "Tema 2: Trigonometria"
+        },
+        {
+            "location": "/sobre/",
+            "text": "Autoria\n\n\nAquests materials estan protegits per una llic\u00e8ncia creative commons.\n\n\nPer notificar qualsevol error o millora, poseu-vos en contacte amb l'\nautora\n.\n\n\n\n\nMatem\u00e0tiques 1r de batxillerat cient\u00edfic\n de \nMireia Dosil i Bonmat\u00ed\n est\u00e0 subjecta a una llic\u00e8ncia de \nReconeixement-NoComercial-CompartirIgual 4.0 Internacional de Creative Commons\n. Creat a partir d'una obra disponible a \nhttp://www.mdosil.cat",
+            "title": "Llic\u00e8ncia"
+        },
+        {
+            "location": "/sobre/#autoria",
+            "text": "Aquests materials estan protegits per una llic\u00e8ncia creative commons.  Per notificar qualsevol error o millora, poseu-vos en contacte amb l' autora .   Matem\u00e0tiques 1r de batxillerat cient\u00edfic  de  Mireia Dosil i Bonmat\u00ed  est\u00e0 subjecta a una llic\u00e8ncia de  Reconeixement-NoComercial-CompartirIgual 4.0 Internacional de Creative Commons . Creat a partir d'una obra disponible a  http://www.mdosil.cat",
+            "title": "Autoria"
+        }
+    ]
+}
