@@ -4,15 +4,91 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2015-09-05</lastmod>
+     <lastmod>2015-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
+    <url>
+     <loc>None/temes/nombresreals/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/trigonometria/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/complexos/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/polinomis/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/vectors/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/rectes/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/llocsgeometrics/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/funcions/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/successions/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/limits/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/funcioexponencial/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/temes/funcionstrigonometriques/</loc>
+     <lastmod>2015-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
     <url>
      <loc>None/exercicis/</loc>
-     <lastmod>2015-09-05</lastmod>
+     <lastmod>2015-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +96,7 @@
     
     <url>
      <loc>None/sobre/</loc>
-     <lastmod>2015-09-05</lastmod>
+     <lastmod>2015-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
