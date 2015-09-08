@@ -289,10 +289,10 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <p>Com ja hem explicat, els radicals són potències d'exponent fraccionari. Per tant, les seves propietats deriven de les propietats de les potències:</p>
 <ol>
 <li>
-<script type="math/tex">\sqrt[n]{a \cdot b}=\sqrt[n]{a} \cdot \sqrt[n]{b} </script>
+<script type="math/tex">\sqrt[n]{a \cdot b}=\sqrt[n]{a} \cdot \sqrt[n]{b}</script>
 </li>
 <li>
-<script type="math/tex">\sqrt[n]{a}=\sqrt[n \cdot r]{a^r} (r \ne 0) </script>
+<script type="math/tex">\sqrt[n]{a}=\sqrt[n \cdot r]{a^r} (r \ne 0)</script>
 </li>
 <li>
 <script type="math/tex">\sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}</script>
@@ -304,15 +304,53 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <script type="math/tex">\sqrt[n]{\sqrt[m]{a}}=\sqrt[m \cdot n]{a}</script>
 </li>
 </ol>
-<h3 id="operacions">Operacions</h3>
-<ol>
-<li>Extracció i introducció de factors en un radical.</li>
-<li>Sumes i restes</li>
-<li>Multiplicacions i divisions</li>
-<li>Racionalització</li>
-</ol>
+<h3 id="extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</h3>
+<p>Per introduir nombres dins d'un radical, s'ha d'elevar el nombre a una potència igual a l'índex de l'arrel.</p>
+<p><strong>Exemple 4</strong></p>
+<p>Introdueix tots els factors dins de l'arrel: </p>
+<p>
+<script type="math/tex; mode=display">3^5 \cdot 2^8 \cdot 7^3 \cdot \sqrt[3]{2^5 \cdot 7}= \sqrt[3]{(3^5)^3 \cdot (2^8)^3 \cdot (7^3)^3 \cdot 2^5 \cdot 7}=\sqrt[3]{3^{15} \cdot 2^{24} \cdot 7^9 \cdot 2^5 \cdot 7}=\sqrt[3]{2^{29} \cdot 3^{15} \cdot 7^{10}}</script>
+</p>
+<p>Per extreure factors d'un radical, primer cal mirar si l'exponent del radicand és més gran que l'índex. Si és així, es podrà treure a fora el factor dividint l'exponent per l'índex del radical. A fora de l'arrel hi quedarà el nombre elevat al quocient de la divisió anterior, i a dins, el nombre elevat al residu de la divisió. Si no tenim el radicand expressat com a producte de factors de nombres primers, caldrà fer abans aquesta operació. Fixeu-vos en l'exemple següent.</p>
+<p><strong>Exemple 5</strong></p>
+<p>Treu tots els factors que puguis del radical:</p>
+<p>
+<script type="math/tex; mode=display">\sqrt[3]{120000}=\sqrt[3]{2^6 \cdot 3 \cdot 5^4}=2^2 \cdot 5 \cdot \sqrt[3]{3 \cdot 5}</script>
+</p>
+<h3 id="sumes-i-restes">Sumes i restes</h3>
+<p>Diem que dos radicals són <strong>semblants</strong> si tenen el mateix índex i el mateix radicand. Per exemple <script type="math/tex">2 \sqrt [5]{3}</script> i <script type="math/tex">\sqrt[5]{3}</script> són semblants però no ho són amb <script type="math/tex">\sqrt{3}</script>.</p>
+<p>Només es poden sumar o restar radicals si són semblants.</p>
+<p><strong>Exemple 6</strong></p>
+<p>
+<script type="math/tex; mode=display">2\sqrt[5]{21}+4 \sqrt[5]{21}=6 \sqrt[5]{21}</script>
+</p>
+<h3 id="multiplicacions-i-divisions">Multiplicacions i divisions</h3>
+<p>Per multiplicar o dividir radicals han de tenir el <strong>mateix índex</strong>. Si tenen diferent índex els hem de reduir a <strong>índex comú</strong> tal i com fem amb les fraccions. Llavors es multipliquen o divideixen els radicands.</p>
+<p><strong>Exemple 7</strong></p>
+<p>
+<script type="math/tex; mode=display">\sqrt[3]{5}\cdot \sqrt{8}=\sqrt[6]{5^2}\cdot\sqrt[6]{8^3}=\sqrt[6]{5^2\cdot 8^3}</script>
+</p>
+<h3 id="arrel-duna-arrel">Arrel d'una arrel</h3>
+<p>Per treure l'arrel d'una arrel, es multipliquen els índexs.</p>
+<p><strong>Exemple 8</strong></p>
+<p>
+<script type="math/tex; mode=display">\sqrt[7]{\sqrt[3]{4}}=\sqrt[21]{4}</script>
+</p>
 <h3 id="racionalitzacio">Racionalització</h3>
-<h2 id="logaritmes">Logaritmes</h2></div>
+<p>En general no es considera elegant donar com a resultat un radical en un denominador. És per això que sempre que tinguem radicals en el denominador d'una fracció s'han d'intentar buscar fraccions equivalents. Mireu els exemples següents.</p>
+<p><strong>Exemple 9</strong></p>
+<p>
+<script type="math/tex; mode=display">\frac{2}{\sqrt[3]{5}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5}\cdot \sqrt[3]{5^2}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5^3}}=\frac{2\cdot\sqrt[3]{5^2}}{5}</script>
+</p>
+<p><strong>Exemple 10</strong></p>
+<p>Si en el denominador hi tenim una suma o una resta que contingui radicals, multiplicarem la fracció a dalt i a baix pel conjugat (si és suma, multiplicarem per la mateixa expressió restada i viceversa).</p>
+<p>
+<script type="math/tex; mode=display">\frac{5}{1+\sqrt{3}}=\frac{5}{1+\sqrt{3}}\cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}=\frac{5(1-\sqrt{3})}{1^2-(\sqrt{3})^2}=\frac{5(1-\sqrt{3})}{-2}=-\frac{5}{2}(1-\sqrt{3})</script>
+</p>
+<h2 id="logaritmes">Logaritmes</h2>
+<h3 id="definicio">Definició</h3>
+<h3 id="producte-i-quocient">Producte i quocient</h3>
+<h3 id="canvi-de-base">Canvi de base</h3></div>
         </div>
 
         <footer class="col-md-12">
