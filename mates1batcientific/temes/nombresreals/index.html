@@ -242,25 +242,53 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <h3 id="propietats">Propietats</h3>
 <ol>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">a^0=1</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">a^1=a</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">a^{-n}=\frac{1}{a}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">a^m \cdot a^n= a^{m+n}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">\frac{a^m}{a^n}= a^{m-n}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">(a^m)^n=a^{n \cdot m}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">a^n \cdot b^n=(a\cdot b)^n</script>
+</p>
+</blockquote>
 </li>
 </ol>
 <h2 id="radicals">Radicals</h2>
@@ -283,19 +311,39 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <p>Com ja hem explicat, els radicals són potències d'exponent fraccionari. Per tant, les seves propietats deriven de les propietats de les potències:</p>
 <ol>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">\sqrt[n]{a \cdot b}=\sqrt[n]{a} \cdot \sqrt[n]{b}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">\sqrt[n]{a}=\sqrt[n \cdot r]{a^r} (r \ne 0)</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">\sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">(\sqrt[n]{a})^m=\sqrt[n]{a^m}</script>
+</p>
+</blockquote>
 </li>
 <li>
+<blockquote>
+<p>
 <script type="math/tex">\sqrt[n]{\sqrt[m]{a}}=\sqrt[m \cdot n]{a}</script>
+</p>
+</blockquote>
 </li>
 </ol>
 <h3 id="extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</h3>
@@ -342,9 +390,170 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <script type="math/tex; mode=display">\frac{5}{1+\sqrt{3}}=\frac{5}{1+\sqrt{3}}\cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}=\frac{5(1-\sqrt{3})}{1^2-(\sqrt{3})^2}=\frac{5(1-\sqrt{3})}{-2}=-\frac{5}{2}(1-\sqrt{3})</script>
 </p>
 <h2 id="logaritmes">Logaritmes</h2>
-<h3 id="definicio">Definició</h3>
-<h3 id="producte-i-quocient">Producte i quocient</h3>
-<h3 id="canvi-de-base">Canvi de base</h3></div>
+<p>El <script type="math/tex">log_a b</script>, això és, logaritme en base <script type="math/tex">a</script> de <script type="math/tex">b</script>, és aquella potència a la qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">b</script> de resultat. </p>
+<p>Per exemple, <script type="math/tex">log_2 8</script> és <script type="math/tex">3</script>, perquè <script type="math/tex">2^3=8</script>. De la mateixa manera, <script type="math/tex">log_{10} 1000 = 3</script> perquè <script type="math/tex">10^3=1000</script>. Però quan és <script type="math/tex">log_2 36</script>? Quin nombre cal elevar el <script type="math/tex">2</script> per obtenir <script type="math/tex">36</script> de resultat? </p>
+<p>
+<script type="math/tex; mode=display">log_2 36=5'169925....</script>
+</p>
+<p>Per tant, el resultat d'un logaritme, que tal i com hem dit, expressa una potència, no té perquè ser enter. </p>
+<p>D'altra banda, com que la base <script type="math/tex">a</script> sempre és positiva, <script type="math/tex">b</script> també ho ha de ser. Això és, l'operació <script type="math/tex">log_a b</script> només està definida per a nombres <script type="math/tex">b</script> que siguin positius.</p>
+<p>Així doncs, en general:</p>
+<p>
+<script type="math/tex; mode=display">log_a{b}=x \Leftrightarrow a^x=b</script>
+</p>
+<h3 id="propietats_2">Propietats</h3>
+<ol>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^{log_a b}=b</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong> </p>
+<p>
+<script type="math/tex">log_a b=x \Leftrightarrow a^x=b</script>
+<br />
+Com que <script type="math/tex">x=log_a{b}</script>, llavors s'obté el resultat desitjat:<br />
+<script type="math/tex">a^{log_a{b}}=b</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a a=1</script>
+</p>
+</blockquote>
+<p>El nombre al qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">a</script>, lògicament és <script type="math/tex">1</script>.</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a a^m=m</script>
+</p>
+</blockquote>
+<p>El nombre al qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">a^m</script>, lògicament, és <script type="math/tex">m</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a (p \cdot q)=log_a p + log_a q </script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Definim:
+<script type="math/tex; mode=display">\begin{align}
+log_a p =x \Rightarrow a^x=p \\
+log_a q =y \Rightarrow a^y=q \\
+\end{align}</script>
+</p>
+<p>Multipliquem les dues equacions:</p>
+<p>
+<script type="math/tex; mode=display">a^x \cdot a^y=p \cdot q</script>
+</p>
+<p>Producte de potències de la mateixa base, suma d'exponents:</p>
+<p>
+<script type="math/tex; mode=display">a^{x+y}=p \cdot q</script>
+</p>
+<p>Apliquem logaritmes a banda i banda de l'equació anterior:</p>
+<p>
+<script type="math/tex; mode=display">log_a(a^{x+y})=log_a(p \cdot q)</script>
+</p>
+<p>
+<script type="math/tex">x+y=log_a(p \cdot q)</script>
+</p>
+<p>Substituïm <script type="math/tex">x</script> i <script type="math/tex">y</script> pels seus valors:</p>
+<p>
+<script type="math/tex">log_a p+log_a q=log_a(p \cdot q)</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a(\frac{p}{q})=log_a p - log_a q</script>
+</p>
+</blockquote>
+<p>Es demostra de la mateixa manera que la propietat 7.</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a{b^m}=m\cdot log_a b</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Definim: </p>
+<p>
+<script type="math/tex; mode=display">x=log_a b\Rightarrow a^x=b</script>
+</p>
+<p>Elevem a banda i banda a una potència <script type="math/tex">m</script>:</p>
+<p>
+<script type="math/tex; mode=display">(a^x)^m=b^m</script>
+</p>
+<p>I potència d'una potència es multipliquen els exponents:</p>
+<p>
+<script type="math/tex; mode=display">a^{m\cdot x}=b^m</script>
+</p>
+<p>Si prenem logaritmes a banda i banda:</p>
+<p>
+<script type="math/tex; mode=display">log_a a^{m\cdot x}= log_a {b^m} </script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">m \cdot x=log_a b^m</script>
+</p>
+<p>I si recordem què era <script type="math/tex">x</script>:</p>
+<p>
+<script type="math/tex; mode=display">m \cdot log_a b=log_a b^m</script>
+</p>
+</li>
+</ol>
+<h3 id="canvi-de-base">Canvi de base</h3>
+<p>La calculadora científica no té una tecla per a qualsevol base de logaritmes. De fet, les calculadores més comunes tenen la tecla per calcular el logaritme en base 10, <script type="math/tex">log</script>, i el logaritme en base <script type="math/tex">e</script>, <script type="math/tex">ln</script>, que explicarem més endavant.</p>
+<p>Per efectuar un canvi de base de logaritme, hem de tenir en compte la fórmula següent:</p>
+<blockquote>
+<p>
+<script type="math/tex">log_a x = \frac{log_b x}{log_b a}</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong>  </p>
+<p>Definim:  </p>
+<p>
+<script type="math/tex; mode=display">log_a x= y \Leftrightarrow x=a^y</script>
+</p>
+<p>Com que volem expressar el logaritme en base <script type="math/tex">a</script> en una altra base, <script type="math/tex">b</script>, prenem logaritmes en base <script type="math/tex">b</script> a banda i banda de l'expressió:  </p>
+<p>
+<script type="math/tex; mode=display">log_b x=log_b {a^y}</script>
+</p>
+<p>Apliquem la propietat 6. dels logaritmes i tenim:  </p>
+<p>
+<script type="math/tex; mode=display">log_b x= y \cdot log_b a</script>
+</p>
+<p>Si recordem què era <script type="math/tex">y</script>:</p>
+<p>
+<script type="math/tex; mode=display">log_b x = log_a x \cdot log_b a</script>
+</p>
+<p>Aïllant <script type="math/tex">log_a x</script> obtenim:</p>
+<p>
+<script type="math/tex; mode=display">log_a x = \frac{log_b x}{log_b a}</script>
+</p>
+<p><strong>Exemple 11</strong></p>
+<p>Per calcular el <script type="math/tex">log_5{10}</script> a la calculadora, haurem de fer doncs:</p>
+<p>
+<script type="math/tex; mode=display">log_5{10}=\frac{log 10}{log 5}= \frac{1}{log 5}</script>
+</p>
+<p>Entenent <script type="math/tex">log 5</script> com el logaritme en base <script type="math/tex">10</script> de <script type="math/tex">5</script>.  </p>
+<h4 id="el-nombre-e-i-els-logaritmes-neperians">El nombre <script type="math/tex">e</script> i els logaritmes neperians</h4>
+<p>El <a href="https://ca.wikipedia.org/wiki/Nombre_e">nombre <script type="math/tex">e</script></a> és una constant matemàtica que és la base principal de molts càlculs, com per exemple, en l'estudi de <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_3eso_cat_progressions-JS/index.htm">l'interès compost</a> d'un crèdit o dipòsit. </p>
+<p>És un nombre irracional, això és, té infinits decimals:</p>
+<p>
+<script type="math/tex; mode=display">e=2,718281828459045235....</script>
+</p>
+<p>Els <strong>logaritmes naturals</strong> o <strong>logaritmes neperians</strong> (<script type="math/tex">ln x</script>) són aquells que la seva base és el nombre e. Per exemple, calcular el logaritme neperià de 2 vol dir:</p>
+<p>
+<script type="math/tex; mode=display">ln (2)= 0'6931471.... \Leftrightarrow e^{0'6931471....}=2 </script>
+</p>
+<p>Així mateix, per calcular qualsevol logaritme en qualsevol base, podem fer servir la fórmula del canvi de base anterior amb els logaritmes en base l0 (<script type="math/tex">log</script>) o base <script type="math/tex">e</script> (<script type="math/tex">ln</script>).</p></div>
         </div>
 
         <footer class="col-md-12">
