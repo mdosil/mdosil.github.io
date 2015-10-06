@@ -146,6 +146,8 @@
         
             <li><a href="#raons-trigonometriques">Raons trigonomètriques</a></li>
         
+            <li><a href="#la-circumferencia-unitat">La circumferència unitat</a></li>
+        
             <li><a href="#raons-trigonometriques-de-langle-suma-i-langle-diferencia">Raons trigonomètriques de l'angle suma i l'angle diferència</a></li>
         
             <li><a href="#formules-trigonometriques">Fòrmules trigonomètriques</a></li>
@@ -310,16 +312,73 @@
 <td>
 <script type="math/tex">\sqrt{3}</script>
 </td>
-<td>1</td>
 <td>
 <script type="math/tex">\nexists</script>
+</td>
+<td>
+<script type="math/tex">1</script>
 </td>
 </tr>
 </tbody>
 </table>
-<h3 id="la-circumferencia-unitat">La circumferència unitat</h3>
+<p>Hi ha una regla mnemotècnica per recordar les raons de 30, 45 i 60 graus. Si ens fixem en la part de la taula que conté aquests valors, només cal per la fila del sinus escriure <script type="math/tex">1</script>, <script type="math/tex">2</script>
+<script type="math/tex">3</script> en aquest ordre. Llavors prenem l'arrel d'aquests valors (i recordem que <script type="math/tex">\sqrt{1}=1</script>). Finalment dividim el resultat per <script type="math/tex">2</script> i ja tenim els sinus. Pel que fa els cosinus, escrivim <script type="math/tex">3</script>, <script type="math/tex">2</script>, <script type="math/tex">1</script>per 30, 45 i 60 graus respectivament. Després repetim l'operació anterior. Ja tenim els cosinus. Per les tangents, és la divisió del sinus entre el cosinus.</p>
+<h2 id="la-circumferencia-unitat">La circumferència unitat</h2>
 <!-------------------------------------------------->
 
+<p>Construïm una circumferència de radi <script type="math/tex">1</script> tal i com podem veure a la figura.
+Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència. Aquest punt defineix un angle <script type="math/tex">\alpha</script> en el primer quadrant. Dibuixem també els triangles <script type="math/tex">OPQ</script> i <script type="math/tex">OP'Q'</script> (descarregueu-vos el fitxer <a href="../../ggb/circumferencia_unitat_2.ggb">geogebra</a>):
+<img alt="*Circumferència unitat*" src="../img/circumferencia_unitat_2.png" /></p>
+<p>Anem a veure quines són les raons trigonomètriques de l'angle <script type="math/tex">\alpha</script>:</p>
+<p>
+<script type="math/tex; mode=display">sin \alpha=\frac{PQ}{OP}=\frac{y}{1}=y</script>
+<script type="math/tex; mode=display">cos \alpha=\frac{OQ}{OP}=\frac{x}{1}=x</script>
+</p>
+<p>Per la tangent d'<script type="math/tex">\alpha</script> veiem que els triangles <script type="math/tex">OQP</script> i <script type="math/tex">OQ'P'</script> estan en <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_2eso_cat_semblan%C3%A7a_pitagores-JS/index.htm">posició de Tales</a>, per tant, són <em>semblants</em> i els seus costats són proporcionals. Així doncs, es compleix:</p>
+<p>
+<script type="math/tex; mode=display">tg \alpha=\frac{PQ}{OQ}=\frac{P'Q'}{OQ'}</script>
+</p>
+<p>i del gràfic deduïm <script type="math/tex">PQ=y</script>, <script type="math/tex">OQ=x</script> i <script type="math/tex">OQ'=1</script>. Per tant:</p>
+<p>
+<script type="math/tex; mode=display">tg \alpha=\frac{x}{y}=P'Q'</script>
+</p>
+<p>La tangent és gràficament la longitud del segment tangent a la circumferència des de <script type="math/tex">P'</script> fins a <script type="math/tex">Q'</script>.</p>
+<p>Aquesta circumferència ens permet també determinar el signe dels sinus i cosinus dels angles de qualsevol quadrant:</p>
+<p><img alt="*Signe raons trigonomètriques*" src="../img/signe_raons_trigonometriques_2.png" /></p>
+<p>Per tant, l'angle <script type="math/tex">0^o</script> que està en el primer quadrant, té cosinus màxim (<script type="math/tex">1</script>) i sinus <script type="math/tex">0</script>. A mida que ens movem en la direcció contrària a les agulles del rellotge, el cosinus disminueix i el sinus augmenta. En arribar a l'angle de <script type="math/tex">90^o</script>, el sinus és màxim (<script type="math/tex">1</script>) i el cosinus esdevé llavors <script type="math/tex">0</script>.</p>
+<h3 id="reduccio-al-primer-quadrant">Reducció al primer quadrant</h3>
+<p>Qualsevol angle sobre la circumferència unitat es pot relacionar amb un angle del primer quadrant.</p>
+<ol>
+<li>
+<p>Segon quadrant</p>
+<p>Un angle del segon quadrant sempre es pot expressar  <script type="math/tex">180^o -\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant:        </p>
+<p>
+<script type="math/tex; mode=display">sin(180^o -\alpha)=sin \alpha</script>
+</p>
+<p>
+<script type="math/tex; mode=display">cos(180^o -\alpha)=-cos \alpha</script>
+</p>
+<p><img alt="*Angle segon quadrant*" src="../img/raons_trigonometriques_segon_quad_2.png" /></p>
+</li>
+<li>
+<p>Tercer quadrant</p>
+<p>Un angle del segon tercer sempre es pot expressar  <script type="math/tex">180^o +\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
+<p>
+<script type="math/tex; mode=display">sin(180^o +\alpha)=-sin \alpha</script>
+<script type="math/tex; mode=display">cos(180^o +\alpha)=-cos \alpha</script>
+</p>
+<p><img alt="*Angle tercer quadrant*" src="../img/raons_trigonometriques_tercer_quad_2.png" /></p>
+</li>
+<li>
+<p>Quart quadrant</p>
+<p>Un angle del quart quadrant sempre es pot expressar  <script type="math/tex">360^o-\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
+<p>
+<script type="math/tex; mode=display">sin(360^o-\alpha)=-sin \alpha</script>
+<script type="math/tex; mode=display">cos(360^o-\alpha)=cos \alpha</script>
+</p>
+<p><img alt="*Angle quart quadrant*" src="../img/raons_trigonometriques_quart_quad_2.png" /></p>
+</li>
+</ol>
 <h2 id="raons-trigonometriques-de-langle-suma-i-langle-diferencia">Raons trigonomètriques de l'angle suma i l'angle diferència</h2>
 <!-------------------------------------------------->
 
