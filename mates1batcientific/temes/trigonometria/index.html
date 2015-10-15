@@ -150,7 +150,7 @@
         
             <li><a href="#raons-trigonometriques-de-langle-suma-i-langle-diferencia">Raons trigonomètriques de l'angle suma i l'angle diferència</a></li>
         
-            <li><a href="#formules-trigonometriques">Fòrmules trigonomètriques</a></li>
+            <li><a href="#transformacio-de-sumes-en-productes">Transformació de sumes en productes</a></li>
         
             <li><a href="#teoremes-del-sinus-i-del-cosinus">Teoremes del sinus i del cosinus</a></li>
         
@@ -346,12 +346,17 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <p>Aquesta circumferència ens permet també determinar el signe dels sinus i cosinus dels angles de qualsevol quadrant:</p>
 <p><img alt="*Signe raons trigonomètriques*" src="../img/signe_raons_trigonometriques_2.png" /></p>
 <p>Per tant, l'angle <script type="math/tex">0^o</script> que està en el primer quadrant, té cosinus màxim (<script type="math/tex">1</script>) i sinus <script type="math/tex">0</script>. A mida que ens movem en la direcció contrària a les agulles del rellotge, el cosinus disminueix i el sinus augmenta. En arribar a l'angle de <script type="math/tex">90^o</script>, el sinus és màxim (<script type="math/tex">1</script>) i el cosinus esdevé llavors <script type="math/tex">0</script>.</p>
+<p>Una altra cosa que podem aprendre de la circumferència és la relació entre sinus i cosinus d'un angle qualsevol. Sabem que l'equació d'una circumferència és <script type="math/tex">x^2+y^2=R^2</script>, on <script type="math/tex">R</script> és el radi de la circumferència. Si ho traduïm al nostre exemple (<script type="math/tex">sin \alpha=x</script>, <script type="math/tex">cos \alpha=y</script> i <script type="math/tex">R=1</script>) obtenim:</p>
+<p>
+<script type="math/tex; mode=display">sin^2 \alpha+ cos^2 \alpha= 1</script>
+</p>
+<p>La circumferència unitat també ens permet determinar els sinus i cosinus dels angles <script type="math/tex">0^o</script>, <script type="math/tex">90^o</script>, <script type="math/tex">180^o</script> i <script type="math/tex">270^o</script> amb facilitat.</p>
 <h3 id="reduccio-al-primer-quadrant">Reducció al primer quadrant</h3>
 <p>Qualsevol angle sobre la circumferència unitat es pot relacionar amb un angle del primer quadrant.</p>
 <ol>
 <li>
 <p>Segon quadrant</p>
-<p>Un angle del segon quadrant sempre es pot expressar  <script type="math/tex">180^o -\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant:        </p>
+<p>Un angle del segon quadrant sempre es pot expressar com  <script type="math/tex">180^o -\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant:        </p>
 <p>
 <script type="math/tex; mode=display">sin(180^o -\alpha)=sin \alpha</script>
 </p>
@@ -359,10 +364,19 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <script type="math/tex; mode=display">cos(180^o -\alpha)=-cos \alpha</script>
 </p>
 <p><img alt="*Angle segon quadrant*" src="../img/raons_trigonometriques_segon_quad_2.png" /></p>
+<p><strong>Exemple 1</strong></p>
+<p>Dóna les raons trigonomètriques de l'angle <script type="math/tex">150^o</script> relacionant-ho amb un angle del primer quadrant.</p>
+<p>Sabem que: <script type="math/tex">150^o=180^o-30^o</script> per tant:</p>
+<p>
+<script type="math/tex; mode=display">sin(150^o)=sin (30^o)=\frac{1}{2}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">cos(150^o)=-cos (30^o)=-\frac{\sqrt{3}}{2}</script>
+</p>
 </li>
 <li>
 <p>Tercer quadrant</p>
-<p>Un angle del segon tercer sempre es pot expressar  <script type="math/tex">180^o +\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
+<p>Un angle del segon tercer sempre es pot expressar com <script type="math/tex">180^o +\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
 <p>
 <script type="math/tex; mode=display">sin(180^o +\alpha)=-sin \alpha</script>
 <script type="math/tex; mode=display">cos(180^o +\alpha)=-cos \alpha</script>
@@ -371,7 +385,7 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 </li>
 <li>
 <p>Quart quadrant</p>
-<p>Un angle del quart quadrant sempre es pot expressar  <script type="math/tex">360^o-\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
+<p>Un angle del quart quadrant sempre es pot expressar com <script type="math/tex">360^o-\alpha</script> on <script type="math/tex">\alpha</script> és un angle del 1r quadrant. Per tant: </p>
 <p>
 <script type="math/tex; mode=display">sin(360^o-\alpha)=-sin \alpha</script>
 <script type="math/tex; mode=display">cos(360^o-\alpha)=cos \alpha</script>
@@ -379,12 +393,78 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <p><img alt="*Angle quart quadrant*" src="../img/raons_trigonometriques_quart_quad_2.png" /></p>
 </li>
 </ol>
+<h3 id="raons-trigonometriques-dangles-complementaris">Raons trigonomètriques d'angles complementaris</h3>
+<p>Dos angles <script type="math/tex">\alpha</script> i <script type="math/tex">\beta</script> són complementaris si sumats donen l'angle recte: si <script type="math/tex">\alpha + \beta=90^o</script>. Del dibuix següent és fàcil deduir quina relació hi ha entre les seves raons trigonomètriques:</p>
+<p>
+<script type="math/tex; mode=display">sin \alpha= cos \beta</script>
+<script type="math/tex; mode=display">cos \alpha= sin \beta</script>
+</p>
+<p><img alt="*Angles complementaris*" src="../img/angles_complementaris_2.png" /></p>
 <h2 id="raons-trigonometriques-de-langle-suma-i-langle-diferencia">Raons trigonomètriques de l'angle suma i l'angle diferència</h2>
+<p>A vegades ens pot interessar saber les raons trigonomètriques d'una suma d'angles (<script type="math/tex">\alpha+ \beta</script>) expressades en funció de les raons trigonomètriques dels angles sumands. A continuació us donem les fòrmules que ho expressen. En aquestes línies no demostrarem les identitats, però si teniu curiositat, ho podeu trobar <a href="https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Angle_sum_and_difference_identities">aquí</a>.</p>
+<ol>
+<li>
+<script type="math/tex">sin(\alpha + \beta)=sin \alpha \cdot cos \beta + cos \alpha \cdot sin \beta</script>
+</li>
+<li>
+<script type="math/tex">sin(\alpha - \beta)=sin \alpha \cdot cos \beta - cos \alpha \cdot sin \beta</script>
+</li>
+<li>
+<script type="math/tex">cos(\alpha + \beta)=cos \alpha \cdot cos \beta - sin \alpha \cdot sin \beta</script>
+</li>
+<li>
+<script type="math/tex">cos(\alpha - \beta)=cos \alpha \cdot cos \beta + sin \alpha \cdot sin \beta</script>
+</li>
+</ol>
+<h3 id="sinus-i-cosinus-de-langle-doble">Sinus i cosinus de l'angle doble</h3>
+<p>A partir de les fòrmules anteriors puc calcular les fòrmules de l'angle doble. Si vull calcular les raons de l'angle <script type="math/tex">2\alpha</script> és el mateix que les fòrmules de l'angle suma substituïnt <script type="math/tex">\alpha+\beta</script> per <script type="math/tex">\alpha + \alpha=2\alpha</script>:</p>
+<p>
+<script type="math/tex; mode=display">sin (2\alpha)=sin \alpha \cdot cos \alpha+ cos \alpha \cdot sin \alpha=2sin \alpha cos \alpha</script>
+<script type="math/tex; mode=display">cos(2\alpha)=cos \alpha \cdot cos \alpha - sin \alpha \cdot sin \alpha=cos^2 \alpha - sin ^2 \alpha</script>
+</p>
+<p><strong>Exemple 2</strong></p>
+<p>A partir de les fòrmules anteriors,comprova que les raons trigonomètriques de l'angle <script type="math/tex">90^o</script> són <script type="math/tex">sin 90</script> i <script type="math/tex">cos 90</script> a partir de les raons trigonomètriques de <script type="math/tex">45^o</script>.</p>
+<p>
+<script type="math/tex; mode=display">sin 90=2 sin 45 cos 45= 2 \frac{\sqrt{2}}{2}\frac{\sqrt{2}}{2}=1</script>
+<script type="math/tex; mode=display">cos 90= cos^2 45- sin^2 45=(\frac{\sqrt{2}}{2})^2-(\frac{\sqrt{2}}{2})^2=0</script>
+</p>
+<h3 id="sinus-i-cosinus-de-langle-meitat">Sinus i cosinus de l'angle meitat</h3>
+<p>Per trobar les fòrmules de l'angle meitat hem de partir de l'equació del cosinus de l'angle doble però substituïnt a tot arreu, <script type="math/tex">\alpha</script> per <script type="math/tex">\frac{\alpha}{2}</script>. Llavors obtenim el següent:</p>
+<p>
+<script type="math/tex; mode=display">cos \alpha=cos^2 \frac{\alpha}{2}-sin^2 \frac{\alpha}{2}</script>
+</p>
+<p>D'altra banda també sabem que qualsevol angle compleix que la suma dels quadrats del seu sinus i del seu cosinus és <script type="math/tex">1</script>. Això aplicat a l'angle meitat i girant l'equació ens dóna:</p>
+<p>
+<script type="math/tex; mode=display">1=sin^2 \frac{\alpha}{2}+cos^2 \frac{\alpha}{2}</script>
+</p>
+<p>Si <strong>sumem</strong> aquestes dues equacions obtenim:</p>
+<p>
+<script type="math/tex; mode=display">1+cos \alpha= 2 cos^2 \frac{\alpha}{2}</script>
+</p>
+<p>I si aïllem <script type="math/tex">cos^2 \frac{\alpha}{2}</script>:</p>
+<p>
+<script type="math/tex; mode=display">cos \frac{\alpha}{2}= \pm \sqrt{\frac{1+cos \alpha}{2}} </script>
+</p>
+<p>El signe dependrà del quadrant el qual pertanyi l'angle.</p>
+<p>Per obtenir el sinus de l'angle meitat només cal <strong>restar</strong> enlloc de sumar les equacions inicials:</p>
+<p>
+<script type="math/tex; mode=display">1-cos \alpha= 2 sin^2 \frac{\alpha}{2}</script>
+</p>
+<p>I si aïllem <script type="math/tex">sin^2 \frac{\alpha}{2}</script>:</p>
+<p>
+<script type="math/tex; mode=display">sin \frac{\alpha}{2}= \pm \sqrt{\frac{1-cos \alpha}{2}} </script>
+</p>
+<p><strong>Exemple 3</strong></p>
+<p>Calculeu les raons trigonomètriques de <script type="math/tex">15^o</script> a partir de les de l'angle <script type="math/tex">30^o</script>.</p>
+<p>
+<script type="math/tex; mode=display">sin 15=\sqrt{\frac{1-cos 30}{2}}=\sqrt{\frac{1-\frac{\sqrt{3}}{2}}{2}}=...=\frac{\sqrt{2-\sqrt{3}}}{2}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">cos 15=\sqrt{\frac{1+cos 30}{2}}=\sqrt{\frac{1+\frac{\sqrt{3}}{2}}{2}}=...=\frac{\sqrt{2+\sqrt{3}}}{2}</script>
+</p>
 <!-------------------------------------------------->
 
-<h2 id="formules-trigonometriques">Fòrmules trigonomètriques</h2>
-<h3 id="formules-senzilles">Fòrmules senzilles</h3>
-<h3 id="transformacio-de-sumes-en-productes">Transformació de sumes en productes</h3>
+<h2 id="transformacio-de-sumes-en-productes">Transformació de sumes en productes</h2>
 <!-------------------------------------------------->
 
 <h2 id="teoremes-del-sinus-i-del-cosinus">Teoremes del sinus i del cosinus</h2>
