@@ -465,6 +465,43 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <!-------------------------------------------------->
 
 <h2 id="transformacio-de-sumes-en-productes">Transformació de sumes en productes</h2>
+<p>A vegades ens pot interessar expressar les sumes de raons trigonomètriques de dos angles qualsevol en productes. Anem a deduir aquestes fórmules.</p>
+<p>Considerem les fórmules del sinus de la suma i de la diferència d'angles escrites anteriorment. Anem a sumar aquestes fórmules i també a restar-les. Obtenim, respectivament:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    sin (\alpha+\beta)+sin(\alpha-\beta)=2 sin \alpha cos \beta \\
+    sin (\alpha+\beta)-sin(\alpha-\beta)=2 cos \alpha sin \beta\\
+\end{align}</script>
+</p>
+<p>Fem el mateix amb les fórmules del cosinus de la suma i de la diferència d'angles:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    cos (\alpha+\beta)+cos(\alpha-\beta)=2 cos \alpha cos \beta \\
+    cos (\alpha+\beta)-cos(\alpha-\beta)=-2 sin \alpha sin \beta\\
+\end{align}</script>
+</p>
+<p>Ara proposem  un canvi de base en aquestes equacions. Anomenem:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\alpha+\beta=A \Rightarrow \alpha=\frac{A+B}{2} \\
+\alpha-\beta=B \Rightarrow \beta=\frac{A-B}{2} \\
+\end{align}</script>
+</p>
+<p>Substituïm <script type="math/tex">\alpha</script> i <script type="math/tex">\beta</script> pels seus respectius valors a les 4 equacions de dalt i obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    sin A + sin B = 2 sin (\frac{A+B}{2}) \cdot cos (\frac{A-B}{2}) \\
+    sin A - sin B = 2 cos (\frac{A+B}{2}) \cdot sin (\frac{A-B}{2}) \\
+    cos A + cos B = 2 cos (\frac{A+B}{2}) \cdot cos (\frac{A-B}{2}) \\
+    cos A - cos B = -2 sin (\frac{A+B}{2}) \cdot sin (\frac{A-B}{2}) \\
+\end{align}</script>
+</p>
+<p><strong>Exemple 4</strong></p>
+<p>Calcula el valor exacte de <script type="math/tex">sin 105^o -sin 15^o</script>.</p>
+<p>Per fer-ho apliquem la fórmula de la diferència de sinus de dos angles <script type="math/tex">A</script> i <script type="math/tex">B</script> qualssevol. Obtenim:</p>
+<p>
+<script type="math/tex; mode=display">sin 105^o-sin 15^o=2 cos (\frac{105^o+15^o}{2}) \cdot sin (\frac{105^o-15^o}{2})= 2 cos 60^o sin 45^o=2 \frac{1}{2} \frac{\sqrt{2}}{2}=\frac{\sqrt{2}}{2}</script>
+</p>
 <!-------------------------------------------------->
 
 <h2 id="teoremes-del-sinus-i-del-cosinus">Teoremes del sinus i del cosinus</h2>
