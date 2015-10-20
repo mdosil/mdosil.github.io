@@ -150,11 +150,13 @@
         
             <li><a href="#raons-trigonometriques-de-langle-suma-i-langle-diferencia">Raons trigonomètriques de l'angle suma i l'angle diferència</a></li>
         
+            <li><a href="#sinus-i-cosinus-de-langle-doble">Sinus i cosinus de l'angle doble</a></li>
+        
+            <li><a href="#sinus-i-cosinus-de-langle-meitat">Sinus i cosinus de l'angle meitat</a></li>
+        
             <li><a href="#transformacio-de-sumes-en-productes">Transformació de sumes en productes</a></li>
         
-            <li><a href="#teoremes-del-sinus-i-del-cosinus">Teoremes del sinus i del cosinus</a></li>
-        
-            <li><a href="#problemes">Problemes</a></li>
+            <li><a href="#teoremes-del-cosinus-i-del-sinus">Teoremes del cosinus i del sinus</a></li>
         
     
     </ul>
@@ -416,7 +418,7 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <script type="math/tex">cos(\alpha - \beta)=cos \alpha \cdot cos \beta + sin \alpha \cdot sin \beta</script>
 </li>
 </ol>
-<h3 id="sinus-i-cosinus-de-langle-doble">Sinus i cosinus de l'angle doble</h3>
+<h2 id="sinus-i-cosinus-de-langle-doble">Sinus i cosinus de l'angle doble</h2>
 <p>A partir de les fòrmules anteriors puc calcular les fòrmules de l'angle doble. Si vull calcular les raons de l'angle <script type="math/tex">2\alpha</script> és el mateix que les fòrmules de l'angle suma substituïnt <script type="math/tex">\alpha+\beta</script> per <script type="math/tex">\alpha + \alpha=2\alpha</script>:</p>
 <p>
 <script type="math/tex; mode=display">sin (2\alpha)=sin \alpha \cdot cos \alpha+ cos \alpha \cdot sin \alpha=2sin \alpha cos \alpha</script>
@@ -428,7 +430,7 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 <script type="math/tex; mode=display">sin 90=2 sin 45 cos 45= 2 \frac{\sqrt{2}}{2}\frac{\sqrt{2}}{2}=1</script>
 <script type="math/tex; mode=display">cos 90= cos^2 45- sin^2 45=(\frac{\sqrt{2}}{2})^2-(\frac{\sqrt{2}}{2})^2=0</script>
 </p>
-<h3 id="sinus-i-cosinus-de-langle-meitat">Sinus i cosinus de l'angle meitat</h3>
+<h2 id="sinus-i-cosinus-de-langle-meitat">Sinus i cosinus de l'angle meitat</h2>
 <p>Per trobar les fòrmules de l'angle meitat hem de partir de l'equació del cosinus de l'angle doble però substituïnt a tot arreu, <script type="math/tex">\alpha</script> per <script type="math/tex">\frac{\alpha}{2}</script>. Llavors obtenim el següent:</p>
 <p>
 <script type="math/tex; mode=display">cos \alpha=cos^2 \frac{\alpha}{2}-sin^2 \frac{\alpha}{2}</script>
@@ -504,12 +506,59 @@ Definim un punt <script type="math/tex">P(x,y)</script> sobre la circumferència
 </p>
 <!-------------------------------------------------->
 
-<h2 id="teoremes-del-sinus-i-del-cosinus">Teoremes del sinus i del cosinus</h2>
-<h3 id="teorema-del-sinus">Teorema del sinus</h3>
+<h2 id="teoremes-del-cosinus-i-del-sinus">Teoremes del cosinus i del sinus</h2>
 <h3 id="teorema-del-cosinus">Teorema del cosinus</h3>
-<!-------------------------------------------------->
-
-<h2 id="problemes">Problemes</h2></div>
+<p>Considerem el triangle següent:</p>
+<p><img alt="*Teorema del cosinus*" src="../img/teorema_cosinus_2.png" /></p>
+<p>Apliquem el Teorema de Pitàgores al triangle rectangle de la dreta:</p>
+<p>
+<script type="math/tex; mode=display">a^2=e^2+f^2 \Rightarrow e^2=a^2-f^2</script>
+</p>
+<p>L'apliquem també al triangle rectangle de la dreta:</p>
+<p>
+<script type="math/tex; mode=display">c^2=e^2+(b-f)^2\Rightarrow c^2=e^2+b^2+f^2-2bf</script>
+</p>
+<p>Si substituïm el valor de <script type="math/tex">e</script> de la primera equació a la segona:</p>
+<p>
+<script type="math/tex; mode=display">c^2=a^2-f^2+b^2+f^2-2bf \Rightarrow c^2=a^2+b^2-2bf </script>
+</p>
+<p>Finalment expressem <script type="math/tex">f=a \cdot cos C</script> i tenim:</p>
+<p>
+<script type="math/tex; mode=display">c^2=a^2+b^2-2ab cos C</script>
+</p>
+<p>Això és:</p>
+<blockquote>
+<p>El quadrat d'un costat és la suma dels quadrats dels altres dos costats menys dues vegades el producte dels altres costats per el cosinus de l'angle que formen.</p>
+</blockquote>
+<h3 id="teorema-del-sinus">Teorema del sinus</h3>
+<p>Considerem el triangle següent:</p>
+<p><img alt="*Teorema del sinus*" src="../img/teorema_sinus_2.png" /></p>
+<p>Podem afirmar que:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} h=b sin A \\ h=a sin B
+\end{cases}</script>
+</p>
+<p>i d'aquí se'n dedueix:</p>
+<p>
+<script type="math/tex; mode=display">b sin A=a sin B \Rightarrow \frac{b}{sinB}=\frac{a}{sinA}</script>
+</p>
+<p>si fem el mateix amb <script type="math/tex">h \prime</script> obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} h \prime=a sin C \\ h \prime =c sin A
+\end{cases}</script>
+</p>
+<p>i d'aquí se'n dedueix:</p>
+<p>
+<script type="math/tex; mode=display">a sin C=c sin A \Rightarrow \frac{a}{sinA}=\frac{c}{sinC}</script>
+</p>
+<p>Per tant, ja tenim el teorema del sinus:</p>
+<p>
+<script type="math/tex; mode=display">\frac{a}{sinA}=\frac{b}{sinB}=\frac{c}{sinC}</script>
+</p>
+<p>Això és:</p>
+<blockquote>
+<p>Els quocients entre qualsevol costat d'un triangle i el sinus del seu angle oposat són iguals.</p>
+</blockquote></div>
         </div>
 
         <footer class="col-md-12">
