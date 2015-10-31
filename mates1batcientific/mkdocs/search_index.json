@@ -107,13 +107,43 @@
         },
         {
             "location": "/temes/complexos/",
-            "text": "Tema 3: Nombres complexos",
+            "text": "Tema 3: Nombres complexos\n\n\nNombres imaginaris\n\n\nQu\u00e8 passa quan volem resoldre equacions del tipus: \nx^2+4=0\n? Fins ara d\u00e8iem que aquestes equacions no tenien soluci\u00f3, perqu\u00e8 l'arrel quadrada d'un nombre negatiu no existeix. De fet, el que vol\u00edem dir amb aix\u00f2 \u00e9s que en el conjunt dels nombres reals, les arrels negatives no estan definides.\n\n\n\u00c9s per aix\u00f2 que alg\u00fa va pensar de construir un conjunt de nombres on es puguin calcular arrels quadrades negatives i aix\u00ed ampliar el conjunt dels nombres reals. Aqu\u00ed \u00e9s doncs on apareixen els \nnombres imaginaris\n.\n\n\nPensem doncs en l'equaci\u00f3 m\u00e9s senzilla de segon grau que d\u00f3na com a resultat l'arrel quadrada d'un nombre negatiu:\n\n\n\n\nx^2+1=0 \\Rightarrow x^2=-1 \\Rightarrow x= \\pm \\sqrt{-1}\n\n\n\n\nSabem perfectament que \n\\sqrt{-1}\n no \u00e9s un nombre real. Diem que \n\\sqrt{-1}\n \u00e9s un nombre imaginari i el definim amb la lletra \ni\n:\n\n\n\n\n\n\ni=\\sqrt{-1}\n\n\n\n\n\n\nExemple 1\n\n\nCom solucionem doncs l'equaci\u00f3: \nx^2+4=0\n?\n\n\n\n\nx^2+4=0 \\Rightarrow x^2=-4 \\Rightarrow x= \\pm \\sqrt{-4} \\Rightarrow x=\\pm \\sqrt{4\\cdot (-1)} \\Rightarrow x=\\pm \\sqrt{4}\\cdot \\sqrt{-1} \\Rightarrow x= \\pm 2i\n\n\n\n\n\n\n\nEl conjunt dels nombres complexos\n\n\nAnem a veure ara quina seria la soluci\u00f3 de l'equaci\u00f3 \nx^2+2x+5=0\n:\n\n\n\n\nx=\\frac{-2 \\pm \\sqrt{4-4 \\cdot 1 \\cdot 5}}{2}=\\frac{-2 \\pm \\sqrt{-16}}{2}=\\frac{-2 \\pm \\sqrt{(-1)\\cdot 16}}{2}=\\frac{-2 \\pm \\sqrt{-1}\\cdot \\sqrt{16}}{2}=\\frac{-2 \\pm 4i}{2}= -1 \\pm 2i\n\n\n\n\nVeiem que la soluci\u00f3 d'aquesta equaci\u00f3 t\u00e9 una part real (\n-1\n) i una part imagin\u00e0ria (\n\\pm 2i\n). Aix\u00ed \u00e9s doncs com es defineix un nombre complex:\n\n\n\n\nUn nombre complex t\u00e9 la forma \na+bi\n, (\na,b \\in \\mathbb{R}\n) on \na\n \u00e9s la part real i \nb\n la part imagin\u00e0ria.\nEl \nPer tant, tamb\u00e9 podem dir que els nombres reals s\u00f3n nombres complexos els quals tenen \npart imagin\u00e0ria=0\n\n\n\n\nComplex conjugat\n\n\nPodem buscar tamb\u00e9 el complex conjugat d'un nombre \nz=a+bi\n. Es defineix com: \n\\bar{z}=a-bi\n. \n\n\n\n\n\nOperacions amb complexos\n\n\n\n\n\nRepresentaci\u00f3 dels nombres complexos en el pla\n\n\n\n\n\nFormes dels nombres complexos\n\n\nForma bin\u00f2mica\n\n\nForma polar\n\n\nForma trigonom\u00e8trica\n\n\n\n\n\nPot\u00e8ncies i radicaci\u00f3",
             "title": "3. Nombres complexos"
         },
         {
             "location": "/temes/complexos/#tema-3-nombres-complexos",
             "text": "",
             "title": "Tema 3: Nombres complexos"
+        },
+        {
+            "location": "/temes/complexos/#nombres-imaginaris",
+            "text": "Qu\u00e8 passa quan volem resoldre equacions del tipus:  x^2+4=0 ? Fins ara d\u00e8iem que aquestes equacions no tenien soluci\u00f3, perqu\u00e8 l'arrel quadrada d'un nombre negatiu no existeix. De fet, el que vol\u00edem dir amb aix\u00f2 \u00e9s que en el conjunt dels nombres reals, les arrels negatives no estan definides.  \u00c9s per aix\u00f2 que alg\u00fa va pensar de construir un conjunt de nombres on es puguin calcular arrels quadrades negatives i aix\u00ed ampliar el conjunt dels nombres reals. Aqu\u00ed \u00e9s doncs on apareixen els  nombres imaginaris .  Pensem doncs en l'equaci\u00f3 m\u00e9s senzilla de segon grau que d\u00f3na com a resultat l'arrel quadrada d'un nombre negatiu:   x^2+1=0 \\Rightarrow x^2=-1 \\Rightarrow x= \\pm \\sqrt{-1}   Sabem perfectament que  \\sqrt{-1}  no \u00e9s un nombre real. Diem que  \\sqrt{-1}  \u00e9s un nombre imaginari i el definim amb la lletra  i :    i=\\sqrt{-1}    Exemple 1  Com solucionem doncs l'equaci\u00f3:  x^2+4=0 ?   x^2+4=0 \\Rightarrow x^2=-4 \\Rightarrow x= \\pm \\sqrt{-4} \\Rightarrow x=\\pm \\sqrt{4\\cdot (-1)} \\Rightarrow x=\\pm \\sqrt{4}\\cdot \\sqrt{-1} \\Rightarrow x= \\pm 2i",
+            "title": "Nombres imaginaris"
+        },
+        {
+            "location": "/temes/complexos/#el-conjunt-dels-nombres-complexos",
+            "text": "Anem a veure ara quina seria la soluci\u00f3 de l'equaci\u00f3  x^2+2x+5=0 :   x=\\frac{-2 \\pm \\sqrt{4-4 \\cdot 1 \\cdot 5}}{2}=\\frac{-2 \\pm \\sqrt{-16}}{2}=\\frac{-2 \\pm \\sqrt{(-1)\\cdot 16}}{2}=\\frac{-2 \\pm \\sqrt{-1}\\cdot \\sqrt{16}}{2}=\\frac{-2 \\pm 4i}{2}= -1 \\pm 2i   Veiem que la soluci\u00f3 d'aquesta equaci\u00f3 t\u00e9 una part real ( -1 ) i una part imagin\u00e0ria ( \\pm 2i ). Aix\u00ed \u00e9s doncs com es defineix un nombre complex:   Un nombre complex t\u00e9 la forma  a+bi , ( a,b \\in \\mathbb{R} ) on  a  \u00e9s la part real i  b  la part imagin\u00e0ria.\nEl \nPer tant, tamb\u00e9 podem dir que els nombres reals s\u00f3n nombres complexos els quals tenen  part imagin\u00e0ria=0   Complex conjugat  Podem buscar tamb\u00e9 el complex conjugat d'un nombre  z=a+bi . Es defineix com:  \\bar{z}=a-bi .",
+            "title": "El conjunt dels nombres complexos"
+        },
+        {
+            "location": "/temes/complexos/#operacions-amb-complexos",
+            "text": "",
+            "title": "Operacions amb complexos"
+        },
+        {
+            "location": "/temes/complexos/#representacio-dels-nombres-complexos-en-el-pla",
+            "text": "",
+            "title": "Representaci\u00f3 dels nombres complexos en el pla"
+        },
+        {
+            "location": "/temes/complexos/#formes-dels-nombres-complexos",
+            "text": "Forma bin\u00f2mica  Forma polar  Forma trigonom\u00e8trica",
+            "title": "Formes dels nombres complexos"
+        },
+        {
+            "location": "/temes/complexos/#potencies-i-radicacio",
+            "text": "",
+            "title": "Pot\u00e8ncies i radicaci\u00f3"
         },
         {
             "location": "/temes/polinomis/",
