@@ -172,7 +172,7 @@
 <p>Sabem perfectament que <script type="math/tex">\sqrt{-1}</script> no és un nombre real. Diem que <script type="math/tex">\sqrt{-1}</script> és un nombre imaginari i el definim amb la lletra <script type="math/tex">i</script>:</p>
 <blockquote>
 <p>
-<script type="math/tex; mode=display">i=\sqrt{-1}</script>
+<script type="math/tex; mode=display">i=\sqrt{-1} \Rightarrow i^2=-1</script>
 </p>
 </blockquote>
 <p><strong>Exemple 1</strong></p>
@@ -191,16 +191,40 @@
 <blockquote>
 <p>Un nombre complex té la forma <script type="math/tex">a+bi</script>, (<script type="math/tex">a,b \in \mathbb{R}</script>) on <script type="math/tex">a</script> és la part real i <script type="math/tex">b</script> la part imaginària.
 El 
-Per tant, també podem dir que els nombres reals són nombres complexos els quals tenen <strong>part imaginària=0</strong></p>
+Per tant, també podem dir que els nombres reals són nombres complexos els quals tenen <strong>part imaginària=0</strong> .</p>
 </blockquote>
 <h3 id="complex-conjugat">Complex conjugat</h3>
 <p>Podem buscar també el complex conjugat d'un nombre <script type="math/tex">z=a+bi</script>. Es defineix com: <script type="math/tex">\bar{z}=a-bi</script>. </p>
 <!-------------------------------------------------->
 
 <h2 id="operacions-amb-complexos">Operacions amb complexos</h2>
+<h3 id="suma-i-diferencia">Suma i diferència</h3>
+<p>Per sumar dos nombres complexos sumem les parts reals i les parts imaginàries. Per restar dos nombres complexos, al primer li sumem l'oposat de l'altre.</p>
+<h3 id="producte">Producte</h3>
+<p>Per efectuar el producte apliquem la propietat commutativa.</p>
+<p><strong>Exemple 2</strong></p>
+<p>Siguin <script type="math/tex">z_1=3+5i</script> i <script type="math/tex">z_2=2-3i</script> dos nombres complexos. Calcula'n la suma, la diferència i el producte.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+z_1+z_2 &=3+5i+2-3i=5+2i \\
+z_1-z_2 &=3+5i-(2-3i)=3+5i-2+3i=1+8i \\
+z_1 \cdot z_2 &=(3+5i)\cdot(2-3i)= 6-9i+10i-15i^2=6+i-15 \cdot (-1)=21+i \\
+\end{align}</script>
+</p>
+<p>D'aquesta manera, ja veieu que si multipliquem dos imaginaris purs (part real=0) obtenim un nombre real: <script type="math/tex">5i \cdot 9i=45 i^2=-45</script>.</p>
+<p>Una altra cosa a destacar és que l'element neutre del producte (aquell nombre complex que multiplicant-lo per qualsevol nombre dóna el nombre mateix) és z_0=1+0i, o sigui, el nombre amb part real <script type="math/tex">1</script> i part imaginària <script type="math/tex">0</script>.</p>
+<h3 id="quocient">Quocient</h3>
+<p>Per dividir dos nombres complexos només cal tenir en compte quelcom semblant al que fèiem quan teníem expressions del tipus <script type="math/tex">\frac{1}{\sqrt{2}+1}</script>, que les racionalitzàvem multiplicant pel conjugat. Si dividim els dos nombres complexos de l'exemple 2 obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\frac{z_1}{z_2}=\frac{3+5i}{2-3i}= \frac{3+5i}{2-3i}\cdot \frac{2+3i}{2+3i}=\frac{6+9i+10i-15}{2^2-(3i)^2}=\frac{-9+19i}{4-9(-1)}=\frac{-9+19i}{13}=\frac{-9}{13}+\frac{19}{13}i</script>
+</p>
 <!-------------------------------------------------->
 
 <h2 id="representacio-dels-nombres-complexos-en-el-pla">Representació dels nombres complexos en el pla</h2>
+<p>Tal i com hem vist els nombres complexos tenen dues components, la part real i la part imaginària. És per això que no els podem representar a la recta, com els nombres reals, sinó que necessitem el pla. A l'eix de les abcisses hi posem la part real i a l'eix de les ordenades la part imaginària. Un nombre complex <script type="math/tex">z=a+bi</script> el representarem en el pla com el vector <script type="math/tex">(a,b)</script>.</p>
+<p><strong>Exemple 3</strong>
+Representa en el pla el nombre complex <script type="math/tex">z=3+5i</script>.
+<img alt="*Representació nombre complex*" src="../img/nombre_complex_3.png" /></p>
 <!-------------------------------------------------->
 
 <h2 id="formes-dels-nombres-complexos">Formes dels nombres complexos</h2>
