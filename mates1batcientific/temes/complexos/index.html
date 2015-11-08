@@ -152,9 +152,11 @@
         
             <li><a href="#representacio-dels-nombres-complexos-en-el-pla">Representació dels nombres complexos en el pla</a></li>
         
-            <li><a href="#formes-dels-nombres-complexos">Formes dels nombres complexos</a></li>
+            <li><a href="#forma-polar-dun-nombre-complex">Forma polar d'un nombre complex</a></li>
         
-            <li><a href="#potencies-i-radicacio">Potències i radicació</a></li>
+            <li><a href="#forma-trigonometrica">Forma trigonomètrica</a></li>
+        
+            <li><a href="#operacions-en-forma-polar">Operacions en forma polar</a></li>
         
     
     </ul>
@@ -193,6 +195,7 @@
 El 
 Per tant, també podem dir que els nombres reals són nombres complexos els quals tenen <strong>part imaginària=0</strong> .</p>
 </blockquote>
+<p>Aquesta forma s'anomena <strong>forma binòmica</strong> d'un nombre complex.</p>
 <h3 id="complex-conjugat">Complex conjugat</h3>
 <p>Podem buscar també el complex conjugat d'un nombre <script type="math/tex">z=a+bi</script>. Es defineix com: <script type="math/tex">\bar{z}=a-bi</script>. </p>
 <!-------------------------------------------------->
@@ -218,6 +221,26 @@ z_1 \cdot z_2 &=(3+5i)\cdot(2-3i)= 6-9i+10i-15i^2=6+i-15 \cdot (-1)=21+i \\
 <p>
 <script type="math/tex; mode=display">\frac{z_1}{z_2}=\frac{3+5i}{2-3i}= \frac{3+5i}{2-3i}\cdot \frac{2+3i}{2+3i}=\frac{6+9i+10i-15}{2^2-(3i)^2}=\frac{-9+19i}{4-9(-1)}=\frac{-9+19i}{13}=\frac{-9}{13}+\frac{19}{13}i</script>
 </p>
+<h3 id="potenciacio">Potenciació</h3>
+<p>Per elevar un nombre complex a una potència, farem:</p>
+<p>
+<script type="math/tex; mode=display">z^n=(a+bi)^n</script>
+</p>
+<p>on <script type="math/tex">n \in \mathbb{N}</script>. Llavors per desenvolupar l'expressió ens caldrà aplicar la fórmula del <a href="http://www.sangakoo.com/ca/temes/binomi-de-newton-i-triangle-de-pascal">binomi de Newton</a>.</p>
+<h4 id="potencies-de-i">Potències de <script type="math/tex">i</script>
+</h4>
+<p>Ja hem vist anteriorment que <script type="math/tex">i^2=1</script>. Anem a veure què valen altres potències successives de <script type="math/tex">i</script>.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+i^0&=1\\
+i^1&=i\\
+i^2&=-1\\
+i^3&=i^2 \cdot i= -1 \cdot i= -i\\
+i^4&=i^2 \cdot i^2=(-1)\cdot(-1)=1\\
+i^5&=i \cdot i^4=i\cdot(-1)=-i\\
+\end{align}</script>
+</p>
+<p>I així successivament. Cada 4 potències es va repetint la seqüència: <script type="math/tex">1</script>, <script type="math/tex">i</script>, <script type="math/tex">-1</script>, <script type="math/tex">-i</script>.</p>
 <!-------------------------------------------------->
 
 <h2 id="representacio-dels-nombres-complexos-en-el-pla">Representació dels nombres complexos en el pla</h2>
@@ -227,13 +250,92 @@ z_1 \cdot z_2 &=(3+5i)\cdot(2-3i)= 6-9i+10i-15i^2=6+i-15 \cdot (-1)=21+i \\
 <img alt="*Representació nombre complex*" src="../img/nombre_complex_3.png" /></p>
 <!-------------------------------------------------->
 
-<h2 id="formes-dels-nombres-complexos">Formes dels nombres complexos</h2>
-<h3 id="forma-binomica">Forma binòmica</h3>
-<h3 id="forma-polar">Forma polar</h3>
-<h3 id="forma-trigonometrica">Forma trigonomètrica</h3>
+<h2 id="forma-polar-dun-nombre-complex">Forma polar d'un nombre complex</h2>
+<p>Quan representàvem els nombres complexos en el pla vèiem que els podíem definir com un vector de components <script type="math/tex">(a,b)</script> i un angle amb l'eix x:</p>
+<p><img alt="*Forma polar*" src="../img/nombre_complex_forma_polar_3.png" /></p>
+<p>Per tant, el nombre complex també quedaria definit per el <a href="https://ca.wikipedia.org/wiki/Vector_(matem%C3%A0tiques)#M.C3.B2dul_d.27un_vector">mòdul</a> d'aquest vector i l'angle que forma amb l'eix x. Aquesta és la <strong>forma polar</strong> d'un nombre complex:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+z&=r_{\alpha}\\
+r&=|z|=|a+bi|=\sqrt{a^2+b^2} \\
+\alpha&=arctan(\frac{b}{a})\\
+ 0 &\le \alpha \le 2\pi\\
+\end{align}</script>
+</p>
+</blockquote>
+<p>Cal afegir, que si coneixem els signes de <script type="math/tex">a</script> i <script type="math/tex">b</script> podem determinar unívocament l'angle: </p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a>0, b>0 \Rightarrow 1 Q\\
+a<0, b>0 \Rightarrow 2 Q\\
+a<0, b<0 \Rightarrow 3 Q\\
+a>0, b<0 \Rightarrow 4 Q\\
+\end{align}</script>
+</p>
+<p>Per passar de forma polar a forma binòmica ens hem de fixar en el mateix dibuix:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+b&=r sin \alpha\\
+a&=r cos \alpha\\
+\end{align}</script>
+</p>
 <!-------------------------------------------------->
 
-<h2 id="potencies-i-radicacio">Potències i radicació</h2></div>
+<h2 id="forma-trigonometrica">Forma trigonomètrica</h2>
+<p>Un cop hem trobat la forma polar, també tenim la forma trigonoomètrica. Si ens fixem en l'expressió anterior i la substituïm a la forma binòmica de nombre complex tenim:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">z=a+bi=r cos \alpha+ r sin \alpha \cdot i=r(cos \alpha+i sin \alpha)</script>
+</p>
+</blockquote>
+<h2 id="operacions-en-forma-polar">Operacions en forma polar</h2>
+<h3 id="multiplicacio">Multiplicació</h3>
+<p>Per multiplicar dos nombres complexos en forma polar, es multipliquen els mòduls i se sumen els arguments. Considerem els nombre complexos: <script type="math/tex">z_1=r_{\alpha}</script> i <script type="math/tex">z_2=s_{\beta}</script>. Anem a fer el producte. Per multiplicar els termes els expressarem en forma trigonomètrica:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+z_1 \cdot z_2&=r_{\alpha}\cdot s_{\beta}= r(cos \alpha+i sin \alpha)\cdot s(cos \beta+i sin \beta)=\\
+&=r\cdot s (cos \alpha cos \beta+i cos \alpha sin \beta + i sin \alpha cos \beta - sin \alpha sin \beta)= \\
+&=r\cdot s \big[  (cos \alpha cos \beta - sin \alpha sin \beta) +i (cos \alpha sin \beta + sin \alpha cos \beta) \big] \\
+&=r\cdot s \big[  (cos (\alpha + \beta) +i sin ( \alpha + \beta) \big] \\
+\end{align}</script>
+</p>
+<p>Això últim ho podem expressar com un nou nombre complex, el nombre complex producte, de mòdul <script type="math/tex">r\cdot s</script> i argument <script type="math/tex">\alpha+ \beta</script>. Per tant, per multiplicar dos nombres complexos en forma polar cal multiplicar els mòduls i sumar els arguments:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">z_1 \cdot z_2= (r \cdot s)_{\alpha+\beta} </script>
+</p>
+</blockquote>
+<h3 id="divisio">Divisió</h3>
+<p>De la mateixa manera es pot demostrar que per dividir dos nombres complexos en forma polar només cal dividir els mòduls i restar els arguments:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\frac{z_1}{z_2}= \big(\frac{r}{s}\big)_{\alpha-\beta} </script>
+</p>
+</blockquote>
+<h3 id="potenciacio_1">Potenciació</h3>
+<p>Fer elevar un nombre complex <script type="math/tex">z=r_\alpha</script> a un exponent <script type="math/tex">n</script> equival a multiplicar aquest nombre <script type="math/tex">n</script> vegades per ell mateix:</p>
+<p>
+<script type="math/tex; mode=display">z^n=z\cdot z\cdot z\cdot ....z=r_\alpha \cdot r_\alpha \cdot r_\alpha \cdot ...r_\alpha \cdot=(r \cdot r \cdot r \cdot ... r)_{\alpha + \alpha + \alpha + ... \alpha}=r^{n}_{n \alpha}</script>
+</p>
+<p>Per tant, per elevar un nombre complex expressat en forma polar a una potència <script type="math/tex">n</script> només cal elevar el mòdul a aquesta potència i multiplicar l'argument per <script type="math/tex">n</script>.</p>
+<p>i si ho expressem de forma trigonomètrica obtenim la <a href="https://es.wikipedia.org/wiki/F%C3%B3rmula_de_De_Moivre"><strong>fòrmula de Moivre</strong></a>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">(cos \alpha + i sin \alpha)^n=cos(n \alpha)+i sin (n \alpha)</script>
+</p>
+</blockquote>
+<p>Per tant, és molt més fàcil calcular les potències dels nombres complexos fent servir la forma polar i no la forma trigonomètrica.</p>
+<h3 id="radicacio">Radicació</h3>
+<p>La radicació és l'operació inversa de la potenciació. Volem calcular l'arrel <script type="math/tex">n</script>-èssima d'un nombre complex: <script type="math/tex">\sqrt[n]{r_{\alpha}}</script>. Definim <script type="math/tex">s_{\beta}</script> com aquesta arrel <script type="math/tex">n</script>-èssima. Es compleix per tant:</p>
+<p>
+<script type="math/tex; mode=display">s_{\beta} \equiv \sqrt[n]{r_{\alpha}}\Rightarrow r_{\alpha}=(s_\beta)^n \Rightarrow r_{\alpha}=s^n_{n \beta}</script>
+</p>
+<p>Anem a resoldre ara aquesta equació. Igualem per separat els mòduls i els arguments dels 2 nombres complexos:</p>
+<p>
+<script type="math/tex; mode=display">s_{\beta} \Rightarrow \begin{cases} r=s^n &\rightarrow s=\sqrt[n]{r} \\ 
+n \beta= \alpha + 360 k & \beta= \frac{\alpha+360k}{n} & k \in \mathbb{N} \end{cases} </script>
+</p></div>
         </div>
 
         <footer class="col-md-12">
