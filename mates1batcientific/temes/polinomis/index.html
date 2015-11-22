@@ -144,12 +144,241 @@
     
         <li class="main active"><a href="#tema-4-polinomis">Tema 4: Polinomis</a></li>
         
+            <li><a href="#generalitats">Generalitats</a></li>
+        
+            <li><a href="#operacions-amb-polinomis">Operacions amb polinomis</a></li>
+        
+            <li><a href="#identitats-notables-binomi-de-newton">Identitats notables. Binomi de Newton</a></li>
+        
+            <li><a href="#teorema-del-residu">Teorema del residu</a></li>
+        
+            <li><a href="#arrels-dun-polinomi">Arrels d'un polinomi</a></li>
+        
+            <li><a href="#factoritzacio-de-polinomis">Factorització de polinomis</a></li>
+        
+            <li><a href="#mcd-i-mcm-de-dos-polinomis">mcd i mcm de dos polinomis</a></li>
+        
+            <li><a href="#fraccions-algebraiques">Fraccions algebraiques</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-4-polinomis">Tema 4: Polinomis</h1></div>
+<h1 id="tema-4-polinomis">Tema 4: Polinomis</h1>
+<h2 id="generalitats">Generalitats</h2>
+<p>Un <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_polinomios-JS/index.htm">polinomi</a> és una expressió algebraica que consisteix en una suma de <strong>termes</strong>. Cadascun dels termes, anomenats <strong>monomis</strong>, està format per una o més incògnites elevades a una potència i multiplicades per un nombre anomenat <strong>coeficient</strong>.</p>
+<h3 id="parts-dun-polinomi-tipus-de-polinomis">Parts d'un polinomi. Tipus de polinomis.</h3>
+<ol>
+<li><strong>Grau</strong>: és el terme que té l'exponent més gran del polinomi.</li>
+<li><strong>Terme independent</strong>: és el terme que no té incògnita.</li>
+<li><strong>Polinomi ordenat</strong>: és aquell que els seus termes estan ordenats en grau decreixent.</li>
+<li><strong>Polinomi complet</strong>: és aquell que començant pel terme de grau més gran, té tots els termes de grau inferior fins arribar al terme independent.</li>
+<li><strong>Polinomi oposat</strong>: és el polinomi que obtenim quan canviem de signe tots els termes d'un polinomi.</li>
+</ol>
+<!-------------------------------------------------->
+
+<h2 id="operacions-amb-polinomis">Operacions amb polinomis</h2>
+<p>Recordarem aquí les operacions bàsiques entre polinomis a través d'un exemple.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Donats els polinomis: <script type="math/tex">P(x)=4x^5+2x+1</script> i <script type="math/tex">Q(x)=2x^5+6x^2+3x</script> calcula:</p>
+<ol>
+<li>
+<script type="math/tex">P(x)+Q(x)</script>
+</li>
+<li>
+<script type="math/tex">P(x)+Q(x)</script>
+</li>
+<li>
+<script type="math/tex">P(x)\cdot Q(x)</script>
+</li>
+<li>
+<script type="math/tex">P(3)</script>
+</li>
+<li>
+<script type="math/tex">P(x) \div (2x-1)</script>
+</li>
+<li>
+<script type="math/tex">P(x) \div (x-2)</script>
+</li>
+</ol>
+<p>
+<script type="math/tex">P(x)+Q(x)=4x^5+2x+1+2x^5+6x^2+3x=6x^5+6x^2+5x+1</script>
+</p>
+<p>
+<script type="math/tex">P(x)-Q(x)=4x^5+2x+1-(2x^5+6x^2+3x)=2x^5-6x^2-x+1</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    P(x) \cdot Q(x)&=(4x^5+2x+1)\cdot(2x^5+6x^2+3x)\\
+    &=8x^{10}+24x^7+12x^6+4x^6+12x^3+6x^2+2x^5+6x^2+3x\\
+    &=8x^{10}+24x^7+16x^6+2x^5+12x^3+12x^2+3x
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">P(3)=4 \cdot 3^5+2 \cdot 3+1=979</script>
+</p>
+<p>
+<script type="math/tex">P(x) \div (2x-1)</script>
+</p>
+<p><img alt="*Divisió polinomis*" src="../img/divisio_polinomis_4.png" /></p>
+<p>
+<script type="math/tex">P(x) \div (x-2)</script>
+</p>
+<p>Per fer aquesta divisió utilitzarem la <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_polinomios-JS/quincena3_contenidos_4a.htm">regla de Ruffini</a> que vam veure l'any passat, que ens permet dividir un polinomi per un altre del tipus <script type="math/tex">(x-a)</script> d'una manera molt més ràpida:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{array}{c|r r r r r}
+ & 4 & 0 & 0 & 2 & 1 \\
+ &  &  &  & \\
+2 &  & 8 & 16 & 32 & 68 \\
+\hline
+ & 4 & 8 & 16 & 34 &\boxed{64}
+\end{array}
+</script>
+</p>
+<p>Per tant, el quocient de dividir <script type="math/tex">P(x)</script> per <script type="math/tex">(x-2)</script> és <script type="math/tex">Q(x)=4x^4+8x^3+16 x^2+34</script> i el residu <script type="math/tex">64</script>.</p>
+<!-------------------------------------------------->
+
+<h2 id="identitats-notables-binomi-de-newton">Identitats notables. Binomi de Newton</h2>
+<h3 id="identitats-notables">Identitats notables</h3>
+<p>Recordem un moment les identitats notables de cursos passats:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    (a+b)^2&=a^2+b^2+2ab\\
+    (a-b)^2&=a^2+b^2-2ab\\
+    (a+b)\cdot &(a-b)=a^2-b^2
+\end{align}</script>
+</p>
+<h3 id="binomi-de-newton">Binomi de Newton</h3>
+<p>El binomi de Newton ens permet calcular expressions del tipus <script type="math/tex">(a+b)^n</script>, <script type="math/tex">n > 2</script>. Per fer-ho cal construir el <a href="https://ca.wikipedia.org/wiki/Triangle_de_Tartaglia">Triangle de Pascal o de Tartaglia</a>, que ens donarà els coeficients de cadascun dels termes quan desenvolupem el binomi:</p>
+<p>
+<script type="math/tex; mode=display">\begin{matrix}
+    &&&&&1\\
+    &&&&1&&1\\
+    &&&1&&2&&1\\
+    &&1&&3&&3&&1\\
+    &1&&4&&6&&4&&1\\
+    1&&5&&10&&10&&5&&1
+    \end{matrix}</script>
+</p>
+<p>La primera fila correspon <script type="math/tex">n=0</script> i així successivament. Comencem el triangle amb tres <script type="math/tex">1</script> i llavors cada element de la fila següent s'obté sumant els dos elements de la fila superior.</p>
+<p>Per desenvolupar el binomi, ara ja tenim els coeficients dels termes. Començarem per elevar a la màxima potència el primer element del binomi (<script type="math/tex">a</script>) i el segon (<script type="math/tex">b</script> l'elevarem a zero. Anirem disminuint l'exponent del primer terme i augmentant el del segon terme tal i com es mostra a l'exemple següent:</p>
+<p><strong>Exemple 2</strong></p>
+<p>Calcula <script type="math/tex">(x+3)^5</script>. Si mirem el triangle, per <script type="math/tex">n=5</script> els coeficients són: <script type="math/tex">1</script>, <script type="math/tex">5</script>, <script type="math/tex">10</script>, <script type="math/tex">5</script>, <script type="math/tex">1</script>. Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+(x+3)^5&=1x^5 3^0+5x^4 3^1+10 x^3 3^2+10 x^2 3^3+ 5 x^1 3^4+1x^0 3^5\\
+&=x^5+15x^4+90x^3+270 x^2+405 x+243
+\end{align}</script>
+</p>
+<!-------------------------------------------------->
+
+<h2 id="teorema-del-residu">Teorema del residu</h2>
+<blockquote>
+<p>El residu de dividir un polinomi <script type="math/tex">P(x)</script> per <script type="math/tex">(x-a)</script> és igual a <script type="math/tex">P(a)</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Si dividim <script type="math/tex">P(x)</script> per <script type="math/tex">(x-a)</script> obtenim un polinomi quocient <script type="math/tex">Q(x)</script>  i un reste <script type="math/tex">R</script> de grau 0 (ja que el divisor té grau 1). Si apliquem la prova de la divisió es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">P(x)=Q(x) \cdot (x-a)+R \Rightarrow P(a)=Q(a) \cdot (a-a)+R \Rightarrow P(a)=R</script>
+</p>
+<p><strong>Exemple 3</strong></p>
+<p>Quin és el residu de dividir <script type="math/tex">P(x)=4x^5+2x+1</script> per <script type="math/tex">x+1</script>?</p>
+<p>Podem entendre <script type="math/tex">x+1</script> com <script type="math/tex">x+(-1)</script>. Per tant, per saber el residu de la divisió només ens cal calcular <script type="math/tex">P(-1)</script>:</p>
+<p>
+<script type="math/tex; mode=display">P(-1)=4(-1)^5+2(-1)+1=-5</script>
+</p>
+<p>El residu és per tant, <script type="math/tex">-5</script>.</p>
+<!-------------------------------------------------->
+
+<h2 id="arrels-dun-polinomi">Arrels d'un polinomi</h2>
+<p>Diem que <script type="math/tex">a</script> és <strong>arrel</strong> de <script type="math/tex">P(x)</script> si el residu de dividir <script type="math/tex">P(x)</script> per <script type="math/tex">(x-a)</script> és <script type="math/tex">0</script>. De fet, això és el mateix que dir que <script type="math/tex">P(x)</script> és <strong>divisible</strong> per <script type="math/tex">(x-a)</script>. </p>
+<p>D'altra banda, dir que <script type="math/tex">a</script> és arrel d'un polinomi és equivalent que dir que <script type="math/tex">a</script> és solució de l'equació <script type="math/tex">P(x)=0</script>. Anem-ho a veure. Com que el residu és zero, si apliquem la prova de la divisió obtenim:</p>
+<p>
+<script type="math/tex; mode=display">P(x)=(x-a)\cdot Q(x)</script>
+</p>
+<p>Si igualem ara <script type="math/tex">P(x)</script> a zero obtenim:</p>
+<p>
+<script type="math/tex; mode=display">(x-a)\cdot Q(x)=0 \begin{cases} x=a \\ Q(x)=0
+\end{cases}</script>
+</p>
+<p>A més, i aplicant el teorema del residu, també es complirà que <script type="math/tex">P(a)=0</script>.</p>
+<p>Així doncs, resumint, tenim que les afirmacions següents són equivalents:</p>
+<blockquote>
+<ol>
+<li>
+<script type="math/tex">a</script> és arrel de <script type="math/tex">P(x)</script>
+</li>
+<li>
+<script type="math/tex">P(x)</script> és divisible per <script type="math/tex">(x-a)</script>
+</li>
+<li>
+<script type="math/tex">P(a)=0</script>
+</li>
+<li>
+<script type="math/tex">a</script> és solució de <script type="math/tex">P(x)=0</script>
+</li>
+</ol>
+</blockquote>
+<p>Es pot demostrar també que:</p>
+<blockquote>
+<p>Si <script type="math/tex">a</script> és arrel entera de <script type="math/tex">P(x) \Rightarrow</script>
+<script type="math/tex">a</script> és <strong>divisor del terme independent</strong> del polinomi. </p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Considerem el polinomi <script type="math/tex">P(x)=a_n x^n+ a_{n-1} x^{n-1}+...+a_1 x+a_0</script>. Sigui <script type="math/tex">b</script> arrel de <script type="math/tex">P(x)</script> llavors es compleix:</p>
+<p>
+<script type="math/tex; mode=display">P(b)=a_n b^n+a_{n-1}b^{n-1}+...+a_1 b+a_0=0</script>
+</p>
+<p>si aïllem <script type="math/tex">a_0</script> i traiem factor comú a l'altre costat de la igualtat obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    a_0&=-a_n b^n-a_{n-1}b^{n-1}-...-a_1 b\\
+    &=b\cdot(-a_n b^{n-1}-a_{n-1} b^{n-1}-...-a_1)
+\end{align}</script>
+</p>
+<p>per tant, <script type="math/tex">b</script> és nessàriament múltiple del terme independent <script type="math/tex">a_0</script>.</p>
+<h3 id="calcul-de-les-arrels-dun-polinomi">Càlcul de les arrels d'un polinomi</h3>
+<p>Tal i com hem vist, calcular les arrels d'un polinomi <script type="math/tex">P(x)</script> és equivalent a resoldre l'equació <script type="math/tex">P(x)=0</script>. En general, i pel <a href="https://ca.wikipedia.org/wiki/Teorema_fonamental_de_l%27%C3%A0lgebra">teorema fonamental de l'àlgebra</a>, se sap que un polinomi té tantes arrels com grau té el polinomi. Com que nosaltres només buscarem arrels enteres, un polinomi de grau <script type="math/tex">n</script> tindrà com a màxim <script type="math/tex">n</script> arrels enteres.</p>
+<h4 id="el-grau-de-px-3">El grau de <script type="math/tex">P(x) < 3</script>
+</h4>
+<p>En aquest cas, solucionarem l'equació de primer grau o de segon grau que se'n deriva. Les arrels del polinomi són les solucions de l'equació de segon grau. </p>
+<h4 id="el-grau-de-px3">El grau de <script type="math/tex">P(x)>3</script>
+</h4>
+<p>Llavors haurem d'aplicar altres tècniques per trobar les arrels. Tal i com hem vist, aquestes arrels seran divisors del terme independent (el contrari no és cert, els divisors del terme independent d'un polinomi no sempre són arrels). </p>
+<p>Una manera de fer-ho seria trobar totes les arrels del polinomi i llavors provar si el valor numèric del polinomi per cadascuna d'elles és zero. A la pràctica aquest mètode és una mica feixuc i el que fem és, un cop tenim els divisors del terme independent, dividim <script type="math/tex">P(x)</script> per cadascun d'ells amb Ruffini, i si el residu ens dóna zero, això voldrà dir que són arrels del polinomi. En aquest procés, quan arribem a un polinomi de grau 2, llavors resulta més ràpid resoldre l'equació de segon grau que se'n deriva.</p>
+<p><strong>Exemple 4</strong></p>
+<p>Troba les arrels de <script type="math/tex">P(x)=x^3-6x^2+11x-6</script>
+</p>
+<p>Anem a veure quins són els divisors del terme independent: <script type="math/tex">\pm 1</script>, <script type="math/tex">\pm 2</script>, <script type="math/tex">\pm 3</script>, <script type="math/tex">\pm 6</script>.</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{array}{c|r r r r}
+ & 1 & -6 & 11 & -6 \\
+ &  &  &  & \\
+1 &  & 1 & -5 & 6 \\
+\hline
+ & 1 & -5 & 6 & \boxed{0}
+\end{array}
+</script>
+</p>
+<p>Arribats en aquest punt, veiem que 1 és arrel. Podríem continuar fent Ruffini amb els candidats restants, però com que el quocient és un polinomi de segon grau, <script type="math/tex">x^2-5x+6</script> és més fàcil solucionar l'equació de segon grau i trobar les arrels:</p>
+<p>
+<script type="math/tex; mode=display">x^2-5x+6=0 \begin{cases} x=3 \\ x=2
+\end{cases}</script>
+</p>
+<p>Per tant,<script type="math/tex">P(x)</script> té 3 arrels enteres: <script type="math/tex">1</script>, <script type="math/tex">2</script> i <script type="math/tex">3</script>, i això vol dir que és divisible per <script type="math/tex">(x-1)</script>, <script type="math/tex">(x-2)</script> i <script type="math/tex">(x-3)</script>.</p>
+<!-------------------------------------------------->
+
+<h2 id="factoritzacio-de-polinomis">Factorització de polinomis</h2>
+<!-------------------------------------------------->
+
+<h2 id="mcd-i-mcm-de-dos-polinomis">mcd i mcm de dos polinomis</h2>
+<!-------------------------------------------------->
+
+<h2 id="fraccions-algebraiques">Fraccions algebraiques</h2></div>
         </div>
 
         <footer class="col-md-12">
