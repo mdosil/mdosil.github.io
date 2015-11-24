@@ -373,12 +373,51 @@
 <!-------------------------------------------------->
 
 <h2 id="factoritzacio-de-polinomis">Factorització de polinomis</h2>
+<p>Factoritzar un polinomi consisteix en descomposar-lo com a producte de polinomis de grau menor. Per fer-ho, seguirem els passos següents:</p>
+<ol>
+<li>
+<p><strong>Treure factor comú</strong></p>
+<p>Mirarem primer si podem extreure algun factor numèric o de variable a davant del polinomi. Per exemple, donat el polinomi <script type="math/tex">P(x)=4x^4-2x^3+6x</script>, el podem començar a factoritzar com: <script type="math/tex">P(x)=2x(2x^3-x^2+3)</script>.</p>
+</li>
+<li>
+<p><strong>Identitats notables</strong></p>
+<p>A vegades a simple vista, veiem que una expressió algebraica correspon a una de les tres identitats notables. Exemple, si hem de fatoritzar <script type="math/tex">P(x)=4x^4-20x^2+25</script>, primer mirarem si ho podem expressar com una identitat notable. Aquest cas és molt clar i el podem expressar com: <script type="math/tex">P(x)=(2x^2-5)^2</script>
+</p>
+</li>
+<li>
+<p><strong>Arrels del polinomi</strong></p>
+<p>Un cop hem comprovat els dos estadis anteriors, prosseguirem a trobar les arrels del polinomi tal i com hem vist en l'apartat anterior. Vam veure que si <script type="math/tex">x=a</script> és arrel de <script type="math/tex">P(x)</script> llavors <script type="math/tex">P(x)</script> era divisible per <script type="math/tex">(x-a)</script>. Això vol dir que puc expressar <script type="math/tex">P(x)</script> com a producte d'un factor <script type="math/tex">(x-a)</script> i un <script type="math/tex">Q(x)</script>. Aquest quocient pot tenir més arrels i el podem seguir descomposant. La idea és descomposar un polinomi de grau <script type="math/tex">n</script> com a producte de polinomis de grau 1 amb factors del tipus <script type="math/tex">(x-a)</script>.</p>
+</li>
+</ol>
+<p><strong>Exemple 5</strong></p>
+<p>Factoritza el polinomi <script type="math/tex">P(x)=x^7-x^6-4x^4</script>.</p>
+<p>Comprovem que podem treure factor comú:</p>
+<p>
+<script type="math/tex; mode=display">P(x)=x^7-x^6-4x^4=x^4(x^3-x^2-4)</script>.</p>
+<p>Anem a factoritzar ara el segon factor: <script type="math/tex">x^3-x^2-4</script>. Veiem que no correspon a cap identitat notable. El pas següent és mirar els divisors del terme independent i provar quins són arrels del polinomi. </p>
+<p>Divisors del terme independent: <script type="math/tex">\pm 1</script>, <script type="math/tex">\pm 2</script>, <script type="math/tex">\pm 4</script>. Provem cada cas, o bé per Ruffini comprovant que el residu de fer la divisió de <script type="math/tex">x^3-x^2-4</script> per <script type="math/tex">(x-a)</script> és zero o bé aplicant el Teorema del Residu i calculant el valor numèric del polinomi quan <script type="math/tex">x=a</script>. Si ho fem, veiem que només quan <script type="math/tex">a=2</script> el residu esdevé zero:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{array}{c|r r r r}
+ & 1 & -1 & 0 & -4 \\
+ &  &  &  & \\
+2 &  & 2 & 2 & 4 \\
+\hline
+ & 1 & 1 & 2 & \boxed{0}
+\end{array}
+</script>
+</p>
+<p>Com que hem comprovat totes les altres possibles arrels i el residu no ens ha donat zero, aquest polinomi no es pot descomposar més. Per tant, la descomposició en factors de <script type="math/tex">P(x)</script> esdevé:</p>
+<p>
+<script type="math/tex; mode=display">P(x)=x^4(x-2)(x^2+x+2)</script>
+</p>
 <!-------------------------------------------------->
 
 <h2 id="mcd-i-mcm-de-dos-polinomis">mcd i mcm de dos polinomis</h2>
 <!-------------------------------------------------->
 
-<h2 id="fraccions-algebraiques">Fraccions algebraiques</h2></div>
+<h2 id="fraccions-algebraiques">Fraccions algebraiques</h2>
+<p><strong>Exemple 5</strong></p></div>
         </div>
 
         <footer class="col-md-12">
