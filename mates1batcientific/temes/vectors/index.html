@@ -144,12 +144,134 @@
     
         <li class="main active"><a href="#tema-5-vectors-en-el-pla">Tema 5: Vectors en el pla</a></li>
         
+            <li><a href="#conceptes">Conceptes</a></li>
+        
+            <li><a href="#operacions-amb-vectors">Operacions amb vectors</a></li>
+        
+            <li><a href="#combinacio-lineal-entre-vectors">Combinació lineal entre vectors</a></li>
+        
+            <li><a href="#bases-en-el-pla">Bases en el pla</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-5-vectors-en-el-pla">Tema 5: Vectors en el pla</h1></div>
+<h1 id="tema-5-vectors-en-el-pla">Tema 5: Vectors en el pla</h1>
+<h2 id="conceptes">Conceptes</h2>
+<h3 id="definicio">Definició</h3>
+<p>Un vector és un segment en el pla que determina una <em>direcció</em>, una <em>mòdul</em> o <em>magnitud</em> i un <em>sentit</em>. La direcció ve determinada per la recta sobre la qual es troba el vector, la magnitud és la llargada d'aquest vector i el sentit és, per entendre'ns, la punta de la fletxa del vector.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2240083/width/1600/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<h3 id="components-cartesianes-dun-vector">Components cartesianes d'un vector</h3>
+<p>Donats dos punts <script type="math/tex">A=(a_1,a_2)</script> i <script type="math/tex">B=(b_1,b_2)</script> en el pla definim el vector <script type="math/tex">\vec{AB}</script> com el segment que té origen en <script type="math/tex">A</script> i final en <script type="math/tex">B</script>, tal i com hem vist a la figura anterior. Les coordenades del vector les calculem de la manera següent:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{AB}=(b_1-a_1,b_2-a_2)</script>
+</p>
+</blockquote>
+<p>El mòdul o llargada del vector,<script type="math/tex">|\vec{AB}|</script>,   el calculem aplicant el teorema de Pitàgores al triangle rectangle que defineix:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">|\vec{AB}|=\sqrt{(b_1-a_1)^2+(b_2-a_2)^2}</script>
+</p>
+</blockquote>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2240083/width/1600/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<h3 id="vectors-equipollents">Vectors equipol.lents</h3>
+<p>Dos vectors són equipol.lents si tenen la mateixa direcció, mòdul i sentit. En definitiva, si tenen les mateixes coordenades. A la pràctica, els vectors equipol.lents són paral.lels en el pla i podem passar de l'un a l'altre amb un senzill moviment de translació.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Considera els punts en el pla <script type="math/tex">A(2,4)</script>, <script type="math/tex">B(13,7)</script>, <script type="math/tex">C(1,2)</script> i <script type="math/tex">D(12,5)</script>. Dibuixa els vectors <script type="math/tex">\vec{AB}</script> i <script type="math/tex">\vec{CD}</script> i demostra que són equipol.lents.</p>
+<p>Anem a calcular les components d'aquests vectors abans de dibuixar-los:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    \vec{AB} &=(13-2,7-4)=(11,3)\\
+    \vec{CD} &=(12-1,5-2)=(11,3)
+\end{align}</script>
+</p>
+<p>Veiem que tenen les mateixes components.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2240299/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<blockquote>
+<p>Cada conjunt de vectors equipol.lents representen un sol vector anomenat <strong>vector lliure</strong>.</p>
+</blockquote>
+<p>Els vectors lliures normalment es representen amb origen el punt <script type="math/tex">O(0,0)</script> i extrem les coordenades del vector.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2240397/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<!---------------------------------------------------------->
+
+<h2 id="operacions-amb-vectors">Operacions amb vectors</h2>
+<h3 id="suma">Suma</h3>
+<p>Siguin <script type="math/tex">\vec{u}=(u_1,u_2)</script> i <script type="math/tex">\vec{v}=(v_1,v_2)</script>, per sumar algebraicament dos vectors només cal que sumem les components dos a dos:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{u}+\vec{v}=(u_1+v_1,u_2+v_2)</script>
+</p>
+</blockquote>
+<p>Si els sumem gràficament en el pla, aplicarem <em>la regla de paral.lelogram</em> per trobar gràficament el vector suma: es tracta de posar els dos vectors amb el mateix origen (típicament el punt <script type="math/tex">(0,0)</script>) i traçar rectes paral.leles als vectors. La diagonal del paral.lelogram que es forma és el vector suma.</p>
+<p>&lt;<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2233817/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
+<p>La suma de vectors té les propietats següents:</p>
+<ol>
+<li>Associativa: <script type="math/tex">\vec{u}+\vec{v}+\vec{w}=(\vec{u}+\vec{v})+\vec{w}=\vec{u}+()\vec{v}+\vec{w})</script>
+</li>
+<li>Commutativa: <script type="math/tex">\vec{u}+\vec{v}=\vec{v}+\vec{u}</script>
+</li>
+<li>Element neutre: <script type="math/tex">\vec{u}+\vec{0}=\vec{u}</script> on <script type="math/tex">\vec{0}=(0,0)</script>
+</li>
+<li>Element oposat: <script type="math/tex">\vec{u}+(-\vec{u})=\vec{0}</script>
+</li>
+</ol>
+<h3 id="resta">Resta</h3>
+<p>Donats <script type="math/tex">\vec{u}=(u_1,u_2)</script> i <script type="math/tex">\vec{v}=(v_1,v_2)</script>, per restar-los algebraicament només cal que restem les components dos a dos:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{u}-\vec{v}=(u_1-v_1,u_2-v_2)</script>
+</p>
+</blockquote>
+<p>Gràficament, el vector resta consisteix en el vector que s'obté unint l'extrem del primer vector amb el del segon vector.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2240625/width/1600/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<h3 id="producte-dun-nombre-real-per-un-vector">Producte d'un nombre real per un vector</h3>
+<p>Per multiplicar un nombre real <script type="math/tex">k</script> per un vector només cal multiplicar les components per aquest nombre real:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">k\cdot \vec{u}=(k \cdot u_1,k \cdot u_2)</script>
+</p>
+</blockquote>
+<h3 id="producte-escalar">Producte escalar</h3>
+<p>El producte escalar entre dos vectors és un <strong>nombre real</strong> i es defineix com:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{u}\cdot \vec{v}=|\vec{u}|\cdot|\vec{v}|\cdot cos \alpha</script>
+</p>
+</blockquote>
+<p>on <script type="math/tex">|\vec{u}|</script> i <script type="math/tex">|\vec{v}|</script> són els mòduls dels vectors i <script type="math/tex">\alpha</script> l'angle que formen entre ells.</p>
+<p>Més endavant demostrarem que el producte escalar de dos vectors també es pot expressar com:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{u}\cdot \vec{v}=u_1\cdot v_1+u_2\cdot v_2</script>
+</p>
+</blockquote>
+<p>Ja veiem que si dos vectors són perpendiculars (<script type="math/tex">\alpha=90^0</script>) el seu producte escalar serà <script type="math/tex">0</script> i si són paral.lels (<script type="math/tex">\alpha=0^0</script>) el seu producte escalar serà el producte dels seus mòduls.</p>
+<p>El producte escalar té les propietats següents:</p>
+<ol>
+<li>Commutativa: <script type="math/tex">\vec{u} \cdot \vec{v}= \vec{v} \cdot \vec{u}</script>
+</li>
+<li>Associativa: <script type="math/tex">\lambda \cdot (\vec{u} \cdot \vec{v})= (\lambda \cdot \vec{u}) \cdot \vec{v}= \vec{u} \cdot (\lambda \cdot \vec{v})</script>
+</li>
+<li>Distributiva respecte la suma: <script type="math/tex">\vec{u} \cdot (\vec{v}+\vec{w})=\vec{u}\cdot \vec{v}+ \vec{u} \cdot \vec{w}</script>
+</li>
+</ol>
+<h3 id="producte-vectorial">Producte vectorial</h3>
+<!---------------------------------------------------------->
+
+<h2 id="combinacio-lineal-entre-vectors">Combinació lineal entre vectors</h2>
+<h3 id="vectors-linealment-independents-i-dependents">Vectors linealment independents i dependents</h3>
+<!---------------------------------------------------------->
+
+<h2 id="bases-en-el-pla">Bases en el pla</h2>
+<h3 id="canvis-de-base">Canvis de base</h3>
+<h3 id="base-ortogonal-i-ortonormal">Base ortogonal i ortonormal</h3></div>
         </div>
 
         <footer class="col-md-12">
