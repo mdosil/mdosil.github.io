@@ -239,12 +239,9 @@
 </p>
 </blockquote>
 <h3 id="producte-escalar">Producte escalar</h3>
-<p>El producte escalar entre dos vectors és un <strong>nombre real</strong> i es defineix com:</p>
-<blockquote>
-<p>
-<script type="math/tex; mode=display">\vec{u}\cdot \vec{v}=|\vec{u}|\cdot|\vec{v}|\cdot cos \alpha</script>
+<p>El producte escalar entre dos vectors és un <strong>nombre real</strong> i es defineix com:
+      &gt;<script type="math/tex; mode=display">\vec{u}\cdot \vec{v}=|\vec{u}|\cdot|\vec{v}|\cdot cos \alpha</script>
 </p>
-</blockquote>
 <p>on <script type="math/tex">|\vec{u}|</script> i <script type="math/tex">|\vec{v}|</script> són els mòduls dels vectors i <script type="math/tex">\alpha</script> l'angle que formen entre ells.</p>
 <p>Més endavant demostrarem que el producte escalar de dos vectors també es pot expressar com:</p>
 <blockquote>
@@ -252,7 +249,7 @@
 <script type="math/tex; mode=display">\vec{u}\cdot \vec{v}=u_1\cdot v_1+u_2\cdot v_2</script>
 </p>
 </blockquote>
-<p>Ja veiem que si dos vectors són perpendiculars (<script type="math/tex">\alpha=90^0</script>) el seu producte escalar serà <script type="math/tex">0</script> i si són paral.lels (<script type="math/tex">\alpha=0^0</script>) el seu producte escalar serà el producte dels seus mòduls.</p>
+<p>Ja veiem que si dos vectors són perpendiculars (o <strong>ortogonals</strong>) (<script type="math/tex">\alpha=90^0</script>) el seu producte escalar serà <script type="math/tex">0</script> i si són paral.lels (<script type="math/tex">\alpha=0^0</script>) el seu producte escalar serà màxim i serà igual al producte dels seus mòduls.</p>
 <p>El producte escalar té les propietats següents:</p>
 <ol>
 <li>Commutativa: <script type="math/tex">\vec{u} \cdot \vec{v}= \vec{v} \cdot \vec{u}</script>
@@ -262,11 +259,55 @@
 <li>Distributiva respecte la suma: <script type="math/tex">\vec{u} \cdot (\vec{v}+\vec{w})=\vec{u}\cdot \vec{v}+ \vec{u} \cdot \vec{w}</script>
 </li>
 </ol>
-<h3 id="producte-vectorial">Producte vectorial</h3>
+<h4 id="projeccio-dun-vector-sobre-un-altre">Projecció d'un vector sobre un altre</h4>
+<p>A vegades ens pot interessar calcular la projecció d'un vector sobre un altre o el que és el mateix, donats dos vectors, buscar quina part d'un d'ells està en la mateixa direcció de l'altre. Fixeu-vos en la construcció següent:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2284605/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
+<p>Si considerem el triangle rectangle <script type="math/tex">ABD</script>, el cosinus de l'angle <script type="math/tex">\alpha</script> es calcula segons:</p>
+<p>
+<script type="math/tex; mode=display">cos \alpha=\frac{AD}{|\vec{u}|} \Rightarrow AD=cos \alpha \cdot |\vec{u}| </script>
+</p>
+<p>També sabem que:</p>
+<p>
+<script type="math/tex; mode=display"> \vec{u} \cdot \vec{v}= |\vec{u}| \cdot |\vec{v}| \cdot cos \alpha</script>
+</p>
+<p>Per tant, ajuntant les dues expressions tenim que:</p>
+<p>
+<script type="math/tex; mode=display">AD=\frac{\vec{u}\cdot \vec{v}}{|\vec{v}|}</script>
+</p>
+<p>El segment <script type="math/tex">AD</script> és la projecció del vector <script type="math/tex">\vec{u}</script> sobre el vector <script type="math/tex">\vec{v}</script>, <script type="math/tex">proj_{\vec{v}}(\vec{u})</script>, per tant:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">proj_{\vec{v}}(\vec{u})=\frac{\vec{u}\cdot \vec{v}}{|\vec{v}|}</script>
+</p>
+</blockquote>
 <!---------------------------------------------------------->
 
 <h2 id="combinacio-lineal-entre-vectors">Combinació lineal entre vectors</h2>
+<p>Donat un vector <script type="math/tex">\vec{u}</script>, si el multipliquem per un nombre real <script type="math/tex">\lambda</script> obtenim una <strong>combinació lineal</strong> d'aquest vector: <script type="math/tex">\lambda \cdot \vec{u}</script>. Veiem també que necessàriament el vector i la combinació lineal han de ser <strong>paral.lels</strong> perquè si no, no podríem expressar un com l'altre multiplicat per un nombre.</p>
+<p>Per tant, si <script type="math/tex">\lambda</script> i <script type="math/tex">\mu</script> són nombres reals:</p>
+<blockquote>
+<p>
+<script type="math/tex">\lambda \cdot \vec{u}+ \mu \cdot \vec{v}</script> és una combinació lineal dels vectors <script type="math/tex">\vec{u}</script> i <script type="math/tex">\vec{v}</script>
+</p>
+</blockquote>
 <h3 id="vectors-linealment-independents-i-dependents">Vectors linealment independents i dependents</h3>
+<p>Tenint en compte el que hem vist a dalt, diem que:</p>
+<ol>
+<li>Dos vectors que tenen la mateixa direcció diem que són <strong>linealment dependents</strong> i si tenen diferent direcció són <strong>linealment independents</strong>.</li>
+<li>Donat un conjunt de vectors, són <strong>linealment dependents</strong> si algun és <em>combinació lineal</em> dels altres i són <strong>linealment independents</strong> si cap es pot expressar com a combinació lineal dels vectors restants.</li>
+</ol>
+<p><strong>Exemple 2</strong></p>
+<p>Donats els vectors <script type="math/tex">\vec{u}=(2,5)</script>, <script type="math/tex">\vec{v}=(0,3)</script> i <script type="math/tex">\vec{w}=(-1,1)</script> són linealment dependents?</p>
+<p>Per comprovar-ho hem de trobar dos nombres <script type="math/tex">\lambda</script> i <script type="math/tex">\mu</script> que compleixin: <script type="math/tex">\vec{u}=\lambda \cdot\vec{v}+\mu \cdot \vec{w}</script>:</p>
+<p>
+<script type="math/tex; mode=display">(2,5)=\lambda (0,3)+ \mu (-1,1) \begin{cases} 2 = \lambda \cdot 0- \mu \rightarrow \mu=-2 \\ 5=\lambda \cdot 3 + \mu \rightarrow \lambda = \frac{7}{3}
+\end{cases}</script>
+</p>
+<p>Veiem que sí que són linealment dependents, perquè podem expressar <script type="math/tex">\vec{u}</script> com a combinació lineal dels altres dos:</p>
+<p>
+<script type="math/tex; mode=display">\vec{u}=\frac{7}{3} \vec{v}-2\vec{w}</script>
+</p>
 <!---------------------------------------------------------->
 
 <h2 id="bases-en-el-pla">Bases en el pla</h2>
