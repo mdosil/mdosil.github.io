@@ -152,6 +152,8 @@
         
             <li><a href="#bases-en-el-pla">Bases en el pla</a></li>
         
+            <li><a href="#aplicacions-geometriques">Aplicacions geomètriques</a></li>
+        
     
     </ul>
 </div></div>
@@ -209,7 +211,8 @@
 </p>
 </blockquote>
 <p>Si els sumem gràficament en el pla, aplicarem <em>la regla de paral.lelogram</em> per trobar gràficament el vector suma: es tracta de posar els dos vectors amb el mateix origen (típicament el punt <script type="math/tex">(0,0)</script>) i traçar rectes paral.leles als vectors. La diagonal del paral.lelogram que es forma és el vector suma.</p>
-<p>&lt;<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2233817/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe></p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2233817/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
 <p>La suma de vectors té les propietats següents:</p>
 <ol>
 <li>Associativa: <script type="math/tex">\vec{u}+\vec{v}+\vec{w}=(\vec{u}+\vec{v})+\vec{w}=\vec{u}+()\vec{v}+\vec{w})</script>
@@ -299,7 +302,7 @@
 </ol>
 <p><strong>Exemple 2</strong></p>
 <p>Donats els vectors <script type="math/tex">\vec{u}=(2,5)</script>, <script type="math/tex">\vec{v}=(0,3)</script> i <script type="math/tex">\vec{w}=(-1,1)</script> són linealment dependents?</p>
-<p>Per comprovar-ho hem de trobar dos nombres <script type="math/tex">\lambda</script> i <script type="math/tex">\mu</script> que compleixin: <script type="math/tex">\vec{u}=\lambda \cdot\vec{v}+\mu \cdot \vec{w}</script>:</p>
+<p>Per comprovar-ho hem de trobar dos nombres <script type="math/tex">\lambda</script> i <script type="math/tex">\mu</script> que compleixin: <script type="math/tex">\vec{u}=\lambda \cdot\vec{v}+\mu \cdot \vec{w}</script>: Això és el mateix que dir que</p>
 <p>
 <script type="math/tex; mode=display">(2,5)=\lambda (0,3)+ \mu (-1,1) \begin{cases} 2 = \lambda \cdot 0- \mu \rightarrow \mu=-2 \\ 5=\lambda \cdot 3 + \mu \rightarrow \lambda = \frac{7}{3}
 \end{cases}</script>
@@ -311,8 +314,101 @@
 <!---------------------------------------------------------->
 
 <h2 id="bases-en-el-pla">Bases en el pla</h2>
+<p>Donats dos vectors linealment independents, anem a veure que qualsevol altre vector es pot expressar com a combinació lineal d'ells dos. Considerem els vectors <script type="math/tex">\vec{c}</script> i <script type="math/tex">\vec{d}</script>, linealment independents. Anem a veure si podem expressar el vector <script type="math/tex">\vec{w}</script> com a combinació lineal d'ells dos. Per fer-ho, els posem tots 3 amb origen comú. Prolonguem les rectes que contenen els vectors <script type="math/tex">\vec{c}</script> i <script type="math/tex">vec\{d}</script> fins a obtenir els vectors <script type="math/tex">\vec{u}</script> i <script type="math/tex">\vec{v}</script> i tracem un paral.lelogram com el de la figura:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2303099/width/1600/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
+<p>D'altra banda, donada la construcció podem afirmar que:</p>
+<p>
+<script type="math/tex; mode=display">\vec{w}=\vec{u}+\vec{v}</script>
+</p>
+<p>També veiem que el vector <script type="math/tex">\vec{u}</script> és paral.lel al vector <script type="math/tex">\vec{c}</script> i que el vector <script type="math/tex">\vec{v}</script> ho és del vector <script type="math/tex">\vec{d}</script>. Això és el mateix que dir que el vector <script type="math/tex">\vec{c}</script> és combinació lineal del vector <script type="math/tex">\vec{u}</script> i el vector <script type="math/tex">\vec{d}</script> ho és del vector <script type="math/tex">\vec{v}</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\vec{u}=\lambda \vec{c} \\
+\vec{v}=\mu \vec{d}
+\end{align}</script>
+</p>
+<p>Si substituïm aquestes expressions a l'expressió de la suma de vectors trobada anteriorment veiem que:</p>
+<p>
+<script type="math/tex; mode=display">\vec{w}=\lambda \vec{c}+\mu \vec{d}</script>
+</p>
+<p>o el que és el mateix:</p>
+<blockquote>
+<p>Donats dos vectors <script type="math/tex">\vec{c}</script> i <script type="math/tex">\vec{d}</script> linealment independents, qualsevol altre vector es pot expressar com a combinació lineal d'ells dos, i aquesta combinació lineal és única. Els vectors  <script type="math/tex">\vec{c}</script> i <script type="math/tex">\vec{d}</script> formen una <strong>base</strong> del conjunt de vectors del pla: <script type="math/tex">B=\{\vec{c}, \vec{d}\}</script>
+</p>
+</blockquote>
+<h3 id="base-ortogonal-ortonormal-i-canonica">Base ortogonal, ortonormal i canònica</h3>
+<p>Quan dos vectors són perpendiculars entre ells diem que formen una <strong>base ortonormal</strong> i si a més tenen mòdul 1, són una base <strong>ortogonal</strong>.</p>
+<p>La base ortogonal més coneguda és la formada pels vectors <script type="math/tex">\vec{i}=(1,0)</script> i <script type="math/tex">\vec{j}=(0,1)</script>. Aquesta base també s'anomena <strong>base canònica</strong>.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2303407/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
+<h4 id="propietats">Propietats</h4>
+<ol>
+<li>Són vectors unitaris <script type="math/tex">|\vec{i}|=|\vec{j}|=1</script>
+</li>
+<li>Són perpendiculars</li>
+<li>La seva direcció és la mateixa que la dels eixos de coordenades</li>
+</ol>
+<p>Qualsevol vector es pot expressar doncs com a combinació lineal dels vectors de la base canònica: per exemple el vector <script type="math/tex">\vec{u}=(3,6)=3(1,0)+6(0,1)=3\vec{i}+6\vec{j}</script>.</p>
 <h3 id="canvis-de-base">Canvis de base</h3>
-<h3 id="base-ortogonal-i-ortonormal">Base ortogonal i ortonormal</h3></div>
+<p>Evidentment que un vector expressat en una base es pot expressar en una altra base. Normalment quan donem les coordenades d'un vector el que fem és donar-les en la base canònica. Anem a veure un exemple de canvi de base.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Expressa el vector <script type="math/tex">\vec{u}=(4,5)</script> en la base <script type="math/tex">B=\{(1,2), (3,-1)\}</script>.</p>
+<p>Per fer-ho, hem de resoldre l'equació:</p>
+<p>
+<script type="math/tex; mode=display">(4,5)=\lambda (1,2)+ \mu (3,-1) \begin{cases} 4 = \lambda +3 \mu \rightarrow ... \rightarrow \lambda=\frac{19}{7} \\ 5=2\lambda - \mu \rightarrow ... \rightarrow \lambda = \frac{3}{7}
+\end{cases}</script>
+</p>
+<p>Per tant, les components del vector  <script type="math/tex">\vec{u}=(4,5)</script> en la base <script type="math/tex">B=\{(1,2), (3,-1)\}</script> són <script type="math/tex">\vec{u}_B=(\frac{19}{7}, \frac{3}{7})</script>.</p>
+<h2 id="aplicacions-geometriques">Aplicacions geomètriques</h2>
+<h3 id="calcul-del-punt-mig-dun-segment">Càlcul del punt mig d'un segment</h3>
+<p>Donat un segment <script type="math/tex">\bar{AB}</script> qualsevol. Considerem els punts <script type="math/tex">A(a_1,a_2)</script> i <script type="math/tex">B(b_1,b_2)</script>. Ens agradaria trobar les coordenades del punt mig <script type="math/tex">M(x,y)</script>. Per fer-ho, considerem els vectors <script type="math/tex">\vec{AM}=(x-a_1,y-a_2)</script> i <script type="math/tex">\vec{MB}=(b_1-x,b_2-y)</script>:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2303625/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
+<p>Són vectors equipol.lents perquè tenen el mateix mòdul (la meitat del segment <script type="math/tex">\bar{AB}</script>), la mateixa direcció i el mateix sentit. Per tant, es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">\vec{AM}=\vec{MB}   \begin{cases} x-a_1=b_1-x \rightarrow x=\frac{a_1+b_1}{2}  \\  y-a_2=b_2-y \rightarrow y=\frac{a_2+b_2}{2}
+\end{cases}</script>
+</p>
+<p>Per tant, les coordenades del punt mig d'un segment seran: <script type="math/tex">M(\frac{a_1+b_1}{2},\frac{a_2+b_2}{2})</script>.</p>
+<h3 id="comprovacio-si-3-punts-estan-alineats">Comprovació si 3 punts estan alineats</h3>
+<p>Donats 3 punts qualsevol <script type="math/tex">A(a_1,a_2)</script>, <script type="math/tex">B(b_1,b_2)</script> i <script type="math/tex">C(c_1,c_2)</script> seran alineals si els vectors <script type="math/tex">|vec{AB}</script> i <script type="math/tex">\vec{AC}</script> són linealment dependents, o el que és el mateix, estan sobre la mateixa recta. Per tant, hem de trobar un nombre real <script type="math/tex">k</script> que compleixi: <script type="math/tex">\vec{AB}=k \cdot {AC}</script>.</p>
+<p><strong>Exemple 4</strong></p>
+<p>Comprova si els punts <script type="math/tex">A(2,5)</script>, <script type="math/tex">B(-1,0)</script> i <script type="math/tex">C(2,8)</script> estan alineats.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+  \vec{AB}&=(-1-2,0-5)=(-3,-5) \\
+  \vec{AC}&=(2-2,8-5)=(0,3)\\
+\vec{AB}&=k\vec{AC}\rightarrow (-3,-5)=k(0,3) \begin{cases} -3=0 \\ -5=k\cdot 3
+\end{cases}
+\end{align}</script>
+</p>
+<p>Ja veiem que obtenim un sistema incompatible i per tant, no hi a cap valor de <script type="math/tex">k</script> pel qual els vectors <script type="math/tex">\vec{AB}</script> i <script type="math/tex">\vec{AC}</script> siguin linealment independents. Per tant, els 3 punts <strong>no estan alineats</strong>.</p>
+<h3 id="calcul-del-baricentre-dun-triangle">Càlcul del baricentre d'un triangle</h3>
+<p>Volem calcular les coordenades del <a href="https://ca.wikipedia.org/wiki/Baricentre">baricentre</a> d'un triangle. El baricentre és el punt on es creuen les mitjanes d'un triangle. Les mitjanes recordem que són els segments que uneixen el punt mig d'un costat amb el vèrtex oposat. Una propietat del baricentre que cal saber, és divideix la mitjana en 2 segments el qual un és el doble de llarg que l'altre:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2303721/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="350px" style="border:0px;"> </iframe>
+
+<p>Per trobar les coordenades del baricentre <script type="math/tex">G(x,y)</script> haurem d'aplicar el que hem après en les dues aplicacions anteriors:
+1. Caldrà trobar les coordenades del punt mig d'un dels costats, per exemple del costat <script type="math/tex">\bar{AB}</script> i que en el dibuix apareix amb la lletra <script type="math/tex">D</script>
+2. Caldrà trobar les coordenades el punt <script type="math/tex">G</script> sabent que el vector <script type="math/tex">\vec{GC}</script> és el doble de llarg que el vector <script type="math/tex">\vec{DG}</script>.</p>
+<p><strong>Exemple 5</strong></p>
+<p>Troba les coordenades del baricentre del triangle de vèrtexs <script type="math/tex">A(-3,-2)</script>, <script type="math/tex">B(4,7)</script> i <script type="math/tex">C(8,4)</script>.</p>
+<p>Anem a calcular primer les coordenades del punt mig del costat <script type="math/tex">\bar{AB}</script>, diem-li <script type="math/tex">D</script>:</p>
+<p>
+<script type="math/tex; mode=display">D=(\frac{-3+4}{2},\frac{-2+7}{2})=(\frac{1}{2},{5}{2})</script>
+</p>
+<p>Anem a calcular ara les coordenades dels vectors <script type="math/tex">\vec{DG}</script> i <script type="math/tex">\vec{GC}</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\vec{DG}&=(x-\frac{1}{2},y-\frac{5}{2})\\
+\vec{GC}&=(8-x,4-y)
+\end{align}</script>
+</p>
+<p>Sabem que es compleix:</p>
+<p>
+<script type="math/tex; mode=display">\vec{GC}=2\vec{DG} \rightarrow (8-x,4-y)=2(x-\frac{1}{2},y-\frac{5}{2})\rightarrow ...\rightarrow x=3; y=3 </script>
+</p>
+<p>Per tant, les coordenades del baricentre són <script type="math/tex">G(3,3)</script>.</p></div>
         </div>
 
         <footer class="col-md-12">
