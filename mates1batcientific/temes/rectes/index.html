@@ -144,12 +144,98 @@
     
         <li class="main active"><a href="#tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</a></li>
         
+            <li><a href="#equacions-de-la-recta">Equacions de la recta</a></li>
+        
+            <li><a href="#posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</a></li>
+        
+            <li><a href="#distancies">Distàncies</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</h1></div>
+<h1 id="tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</h1>
+<p>Aquest curs començarem amb la <a href="https://es.wikipedia.org/wiki/Geometr%C3%ADa_anal%C3%ADtica">geometria analítica</a> en el pla. Aquesta part de la geometria estudia els objectes geoomètrics en el pla cartesià.</p>
+<h2 id="equacions-de-la-recta">Equacions de la recta</h2>
+<p>En cursos anteriors ja havíem representat rectes en el pla cartesià mitjançant la seva expressió afí <script type="math/tex">y=f(x)=mx+n</script>, on <script type="math/tex">m</script> era el pendent de la recta i <script type="math/tex">n</script> l'ordenada a l'origen. Aquest curs veurem altres expressions de la recta que ens seran útils en situacions analítiques diferents.</p>
+<h3 id="equacio-vectorial">Equació vectorial</h3>
+<p>Podem expressar qualsevol punt d'una recta donat un punt qualsevol d'aquesta i la seva direcció. Sigui <script type="math/tex">P=(x_0,y_0)</script> un punt qualsevol d'una recta <script type="math/tex">r</script> i <script type="math/tex">\vec{v}=(v_1,v_2)</script> un vector amb la direcció de la recta, qualsevol punt <script type="math/tex">X=(x,y)</script> d'aquesta recta es pot expressar com:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">(x,y)=(x_0,y_0)+\lambda(v_1,v_2)</script>
+</p>
+</blockquote>
+<p>on <script type="math/tex">\lambda</script> és un nombre real. Anomenem aquesta expressió l'<strong>equació vectorial de la recta</strong>, i el vector <script type="math/tex">\vec{v}=(v_1,v_2)</script> és el seu <strong>vector director</strong>.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2403711/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="900px" height="600px" style="border:0px;"> </iframe>
+
+<h3 id="equacions-parametriques">Equacions paramètriques</h3>
+<p>Si desenvolupem l'equació vectorial component a component, obtenim les <strong>equacions paramètriques de la recta</strong>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\begin{cases} x = x_0+\lambda v_1 \\ y = y_0 + \lambda v_2
+\end{cases}</script>
+</p>
+</blockquote>
+<h3 id="equacio-continua">Equació contínua</h3>
+<p>Si aïllem el paràmetre <script type="math/tex">\lambda</script> de les dues equacions i les igualem, obtenim l'<strong>equació contínua de la recta</strong>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}</script>
+</p>
+</blockquote>
+<p>Aquesta forma de l'equació només és possible si les coordenades del vector director de la recta <script type="math/tex">\vec{v}=(v_1,v_2)</script> són diferents de zero.</p>
+<h3 id="equacio-general-o-implicita">Equació general o implícita</h3>
+<p>Si continuem operant, i ho passem tot al costat esquerra i igualem a zero obtenim que:</p>
+<p>
+<script type="math/tex; mode=display">v_2(x-x_0)=v_1(y-y_0)\rightarrow v_2 x-v_1 y-v_2 x_0 + v_1 y_0=0</script>
+</p>
+<p>I si fem les definicions següents:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} A \equiv v_2 \\
+B \equiv -v_1 \\
+C \equiv (-v_2 x_0+v_1 y_0)
+\end{cases}
+</script>
+</p>
+<p>tenim l'<strong>equació general o implícita</strong> de la recta:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">Ax+By+C=0</script>
+</p>
+</blockquote>
+<p>Per trobar un punt que pertanyi a aquesta recta n'hi ha prou per donar un valor arbitrari a <script type="math/tex">x</script> i calcular-ne la <script type="math/tex">y</script>. El vector director de la recta serà (tenint en compte la substitució anteriorment feta):</p>
+<p>
+<script type="math/tex; mode=display">\vec{v}=(-B,A)</script>
+</p>
+<h3 id="equacio-explicita">Equació explícita</h3>
+<p>A partir d'aquí podem aïllar <script type="math/tex">y</script> en un costat i trobar l'equació explícita de la recta amb la que començàvem el capítol:</p>
+<p>
+<script type="math/tex; mode=display">y=-\frac{A}{B}x-\frac{C}{B}</script>
+</p>
+<p>Si redefinim els coeficients obtenim:</p>
+<p>
+<script type="math/tex; mode=display">y=mx+n \begin{cases} m \equiv -\frac{A}{B} \\
+n \equiv -\frac{C}{B} \\
+\end{cases}
+</script>
+</p>
+<p>Anem a veure ara què representa el pendent <script type="math/tex">m</script>:</p>
+<p>
+<script type="math/tex; mode=display">m=-\frac{A}{B}=\frac{v_2}{v_1}</script>
+</p>
+<p>El pendent és el quocient entre les components <script type="math/tex">y</script> i <script type="math/tex">x</script> del vector director de la recta, i si mirem el gràfic següent:
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2413717/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="920px" height="633px" style="border:0px;"> </iframe></p>
+<p>Veiem que <strong>el pendent <script type="math/tex">m</script> és la tangent de l'angle que forma el vector director de la recta amb l'eix <script type="math/tex">OX</script></strong>. Això vol dir que per rectes paral.leles a l'eix <script type="math/tex">OX</script> el seu pendent serà <script type="math/tex">tg (0^o)=0</script> i per rectes paral.leles a l'eix <script type="math/tex">OY</script> el seu pendent serà màxim: <script type="math/tex">tg ( 90^0)=\infty</script>.</p>
+<h2 id="posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</h2>
+<h3 id="rectes-paralleles">Rectes paral.leles</h3>
+<h3 id="rectes-coincidents">Rectes coincidents</h3>
+<h3 id="rectes-perpendiculars">Rectes perpendiculars</h3>
+<h3 id="angle-entre-dues-rectes">Angle entre dues rectes</h3>
+<h2 id="distancies">Distàncies</h2>
+<h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
+<h3 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h3>
+<h3 id="distancia-entre-dues-rectes">Distància entre dues rectes</h3></div>
         </div>
 
         <footer class="col-md-12">
