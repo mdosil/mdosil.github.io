@@ -148,6 +148,8 @@
         
             <li><a href="#posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</a></li>
         
+            <li><a href="#angle-entre-dues-rectes">Angle entre dues rectes</a></li>
+        
             <li><a href="#distancies">Distàncies</a></li>
         
     
@@ -229,9 +231,44 @@ n \equiv -\frac{C}{B} \\
 <p>Veiem que <strong>el pendent <script type="math/tex">m</script> és la tangent de l'angle que forma el vector director de la recta amb l'eix <script type="math/tex">OX</script></strong>. Això vol dir que per rectes paral.leles a l'eix <script type="math/tex">OX</script> el seu pendent serà <script type="math/tex">tg (0^o)=0</script> i per rectes paral.leles a l'eix <script type="math/tex">OY</script> el seu pendent serà màxim: <script type="math/tex">tg ( 90^0)=\infty</script>.</p>
 <h2 id="posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</h2>
 <h3 id="rectes-paralleles">Rectes paral.leles</h3>
+<p>En cursos anteriors havíem vist que dues rectes eren paral.leles si tenien el mateix pendent, o sigui, igual <script type="math/tex">m</script>. Ara que ja coneixem els vectors també podem dir que dues rectes són paral.leles <strong>si tenen el mateix vector director o si els seus vectors directors són linealment dependents</strong> (l'un és l'altre multiplicat per un nombre).
+Anem-ho a veure algebraicament:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    r:& \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \Rightarrow m_r=\frac{A}{-B}=\frac{-A}{B}\\
+    s:& \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime) \Rightarrow m_s=\frac{A^\prime}{-B^\prime}=\frac{-A^\prime}{B^\prime}
+\end{align}</script>
+</p>
+<p>Seran <strong>paral.leles</strong> si:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+m_r&=m_s\\
+-\frac{A}{B}&=-\frac{A^\prime}{B^\prime} \\
+\frac{A}{A^\prime}&=\frac{B}{B^\prime}
+\end{align}</script>
+</p>
+<p>Òbviament si aquesta igualtat no es compleix les rectes seran <strong>secants</strong> i caldrà buscar el seu punt de tall resolent el sistema d'equacions.</p>
 <h3 id="rectes-coincidents">Rectes coincidents</h3>
+<p>Si a més a més es compleix:</p>
+<p>
+<script type="math/tex; mode=display">\frac{A}{A^\prime}=\frac{B}{B^\prime}=\frac{C}{C^\prime}</script>
+</p>
+<p>
+<script type="math/tex">r</script> i <script type="math/tex">s</script> seran la mateixa recta.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Troba l'equació de la recta <script type="math/tex">s</script> que passa pel punt <script type="math/tex">P(4,3)</script> i és paral.lela a la recta <script type="math/tex">r</script>: <script type="math/tex">5x+3y+6=0</script>.</p>
+<p>El vector director de la recta <script type="math/tex">r</script> és <script type="math/tex">\vec{v_r}=(-B,A)=(-3,5)</script>. Si la recta <script type="math/tex">s</script> és paral.lela necessàriament ha de tenir el mateix vector director, pertant, <script type="math/tex">A</script> i <script type="math/tex">B</script> seran les mateixes:</p>
+<p>
+<script type="math/tex; mode=display">5x+3y+C=0</script>
+</p>
+<p>La <script type="math/tex">C</script> la trobarem subtituint a l'equació el punt donat:</p>
+<p>
+<script type="math/tex; mode=display">P(3,4)\Rightarrow 5\cdot 4+3\cdot 3+C=0 \Rightarrow C=-29</script>
+</p>
+<p>Per tant, l'equació de la recta és: <script type="math/tex">5x+3y-29=0</script>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2450005/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
 <h3 id="rectes-perpendiculars">Rectes perpendiculars</h3>
-<h3 id="angle-entre-dues-rectes">Angle entre dues rectes</h3>
+<h2 id="angle-entre-dues-rectes">Angle entre dues rectes</h2>
 <h2 id="distancies">Distàncies</h2>
 <h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
 <h3 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h3>
