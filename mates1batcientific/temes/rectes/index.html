@@ -268,6 +268,46 @@ m_r&=m_s\\
 <p>Per tant, l'equació de la recta és: <script type="math/tex">5x+3y-29=0</script>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2450005/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
 <h3 id="rectes-perpendiculars">Rectes perpendiculars</h3>
+<p>Tornem a considerar dues rectes i anem a veure què ha de passar per tal que siguin perpendiculars:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    r:& \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \\
+    s:& \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime)
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">r</script> i <script type="math/tex">s</script> seran rectes perpendiculars si els seus <strong>vectors directors són ortogonals</strong>, això és, formen un angle de <script type="math/tex">90^o</script>. S'haurà de complir, per tant, que el seu producte escalar sigui zero. Això és:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\vec{v_r}\cdot\vec{v_s}=AA^\prime+B B^\prime=0</script>
+</p>
+</blockquote>
+<p>Donada una recta qualsevol, per trobar-ne una recta perpendicular només caldrà escriure un vector director que al efectuar el producte escalar doni zero.</p>
+<p><strong>Exemple 2</strong></p>
+<p>Troba l'equació de la recta perpendicular a la recta <script type="math/tex">r:2x+3y-5=0</script> que passa pel punt <script type="math/tex">P(1,2)</script>.</p>
+<p>El vector director de la recta <script type="math/tex">r</script> és <script type="math/tex">\vec{v}(-3,2)</script>. Un vector ortogonal a <script type="math/tex">\vec{v}</script> seria <script type="math/tex">\vec{u}=(2,3)</script> ja que el seu producte escalar dóna zero: <script type="math/tex">\vec{u}\cdot \vec{v}=-3\cdot 2+2\cdot (3)=0</script>.</p>
+<p>Per tant, la recta perpendicular tindria <script type="math/tex">B=-2</script> i <script type="math/tex">A=3</script>. Ara només ens falta demanar que passi pel punt <script type="math/tex">P(1,2)</script> per trobar <script type="math/tex">C</script>:</p>
+<p>
+<script type="math/tex; mode=display">3x-2y+C=0\rightarrow 3\cdot 1-2\cdot 2+C=0\rightarrow C=1</script>
+</p>
+<p>Per tant, la recta que estem buscant és:</p>
+<p>
+<script type="math/tex; mode=display">-3x-2y+1=0</script>
+</p>
+<h4 id="projeccio-ortogonal-dun-punt-sobre-una-recta">Projecció ortogonal d'un punt sobre una recta.</h4>
+<p>Donats un punt <script type="math/tex">P</script> que no pertant a una recta i una recta <script type="math/tex">r</script> qualsevol, sempre podem trobar la <em>projecció ortogonal</em> d'aquest punt sobre la recta. Ho entendrem millor amb un dibuix:
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2464393/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
+<p><strong><script type="math/tex">P_0</script> és la projecció ortogonal de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. També això ens dóna un punt <strong><script type="math/tex">P^\prime</script> que és el punt simètric de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. <script type="math/tex">P</script> i <script type="math/tex">P^\prime</script> estan a la mateixa distància de la recta <script type="math/tex">r</script>.</p>
+<p>Per trobar <script type="math/tex">P_0</script> i <script type="math/tex">P^\prime</script> farem el següent:
+1. Buscarem l'equació de la <strong>recta perpendicular</strong> a <script type="math/tex">r</script> que passa per <script type="math/tex">P</script>.
+2. Buscarem el punt de tall de les dues rectes resolent el sistema d'equacions i ja tindrem <script type="math/tex">P_0</script>
+3. Per trobar les coordenades de <script type="math/tex">P^\prime</script> utilitzarem la fórmula del punt mig d'un segment que vam veure en el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">tema anterior</a>.</p>
+<!--Anem a veure-ho amb un exemple.
+
+**Exemple 3**
+
+Troba la projecció ortogonal del punt $P(1,2)$ sobre la recta $r:3x+2y-1=0$.-->
+
 <h2 id="angle-entre-dues-rectes">Angle entre dues rectes</h2>
 <h2 id="distancies">Distàncies</h2>
 <h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
