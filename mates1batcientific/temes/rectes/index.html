@@ -298,17 +298,66 @@ m_r&=m_s\\
 <p>Donats un punt <script type="math/tex">P</script> que no pertant a una recta i una recta <script type="math/tex">r</script> qualsevol, sempre podem trobar la <em>projecció ortogonal</em> d'aquest punt sobre la recta. Ho entendrem millor amb un dibuix:
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2464393/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
 <p><strong><script type="math/tex">P_0</script> és la projecció ortogonal de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. També això ens dóna un punt <strong><script type="math/tex">P^\prime</script> que és el punt simètric de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. <script type="math/tex">P</script> i <script type="math/tex">P^\prime</script> estan a la mateixa distància de la recta <script type="math/tex">r</script>.</p>
-<p>Per trobar <script type="math/tex">P_0</script> i <script type="math/tex">P^\prime</script> farem el següent:
-1. Buscarem l'equació de la <strong>recta perpendicular</strong> a <script type="math/tex">r</script> que passa per <script type="math/tex">P</script>.
-2. Buscarem el punt de tall de les dues rectes resolent el sistema d'equacions i ja tindrem <script type="math/tex">P_0</script>
-3. Per trobar les coordenades de <script type="math/tex">P^\prime</script> utilitzarem la fórmula del punt mig d'un segment que vam veure en el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">tema anterior</a>.</p>
-<!--Anem a veure-ho amb un exemple.
+<p>Per trobar <script type="math/tex">P_0</script> i <script type="math/tex">P^\prime</script> farem el següent:</p>
+<ol>
+<li>Buscarem l'equació de la <strong>recta perpendicular</strong> a <script type="math/tex">r</script> que passa per <script type="math/tex">P</script>.</li>
+<li>Buscarem el punt de tall de les dues rectes resolent el sistema d'equacions i ja tindrem <script type="math/tex">P_0</script>
+</li>
+<li>Per trobar les coordenades de <script type="math/tex">P^\prime</script> utilitzarem la fórmula del punt mig d'un segment que vam veure en el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">tema anterior</a>.</li>
+</ol>
+<p>Anem a veure-ho amb un exemple.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Troba la projecció ortogonal del punt <script type="math/tex">P(1,2)</script> sobre la recta <script type="math/tex">r:3x+2y-1=0</script>.</p>
+<!--        s:Ax+By+C=0 & \vec{v}_s(-B,A)-->
 
-**Exemple 3**
-
-Troba la projecció ortogonal del punt $P(1,2)$ sobre la recta $r:3x+2y-1=0$.-->
-
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+r&:3x+2y-1=0 \rightarrow \vec{v}_r(-2,3)\\
+s&:Ax+By+C=0 \rightarrow \vec{v}_s(-B,A)
+\end{aligned}
+\right\}
+\vec{v}_r \cdot \vec{v}_s=0 \rightarrow 2B+3A=0 \rightarrow\text{ Solució possible: } B=-3, A=2
+</script>
+</p>
+<p>Per tant, tindríem que <script type="math/tex">s:2x-3y+C=0</script>, per trobar <script type="math/tex">C</script> només cal substituir el punt <script type="math/tex">P(1,2)</script> en l'equació i obtindrem que <script type="math/tex">C=4</script>.</p>
+<p>L'equació de la recta <script type="math/tex">s</script> és <script type="math/tex">2x-3y+4=0</script>.</p>
+<p>Ara ens cal trobar la projecció ortogonal del punt <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script>, això és, el punt de tall de les dues rectes. Ens cal solucionar el sistema següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+3x+2y-1&=0\\
+2x-3y+4&=0
+\end{aligned}
+\right\}
+\rightarrow ... \rightarrow x=\frac{-5}{13}, y=\frac{14}{13}
+</script>
+</p>
+<p>
+<script type="math/tex">P_0=(\frac{-5}{13},\frac{14}{13})</script>
+</p>
+<p>D'aquí també podem trobar el punt simètric de <script type="math/tex">P</script> respecte la recta <script type="math/tex">r</script>, <script type="math/tex">P^\prime</script>. Del tema anterior sabem que per trobar el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">punt mig d'un segment</a> només ens cal saber les coordenades dels punts dels extrems. Les coordenades del punt mig es troben fent la semisuma de les components x i y dels punts extrems. Anem a veure-ho en aquest cas:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+P &=(1,2)\\
+P_0 &=\Big(\frac{-5}{13},\frac{14}{13}\Big)\\
+P^\prime &=(x,y)
+\end{aligned}
+\right\}
+\rightarrow \Big(\frac{-5}{13}, \frac{14}{13}\Big)=\Big(\frac{1+x}{2},\frac{2+y}{2}\Big)\rightarrow ... \rightarrow P^\prime=\Big(\frac{-23}{13},\frac{2}{13}\Big)
+</script>
+</p>
+<p>Per tant el punt simètric de <script type="math/tex">P</script> respecte la recta <script type="math/tex">r</script> és <script type="math/tex">P^\prime=\Big(\frac{-23}{13},\frac{2}{13}\Big)</script>
+</p>
 <h2 id="angle-entre-dues-rectes">Angle entre dues rectes</h2>
+<p>Donades dues rectes <script type="math/tex">r</script> i <script type="math/tex">s</script>, si són secants podem definir l'angle entre elles dues com l'angle <script type="math/tex">\alpha \le 90^o</script>:
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2469765/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
+<p>o sigui, dels dos angles que es formen, el més petit. Si ens hi fixem, es compleix que: <script type="math/tex">\alpha=180-\beta</script>. Com que <script type="math/tex">cos(\alpha)=-cos(180-\alpha)</script>, per trobar l'angle apliquem la fórmula del producte escalar entre dos vectors i demanem que el cosinus sigui positiu:</p>
+<p>
+<script type="math/tex; mode=display">cos \alpha=\frac{|\vec{u}\cdot \vec{v}|}{|\vec{u}|\cdot|\vec{v}|}</script>
+</p>
+<p>on <script type="math/tex">\vec{u}</script> i <script type="math/tex">\vec{v}</script> són els vectors directors de les rectes <script type="math/tex">r</script> i <script type="math/tex">s</script> respectivament.</p>
 <h2 id="distancies">Distàncies</h2>
 <h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
 <h3 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h3>
