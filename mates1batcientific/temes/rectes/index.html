@@ -294,7 +294,7 @@ m_r&=m_s\\
 <p>
 <script type="math/tex; mode=display">3x-2y+1=0</script>
 </p>
-<h4 id="projeccio-ortogonal-dun-punt-sobre-una-recta">Projecció ortogonal d'un punt sobre una recta.</h4>
+<h4 id="projeccio-ortogonal-dun-punt-sobre-una-recta">Projecció ortogonal d'un punt sobre una recta</h4>
 <p>Donats un punt <script type="math/tex">P</script> que no pertant a una recta i una recta <script type="math/tex">r</script> qualsevol, sempre podem trobar la <em>projecció ortogonal</em> d'aquest punt sobre la recta. Ho entendrem millor amb un dibuix:
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2464393/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
 <p><strong><script type="math/tex">P_0</script> és la projecció ortogonal de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. També això ens dóna un punt <strong><script type="math/tex">P^\prime</script> que és el punt simètric de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. <script type="math/tex">P</script> i <script type="math/tex">P^\prime</script> estan a la mateixa distància de la recta <script type="math/tex">r</script>.</p>
@@ -360,8 +360,54 @@ P^\prime &=(x,y)
 <p>on <script type="math/tex">\vec{u}</script> i <script type="math/tex">\vec{v}</script> són els vectors directors de les rectes <script type="math/tex">r</script> i <script type="math/tex">s</script> respectivament.</p>
 <h2 id="distancies">Distàncies</h2>
 <h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
+<p>La distància entre dos punts es defineix com el mòdul del vector entre aquests dos punts. Si tenim un punt <script type="math/tex">P(x_0,y_0)</script> i un punt <script type="math/tex">Q(x_1,y_1)</script> la distància entre <script type="math/tex">P</script> i <script type="math/tex">Q</script> es defineix com:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">d(P,Q)=|\vec{PQ}|=\sqrt{(x_1-x_0)^2+(y_1-y_0)^2}|</script>
+</p>
+</blockquote>
 <h3 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h3>
-<h3 id="distancia-entre-dues-rectes">Distància entre dues rectes</h3></div>
+<p>Es defineix la distància d'un punt <script type="math/tex">P</script> a una recta <script type="math/tex">r:Ax+By+C=0</script> com la longitud del segment perpendicular que uneix el punt amb la recta.
+Per calcular-la n'hi hauria prou amb trobar la projecció ortogonal del punt sobre la recta, diem-li <script type="math/tex">P^\prime</script>, i fer el mòdul del vector entre els 2 punts, o sigui <script type="math/tex">|\vec{PP^{\prime}}|</script>. Això potser resultaria una mica llarg i existeix una fòrmula més compacta per trobar-ho. Anem-la a deduir. Fixem-nos amb el dibuix de sota:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2496881/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<p>A part dels punt <script type="math/tex">P(x_0,y_0)</script> i la seva projecció ortogonal sobre <script type="math/tex">r</script>, <script type="math/tex">P'</script>, considerem també un punt <script type="math/tex">Q(x_1,y_1)</script> pertanyent a la recta. El triangle <script type="math/tex">QP^\prime P</script> és rectangle en <script type="math/tex">P^\prime</script>. Sabent això tenim que:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=d(P,P^\prime)=|\vec{PP^\prime}|=||\vec{QP}|\cdot cos \alpha|</script>
+</p>
+<p>on <script type="math/tex">\alpha</script> és l'angle que forma el segment <script type="math/tex">\overline{PP^\prime}</script> amb el segment <script type="math/tex">\overline{QP}</script>.</p>
+<p>Considerem ara un vector unitari (mòdul 1) perpendicular a <script type="math/tex">r</script>, diem-li <script type="math/tex">\vec{u}</script>.</p>
+<p>Si ens tornem a fixar en el gràfic, el vector <script type="math/tex">\vec{QP}</script> i el vector <script type="math/tex">\vec{u}</script> formen un angle <script type="math/tex">\beta=\alpha</script>. Per tant, si ara calculem el producte dels vectors <script type="math/tex">\vec{QP}</script> i <script type="math/tex">\vec{u}</script> tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\vec{QP}\cdot \vec{u}=|\vec{QP}|\cdot |\vec{u}|\cdot cos \alpha=|\vec{QP}|cos \alpha</script>
+</p>
+<p>ja que <script type="math/tex">|\vec{u}|=1</script> perquè és unitari.</p>
+<p>Si ajuntem les dues expressions anteriors tenim que:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=|\vec{QP}\cdot \vec{u}|</script>
+</p>
+<p>D'altra banda, si <script type="math/tex">\vec{v}=(-B,A)</script> és el vector director de <script type="math/tex">r</script>, perquè <script type="math/tex">\vec{u}</script> sigui unitari i perpendicular a <script type="math/tex">\vec{v}</script> (això és, <script type="math/tex">\vec{u}\cdot \vec{v}=0</script>) ha de tenir necessàriament la forma:</p>
+<p>
+<script type="math/tex; mode=display">\vec{u}=\frac{1}{\sqrt{A^2+B^2}}(A,B)=\Big( \frac{A}{\sqrt{A^2+B^2}}, \frac{B}{\sqrt{A^2+B^2}} \Big)</script>
+</p>
+<p>Agafant <script type="math/tex">\vec{QP}=(x_0-x_1,y_0-y_1)</script> i substituïnt això a l'expressió de la distància tenim que:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=|\vec{QP}\cdot \vec{u}|=|\frac{A}{\sqrt{A^2+B^2}}\cdot (x_0-x_1)+\frac{B}{\sqrt{A^2+B^2}}\cdot (y_0-y_1)|=\frac{|Ax_0+By_0-Ax_1-By_1|}{\sqrt{A^2+B^2}}=\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}</script>
+</p>
+<p>ja que si <script type="math/tex">Q(x_1,y_1) \in r</script> necessàriament ha de complir l'equació de la recta: <script type="math/tex">Ax_1+By_1+C=0 \rightarrow C=-Ax_1-By_1</script>.</p>
+<p>Així doncs, la distància d'un punt <script type="math/tex">P(x_0,y_0)</script> a una recta <script type="math/tex">r:Ax+By+C=0</script> ve donada per:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}</script>
+</p>
+</blockquote>
+<h3 id="distancia-entre-dues-rectes">Distància entre dues rectes</h3>
+<p>Si les dues rectes es tallen, la seva distància serà <script type="math/tex">0</script>. En cas de tenir dues rectes paral.leles (ho sabrem si els seus vectors directors són proporcionals, o sigui, linealment dependents), calcularem la seva distància a partir de la fòrmula anterior. Només ens caldrà saber l'equació d'una de les rectes i un punt que pertanyi a una de les dues rectes:
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2499067/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe></p>
+<p>Segons el gràfic:</p>
+<p>
+<script type="math/tex; mode=display">d(r,s)=d(P,r)=d(Q,s)</script>
+</p></div>
         </div>
 
         <footer class="col-md-12">
