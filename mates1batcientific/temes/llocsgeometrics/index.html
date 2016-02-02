@@ -144,80 +144,13 @@
     
         <li class="main active"><a href="#tema-7-llocs-geometrics">Tema 7: Llocs geomètrics</a></li>
         
-            <li><a href="#introduccio">Introducció</a></li>
-        
-            <li><a href="#la-circumferencia">La circumferència</a></li>
-        
-            <li><a href="#lellipse">L'el.lipse</a></li>
-        
-            <li><a href="#la-parabola">La paràbola</a></li>
-        
-            <li><a href="#lhiperbola">L'hipèrbola</a></li>
-        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
 <h1 id="tema-7-llocs-geometrics">Tema 7: Llocs geomètrics</h1>
-<h2 id="introduccio">Introducció</h2>
-<p>Un lloc geomètric és un conjunt de punts que compleixen una certa propietat. Per exemple, la bisectriu d'un segment és el lloc geomètric dels punts que equidisten dels 2 extrems del segment. En aquest tema estudiarem 4 llocs geomètrics: la circumferència, l'el.lipse, la paràbola i l'hipèrbola. Segurament alguns d'aquests llocs geomètrics ja els coneixeu des de primària, però els estudiarem des d'una perspectiva geomètrica diferent.</p>
-<p>Aquests llocs geomètrics també s'anomenen <a href="https://ca.wikipedia.org/wiki/C%C3%B2nica">Còniques</a>. Això és perquè es poden obtenir tallant una superfície cònica doble mitjançant diversos plans.</p>
-<h2 id="la-circumferencia">La circumferència</h2>
-<p>La circumferència és el lloc geomètric dels punts del pla que equidisten d'un mateix punt anomenat centre.</p>
-<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2575689/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
-
-<p>Considerem ara una circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script>. Anem a veure quina equació han de complir els punts d'aquesta circumferència, <script type="math/tex">P(x,y)</script>. Si pensem en el triangle rectangle anterior, el catet de la base mesura necessàriament <script type="math/tex">x-a</script> i el catet de l'altura <script type="math/tex">y-b</script>. Si apliquem el teorema de Pitàgores es compleix que:</p>
-<blockquote>
-<p>
-<script type="math/tex; mode=display">(x-a)^2+(x-b)^2=r^2</script>
-</p>
-</blockquote>
-<p>Aquesta és l'<strong>equació reduÏda de la circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script></strong>.</p>
-<p>Si desenvolupem aquesta equació fent els quadrats obtenim:</p>
-<p>
-<script type="math/tex; mode=display">
-\left.\begin{aligned}
-x^2+y^2-2ax-2by+a^2+b^2-r^2&=0\\
-m \equiv -2a \\
-n \equiv -2b \\
-p \equiv a^2+b^2-r^2
-\end{aligned}
-\right\}
-\rightarrow x^2+y^2+mx+ny+p=0
-</script>
-</p>
-<p>Per tant, amb aquesta nova forma de l'equació d'una circumferència, <strong>l'equació general</strong>, els coeficients de <script type="math/tex">x</script> i <script type="math/tex">y</script> ens donen el centre de la circumferència <script type="math/tex">C(a,b)</script> i el terme independent <script type="math/tex">p</script> ens donarà el radi.</p>
-<p><strong>Exemple 1</strong>
-Troba el centre i el radi de la circumferència: <script type="math/tex">x^2+y^2-4x+2y-4=0</script>.</p>
-<p>Els coeficients de <script type="math/tex">x</script> i de <script type="math/tex">y</script> ens donaran el centre de la circumferència:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
--4=-2a \rightarrow a=2\\
-2=-2b \rightarrow b=-1
-\end{align}</script>
-</p>
-<p>El centre és doncs el punt <script type="math/tex">C(2,-1)</script>. Anem a veure quin serà el radi. Això bé donat pel terme independent de l'equació:</p>
-<p>
-<script type="math/tex; mode=display">-4=a^2+b^2-r^2 \rightarrow -4= 4+1-r^2 \rightarrow r=\sqrt{9}=3</script>
-</p>
-<h3 id="posicions-relatives-entre-recta-i-circumferencia">Posicions relatives entre recta i circumferència</h3>
-<p>Una circumferència i una recta poden ser:</p>
-<ol>
-<li>Exteriors, no es tallen</li>
-<li>Tangents, la recta toca a la circumferència en només un punt</li>
-<li>Secants, la recta talla a la circumferència en dos punts</li>
-</ol>
-<p>Per saber en quina de les tres situacions ens trobem, resoldrem el sistema de dues equacions i dues incògnites format per l'equació d'una circumferència per una banda i l'equació d'una recta per l'altra. Si el sistema no té solució estem en el primer cas, si en té una, ens trobem en el segon i si en té dues, en el tercer.</p>
-<p>Fixeu-vos que en cas que siguin exteriors, la distància del centre de la circumferència a la recta serà major que el radi, si són tangents, la distància de la recta al centre serà exactament el radi i si són secants, la distància serà 0.</p>
-<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2577927/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
-
-<h3 id="posicions-relatives-entre-circumferencies">Posicions relatives entre circumferències</h3>
-<h3 id="posicions-relatives-entre-un-punt-i-una-circumferencia">Posicions relatives entre un punt i una circumferència</h3>
-<h3 id="potencia-dun-punt-respecte-duna-circumferencia">Potència d'un punt respecte d'una circumferència</h3>
-<h2 id="lellipse">L'el.lipse</h2>
-<h2 id="la-parabola">La paràbola</h2>
-<h2 id="lhiperbola">L'hipèrbola</h2></div>
+<p>Hola</p></div>
         </div>
 
         <footer class="col-md-12">
