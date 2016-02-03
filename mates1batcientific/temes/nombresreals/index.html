@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>1. Nombres reals - Matemàtiques 1r batxillerat</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">1. Nombres reals</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigonometria/">2. Trigonometria</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../complexos/">3. Nombres complexos</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../polinomis/">4. Polinomis</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../vectors/">5. Vectors en el pla</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../rectes/">6. Rectes en el pla</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../funcions/">8. Funcions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../successions/">9. Successions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../limits/">10. Límits i continuïtat de funcions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../sobre/">Llicència</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../..">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../trigonometria/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#tema-1-nombres-reals">Tema 1: Nombres reals</a></li>
+        
+            <li><a href="#el-conjunt-dels-nombres-reals">El conjunt dels nombres reals</a></li>
+        
+            <li><a href="#recta-real">Recta real</a></li>
+        
+            <li><a href="#potencies">Potències</a></li>
+        
+            <li><a href="#radicals">Radicals</a></li>
+        
+            <li><a href="#logaritmes">Logaritmes</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="tema-1-nombres-reals">Tema 1: Nombres reals</h1>
+<h2 id="el-conjunt-dels-nombres-reals">El conjunt dels nombres reals</h2>
+<p>Els nombres reals es divideixen en <strong>nombres racionals</strong> <strong><script type="math/tex">\mathbb{Q}</script></strong>, que són aquells que es poden expressar mitjançant una fracció i els <strong>irracionals</strong> <strong><script type="math/tex">\mathbb{I}</script></strong>. Exemples de nombres racionals són <script type="math/tex">\frac{3}{4}</script>, <script type="math/tex">2'5</script> i <script type="math/tex">0'\stackrel\frown{123}</script>. Els nombres irracionals no es poden expressar com a fracció. El nombre <script type="math/tex">\pi</script> i <script type="math/tex">\sqrt{5}</script> són nombres irracionals.
+Un <a href="https://en.wikipedia.org/wiki/Real_number">nombre real</a> és aquell que es pot representar al llarg d'una recta contínua. Per exemple, tots els nombres associats a mesures físiques (longitud, força, pes, etc) són nombres reals. <a href="http://www.mathsisfun.com/numbers/real-numbers.html">Exemples de nombres reals</a> són: <script type="math/tex">1</script>, <script type="math/tex">-5</script>, <script type="math/tex">\sqrt{3}</script>, <script type="math/tex">\pi</script>, <script type="math/tex">4'15</script>, <script type="math/tex">2'\stackrel\frown{3}</script>, <script type="math/tex">\frac{4}{5}</script>. Al conjunt dels nombres reals se li dóna la lletra <strong><script type="math/tex">\mathbb{R}</script></strong>.</p>
+<p>La <a href="https://ca.wikipedia.org/wiki/Recta_num%C3%A8rica"><strong>recta numèrica</strong></a> està formada pel conjunt de tots els nombres reals. Els nombres reals són un <strong>conjunt ordenat</strong> ja que donats dos nombres, sempre podem determinar-ne el més gran: si <script type="math/tex">a> b</script> al representar-los sobre la recta, <script type="math/tex">a</script> estarà a la dreta de <script type="math/tex">b</script>.</p>
+<p>Si recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts. </p>
+<p><img alt="fig1.1" src="../img/classificacio_reals_1.png" /></p>
+<p>Els nombres reals es divideixen en <strong>nombres racionals</strong> <strong><script type="math/tex">\mathbb{Q}</script></strong>, que són aquells que es poden expressar mitjançant una fracció i els <strong>irracionals</strong> <strong><script type="math/tex">\mathbb{I}</script></strong>. Exemples de nombres racionals són <script type="math/tex">\frac{3}{4}</script>, <script type="math/tex">2'5</script> i <script type="math/tex">0'\stackrel\frown{123}</script>. Els nombres irracionals no es poden expressar com a fracció. El nombre <script type="math/tex">\pi</script> i <script type="math/tex">\sqrt{5}</script> són nombres irracionals.</p>
+<p>Els nombres <strong>naturals</strong> i els <strong>enters</strong> ja els coneixeu de cursos anteriors:</p>
+<p>
+<script type="math/tex; mode=display">(\mathbb{N}=\{0, 1, 2, 3, 4,...\}</script>
+<script type="math/tex; mode=display">\mathbb{Z}=\{...-4, -3, -2, -1, 0, 1, 2, 3, 4,...\}</script>
+</p>
+<p>La relació entre els conjunts <script type="math/tex">\mathbb{N}</script>, <script type="math/tex">\mathbb{Z}</script> i <script type="math/tex">\mathbb{Q}</script> és la següent: <script type="math/tex">\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}</script>. Això vol dir que un nombre natural és alhora enter i racional, per exemple.</p>
+<p>Els nombres <strong>decimals</strong> es divideixen en exactes i periòdics. Si el període comença just després de la coma s'anomenen <strong>periòdics purs</strong>  (<script type="math/tex">0'\stackrel\frown{3}=0'3333....</script>) i si hi ha alguna xifra que no es repeteix abans s'anomenen <strong>periòdics mixtes</strong> (<script type="math/tex">0'2\stackrel\frown{45}=0'2454545....</script>). Per a tots els nombres decimals podem buscar la seva <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm">fracció generatriu</a>.</p>
+<h2 id="recta-real">Recta real</h2>
+<p>Representar nombres sobre la recta real és ben fàcil si són racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Però què passa quan hem de situar per exemple, <script type="math/tex">\frac{3}{7}</script> sobre la recta real? Hi ha varis mètodes. El mètode més ràpid és agafar la unitat, fer-ne 7 parts i agafar-ne 3. El mètode més exacte és utilitzant la tècnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'última part amb l'<script type="math/tex">1</script> de la recta real i traces línies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecció amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions <script type="math/tex">\frac{1}{7}</script>, <script type="math/tex">\frac{2}{7}</script>, <script type="math/tex">\frac{3}{7}</script>, etc. Si ho desitges, pots descarregar-te el <a href="../ggb/fraccions_recta_real_1.ggb">fitxer geogebra</a>.</p>
+<p><img alt="*Representació de \frac{3}{7} sobre la recta real*" src="../img/fraccions_recta_real_1.png" /></p>
+<p>Per representar radicals irracionals sobre la recta real, cal utilitzar el <a href="https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores">teorema de Pitàgores</a>. A la figura següent s'hi pot veure la representació gràfica de <script type="math/tex">\sqrt{2}</script> (<a href="../ggb/arrel_de_dos_1.ggb">fitxer geogebra</a>).</p>
+<p><img alt="*Representació de \sqrt{2} sobre la recta real*" src="../img/arrel_de_dos_1.png" /></p>
+<h3 id="intervals">Intervals</h3>
+<p><a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm">Podem entendre un interval com una regió de la recta real</a>. Agafem com a exemple , un de senzill: <em>Els nombres més grans que <script type="math/tex">4</script></em>. Si ho representem sobre la recta real obtenim:</p>
+<p><img alt="*Representació de x &gt; 4 sobre la recta real*" src="../img/interval1_rectareal_1.png" /></p>
+<p>Hi ha 3 maneres d'indicar un interval: </p>
+<ul>
+<li>gràficament (gràfic anterior)</li>
+<li>mitjançant una desigualtat, <script type="math/tex">x>4</script>
+</li>
+<li>mitjançant un interval: <script type="math/tex">(4,+\infty)</script>. </li>
+</ul>
+<h4 id="tipus-dintervals">Tipus d'intervals</h4>
+<p>Els extrems d'un interval són importants. Dir <em>els nombres més grans que <script type="math/tex">4</script> i més petits que <script type="math/tex">5</script></em> no és el mateix que dir <em>els nombres més grans que <script type="math/tex">4</script> i més petits o iguals que <script type="math/tex">5</script></em>:</p>
+<p><img alt="*Representació de x &gt; 4 &gt; 5, això és (4,5), sobre la recta real*" src="../img/interval2_rectareal_1.png" /></p>
+<p><img alt="*Representació de x &gt; 4 \ge 5, això és (4,5\rbrack, sobre la recta real*" src="../img/interval3_rectareal_1.png" /></p>
+<p>Els extrems oberts són aquells que no contenen el nombre (per exemple, els nombres més grans que <script type="math/tex">4)</script>. Els extrems tancats són aquells que sí el contenen (per exemple, més petits <strong>o iguals</strong> que <script type="math/tex">5</script>.)</p>
+<h3 id="inequacions">Inequacions</h3>
+<p>Una inequació d'una incògnita és una desigualtat que cal resoldre. En cas d'haver-hi solució, aquesta és un interval sobre la recta real.</p>
+<p><strong>Exemple 1</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+2x+5 & \ge 3 \\
+2x & \ge 3-5 \\
+2x & \ge -2 \\
+x & \ge -1\\
+x & \in \lbrack -1, +\infty)
+\end{align}</script>
+</p>
+<p><img alt="*Solució gràfica de l'exemple 1*" src="../img/interval4_rectareal_1.png" /></p>
+<p><strong>Exemple 2</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+-10x+3 & \le 9x -18 \\
+-19x & \le -21 \\
+19x & \le 21 \\
+x & \ge \frac{21}{19}\\
+x & \in \lbrack \frac{21}{19}, +\infty)
+\end{align}</script>
+</p>
+<p>En aquest cas, quan canviem de signe a una banda de la desigualtat, cal recordar que la desigualtat canvia de sentit.</p>
+<p><img alt="*Solució gràfica de l'exemple 2*" src="../img/interval5_rectareal_1.png" /></p>
+<p><strong>Exemple 3</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} 
+3x - 3 \ge 18 \Rightarrow 3x \ge 21 \Rightarrow x \ge 7 \\ 
+4 (x-10) \lt 12 \Rightarrow 4x - 40 \lt 12 \Rightarrow 4x \lt 52 \Rightarrow x \lt 13
+\end{cases}</script>
+</p>
+<p>La solució a aquest sistema són els nombres més grans o iguals que 7 i més petits que 13:</p>
+<p>
+<script type="math/tex; mode=display"> 7 \ge x > 13</script>
+</p>
+<p>o bé:</p>
+<p>
+<script type="math/tex; mode=display">x \in \lbrack 7, 13)</script>
+</p>
+<p><img alt="fig1.6" src="../img/interval6_rectareal_1.png" /></p>
+<p>Aquí no hem parlat de les inequacions de segon grau i una incògnita, per exemple: <script type="math/tex"> 2x^2-5x+3 > 4</script>. Per resoldre aquest tipus d'inequacions cal primer resoldre l'equació de segon grau. En <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_inequacions-JS/index.htm">aquest enllaç</a> hi podeu trobar el procediment.</p>
+<h2 id="potencies">Potències</h2>
+<p>Una potència és una expressió del tipus <script type="math/tex">a^b</script> on <script type="math/tex">a</script> és la base i <script type="math/tex">b</script> l'exponent, ambdós nombres reals. No cal afegir que <script type="math/tex">a^b</script> significa multiplicar <script type="math/tex">a</script>
+<script type="math/tex">b</script> vegades per ell mateix. En <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_radicals-JS/index.htm">aquest enllaç</a> hi podreu repassar el capítol de potències i radicals de 4t d'ESO.</p>
+<h3 id="propietats">Propietats</h3>
+<ol>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^0=1</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^1=a</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^{-n}=\frac{1}{a}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^m \cdot a^n= a^{m+n}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">\frac{a^m}{a^n}= a^{m-n}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">(a^m)^n=a^{n \cdot m}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^n \cdot b^n=(a\cdot b)^n</script>
+</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="radicals">Radicals</h2>
+<p>L'arrel <script type="math/tex">n</script>-èssima d'un nombre real <script type="math/tex">a</script> s'expressa de la manera següent:</p>
+<p>
+<script type="math/tex; mode=display">\sqrt[n]{a}</script>
+</p>
+<p>Si <script type="math/tex">b</script> és el resultat de calcular l'arrel <script type="math/tex">n</script>-èssima d'<script type="math/tex">a</script>, llavors també es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">\sqrt[n]{a}\Longleftrightarrow b^{n}=a</script>
+</p>
+<p>
+<script type="math/tex">a</script> s'anomena <strong>radicand</strong> i <script type="math/tex">n</script> és l'<strong>índex</strong> de l'arrel.</p>
+<p>Podem també entendre un radical com una potència d'exponent fraccionari:</p>
+<p>
+<script type="math/tex; mode=display"> \sqrt[n]{a^m}= a^{\frac{n}{m}}</script>
+</p>
+<p>D'aquesta manera, <script type="math/tex">\sqrt{2}=2^{\frac{1}{2}}</script>.</p>
+<h3 id="propietats_1">Propietats</h3>
+<p>Com ja hem explicat, els radicals són potències d'exponent fraccionari. Per tant, les seves propietats deriven de les propietats de les potències:</p>
+<ol>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">\sqrt[n]{a \cdot b}=\sqrt[n]{a} \cdot \sqrt[n]{b}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">\sqrt[n]{a}=\sqrt[n \cdot r]{a^r} (r \ne 0)</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">\sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">(\sqrt[n]{a})^m=\sqrt[n]{a^m}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">\sqrt[n]{\sqrt[m]{a}}=\sqrt[m \cdot n]{a}</script>
+</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</h3>
+<p>Per introduir nombres dins d'un radical, s'ha d'elevar el nombre a una potència igual a l'índex de l'arrel.</p>
+<p><strong>Exemple 4</strong></p>
+<p>Introdueix tots els factors dins de l'arrel: </p>
+<p>
+<script type="math/tex; mode=display">3^5 \cdot 2^8 \cdot 7^3 \cdot \sqrt[3]{2^5 \cdot 7}= \sqrt[3]{(3^5)^3 \cdot (2^8)^3 \cdot (7^3)^3 \cdot 2^5 \cdot 7}=\sqrt[3]{3^{15} \cdot 2^{24} \cdot 7^9 \cdot 2^5 \cdot 7}=\sqrt[3]{2^{29} \cdot 3^{15} \cdot 7^{10}}</script>
+</p>
+<p>Per extreure factors d'un radical, primer cal mirar si l'exponent del radicand és més gran que l'índex. Si és així, es podrà treure a fora el factor dividint l'exponent per l'índex del radical. A fora de l'arrel hi quedarà el nombre elevat al quocient de la divisió anterior, i a dins, el nombre elevat al residu de la divisió. Si no tenim el radicand expressat com a producte de factors de nombres primers, caldrà fer abans aquesta operació. Fixeu-vos en l'exemple següent.</p>
+<p><strong>Exemple 5</strong></p>
+<p>Treu tots els factors que puguis del radical:</p>
+<p>
+<script type="math/tex; mode=display">\sqrt[3]{120000}=\sqrt[3]{2^6 \cdot 3 \cdot 5^4}=2^2 \cdot 5 \cdot \sqrt[3]{3 \cdot 5}</script>
+</p>
+<h3 id="sumes-i-restes">Sumes i restes</h3>
+<p>Diem que dos radicals són <strong>semblants</strong> si tenen el mateix índex i el mateix radicand. Per exemple <script type="math/tex">2 \sqrt [5]{3}</script> i <script type="math/tex">\sqrt[5]{3}</script> són semblants però no ho són amb <script type="math/tex">\sqrt{3}</script>.</p>
+<p>Només es poden sumar o restar radicals si són semblants.</p>
+<p><strong>Exemple 6</strong></p>
+<p>
+<script type="math/tex; mode=display">2\sqrt[5]{21}+4 \sqrt[5]{21}=6 \sqrt[5]{21}</script>
+</p>
+<h3 id="multiplicacions-i-divisions">Multiplicacions i divisions</h3>
+<p>Per multiplicar o dividir radicals han de tenir el <strong>mateix índex</strong>. Si tenen diferent índex els hem de reduir a <strong>índex comú</strong> tal i com fem amb les fraccions. Llavors es multipliquen o divideixen els radicands.</p>
+<p><strong>Exemple 7</strong></p>
+<p>
+<script type="math/tex; mode=display">\sqrt[3]{5}\cdot \sqrt{8}=\sqrt[6]{5^2}\cdot\sqrt[6]{8^3}=\sqrt[6]{5^2\cdot 8^3}</script>
+</p>
+<h3 id="arrel-duna-arrel">Arrel d'una arrel</h3>
+<p>Per treure l'arrel d'una arrel, es multipliquen els índexs.</p>
+<p><strong>Exemple 8</strong></p>
+<p>
+<script type="math/tex; mode=display">\sqrt[7]{\sqrt[3]{4}}=\sqrt[21]{4}</script>
+</p>
+<h3 id="racionalitzacio">Racionalització</h3>
+<p>En general no es considera elegant donar com a resultat un radical en un denominador. És per això que sempre que tinguem radicals en el denominador d'una fracció s'han d'intentar buscar fraccions equivalents. Mireu els exemples següents.</p>
+<p><strong>Exemple 9</strong></p>
+<p>
+<script type="math/tex; mode=display">\frac{2}{\sqrt[3]{5}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5}\cdot \sqrt[3]{5^2}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5^3}}=\frac{2\cdot\sqrt[3]{5^2}}{5}</script>
+</p>
+<p><strong>Exemple 10</strong></p>
+<p>Si en el denominador hi tenim una suma o una resta que contingui radicals, multiplicarem la fracció a dalt i a baix pel conjugat (si és suma, multiplicarem per la mateixa expressió restada i viceversa).</p>
+<p>
+<script type="math/tex; mode=display">\frac{5}{1+\sqrt{3}}=\frac{5}{1+\sqrt{3}}\cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}=\frac{5(1-\sqrt{3})}{1^2-(\sqrt{3})^2}=\frac{5(1-\sqrt{3})}{-2}=-\frac{5}{2}(1-\sqrt{3})</script>
+</p>
+<h2 id="logaritmes">Logaritmes</h2>
+<p>El <script type="math/tex">log_a b</script>, això és, logaritme en base <script type="math/tex">a</script> de <script type="math/tex">b</script>, és aquella potència a la qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">b</script> de resultat. </p>
+<p>Per exemple, <script type="math/tex">log_2 8</script> és <script type="math/tex">3</script>, perquè <script type="math/tex">2^3=8</script>. De la mateixa manera, <script type="math/tex">log_{10} 1000 = 3</script> perquè <script type="math/tex">10^3=1000</script>. Però quan és <script type="math/tex">log_2 36</script>? Quin nombre cal elevar el <script type="math/tex">2</script> per obtenir <script type="math/tex">36</script> de resultat? </p>
+<p>
+<script type="math/tex; mode=display">log_2 36=5'169925....</script>
+</p>
+<p>Per tant, el resultat d'un logaritme, que tal i com hem dit, expressa una potència, no té perquè ser enter. </p>
+<p>D'altra banda, com que la base <script type="math/tex">a</script> sempre és positiva, <script type="math/tex">b</script> també ho ha de ser. Això és, l'operació <script type="math/tex">log_a b</script> només està definida per a nombres <script type="math/tex">b</script> que siguin positius.</p>
+<p>Així doncs, en general:</p>
+<p>
+<script type="math/tex; mode=display">log_a{b}=x \Leftrightarrow a^x=b</script>
+</p>
+<h3 id="propietats_2">Propietats</h3>
+<ol>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">a^{log_a b}=b</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong> </p>
+<p>
+<script type="math/tex">log_a b=x \Leftrightarrow a^x=b</script>
+<br />
+Com que <script type="math/tex">x=log_a{b}</script>, llavors s'obté el resultat desitjat:<br />
+<script type="math/tex">a^{log_a{b}}=b</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a a=1</script>
+</p>
+</blockquote>
+<p>El nombre al qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">a</script>, lògicament és <script type="math/tex">1</script>.</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a a^m=m</script>
+</p>
+</blockquote>
+<p>El nombre al qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">a^m</script>, lògicament, és <script type="math/tex">m</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a (p \cdot q)=log_a p + log_a q </script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Definim:
+<script type="math/tex; mode=display">\begin{align}
+log_a p =x \Rightarrow a^x=p \\
+log_a q =y \Rightarrow a^y=q \\
+\end{align}</script>
+</p>
+<p>Multipliquem les dues equacions:</p>
+<p>
+<script type="math/tex; mode=display">a^x \cdot a^y=p \cdot q</script>
+</p>
+<p>Producte de potències de la mateixa base, suma d'exponents:</p>
+<p>
+<script type="math/tex; mode=display">a^{x+y}=p \cdot q</script>
+</p>
+<p>Apliquem logaritmes a banda i banda de l'equació anterior:</p>
+<p>
+<script type="math/tex; mode=display">log_a(a^{x+y})=log_a(p \cdot q)</script>
+</p>
+<p>
+<script type="math/tex">x+y=log_a(p \cdot q)</script>
+</p>
+<p>Substituïm <script type="math/tex">x</script> i <script type="math/tex">y</script> pels seus valors:</p>
+<p>
+<script type="math/tex">log_a p+log_a q=log_a(p \cdot q)</script>
+</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a(\frac{p}{q})=log_a p - log_a q</script>
+</p>
+</blockquote>
+<p>Es demostra de la mateixa manera que la propietat 7.</p>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">log_a{b^m}=m\cdot log_a b</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong></p>
+<p>Definim: </p>
+<p>
+<script type="math/tex; mode=display">x=log_a b\Rightarrow a^x=b</script>
+</p>
+<p>Elevem a banda i banda a una potència <script type="math/tex">m</script>:</p>
+<p>
+<script type="math/tex; mode=display">(a^x)^m=b^m</script>
+</p>
+<p>I potència d'una potència es multipliquen els exponents:</p>
+<p>
+<script type="math/tex; mode=display">a^{m\cdot x}=b^m</script>
+</p>
+<p>Si prenem logaritmes a banda i banda:</p>
+<p>
+<script type="math/tex; mode=display">log_a a^{m\cdot x}= log_a {b^m} </script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">m \cdot x=log_a b^m</script>
+</p>
+<p>I si recordem què era <script type="math/tex">x</script>:</p>
+<p>
+<script type="math/tex; mode=display">m \cdot log_a b=log_a b^m</script>
+</p>
+</li>
+</ol>
+<h3 id="canvi-de-base">Canvi de base</h3>
+<p>La calculadora científica no té una tecla per a qualsevol base de logaritmes. De fet, les calculadores més comunes tenen la tecla per calcular el logaritme en base 10, <script type="math/tex">log</script>, i el logaritme en base <script type="math/tex">e</script>, <script type="math/tex">ln</script>, que explicarem més endavant.</p>
+<p>Per efectuar un canvi de base de logaritme, hem de tenir en compte la fórmula següent:</p>
+<blockquote>
+<p>
+<script type="math/tex">log_a x = \frac{log_b x}{log_b a}</script>
+</p>
+</blockquote>
+<p><strong>Demostració</strong>  </p>
+<p>Definim:  </p>
+<p>
+<script type="math/tex; mode=display">log_a x= y \Leftrightarrow x=a^y</script>
+</p>
+<p>Com que volem expressar el logaritme en base <script type="math/tex">a</script> en una altra base, <script type="math/tex">b</script>, prenem logaritmes en base <script type="math/tex">b</script> a banda i banda de l'expressió:  </p>
+<p>
+<script type="math/tex; mode=display">log_b x=log_b {a^y}</script>
+</p>
+<p>Apliquem la propietat 6. dels logaritmes i tenim:  </p>
+<p>
+<script type="math/tex; mode=display">log_b x= y \cdot log_b a</script>
+</p>
+<p>Si recordem què era <script type="math/tex">y</script>:</p>
+<p>
+<script type="math/tex; mode=display">log_b x = log_a x \cdot log_b a</script>
+</p>
+<p>Aïllant <script type="math/tex">log_a x</script> obtenim:</p>
+<p>
+<script type="math/tex; mode=display">log_a x = \frac{log_b x}{log_b a}</script>
+</p>
+<p><strong>Exemple 11</strong></p>
+<p>Per calcular el <script type="math/tex">log_5{10}</script> a la calculadora, haurem de fer doncs:</p>
+<p>
+<script type="math/tex; mode=display">log_5{10}=\frac{log 10}{log 5}= \frac{1}{log 5}</script>
+</p>
+<p>Entenent <script type="math/tex">log 5</script> com el logaritme en base <script type="math/tex">10</script> de <script type="math/tex">5</script>.  </p>
+<h3 id="el-nombre-e-i-els-logaritmes-neperians">El nombre <script type="math/tex">e</script> i els logaritmes neperians</h3>
+<p>El <a href="https://ca.wikipedia.org/wiki/Nombre_e">nombre <script type="math/tex">e</script></a> és una constant matemàtica que és la base principal de molts càlculs, com per exemple, en l'estudi de <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_3eso_cat_progressions-JS/index.htm">l'interès compost</a> d'un crèdit o dipòsit. </p>
+<p>És un nombre irracional, això és, té infinits decimals:</p>
+<p>
+<script type="math/tex; mode=display">e=2,718281828459045235....</script>
+</p>
+<p>Els <strong>logaritmes naturals</strong> o <strong>logaritmes neperians</strong> (<script type="math/tex">ln x</script>) són aquells que la seva base és el nombre e. Per exemple, calcular el logaritme neperià de 2 vol dir:</p>
+<p>
+<script type="math/tex; mode=display">ln (2)= 0'6931471.... \Leftrightarrow e^{0'6931471....}=2 </script>
+</p>
+<p>Així mateix, per calcular qualsevol logaritme en qualsevol base, podem fer servir la fórmula del canvi de base anterior amb els logaritmes en base l0 (<script type="math/tex">log</script>) o base <script type="math/tex">e</script> (<script type="math/tex">ln</script>).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>
