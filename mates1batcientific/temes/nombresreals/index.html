@@ -1,170 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>1. Nombres reals - Matemàtiques 1r batxillerat</title>
+  
 
-	<title>1. Nombres reals - Matemàtiques 1r batxillerat</title>
+  <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/base.css" rel="stylesheet">
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
 
-        
-    </head>
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "1. Nombres reals";
+    var mkdocs_page_input_path = "temes\nombresreals.md";
+    var mkdocs_page_url = "/temes/nombresreals/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-    <body>
+  
+</head>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+<body class="wy-body-for-nav" role="document">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+  <div class="wy-grid-for-nav">
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        <li class="active">
-                            <a href="./">1. Nombres reals</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../trigonometria/">2. Trigonometria</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../complexos/">3. Nombres complexos</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../polinomis/">4. Polinomis</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../vectors/">5. Vectors en el pla</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../rectes/">6. Rectes en el pla</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../funcions/">8. Funcions</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../successions/">9. Successions</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../limits/">10. Límits i continuïtat de funcions</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
-                        </li>
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../../sobre/">Llicència</a>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li >
-                    <a rel="next" href="../..">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../trigonometria/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Matemàtiques 1r batxillerat</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
 </div>
+      </div>
 
-        <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#tema-1-nombres-reals">Tema 1: Nombres reals</a></li>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
         
-            <li><a href="#el-conjunt-dels-nombres-reals">El conjunt dels nombres reals</a></li>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Temes</span></li>
+
         
-            <li><a href="#recta-real">Recta real</a></li>
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">1. Nombres reals</a>
         
-            <li><a href="#potencies">Potències</a></li>
+            <ul>
+            
+                <li class="toctree-l3"><a href="#tema-1-nombres-reals">Tema 1: Nombres reals</a></li>
+                
+                    <li><a class="toctree-l4" href="#el-conjunt-dels-nombres-reals">El conjunt dels nombres reals</a></li>
+                
+                    <li><a class="toctree-l4" href="#recta-real">Recta real</a></li>
+                
+                    <li><a class="toctree-l4" href="#potencies">Potències</a></li>
+                
+                    <li><a class="toctree-l4" href="#radicals">Radicals</a></li>
+                
+                    <li><a class="toctree-l4" href="#logaritmes">Logaritmes</a></li>
+                
+            
+            </ul>
         
-            <li><a href="#radicals">Radicals</a></li>
+    </li>
+
         
-            <li><a href="#logaritmes">Logaritmes</a></li>
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../trigonometria/">2. Trigonometria</a>
         
-    
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../complexos/">3. Nombres complexos</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../polinomis/">4. Polinomis</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vectors/">5. Vectors en el pla</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rectes/">6. Rectes en el pla</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../llocsgeometrics/">7. Llocs geomètrics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../funcions/">8. Funcions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../successions/">9. Successions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../limits/">10. Límits i continuïtat de funcions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
+        
+    </li>
+
+        
     </ul>
-</div></div>
-            <div class="col-md-9" role="main">
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../sobre/">Llicència</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
 
-<h1 id="tema-1-nombres-reals">Tema 1: Nombres reals</h1>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Matemàtiques 1r batxillerat</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Temes &raquo;</li>
+        
+      
+    
+    <li>1. Nombres reals</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="tema-1-nombres-reals">Tema 1: Nombres reals</h1>
 <h2 id="el-conjunt-dels-nombres-reals">El conjunt dels nombres reals</h2>
 <p>Els nombres reals es divideixen en <strong>nombres racionals</strong> <strong><script type="math/tex">\mathbb{Q}</script></strong>, que són aquells que es poden expressar mitjançant una fracció i els <strong>irracionals</strong> <strong><script type="math/tex">\mathbb{I}</script></strong>. Exemples de nombres racionals són <script type="math/tex">\frac{3}{4}</script>, <script type="math/tex">2'5</script> i <script type="math/tex">0'\stackrel\frown{123}</script>. Els nombres irracionals no es poden expressar com a fracció. El nombre <script type="math/tex">\pi</script> i <script type="math/tex">\sqrt{5}</script> són nombres irracionals.
 Un <a href="https://en.wikipedia.org/wiki/Real_number">nombre real</a> és aquell que es pot representar al llarg d'una recta contínua. Per exemple, tots els nombres associats a mesures físiques (longitud, força, pes, etc) són nombres reals. <a href="http://www.mathsisfun.com/numbers/real-numbers.html">Exemples de nombres reals</a> són: <script type="math/tex">1</script>, <script type="math/tex">-5</script>, <script type="math/tex">\sqrt{3}</script>, <script type="math/tex">\pi</script>, <script type="math/tex">4'15</script>, <script type="math/tex">2'\stackrel\frown{3}</script>, <script type="math/tex">\frac{4}{5}</script>. Al conjunt dels nombres reals se li dóna la lletra <strong><script type="math/tex">\mathbb{R}</script></strong>.</p>
 <p>La <a href="https://ca.wikipedia.org/wiki/Recta_num%C3%A8rica"><strong>recta numèrica</strong></a> està formada pel conjunt de tots els nombres reals. Els nombres reals són un <strong>conjunt ordenat</strong> ja que donats dos nombres, sempre podem determinar-ne el més gran: si <script type="math/tex">a> b</script> al representar-los sobre la recta, <script type="math/tex">a</script> estarà a la dreta de <script type="math/tex">b</script>.</p>
-<p>Si recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts. </p>
+<p>Si recordeu de cursos anteriors, els nombres reals es dividien en diversos subconjunts.</p>
 <p><img alt="fig1.1" src="../img/classificacio_reals_1.png" /></p>
 <p>Els nombres reals es divideixen en <strong>nombres racionals</strong> <strong><script type="math/tex">\mathbb{Q}</script></strong>, que són aquells que es poden expressar mitjançant una fracció i els <strong>irracionals</strong> <strong><script type="math/tex">\mathbb{I}</script></strong>. Exemples de nombres racionals són <script type="math/tex">\frac{3}{4}</script>, <script type="math/tex">2'5</script> i <script type="math/tex">0'\stackrel\frown{123}</script>. Els nombres irracionals no es poden expressar com a fracció. El nombre <script type="math/tex">\pi</script> i <script type="math/tex">\sqrt{5}</script> són nombres irracionals.</p>
 <p>Els nombres <strong>naturals</strong> i els <strong>enters</strong> ja els coneixeu de cursos anteriors:</p>
@@ -175,19 +230,19 @@ Un <a href="https://en.wikipedia.org/wiki/Real_number">nombre real</a> és aquel
 <p>La relació entre els conjunts <script type="math/tex">\mathbb{N}</script>, <script type="math/tex">\mathbb{Z}</script> i <script type="math/tex">\mathbb{Q}</script> és la següent: <script type="math/tex">\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}</script>. Això vol dir que un nombre natural és alhora enter i racional, per exemple.</p>
 <p>Els nombres <strong>decimals</strong> es divideixen en exactes i periòdics. Si el període comença just després de la coma s'anomenen <strong>periòdics purs</strong>  (<script type="math/tex">0'\stackrel\frown{3}=0'3333....</script>) i si hi ha alguna xifra que no es repeteix abans s'anomenen <strong>periòdics mixtes</strong> (<script type="math/tex">0'2\stackrel\frown{45}=0'2454545....</script>). Per a tots els nombres decimals podem buscar la seva <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm">fracció generatriu</a>.</p>
 <h2 id="recta-real">Recta real</h2>
-<p>Representar nombres sobre la recta real és ben fàcil si són racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Però què passa quan hem de situar per exemple, <script type="math/tex">\frac{3}{7}</script> sobre la recta real? Hi ha varis mètodes. El mètode més ràpid és agafar la unitat, fer-ne 7 parts i agafar-ne 3. El mètode més exacte és utilitzant la tècnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'última part amb l'<script type="math/tex">1</script> de la recta real i traces línies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecció amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions <script type="math/tex">\frac{1}{7}</script>, <script type="math/tex">\frac{2}{7}</script>, <script type="math/tex">\frac{3}{7}</script>, etc. Si ho desitges, pots descarregar-te el <a href="../ggb/fraccions_recta_real_1.ggb">fitxer geogebra</a>.</p>
+<p>Representar nombres sobre la recta real és ben fàcil si són racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Però què passa quan hem de situar per exemple, <script type="math/tex">\frac{3}{7}</script> sobre la recta real? Hi ha varis mètodes. El mètode més ràpid és agafar la unitat, fer-ne 7 parts i agafar-ne 3. El mètode més exacte és utilitzant la tècnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'última part amb l'<script type="math/tex">1</script> de la recta real i traces línies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecció amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions <script type="math/tex">\frac{1}{7}</script>, <script type="math/tex">\frac{2}{7}</script>, <script type="math/tex">\frac{3}{7}</script>, etc.</p>
 <p><img alt="*Representació de \frac{3}{7} sobre la recta real*" src="../img/fraccions_recta_real_1.png" /></p>
-<p>Per representar radicals irracionals sobre la recta real, cal utilitzar el <a href="https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores">teorema de Pitàgores</a>. A la figura següent s'hi pot veure la representació gràfica de <script type="math/tex">\sqrt{2}</script> (<a href="../ggb/arrel_de_dos_1.ggb">fitxer geogebra</a>).</p>
+<p>Per representar radicals irracionals sobre la recta real, cal utilitzar el <a href="https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores">teorema de Pitàgores</a>. A la figura següent s'hi pot veure la representació gràfica de <script type="math/tex">\sqrt{2}</script>. </p>
 <p><img alt="*Representació de \sqrt{2} sobre la recta real*" src="../img/arrel_de_dos_1.png" /></p>
 <h3 id="intervals">Intervals</h3>
 <p><a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm">Podem entendre un interval com una regió de la recta real</a>. Agafem com a exemple , un de senzill: <em>Els nombres més grans que <script type="math/tex">4</script></em>. Si ho representem sobre la recta real obtenim:</p>
 <p><img alt="*Representació de x &gt; 4 sobre la recta real*" src="../img/interval1_rectareal_1.png" /></p>
-<p>Hi ha 3 maneres d'indicar un interval: </p>
+<p>Hi ha 3 maneres d'indicar un interval:</p>
 <ul>
 <li>gràficament (gràfic anterior)</li>
 <li>mitjançant una desigualtat, <script type="math/tex">x>4</script>
 </li>
-<li>mitjançant un interval: <script type="math/tex">(4,+\infty)</script>. </li>
+<li>mitjançant un interval: <script type="math/tex">(4,+\infty)</script>.</li>
 </ul>
 <h4 id="tipus-dintervals">Tipus d'intervals</h4>
 <p>Els extrems d'un interval són importants. Dir <em>els nombres més grans que <script type="math/tex">4</script> i més petits que <script type="math/tex">5</script></em> no és el mateix que dir <em>els nombres més grans que <script type="math/tex">4</script> i més petits o iguals que <script type="math/tex">5</script></em>:</p>
@@ -221,8 +276,8 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <p><img alt="*Solució gràfica de l'exemple 2*" src="../img/interval5_rectareal_1.png" /></p>
 <p><strong>Exemple 3</strong></p>
 <p>
-<script type="math/tex; mode=display">\begin{cases} 
-3x - 3 \ge 18 \Rightarrow 3x \ge 21 \Rightarrow x \ge 7 \\ 
+<script type="math/tex; mode=display">\begin{cases}
+3x - 3 \ge 18 \Rightarrow 3x \ge 21 \Rightarrow x \ge 7 \\
 4 (x-10) \lt 12 \Rightarrow 4x - 40 \lt 12 \Rightarrow 4x \lt 52 \Rightarrow x \lt 13
 \end{cases}</script>
 </p>
@@ -349,7 +404,7 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <h3 id="extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</h3>
 <p>Per introduir nombres dins d'un radical, s'ha d'elevar el nombre a una potència igual a l'índex de l'arrel.</p>
 <p><strong>Exemple 4</strong></p>
-<p>Introdueix tots els factors dins de l'arrel: </p>
+<p>Introdueix tots els factors dins de l'arrel:</p>
 <p>
 <script type="math/tex; mode=display">3^5 \cdot 2^8 \cdot 7^3 \cdot \sqrt[3]{2^5 \cdot 7}= \sqrt[3]{(3^5)^3 \cdot (2^8)^3 \cdot (7^3)^3 \cdot 2^5 \cdot 7}=\sqrt[3]{3^{15} \cdot 2^{24} \cdot 7^9 \cdot 2^5 \cdot 7}=\sqrt[3]{2^{29} \cdot 3^{15} \cdot 7^{10}}</script>
 </p>
@@ -390,12 +445,12 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <script type="math/tex; mode=display">\frac{5}{1+\sqrt{3}}=\frac{5}{1+\sqrt{3}}\cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}=\frac{5(1-\sqrt{3})}{1^2-(\sqrt{3})^2}=\frac{5(1-\sqrt{3})}{-2}=-\frac{5}{2}(1-\sqrt{3})</script>
 </p>
 <h2 id="logaritmes">Logaritmes</h2>
-<p>El <script type="math/tex">log_a b</script>, això és, logaritme en base <script type="math/tex">a</script> de <script type="math/tex">b</script>, és aquella potència a la qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">b</script> de resultat. </p>
-<p>Per exemple, <script type="math/tex">log_2 8</script> és <script type="math/tex">3</script>, perquè <script type="math/tex">2^3=8</script>. De la mateixa manera, <script type="math/tex">log_{10} 1000 = 3</script> perquè <script type="math/tex">10^3=1000</script>. Però quan és <script type="math/tex">log_2 36</script>? Quin nombre cal elevar el <script type="math/tex">2</script> per obtenir <script type="math/tex">36</script> de resultat? </p>
+<p>El <script type="math/tex">log_a b</script>, això és, logaritme en base <script type="math/tex">a</script> de <script type="math/tex">b</script>, és aquella potència a la qual hem d'elevar <script type="math/tex">a</script> per obtenir <script type="math/tex">b</script> de resultat.</p>
+<p>Per exemple, <script type="math/tex">log_2 8</script> és <script type="math/tex">3</script>, perquè <script type="math/tex">2^3=8</script>. De la mateixa manera, <script type="math/tex">log_{10} 1000 = 3</script> perquè <script type="math/tex">10^3=1000</script>. Però quan és <script type="math/tex">log_2 36</script>? Quin nombre cal elevar el <script type="math/tex">2</script> per obtenir <script type="math/tex">36</script> de resultat?</p>
 <p>
 <script type="math/tex; mode=display">log_2 36=5'169925....</script>
 </p>
-<p>Per tant, el resultat d'un logaritme, que tal i com hem dit, expressa una potència, no té perquè ser enter. </p>
+<p>Per tant, el resultat d'un logaritme, que tal i com hem dit, expressa una potència, no té perquè ser enter.</p>
 <p>D'altra banda, com que la base <script type="math/tex">a</script> sempre és positiva, <script type="math/tex">b</script> també ho ha de ser. Això és, l'operació <script type="math/tex">log_a b</script> només està definida per a nombres <script type="math/tex">b</script> que siguin positius.</p>
 <p>Així doncs, en general:</p>
 <p>
@@ -409,7 +464,7 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <script type="math/tex">a^{log_a b}=b</script>
 </p>
 </blockquote>
-<p><strong>Demostració</strong> </p>
+<p><strong>Demostració</strong></p>
 <p>
 <script type="math/tex">log_a b=x \Leftrightarrow a^x=b</script>
 <br />
@@ -482,7 +537,7 @@ log_a q =y \Rightarrow a^y=q \\
 </p>
 </blockquote>
 <p><strong>Demostració</strong></p>
-<p>Definim: </p>
+<p>Definim:</p>
 <p>
 <script type="math/tex; mode=display">x=log_a b\Rightarrow a^x=b</script>
 </p>
@@ -544,7 +599,7 @@ log_a q =y \Rightarrow a^y=q \\
 </p>
 <p>Entenent <script type="math/tex">log 5</script> com el logaritme en base <script type="math/tex">10</script> de <script type="math/tex">5</script>.  </p>
 <h3 id="el-nombre-e-i-els-logaritmes-neperians">El nombre <script type="math/tex">e</script> i els logaritmes neperians</h3>
-<p>El <a href="https://ca.wikipedia.org/wiki/Nombre_e">nombre <script type="math/tex">e</script></a> és una constant matemàtica que és la base principal de molts càlculs, com per exemple, en l'estudi de <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_3eso_cat_progressions-JS/index.htm">l'interès compost</a> d'un crèdit o dipòsit. </p>
+<p>El <a href="https://ca.wikipedia.org/wiki/Nombre_e">nombre <script type="math/tex">e</script></a> és una constant matemàtica que és la base principal de molts càlculs, com per exemple, en l'estudi de <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_3eso_cat_progressions-JS/index.htm">l'interès compost</a> d'un crèdit o dipòsit.</p>
 <p>És un nombre irracional, això és, té infinits decimals:</p>
 <p>
 <script type="math/tex; mode=display">e=2,718281828459045235....</script>
@@ -553,19 +608,50 @@ log_a q =y \Rightarrow a^y=q \\
 <p>
 <script type="math/tex; mode=display">ln (2)= 0'6931471.... \Leftrightarrow e^{0'6931471....}=2 </script>
 </p>
-<p>Així mateix, per calcular qualsevol logaritme en qualsevol base, podem fer servir la fórmula del canvi de base anterior amb els logaritmes en base l0 (<script type="math/tex">log</script>) o base <script type="math/tex">e</script> (<script type="math/tex">ln</script>).</p></div>
+<p>Així mateix, per calcular qualsevol logaritme en qualsevol base, podem fer servir la fórmula del canvi de base anterior amb els logaritmes en base l0 (<script type="math/tex">log</script>) o base <script type="math/tex">e</script> (<script type="math/tex">ln</script>).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../trigonometria/" class="btn btn-neutral float-right" title="2. Trigonometria">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
         </div>
+      </div>
 
-        <footer class="col-md-12">
-            <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
+    </section>
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script src="../../js/base.js"></script>
-        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    </body>
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../trigonometria/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
 </html>
