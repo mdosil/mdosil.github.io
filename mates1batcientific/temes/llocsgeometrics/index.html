@@ -313,15 +313,24 @@ r+r^\prime=2+\sqrt{5}\sim 4.47
 </ol>
 <p><strong>Exemple 3</strong></p>
 <p>Donat el punt <script type="math/tex">P(9,-1)</script> exterior a la circumferència <script type="math/tex">x^2+(y+4)^2=9</script>, trobeu les rectes tangents a la circumferència des d'aquest punt.</p>
-<p>Anem a veure si entenem el problema. Sempre que tinguem  un punt exterior a una circumferència es poden traçar dues rectes tangents des del punt fins a la circumferència. Per a resoldre aquest problema hi ha vàries maneres:</p>
+<p>Anem a veure si entenem el problema. Sempre que tinguem  un punt exterior a una circumferència es poden traçar dues rectes tangents des del punt fins a la circumferència.</p>
 <ol>
 <li>
-<p>Trobar el feix de rectes que passen pel punt donat i fer que la distància de la recta al centre sigui igual al radi.</p>
+<p>Per començar ens cal trobar l'equació del <em>feix de rectes</em> que passen pel punt <script type="math/tex">P(9,-1)</script>:</p>
 <ul>
 <li>Sabem que l'equació de la recta té la forma <script type="math/tex">y=mx+n</script>. Totes les rectes que passen pel punt <script type="math/tex">P(9,-1)</script> tenen la forma:</li>
 </ul>
 <p>
 <script type="math/tex; mode=display">-1=9m+n \Rightarrow n=-1-9m \Rightarrow y=mx-1-9m \Rightarrow y=m(x-9)+1 \Rightarrow m(x-9)-y-1=0</script>
+</p>
+</li>
+<li>
+<p>Una manera de solucionar el problema és <strong>exigir que la distància de la recta al centre de la circumferència sigui igual al radi</strong> i d'aquesta manera ens assegurem que recta i circumferència són tangents.</p>
+<ul>
+<li>Anem a imposar aquesta condició:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">d(recta, C)=\frac{|m(0-9)+4-1|}{\sqrt{m^2+(-1)^2}}=3</script>
 </p>
 <ul>
 <li>Per a solucionar una equació amb valors absolut hem de considerar els 2 casos possibles:</li>
@@ -343,22 +352,11 @@ r+r^\prime=2+\sqrt{5}\sim 4.47
   \end{align}</script>
 </p>
 <ul>
-<li>
-<p>Fixeu-vos que si agafem l'opció negativa obtenim les mateixes solucions, ja que a l'elevar al quadrat el signe negatiu esdevé positiu.</p>
-</li>
-<li>
-<p>Fer que la distància de cada recta al centre de la circumferència serà igual al radi (perquè són tangents)</p>
-</li>
-<li>
-<p>Per l'equació de la circumferència veiem que té centre <script type="math/tex">C(0,-4)</script> i radi <script type="math/tex">r=3</script>. Anem a imposar aquesta condició:</p>
-</li>
+<li>Fixeu-vos que si agafem l'opció negativa obtenim les mateixes solucions, ja que a l'elevar al quadrat el signe negatiu esdevé positiu.</li>
 </ul>
-<p>
-<script type="math/tex; mode=display">d(recta, C)=\frac{|m(0-9)+4-1|}{\sqrt{m^2+(-1)^2}}=3</script>
-</p>
 </li>
 <li>
-<p>Una altra manera de resoldre el problema és, fer que el sistema format per les equacions de la recta tangent i la circumferència tingui solució única, perquè si tingués solució doble voldria dir que la recta és secant i no tangent.</p>
+<p>Una altra manera de resoldre el problema és, fer que <strong>el sistema format per les equacions de la recta tangent i la circumferència tingui solució única</strong>, perquè si tingués solució doble voldria dir que la recta és secant i no tangent a la circumferència.</p>
 <ul>
 <li>Solucionem el sistema per substitució:</li>
 </ul>
@@ -401,7 +399,39 @@ y=m(x-9)-1 \begin{cases} m=0 \Rightarrow n=-1 \Rightarrow y= -1 \\ m=\frac{3}{4}
 </p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2625505/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<h3 id="potencia-dun-punt-respecte-duna-circumferencia">Potència d'un punt respecte d'una circumferència</h3>
+<h4 id="potencia-dun-punt-respecte-duna-circumferencia">Potència d'un punt respecte d'una circumferència</h4>
+<p>Considerem un punt exterior a una circumferència i tracem dues secants d'aquest punt a la circumferència tal i com mostra el dibuix.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2639115/width/1920/height/934/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<p>Considerem els triangles <script type="math/tex">PAB^\prime</script> i <script type="math/tex">PA^\prime B</script>. Els angles inscrits a la circumferència <script type="math/tex">B^\prime</script> i <script type="math/tex">A^\prime</script> són iguals, <script type="math/tex">B^\prime=A^\prime</script> ja que abarquen el mateix arc de circumferència <script type="math/tex">\widehat{BA}</script>. Com que els dos triangles comparteixen un angle <script type="math/tex">P</script>, i tenen 2 angles iguals, el tercer ha de ser necessàriament igual (la suma d'angles d'un triangle és sempre <script type="math/tex">180^o</script>): <script type="math/tex">B=A</script>.</p>
+<p>Per tant, si dos triangles tenen els seus 3 angles iguals 2 a 2 vol dir que són triangles semblants](http://recursostic.educacion.es/secundaria/edad/4esomatematicasB_cat/semejanza/quincena6_contenidos_1c.htm) i en conseqüència els seus costats seran proporcionals:</p>
+<p>
+<script type="math/tex; mode=display">\frac{PA}{PB}=\frac{PB^\prime}{PA^\prime}\Rightarrow PA\cdot PA^\prime=PB\cdot PB^\prime</script>
+</p>
+<p>Aquest producte de distàncies es defineix com a la <strong>potència d'un punt respecte una circumferència</strong>:</p>
+<p>
+<script type="math/tex; mode=display">p=PA\cdot PA^\prime</script>
+</p>
+<p>Considerem ara una recta secant des d'un punt exterior <script type="math/tex">P(x_0,y_0)</script> que passi pel centre d'una circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script>. Definim <script type="math/tex">d</script> com la distància del punt <script type="math/tex">P</script> al centre <script type="math/tex">C</script>.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2642273/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<p>La potència del punt <script type="math/tex">P</script> respecte la circumferència és:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+p&=PA\cdot PA^\prime=(d-r)(d+r)=d^2-r^2\\
+d&=|\vec{CP}|=\sqrt{(x_0-a)^2+(y_0-b)^2}
+\end{aligned}
+\right\}
+\Rightarrow p=d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2
+</script>
+</p>
+<p>Per tant, la potència d'un punt respecte una circumferència ens dóna idea de la situació del punt respecte la circumferència:</p>
+<p>
+<script type="math/tex; mode=display">  p=d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2 \begin{cases} d>r\rightarrow p>0 \Rightarrow \text{p és exterior} \\
+d<r\rightarrow p<0 \Rightarrow \text{p és interior} \\ d=r\rightarrow p=0 \Rightarrow \text{p pertany a la circumferència}
+\end{cases}</script>
+</p>
 <h2 id="lellipse">L'el.lipse</h2>
 <h2 id="la-parabola">La paràbola</h2>
 <h2 id="lhiperbola">L'hipèrbola</h2></div>
