@@ -148,9 +148,9 @@
         
             <li><a href="#la-circumferencia">La circumferència</a></li>
         
-            <li><a href="#lellipse">L'el.lipse</a></li>
-        
             <li><a href="#la-parabola">La paràbola</a></li>
+        
+            <li><a href="#lellipse">L'el.lipse</a></li>
         
             <li><a href="#lhiperbola">L'hipèrbola</a></li>
         
@@ -404,7 +404,7 @@ y=m(x-9)-1 \begin{cases} m=0 \Rightarrow n=-1 \Rightarrow y= -1 \\ m=\frac{3}{4}
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2639115/width/1920/height/934/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>Considerem els triangles <script type="math/tex">PAB^\prime</script> i <script type="math/tex">PA^\prime B</script>. Els angles inscrits a la circumferència <script type="math/tex">B^\prime</script> i <script type="math/tex">A^\prime</script> són iguals, <script type="math/tex">B^\prime=A^\prime</script> ja que abarquen el mateix arc de circumferència <script type="math/tex">\widehat{BA}</script>. Com que els dos triangles comparteixen un angle <script type="math/tex">P</script>, i tenen 2 angles iguals, el tercer ha de ser necessàriament igual (la suma d'angles d'un triangle és sempre <script type="math/tex">180^o</script>): <script type="math/tex">B=A</script>.</p>
-<p>Per tant, si dos triangles tenen els seus 3 angles iguals 2 a 2 vol dir que són triangles semblants](http://recursostic.educacion.es/secundaria/edad/4esomatematicasB_cat/semejanza/quincena6_contenidos_1c.htm) i en conseqüència els seus costats seran proporcionals:</p>
+<p>Per tant, si dos triangles tenen els seus 3 angles iguals 2 a 2 vol dir que són <a href="http://recursostic.educacion.es/secundaria/edad/4esomatematicasB_cat/semejanza/quincena6_contenidos_1c.htm">triangles semblants</a> i en conseqüència els seus costats seran proporcionals:</p>
 <p>
 <script type="math/tex; mode=display">\frac{PA}{PB}=\frac{PB^\prime}{PA^\prime}\Rightarrow PA\cdot PA^\prime=PB\cdot PB^\prime</script>
 </p>
@@ -432,8 +432,97 @@ d&=|\vec{CP}|=\sqrt{(x_0-a)^2+(y_0-b)^2}
 d<r\rightarrow p<0 \Rightarrow \text{p és interior} \\ d=r\rightarrow p=0 \Rightarrow \text{p pertany a la circumferència}
 \end{cases}</script>
 </p>
-<h2 id="lellipse">L'el.lipse</h2>
 <h2 id="la-parabola">La paràbola</h2>
+<p>A 4t d'eso havíeu treballat les paràboles com la representació gràfica <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_funciones2-JS/index.htm">d'una funció polinòmica de segon grau</a> del tipus <script type="math/tex">y=f(x)=ax^2+bx+c</script>. Vèiem que la paràbola és una funció amb simetria parell i que té un vèrtex amb abcissa <script type="math/tex">(x=-\frac{b}{2a})</script>.</p>
+<p>La paràbola també es pot entendre però com el <strong>lloc geomètric</strong> dels punts del pla que equidisten d'un punt <script type="math/tex">F</script> anomenat <strong>focus</strong> i d'una recta <script type="math/tex">r</script> anomenada <strong>directriu</strong>.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2657653/width/986/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<p>Si mirem al dibuix hi podem veure els elements següents:</p>
+<ol>
+<li><strong>Eix de la paràbola</strong>: és la recta perpendicular a la directriu que passa pel focus. En el cas específic del dibuix és l'eix <script type="math/tex">x</script>.</li>
+<li><strong>Vèrtex de la paràbola</strong>: és el punt d'intersecció de la paràbola amb el seu eix. En aquest cas és el punt <script type="math/tex">(0,0)</script>.</li>
+<li><strong>Paràmetre</strong>: és la distància del focus <script type="math/tex">F</script> a la directriu <script type="math/tex">r</script>. L'anomenem <strong><script type="math/tex">p</script></strong>.</li>
+</ol>
+<h3 id="equacio-reduida-de-la-parabola">Equació reduïda de la paràbola</h3>
+<p>Fixem-nos ara en una paràbola com la del dibuix que té el seu eix situat sobre l'eix de les abscisses i el vèrtex a l'origen de coordenades. Com que els punts de la paràbola, i el vèrtex en particular, compleixen la propietat que equidisten del focus i de la directriu, podem afirmar que les coordenades del focus són <script type="math/tex">F(\frac{p}{2},0)</script> i l'equació de la recta directriu és <script type="math/tex">r:x=-\frac{p}{2}</script>.</p>
+<p>Si <script type="math/tex">P(x,y)</script> és un punt qualsevol de la paràbola es compleix que: <script type="math/tex">d(P,r)=d(P,F)</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+d(P,r)&=\frac{|x+\frac{p}{2}|}{\sqrt{0^2+1}}\\
+d(P,F)&=|\vec{FP}|=\sqrt{(x-\frac{p}{2})^2+y^2}
+\end{aligned}
+\right\}
+\Rightarrow |x+\frac{p}{2}|=\sqrt{(x-\frac{p}{2})^2+y^2} \Rightarrow x^2+px+\frac{p^2}{4}=x^2-px+\frac{p^2}{4}+y^2
+</script>
+</p>
+<p>Si simplifiquem tenim <strong>l'equació reduïda de la paràbola</strong>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">y^2=2px</script>
+</p>
+</blockquote>
+<p>En cas que l'eix estigui situat sobre <strong>l'eix d'ordenades</strong>, el focus seria <strong><script type="math/tex">F(0,\frac{p}{s})</script></strong> i l'equació de la recta directriu seria <strong><script type="math/tex">r:y=-\frac{p}{2}</script></strong>. L'equació reduïda de la paràbola seria llavors:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">x^2=2py</script>
+</p>
+</blockquote>
+<h3 id="equacio-de-la-parabola-deix-parallel-a-leix-dabscisses-o-dordenades">Equació de la paràbola d'eix paral.lel a l'eix d'abscisses o d'ordenades</h3>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2657815/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<p>Considerem ara que l'eix de la paràbola és paral.lel a l'eix d'abscisses. El vèrtex ha passat de ser el punt <script type="math/tex">(0,0)</script> al punt <script type="math/tex">(x_0,y_0)</script>. Si comparem la nova paràbola amb l'anterior, amb eix l'eix de les abscisses i vèrtex el punt <script type="math/tex">(0,0)</script> veiem que els punts <script type="math/tex">P(x,y)</script> de la nova paràbola seran els de la paràbola anterior <script type="math/tex">P^\prime(x^\prime, y^\prime)</script> però amb una translació <script type="math/tex">x_0</script> en <script type="math/tex">x</script> i <script type="math/tex">y_0</script> en <script type="math/tex">y</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+x&=x^\prime+x_0\\
+y&=y^\prime+y_0\\
+\end{aligned}
+\right\}
+</script>
+</p>
+<p>Per tant, si l'equació de la paràbola "vella" era <script type="math/tex">y^{\prime 2}=2px^\prime</script> si fem el canvi anterior obtenim:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">(y-y_0)^2=2p(x-x_0)</script>
+</p>
+</blockquote>
+<p>que és l'<strong>equació d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i amb vèrtex el punt <script type="math/tex">(x_0,y_0)</script></strong>. Si intercanviem <script type="math/tex">x</script> i <script type="math/tex">y</script> obtenim l'equació d'una paràbola amb eix paral.lel a l'eix d'ordenades:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">(x-x_0)=2p(y-y_0)</script>
+</p>
+</blockquote>
+<p>Si desenvolupem les dues expressions anteriors obtenim <strong>l'equació general de la paràbola</strong>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+(y-y_0)^2&=2p(x-x_0)\\
+y^2+y_0^2-2yy_0&=2px-2px_0\\
+-2px&=-y^2+2y_0y-y_0^2-2px_0\\
+2px&=y^2-2y_0y+y_0^2+2px_0\\
+x&=\frac{1}{2p}y^2-\frac{y_0}{p}y+\big( \frac{y_0^2}{2p}+x_0 \big)
+\end{align}</script>
+</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">x&=ay^2+by+c</script>
+</p>
+</blockquote>
+<p>que és l'equació general d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i on</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a&=\frac{1}{2p}\\
+b&=-\frac{y_0}{p}\\
+c&=\frac{y_0^2}{2p}+x_0
+\end{align}</script>
+</p>
+<p>El mateix podem fer amb una paràbola amb eix paral.lel a l'eix d'ordenades:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">y=ax^2+bx+c</script>
+</p>
+</blockquote>
+<h2 id="lellipse">L'el.lipse</h2>
 <h2 id="lhiperbola">L'hipèrbola</h2></div>
         </div>
 
