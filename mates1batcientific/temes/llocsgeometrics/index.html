@@ -164,7 +164,9 @@
 <p>Un lloc geomètric és un conjunt de punts que compleixen una certa propietat. Per exemple, la bisectriu d'un segment és el lloc geomètric dels punts que equidisten dels 2 extrems del segment. En aquest tema estudiarem 4 llocs geomètrics: la circumferència, l'el.lipse, la paràbola i l'hipèrbola. Segurament alguns d'aquests llocs geomètrics ja els coneixeu des de primària, però els estudiarem des d'una perspectiva geomètrica diferent.</p>
 <p>Aquests llocs geomètrics també s'anomenen <a href="https://ca.wikipedia.org/wiki/C%C3%B2nica">Còniques</a>. Això és perquè es poden obtenir tallant una superfície cònica doble mitjançant diversos plans.</p>
 <h2 id="la-circumferencia">La circumferència</h2>
+<blockquote>
 <p>La circumferència és el lloc geomètric dels punts del pla que equidisten d'un mateix punt anomenat centre.</p>
+</blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2575689/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>Considerem ara una circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script>. Anem a veure quina equació han de complir els punts d'aquesta circumferència, <script type="math/tex">P(x,y)</script>. Si pensem en el triangle rectangle anterior, el catet de la base mesura necessàriament <script type="math/tex">x-a</script> i el catet de l'altura <script type="math/tex">y-b</script>. Si apliquem el teorema de Pitàgores es compleix que:</p>
@@ -434,7 +436,9 @@ d<r\rightarrow p<0 \Rightarrow \text{p és interior} \\ d=r\rightarrow p=0 \Righ
 </p>
 <h2 id="la-parabola">La paràbola</h2>
 <p>A 4t d'eso havíeu treballat les paràboles com la representació gràfica <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_funciones2-JS/index.htm">d'una funció polinòmica de segon grau</a> del tipus <script type="math/tex">y=f(x)=ax^2+bx+c</script>. Vèiem que la paràbola és una funció amb simetria parell i que té un vèrtex amb abcissa <script type="math/tex">(x=-\frac{b}{2a})</script>.</p>
+<blockquote>
 <p>La paràbola també es pot entendre però com el <strong>lloc geomètric</strong> dels punts del pla que equidisten d'un punt <script type="math/tex">F</script> anomenat <strong>focus</strong> i d'una recta <script type="math/tex">r</script> anomenada <strong>directriu</strong>.</p>
+</blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2657653/width/986/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>Si mirem al dibuix hi podem veure els elements següents:</p>
@@ -505,7 +509,7 @@ x&=\frac{1}{2p}y^2-\frac{y_0}{p}y+\big( \frac{y_0^2}{2p}+x_0 \big)
 </p>
 <blockquote>
 <p>
-<script type="math/tex; mode=display">x&=ay^2+by+c</script>
+<script type="math/tex; mode=display">x=ay^2+by+c</script>
 </p>
 </blockquote>
 <p>que és l'equació general d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i on</p>
@@ -523,6 +527,120 @@ c&=\frac{y_0^2}{2p}+x_0
 </p>
 </blockquote>
 <h2 id="lellipse">L'el.lipse</h2>
+<blockquote>
+<p>L'el.lipse és el lloc geomètric de punts del pla que la suma de distàncies a dos punts fixos anomenats focus és constant i es designa 2a.</p>
+</blockquote>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2669619/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<p>Si mirem el dibuix, podem llistar aquí les característiques de l'el.lipse:</p>
+<ol>
+<li>Focus: punts <script type="math/tex">F</script> i <script type="math/tex">F^\prime</script> sobre l'eix x.</li>
+<li>Distància focal: distància entre els 2 focus. Es designa per <script type="math/tex">2c</script>: <script type="math/tex">|\vec{F^\prime F}|=2c</script>
+</li>
+<li>Radis vectors: són els dos segments que uneixen qualsevol punt de l'el.lipse amb cadascun dels focus. La suma dels 2 radis vectors, per definició, és <script type="math/tex">2a</script>.</li>
+<li>Eix focal: recta que passa pels 2 Focus</li>
+<li>Eix major: és el segment que uneix els punts més allunyats de l'el.lipse, <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>.</li>
+<li>Eix menor: és el segment que uneix els punts més propers de l'el.lipse, <script type="math/tex">B</script> i <script type="math/tex">B^\prime</script>.</li>
+<li>Centre: és el punt mig del segment <script type="math/tex">\overline{FF^\prime}</script>.</li>
+<li>Vèrtexs: són els punts d'interesecció dels eixos amb l'el.lipse: <script type="math/tex">A</script>, <script type="math/tex">A^\prime</script>, <script type="math/tex">B</script>, <script type="math/tex">B^\prime</script>.</li>
+<li>Excentricitat: <script type="math/tex">e=\frac{c}{a}</script>.</li>
+</ol>
+<p>Anem a veure quina és la distància entre els dos punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>. Com que pertanyen a l'el.lipse compleixen que la suma de les seves distàncies als focus és <script type="math/tex">2a</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+\overline{AF}+\overline{AF^\prime}&=2a\\
+\overline{A^\prime F}+\overline{A^\prime F^\prime}&=2a
+\end{aligned}
+\right\} \overline{AF}+\overline{AF^\prime}+\overline{A^\prime F}+\overline{A^\prime F^\prime}=4a
+</script>
+</p>
+<p>Però també es compleix que: <script type="math/tex">\overline{AF}+\overline{A^\prime F}=\overline{AF}+\overline{F A^\prime}= \overline{A A^\prime}</script>. El mateix passa amb: <script type="math/tex">\overline{AF^\prime}+\overline{A^\prime F^\prime}=\overline{AF^\prime}+\overline{F^\prime A^\prime}= \overline{A A^\prime}</script>
+</p>
+<p>Per tant, si posem això a l'expressió de dalt, trobem que la distància entre els punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script> és:</p>
+<p>
+<script type="math/tex; mode=display">d(A A^\prime)=2a</script>
+</p>
+<p>Podem fer un procediment anàleg pels punts <script type="math/tex">B</script> i <script type="math/tex">B^\prime</script> i obtindrem:</p>
+<p>
+<script type="math/tex; mode=display">d(B B^\prime)=2b</script>
+</p>
+<p>D'aquí es dedueix també que l'excentricitat d'una el.lipse és un nombre entre <script type="math/tex">0</script> i <script type="math/tex">1</script>, ja que <script type="math/tex">c>a</script>:</p>
+<p>
+<script type="math/tex; mode=display">0<e=\frac{c}{a}<1</script>
+</p>
+<h3 id="relacio-entre-els-parametres-a-b-i-c-duna-ellipse">Relació entre els paràmetres <script type="math/tex">a</script>, <script type="math/tex">b</script> i <script type="math/tex">c</script> d'una el.lipse</h3>
+<p>Si ens fixem una mica més en detall amb l'el.lipse podem veure que:</p>
+<ul>
+<li>
+<p>Com que el punt <script type="math/tex">B</script> pertany a l'el.lipse compleix: <script type="math/tex">\overline{BF^\prime}+\overline{BF}=2a\Rightarrow BF^\prime=BF=a</script>
+</p>
+</li>
+<li>
+<p>Si ens fixem en l'eix menor: <script type="math/tex">\overline{B B^\prime}=2b \Rightarrow \overline{O B^\prime}=\overline{OB}=b</script>
+</p>
+</li>
+</ul>
+<p>Com que <script type="math/tex">a</script>, <script type="math/tex">b</script> i <script type="math/tex">c</script> formen un triangle rectangle es relacionen a través del Teorema de Pitàgores:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">a^2+b^2=c^2</script>
+</p>
+</blockquote>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2671775/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="600px" style="border:0px;"> </iframe>
+
+<h3 id="equacio-reduida-de-lellipse">Equació reduïda de l'el.lipse</h3>
+<p>Considerem una el.lipse centrada en l'origen de coordenades i amb els seus eixos coincidents amb els eixos cartesians, com la del dibuixa anterior. Si <script type="math/tex">P(x,y)</script> és un punt que pertany a l'el.lipse i <script type="math/tex">F'(-c,0)</script> i <script type="math/tex">F(c,0)</script> són els focus de l'el.lipse es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+d(P,F)+d(P,F^\prime)&=2a\\
+d(P,F)=|\vec{PF}|=\sqrt{(x-c)^2+y^2}\\
+d(P,F^\prime)=|\vec{PF^\prime}|=\sqrt{(x+c)^2+y^2}
+\end{aligned}
+\right\} \sqrt{(x-c)^2+y^2}+\sqrt{(x+c)^2+y^2}=2a
+</script>
+</p>
+<p>Deixem un radical en una banda i elevem al quadrat a banda i banda i operem:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\Big(\sqrt{(x-c)^2+y^2} \Big)^2&=\Big(2a-\sqrt{(x+c)^2+y^2} \Big)^2 \\
+(x-c)^2+y^2&=4a^2+(x+c)^2+y^2-4a\sqrt{(x+c)^2+y^2}\\
+4a \sqrt{(x+c)^2+y^2}&=4a^2+x^2+c^2+2xc-x^2-c^2+2xc\\
+4a \sqrt{(x+c)^2+y^2}&=4a^2+4xc\\
+\Big( a \sqrt{(x+c)^2+y^2}\Big)^2&=(a^2+xc)^2\\
+a^2 \Big( (x+c)^2+y^2  \Big)&=a^4+x^2+c^2+2a^2 xc\\
+a^2 \Big( x^2+c^2+2xc+y^2  \Big)&=a^4+x^2+c^2+2a^2 xc\\
+a^2x^2+a^2c^2+2a^2xc+a^2y^2&=a^4+x^2c^2+2a^2xc\\
+(a^2-c^2)x^2+a^2y^2&=a^2(a^2-c^2)
+\end{align}</script>
+</p>
+<p>Com que es compleix <script type="math/tex">a^2=b^2+c^2</script>, llavors l'expressió anterior es transforma:</p>
+<p>
+<script type="math/tex; mode=display">b^2x^2+a^2y^2=a^2b^2</script>
+</p>
+<p>Si dividim a banda i banda per <script type="math/tex">a^2b^2</script>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</script>
+</p>
+</blockquote>
+<p>Si l'eix focal està situat sobre l'eix de les ordenades, les coordenades dels focus són <script type="math/tex">F(0,c)</script> i <script type="math/tex">F^\prime(0,-c)</script> i l'equació esdevé:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\frac{x^2}{b^2}+\frac{y^2}{a^2}=1</script>
+</p>
+</blockquote>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2672599/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
+
+<h3 id="equacio-duna-ellipse-amb-eixos-parallels-als-eixos-de-coordenades">Equació d'una el.lipse amb eixos paral.lels als eixos de coordenades</h3>
+<p>Igual que passava amb el cas de la paràbola, podem escriure l'equació d'una el.lipse amb eixos paral.lels als eixos d'ordenades i centre el punt <script type="math/tex">C(x_0,y_0)</script>. Llavors aplicarem una translació igual que fèiem abans:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{(x-x_o)^2}{a^2}+\frac{(y-y_0)^2}{b^2}&=1\\
+\frac{(x-x_o)^2}{b^2}+\frac{(y-y_0)^2}{a^2}&=1
+\end{align}</script>
+</p>
 <h2 id="lhiperbola">L'hipèrbola</h2></div>
         </div>
 
