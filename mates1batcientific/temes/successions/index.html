@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>9. Successions - Matemàtiques 1r batxillerat</title>
+	<title>8. Successions - Matemàtiques 1r batxillerat</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -88,12 +88,12 @@
                             <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
                         </li>
                     
-                        <li >
-                            <a href="../funcions/">8. Funcions</a>
+                        <li class="active">
+                            <a href="./">8. Successions</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">9. Successions</a>
+                        <li >
+                            <a href="../funcions/">9. Funcions</a>
                         </li>
                     
                         <li >
@@ -123,12 +123,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../funcions/">
+                    <a rel="next" href="../llocsgeometrics/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../limits/">
+                    <a rel="prev" href="../funcions/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -142,14 +142,206 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#tema-9-successions">Tema 9: Successions</a></li>
+        <li class="main active"><a href="#tema-8-successions">Tema 8: Successions</a></li>
+        
+            <li><a href="#introduccio">Introducció</a></li>
+        
+            <li><a href="#successions-aritmetiques">Successions aritmètiques</a></li>
+        
+            <li><a href="#successions-geometriques">Successions geomètriques</a></li>
+        
+            <li><a href="#successions-monotones">Successions monòtones</a></li>
+        
+            <li><a href="#limit-duna-successio">Límit d'una successió</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-9-successions">Tema 9: Successions</h1></div>
+<h1 id="tema-8-successions">Tema 8: Successions</h1>
+<h2 id="introduccio">Introducció</h2>
+<p>Segur que tots coneixeu la <a href="https://ca.wikipedia.org/wiki/Successi%C3%B3_de_Fibonacci">successió de Fibonacci</a>, que comença amb dos uns i cada terme s'obté sumant els dos anteriors:</p>
+<p>
+<script type="math/tex; mode=display">1,1,3,5,8,13,21,34,55,...</script>
+</p>
+<p>En aquest tema estudiarem en profunditat el món de les successions o també conegudes com a progressions. Segur que algunes coses ja us sonaran de l'eso, però hi afegirem coses noves com és ara el concepte de <em>límit</em> que apareixerà també al llarg dels temes següents.</p>
+<h3 id="definicio">Definició</h3>
+<p>Una successió és una llista ordenada de nombres reals. De fet, tècnicament és una <strong>aplicació entre el conjunt dels nombres naturals i els nombres reals</strong>, de tal manera que a cada nombre natural <script type="math/tex">n</script> i fa correspondre un nombre real <script type="math/tex">a_n</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:\mathbb{N} &\rightarrow \mathbb{R}\\
+n &\rightarrow a_n
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">n</script> és l'índex de l'element de la successió que estem parlant (lloc, per entendre'ns), i <script type="math/tex">a_n</script> és el <strong>terme</strong> de la successió que ocupa el lloc <script type="math/tex">n</script>.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Anem a veure alguns exemples de successions:</p>
+<ol>
+<li>
+<script type="math/tex">2,4,6,8,10,12,14,.....</script>
+</li>
+<li>
+<script type="math/tex">3,6,12,24,48,96,......</script>
+</li>
+<li>
+<script type="math/tex">1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5},...</script>
+</li>
+</ol>
+<p>En la primera successió, <script type="math/tex">a_1=2</script>, <script type="math/tex">a_2=4</script> i així successivament. En la segona, <script type="math/tex">a_1=3</script> i <script type="math/tex">a_2=6</script> i en la tercera, <script type="math/tex">a_1=1</script>, <script type="math/tex">a_2=\frac{1}{2}</script>.</p>
+<h3 id="terme-general">Terme general</h3>
+<p>El terme general d'una successió és l'expressió algebraica que em dóna el terme <script type="math/tex">a_n</script> en funció del paràmetre <script type="math/tex">n</script>. D'aquesta manera, el terme general ens permet trobar qualsevol terme de la successió. Només ens cal substituir <script type="math/tex">n</script> pel nombre natural desitjat.</p>
+<p><strong>Exemple 2</strong></p>
+<p>En l'exemple anterior, podem trobar el terme general fàcilment sense haver de pensar gaire:</p>
+<ol>
+<li>
+<script type="math/tex">a_n=2n</script>
+</li>
+<li>
+<script type="math/tex">a_n=3\cdot 2^{n-1}</script>
+</li>
+<li>
+<script type="math/tex">a_n=\frac{1}{n}</script>
+</li>
+</ol>
+<p>De fet, una sucessió es pot definir de 3 maneres diferents:</p>
+<ol>
+<li>Donant una sèrie de termes, com a l'exemple 1</li>
+<li>Donant el terme general</li>
+<li>Donant una <em>relació de recurrència</em>, com a la sucessió de Fibonacci, en la qual ens permet obtenir un terme a partir dels anteriors</li>
+</ol>
+<p>A continuació veurem les característiques de dues de les successions més típiques, les aritmètiques i les geomètriques.</p>
+<h2 id="successions-aritmetiques">Successions aritmètiques</h2>
+<p>Una successió aritmètica és aquella que cada terme s'obté sumant una quantitat fixa anomenada <strong>diferència</strong> a l'anterior:</p>
+<p>
+<script type="math/tex; mode=display">a_n=a_{n-1}+d</script>
+</p>
+<p>Donada una successió de termes, sabrem que és una progressió aritmètica si restant dos termes consecutius sempre obtenim el mateix valor.</p>
+<h3 id="terme-general_1">Terme general</h3>
+<p>Anem a veure com obtenim el terme general d'una progressió aritmètica.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=a_1\\
+a_2&=a_1+d\\
+a_3&=a_2+d=a_1+2d\\
+a_4&=a_3+d=a_1+3d\\
+&................\\
+a_n&=a_{n-1}+d=a_1+(n-1)d
+\end{align}</script>
+</p>
+<p>Per tant, el terme general d'una successió aritmètica és:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">a_n=a_{n-1}+d=a_1+(n-1)d</script>
+</p>
+</blockquote>
+<h3 id="suma-dels-n-termes">Suma dels <script type="math/tex">n</script> termes</h3>
+<p>De la mateixa manera podem deduir la fòrmula de la suma dels <script type="math/tex">n</script> termes d'una successió geomètrica. Per sumar els <script type="math/tex">n</script> primers termes d'una successió aritmètica tenim:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n\\
+S_n&=a_n+a_{n-1}+a_{n-2}+...+a_3+a_2+a_1\\
+\hline
+2S_n&=(a_1+a_n)+(a_2+a_{n-1})+(a_3+a_{n-2})+...+(a_{n-2}+a_3)+(a_{n-1}+a_2)+(a_1+a_n)
+\end{align}</script>
+</p>
+<p>Fixem-nos amb les sumes dels termes entre parèntesi. Veiem que la primera suma i la última són iguals. Anem a veure què passa amb les del mig:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_2&=a_1+d\\
+a_{n-1}&=a_n-d\\
+\hline
+a_2+a_{n-1}&=a_1+a_n
+\end{align}</script>
+</p>
+<p>El mateix passa amb els altres termes:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_3&=a_2+d\\
+a_{n-2}&=a_{n-1}-d\\
+\hline
+a_3+a_{n-2}&=a_2+a_{n-1}=a_1+a_n
+\end{align}</script>
+</p>
+<p>Per tant, si anem sumant termes equidistants de la successió sempre ens dóna com a resultat <script type="math/tex">a_1+a_n</script>. Amb això, aplicat a la primera operació obtenim:</p>
+<p>
+<script type="math/tex; mode=display">2S_n=(a_1+a_n)n</script>
+</p>
+<p>Per tant, la <strong>suma dels n termes d'una successió aritmètica és</strong>:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_1+a_n}{2}\cdot n</script>
+</p>
+</blockquote>
+<h2 id="successions-geometriques">Successions geomètriques</h2>
+<p>Una successió geomètrica és una successió de nombres reals en els quals el quocient entre dos termes consecutius de la successió és constant i s'anomena <strong>raó</strong>. El que és el mateix, obtenim un terme multiplicant l'anterior per la raó:</p>
+<p>
+<script type="math/tex; mode=display">a_{n+1}=a_n\cdot r</script>
+</p>
+<h3 id="terme-general_2">Terme general</h3>
+<p>Anem a veure com obtenim el terme general d'una progressió geomètrica.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=a_1\\
+a_2&=a_1\cdot r\\
+a_3&=a_2\cdot r=a_1 \cdot r^2\\
+a_4&=a_3\cdot r=a_1\cdot r^3\\
+&................\\
+a_n&=a_1 \cdot r^{n-1}
+\end{align}</script>
+</p>
+<p>Per tant, el terme general d'una successió geomètrica és:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">a_n=a_1 \cdot r^{n-1}</script>
+</p>
+</blockquote>
+<h3 id="suma-dels-n-termes_1">Suma dels <script type="math/tex">n</script> termes</h3>
+<p>Anem a deduir ara la suma dels <script type="math/tex">n</script> termes d'una successió geomètrica:</p>
+<p>
+<script type="math/tex; mode=display">S_n=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n</script>
+</p>
+<p>Multipliquem a banda i banda per la raó <script type="math/tex">r</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n\cdot r&=a_1\cdot r+a_2\cdot r+a_3\cdot r+...+a_{n-2}\cdot r+a_{n-1}\cdot r+a_n \cdot r\\
+S_n\cdot r&=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r
+\end{align}</script>
+</p>
+<p>Si restem les dues expressions anteriors:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n\cdot r&=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r\\
+-S_n&=-a_1-a_2-a_3-...-a_{n-2}-a_{n-1}-a_n\\
+\hline
+S_n\cdot r-S_n&=-a_1+a_n\cdot r\\
+S_n(r-1)&=a_n\cdot r-a_1
+\end{align}</script>
+</p>
+<p>Per tant, la suma dels <script type="math/tex">n</script> termes d'una progressió geomètrica és:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_n\cdot r-a_1}{r-1}=\frac{a_1\cdot r^n-a_1}{r-1}=\frac{a_1(r^n-1)}{r-1}</script>
+</p>
+</blockquote>
+<h3 id="suma-dels-infinits-termes-amb-r1">Suma dels infinits termes amb <script type="math/tex">|r|<1</script>
+</h3>
+<p>Recordem l'expressió de la suma dels <script type="math/tex">n</script> termes d'una progressió geomètrica:</p>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_1(r^n-1)}{r-1}</script>
+</p>
+<p>Si <script type="math/tex">n</script> es fa molt gran, com que <script type="math/tex">|r|<1</script>, quan l'elevem a un nombre molt gran, <script type="math/tex">r^n\rightarrow 0</script>. Per tant, la <strong>suma dels infinits termes</strong> d'una progressió geomètrica si <script type="math/tex">|r|<1</script> esdevé:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">S_{\infty}=\frac{-a_1}{r-1}=\frac{a_1}{1-r}</script>
+</p>
+</blockquote>
+<h2 id="successions-monotones">Successions monòtones</h2>
+<h2 id="limit-duna-successio">Límit d'una successió</h2>
+<h3 id="operacions-amb-successions">Operacions amb Successions</h3>
+<h3 id="limit-duna-successio_1">Límit d'una successió</h3>
+<h3 id="calcul-de-limits">Càlcul de límits</h3></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
