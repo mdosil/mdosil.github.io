@@ -427,7 +427,6 @@ n^2+2n+1&\ge n^2+n\\
 <li>Diem que una successió està <strong>fitada inferiorment</strong> si tots els membres de la successió són més grans o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\ge k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>.Diem que <script type="math/tex">k</script> és una <strong>fita inferior</strong> de la successió.</li>
 <li>Diem que una successió està <strong>superiorment</strong> si tots els membres de la successió són més petits o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\le k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>. Diem que <script type="math/tex">k</script> és una <strong>fita superior</strong> de la successió.</li>
 <li>Si una successió està fitada superiorment i inferiorment diem que és una successió <strong>fitada</strong>.</li>
-<li>Una successió <strong>no està fitada</strong> si per qualsevol valor de <script type="math/tex">k</script> arbitràriament gran podem trobar un valor de <script type="math/tex">n</script> tal que <script type="math/tex">|an|>k</script>: <script type="math/tex">\forall k \in \mathbb{R} \exists n\in \mathbb{N} | |a_n|>k</script>.</li>
 </ol>
 <p><strong>Exemple 7</strong></p>
 <p>Demostreu que la successió <script type="math/tex">a_n=\frac{n^2+1}{n}</script> no està fitada.</p>
@@ -438,6 +437,35 @@ n^2+2n+1&\ge n^2+n\\
 </p>
 <p>Dels dos sumands anteriors, ja veiem que el segon es fa molt petit fins arribar quasi a <script type="math/tex">0</script>, però el primer sumand, <script type="math/tex">n</script> pot créixer arbritràriament. Per tant, acabem de demostrar que la successió anterior no està fitada.</p>
 <h2 id="limit-duna-succesio">Límit d'una succesió</h2>
+<p>En l'apartat anterior hem vist que existeixen successions fitades inferiorment i fitades superiorment. Pensem en un exemple  concret de successió decreixent: <script type="math/tex">a_n=\frac{1}{n}</script>. Si escrivim uns quants termes: <script type="math/tex">1,\frac{1}{2}, \frac{1}{3}, \frac{1}{4},...</script>. Veiem que a mida que <script type="math/tex">n</script> es fa molt gran, els termes cada vegada són més petits. Aquesta successió és evidentment fitada. Anem a pensar ara algunes fites inferiors. Una fita inferior seria <script type="math/tex">k_1=-1</script> perquè tots els termes de la successió són més grans que aquest nombre. Una altra fita inferior també podria ser <script type="math/tex">k_2=-2</script>, perquè es dóna el mateix cas. Però quina seria la <strong>més gran</strong> de les fites inferiors quan <script type="math/tex">n</script> es fa molt gran? Si ho pensem una mica veiem que és <script type="math/tex">K=0</script>.</p>
+<p>En l'exemple anterior de successió decreixent, veiem que tots els termes s'acosten cada vegada més a <script type="math/tex">0</script> quan <script type="math/tex">n</script> es fa molt gran. Diem doncs que el <strong>límit</strong> de la successió <script type="math/tex">a_n=\frac{1}{n}</script> és 0.</p>
+<p>El mateix podem fer amb una successió creixent, si aquesta està fitada superiorment, la <strong>més petita</strong> de les fites superiors és el límit de la sucessió quan <script type="math/tex">n</script> es fa molt i molt gran. Podries donar algun exemple?</p>
+<h3 id="definicio-de-limit">Definició de límit</h3>
+<p>Hi ha una manera més formal de definir límit d'una successió. Anem a veure-ho.</p>
+<blockquote>
+<p>Donada una sucessió de nombres reals <script type="math/tex">{a_n}</script>, diem que <script type="math/tex">l</script> és el <strong>límit</strong> d'aquesta successió si per qualsevol nombre real <script type="math/tex">\epsilon>0</script> existeix un enter positiu <script type="math/tex">N</script> depenent de <script type="math/tex">\epsilon</script> tal que: per <script type="math/tex">n \ge N \Rightarrow |a_n-l|<\epsilon</script>.</p>
+</blockquote>
+<p>Dit amb paraules planeres, a partir d'un cert índex de la successió, la diferència entre els termes i el límit es fa arbitràriament petita. Això s'escriu de la següent manera:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty} a_n=l</script>
+</p>
+</blockquote>
+<p>No totes les successions tenen un límit. En l'exemple anterior, veiem clarament que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{1}{n}=0</script>
+</p>
+<p>Però si considerem la successió <script type="math/tex">a_n=n\Rightarrow 1,2,3,4,5,6,....</script> veiem de seguida que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}n=+\infty</script>
+</p>
+<p>Aquest límit no és numèric, la successió <em>tendeix a més infinit</em>, que no és cap nombre.</p>
+<p>D'aquí podem deduir vàries coses:</p>
+<ol>
+<li>Diem que una sucessió és <strong>convergent</strong> si té com a límit un nombre real. Si el límit és <script type="math/tex">\pm \infty</script> diem que la sucessió és <strong>divergent</strong>.</li>
+<li>Les successions creixents i fitades superioment sempre tenen límit. Aquest límit és la més petita de les fites superiors.</li>
+<li>De la mateixa manera, les succesions decreixents i fitades inferiorment també tenen límit. Aquest límit és la més gran de les fites inferiors.</li>
+</ol>
 <h3 id="operacions-amb-successions">Operacions amb Successions</h3>
 <h3 id="calcul-de-limits">Càlcul de límits</h3></div>
         </div>
