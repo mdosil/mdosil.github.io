@@ -152,7 +152,9 @@
         
             <li><a href="#successions-monotones">Successions monòtones</a></li>
         
-            <li><a href="#limit-duna-successio">Límit d'una successió</a></li>
+            <li><a href="#successions-fitades">Successions fitades</a></li>
+        
+            <li><a href="#limit-duna-succesio">Límit d'una succesió</a></li>
         
     
     </ul>
@@ -274,6 +276,25 @@ a_3+a_{n-2}&=a_2+a_{n-1}=a_1+a_n
 <script type="math/tex; mode=display">S_n=\frac{a_1+a_n}{2}\cdot n</script>
 </p>
 </blockquote>
+<p><strong>Exemple 3</strong></p>
+<p>Troba el terme general de la successió: <script type="math/tex">2,4,6,8,...</script> troba també la suma dels <script type="math/tex">50</script> primers nombres parells.</p>
+<p>Per la successió anterior veiem que és aritmètica de diferència <script type="math/tex">d=2</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1+(n-1)d\\
+a_n&=2+(n-1)2\\
+a_n&=2n
+\end{align}</script>
+</p>
+<p>Per trobar la suma dels 50 primers nombres parells només cal aplicar la fòrmula:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=\frac{a_1+a_n}{2}\cdot n \\
+S_n&=\frac{2+2n}{2}\cdot n\\
+S_n&=(1+n)\cdot n=n^2+n\\
+S_50&=50^2+50=2550
+\end{align}</script>
+</p>
 <h2 id="successions-geometriques">Successions geomètriques</h2>
 <p>Una successió geomètrica és una successió de nombres reals en els quals el quocient entre dos termes consecutius de la successió és constant i s'anomena <strong>raó</strong>. El que és el mateix, obtenim un terme multiplicant l'anterior per la raó:</p>
 <p>
@@ -325,6 +346,24 @@ S_n(r-1)&=a_n\cdot r-a_1
 <script type="math/tex; mode=display">S_n=\frac{a_n\cdot r-a_1}{r-1}=\frac{a_1\cdot r^n-a_1}{r-1}=\frac{a_1(r^n-1)}{r-1}</script>
 </p>
 </blockquote>
+<p><strong>Exemple 4</strong></p>
+<p>Troba el terme general de la successió: <script type="math/tex">2,6,18,54,...</script> troba també la suma dels <script type="math/tex">10</script> primers termes de la successió</p>
+<p>Per la successió anterior veiem que és geomètrica de raó <script type="math/tex">r=3</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1 \cdot r^{n-1}\\
+a_n&=2\cdot 3^{n-1}\\
+\end{align}</script>
+</p>
+<p>Per trobar la suma dels 10 primers termes només cal aplicar la fòrmula:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=\frac{a_1(r^n-1)}{r-1}\\
+S_n&=\frac{2(3^n-1)}{2}\\
+S_n&=3^n-1\\
+S_10&=3^10-1=59048
+\end{align}</script>
+</p>
 <h3 id="suma-dels-infinits-termes-amb-r1">Suma dels infinits termes amb <script type="math/tex">|r|<1</script>
 </h3>
 <p>Recordem l'expressió de la suma dels <script type="math/tex">n</script> termes d'una progressió geomètrica:</p>
@@ -337,10 +376,69 @@ S_n(r-1)&=a_n\cdot r-a_1
 <script type="math/tex; mode=display">S_{\infty}=\frac{-a_1}{r-1}=\frac{a_1}{1-r}</script>
 </p>
 </blockquote>
+<p><strong>Exemple 5</strong></p>
+<p>Troba el terme general de la successió: <script type="math/tex">\frac{1}{2},\frac{1}{4}, \frac{1}{8}, \frac{1}{16}...</script> troba també la suma dels <script type="math/tex">\infty</script> termes.</p>
+<p>Per la successió anterior veiem que és geomètrica de raó <script type="math/tex">r=\frac{1}{2}</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1 \cdot r^{n-1}\\
+a_n&=\frac{1}{2}\cdot \big(\frac{1}{2}\big)^{n-1}\\
+a_n&=\big(\frac{1}{2}\big)^n
+\end{align}</script>
+</p>
+<p>Per trobar la suma dels <script type="math/tex">\infty</script> primers termes només cal aplicar la fòrmula:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_{\infty}&=\frac{a_1}{1-r}\\
+S_{\infty}&=\frac{\frac{1}{2}}{1-\frac{1}{2}}\\
+S_{\infty}&=2\\
+\end{align}</script>
+</p>
 <h2 id="successions-monotones">Successions monòtones</h2>
-<h2 id="limit-duna-successio">Límit d'una successió</h2>
+<p>Anem a veure com són les successions estudiant-ne els seus termes. Ens podem trobar en diferents casos:</p>
+<ol>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>creixent</strong> si <script type="math/tex">a_{n+1}>a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>decreixent</strong> si <script type="math/tex">a_{n+1}<a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>constant</strong> si <script type="math/tex">a_{n+1}=a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una sucessió és <strong>oscil.lant</strong> si per exemple <script type="math/tex">a_1<a_2</script>, <script type="math/tex">a_2>a_3</script>, <script type="math/tex">a_3<a_4</script>, <script type="math/tex">a_4>a_5</script>, etc.</li>
+<li>Podem trobar també sucessions que no siguin cap de les anteriors.</li>
+</ol>
+<blockquote>
+<p>Si una successió és creixent o decreixent direm que és una sucessió <strong>monótona</strong>.</p>
+</blockquote>
+<p>També podeu sentir que una sucessió és <strong>estrictament</strong> creixent (o decreixent). Ho serà si <script type="math/tex">a_{n+1}>a_n</script> (<script type="math/tex">a_{n+1}<a_n</script>), en canvi si es compleix que <script type="math/tex">a_{n+1}\ge a_n</script> (<script type="math/tex">a_{n+1} \le a_n</script>) llavors diem que la successió és creixent (o decreixent).</p>
+<p><strong>Exemple 6</strong></p>
+<p>Demostreu que la successió <script type="math/tex">a_n=\frac{n}{n+1}</script> és monòtona creixent.</p>
+<p>Per fer-ho, hem de veure que:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_{n+1}&\ge a_n\\
+\frac{n+1}{(n+1)+1} &\ge \frac{n}{n+1}\\
+\frac{n+1}{n+2} &\ge \frac{n}{n+1}\\
+(n+1)^2 &\ge n(n+2)\\
+n^2+2n+1&\ge n^2+n\\
+1&\ge0
+\end{align}</script>
+</p>
+<p>Veiem que sí que es compleix la desigualtat. Per tant, és una successió monòtona creixent.</p>
+<h2 id="successions-fitades">Successions fitades</h2>
+<p>Anem a definir un parell de conceptes:</p>
+<ol>
+<li>Diem que una successió està <strong>fitada inferiorment</strong> si tots els membres de la successió són més grans o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\ge k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>.Diem que <script type="math/tex">k</script> és una <strong>fita inferior</strong> de la successió.</li>
+<li>Diem que una successió està <strong>superiorment</strong> si tots els membres de la successió són més petits o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\le k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>. Diem que <script type="math/tex">k</script> és una <strong>fita superior</strong> de la successió.</li>
+<li>Si una successió està fitada superiorment i inferiorment diem que és una successió <strong>fitada</strong>.</li>
+<li>Una successió <strong>no està fitada</strong> si per qualsevol valor de <script type="math/tex">k</script> arbitràriament gran podem trobar un valor de <script type="math/tex">n</script> tal que <script type="math/tex">|an|>k</script>: <script type="math/tex">\forall k \in \mathbb{R} \exists n\in \mathbb{N} | |a_n|>k</script>.</li>
+</ol>
+<p><strong>Exemple 7</strong></p>
+<p>Demostreu que la successió <script type="math/tex">a_n=\frac{n^2+1}{n}</script> no està fitada.</p>
+<p>Per demostrar això hem de veure que donat un valor de <script type="math/tex">k</script> arbitràriament gran sempre podem trobar un valor de <script type="math/tex">n</script> pel qual el terme <script type="math/tex">a_n</script> sigui més gran que <script type="math/tex">k</script>.</p>
+<p>Veiem que:</p>
+<p>
+<script type="math/tex; mode=display">a_n=\frac{n^2+1}{n}=n+\frac{1}{n}</script>
+</p>
+<p>Dels dos sumands anteriors, ja veiem que el segon es fa molt petit fins arribar quasi a <script type="math/tex">0</script>, però el primer sumand, <script type="math/tex">n</script> pot créixer arbritràriament. Per tant, acabem de demostrar que la successió anterior no està fitada.</p>
+<h2 id="limit-duna-succesio">Límit d'una succesió</h2>
 <h3 id="operacions-amb-successions">Operacions amb Successions</h3>
-<h3 id="limit-duna-successio_1">Límit d'una successió</h3>
 <h3 id="calcul-de-limits">Càlcul de límits</h3></div>
         </div>
 
