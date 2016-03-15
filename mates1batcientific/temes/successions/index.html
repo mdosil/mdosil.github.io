@@ -491,7 +491,7 @@ n^2+2n+1&\ge n^2+n\\
 </li>
 <li>
 <p>Quocient de successions</p>
-<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script>, <strong>amb la condició que <script type="math/tex">\{b_n\}</script> no s'anul.li en cap terme</strong>, la successió producte s'obté dividint terme a terme les successions:</p>
+<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script>, <strong>amb la condició que <script type="math/tex">\{b_n\}</script> no s'anul.li en cap terme</strong>, la successió quocient s'obté dividint terme a terme les successions:</p>
 <p>
 <script type="math/tex; mode=display">\{ \frac{a_n}{b_n} \} = \frac{ \{ a_n \} }{ \{ b_n \} }</script>
 </p>
@@ -508,8 +508,44 @@ a_n \cdot b_n &= (n-3)\cdot \frac{1}{n+2}=\frac{n-3}{n+2}\\
 \frac{a_n}{b_n} &= (n-3)\div \frac{1}{n+2}=(n-3)(n+2)
 \end{align}</script>
 </p>
+<blockquote>
+<p>NOTA:</p>
+<p>Si dues successions són <strong>convergents</strong> ,la successió suma, diferència, producte o quocient que se'n resulti també serà <strong>convergent</strong>.</p>
+</blockquote>
 <h3 id="calcul-de-limits">Càlcul de límits</h3>
-<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, podem afirmar que si dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> són convergents, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també ho són (en el cas del quocient, sempre hem de mirar primer que la segona successió no s'anul.li mai).</p></div>
+<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, podem afirmar que si dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> són convergents, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també ho són (en el cas del quocient, sempre hem de mirar primer que la segona successió no s'anul.li mai).</p>
+<h4 id="limit-dun-quocient">Límit d'un quocient</h4>
+<p>Volem calcular el límit d'una expressió del tipus <script type="math/tex">\frac{P(n)}{Q(n)}</script> on <script type="math/tex">P</script> i <script type="math/tex">Q</script> són polinomis en <script type="math/tex">n</script>. Abans de calcular-ho fem un pas previ i anem a calcular què val el límit d'una expressió del tipus: <script type="math/tex">\frac{A}{n^P}</script> on <script type="math/tex">A \in \mathbb{R}</script> i <script type="math/tex">p \in \mathbb{N}</script>.</p>
+<p>Recordeu que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{1}{n}=0</script>
+</p>
+<p>per tant:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{A}{n^P}=0=\lim_{n\to\infty}(A\cdot \frac{1}{n}\cdot \frac{1}{n}\cdot \frac{1}{n}... \text{p vegades})=A\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}...\text{p vegades}=A\cdot 0 \cdot 0 \cdot 0 \cdot 0...=0</script>
+</p>
+<p>Així doncs, el mètode per calcular un límit del tipus <script type="math/tex">\lim_{n\to\infty}\frac{P(n)}{Q(n)}</script> serà dividir numerador i denominador per <strong>la màxima potència de <script type="math/tex">n</script></strong>. Anem a veure un exemple.</p>
+<p><strong>Exemple 8</strong></p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{3n^3+4n^2-8n+7}{2n^3-8n^2+n-8}=\lim_{n\to\infty}\frac{3n^3/n^3+4n^2/n^3-8n/n^3+7/n^3}{2n^3/n^3-8n^2/n^3+n/n^3-8/n^3}=\lim_{n\to\infty}\frac{3+4/n-8/n^2+7/n^3}{2-8/n+1/n^2-8/n^3}=\frac{3+0-0+0}{2-0+0-0}=\frac{3}{2}</script>
+</p>
+<p>D'aquí es poden deduir 3 coses quan calculem <script type="math/tex">\lim_{n\to\infty}\frac{P(n)}{Q(n)}</script>:</p>
+<ol>
+<li>Si grau <script type="math/tex">P(n)=</script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és el quocient de coeficients dels termes de major grau de <script type="math/tex">P(n)</script> i <script type="math/tex">Q(n)</script>, com a l'exemple anterior.</li>
+<li>Si grau <script type="math/tex">P(n)></script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és <script type="math/tex">\pm \infty</script> depenent del signe del coeficient de més grau del numerador.</li>
+<li>Si grau <script type="math/tex">P(n)<</script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és 0.</li>
+</ol>
+<p><em>Nota: A partir d'ara prescidirem del símbol <script type="math/tex">n\to\infty</script> en el càlcul dels límits</em></p>
+<h3 id="limit-duna-potencia">Límit d'una potència</h3>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">lim(a_n)^b_n=\big(lim \qquad a_n \big)^{lim \qquad b_n}</script>
+</p>
+</blockquote>
+<p><strong>Exemple 9</strong></p>
+<p>
+<script type="math/tex; mode=display">lim \Big( \sqrt{\frac{7-n}{n^2+1}} \Big)^{\frac{n-2}{n}}=lim \sqrt{\frac{7-n}{n^2+1}}=lim \big( \frac{7-n}{n^2+1}\big)^{\frac{1}{2}}=0^\frac{1}{2}=0</script>
+</p></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
