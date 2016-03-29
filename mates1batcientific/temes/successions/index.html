@@ -156,6 +156,8 @@
         
             <li><a href="#limit-duna-succesio">Límit d'una succesió</a></li>
         
+            <li><a href="#calcul-de-limits">Càlcul de límits</a></li>
+        
     
     </ul>
 </div></div>
@@ -512,9 +514,20 @@ a_n \cdot b_n &= (n-3)\cdot \frac{1}{n+2}=\frac{n-3}{n+2}\\
 <p>NOTA:</p>
 <p>Si dues successions són <strong>convergents</strong> ,la successió suma, diferència, producte o quocient que se'n resulti també serà <strong>convergent</strong>.</p>
 </blockquote>
-<h3 id="calcul-de-limits">Càlcul de límits</h3>
-<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, podem afirmar que si dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> són convergents, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també ho són (en el cas del quocient, sempre hem de mirar primer que la segona successió no s'anul.li mai).</p>
-<h4 id="limit-dun-quocient">Límit d'un quocient</h4>
+<h2 id="calcul-de-limits">Càlcul de límits</h2>
+<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, si dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> són convergents, que és el mateix que dir que existeix el seu límit, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també seran convergents i tindran un límit segons:</p>
+<ol>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(a_n\pm b_n)=\lim_{n\to\infty}a_n\pm \lim_{n\to\infty}b_n</script>
+</li>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(a_n\cdot b_n)=\lim_{n\to\infty}a_n\cdot \lim_{n\to\infty}b_n</script>
+</li>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(\frac{a_n}{b_n})=\frac{\lim_{n\to\infty}a_n}{\lim_{n\to\infty}b_n}</script>
+</li>
+</ol>
+<h3 id="limit-dun-quocient">Límit d'un quocient</h3>
 <p>Volem calcular el límit d'una expressió del tipus <script type="math/tex">\frac{P(n)}{Q(n)}</script> on <script type="math/tex">P</script> i <script type="math/tex">Q</script> són polinomis en <script type="math/tex">n</script>. Abans de calcular-ho fem un pas previ i anem a calcular què val el límit d'una expressió del tipus: <script type="math/tex">\frac{A}{n^P}</script> on <script type="math/tex">A \in \mathbb{R}</script> i <script type="math/tex">p \in \mathbb{N}</script>.</p>
 <p>Recordeu que:</p>
 <p>
@@ -545,6 +558,117 @@ a_n \cdot b_n &= (n-3)\cdot \frac{1}{n+2}=\frac{n-3}{n+2}\\
 <p><strong>Exemple 9</strong></p>
 <p>
 <script type="math/tex; mode=display">lim \Big( \sqrt{\frac{7-n}{n^2+1}} \Big)^{\frac{n-2}{n}}=lim \sqrt{\frac{7-n}{n^2+1}}=lim \big( \frac{7-n}{n^2+1}\big)^{\frac{1}{2}}=0^\frac{1}{2}=0</script>
+</p>
+<h3 id="operacions-amb-infty">Operacions amb <script type="math/tex">\infty</script>
+</h3>
+<p>Quan calculem el límit d'una successió composta (això és, una successió que s'ha obtingut operant dues o més successions) ens podem trobar que a l'hora de calcular-ne el resultat ens surti algun <script type="math/tex">\infty</script>. A continuació llistem els casos més comuns i la seva resolució:</p>
+<ol>
+<li>
+<script type="math/tex">a\pm \infty=\pm \infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">\infty + \infty = + \infty</script>
+</li>
+<li>
+<script type="math/tex">-\infty - \infty = - \infty</script>
+</li>
+<li>
+<script type="math/tex">\frac{a}{\pm \infty}=0</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">\frac{a}{0}=\infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">+\infty \cdot (-\infty)=-\infty</script>
+</li>
+<li>
+<script type="math/tex">+\infty \cdot (+\infty)=+\infty</script>
+</li>
+<li>
+<script type="math/tex">a\cdot (\pm \infty)=\pm \infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+</ol>
+<h3 id="indeterminacions">Indeterminacions</h3>
+<p>No obstant, hi ha un tipus d'expressions que matemàticament no es poden calcular. S'anomenen <strong>indeterminacions</strong>. Aquestes són:</p>
+<ol>
+<li>
+<script type="math/tex">\frac{\infty}{\infty}</script>
+</li>
+<li>
+<script type="math/tex">\frac{0}{0}</script>
+</li>
+<li>
+<script type="math/tex">\infty-\infty</script>
+</li>
+<li>
+<script type="math/tex">0\cdot \infty</script>
+</li>
+<li>
+<script type="math/tex">1^\infty</script>
+</li>
+<li>
+<script type="math/tex">0^0</script>
+</li>
+<li>
+<script type="math/tex">\infty^0</script>
+</li>
+</ol>
+<p>Cadascuna d'aquestes indeterminacions té un mètode concret de resolució. Per exemple, en el cas de fraccions algebraiques com les de l'exemple 8, si substituïm <script type="math/tex">n</script> per <script type="math/tex">\infty</script> a la seva expressió obtenim la indeterminació  <script type="math/tex">\frac{\infty}{\infty}</script> però ja hem vist que aquesta es pot resoldre dividint numerador i denominador per la potència màxima de <script type="math/tex">n</script>. Aquí només veurem com resoldre les indeterminacions <script type="math/tex">\infty -\infty</script> i <script type="math/tex">1^\infty</script>.</p>
+<h4 id="indeterminacio-infty-infty">Indeterminació <script type="math/tex">\infty-\infty</script>
+</h4>
+<p>En general la resoldrem multiplicant i dividint pel conjugat. Vegem-ne un exemple.</p>
+<p><strong>Exemple 10</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+lim(\sqrt{n+1}-\sqrt{n})&=\sqrt{+\infty}-\sqrt{+\infty}=+\infty-\infty=ind\\
+&=lim\frac{(\sqrt{n+1}-\sqrt{n})(\sqrt{n+1}+\sqrt{n})}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{(\sqrt{n+1})^2-(\sqrt{n})^2}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{n+1-n}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{1}{\sqrt{n+1}+\sqrt{n}}\\
+&=\frac{1}{\infty + \infty}=0\\
+\end{align}</script>
+</p>
+<h4 id="indeterminacio-1infty">Indeterminació <script type="math/tex">1^\infty</script>
+</h4>
+<p>Anem a veure quina forma té el límit següent:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=(1+0)^{+\infty}=1^{+\infty}=ind</script>
+</p>
+<p>Primer de tot, per a calcular aquest límit, mirarem si la successió és fitada i en cas afirmatiu, si és convergent. Calculem ara els 10 primers termes:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=\Big(1+\frac{1}{1} \Big)^1=2\\
+a_2&=\Big(1+\frac{1}{2} \Big)^2=\Big(\frac{3}{2}\Big)^2=\frac{9}{4}=2.25\\
+a_3&=\Big(1+\frac{1}{3} \Big)^3=\Big(\frac{4}{3}\Big)^3=\frac{64}{27}\sim 2.3703\\
+a_4&=\Big(1+\frac{1}{4} \Big)^4=\Big(\frac{5}{4}\Big)^4=\frac{625}{256}\sim 2.4414\\
+a_5&=\Big(1+\frac{1}{5} \Big)^5=\Big(\frac{6}{5}\Big)^5=\frac{7776}{3125}=2.48832\\
+a_6&=\Big(1+\frac{1}{6} \Big)^6=\Big(\frac{6}{5}\Big)^6=\frac{117649}{46656}\sim 2.5216\\
+a_7&=\Big(1+\frac{1}{7} \Big)^7=\Big(\frac{8}{7}\Big)^7=\frac{2097152}{823543}\sim 2.5464\\
+a_8&=\Big(1+\frac{1}{8}\Big)^8=\Big(\frac{9}{8}\Big)^8=\frac{43046721}{16777216}\sim 2.5657\\
+a_9&=\Big(1+\frac{1}{9} \Big)^9=\Big(\frac{10}{9}\Big)^9=\frac{10^9}{387420490}\sim 2.5811\\
+a_10&=\Big(1+\frac{1}{10} \Big)^10=\Big(\frac{11}{10}\Big)^{10}=1.1^{10}\sim 2.5937\\
+...
+\end{align}</script>
+</p>
+<p>Si calculéssim més termes veuríem que és una successió <em>monòtona creixent i fitada</em>. Podríem establir <script type="math/tex">3</script> com a fita superior i <script type="math/tex">2</script> com a fita inferior. Per tant, aquesta successió ha de tenir <em>límit</em>. Es pot demostrar que el <strong>límit existeix i és el nombre <script type="math/tex">e=2.71828...</script></strong>. Per tant:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=e</script>
+</p>
+</blockquote>
+<p>La indeterminació <script type="math/tex">1^\infty</script> engloba a totes les indeterminacions: <script type="math/tex">1^{+\infty}</script>, <script type="math/tex">1^{-\infty}</script>, <script type="math/tex">(-1)^{+\infty}</script> i <script type="math/tex">(-1)^{-\infty}</script>. Quan donada una successió <script type="math/tex">a_n</script> el seu límit és alguna de les indeterminacions anteriors, intentarem transformar <script type="math/tex">a_n</script> amb una expressió del tipus <script type="math/tex">\Big( 1+\frac{1}{A} \Big)^A</script> on <script type="math/tex">A</script> és una expressió algebraica en <script type="math/tex">n</script>. Això ho fem perquè llavors:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{A}\Big)^A=e</script>
+</p>
+<p>Anem a veure'n un exemple per entendre-ho millor:</p>
+<p><strong>Exemple 11</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &=1^{+\infty}=ind\\
+\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &=\lim_{n\to\infty}\Big( 1+\frac{n+1}{n+2}-1\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{-1}{n+2}\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{n^2+3}\\
+&=\lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{(n^2+3)\cdot \frac{n+2}{-1}\cdot \frac{-1}{n+2}}\\
+&=e^{\lim_{n\to\infty}(n^2+3)\cdot \frac{-1}{n+2}}=e^{\lim_{n\to\infty}\frac{-n^2-3}{n+2}}=e^{-\infty}=\frac{1}{+\infty}=0
+\end{align}</script>
 </p></div>
         </div>
 
