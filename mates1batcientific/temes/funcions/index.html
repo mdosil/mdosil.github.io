@@ -150,12 +150,159 @@
     
         <li class="main active"><a href="#tema-8-funcions">Tema 8: Funcions</a></li>
         
+            <li><a href="#aplicacio-entre-dos-conjunts">Aplicació entre dos conjunts</a></li>
+        
+            <li><a href="#definicio-de-funcio-real-de-variable-real">Definició de funció real de variable real</a></li>
+        
+            <li><a href="#domini-duna-funcio">Domini d'una funció</a></li>
+        
+            <li><a href="#recorregut-duna-funcio">Recorregut d'una funció</a></li>
+        
+            <li><a href="#funcions-a-trossos">Funcions a trossos</a></li>
+        
+            <li><a href="#operacions-amb-funcions">Operacions amb funcions</a></li>
+        
+            <li><a href="#funcio-inversa">Funció inversa</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-8-funcions">Tema 8: Funcions</h1></div>
+<h1 id="tema-8-funcions">Tema 8: Funcions</h1>
+<h2 id="aplicacio-entre-dos-conjunts">Aplicació entre dos conjunts</h2>
+<p>S'anomena aplicació entre un conjunt <script type="math/tex">A</script> i un conjunt <script type="math/tex">B</script> a tot criteri o llei mitjançant la qual a cada element <script type="math/tex">a \in A</script> li fa correspondre un <strong>únic</strong> element <script type="math/tex">b \in B</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:& A \rightarrow B \\
+&a \rightarrow b
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">A</script> és el conjunt inicial o de partida i i <script type="math/tex">B</script> és el conjunt final o d'arribada. <script type="math/tex">a</script> és l'element original o antiimatge, i <script type="math/tex">b</script> és l'element final o imatge.</p>
+<p>No tots els elements del conjunt final són imatges. Només o són els que tenen associat algun element del conjunt inicial.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Considerem l'aplicació <script type="math/tex">f</script> entre el conjunt dels naturals <script type="math/tex">\mathbb{N}</script> i els racionals <script type="math/tex">\mathbb{Q}</script> de tal manera que a cada nombre natural <script type="math/tex">n</script> li fa correspondre la meitat de la suma de <script type="math/tex">n</script> i 5. Doneu alguns elements del conjunt inicial i del conjunt final. Doneu algun element que no pertanyi al conjunt inicial. Doneu algun element que no pertanyi al conjunt final.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:& \mathbb{N} \rightarrow \mathbb{Q} \\
+&n \rightarrow f(n)=\frac{n+5}{2}\\
+&1 \rightarrow 3\\
+&2 \rightarrow \frac{7}{2}\\
+&3 \rightarrow 4\\
+&.\\
+&.\\
+&.\\
+\end{align}</script>
+</p>
+<p>Per exemple el <script type="math/tex">-5</script> no pertany al conjunt inicial perquè no és natural, i el <script type="math/tex">\frac{9}{4}</script> no pertany al conjunt final perquè no té antiimatge:</p>
+<p>
+<script type="math/tex; mode=display">\frac{9}{4}=\frac{n+5}{2}\Rightarrow n=-\frac{1}{2}</script>
+</p>
+<h3 id="tipus-daplicacions">Tipus d'aplicacions</h3>
+<h4 id="aplicacio-injectiva">Aplicació injectiva</h4>
+<p>Una aplicació és injectiva quan els elements del conjunt final tenen <strong>com a màxim</strong> una antiimatge:</p>
+<blockquote>
+<p>f és injectiva <script type="math/tex">\Longleftrightarrow f(a)=f(b)\rightarrow a=b</script>
+</p>
+</blockquote>
+<p>Això és, si hi ha dues imatges iguals necessàriament han de tenir la mateixa antiimatge.</p>
+<p><strong>Exemple 2</strong></p>
+<p>Demostra que l'aplicació de l'exemple 1 és injectiva.</p>
+<p>Anem a calcular la imatge de dos punts diferents, els igualem i arribarem a la conclusió que necessàriament les antiimatges han de ser iguals:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+f(a)=\frac{a+5}{2}\\
+f(b)=\frac{b+5}{2}\\
+\end{aligned}
+\right\}
+\rightarrow f(a)=f(b)\rightarrow \frac{a+5}{2}=\frac{b+5}{2} \rightarrow a+5=b+5 \rightarrow a=b
+</script>
+</p>
+<h4 id="aplicacio-exhaustiva">Aplicació exhaustiva</h4>
+<p>Una aplicació és exhaustiva quan tot element del conjunt final té <strong>com a mínim</strong> una antiimatge.</p>
+<blockquote>
+<p>f és exhaustiva <script type="math/tex">\Longleftrightarrow \forall y \in B \quad \exists x \in A \quad | f(x)=y</script>
+</p>
+</blockquote>
+<p><strong>Exemple 3</strong></p>
+<p>Demostra que l'aplicació del primer exemple no és exhaustiva.</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases}
+f(x)=y\\
+\frac{x+5}{2}=y\\
+x+5=2y\\
+x=2y-5
+\end{cases}</script>
+</p>
+<p>i si prenem <script type="math/tex">y=1</script> veiem que <script type="math/tex">x=-3</script>, que no és un nombre natural. Per tant, hem trobat un punt que no té antiimatge.</p>
+<h4 id="aplicacio-bijectiva">Aplicació bijectiva</h4>
+<blockquote>
+<p>Una aplicació és bijectiva quan és injectiva i exhaustiva alhora.</p>
+</blockquote>
+<h2 id="definicio-de-funcio-real-de-variable-real">Definició de funció real de variable real</h2>
+<p>Una funció real de variable real és una aplicació entre un subconjunt <script type="math/tex">A</script> de nombres reals <script type="math/tex">\mathbb{R}</script> i el conjunt <script type="math/tex">\mathbb{R}</script>. Veiem-ne un exemple:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:& A \rightarrow \mathbb{R} \\
+f:& {\mathbb{R}_0}^+ \rightarrow \mathbb{R} \\
+& x \rightarrow y=f(x)=+\sqrt{x}
+&1 \rightarrow 1\\
+&\frac{2}{3} \rightarrow \sqrt{\frac{2}{3}}\\
+&.\\
+&.\\
+&.\\
+\end{align}</script>
+</p>
+<h2 id="domini-duna-funcio">Domini d'una funció</h2>
+<p>Anomenem domini d'una funció al conjunt de tots els elements originals, és a dir, el conjunt o subconjunt dels nombres reals que aplicant l'equació associada obtenim una imatge real.</p>
+<h3 id="domini-de-funcions-polinomiques">Domini de funcions polinòmiques</h3>
+<p>El domini de funcions polinòmiques és tot el conjunt dels nombres reals:</p>
+<p>
+<script type="math/tex; mode=display">D=\mathbb{R}</script>
+</p>
+<h3 id="domini-de-funcions-amb-fraccions-algebraiques">Domini de funcions amb fraccions algebraiques</h3>
+<p>Aquestes funcions són del tipus: <script type="math/tex">y=f(x)=\frac{P(x)}{Q(x)}</script> on <script type="math/tex">P(x)</script> i <script type="math/tex">Q(x)</script> són polinomis.</p>
+<p>
+<script type="math/tex; mode=display">D=\mathbb{R}-\{\text{zeros del denominador}\}</script>
+</p>
+<p><strong>Exemple 4</strong></p>
+<p>Calcula el domini de la funció <script type="math/tex">y=f(x)=\frac{x^2-2}{x^2-2x+1}</script>.</p>
+<p>
+<script type="math/tex; mode=display">x^2-2x+1=0 \rightarrow x=\pm 1</script>
+</p>
+<p>
+<script type="math/tex; mode=display">D=\mathbb{R}-\{1\}</script>
+</p>
+<h3 id="domini-de-funcions-irracionals">Domini de funcions irracionals</h3>
+<p>Són funcions del tipus:</p>
+<p>
+<script type="math/tex; mode=display">y=f(x)=\sqrt[i]{P(x)}</script>
+</p>
+<p>si <script type="math/tex">i</script> és parell el domini seran tots els reals que facin el radicand positiu i si <script type="math/tex">i</script> és senar, el domini seran tots els nombres reals.</p>
+<p><strong>Exemple 5</strong></p>
+<p>Calcula el domini de la funció <script type="math/tex">y=f(x)=\sqrt{x^2-1}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+x^2-1 \ge 0\\
+x \in (- \infty, -1] U [1, +\infty)\\
+D=\mathbb{R}-(-1,1)
+\end{align}</script>
+</p>
+<h2 id="recorregut-duna-funcio">Recorregut d'una funció</h2>
+<p>El recorregut d'una funció és el conjunt de totes les imatges. També s'anomena conjunt imatge. És difícil veure quin és el recorregut a partir de l'equació d'una funció. El millor és fer-ho a partir de la gràfica i projectar-la sobre l'eix <script type="math/tex">y</script>. El recorregut serà l'interval de l'eix <script type="math/tex">y</script> que queda <em>pintat</em> per la gràfica.</p>
+<h2 id="funcions-a-trossos">Funcions a trossos</h2>
+<h2 id="operacions-amb-funcions">Operacions amb funcions</h2>
+<h3 id="suma-i-diferencia-de-funcions">Suma i diferència de funcions</h3>
+<h3 id="producte-de-funcions">Producte de funcions</h3>
+<h3 id="quocient-de-funcions">Quocient de funcions</h3>
+<h3 id="composicio-de-funcions">Composició de funcions</h3>
+<h2 id="funcio-inversa">Funció inversa</h2>
+<h3 id="teorema">Teorema</h3>
+<h3 id="calcul-de-la-inversa">Càlcul de la inversa</h3>
+<h3 id="representacio-grafica-de-la-inversa">Representació gràfica de la inversa</h3></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>

@@ -812,13 +812,118 @@
         },
         {
             "location": "/temes/funcions/",
-            "text": "Tema 8: Funcions",
+            "text": "Tema 8: Funcions\n\n\nAplicaci\u00f3 entre dos conjunts\n\n\nS'anomena aplicaci\u00f3 entre un conjunt \nA\n i un conjunt \nB\n a tot criteri o llei mitjan\u00e7ant la qual a cada element \na \\in A\n li fa correspondre un \n\u00fanic\n element \nb \\in B\n:\n\n\n\n\n\\begin{align}\nf:& A \\rightarrow B \\\\\n&a \\rightarrow b\n\\end{align}\n\n\n\n\n\n\nA\n \u00e9s el conjunt inicial o de partida i i \nB\n \u00e9s el conjunt final o d'arribada. \na\n \u00e9s l'element original o antiimatge, i \nb\n \u00e9s l'element final o imatge.\n\n\nNo tots els elements del conjunt final s\u00f3n imatges. Nom\u00e9s o s\u00f3n els que tenen associat algun element del conjunt inicial.\n\n\nExemple 1\n\n\nConsiderem l'aplicaci\u00f3 \nf\n entre el conjunt dels naturals \n\\mathbb{N}\n i els racionals \n\\mathbb{Q}\n de tal manera que a cada nombre natural \nn\n li fa correspondre la meitat de la suma de \nn\n i 5. Doneu alguns elements del conjunt inicial i del conjunt final. Doneu algun element que no pertanyi al conjunt inicial. Doneu algun element que no pertanyi al conjunt final.\n\n\n\n\n\\begin{align}\nf:& \\mathbb{N} \\rightarrow \\mathbb{Q} \\\\\n&n \\rightarrow f(n)=\\frac{n+5}{2}\\\\\n&1 \\rightarrow 3\\\\\n&2 \\rightarrow \\frac{7}{2}\\\\\n&3 \\rightarrow 4\\\\\n&.\\\\\n&.\\\\\n&.\\\\\n\\end{align}\n\n\n\n\nPer exemple el \n-5\n no pertany al conjunt inicial perqu\u00e8 no \u00e9s natural, i el \n\\frac{9}{4}\n no pertany al conjunt final perqu\u00e8 no t\u00e9 antiimatge:\n\n\n\n\n\\frac{9}{4}=\\frac{n+5}{2}\\Rightarrow n=-\\frac{1}{2}\n\n\n\n\nTipus d'aplicacions\n\n\nAplicaci\u00f3 injectiva\n\n\nUna aplicaci\u00f3 \u00e9s injectiva quan els elements del conjunt final tenen \ncom a m\u00e0xim\n una antiimatge:\n\n\n\n\nf \u00e9s injectiva \n\\Longleftrightarrow f(a)=f(b)\\rightarrow a=b\n\n\n\n\n\n\nAix\u00f2 \u00e9s, si hi ha dues imatges iguals necess\u00e0riament han de tenir la mateixa antiimatge.\n\n\nExemple 2\n\n\nDemostra que l'aplicaci\u00f3 de l'exemple 1 \u00e9s injectiva.\n\n\nAnem a calcular la imatge de dos punts diferents, els igualem i arribarem a la conclusi\u00f3 que necess\u00e0riament les antiimatges han de ser iguals:\n\n\n\n\n\n\\left.\\begin{aligned}\nf(a)=\\frac{a+5}{2}\\\\\nf(b)=\\frac{b+5}{2}\\\\\n\\end{aligned}\n\\right\\}\n\\rightarrow f(a)=f(b)\\rightarrow \\frac{a+5}{2}=\\frac{b+5}{2} \\rightarrow a+5=b+5 \\rightarrow a=b\n\n\n\n\n\nAplicaci\u00f3 exhaustiva\n\n\nUna aplicaci\u00f3 \u00e9s exhaustiva quan tot element del conjunt final t\u00e9 \ncom a m\u00ednim\n una antiimatge.\n\n\n\n\nf \u00e9s exhaustiva \n\\Longleftrightarrow \\forall y \\in B \\quad \\exists x \\in A \\quad | f(x)=y\n\n\n\n\n\n\nExemple 3\n\n\nDemostra que l'aplicaci\u00f3 del primer exemple no \u00e9s exhaustiva.\n\n\n\n\n\\begin{cases}\nf(x)=y\\\\\n\\frac{x+5}{2}=y\\\\\nx+5=2y\\\\\nx=2y-5\n\\end{cases}\n\n\n\n\ni si prenem \ny=1\n veiem que \nx=-3\n, que no \u00e9s un nombre natural. Per tant, hem trobat un punt que no t\u00e9 antiimatge.\n\n\nAplicaci\u00f3 bijectiva\n\n\n\n\nUna aplicaci\u00f3 \u00e9s bijectiva quan \u00e9s injectiva i exhaustiva alhora.\n\n\n\n\nDefinici\u00f3 de funci\u00f3 real de variable real\n\n\nUna funci\u00f3 real de variable real \u00e9s una aplicaci\u00f3 entre un subconjunt \nA\n de nombres reals \n\\mathbb{R}\n i el conjunt \n\\mathbb{R}\n. Veiem-ne un exemple:\n\n\n\n\n\\begin{align}\nf:& A \\rightarrow \\mathbb{R} \\\\\nf:& {\\mathbb{R}_0}^+ \\rightarrow \\mathbb{R} \\\\\n& x \\rightarrow y=f(x)=+\\sqrt{x}\n&1 \\rightarrow 1\\\\\n&\\frac{2}{3} \\rightarrow \\sqrt{\\frac{2}{3}}\\\\\n&.\\\\\n&.\\\\\n&.\\\\\n\\end{align}\n\n\n\n\nDomini d'una funci\u00f3\n\n\nAnomenem domini d'una funci\u00f3 al conjunt de tots els elements originals, \u00e9s a dir, el conjunt o subconjunt dels nombres reals que aplicant l'equaci\u00f3 associada obtenim una imatge real.\n\n\nDomini de funcions polin\u00f2miques\n\n\nEl domini de funcions polin\u00f2miques \u00e9s tot el conjunt dels nombres reals:\n\n\n\n\nD=\\mathbb{R}\n\n\n\n\nDomini de funcions amb fraccions algebraiques\n\n\nAquestes funcions s\u00f3n del tipus: \ny=f(x)=\\frac{P(x)}{Q(x)}\n on \nP(x)\n i \nQ(x)\n s\u00f3n polinomis.\n\n\n\n\nD=\\mathbb{R}-\\{\\text{zeros del denominador}\\}\n\n\n\n\nExemple 4\n\n\nCalcula el domini de la funci\u00f3 \ny=f(x)=\\frac{x^2-2}{x^2-2x+1}\n.\n\n\n\n\nx^2-2x+1=0 \\rightarrow x=\\pm 1\n\n\n\n\n\n\nD=\\mathbb{R}-\\{1\\}\n\n\n\n\nDomini de funcions irracionals\n\n\nS\u00f3n funcions del tipus:\n\n\n\n\ny=f(x)=\\sqrt[i]{P(x)}\n\n\n\n\nsi \ni\n \u00e9s parell el domini seran tots els reals que facin el radicand positiu i si \ni\n \u00e9s senar, el domini seran tots els nombres reals.\n\n\nExemple 5\n\n\nCalcula el domini de la funci\u00f3 \ny=f(x)=\\sqrt{x^2-1}\n\n\n\n\n\n\n\\begin{align}\nx^2-1 \\ge 0\\\\\nx \\in (- \\infty, -1] U [1, +\\infty)\\\\\nD=\\mathbb{R}-(-1,1)\n\\end{align}\n\n\n\n\nRecorregut d'una funci\u00f3\n\n\nEl recorregut d'una funci\u00f3 \u00e9s el conjunt de totes les imatges. Tamb\u00e9 s'anomena conjunt imatge. \u00c9s dif\u00edcil veure quin \u00e9s el recorregut a partir de l'equaci\u00f3 d'una funci\u00f3. El millor \u00e9s fer-ho a partir de la gr\u00e0fica i projectar-la sobre l'eix \ny\n. El recorregut ser\u00e0 l'interval de l'eix \ny\n que queda \npintat\n per la gr\u00e0fica.\n\n\nFuncions a trossos\n\n\nOperacions amb funcions\n\n\nSuma i difer\u00e8ncia de funcions\n\n\nProducte de funcions\n\n\nQuocient de funcions\n\n\nComposici\u00f3 de funcions\n\n\nFunci\u00f3 inversa\n\n\nTeorema\n\n\nC\u00e0lcul de la inversa\n\n\nRepresentaci\u00f3 gr\u00e0fica de la inversa",
             "title": "9. Funcions"
         },
         {
             "location": "/temes/funcions/#tema-8-funcions",
             "text": "",
             "title": "Tema 8: Funcions"
+        },
+        {
+            "location": "/temes/funcions/#aplicacio-entre-dos-conjunts",
+            "text": "S'anomena aplicaci\u00f3 entre un conjunt  A  i un conjunt  B  a tot criteri o llei mitjan\u00e7ant la qual a cada element  a \\in A  li fa correspondre un  \u00fanic  element  b \\in B :   \\begin{align}\nf:& A \\rightarrow B \\\\\n&a \\rightarrow b\n\\end{align}    A  \u00e9s el conjunt inicial o de partida i i  B  \u00e9s el conjunt final o d'arribada.  a  \u00e9s l'element original o antiimatge, i  b  \u00e9s l'element final o imatge.  No tots els elements del conjunt final s\u00f3n imatges. Nom\u00e9s o s\u00f3n els que tenen associat algun element del conjunt inicial.  Exemple 1  Considerem l'aplicaci\u00f3  f  entre el conjunt dels naturals  \\mathbb{N}  i els racionals  \\mathbb{Q}  de tal manera que a cada nombre natural  n  li fa correspondre la meitat de la suma de  n  i 5. Doneu alguns elements del conjunt inicial i del conjunt final. Doneu algun element que no pertanyi al conjunt inicial. Doneu algun element que no pertanyi al conjunt final.   \\begin{align}\nf:& \\mathbb{N} \\rightarrow \\mathbb{Q} \\\\\n&n \\rightarrow f(n)=\\frac{n+5}{2}\\\\\n&1 \\rightarrow 3\\\\\n&2 \\rightarrow \\frac{7}{2}\\\\\n&3 \\rightarrow 4\\\\\n&.\\\\\n&.\\\\\n&.\\\\\n\\end{align}   Per exemple el  -5  no pertany al conjunt inicial perqu\u00e8 no \u00e9s natural, i el  \\frac{9}{4}  no pertany al conjunt final perqu\u00e8 no t\u00e9 antiimatge:   \\frac{9}{4}=\\frac{n+5}{2}\\Rightarrow n=-\\frac{1}{2}",
+            "title": "Aplicaci\u00f3 entre dos conjunts"
+        },
+        {
+            "location": "/temes/funcions/#tipus-daplicacions",
+            "text": "",
+            "title": "Tipus d'aplicacions"
+        },
+        {
+            "location": "/temes/funcions/#aplicacio-injectiva",
+            "text": "Una aplicaci\u00f3 \u00e9s injectiva quan els elements del conjunt final tenen  com a m\u00e0xim  una antiimatge:   f \u00e9s injectiva  \\Longleftrightarrow f(a)=f(b)\\rightarrow a=b    Aix\u00f2 \u00e9s, si hi ha dues imatges iguals necess\u00e0riament han de tenir la mateixa antiimatge.  Exemple 2  Demostra que l'aplicaci\u00f3 de l'exemple 1 \u00e9s injectiva.  Anem a calcular la imatge de dos punts diferents, els igualem i arribarem a la conclusi\u00f3 que necess\u00e0riament les antiimatges han de ser iguals:   \n\\left.\\begin{aligned}\nf(a)=\\frac{a+5}{2}\\\\\nf(b)=\\frac{b+5}{2}\\\\\n\\end{aligned}\n\\right\\}\n\\rightarrow f(a)=f(b)\\rightarrow \\frac{a+5}{2}=\\frac{b+5}{2} \\rightarrow a+5=b+5 \\rightarrow a=b",
+            "title": "Aplicaci\u00f3 injectiva"
+        },
+        {
+            "location": "/temes/funcions/#aplicacio-exhaustiva",
+            "text": "Una aplicaci\u00f3 \u00e9s exhaustiva quan tot element del conjunt final t\u00e9  com a m\u00ednim  una antiimatge.   f \u00e9s exhaustiva  \\Longleftrightarrow \\forall y \\in B \\quad \\exists x \\in A \\quad | f(x)=y    Exemple 3  Demostra que l'aplicaci\u00f3 del primer exemple no \u00e9s exhaustiva.   \\begin{cases}\nf(x)=y\\\\\n\\frac{x+5}{2}=y\\\\\nx+5=2y\\\\\nx=2y-5\n\\end{cases}   i si prenem  y=1  veiem que  x=-3 , que no \u00e9s un nombre natural. Per tant, hem trobat un punt que no t\u00e9 antiimatge.",
+            "title": "Aplicaci\u00f3 exhaustiva"
+        },
+        {
+            "location": "/temes/funcions/#aplicacio-bijectiva",
+            "text": "Una aplicaci\u00f3 \u00e9s bijectiva quan \u00e9s injectiva i exhaustiva alhora.",
+            "title": "Aplicaci\u00f3 bijectiva"
+        },
+        {
+            "location": "/temes/funcions/#definicio-de-funcio-real-de-variable-real",
+            "text": "Una funci\u00f3 real de variable real \u00e9s una aplicaci\u00f3 entre un subconjunt  A  de nombres reals  \\mathbb{R}  i el conjunt  \\mathbb{R} . Veiem-ne un exemple:   \\begin{align}\nf:& A \\rightarrow \\mathbb{R} \\\\\nf:& {\\mathbb{R}_0}^+ \\rightarrow \\mathbb{R} \\\\\n& x \\rightarrow y=f(x)=+\\sqrt{x}\n&1 \\rightarrow 1\\\\\n&\\frac{2}{3} \\rightarrow \\sqrt{\\frac{2}{3}}\\\\\n&.\\\\\n&.\\\\\n&.\\\\\n\\end{align}",
+            "title": "Definici\u00f3 de funci\u00f3 real de variable real"
+        },
+        {
+            "location": "/temes/funcions/#domini-duna-funcio",
+            "text": "Anomenem domini d'una funci\u00f3 al conjunt de tots els elements originals, \u00e9s a dir, el conjunt o subconjunt dels nombres reals que aplicant l'equaci\u00f3 associada obtenim una imatge real.",
+            "title": "Domini d'una funci\u00f3"
+        },
+        {
+            "location": "/temes/funcions/#domini-de-funcions-polinomiques",
+            "text": "El domini de funcions polin\u00f2miques \u00e9s tot el conjunt dels nombres reals:   D=\\mathbb{R}",
+            "title": "Domini de funcions polin\u00f2miques"
+        },
+        {
+            "location": "/temes/funcions/#domini-de-funcions-amb-fraccions-algebraiques",
+            "text": "Aquestes funcions s\u00f3n del tipus:  y=f(x)=\\frac{P(x)}{Q(x)}  on  P(x)  i  Q(x)  s\u00f3n polinomis.   D=\\mathbb{R}-\\{\\text{zeros del denominador}\\}   Exemple 4  Calcula el domini de la funci\u00f3  y=f(x)=\\frac{x^2-2}{x^2-2x+1} .   x^2-2x+1=0 \\rightarrow x=\\pm 1    D=\\mathbb{R}-\\{1\\}",
+            "title": "Domini de funcions amb fraccions algebraiques"
+        },
+        {
+            "location": "/temes/funcions/#domini-de-funcions-irracionals",
+            "text": "S\u00f3n funcions del tipus:   y=f(x)=\\sqrt[i]{P(x)}   si  i  \u00e9s parell el domini seran tots els reals que facin el radicand positiu i si  i  \u00e9s senar, el domini seran tots els nombres reals.  Exemple 5  Calcula el domini de la funci\u00f3  y=f(x)=\\sqrt{x^2-1}    \\begin{align}\nx^2-1 \\ge 0\\\\\nx \\in (- \\infty, -1] U [1, +\\infty)\\\\\nD=\\mathbb{R}-(-1,1)\n\\end{align}",
+            "title": "Domini de funcions irracionals"
+        },
+        {
+            "location": "/temes/funcions/#recorregut-duna-funcio",
+            "text": "El recorregut d'una funci\u00f3 \u00e9s el conjunt de totes les imatges. Tamb\u00e9 s'anomena conjunt imatge. \u00c9s dif\u00edcil veure quin \u00e9s el recorregut a partir de l'equaci\u00f3 d'una funci\u00f3. El millor \u00e9s fer-ho a partir de la gr\u00e0fica i projectar-la sobre l'eix  y . El recorregut ser\u00e0 l'interval de l'eix  y  que queda  pintat  per la gr\u00e0fica.",
+            "title": "Recorregut d'una funci\u00f3"
+        },
+        {
+            "location": "/temes/funcions/#funcions-a-trossos",
+            "text": "",
+            "title": "Funcions a trossos"
+        },
+        {
+            "location": "/temes/funcions/#operacions-amb-funcions",
+            "text": "",
+            "title": "Operacions amb funcions"
+        },
+        {
+            "location": "/temes/funcions/#suma-i-diferencia-de-funcions",
+            "text": "",
+            "title": "Suma i difer\u00e8ncia de funcions"
+        },
+        {
+            "location": "/temes/funcions/#producte-de-funcions",
+            "text": "",
+            "title": "Producte de funcions"
+        },
+        {
+            "location": "/temes/funcions/#quocient-de-funcions",
+            "text": "",
+            "title": "Quocient de funcions"
+        },
+        {
+            "location": "/temes/funcions/#composicio-de-funcions",
+            "text": "",
+            "title": "Composici\u00f3 de funcions"
+        },
+        {
+            "location": "/temes/funcions/#funcio-inversa",
+            "text": "",
+            "title": "Funci\u00f3 inversa"
+        },
+        {
+            "location": "/temes/funcions/#teorema",
+            "text": "",
+            "title": "Teorema"
+        },
+        {
+            "location": "/temes/funcions/#calcul-de-la-inversa",
+            "text": "",
+            "title": "C\u00e0lcul de la inversa"
+        },
+        {
+            "location": "/temes/funcions/#representacio-grafica-de-la-inversa",
+            "text": "",
+            "title": "Representaci\u00f3 gr\u00e0fica de la inversa"
         },
         {
             "location": "/temes/limits/",
