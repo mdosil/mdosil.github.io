@@ -223,7 +223,7 @@ f(b)=\frac{b+5}{2}\\
 <h4 id="aplicacio-exhaustiva">Aplicació exhaustiva</h4>
 <p>Una aplicació és exhaustiva quan tot element del conjunt final té <strong>com a mínim</strong> una antiimatge.</p>
 <blockquote>
-<p>f és exhaustiva <script type="math/tex">\Longleftrightarrow \forall y \in B \quad \exists x \in A \quad | f(x)=y</script>
+<p>f és exhaustiva <script type="math/tex">\Longleftrightarrow \forall y \in B \quad \exists \quad x \in A \quad | f(x)=y</script>
 </p>
 </blockquote>
 <p><strong>Exemple 3</strong></p>
@@ -256,7 +256,10 @@ f:& {\mathbb{R}_0}^+ \rightarrow \mathbb{R} \\
 \end{align}</script>
 </p>
 <h2 id="domini-duna-funcio">Domini d'una funció</h2>
-<p>Anomenem domini d'una funció al conjunt de tots els elements originals, és a dir, el conjunt o subconjunt dels nombres reals que aplicant l'equació associada obtenim una imatge real.</p>
+<p>Anomenem domini d'una funció al conjunt de tots els elements originals, és a dir, el conjunt o subconjunt dels nombres reals que aplicant l'equació associada obtenim una imatge real:</p>
+<p>
+<script type="math/tex; mode=display">D=\{x \in \mathbb{R} \quad | \quad \exists \quad y \in \mathbb{R} \quad \text{on} \quad y=f(x) \}</script>
+</p>
 <h3 id="domini-de-funcions-polinomiques">Domini de funcions polinòmiques</h3>
 <p>El domini de funcions polinòmiques és tot el conjunt dels nombres reals:</p>
 <p>
@@ -265,7 +268,7 @@ f:& {\mathbb{R}_0}^+ \rightarrow \mathbb{R} \\
 <h3 id="domini-de-funcions-amb-fraccions-algebraiques">Domini de funcions amb fraccions algebraiques</h3>
 <p>Aquestes funcions són del tipus: <script type="math/tex">y=f(x)=\frac{P(x)}{Q(x)}</script> on <script type="math/tex">P(x)</script> i <script type="math/tex">Q(x)</script> són polinomis.</p>
 <p>
-<script type="math/tex; mode=display">D=\mathbb{R}-\{\text{zeros del denominador}\}</script>
+<script type="math/tex; mode=display">Dom \quad f=\mathbb{R}-\{\text{zeros del denominador}\}</script>
 </p>
 <p><strong>Exemple 4</strong></p>
 <p>Calcula el domini de la funció <script type="math/tex">y=f(x)=\frac{x^2-2}{x^2-2x+1}</script>.</p>
@@ -291,9 +294,42 @@ x \in (- \infty, -1] U [1, +\infty)\\
 D=\mathbb{R}-(-1,1)
 \end{align}</script>
 </p>
+<h3 id="domini-de-funcions-logaritmiques">Domini de funcions logarítmiques</h3>
+<p>Tal i com veure al principi, només existeixen els logaritmes de nombres positius. Per tant, per funcions del tipus <script type="math/tex">y=f(x)=log_a(g(x))</script>, el domini seran els valors que facin <script type="math/tex">g(x) > 0</script>.</p>
 <h2 id="recorregut-duna-funcio">Recorregut d'una funció</h2>
-<p>El recorregut d'una funció és el conjunt de totes les imatges. També s'anomena conjunt imatge. És difícil veure quin és el recorregut a partir de l'equació d'una funció. El millor és fer-ho a partir de la gràfica i projectar-la sobre l'eix <script type="math/tex">y</script>. El recorregut serà l'interval de l'eix <script type="math/tex">y</script> que queda <em>pintat</em> per la gràfica.</p>
+<p>El recorregut d'una funció és el conjunt de totes les imatges. També s'anomena conjunt imatge. És difícil veure quin és el recorregut a partir de l'equació d'una funció. El millor és fer-ho a partir de la gràfica i projectar-la sobre l'eix <script type="math/tex">y</script>. El recorregut serà l'interval de l'eix <script type="math/tex">y</script> que queda <em>pintat</em> per la gràfica. Dit amb altres paraules, el recorregut d'una funció són tots aquells valors de <script type="math/tex">y</script> que tenen com a mínim una antiimatge:</p>
+<p>
+<script type="math/tex; mode=display">R=\{y \in \mathbb{R} \quad | \quad \exists \quad x \in \mathbb{R} \quad \text{on} \quad f(x)=y \}</script>
+</p>
 <h2 id="funcions-a-trossos">Funcions a trossos</h2>
+<p>Anomenem funció a trossos aquella funció real on el seu domini és <em>partit en intervals</em> i cadascun dels quals té una funció associada diferent.</p>
+<p><strong>Exemple 6</strong></p>
+<p>
+<script type="math/tex; mode=display">
+f(x) = \begin{cases} x &\mbox{si } x > 2 \\
+3-x & \mbox{ si } -1<x \le 2 \\
+4 & \mbox{ si } x \le -1 \end{cases}
+</script>
+</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/DrFcgB7v/width/1161/height/728/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="300px" style="border:0px;"> </iframe>
+
+<p>El domini d'aquesta funció ens el dóna els intervals de <script type="math/tex">x</script>: en auqest cas, el domini serien tots els nombres reals:</p>
+<p>
+<script type="math/tex; mode=display">D=\mathbb{R}</script>
+</p>
+<p>El recorregut serien aquells valors de les <script type="math/tex">y</script> pels quals existeix una antiimatge:</p>
+<p>
+<script type="math/tex; mode=display">R= [ +1, +\infty) </script>
+</p>
+<p>Anem a veure gràficament quin tipus d'aplicació tenim al davant:</p>
+<ul>
+<li>
+<p>És injectiva (els elements del conjunt final tenen com a màxim una antiimatge)? Això vol dir que si dos elements tenen la mateixa imatge necessàriament la seva antiimatge ha de ser la mateixa. Això no passa: ho podem veure traçant una línia horitzonal en el gràfic en <script type="math/tex">y=3</script>. Hi ha 2 valors de <script type="math/tex">x</script> pels quals la seva imatge és <script type="math/tex">3</script>: en <script type="math/tex">x=0</script> i en <script type="math/tex">x=3</script>. Per tant, no és injectiva.</p>
+</li>
+<li>
+<p>És exhaustiva (els elements del conjunt final tenen com a mínim una antiimatge)? No, perquè si tracem una línia horitzonal en <script type="math/tex">y=-3</script> no talla cap punt de la gràfica, i això vol dir que hi ha elements del conjunt final que no tenen antiimatge.</p>
+</li>
+</ul>
 <h2 id="operacions-amb-funcions">Operacions amb funcions</h2>
 <h3 id="suma-i-diferencia-de-funcions">Suma i diferència de funcions</h3>
 <h3 id="producte-de-funcions">Producte de funcions</h3>
