@@ -383,6 +383,73 @@ D_{f/g}&=\mathbb{R}-\{0,1, -1\}
 \end{align}</script>
 </p>
 <h3 id="composicio-de-funcions">Composició de funcions</h3>
+<p>Sigui una funció:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:& A \rightarrow B \\
+&x \rightarrow y=f(x)
+\end{align}</script>
+</p>
+<p>amb <script type="math/tex">D_f=A</script> i <script type="math/tex">R_f=B</script>. Sigui una altra funció:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+g:& C \rightarrow \mathbb{R} \\
+&x \rightarrow y=g(x)
+\end{align}</script>
+</p>
+<p>amb <script type="math/tex">D_g=C</script> i <script type="math/tex">R_g=\mathbb{R}</script>. Si <script type="math/tex">B \subseteq C</script>, o el que és el mateix, les imatges de <script type="math/tex">f</script> estan dins el domini de <script type="math/tex">g</script>, definim la composició de <script type="math/tex">f</script> amb <script type="math/tex">g</script> i ho escrivim com <script type="math/tex">g \circ f</script> (<script type="math/tex">f</script> composat en <script type="math/tex">g</script>) a la funció:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+g\circ f:& A \rightarrow B \\
+&x \rightarrow y=(g \circ f)(x)=g(f(x))\\
+D_{g \circ f}&=D_f=A
+\end{align}</script>
+</p>
+<p>Expressat d'una altra manera, el que fa la composició de funcions és el següent:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+&A \xrightarrow{f} B \xrightarrow{g} \mathbb{R}\\
+&x \rightarrow f(x) \rightarrow g(f(x))=(g \circ f)(x)
+\end{align}</script>
+</p>
+<p>La composició de funcions no és commutativa: <script type="math/tex">g \circ f \neq f \circ g</script>.</p>
+<p><strong>Exemple 8</strong></p>
+<p>Donades les funcions <script type="math/tex">f(x)=x^2</script> i <script type="math/tex">g(x)=\sqrt{x+1}</script> calcula si és possible <script type="math/tex">(g \circ f)</script> i <script type="math/tex">(f \circ g)</script>.</p>
+<ol>
+<li>
+<p>
+<script type="math/tex">(g \circ f)</script>
+</p>
+<p>Primer hem de comprovar que el recorregut de <script type="math/tex">f</script> està dins el domini de <script type="math/tex">g</script>.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+D_f&=\mathbb{R}\\
+R_f&={\mathbb{R}_0}^+\\
+D_g&=[-1, + \infty]\\
+R_g&={\mathbb{R}_0}^+
+\end{align}</script>
+</p>
+<p>Per tant, com que <script type="math/tex">R_f \subseteq D_g</script>, podem calcular la seva composició.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+y&=(g \circ f)(x)=g(f(x))=g(x^2)=\sqrt{x^2+1}\\
+D_{g \circ f}&=D_f=\mathbb{R}
+\end{align}</script>
+</p>
+</li>
+<li>
+<p>
+<script type="math/tex">(f \circ g)</script>
+</p>
+<p>Primer hem de comprovar que el recorregut de <script type="math/tex">g</script> està dins el domini de <script type="math/tex">f</script>. De l'apartat anterior veiem que sí. Per tant, com que <script type="math/tex">R_g \subseteq D_f</script>, podem calcular la seva composició.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+y&=(f \circ g)(x)=f(g(x))=f(\sqrt{x+1})=(\sqrt{x+1})^2=x+1\\
+D_{f \circ g}&=D_g=[-1, + \infty]
+\end{align}</script>
+</p>
+</li>
+</ol>
 <h2 id="funcio-inversa">Funció inversa</h2>
 <h3 id="teorema">Teorema</h3>
 <h3 id="calcul-de-la-inversa">Càlcul de la inversa</h3>
