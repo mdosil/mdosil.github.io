@@ -451,9 +451,39 @@ D_{f \circ g}&=D_g=[-1, + \infty]
 </li>
 </ol>
 <h2 id="funcio-inversa">Funció inversa</h2>
-<h3 id="teorema">Teorema</h3>
+<p>Donada una funció real <script type="math/tex">f</script> anomenarem inversa de <script type="math/tex">f</script> i ho representarem com <script type="math/tex">f^{-1}</script> a tota funció <script type="math/tex">g</script> tal que:</p>
+<p>
+<script type="math/tex; mode=display">g \circ f=f \circ g=I</script>
+</p>
+<p>on <script type="math/tex">I(x)=x</script> (funció identitat).</p>
+<p>Es pot demostrar que <strong>una funció <script type="math/tex">f</script> té inversa únicament quan és bijectiva</strong>.</p>
 <h3 id="calcul-de-la-inversa">Càlcul de la inversa</h3>
-<h3 id="representacio-grafica-de-la-inversa">Representació gràfica de la inversa</h3></div>
+<ol>
+<li>Comprovarem si la funció és bijectiva (injectiva i exhaustiva alhora). Les funcions polinòmiques de 1r grau ho són totes, les de segon grau no ho són mai, per exemple.</li>
+<li>Si ho és canviarem la <script type="math/tex">x</script> per la <script type="math/tex">y</script> a l'equació associada.</li>
+<li>Aïllarem la <script type="math/tex">y</script> i ja tindrem l'equació per a <script type="math/tex">f^{-1}(x)</script>.</li>
+</ol>
+<p><strong>Exemple 9</strong></p>
+<p>Calcula la funció inversa de la funció <script type="math/tex">f(x)=x^3+2</script>.</p>
+<p>La manera més fàcil de veure si una funció és bijectiva és fer-ho gràficament: si per qualsevol línia horitzontal que tracem sobre la gràfica aquesta talla la funció només en un punt, la funció és bijectiva. En cas contrari no ho és.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/XfbujWBj/width/736/height/533/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="736px" height="533px" style="border:0px;"> </iframe>
+
+<p>Veiem que aquesta sí que és bijectiva. Per tant, podem calcular-ne la inversa.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+y=x^3+2\rightarrow x&=y^3+2\\
+y^3+2&=x\\
+y&=\sqrt[3]{x-2}
+\end{align}</script>
+</p>
+<p>Per tant la funció inversa de <script type="math/tex">f</script> és <script type="math/tex">f^{-1}=\sqrt[3]{x-2}</script>.</p>
+<p>Per acabar de comprovar-ho caldria veure que efectivament <script type="math/tex">f \circ g= g\circ f= I</script>. Cal remarcar que no totes les funcions cúbiques són bijectives.</p>
+<h3 id="representacio-grafica-de-la-inversa">Representació gràfica de la inversa</h3>
+<p>La gràfica d'una funció i la seva inversa són <strong>simètriques respecte la bisectriu del 1r i 3r quadrants</strong>. Per tant representem una funció i fem una simetria axial respecte la recta <script type="math/tex">y=x</script>.</p>
+<p><strong>Exemple 10</strong></p>
+<p>Dibuixa la funció inversa trobada a l'exemple anterior.</p>
+<p>Fem una <em>simetria axial</em> de la funció respecte la recta <script type="math/tex">y=x</script> i tenim representada la funció inversa <script type="math/tex">f^{-1}=\sqrt[3]{x-2}</script>.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/C36kVebw/width/400/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="400px" height="400px" style="border:0px;"> </iframe></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
