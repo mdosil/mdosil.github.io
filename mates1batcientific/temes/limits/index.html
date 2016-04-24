@@ -150,12 +150,81 @@
     
         <li class="main active"><a href="#tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</a></li>
         
+            <li><a href="#concepte-de-limit-duna-funcio-en-un-punt">Concepte de límit d'una funció en un punt</a></li>
+        
+            <li><a href="#continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</a></li>
+        
+            <li><a href="#discontinuitats">Discontinuïtats</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</h1></div>
+<h1 id="tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</h1>
+<p>En aquest tema estudiarem en detall la continuïtat d'una funció i també què passa en els punts que aquesta és discontínua. Ho farem utilitzant el concepte de límit que ja vam començar a treballar amb les <a href="http://mdosil.cat/mates1batcientific/temes/successions/">successions</a>. D'altra banda, ens fixarem també què passa quan la variable es fa molt petita (<script type="math/tex">x\rightarrow -\infty</script>) i quan aquesta es fa molt gran (<script type="math/tex">x\rightarrow +\infty</script>).</p>
+<h2 id="concepte-de-limit-duna-funcio-en-un-punt">Concepte de límit d'una funció en un punt</h2>
+<p>En el tema de successions, teníem que sempre calculàvem el límit d'una successió <script type="math/tex">a_n</script> quan <script type="math/tex">n\rightarrow +\infty</script>. I ens trobàvem amb 3 casos:</p>
+<p>
+<script type="math/tex; mode=display">
+lim \quad a_n=L \begin{cases} +\infty \\
+-\infty \\
+\mbox{ nombre real }\end{cases}
+</script>
+</p>
+<p>En aquest tema traslladarem el concepte de límit a les funcions. Si tenim una funció <script type="math/tex">f(x)</script> podem plantejar-nos 3 coses:</p>
+<ol>
+<li>Què passa quan <script type="math/tex">x\rightarrow -\infty</script>
+</li>
+<li>Què passa quan <script type="math/tex">x\rightarrow +\infty</script>
+</li>
+<li>Què passa quan <script type="math/tex">x\rightarrow a</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+</ol>
+<p>Ens fixarem aquí en el primer cas i més endavant ja pensarem què passa amb una funció en els límits infinits.</p>
+<h3 id="interpretacio-grafica">Interpretació gràfica</h3>
+<p>A través d'un exemple molt senzill veurem què vol dir gràficament el límit d'una funció en un punt.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Considerem la funció <script type="math/tex">y=f(x)=2x+1</script>. El domini d'aquesta funció són tots els nombres reals. Volem calcular quin és el límit d'aquesta funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">2</script>. Com que el domini d'aquesta funció són tots els nombres reals, el <script type="math/tex">2</script> tindrà imatge, de fet, <script type="math/tex">f(2)=2\cdot 2+1=5</script>. Considerem ara un petit entorn de <script type="math/tex">2</script> que l'anomenem <script type="math/tex">A</script> i mirarem que passa amb les imatges d'aquest entorn. A sota podeu veure'n una representació gràfica.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/tM7D6quP/width/600/height/629/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="629px" style="border:0px;"> </iframe>
+
+<p>Veiem que si les <script type="math/tex">x</script> estan en un entorn <script type="math/tex">A</script> amb punt central <script type="math/tex">x=2</script> les imatges d'aquest entorn estan en un entorn de centre <script type="math/tex">y=5</script> i radi <script type="math/tex">r</script>, això és, en un interval <script type="math/tex">(5-r,5+r)</script>. Si fem aquest entorn de <script type="math/tex">x=2</script> cada vegada més petit, podem veure que les imatges cada vegada s'acosten més a <script type="math/tex">5</script>. D'aquesta manera podem afirmar que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=\lim_{x\to 2} (2x+1)=5</script>
+</p>
+<p>Això, expressat en un altre llenguatge, és:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=5 \Leftrightarrow \exists \text{  un entorn  } A | \text{ si } x \in A \text{ , } x \neq 2 \Rightarrow f(x) \in (5-r, 5+r)</script>
+</p>
+<h3 id="definicio-de-limit-duna-funcio-en-un-punt">Definició de límit d'una funció en un punt</h3>
+<p>Anem a definir més rigorosament el límit d'una funció en un punt:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} f(x)=L \Leftrightarrow \forall \text{   entorn } (L-r, L+r) \text{ en l'eix y  } \exists \text{  un entorn } A \text{ d' }a \text{ en l'eix } x | \text{ si } x \in A \text{ , } x \neq a \Rightarrow f(x) \in (L-r, L+r)</script>
+</p>
+</blockquote>
+<h3 id="limits-laterals">Límits laterals</h3>
+<p>Quan parlem del límit d'una funció en un punt, també podem considerar-ne els límits laterals, què passa amb la funció quan ens acostem al punt per l'esquerra i què passa amb la funció quan ens acostem al punt per la dreta.</p>
+<p>PEr estudiar això fixem-nos amb la funció part entera: <script type="math/tex">y=f(x)=E(x)</script>, que representem a continuació.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/nEMUtsN9/width/520/height/751/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="520px" height="751px" style="border:0px;"> </iframe>
+
+<p>Si estudiem què passa quan ens acostem a <script type="math/tex">x=1</script> per l'esquerra (valors més petits que <script type="math/tex">1</script>) i per la dreta (valors més grans que <script type="math/tex">1</script>) veiem que obtenim dos resultats diferents:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1^+}&=1 \\
+\lim_{x\to 1^-}&=0
+\end{align}</script>
+</p>
+<p>Quan els límits laterals <strong>no coincideixen</strong>, diem que <script type="math/tex">\lim_{x\to 1} E(x)=  \nexists</script>. Per tant:</p>
+<blockquote>
+<p>
+<script type="math/tex; mode=display">\text{Si } \lim_{x\to a-} f(x)=\lim_{x\to a-} f(x)=L \Rightarrow \lim_{x\to a} f(x)=L</script>
+</p>
+</blockquote>
+<p>en cas contrari (els límits laterals no coincideixen) el límit <strong>no existeix</strong>.</p>
+<h3 id="limits-duna-funcio-a-linfinit">Límits d'una funció a l'infinit</h3>
+<h2 id="continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</h2>
+<h2 id="discontinuitats">Discontinuïtats</h2></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>

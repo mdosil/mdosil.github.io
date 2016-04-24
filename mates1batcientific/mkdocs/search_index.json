@@ -927,13 +927,48 @@
         },
         {
             "location": "/temes/limits/",
-            "text": "Tema 10: L\u00edmits i continu\u00eftat de funcions",
+            "text": "Tema 10: L\u00edmits i continu\u00eftat de funcions\n\n\nEn aquest tema estudiarem en detall la continu\u00eftat d'una funci\u00f3 i tamb\u00e9 qu\u00e8 passa en els punts que aquesta \u00e9s discont\u00ednua. Ho farem utilitzant el concepte de l\u00edmit que ja vam comen\u00e7ar a treballar amb les \nsuccessions\n. D'altra banda, ens fixarem tamb\u00e9 qu\u00e8 passa quan la variable es fa molt petita (\nx\\rightarrow -\\infty\n) i quan aquesta es fa molt gran (\nx\\rightarrow +\\infty\n).\n\n\nConcepte de l\u00edmit d'una funci\u00f3 en un punt\n\n\nEn el tema de successions, ten\u00edem que sempre calcul\u00e0vem el l\u00edmit d'una successi\u00f3 \na_n\n quan \nn\\rightarrow +\\infty\n. I ens trob\u00e0vem amb 3 casos:\n\n\n\n\n\nlim \\quad a_n=L \\begin{cases} +\\infty \\\\\n-\\infty \\\\\n\\mbox{ nombre real }\\end{cases}\n\n\n\n\n\nEn aquest tema traslladarem el concepte de l\u00edmit a les funcions. Si tenim una funci\u00f3 \nf(x)\n podem plantejar-nos 3 coses:\n\n\n\n\nQu\u00e8 passa quan \nx\\rightarrow -\\infty\n\n\n\n\nQu\u00e8 passa quan \nx\\rightarrow +\\infty\n\n\n\n\nQu\u00e8 passa quan \nx\\rightarrow a\n on \na \\in \\mathbb{R}\n\n\n\n\n\n\nEns fixarem aqu\u00ed en el primer cas i m\u00e9s endavant ja pensarem qu\u00e8 passa amb una funci\u00f3 en els l\u00edmits infinits.\n\n\nInterpretaci\u00f3 gr\u00e0fica\n\n\nA trav\u00e9s d'un exemple molt senzill veurem qu\u00e8 vol dir gr\u00e0ficament el l\u00edmit d'una funci\u00f3 en un punt.\n\n\nExemple 1\n\n\nConsiderem la funci\u00f3 \ny=f(x)=2x+1\n. El domini d'aquesta funci\u00f3 s\u00f3n tots els nombres reals. Volem calcular quin \u00e9s el l\u00edmit d'aquesta funci\u00f3 quan \nx\n s'acosta a \n2\n. Com que el domini d'aquesta funci\u00f3 s\u00f3n tots els nombres reals, el \n2\n tindr\u00e0 imatge, de fet, \nf(2)=2\\cdot 2+1=5\n. Considerem ara un petit entorn de \n2\n que l'anomenem \nA\n i mirarem que passa amb les imatges d'aquest entorn. A sota podeu veure'n una representaci\u00f3 gr\u00e0fica.\n\n\n \n\n\n\nVeiem que si les \nx\n estan en un entorn \nA\n amb punt central \nx=2\n les imatges d'aquest entorn estan en un entorn de centre \ny=5\n i radi \nr\n, aix\u00f2 \u00e9s, en un interval \n(5-r,5+r)\n. Si fem aquest entorn de \nx=2\n cada vegada m\u00e9s petit, podem veure que les imatges cada vegada s'acosten m\u00e9s a \n5\n. D'aquesta manera podem afirmar que:\n\n\n\n\n\\lim_{x\\to 2} f(x)=\\lim_{x\\to 2} (2x+1)=5\n\n\n\n\nAix\u00f2, expressat en un altre llenguatge, \u00e9s:\n\n\n\n\n\\lim_{x\\to 2} f(x)=5 \\Leftrightarrow \\exists \\text{  un entorn  } A | \\text{ si } x \\in A \\text{ , } x \\neq 2 \\Rightarrow f(x) \\in (5-r, 5+r)\n\n\n\n\nDefinici\u00f3 de l\u00edmit d'una funci\u00f3 en un punt\n\n\nAnem a definir m\u00e9s rigorosament el l\u00edmit d'una funci\u00f3 en un punt:\n\n\n\n\n\n\n\\lim_{x\\to a} f(x)=L \\Leftrightarrow \\forall \\text{   entorn } (L-r, L+r) \\text{ en l'eix y  } \\exists \\text{  un entorn } A \\text{ d' }a \\text{ en l'eix } x | \\text{ si } x \\in A \\text{ , } x \\neq a \\Rightarrow f(x) \\in (L-r, L+r)\n\n\n\n\n\n\nL\u00edmits laterals\n\n\nQuan parlem del l\u00edmit d'una funci\u00f3 en un punt, tamb\u00e9 podem considerar-ne els l\u00edmits laterals, qu\u00e8 passa amb la funci\u00f3 quan ens acostem al punt per l'esquerra i qu\u00e8 passa amb la funci\u00f3 quan ens acostem al punt per la dreta.\n\n\nPEr estudiar aix\u00f2 fixem-nos amb la funci\u00f3 part entera: \ny=f(x)=E(x)\n, que representem a continuaci\u00f3.\n\n\n \n\n\n\nSi estudiem qu\u00e8 passa quan ens acostem a \nx=1\n per l'esquerra (valors m\u00e9s petits que \n1\n) i per la dreta (valors m\u00e9s grans que \n1\n) veiem que obtenim dos resultats diferents:\n\n\n\n\n\\begin{align}\n\\lim_{x\\to 1^+}&=1 \\\\\n\\lim_{x\\to 1^-}&=0\n\\end{align}\n\n\n\n\nQuan els l\u00edmits laterals \nno coincideixen\n, diem que \n\\lim_{x\\to 1} E(x)=  \\nexists\n. Per tant:\n\n\n\n\n\n\n\\text{Si } \\lim_{x\\to a-} f(x)=\\lim_{x\\to a-} f(x)=L \\Rightarrow \\lim_{x\\to a} f(x)=L\n\n\n\n\n\n\nen cas contrari (els l\u00edmits laterals no coincideixen) el l\u00edmit \nno existeix\n.\n\n\nL\u00edmits d'una funci\u00f3 a l'infinit\n\n\nContinu\u00eftat d'una funci\u00f3 en un punt\n\n\nDiscontinu\u00eftats",
             "title": "10. L\u00edmits i continu\u00eftat de funcions"
         },
         {
             "location": "/temes/limits/#tema-10-limits-i-continuitat-de-funcions",
-            "text": "",
+            "text": "En aquest tema estudiarem en detall la continu\u00eftat d'una funci\u00f3 i tamb\u00e9 qu\u00e8 passa en els punts que aquesta \u00e9s discont\u00ednua. Ho farem utilitzant el concepte de l\u00edmit que ja vam comen\u00e7ar a treballar amb les  successions . D'altra banda, ens fixarem tamb\u00e9 qu\u00e8 passa quan la variable es fa molt petita ( x\\rightarrow -\\infty ) i quan aquesta es fa molt gran ( x\\rightarrow +\\infty ).",
             "title": "Tema 10: L\u00edmits i continu\u00eftat de funcions"
+        },
+        {
+            "location": "/temes/limits/#concepte-de-limit-duna-funcio-en-un-punt",
+            "text": "En el tema de successions, ten\u00edem que sempre calcul\u00e0vem el l\u00edmit d'una successi\u00f3  a_n  quan  n\\rightarrow +\\infty . I ens trob\u00e0vem amb 3 casos:   \nlim \\quad a_n=L \\begin{cases} +\\infty \\\\\n-\\infty \\\\\n\\mbox{ nombre real }\\end{cases}   En aquest tema traslladarem el concepte de l\u00edmit a les funcions. Si tenim una funci\u00f3  f(x)  podem plantejar-nos 3 coses:   Qu\u00e8 passa quan  x\\rightarrow -\\infty   Qu\u00e8 passa quan  x\\rightarrow +\\infty   Qu\u00e8 passa quan  x\\rightarrow a  on  a \\in \\mathbb{R}    Ens fixarem aqu\u00ed en el primer cas i m\u00e9s endavant ja pensarem qu\u00e8 passa amb una funci\u00f3 en els l\u00edmits infinits.",
+            "title": "Concepte de l\u00edmit d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/limits/#interpretacio-grafica",
+            "text": "A trav\u00e9s d'un exemple molt senzill veurem qu\u00e8 vol dir gr\u00e0ficament el l\u00edmit d'una funci\u00f3 en un punt.  Exemple 1  Considerem la funci\u00f3  y=f(x)=2x+1 . El domini d'aquesta funci\u00f3 s\u00f3n tots els nombres reals. Volem calcular quin \u00e9s el l\u00edmit d'aquesta funci\u00f3 quan  x  s'acosta a  2 . Com que el domini d'aquesta funci\u00f3 s\u00f3n tots els nombres reals, el  2  tindr\u00e0 imatge, de fet,  f(2)=2\\cdot 2+1=5 . Considerem ara un petit entorn de  2  que l'anomenem  A  i mirarem que passa amb les imatges d'aquest entorn. A sota podeu veure'n una representaci\u00f3 gr\u00e0fica.     Veiem que si les  x  estan en un entorn  A  amb punt central  x=2  les imatges d'aquest entorn estan en un entorn de centre  y=5  i radi  r , aix\u00f2 \u00e9s, en un interval  (5-r,5+r) . Si fem aquest entorn de  x=2  cada vegada m\u00e9s petit, podem veure que les imatges cada vegada s'acosten m\u00e9s a  5 . D'aquesta manera podem afirmar que:   \\lim_{x\\to 2} f(x)=\\lim_{x\\to 2} (2x+1)=5   Aix\u00f2, expressat en un altre llenguatge, \u00e9s:   \\lim_{x\\to 2} f(x)=5 \\Leftrightarrow \\exists \\text{  un entorn  } A | \\text{ si } x \\in A \\text{ , } x \\neq 2 \\Rightarrow f(x) \\in (5-r, 5+r)",
+            "title": "Interpretaci\u00f3 gr\u00e0fica"
+        },
+        {
+            "location": "/temes/limits/#definicio-de-limit-duna-funcio-en-un-punt",
+            "text": "Anem a definir m\u00e9s rigorosament el l\u00edmit d'una funci\u00f3 en un punt:    \\lim_{x\\to a} f(x)=L \\Leftrightarrow \\forall \\text{   entorn } (L-r, L+r) \\text{ en l'eix y  } \\exists \\text{  un entorn } A \\text{ d' }a \\text{ en l'eix } x | \\text{ si } x \\in A \\text{ , } x \\neq a \\Rightarrow f(x) \\in (L-r, L+r)",
+            "title": "Definici\u00f3 de l\u00edmit d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/limits/#limits-laterals",
+            "text": "Quan parlem del l\u00edmit d'una funci\u00f3 en un punt, tamb\u00e9 podem considerar-ne els l\u00edmits laterals, qu\u00e8 passa amb la funci\u00f3 quan ens acostem al punt per l'esquerra i qu\u00e8 passa amb la funci\u00f3 quan ens acostem al punt per la dreta.  PEr estudiar aix\u00f2 fixem-nos amb la funci\u00f3 part entera:  y=f(x)=E(x) , que representem a continuaci\u00f3.     Si estudiem qu\u00e8 passa quan ens acostem a  x=1  per l'esquerra (valors m\u00e9s petits que  1 ) i per la dreta (valors m\u00e9s grans que  1 ) veiem que obtenim dos resultats diferents:   \\begin{align}\n\\lim_{x\\to 1^+}&=1 \\\\\n\\lim_{x\\to 1^-}&=0\n\\end{align}   Quan els l\u00edmits laterals  no coincideixen , diem que  \\lim_{x\\to 1} E(x)=  \\nexists . Per tant:    \\text{Si } \\lim_{x\\to a-} f(x)=\\lim_{x\\to a-} f(x)=L \\Rightarrow \\lim_{x\\to a} f(x)=L    en cas contrari (els l\u00edmits laterals no coincideixen) el l\u00edmit  no existeix .",
+            "title": "L\u00edmits laterals"
+        },
+        {
+            "location": "/temes/limits/#limits-duna-funcio-a-linfinit",
+            "text": "",
+            "title": "L\u00edmits d'una funci\u00f3 a l'infinit"
+        },
+        {
+            "location": "/temes/limits/#continuitat-duna-funcio-en-un-punt",
+            "text": "",
+            "title": "Continu\u00eftat d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/limits/#discontinuitats",
+            "text": "",
+            "title": "Discontinu\u00eftats"
         },
         {
             "location": "/temes/funcioexponencial/",
