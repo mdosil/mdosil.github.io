@@ -205,7 +205,7 @@ lim \quad a_n=L \begin{cases} +\infty \\
 </blockquote>
 <h3 id="limits-laterals">Límits laterals</h3>
 <p>Quan parlem del límit d'una funció en un punt, també podem considerar-ne els límits laterals, què passa amb la funció quan ens acostem al punt per l'esquerra i què passa amb la funció quan ens acostem al punt per la dreta.</p>
-<p>PEr estudiar això fixem-nos amb la funció part entera: <script type="math/tex">y=f(x)=E(x)</script>, que representem a continuació.</p>
+<p>Per estudiar això fixem-nos amb la funció part entera: <script type="math/tex">y=f(x)=E(x)</script>, que representem a continuació.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/nEMUtsN9/width/520/height/751/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="520px" height="751px" style="border:0px;"> </iframe>
 
 <p>Si estudiem què passa quan ens acostem a <script type="math/tex">x=1</script> per l'esquerra (valors més petits que <script type="math/tex">1</script>) i per la dreta (valors més grans que <script type="math/tex">1</script>) veiem que obtenim dos resultats diferents:</p>
@@ -222,9 +222,125 @@ lim \quad a_n=L \begin{cases} +\infty \\
 </p>
 </blockquote>
 <p>en cas contrari (els límits laterals no coincideixen) el límit <strong>no existeix</strong>.</p>
-<h3 id="limits-duna-funcio-a-linfinit">Límits d'una funció a l'infinit</h3>
+<h3 id="limits-duna-funcio-a-linfinit-lim_xto-pm-infty-fx">Límits d'una funció a l'infinit <script type="math/tex">(\lim_{x\to \pm \infty} f(x))</script>
+</h3>
+<p>En aquest apartat volem veure què passa amb una funció quan prenem <script type="math/tex">x</script> molt i molt petites <script type="math/tex">(x\rightarrow - \infty)</script> i molt i molt grans <script type="math/tex">(x\rightarrow + \infty)</script>. Quan calculem aquests límits, si el resultat és un nombre, podrem assegurar que la funció té una assímptota horitzonal:</p>
+<blockquote>
+<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=a \Rightarrow</script> en <script type="math/tex">x=a</script> hi ha una assímptota horitzontal</p>
+</blockquote>
+<p>En canvi,</p>
+<blockquote>
+<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=\pm \infty \Rightarrow</script> La funció no té assímptotes horitzontals</p>
+</blockquote>
+<p><strong>Exemple 2</strong></p>
+<p>Estudia els límits infinits de la funció <script type="math/tex">y=f(x)=\frac{1}{x^2}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to - \infty} f(x)&=\frac{1}{(-\infty)^2}=\frac{1}{+\infty}=0\\
+\lim_{x\to + \infty} f(x)&=\frac{1}{(+\infty)^2}=\frac{1}{+\infty}=0
+\end{align}</script>
+</p>
+<p>Per tant, aquesta funció tindrà dues <strong>assímptotes horitzontals</strong> en <script type="math/tex">y=0</script>. Anem a veure-ho amb la gràfica:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/XsMhjqhm/width/654/height/666/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="654px" height="666px" style="border:0px;"> </iframe>
+
+<h3 id="limits-infinits-lim_xto-a-fxpm-infty">Límits infinits <script type="math/tex">(\lim_{x\to a} f(x)=\pm \infty)</script>
+</h3>
+<p>Ens interessa veure què els passa a les funcions quan al calcular un límit ens dóna com a resultat <script type="math/tex">\pm \infty</script>. Anem a veure-ho a través d'un exemple.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Donada la funció <script type="math/tex">y=f(x)=\frac{2}{x-1}</script> representa-la i estudia què passa quan <script type="math/tex">x\rightarrow 1</script>.</p>
+<p>Aquesta és una funció racional amb domini <script type="math/tex">D=\mathbb{R}-1</script>. Anem a veure què passa quan ens acostem a 1 per l'esquerra (<script type="math/tex">\lim_{x\to 1^-} \frac{2}{x-1}</script>) i per la dreta: (<script type="math/tex">\lim_{x\to 1^-} \frac{2}{x-1}</script>). Si ho mirem a través d'una taula de valors:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{array}{l|l}
+x & f(x) \\
+\hline
+ 0.9 & -20 \\
+ 0.99 & -200 \\
+ 0.999 & -2000 \\
+ 0.9999 & -20000\\
+ \hline
+ 1.1 & 20 \\
+ 1.01 & 200 \\
+ 1.001 & 2000 \\
+ 1.0001 & 20000
+\end{array}
+</script>
+</p>
+<p>Per tant, de la taula podem deduir:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1^-}\frac{2}{x-1}&=-\infty \\
+\lim_{x\to 1^+}\frac{2}{x-1}&=+\infty
+\end{align}</script>
+</p>
+<p>Si representem gràficament aquesta funció veurem què passa de manera més clara:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/Mc9bYqpQ/width/670/height/590/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="670px" height="590px" style="border:0px;"> </iframe>
+
+<p>Veiem que la funció té una <strong>assímptota vertical per l'esquerra</strong> en <script type="math/tex">x=1</script> i una <strong>assímptota vertical per la dreta</strong> també en <script type="math/tex">x=1</script>.</p>
+<blockquote>
+<p>Si <script type="math/tex">\lim_{x\to \pm a}f(x)=\pm \infty \Rightarrow</script> en <script type="math/tex">x=a</script> hi ha una assímptota vertical</p>
+</blockquote>
+<h3 id="metode-per-a-resoldre-indeterminacions-del-tipus-frac00">Mètode per a resoldre indeterminacions del tipus <script type="math/tex">\frac{0}{0}</script>
+</h3>
+<p>Ens podem trobar que com a conseqüència del càlcul d'un límit, ens trobem amb alguna indeterminació. Al tema passat ja vam veure [com resoldre indeterminacions del tipus] (http://mdosil.cat/mates1batcientific/temes/successions/#calcul-de-limits) <script type="math/tex">\frac{\infty}{\infty}</script>, <script type="math/tex">0\cdot \infty</script> i <script type="math/tex">1^\infty</script>. Anem a veure aquí una altra indeterminació: <script type="math/tex">\frac{0}{0}</script>. En general ens hi trobarem amb fraccions algebraiques. En aquest cas ens caldrà descomposar els polinomis numerador i denominador de les fraccions algebraiques com a  <a href="http://mdosil.cat/mates1batcientific/temes/polinomis/#factoritzacio-de-polinomis">producte de polinomis irreductibles</a>. Això segurament ens permetrà simplificar algun factor i podrem calcular el límit.</p>
+<p><strong>Exemple 4</strong></p>
+<p>Calcula aquest límit:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x+1}{x^3-1}}&=\frac{0}{0}=\text{ind}\\
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x+1}{x^3-1}}&=\lim_{x\to 1}\sqrt[3]{\frac{(x-1)(x^2+1)}{(x-1)(x^2+x+1)}}=\sqrt[3]{\frac{2}{3}}
+\end{align}</script>
+</p>
 <h2 id="continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</h2>
-<h2 id="discontinuitats">Discontinuïtats</h2></div>
+<p>Intuïtivament una funció és contínua en un punt <script type="math/tex">a</script> quan per dibuixar la gràfica no aixequem el llapis del paper quan passem per aquest punt. Anem a definir-ho d'una manera més formal.</p>
+<blockquote>
+<p>Una funció <script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a</script> si s'acompleix alguna de les condicions següents:</p>
+<ol>
+<li>
+<script type="math/tex">\exists f(a)\rightarrow a \in D_f</script>
+</li>
+<li>
+<script type="math/tex">\exists \lim_{x\to a}f(x)</script> i és un nombre</li>
+<li>
+<script type="math/tex">\lim_{x\to \pm a}f(x)=f(a)</script>
+</li>
+</ol>
+</blockquote>
+<p>A partir d'aquí també podem afirmar:</p>
+<blockquote>
+<p>
+<script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a \Leftrightarrow \lim_{x\to a}f(x)=f(a)</script>
+</p>
+</blockquote>
+<p>Si parlem d'intervals:</p>
+<blockquote>
+<p>
+<script type="math/tex">f(x)</script> és contínua en un interval <script type="math/tex">A</script> si és contínua en tots els punts d'aquest interval.</p>
+</blockquote>
+<h2 id="discontinuitats">Discontinuïtats</h2>
+<p>Quan el que hem explicat en l'apartat anterior no passa, tindrem que la funció <script type="math/tex">f(x)</script> és discontínua en <script type="math/tex">x=a</script>. Hi poden haver 3 tipus de discontinuïtats diferents, anem-les a revisar.</p>
+<h3 id="discontinuitat-evitable">Discontinuïtat evitable</h3>
+<p>S'anomena <strong>discontinuïtat evitable</strong> de <script type="math/tex">f(x)</script> en <script type="math/tex">x=a</script> quan no existeix <script type="math/tex">f(a)</script> però en canvi sí que existeix el seu límit: <script type="math/tex">\noexists f(a) \text{i} \exists \lim_{x\to a}f(x)</script>.</p>
+<p>La discontinuïtat es pot evitar assignant-li a <script type="math/tex">a</script> com a imatge el seu límit: <script type="math/tex">f(a)=\lim_{x\to a}f(x)</script>. La funció que en resulta s'anomena <em>funció prolongada de <script type="math/tex">f</script> per continuïtat</em>.</p>
+<p>Es pot demostrar que això passa quan <strong>la indeterminació obtinguda en calcular el límit és <script type="math/tex">\frac{0}{0}</script></strong>.</p>
+<h3 id="discontinuitat-de-salt">Discontinuïtat de salt</h3>
+<p>Tenim una <strong>discontinuïtat de salt</strong> quan els límits laterals d'una funció en un punt no coincideixen:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a^-}f(x)\neq \lim_{x\to a^+}f(x)\rightarrow \noexists \lim_{x\to a}f(x)</script>
+</p>
+<p>Llavors el tamany del salt <script type="math/tex">S</script> equivaldrà a la distància entre límits:</p>
+<p>
+<script type="math/tex; mode=display">S=\lim_{x\to a^+}f(x)-\lim_{x\to a^-}f(x)</script>
+</p>
+<p>En aquest cas pot ser que existeixi o no <script type="math/tex">f(a)</script>. Un exemple d'això seria la funció <strong>part entera, <script type="math/tex">y=f(x)=E(x)</script></strong>.</p>
+<h3 id="discontinuitat-assimptotica">Discontinuïtat assimptòtica</h3>
+<p>Tenim una <strong>discontinuïtat assimptòtica</strong> quan un límit lateral o tots dos tenen com a resultat infinit:</p>
+<p>
+<script type="math/tex; mode=display">S=\lim_{x\to a^+}f(x)=\infty \text{ i/o } \lim_{x\to a^-}f(x)=\infty</script>
+</p>
+<p>En aquest cas podem afirmar que en <script type="math/tex">x=a</script> hi ha una <strong>assímptota vertical</strong>.</p>
+<p>Es pot demostrar que això passa quan <strong><script type="math/tex">\lim_{x\to a}f(x)=\frac{A}{0}</script></strong>.</p></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
