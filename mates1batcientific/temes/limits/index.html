@@ -226,7 +226,7 @@ lim \quad a_n=L \begin{cases} +\infty \\
 </h3>
 <p>En aquest apartat volem veure què passa amb una funció quan prenem <script type="math/tex">x</script> molt i molt petites <script type="math/tex">(x\rightarrow - \infty)</script> i molt i molt grans <script type="math/tex">(x\rightarrow + \infty)</script>. Quan calculem aquests límits, si el resultat és un nombre, podrem assegurar que la funció té una assímptota horitzonal:</p>
 <blockquote>
-<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=a \Rightarrow</script> en <script type="math/tex">x=a</script> hi ha una assímptota horitzontal</p>
+<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=a \Rightarrow</script> en <script type="math/tex">y=a</script> hi ha una assímptota horitzontal</p>
 </blockquote>
 <p>En canvi,</p>
 <blockquote>
@@ -283,13 +283,13 @@ x & f(x) \\
 </blockquote>
 <h3 id="metode-per-a-resoldre-indeterminacions-del-tipus-frac00">Mètode per a resoldre indeterminacions del tipus <script type="math/tex">\frac{0}{0}</script>
 </h3>
-<p>Ens podem trobar que com a conseqüència del càlcul d'un límit, ens trobem amb alguna indeterminació. Al tema passat ja vam veure [com resoldre indeterminacions del tipus] (http://mdosil.cat/mates1batcientific/temes/successions/#calcul-de-limits) <script type="math/tex">\frac{\infty}{\infty}</script>, <script type="math/tex">0\cdot \infty</script> i <script type="math/tex">1^\infty</script>. Anem a veure aquí una altra indeterminació: <script type="math/tex">\frac{0}{0}</script>. En general ens hi trobarem amb fraccions algebraiques. En aquest cas ens caldrà descomposar els polinomis numerador i denominador de les fraccions algebraiques com a  <a href="http://mdosil.cat/mates1batcientific/temes/polinomis/#factoritzacio-de-polinomis">producte de polinomis irreductibles</a>. Això segurament ens permetrà simplificar algun factor i podrem calcular el límit.</p>
+<p>Ens podem trobar que com a conseqüència del càlcul d'un límit, ens trobem amb alguna indeterminació. Al tema passat ja vam veure <a href="http://mdosil.cat/mates1batcientific/temes/successions/#calcul-de-limits">com resoldre indeterminacions del tipus</a> <script type="math/tex">\frac{\infty}{\infty}</script>, <script type="math/tex">0\cdot \infty</script> i <script type="math/tex">1^\infty</script>. Anem a veure aquí una altra indeterminació: <script type="math/tex">\frac{0}{0}</script>. En general ens hi trobarem amb fraccions algebraiques. En aquest cas ens caldrà descomposar els polinomis numerador i denominador de les fraccions algebraiques com a  <a href="http://mdosil.cat/mates1batcientific/temes/polinomis/#factoritzacio-de-polinomis">producte de polinomis irreductibles</a>. Això segurament ens permetrà simplificar algun factor i podrem calcular el límit.</p>
 <p><strong>Exemple 4</strong></p>
 <p>Calcula aquest límit:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x+1}{x^3-1}}&=\frac{0}{0}=\text{ind}\\
-\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x+1}{x^3-1}}&=\lim_{x\to 1}\sqrt[3]{\frac{(x-1)(x^2+1)}{(x-1)(x^2+x+1)}}=\sqrt[3]{\frac{2}{3}}
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&=\frac{0}{0}=\text{ind}\\
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&=\lim_{x\to 1}\sqrt[3]{\frac{(x-1)(x^2+1)}{(x-1)(x^2+x+1)}}=\sqrt[3]{\frac{2}{3}}
 \end{align}</script>
 </p>
 <h2 id="continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</h2>
@@ -321,13 +321,22 @@ x & f(x) \\
 <h2 id="discontinuitats">Discontinuïtats</h2>
 <p>Quan el que hem explicat en l'apartat anterior no passa, tindrem que la funció <script type="math/tex">f(x)</script> és discontínua en <script type="math/tex">x=a</script>. Hi poden haver 3 tipus de discontinuïtats diferents, anem-les a revisar.</p>
 <h3 id="discontinuitat-evitable">Discontinuïtat evitable</h3>
-<p>S'anomena <strong>discontinuïtat evitable</strong> de <script type="math/tex">f(x)</script> en <script type="math/tex">x=a</script> quan no existeix <script type="math/tex">f(a)</script> però en canvi sí que existeix el seu límit: <script type="math/tex">\noexists f(a) \text{i} \exists \lim_{x\to a}f(x)</script>.</p>
+<p>S'anomena <strong>discontinuïtat evitable</strong> de <script type="math/tex">f(x)</script> en <script type="math/tex">x=a</script> quan no existeix <script type="math/tex">f(a)</script> però en canvi sí que existeix el seu límit: <script type="math/tex">\nexists f(a) \text{i} \exists \lim_{x\to a}f(x)</script>.</p>
 <p>La discontinuïtat es pot evitar assignant-li a <script type="math/tex">a</script> com a imatge el seu límit: <script type="math/tex">f(a)=\lim_{x\to a}f(x)</script>. La funció que en resulta s'anomena <em>funció prolongada de <script type="math/tex">f</script> per continuïtat</em>.</p>
 <p>Es pot demostrar que això passa quan <strong>la indeterminació obtinguda en calcular el límit és <script type="math/tex">\frac{0}{0}</script></strong>.</p>
+<p><strong>Exemple 5</strong></p>
+<p>Anem a estudiar la continuïtat de la funció <script type="math/tex">f(x)=\frac{x^2-4}{x-2}</script> en <script type="math/tex">x=2</script>. Si ens hi fixem, el domini de la funció és <script type="math/tex">D_f=\mathbb{R}-{2}</script>. Si estudiem una mica més la funció, veiem que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2}\frac{x^2-4}{x-2}=\frac{0}{0}=\text{ ind } \rightarrow \lim_{x\to 2}\frac{x^2-4}{x-2}=\lim_{x\to 2}\frac{(x-2)(x+2)}{x-2}=\lim_{x\to 2}(x+2)=4</script>
+</p>
+<p>Hi ha una discontinuïtat evitable en <script type="math/tex">x=2</script> tal i com podem veure a la representació gràfica:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/YSe6Grgm/width/766/height/672/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="766px" height="672px" style="border:0px;"> </iframe>
+
+<p>Per prolongar aquesta funció per continuïtat n'hi hauria prou d'assignar: <script type="math/tex">f(2)=4</script>.</p>
 <h3 id="discontinuitat-de-salt">Discontinuïtat de salt</h3>
 <p>Tenim una <strong>discontinuïtat de salt</strong> quan els límits laterals d'una funció en un punt no coincideixen:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to a^-}f(x)\neq \lim_{x\to a^+}f(x)\rightarrow \noexists \lim_{x\to a}f(x)</script>
+<script type="math/tex; mode=display">\lim_{x\to a^-}f(x)\neq \lim_{x\to a^+}f(x)\rightarrow \nexists \lim_{x\to a}f(x)</script>
 </p>
 <p>Llavors el tamany del salt <script type="math/tex">S</script> equivaldrà a la distància entre límits:</p>
 <p>
@@ -340,7 +349,8 @@ x & f(x) \\
 <script type="math/tex; mode=display">S=\lim_{x\to a^+}f(x)=\infty \text{ i/o } \lim_{x\to a^-}f(x)=\infty</script>
 </p>
 <p>En aquest cas podem afirmar que en <script type="math/tex">x=a</script> hi ha una <strong>assímptota vertical</strong>.</p>
-<p>Es pot demostrar que això passa quan <strong><script type="math/tex">\lim_{x\to a}f(x)=\frac{A}{0}</script></strong>.</p></div>
+<p>Es pot demostrar que això passa quan <strong><script type="math/tex">\lim_{x\to a}f(x)=\frac{A}{0}</script></strong>.</p>
+<p>L'exemple 2 i l'exemple 3 il.lustren aquest cas.</p></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
