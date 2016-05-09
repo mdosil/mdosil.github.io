@@ -108,6 +108,10 @@
                             <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
                         </li>
                     
+                        <li >
+                            <a href="../derivades/">13. Derivades</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -150,12 +154,103 @@
     
         <li class="main active"><a href="#tema-11-funcio-exponencial-i-logaritmica">Tema 11: Funció exponencial i logarítmica</a></li>
         
+            <li><a href="#la-funcio-exponencial">La funció exponencial</a></li>
+        
+            <li><a href="#la-funcio-logaritmica">La funció logarítmica</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-11-funcio-exponencial-i-logaritmica">Tema 11: Funció exponencial i logarítmica</h1></div>
+<h1 id="tema-11-funcio-exponencial-i-logaritmica">Tema 11: Funció exponencial i logarítmica</h1>
+<p>En aquest tema estudiarem les característiques bàsiques de les funcions exponencials i logarítmiques, la seva representació gràfica i algunes de les seves particularitats.</p>
+<h2 id="la-funcio-exponencial">La funció exponencial</h2>
+<p>Les funcions exponencials són totes aquelles expressades per potències on l'incògnita és un nombre real i la base un nombre real positiu.</p>
+<h3 id="definicio">Definició</h3>
+<p>Donat un nombre <script type="math/tex">a</script> positiu (<script type="math/tex">a>0</script>) anomenem funció exponencial de base <script type="math/tex">a</script> i la representem per <script type="math/tex">E_a</script> a l'aplicació següent:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+E_a:& \mathbb{R} \rightarrow \mathbb{R}^+ \\
+&x \rightarrow y=a^x\\
+&2 \rightarrow a^2\\
+&3 \rightarrow a^3\\
+-&1 \rightarrow a^{-1}=\frac{1}{a}\\
+&0 \rightarrow a^0=1\\
+&\sqrt{5} \rightarrow a^{\sqrt{5}}\\
+&.\\
+&.\\
+&.\\
+\end{align}</script>
+</p>
+<h3 id="representacio-grafica">Representació gràfica</h3>
+<p>D'entrada podem distingir 2 casos, el cas en que <script type="math/tex">a>1</script> i el cas en que <script type="math/tex">0<a<1</script>. Observa amb atenció el gràfic de sota. Varia el valor de <script type="math/tex">a</script> i estudia què passa amb cadascun dels casos.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/GY44rnNn/width/600/height/787/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="787px" style="border:0px;"> </iframe>
+
+<p><strong>Exemple 1</strong></p>
+<p>Representa gràficament la funció <script type="math/tex">f(x)=2^x</script> i la funció <script type="math/tex">g(x)=(\frac{1}{2})^x</script> sobre els mateixos eixos de coordenades. Explica què passa.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/wzbXYbuv/width/600/height/787/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="787px" style="border:0px;"> </iframe>
+
+<p>Veiem que <strong>Les dues funcions són simètriques respecte els eixos de coordenades</strong>. Ambdues passen pel punt <script type="math/tex">(0,1)</script>, ja que qualsevol nombre elevat a zero és <script type="math/tex">1</script>. <script type="math/tex">f(x)=2^x</script> és sempre creixent i té una <strong>assímptota horitzontal</strong> cap a <script type="math/tex">-\infty</script> en <script type="math/tex">y=0</script> i <script type="math/tex">g(x)=(\frac{1}{2})^x</script> és sempre decreixent i té una <strong>assímptota horitzontal</strong> cap a <script type="math/tex">+\infty</script> en <script type="math/tex">y=0</script>.</p>
+<h3 id="propietats">Propietats</h3>
+<h4 id="propietats-generals">Propietats generals</h4>
+<ol>
+<li>És contínua en <script type="math/tex">\mathbb{R}</script>
+</li>
+<li>El domini són tots els reals i el recorregut són tots els nombres reals positius: <script type="math/tex">D_f=\mathbb{R}, R_f=\mathbb{R}^+</script>
+</li>
+<li>
+<script type="math/tex">a^x>0</script>
+</li>
+<li>
+<script type="math/tex">a^x \cdot a^y=a^{x+y}</script>
+</li>
+<li>
+<script type="math/tex">\frac{a^x}{a^y}=a^{x-y}</script>
+</li>
+<li>
+<script type="math/tex">(a^x)^y=a^{x\cdot y}</script>
+</li>
+<li>
+<script type="math/tex">(a\cdot b)^x=a^x\cdot b^x</script>
+</li>
+<li>
+<script type="math/tex">\big(\frac{a}{b} \big)^x=\frac{a^x}{b^x}</script>
+</li>
+<li>
+<script type="math/tex">a^0=1</script>
+</li>
+<li>
+<script type="math/tex">a^{-x}=\frac{1}{a^x}</script>
+</li>
+<li>
+<script type="math/tex">a^{\frac{m}{n}}=\sqrt[n]{a^m}</script>
+</li>
+</ol>
+<h4 id="propietats-particulars">Propietats particulars</h4>
+<ol>
+<li>Si <script type="math/tex">a>1</script> la funció és <strong>creixent</strong> en <script type="math/tex">\mathbb{R}</script>
+</li>
+<li>Si <script type="math/tex">0<a<1</script> la funció és <strong>decreixent</strong> en <script type="math/tex">\mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex; mode=display">\mbox{Si } a>1 \rightarrow \begin{cases} \lim_{x\to + \infty} a^x=+\infty \\
+     \lim_{x\to - \infty} a^x=0
+    \end{cases}
+    </script>
+</li>
+<li>
+<script type="math/tex; mode=display">\mbox{Si } 0<a<1 \rightarrow \begin{cases} \lim_{x\to + \infty} a^x=0 \\
+   \lim_{x\to - \infty} a^x=+\infty
+  \end{cases}
+  </script>
+</li>
+<li>La funció exponencial té en l'eix de les <script type="math/tex">x</script> una assímptota horitzontal</li>
+</ol>
+<h2 id="la-funcio-logaritmica">La funció logarítmica</h2>
+<h3 id="definicio_1">Definició</h3>
+<h3 id="representacio-grafica_1">Representació gràfica</h3>
+<h3 id="propietats_1">Propietats</h3></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
