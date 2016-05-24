@@ -192,6 +192,35 @@ E_a:& \mathbb{R} \rightarrow \mathbb{R}^+ \\
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/wzbXYbuv/width/600/height/787/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="787px" style="border:0px;"> </iframe>
 
 <p>Veiem que <strong>Les dues funcions són simètriques respecte els eixos de coordenades</strong>. Ambdues passen pel punt <script type="math/tex">(0,1)</script>, ja que qualsevol nombre elevat a zero és <script type="math/tex">1</script>. <script type="math/tex">f(x)=2^x</script> és sempre creixent i té una <strong>assímptota horitzontal</strong> cap a <script type="math/tex">-\infty</script> en <script type="math/tex">y=0</script> i <script type="math/tex">g(x)=(\frac{1}{2})^x</script> és sempre decreixent i té una <strong>assímptota horitzontal</strong> cap a <script type="math/tex">+\infty</script> en <script type="math/tex">y=0</script>.</p>
+<p><strong>Exemple 2</strong></p>
+<p>En qualsevol desintegració radioactiva es compleix l'expressió següent:</p>
+<p>
+<script type="math/tex; mode=display">N=N_0e^{-\lambda t}</script>
+</p>
+<p>on <script type="math/tex">N_0</script> és la quantitat inicial d'àtoms i <script type="math/tex">\lambda</script> és una constant que depèn de l'element radioactiu i s'anomena <strong>constant de desintegració</strong>. De fet, <script type="math/tex">\lambda</script> té unitats de <script type="math/tex">t^{-1}</script>. Així, l'expressió anterior també es pot escriure com:</p>
+<p>
+<script type="math/tex; mode=display">N=N_0e^{-\frac{t}{\tau}}</script>
+</p>
+<p>on <script type="math/tex">\tau=\frac{1}{\lambda}</script> s'anomena <strong>temps de desintegració</strong> (<em>mean lifetime</em> en anglès) i és el temps que triga la mostra a reduir-se en un factor <script type="math/tex">e</script> (de passar de <script type="math/tex">N</script> àtoms a <script type="math/tex">\frac{N}{e}</script>). En mostres radioactives també es defineix el <strong>període de semidesintegració</strong> o <strong>vida mitjana</strong> (<em>half life</em> en anglès) que és el temps que triga la mostra a reduir-se a la meitat.</p>
+<p>Amb aquesta explicació, calculeu el temps de desintegració i la vida mitjana d'una mostra radioactiva que es redueix el <script type="math/tex">9.5 \%</script> al cap d'un any.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+N&=N_0 e^{-\lambda t}\\
+90.5&=100 e^{-\lambda \cdot 1}\\
+ln (\frac{90.5}{100})&=-\lambda\\
+\lambda &=-ln 0.905=0.0998\\
+\tau &=\frac{1}{\lambda}=10.2
+\end{align}</script>
+</p>
+<p>Per calcular la vida mitjana, <script type="math/tex">t_{1/2}</script>, recordem que és el temps que triga la mostra a reduir-se a la meitat:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+N&=N_0 e^{-0.0998 t}\\
+\frac{N_0}{2}&=N_0 e^{-0.0998 t_{1/2}}\\
+ln (\frac{1}{2})&=-0.0998 t_{1/2}\\
+t_{1/2} &=6.94 \mbox{ anys}
+\end{align}</script>
+</p>
 <h3 id="propietats">Propietats</h3>
 <h4 id="propietats-generals">Propietats generals</h4>
 <ol>

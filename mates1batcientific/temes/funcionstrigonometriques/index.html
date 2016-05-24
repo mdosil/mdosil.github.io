@@ -160,11 +160,7 @@
         
             <li><a href="#la-funcio-tangent">La funció tangent</a></li>
         
-            <li><a href="#la-funcio-arc-sinus">La funció arc sinus</a></li>
-        
-            <li><a href="#la-funcio-arc-cosinus">La funció arc cosinus</a></li>
-        
-            <li><a href="#la-funcio-arc-tangent">La funció arc tangent</a></li>
+            <li><a href="#les-funcions-trigonometriques-inverses">Les funcions trigonomètriques inverses</a></li>
         
     
     </ul>
@@ -258,7 +254,7 @@ R_f&=[-1,1]
 <p>La funció cosinus és aquella funció que a cada nombre real se li associa el valor del cosinus de l'angle en <strong>radiants</strong>:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-sin:& \mathbb{R} \rightarrow \mathbb{R} \\
+cos:& \mathbb{R} \rightarrow \mathbb{R} \\
 &x \rightarrow y=cos (x)\\
 &0 \rightarrow cos(0)=1\\
 &\frac{\pi}{2} \rightarrow cos(\frac{\pi}{2})=0\\
@@ -320,11 +316,83 @@ R_f&=[-1,1]
 </ol>
 <h2 id="la-funcio-tangent">La funció tangent</h2>
 <h3 id="definicio_2">Definició</h3>
+<p>La funció tangent és aquella funció que a cada nombre real se li associa el valor de la tangent de l'angle en <strong>radiants</strong>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+tan:& \mathbb{R} \rightarrow \mathbb{R} \\
+&x \rightarrow y=tan (x)\\
+&0 \rightarrow tan(0)=\frac{sin 0}{cos 0}=0\\
+&\frac{\pi}{2} \rightarrow tan(\frac{\pi}{2})=\nexists \\
+&\pi \rightarrow tan(\pi)=0\\
+&\frac{3\pi}{2} \rightarrow tan(\frac{3\pi}{2})=\nexists \\
+&.\\
+&.\\
+&.\\
+\end{align}</script>
+</p>
+<p>Aquí veiem que hi haurà variacions en el domini i el recorregut respecte les funcions sinus i cosinus. Aquells angles que tinguin el sinus igual a zero no tindran la tangent definida, per tant, aquests punts s'han de treure del domini.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+D_f&=\mathbb{R}-\{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}\}\\
+R_f&=\mathbb{R}
+\end{align}</script>
+</p>
 <h3 id="representacio-grafica_2">Representació gràfica</h3>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/dtKu2BHW/width/830/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="830px" height="700px" style="border:0px;"> </iframe>
+
+<p>Veiem que la funció tangent també és periòdica però en els punts que no són del domini (els múltiples de <script type="math/tex">\frac{\pi}{2}</script>) hi han <strong>assímptotes verticals</strong>.</p>
 <h3 id="propietats_2">Propietats</h3>
-<h2 id="la-funcio-arc-sinus">La funció arc sinus</h2>
-<h2 id="la-funcio-arc-cosinus">La funció arc cosinus</h2>
-<h2 id="la-funcio-arc-tangent">La funció arc tangent</h2></div>
+<ol>
+<li>El domini de la funció cosinus són tots els nombres reals menys els múltiples de <script type="math/tex">\frac{\pi}{2}</script>: <script type="math/tex">D_f=\mathbb{R}-\{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}\}</script>
+</li>
+<li>El recorregut són tots els nombres reals: <script type="math/tex">R_f=\mathbb{R}</script>
+</li>
+<li>És una funció periòdica amb període <script type="math/tex">T=\pi</script>: <script type="math/tex">tan(x)=tan(x+k\pi) \mbox{ on } k \in \mathbb{Z}</script>
+</li>
+<li>Té discontinuïtats assimptòtiques en els punts <script type="math/tex">x=\frac{(2k+1)\pi}{2}</script>, <script type="math/tex">k \in \mathbb{Z}</script>
+</li>
+<li>És creixent en tot el seu domini</li>
+<li>Els punts de tall amb l'eix <script type="math/tex">x</script> són <script type="math/tex">x=k\pi, </script>k \in \mathbb{Z}$</li>
+<li>És còncava de <script type="math/tex">(0+k\pi,\frac{\pi}{2}+k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
+</li>
+<li>És convexa de <script type="math/tex">(\frac{\pi}{2}+k\pi,\pi+k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
+</li>
+<li>Els punts d'inflexió coincideixen amb els punts de tall amb l'eix <script type="math/tex">x</script>
+</li>
+<li>Les tangents d'angles suplementaris són oposades: <script type="math/tex">tan(x)=-tan(\pi-x)</script>
+</li>
+<li>Les tangents dels angles <script type="math/tex">x</script> i <script type="math/tex">x+\pi</script> són iguals: <script type="math/tex">tan(x)=tan(\pi+x)</script>
+</li>
+<li>Les tangents d'angles oposats són oposades: <script type="math/tex">tan(x)=-tan(-x)</script>
+</li>
+</ol>
+<h2 id="les-funcions-trigonometriques-inverses">Les funcions trigonomètriques inverses</h2>
+<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/funcions/#funcio-inversa">tema 9</a> vam veure que una funció tenia inversa només quan aquesta era <strong>bijectiva</strong>. És evident que les funcions trigonomètriques que hem estudiat no són bijectives, perquè si tracem una línia horitzontal a les seves gràfiques, aquesta talla en més d'un punt: per una <script type="math/tex">y</script> donada existeix més d'una <script type="math/tex">x</script>. Per tant, caldrà aplicar algun <em>truc</em> per trobar les funcions inverses de les trigonomètriques. Per fer-ho, restringirem el càlcul de la funció inversa <strong>en un interval del domini, on la funció sigui bijectiva</strong>.</p>
+<h3 id="la-funcio-arc-sinus">La funció arc sinus</h3>
+<h4 id="definicio_3">Definició</h4>
+<p>Abans de definir la funció <script type="math/tex">arcsin (x)</script> o <script type="math/tex">sin^{-1}(x)</script>, definim la <strong>funció sinus restringida</strong> com aquella funció que compleix:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+sin:[-\frac{\pi}{2},\frac{\pi}{2}] & \rightarrow [-1,1] \\
+x &\rightarrow y=sin (x)
+\end{align}</script>
+</p>
+<p>Veiem que hem restringit el domini de la funció a l'interval <script type="math/tex">[-\frac{\pi}{2},\frac{\pi}{2}]</script> i el recorregut continua essent el mateix que la funció sinus complerta. En aquest interval de <script type="math/tex">x</script> la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
+<p>Definim la funció <strong><script type="math/tex">arcsin (x)</script> o <script type="math/tex">sin^{-1}(x)</script></strong> com aquella funció que a cada nombre entre <script type="math/tex">-1</script> i <script type="math/tex">1</script> li fa correspondre el seu angle en radiants:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+arcsin:[-1,1] & \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}] \\
+x & \rightarrow y=arcsin (x) \leftrightarrow x=sin (y)\\
+0 & \rightarrow 0\\
+\frac{1}{2} & \rightarrow \frac{\pi}{6}(60^o)
+\end{align}</script>
+</p>
+<h4 id="representacio-grafica_3">Representació gràfica</h4>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/c26yPBrk/width/500/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="500px" height="400px" style="border:0px;"> </iframe>
+
+<p>Veiem que la funció <script type="math/tex">arcsin (x)</script> és contínua i creixent en tot el seu domini. També és simètrica respecte la bisectriu del 1r i 3r quadrants amb la funció <script type="math/tex">sin (x)</script>, la seva inversa.</p>
+<h3 id="la-funcio-arc-cosinus">La funció arc cosinus</h3>
+<h3 id="la-funcio-arc-tangent">La funció arc tangent</h3></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
