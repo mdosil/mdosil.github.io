@@ -154,12 +154,104 @@
     
         <li class="main active"><a href="#tema-13-derivades">Tema 13: Derivades</a></li>
         
+            <li><a href="#derivada-duna-funcio-en-un-punt">Derivada d'una funció en un punt</a></li>
+        
+            <li><a href="#la-funcio-derivada">La funció derivada</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="tema-13-derivades">Tema 13: Derivades</h1></div>
+<h1 id="tema-13-derivades">Tema 13: Derivades</h1>
+<h2 id="derivada-duna-funcio-en-un-punt">Derivada d'una funció en un punt</h2>
+<h3 id="definicio-de-derivada-duna-funcio-en-un-punt">Definició de derivada d'una funció en un punt</h3>
+<p>Donada una funció real <script type="math/tex">f</script> i un punt d'abcissa <script type="math/tex">x=a</script>, <script type="math/tex">a \in \mathbb{R}</script>, on <script type="math/tex">a \in D_f</script>, considerem el límit següent:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
+</p>
+<p>si aquest límit existeix s'anomena <strong>derivada de la funció <script type="math/tex">f</script> en <script type="math/tex">x=a</script>, <script type="math/tex">f^{\prime} (a)</script></strong>:</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
+</p>
+<p>Aquesta expressió es pot escriure d'una altra manera si adoptem el canvi de variable següent:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a+h&=x \rightarrow \begin{cases} h=x-a \\
+     \mbox{si } h \rightarrow 0 \Rightarrow x \rightarrow a
+    \end{cases}\\
+f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
+\end{align}</script>
+</p>
+<p><strong>Exemple 1</strong></p>
+<p>Donada <script type="math/tex">f(x)=7x-3</script> calculeu <script type="math/tex">f^{\prime}(a) \forall a \in \mathbb{R}</script>.</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{7x-3-(7a-3)}{x-a}=\lim_{x\to a} \frac{7(x-a)}{x-a}=7</script>
+</p>
+<p><strong>Exemple 2</strong></p>
+<p>Esbrineu si existeix la derivada en els punts <script type="math/tex">x=0</script>, <script type="math/tex">x=2</script> i <script type="math/tex">x=-2</script> de la funció a trossos:</p>
+<p>
+<script type="math/tex; mode=display">f(x)= \begin{cases} 2x+1 \mbox{ si } x \le 0 \\
+     x-1 \mbox{ si } x > 0
+    \end{cases}</script>
+</p>
+<p>Per calcular la derivada en aquests punts, el que haurem de fer és calcular els límits anteriors per <script type="math/tex">x\to 0</script>, <script type="math/tex">x\to 2</script> i <script type="math/tex">x \to -2</script>.</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(0)=\lim_{x\to 0} \frac{f(x)-f(0)}{x-0}=?\Rightarrow\begin{cases} \lim_{x\to 0^{+}} \frac{f(x)-f(0)}{x-0}= \lim_{x\to 0^{+}} \frac{x-1-1}{x}=\lim_{x\to 0^{+}} \frac{x-2}{x}=\frac{-2}{0}=-\infty\\
+     \lim_{x\to 0^{-}} \frac{f(x)-f(0)}{x-0}=\lim_{x\to 0^{-}} \frac{2x}{x}=2
+    \end{cases}</script>
+</p>
+<p>Veiem que els límits laterals no coincideixen. Per tant, el límit no es pot calcular, o sigui que <strong><script type="math/tex">f^{\prime}(0)=\nexists</script></strong></p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(2)=\lim_{x\to 2} \frac{f(x)-f(2)}{x-2}=\lim_{x\to 2} \frac{x-1-1}{x-2}=\lim_{x\to 2} \frac{x-2}{x-2}=1</script>
+</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(-2)=\lim_{x\to -2} \frac{f(x)-f(-2)}{x+2}=\lim_{x\to -2} \frac{2x+4}{x+2}=\lim_{x\to -2} \frac{2(x+2)}{x+2}=2</script>
+</p>
+<h3 id="interpretacio-geometrica-de-la-derivada">Interpretació geomètrica de la derivada</h3>
+<p>Anem a veure si amb un dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/bd7R3xbq/width/814/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="814px" height="700px" style="border:0px;"> </iframe>
+
+<p>Fixem-nos amb el gràfic de la funció f. Considerem dos punts, un punt <script type="math/tex">A</script> de coordenades <script type="math/tex">(a, f(a))</script> i un altre punt <script type="math/tex">B</script> de coordenades <script type="math/tex">(x, f(x))</script>. Amb el punt lliscant podeu anar movent el punt <script type="math/tex">B</script>. Tracem una secant des del punt <script type="math/tex">A</script> al punt <script type="math/tex">B</script>. Considerem el triangle dibuixat a la figura. El catet inferior té longitud <script type="math/tex">\Delta x=x-a</script> i el catet superior <script type="math/tex">\Delta y=f(x)-f(a)</script>. El <strong>pendent de la recta secant</strong> és el quocient entre aquests dos valors i també coincideix amb <strong>la tangent de l'angle <script type="math/tex">\alpha</script></strong>:</p>
+<p>
+<script type="math/tex; mode=display">m=tan \alpha= \frac{\Delta y}{\Delta x}=\frac{f(x)-f(a)}{x-a}</script>
+</p>
+<p>Si ens fixem aquesta fórmula és molt semblant a la de la definició de la derivada d'una funció en el punt <script type="math/tex">a</script>, <script type="math/tex">f^{\prime}(a)</script>. La diferència està en el <strong>límit</strong>.</p>
+<p>Si ara anem acostant cada vegada més el punt <script type="math/tex">B</script> al punt <script type="math/tex">A</script>, veiem que aquesta recta secant, en <strong>el límit</strong> que <script type="math/tex">A=B</script> es converteix en una <strong>recta tangent en <script type="math/tex">x=a</script></strong>, i per tant:</p>
+<blockquote>
+<p>La derivada en <script type="math/tex">x=a</script> de <script type="math/tex">f(x)</script>, <script type="math/tex">f^\prime(a)</script>, és <strong>el pendent de la recta tangent a la gràfica de la funció en el punt <script type="math/tex">x=a</script></strong>  i es calcula a partir del límit: <script type="math/tex">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
+</p>
+</blockquote>
+<h3 id="definicio-de-recta-tangent-a-una-corba-en-un-punt">Definició de recta tangent a una corba en un punt</h3>
+<p>Vist això, anomenem recta tangent a una corba en el punt <script type="math/tex">x=a</script>, a aquella recta que compleix:</p>
+<ol>
+<li>Conté el punt <script type="math/tex">(a,f(a))</script>
+</li>
+<li>Té per pendent <script type="math/tex">m=f^{\prime}(a)</script>
+</li>
+</ol>
+<p>D'aquí podem expressar l'equació de la recta tangent a una funció en el punt <script type="math/tex">x=a</script> de la manera:</p>
+<p>
+<script type="math/tex; mode=display">y-f(a)=f^{\prime}(a)(x-a)</script>
+</p>
+<p><strong>Exemple 3</strong></p>
+<p>Trobeu l'equació de la recta tangent a la funció <script type="math/tex">f(x)=3x^2-5x+2</script> en el punt d'abcissa <script type="math/tex">x=1</script>.</p>
+<p>El punt <script type="math/tex">A</script> en aquest cas és el punt <script type="math/tex">(1,f(1))=(1,0)</script>
+</p>
+<p>Anem a calcular la derivada de la funció <script type="math/tex">f</script> en <script type="math/tex">x=1</script>:</p>
+<p>
+<script type="math/tex; mode=display">m=f^{\prime}(1)=\lim_{x\to 1} \frac{f(x)-f(1)}{x-1}=\frac{3x^2-5x+2-0}{x-1}=1</script>
+</p>
+<p>Per tant, l'equació de la recta tangent a <script type="math/tex">f(x)</script> en <script type="math/tex">x=1</script> és:</p>
+<p>
+<script type="math/tex; mode=display">y-0=1(x-1)\Rightarrow y=x-1</script>
+</p>
+<h3 id="relacio-entre-la-derivada-i-la-continuitat-duna-funcio-en-un-punt">Relació entre la derivada i la continuïtat d'una funció en un punt</h3>
+<h2 id="la-funcio-derivada">La funció derivada</h2>
+<h3 id="definicio-de-funcio-derivada">Definició de funció derivada</h3>
+<h3 id="derivacio-o-calcul-de-derivades">Derivació o càlcul de Derivades</h3>
+<h4 id="regla-1">Regla 1</h4>
+<h4 id="regla-2">Regla 2</h4></div>
         </div>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>

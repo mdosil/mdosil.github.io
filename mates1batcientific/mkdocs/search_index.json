@@ -1182,13 +1182,63 @@
         },
         {
             "location": "/temes/derivades/",
-            "text": "Tema 13: Derivades",
+            "text": "Tema 13: Derivades\n\n\nDerivada d'una funci\u00f3 en un punt\n\n\nDefinici\u00f3 de derivada d'una funci\u00f3 en un punt\n\n\nDonada una funci\u00f3 real \nf\n i un punt d'abcissa \nx=a\n, \na \\in \\mathbb{R}\n, on \na \\in D_f\n, considerem el l\u00edmit seg\u00fcent:\n\n\n\n\n\\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}\n\n\n\n\nsi aquest l\u00edmit existeix s'anomena \nderivada de la funci\u00f3 \nf\n en \nx=a\n, \nf^{\\prime} (a)\n:\n\n\n\n\nf^{\\prime}(a)=\\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}\n\n\n\n\nAquesta expressi\u00f3 es pot escriure d'una altra manera si adoptem el canvi de variable seg\u00fcent:\n\n\n\n\n\\begin{align}\na+h&=x \\rightarrow \\begin{cases} h=x-a \\\\\n     \\mbox{si } h \\rightarrow 0 \\Rightarrow x \\rightarrow a\n    \\end{cases}\\\\\nf^{\\prime}(a)&=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}\n\\end{align}\n\n\n\n\nExemple 1\n\n\nDonada \nf(x)=7x-3\n calculeu \nf^{\\prime}(a) \\forall a \\in \\mathbb{R}\n.\n\n\n\n\nf^{\\prime}(a)=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}=\\lim_{x\\to a} \\frac{7x-3-(7a-3)}{x-a}=\\lim_{x\\to a} \\frac{7(x-a)}{x-a}=7\n\n\n\n\nExemple 2\n\n\nEsbrineu si existeix la derivada en els punts \nx=0\n, \nx=2\n i \nx=-2\n de la funci\u00f3 a trossos:\n\n\n\n\nf(x)= \\begin{cases} 2x+1 \\mbox{ si } x \\le 0 \\\\\n     x-1 \\mbox{ si } x > 0\n    \\end{cases}\n\n\n\n\nPer calcular la derivada en aquests punts, el que haurem de fer \u00e9s calcular els l\u00edmits anteriors per \nx\\to 0\n, \nx\\to 2\n i \nx \\to -2\n.\n\n\n\n\nf^{\\prime}(0)=\\lim_{x\\to 0} \\frac{f(x)-f(0)}{x-0}=?\\Rightarrow\\begin{cases} \\lim_{x\\to 0^{+}} \\frac{f(x)-f(0)}{x-0}= \\lim_{x\\to 0^{+}} \\frac{x-1-1}{x}=\\lim_{x\\to 0^{+}} \\frac{x-2}{x}=\\frac{-2}{0}=-\\infty\\\\\n     \\lim_{x\\to 0^{-}} \\frac{f(x)-f(0)}{x-0}=\\lim_{x\\to 0^{-}} \\frac{2x}{x}=2\n    \\end{cases}\n\n\n\n\nVeiem que els l\u00edmits laterals no coincideixen. Per tant, el l\u00edmit no es pot calcular, o sigui que \nf^{\\prime}(0)=\\nexists\n\n\n\n\nf^{\\prime}(2)=\\lim_{x\\to 2} \\frac{f(x)-f(2)}{x-2}=\\lim_{x\\to 2} \\frac{x-1-1}{x-2}=\\lim_{x\\to 2} \\frac{x-2}{x-2}=1\n\n\n\n\n\n\nf^{\\prime}(-2)=\\lim_{x\\to -2} \\frac{f(x)-f(-2)}{x+2}=\\lim_{x\\to -2} \\frac{2x+4}{x+2}=\\lim_{x\\to -2} \\frac{2(x+2)}{x+2}=2\n\n\n\n\nInterpretaci\u00f3 geom\u00e8trica de la derivada\n\n\nAnem a veure si amb un dibuix entenem qu\u00e8 \u00e9s aix\u00f2 de la derivada. Fixeu-vos amb el gr\u00e0fic seg\u00fcent:\n\n\n \n\n\n\nFixem-nos amb el gr\u00e0fic de la funci\u00f3 f. Considerem dos punts, un punt \nA\n de coordenades \n(a, f(a))\n i un altre punt \nB\n de coordenades \n(x, f(x))\n. Amb el punt lliscant podeu anar movent el punt \nB\n. Tracem una secant des del punt \nA\n al punt \nB\n. Considerem el triangle dibuixat a la figura. El catet inferior t\u00e9 longitud \n\\Delta x=x-a\n i el catet superior \n\\Delta y=f(x)-f(a)\n. El \npendent de la recta secant\n \u00e9s el quocient entre aquests dos valors i tamb\u00e9 coincideix amb \nla tangent de l'angle \n\\alpha\n:\n\n\n\n\nm=tan \\alpha= \\frac{\\Delta y}{\\Delta x}=\\frac{f(x)-f(a)}{x-a}\n\n\n\n\nSi ens fixem aquesta f\u00f3rmula \u00e9s molt semblant a la de la definici\u00f3 de la derivada d'una funci\u00f3 en el punt \na\n, \nf^{\\prime}(a)\n. La difer\u00e8ncia est\u00e0 en el \nl\u00edmit\n.\n\n\nSi ara anem acostant cada vegada m\u00e9s el punt \nB\n al punt \nA\n, veiem que aquesta recta secant, en \nel l\u00edmit\n que \nA=B\n es converteix en una \nrecta tangent en \nx=a\n, i per tant:\n\n\n\n\nLa derivada en \nx=a\n de \nf(x)\n, \nf^\\prime(a)\n, \u00e9s \nel pendent de la recta tangent a la gr\u00e0fica de la funci\u00f3 en el punt \nx=a\n  i es calcula a partir del l\u00edmit: \nf^{\\prime}(a)=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}\n\n\n\n\n\n\nDefinici\u00f3 de recta tangent a una corba en un punt\n\n\nVist aix\u00f2, anomenem recta tangent a una corba en el punt \nx=a\n, a aquella recta que compleix:\n\n\n\n\nCont\u00e9 el punt \n(a,f(a))\n\n\n\n\nT\u00e9 per pendent \nm=f^{\\prime}(a)\n\n\n\n\n\n\nD'aqu\u00ed podem expressar l'equaci\u00f3 de la recta tangent a una funci\u00f3 en el punt \nx=a\n de la manera:\n\n\n\n\ny-f(a)=f^{\\prime}(a)(x-a)\n\n\n\n\nExemple 3\n\n\nTrobeu l'equaci\u00f3 de la recta tangent a la funci\u00f3 \nf(x)=3x^2-5x+2\n en el punt d'abcissa \nx=1\n.\n\n\nEl punt \nA\n en aquest cas \u00e9s el punt \n(1,f(1))=(1,0)\n\n\n\n\nAnem a calcular la derivada de la funci\u00f3 \nf\n en \nx=1\n:\n\n\n\n\nm=f^{\\prime}(1)=\\lim_{x\\to 1} \\frac{f(x)-f(1)}{x-1}=\\frac{3x^2-5x+2-0}{x-1}=1\n\n\n\n\nPer tant, l'equaci\u00f3 de la recta tangent a \nf(x)\n en \nx=1\n \u00e9s:\n\n\n\n\ny-0=1(x-1)\\Rightarrow y=x-1\n\n\n\n\nRelaci\u00f3 entre la derivada i la continu\u00eftat d'una funci\u00f3 en un punt\n\n\nLa funci\u00f3 derivada\n\n\nDefinici\u00f3 de funci\u00f3 derivada\n\n\nDerivaci\u00f3 o c\u00e0lcul de Derivades\n\n\nRegla 1\n\n\nRegla 2",
             "title": "13. Derivades"
         },
         {
             "location": "/temes/derivades/#tema-13-derivades",
             "text": "",
             "title": "Tema 13: Derivades"
+        },
+        {
+            "location": "/temes/derivades/#derivada-duna-funcio-en-un-punt",
+            "text": "",
+            "title": "Derivada d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/derivades/#definicio-de-derivada-duna-funcio-en-un-punt",
+            "text": "Donada una funci\u00f3 real  f  i un punt d'abcissa  x=a ,  a \\in \\mathbb{R} , on  a \\in D_f , considerem el l\u00edmit seg\u00fcent:   \\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}   si aquest l\u00edmit existeix s'anomena  derivada de la funci\u00f3  f  en  x=a ,  f^{\\prime} (a) :   f^{\\prime}(a)=\\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}   Aquesta expressi\u00f3 es pot escriure d'una altra manera si adoptem el canvi de variable seg\u00fcent:   \\begin{align}\na+h&=x \\rightarrow \\begin{cases} h=x-a \\\\\n     \\mbox{si } h \\rightarrow 0 \\Rightarrow x \\rightarrow a\n    \\end{cases}\\\\\nf^{\\prime}(a)&=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}\n\\end{align}   Exemple 1  Donada  f(x)=7x-3  calculeu  f^{\\prime}(a) \\forall a \\in \\mathbb{R} .   f^{\\prime}(a)=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}=\\lim_{x\\to a} \\frac{7x-3-(7a-3)}{x-a}=\\lim_{x\\to a} \\frac{7(x-a)}{x-a}=7   Exemple 2  Esbrineu si existeix la derivada en els punts  x=0 ,  x=2  i  x=-2  de la funci\u00f3 a trossos:   f(x)= \\begin{cases} 2x+1 \\mbox{ si } x \\le 0 \\\\\n     x-1 \\mbox{ si } x > 0\n    \\end{cases}   Per calcular la derivada en aquests punts, el que haurem de fer \u00e9s calcular els l\u00edmits anteriors per  x\\to 0 ,  x\\to 2  i  x \\to -2 .   f^{\\prime}(0)=\\lim_{x\\to 0} \\frac{f(x)-f(0)}{x-0}=?\\Rightarrow\\begin{cases} \\lim_{x\\to 0^{+}} \\frac{f(x)-f(0)}{x-0}= \\lim_{x\\to 0^{+}} \\frac{x-1-1}{x}=\\lim_{x\\to 0^{+}} \\frac{x-2}{x}=\\frac{-2}{0}=-\\infty\\\\\n     \\lim_{x\\to 0^{-}} \\frac{f(x)-f(0)}{x-0}=\\lim_{x\\to 0^{-}} \\frac{2x}{x}=2\n    \\end{cases}   Veiem que els l\u00edmits laterals no coincideixen. Per tant, el l\u00edmit no es pot calcular, o sigui que  f^{\\prime}(0)=\\nexists   f^{\\prime}(2)=\\lim_{x\\to 2} \\frac{f(x)-f(2)}{x-2}=\\lim_{x\\to 2} \\frac{x-1-1}{x-2}=\\lim_{x\\to 2} \\frac{x-2}{x-2}=1    f^{\\prime}(-2)=\\lim_{x\\to -2} \\frac{f(x)-f(-2)}{x+2}=\\lim_{x\\to -2} \\frac{2x+4}{x+2}=\\lim_{x\\to -2} \\frac{2(x+2)}{x+2}=2",
+            "title": "Definici\u00f3 de derivada d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/derivades/#interpretacio-geometrica-de-la-derivada",
+            "text": "Anem a veure si amb un dibuix entenem qu\u00e8 \u00e9s aix\u00f2 de la derivada. Fixeu-vos amb el gr\u00e0fic seg\u00fcent:     Fixem-nos amb el gr\u00e0fic de la funci\u00f3 f. Considerem dos punts, un punt  A  de coordenades  (a, f(a))  i un altre punt  B  de coordenades  (x, f(x)) . Amb el punt lliscant podeu anar movent el punt  B . Tracem una secant des del punt  A  al punt  B . Considerem el triangle dibuixat a la figura. El catet inferior t\u00e9 longitud  \\Delta x=x-a  i el catet superior  \\Delta y=f(x)-f(a) . El  pendent de la recta secant  \u00e9s el quocient entre aquests dos valors i tamb\u00e9 coincideix amb  la tangent de l'angle  \\alpha :   m=tan \\alpha= \\frac{\\Delta y}{\\Delta x}=\\frac{f(x)-f(a)}{x-a}   Si ens fixem aquesta f\u00f3rmula \u00e9s molt semblant a la de la definici\u00f3 de la derivada d'una funci\u00f3 en el punt  a ,  f^{\\prime}(a) . La difer\u00e8ncia est\u00e0 en el  l\u00edmit .  Si ara anem acostant cada vegada m\u00e9s el punt  B  al punt  A , veiem que aquesta recta secant, en  el l\u00edmit  que  A=B  es converteix en una  recta tangent en  x=a , i per tant:   La derivada en  x=a  de  f(x) ,  f^\\prime(a) , \u00e9s  el pendent de la recta tangent a la gr\u00e0fica de la funci\u00f3 en el punt  x=a   i es calcula a partir del l\u00edmit:  f^{\\prime}(a)=\\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a}",
+            "title": "Interpretaci\u00f3 geom\u00e8trica de la derivada"
+        },
+        {
+            "location": "/temes/derivades/#definicio-de-recta-tangent-a-una-corba-en-un-punt",
+            "text": "Vist aix\u00f2, anomenem recta tangent a una corba en el punt  x=a , a aquella recta que compleix:   Cont\u00e9 el punt  (a,f(a))   T\u00e9 per pendent  m=f^{\\prime}(a)    D'aqu\u00ed podem expressar l'equaci\u00f3 de la recta tangent a una funci\u00f3 en el punt  x=a  de la manera:   y-f(a)=f^{\\prime}(a)(x-a)   Exemple 3  Trobeu l'equaci\u00f3 de la recta tangent a la funci\u00f3  f(x)=3x^2-5x+2  en el punt d'abcissa  x=1 .  El punt  A  en aquest cas \u00e9s el punt  (1,f(1))=(1,0)   Anem a calcular la derivada de la funci\u00f3  f  en  x=1 :   m=f^{\\prime}(1)=\\lim_{x\\to 1} \\frac{f(x)-f(1)}{x-1}=\\frac{3x^2-5x+2-0}{x-1}=1   Per tant, l'equaci\u00f3 de la recta tangent a  f(x)  en  x=1  \u00e9s:   y-0=1(x-1)\\Rightarrow y=x-1",
+            "title": "Definici\u00f3 de recta tangent a una corba en un punt"
+        },
+        {
+            "location": "/temes/derivades/#relacio-entre-la-derivada-i-la-continuitat-duna-funcio-en-un-punt",
+            "text": "",
+            "title": "Relaci\u00f3 entre la derivada i la continu\u00eftat d'una funci\u00f3 en un punt"
+        },
+        {
+            "location": "/temes/derivades/#la-funcio-derivada",
+            "text": "",
+            "title": "La funci\u00f3 derivada"
+        },
+        {
+            "location": "/temes/derivades/#definicio-de-funcio-derivada",
+            "text": "",
+            "title": "Definici\u00f3 de funci\u00f3 derivada"
+        },
+        {
+            "location": "/temes/derivades/#derivacio-o-calcul-de-derivades",
+            "text": "",
+            "title": "Derivaci\u00f3 o c\u00e0lcul de Derivades"
+        },
+        {
+            "location": "/temes/derivades/#regla-1",
+            "text": "",
+            "title": "Regla 1"
+        },
+        {
+            "location": "/temes/derivades/#regla-2",
+            "text": "",
+            "title": "Regla 2"
         },
         {
             "location": "/misc/misc/",
