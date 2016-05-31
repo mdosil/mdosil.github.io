@@ -216,12 +216,14 @@ f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 <p>
 <script type="math/tex; mode=display">m=tan \alpha= \frac{\Delta y}{\Delta x}=\frac{f(x)-f(a)}{x-a}</script>
 </p>
+<p>D'altra banda, segurament a cursos anteriors vèieu que aquesta expressió també s'anomena <strong>taxa de variació mitjana (TVM) entre <script type="math/tex">x</script> i <script type="math/tex">a</script></strong>.</p>
 <p>Si ens fixem aquesta fórmula és molt semblant a la de la definició de la derivada d'una funció en el punt <script type="math/tex">a</script>, <script type="math/tex">f^{\prime}(a)</script>. La diferència està en el <strong>límit</strong>.</p>
 <p>Si ara anem acostant cada vegada més el punt <script type="math/tex">B</script> al punt <script type="math/tex">A</script>, veiem que aquesta recta secant, en <strong>el límit</strong> que <script type="math/tex">A=B</script> es converteix en una <strong>recta tangent en <script type="math/tex">x=a</script></strong>, i per tant:</p>
 <blockquote>
 <p>La derivada en <script type="math/tex">x=a</script> de <script type="math/tex">f(x)</script>, <script type="math/tex">f^\prime(a)</script>, és <strong>el pendent de la recta tangent a la gràfica de la funció en el punt <script type="math/tex">x=a</script></strong>  i es calcula a partir del límit: <script type="math/tex">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
 </p>
 </blockquote>
+<p>Per tant, també podem assegurar que si en <script type="math/tex">x=a</script> la funció és <strong>creixent<script type="math/tex">\Rightarrow f^{\prime}(a)>0</script></strong>, i al revés, si en <script type="math/tex">x=a</script> la funció és <strong>decreixent<script type="math/tex">\Rightarrow f^{\prime}(a)<0</script></strong>.</p>
 <h3 id="definicio-de-recta-tangent-a-una-corba-en-un-punt">Definició de recta tangent a una corba en un punt</h3>
 <p>Vist això, anomenem recta tangent a una corba en el punt <script type="math/tex">x=a</script>, a aquella recta que compleix:</p>
 <ol>
@@ -247,6 +249,80 @@ f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 <script type="math/tex; mode=display">y-0=1(x-1)\Rightarrow y=x-1</script>
 </p>
 <h3 id="relacio-entre-la-derivada-i-la-continuitat-duna-funcio-en-un-punt">Relació entre la derivada i la continuïtat d'una funció en un punt</h3>
+<p>Anem a demostrar el <strong>teorema</strong> següent:</p>
+<blockquote>
+<p>Si una funció <script type="math/tex">f</script> és <strong>derivable</strong> en <script type="math/tex">x=a</script>
+<script type="math/tex">\Rightarrow</script>
+<script type="math/tex">f</script> és <strong>contínua</strong> en aquest punt <script type="math/tex">x=a</script>
+</p>
+</blockquote>
+<p>(Cal notar que el recíproc de l'afirmació anterior no és cert: una funció pot ser contínua i no derivable en un punt)</p>
+<p><strong>Demostració</strong></p>
+<p>Que una funció sigui derivable en el punt <script type="math/tex">x=a</script> vol dir que està definida la seva derivada i en particular existeix el límit:</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
+</p>
+<p>Si existeix el límit del quocient anterior, podem fer:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} \big(f(x)-f(a)\big)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot (x-a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a)=f^{\prime}(a)\cdot 0=0</script>
+</p>
+<p>Per tant es compleix que:</p>
+<p>
+<script type="math/tex; mode=display"> \lim_{x\to a} \big(f(x)-f(a)\big)=0 \Rightarrow \lim_{x\to a} f(x)-\lim_{x\to a}f(a)=0 \Rightarrow \lim_{x\to a} f(x)=\lim_{x\to a}f(a)=f(a)</script>
+</p>
+<p>I arribem a la definció de funció contínua en un punt <script type="math/tex">x=a</script>: existeix el límit de la funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">a</script> i aquest límit és igual a la imatge de <script type="math/tex">a</script>, <script type="math/tex">f(a)</script>:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} f(x)=f(a)</script>
+</p>
+<p><strong>Exemple 4</strong></p>
+<p>Digues si la funció a trossos</p>
+<p>
+<script type="math/tex; mode=display">f(x)= \begin{cases} 2x^2-3x-1 \mbox{ si } x \le -1 \\
+     4x+1 \mbox{ si } -1 < x < 2 \\
+     9 \mbox{ si } x \ge 2
+    \end{cases}</script>
+</p>
+<p>és:</p>
+<ol>
+<li>Derivable en <script type="math/tex">x=-1</script>, <script type="math/tex">x=0</script> i <script type="math/tex">x=2</script>
+</li>
+<li>És contínua en aquests punts</li>
+</ol>
+<p>Anem a veure si és derivable en aquests punts. Calcularem la derivada a partir del límit i en els casos que la funció estigui definida de manera diferent per la dreta i per l'esquerra dels punts calcularem els límits laterals.</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(-1)= \lim_{x\to -1} \frac{f(x)-f(-1)}{x+1} \begin{cases} \lim_{x\to -1^+} \frac{4x+1-4}{x+1}= \lim_{x\to -1^+} \frac{4x-3}{x+1}=\frac{-7}{0}=+\infty\\
+     \mbox {no cal buscar el límit lateral per l'esquerra perquè al no existir l'altre límit lateral, el límit no existeix}
+    \end{cases}</script>
+</p>
+<p>
+<script type="math/tex">f(x)</script> no és derivable en <script type="math/tex">x=-1</script>.</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(0)= \lim_{x\to 0} \frac{f(x)-f(0)}{x-0}= \lim_{x\to 0} \frac{4x+1-1}{x}=4</script>
+</p>
+<p><strong><script type="math/tex">f(x)</script> és derivable en <script type="math/tex">x=0</script></strong> i <script type="math/tex">f^{\prime}(0)=4</script>.</p>
+<p>
+<script type="math/tex; mode=display">f^{\prime}(2)= \lim_{x\to 2} \frac{f(x)-f(2)}{x-2} \begin{cases} \lim_{x\to 2^+} \frac{9-9}{x-2}= 0\\
+    \lim_{x\to 2^-} \frac{4x+1-9}{x-2}= \lim_{x\to 2^-} \frac{4(x-2)}{x-2}=4
+    \end{cases}</script>
+</p>
+<p>
+<script type="math/tex">f(x)</script> no és derivable en <script type="math/tex">x=2</script> ja que els límits laterals no coincideixen.</p>
+<p>En els casos que la funció és derivable la funció serà contínua en aquests punts. Per tant, <strong>en <script type="math/tex">x=0</script> la funció és contínua i derivable</strong>. Però pot ser que no sigui derivable i en canvi, sí que sigui contínua. Anem a veure què passa en <script type="math/tex">x=-1</script> i <script type="math/tex">x=2</script>:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to -1} f(x)=\begin{cases} \lim_{x\to -1^+} (4x+1)= -3\\
+     \lim_{x\to -1^-} (2x^2-3x-1)= 4
+    \end{cases}</script>
+</p>
+<p>Com que els límits laterals no coincideixen <strong><script type="math/tex">f(x)</script> no és derivable ni contínua en <script type="math/tex">x=-1</script></strong></p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=\begin{cases} \lim_{x\to 2^+} 9= 9\\
+     \lim_{x\to 2^-} (4x+1)= 9
+    \end{cases}</script>
+</p>
+<p>Com que els límits laterals sí que coincideixen <strong><script type="math/tex">f(x)</script> no és derivable però sí contínua en <script type="math/tex">x=-1</script></strong></p>
+<p>Si mireu la representació gràfica de la funció i què passa en aquests punts en concret, entendreu més coses.</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/FU6xp4g7/width/700/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="700px" height="500px" style="border:0px;"> </iframe>
+
 <h2 id="la-funcio-derivada">La funció derivada</h2>
 <h3 id="definicio-de-funcio-derivada">Definició de funció derivada</h3>
 <h3 id="derivacio-o-calcul-de-derivades">Derivació o càlcul de Derivades</h3>
