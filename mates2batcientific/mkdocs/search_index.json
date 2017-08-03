@@ -2,23 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Aquests apunts de matem\u00e0tiques de segon de batxillerat s\u00f3n un document viu. La intenci\u00f3 no \u00e9s cap altra que sintetitzar el treball de classe i donar una refer\u00e8ncia de consulta als alumnes. La llic\u00e8ncia la podreu trobar en \naquesta p\u00e0gina\n.\n\n\nEls materials s'estructuren en 3 blocs diferents. Podeu trobar cada tema desplegant el men\u00fa superior.\n\n\nBloc 1: An\u00e0lisi\n\n\n|                                                                 |\n| --------------------------------------------------------------- |\n| \n1. Derivades\n                              |\n| \n2. Funcions cont\u00ednues i derivables\n         |\n| \n3. Aplicacions de la derivada\n  |\n| \n4. Integrals indefinides\n       |\n| \n5. Integrals definides\n           |\n\n\nBloc 2: \u00c0lgebra\n\n\n|  |\n| ----------------- |\n| \n6. Matrius i determinants\n  |\n| \n7. Sistemes d'equacions\n  |\n\n\nBloc 3: Geometria a l'espai\n\n\n|  |\n| ----------------- |\n| \n8. Vectors a l'espai\n  |\n| \n9. Equacions de rectes i plans\n  |\n| \n10. Posici\u00f3 relativa de rectes i plans\n  |\n| \n11. Dist\u00e0ncies i angles\n  |", 
+            "text": "Matem\u00e0tiques 2n batxillerat cient\u00edfico-tecnol\u00f2gic\n\n\n\n\n\n\n\n\nBloc 1: An\u00e0lisi\n\n\nBloc 2: \u00c0lgebra\n\n\nBloc 3: Geometria a l'espai\n\n\n\n\n\n\n\n\n\n\n1. Derivades\n\n\n6. Matrius i determinants\n\n\n8. Vectors a l'espai\n\n\n\n\n\n\n2. Funcions cont\u00ednues i derivables\n\n\n7. Sistemes d'equacions\n\n\n9. Equacions de rectes i plans\n\n\n\n\n\n\n3. Aplicacions de la derivada\n\n\n\n\n10. Posici\u00f3 relativa de rectes i plans\n\n\n\n\n\n\n4. Integrals indefinides\n\n\n\n\n11. Dist\u00e0ncies i angles\n\n\n\n\n\n\n5. Integrals definides", 
             "title": "Home"
         }, 
         {
-            "location": "/#bloc-1-analisi", 
-            "text": "|                                                                 |\n| --------------------------------------------------------------- |\n|  1. Derivades                               |\n|  2. Funcions cont\u00ednues i derivables          |\n|  3. Aplicacions de la derivada   |\n|  4. Integrals indefinides        |\n|  5. Integrals definides            |", 
-            "title": "Bloc 1: An\u00e0lisi"
-        }, 
-        {
-            "location": "/#bloc-2-algebra", 
-            "text": "|  |\n| ----------------- |\n|  6. Matrius i determinants   |\n|  7. Sistemes d'equacions   |", 
-            "title": "Bloc 2: \u00c0lgebra"
-        }, 
-        {
-            "location": "/#bloc-3-geometria-a-lespai", 
-            "text": "|  |\n| ----------------- |\n|  8. Vectors a l'espai   |\n|  9. Equacions de rectes i plans   |\n|  10. Posici\u00f3 relativa de rectes i plans   |\n|  11. Dist\u00e0ncies i angles   |", 
-            "title": "Bloc 3: Geometria a l'espai"
+            "location": "/#matematiques-2n-batxillerat-cientifico-tecnologic", 
+            "text": "Bloc 1: An\u00e0lisi  Bloc 2: \u00c0lgebra  Bloc 3: Geometria a l'espai      1. Derivades  6. Matrius i determinants  8. Vectors a l'espai    2. Funcions cont\u00ednues i derivables  7. Sistemes d'equacions  9. Equacions de rectes i plans    3. Aplicacions de la derivada   10. Posici\u00f3 relativa de rectes i plans    4. Integrals indefinides   11. Dist\u00e0ncies i angles    5. Integrals definides", 
+            "title": "Matem\u00e0tiques 2n batxillerat cient\u00edfico-tecnol\u00f2gic"
         }, 
         {
             "location": "/temes/derivades/", 
