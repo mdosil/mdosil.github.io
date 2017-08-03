@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/temes/derivades/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/funcions/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/aplicacionsderivades/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/integralsindefinides/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/integralsdefinides/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/matrius/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/sistemes/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/vectors/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/equacionsrectesplans/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/posicionsrectesplans/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/temes/distanciesangles/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/misc/misc/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/sobre/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

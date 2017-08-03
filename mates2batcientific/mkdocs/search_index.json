@@ -1,0 +1,159 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Aquests apunts de matem\u00e0tiques de segon de batxillerat s\u00f3n un document viu. La intenci\u00f3 no \u00e9s cap altra que sintetitzar el treball de classe i donar una refer\u00e8ncia de consulta als alumnes. La llic\u00e8ncia la podreu trobar en \naquesta p\u00e0gina\n.\n\n\nEls materials s'estructuren en 3 blocs diferents. Podeu trobar cada tema desplegant el men\u00fa superior.\n\n\nBloc 1: An\u00e0lisi\n\n\n|                                                                 |\n| --------------------------------------------------------------- |\n| \n1. Derivades\n                              |\n| \n2. Funcions cont\u00ednues i derivables\n         |\n| \n3. Aplicacions de la derivada\n  |\n| \n4. Integrals indefinides\n       |\n| \n5. Integrals definides\n           |\n\n\nBloc 2: \u00c0lgebra\n\n\n|  |\n| ----------------- |\n| \n6. Matrius i determinants\n  |\n| \n7. Sistemes d'equacions\n  |\n\n\nBloc 3: Geometria a l'espai\n\n\n|  |\n| ----------------- |\n| \n8. Vectors a l'espai\n  |\n| \n9. Equacions de rectes i plans\n  |\n| \n10. Posici\u00f3 relativa de rectes i plans\n  |\n| \n11. Dist\u00e0ncies i angles\n  |", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#bloc-1-analisi", 
+            "text": "|                                                                 |\n| --------------------------------------------------------------- |\n|  1. Derivades                               |\n|  2. Funcions cont\u00ednues i derivables          |\n|  3. Aplicacions de la derivada   |\n|  4. Integrals indefinides        |\n|  5. Integrals definides            |", 
+            "title": "Bloc 1: An\u00e0lisi"
+        }, 
+        {
+            "location": "/#bloc-2-algebra", 
+            "text": "|  |\n| ----------------- |\n|  6. Matrius i determinants   |\n|  7. Sistemes d'equacions   |", 
+            "title": "Bloc 2: \u00c0lgebra"
+        }, 
+        {
+            "location": "/#bloc-3-geometria-a-lespai", 
+            "text": "|  |\n| ----------------- |\n|  8. Vectors a l'espai   |\n|  9. Equacions de rectes i plans   |\n|  10. Posici\u00f3 relativa de rectes i plans   |\n|  11. Dist\u00e0ncies i angles   |", 
+            "title": "Bloc 3: Geometria a l'espai"
+        }, 
+        {
+            "location": "/temes/derivades/", 
+            "text": "Tema 1: derivades\n\n\nMathJax Test Page\n\n\nWhen \na \\ne 0\n, there are two solutions to \nax^2 + bx + c = 0\n and they are\n\nx = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.", 
+            "title": "1. Derivades"
+        }, 
+        {
+            "location": "/temes/derivades/#tema-1-derivades", 
+            "text": "", 
+            "title": "Tema 1: derivades"
+        }, 
+        {
+            "location": "/temes/derivades/#mathjax-test-page", 
+            "text": "When  a \\ne 0 , there are two solutions to  ax^2 + bx + c = 0  and they are x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.", 
+            "title": "MathJax Test Page"
+        }, 
+        {
+            "location": "/temes/funcions/", 
+            "text": "Tema 2: Funcions cont\u00ednues i derivables", 
+            "title": "2. Funcions cont\u00ednues i derivables"
+        }, 
+        {
+            "location": "/temes/funcions/#tema-2-funcions-continues-i-derivables", 
+            "text": "", 
+            "title": "Tema 2: Funcions cont\u00ednues i derivables"
+        }, 
+        {
+            "location": "/temes/aplicacionsderivades/", 
+            "text": "Tema 3: Aplicacions de la derivada", 
+            "title": "3. Aplicacions de la derivada"
+        }, 
+        {
+            "location": "/temes/aplicacionsderivades/#tema-3-aplicacions-de-la-derivada", 
+            "text": "", 
+            "title": "Tema 3: Aplicacions de la derivada"
+        }, 
+        {
+            "location": "/temes/integralsindefinides/", 
+            "text": "Tema 4: Integrals indefinides", 
+            "title": "4. Integrals indefinides"
+        }, 
+        {
+            "location": "/temes/integralsindefinides/#tema-4-integrals-indefinides", 
+            "text": "", 
+            "title": "Tema 4: Integrals indefinides"
+        }, 
+        {
+            "location": "/temes/integralsdefinides/", 
+            "text": "Tema 5: Integrals definides", 
+            "title": "5. Integrals definides"
+        }, 
+        {
+            "location": "/temes/integralsdefinides/#tema-5-integrals-definides", 
+            "text": "", 
+            "title": "Tema 5: Integrals definides"
+        }, 
+        {
+            "location": "/temes/matrius/", 
+            "text": "Tema 6: Matrius i determinants", 
+            "title": "6. Matrius i Determinants"
+        }, 
+        {
+            "location": "/temes/matrius/#tema-6-matrius-i-determinants", 
+            "text": "", 
+            "title": "Tema 6: Matrius i determinants"
+        }, 
+        {
+            "location": "/temes/sistemes/", 
+            "text": "Tema 7: sistemes d'equacioins", 
+            "title": "7. Sistemes d equacions"
+        }, 
+        {
+            "location": "/temes/sistemes/#tema-7-sistemes-dequacioins", 
+            "text": "", 
+            "title": "Tema 7: sistemes d'equacioins"
+        }, 
+        {
+            "location": "/temes/vectors/", 
+            "text": "Tema 8: Vectors a l'espai", 
+            "title": "8. Vectors a l espai"
+        }, 
+        {
+            "location": "/temes/vectors/#tema-8-vectors-a-lespai", 
+            "text": "", 
+            "title": "Tema 8: Vectors a l'espai"
+        }, 
+        {
+            "location": "/temes/equacionsrectesplans/", 
+            "text": "Tema 9: Equacions de rectes i plans", 
+            "title": "9. Equacions de rectes i plans"
+        }, 
+        {
+            "location": "/temes/equacionsrectesplans/#tema-9-equacions-de-rectes-i-plans", 
+            "text": "", 
+            "title": "Tema 9: Equacions de rectes i plans"
+        }, 
+        {
+            "location": "/temes/posicionsrectesplans/", 
+            "text": "Tema 10: Posici\u00f3 relativa de rectes i plans", 
+            "title": "10. Posici\u00f3 relativa de rectes i plans"
+        }, 
+        {
+            "location": "/temes/posicionsrectesplans/#tema-10-posicio-relativa-de-rectes-i-plans", 
+            "text": "", 
+            "title": "Tema 10: Posici\u00f3 relativa de rectes i plans"
+        }, 
+        {
+            "location": "/temes/distanciesangles/", 
+            "text": "Tema 11: Dist\u00e0ncies i angles", 
+            "title": "11. Dist\u00e0ncies i angles"
+        }, 
+        {
+            "location": "/temes/distanciesangles/#tema-11-distancies-i-angles", 
+            "text": "", 
+            "title": "Tema 11: Dist\u00e0ncies i angles"
+        }, 
+        {
+            "location": "/misc/misc/", 
+            "text": "Miscel.l\u00e0nia\n\n\nEn aquest apartat hi podeu trobar alguns exercicis i les toolbox utilitzades per a treballar aspectes concrets de les matem\u00e0tiques de 2n de batxillerat.", 
+            "title": "Miscel.l\u00e0nia"
+        }, 
+        {
+            "location": "/misc/misc/#miscellania", 
+            "text": "En aquest apartat hi podeu trobar alguns exercicis i les toolbox utilitzades per a treballar aspectes concrets de les matem\u00e0tiques de 2n de batxillerat.", 
+            "title": "Miscel.l\u00e0nia"
+        }, 
+        {
+            "location": "/sobre/", 
+            "text": "Autoria\n\n\nAquests materials estan protegits per una llic\u00e8ncia creative commons.\n\n\nPer notificar qualsevol error o millora, poseu-vos en contacte amb l'\nautora\n.\n\n\n\n\nMatem\u00e0tiques 1r de batxillerat cient\u00edfic\n de \nMireia Dosil i Bonmat\u00ed\n est\u00e0 subjecta a una llic\u00e8ncia de \nReconeixement-NoComercial-CompartirIgual 4.0 Internacional de Creative Commons\n. Creat a partir d'una obra disponible a \nhttp://www.mdosil.cat", 
+            "title": "Llic\u00e8ncia"
+        }, 
+        {
+            "location": "/sobre/#autoria", 
+            "text": "Aquests materials estan protegits per una llic\u00e8ncia creative commons.  Per notificar qualsevol error o millora, poseu-vos en contacte amb l' autora .   Matem\u00e0tiques 1r de batxillerat cient\u00edfic  de  Mireia Dosil i Bonmat\u00ed  est\u00e0 subjecta a una llic\u00e8ncia de  Reconeixement-NoComercial-CompartirIgual 4.0 Internacional de Creative Commons . Creat a partir d'una obra disponible a  http://www.mdosil.cat", 
+            "title": "Autoria"
+        }
+    ]
+}
