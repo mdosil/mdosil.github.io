@@ -20,7 +20,7 @@ pages:
 - Miscel.lània: misc/misc.md
 - Llicència: sobre.md
 
-theme: readthedocs
+theme: cinder
 
 
 extra_javascript:
