@@ -5,11 +5,13 @@
 ROOT='/Users/mdosil/github/mdosil.github.io'
 MATES1BAT_FOLDER=mates1bat_mkdocs
 MATES2BAT_FOLDER=mates2bat_mkdocs
-#Anem a la carpeta on hi ha la web i fem un update del contingut
 
+# update web content and update modules to the latest
+# content
 echo '#####################################'
-echo 'Git pull'
+echo 'Update modules'
 git pull
+git submodule update --recursive --remote --merge
 echo '#############################################'
 
 #update the BAT1
@@ -18,17 +20,17 @@ pwd
 echo 'Building mates 1 bat site.......'
 mkdocs build --clean -d $ROOT/mates1batcientific
 
-echo '#####################################'
-echo 'Removing ggb directory'
-rm -rf $ROOT/mates1batcientific/ggb
+#echo '#####################################'
+#echo 'Removing ggb directory'
+#rm -rf $ROOT/mates1batcientific/ggb
 
 #update the BAT2
 cd $ROOT/$MATES2BAT_FOLDER
 echo 'Building mates 2 bat site.......'
 mkdocs build --clean -d $ROOT/mates2batcientific
 echo '#####################################'
-echo 'Removing ggb directory'
-rm -rf $ROOT/mates2batcientific/ggb
+#echo 'Removing ggb directory'
+#rm -rf $ROOT/mates2batcientific/ggb
 
 
 echo 'Uploading changes to git'
