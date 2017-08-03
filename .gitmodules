@@ -1,0 +1,3 @@
+[submodule "mates1bat_mkdocs/docs"]
+	path = mates1bat_mkdocs/docs
+	url = https://github.com/mdosil/mates1bat.git
