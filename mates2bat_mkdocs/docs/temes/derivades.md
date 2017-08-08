@@ -7,12 +7,6 @@
 ### Definició de derivada d'una funció en un punt
 
 
----
-**NOTE**
-
-It works with almost all markdown flavours (the below blank line matters).
-
----
 
 Donada una funció real $f$ i un punt d'abcissa $x=a$, $a \in \mathbb{R}$, on $a \in D_f$, considerem el límit següent:
 
@@ -20,16 +14,20 @@ $$\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}$$
 
 si aquest límit existeix s'anomena **derivada de la funció $f$ en $x=a$, $f^{\prime} (a)$**:
 
-$$f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}$$
+$$\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}}$$
 
 Aquesta expressió es pot escriure d'una altra manera si adoptem el canvi de variable següent:
 
 \begin{align}
 a+h&=x \rightarrow \begin{cases} h=x-a \\
      \mbox{si } h \rightarrow 0 \Rightarrow x \rightarrow a
-    \end{cases}\\
-f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
-\end{align}
+    \end{cases}
+    \end{align}
+
+
+$$\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}}$$
+
+
 
 **Exemple 1**
 
@@ -90,7 +88,10 @@ Vist això, anomenem recta tangent a una corba en el punt $x=a$, a aquella recta
 
 D'aquí podem expressar l'equació de la recta tangent a una funció en el punt $x=a$ de la manera:
 
-$$y-f(a)=f^{\prime}(a)(x-a)$$
+
+
+
+$$\bbox[5px,border:2px solid black]{y-f(a)=f^{\prime}(a)(x-a)}$$
 
 **Exemple 3**
 
@@ -135,7 +136,7 @@ Per tant es compleix que:
 
 $$ \lim_{x\to a} \big(f(x)-f(a)\big)=0 \Rightarrow \lim_{x\to a} f(x)-\lim_{x\to a}f(a)=0 \Rightarrow \lim_{x\to a} f(x)=\lim_{x\to a}f(a)=f(a)$$
 
-I arribem a la definció de funció contínua en un punt $x=a$: existeix el límit de la funció quan $x$ s'acosta a $a$ i aquest límit és igual a la imatge de $a$, $f(a)$:
+I arribem a la definició de funció contínua en un punt $x=a$: existeix el límit de la funció quan $x$ s'acosta a $a$ i aquest límit és igual a la imatge de $a$, $f(a)$:
 
 $$\lim_{x\to a} f(x)=f(a)$$
 

@@ -29,3 +29,4 @@ extra_javascript:
 markdown_extensions:
     - mdx_math:
         enable_dollar_delimiter: True
+    - admonition
