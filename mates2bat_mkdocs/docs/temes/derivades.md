@@ -1,10 +1,18 @@
-#Tema 13: Derivades
+#Tema 1: Derivades
 
 ##Derivada d'una funció en un punt
 
 
 
 ### Definició de derivada d'una funció en un punt
+
+
+---
+**NOTE**
+
+It works with almost all markdown flavours (the below blank line matters).
+
+---
 
 Donada una funció real $f$ i un punt d'abcissa $x=a$, $a \in \mathbb{R}$, on $a \in D_f$, considerem el límit següent:
 
