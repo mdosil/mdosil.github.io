@@ -216,26 +216,24 @@
 <h1 id="tema-1-derivades">Tema 1: Derivades</h1>
 <h2 id="derivada-duna-funcio-en-un-punt">Derivada d'una funció en un punt</h2>
 <h3 id="definicio-de-derivada-duna-funcio-en-un-punt">Definició de derivada d'una funció en un punt</h3>
-<hr />
-<p><strong>NOTE</strong></p>
-<p>It works with almost all markdown flavours (the below blank line matters).</p>
-<hr />
 <p>Donada una funció real <script type="math/tex">f</script> i un punt d'abcissa <script type="math/tex">x=a</script>, <script type="math/tex">a \in \mathbb{R}</script>, on <script type="math/tex">a \in D_f</script>, considerem el límit següent:</p>
 <p>
 <script type="math/tex; mode=display">\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
 </p>
 <p>si aquest límit existeix s'anomena <strong>derivada de la funció <script type="math/tex">f</script> en <script type="math/tex">x=a</script>, <script type="math/tex">f^{\prime} (a)</script></strong>:</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}}</script>
 </p>
 <p>Aquesta expressió es pot escriure d'una altra manera si adoptem el canvi de variable següent:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
 a+h&=x \rightarrow \begin{cases} h=x-a \\
      \mbox{si } h \rightarrow 0 \Rightarrow x \rightarrow a
-    \end{cases}\\
-f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
-\end{align}</script>
+    \end{cases}
+    \end{align}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}}</script>
 </p>
 <p><strong>Exemple 1</strong></p>
 <p>Donada <script type="math/tex">f(x)=7x-3</script> calculeu <script type="math/tex">f^{\prime}(a) \forall a \in \mathbb{R}</script>.</p>
@@ -288,7 +286,7 @@ f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 </ol>
 <p>D'aquí podem expressar l'equació de la recta tangent a una funció en el punt <script type="math/tex">x=a</script> de la manera:</p>
 <p>
-<script type="math/tex; mode=display">y-f(a)=f^{\prime}(a)(x-a)</script>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{y-f(a)=f^{\prime}(a)(x-a)}</script>
 </p>
 <p><strong>Exemple 3</strong></p>
 <p>Trobeu l'equació de la recta tangent a la funció <script type="math/tex">f(x)=3x^2-5x+2</script> en el punt d'abcissa <script type="math/tex">x=1</script>.</p>
@@ -331,7 +329,7 @@ f^{\prime}(a)&=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 <p>
 <script type="math/tex; mode=display"> \lim_{x\to a} \big(f(x)-f(a)\big)=0 \Rightarrow \lim_{x\to a} f(x)-\lim_{x\to a}f(a)=0 \Rightarrow \lim_{x\to a} f(x)=\lim_{x\to a}f(a)=f(a)</script>
 </p>
-<p>I arribem a la definció de funció contínua en un punt <script type="math/tex">x=a</script>: existeix el límit de la funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">a</script> i aquest límit és igual a la imatge de <script type="math/tex">a</script>, <script type="math/tex">f(a)</script>:</p>
+<p>I arribem a la definició de funció contínua en un punt <script type="math/tex">x=a</script>: existeix el límit de la funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">a</script> i aquest límit és igual a la imatge de <script type="math/tex">a</script>, <script type="math/tex">f(a)</script>:</p>
 <p>
 <script type="math/tex; mode=display">\lim_{x\to a} f(x)=f(a)</script>
 </p>
