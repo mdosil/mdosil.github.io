@@ -2,6 +2,9 @@
 
 ##Derivada d'una funció en un punt
 
+Aquest tema pretén definir el concepte de derivada a partir de la seva imatge geomètrica: el pendent de la recta tangent a una corba determinada en un punt concret. A partir d'aquí, definirem la funció derivada i introduirem la metodologia necessària per calcular de la derivada de qualsevol funció.
+
+Per això, cal haver treballat prèviament els temes [*Funcions*](http://mdosil.cat/mates1batcientific/temes/funcions/) i [*Límits i continuïtat de funcions*](http://mdosil.cat/mates1batcientific/temes/limits/) de primer curs de batxillerat científico-tecnològic.
 
 
 ### Definició de derivada d'una funció en un punt
@@ -15,6 +18,8 @@ $$\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}$$
 si aquest límit existeix s'anomena **derivada de la funció $f$ en $x=a$, $f^{\prime} (a)$**:
 
 $$\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}}$$
+
+<iframe scrolling="no" title="interpretació geometric derivada (1)" src="https://www.geogebra.org/material/iframe/id/rcP7SKNk/width/639/height/393/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="639px" height="393px" style="border:0px;"> </iframe>
 
 Aquesta expressió es pot escriure d'una altra manera si adoptem el canvi de variable següent:
 
