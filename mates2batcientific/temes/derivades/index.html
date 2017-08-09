@@ -205,7 +205,18 @@
             
                 <li class="third-level"><a href="#definicio-de-funcio-derivada">Definició de funció derivada</a></li>
             
-                <li class="third-level"><a href="#derivacio-o-calcul-de-derivades">Derivació o càlcul de Derivades</a></li>
+        
+            <li class="second-level"><a href="#regles-de-derivacio">Regles de derivació</a></li>
+            
+                <li class="third-level"><a href="#regla-1">Regla 1</a></li>
+            
+                <li class="third-level"><a href="#regla-2">Regla 2</a></li>
+            
+                <li class="third-level"><a href="#regla-3">Regla 3</a></li>
+            
+                <li class="third-level"><a href="#regla-4">Regla 4</a></li>
+            
+                <li class="third-level"><a href="#taula-de-derivades">Taula de derivades</a></li>
             
         
     
@@ -265,7 +276,7 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 <script type="math/tex; mode=display">f^{\prime}(-2)=\lim_{x\to -2} \frac{f(x)-f(-2)}{x+2}=\lim_{x\to -2} \frac{2x+4}{x+2}=\lim_{x\to -2} \frac{2(x+2)}{x+2}=2</script>
 </p>
 <h3 id="interpretacio-geometrica-de-la-derivada">Interpretació geomètrica de la derivada</h3>
-<p>Anem a veure si amb un dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:</p>
+<p>Anem a veure si amb un altre dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/bd7R3xbq/width/814/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="814px" height="700px" style="border:0px;"> </iframe>
 
 <p>Fixem-nos amb el gràfic de la funció f. Considerem dos punts, un punt <script type="math/tex">A</script> de coordenades <script type="math/tex">(a, f(a))</script> i un altre punt <script type="math/tex">B</script> de coordenades <script type="math/tex">(x, f(x))</script>. Amb el punt lliscant podeu anar movent el punt <script type="math/tex">B</script>. Tracem una secant des del punt <script type="math/tex">A</script> al punt <script type="math/tex">B</script>. Considerem el triangle dibuixat a la figura. El catet inferior té longitud <script type="math/tex">\Delta x=x-a</script> i el catet superior <script type="math/tex">\Delta y=f(x)-f(a)</script>. El <strong>pendent de la recta secant</strong> és el quocient entre aquests dos valors i també coincideix amb <strong>la tangent de l'angle <script type="math/tex">\alpha</script></strong>:</p>
@@ -401,8 +412,8 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 <script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{x^2+1-a^2-1}{x-a}=lim_{x\to a} \frac{(x+a)(x-a)}{x-a}=a+a=2a \forall a \in \mathbb{R}</script>
 </p>
 <p>Per tant: <script type="math/tex">f^\prime (x)=2x</script> és la derivada de <script type="math/tex">f(x)=x^2+1</script>.</p>
-<h3 id="derivacio-o-calcul-de-derivades">Derivació o càlcul de Derivades</h3>
-<p>Tot seguit llistarem i demostrarem una sèrie de regles. Això ens permetrà tenir un llistat de derivades per les funcions més comunes.</p>
+<h2 id="regles-de-derivacio">Regles de derivació</h2>
+<p>Aplicant la definició de derivada (càlcul del límit), podem llistar les derivades de les funcions més comunes. Demostrarem les 4 primeres regles de derivació i la resta les posarem en una taula. En aquest <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-derivative-rules">enllaç</a> trobareu més informació de les regles de derivació així com els vídeos amb la seva demostració.</p>
 <h4 id="regla-1">Regla 1</h4>
 <blockquote>
 <p>Si <script type="math/tex">f(x)=k</script>, <script type="math/tex">k\in \mathbb{R} \Rightarrow f^\prime(x)=0</script>
@@ -436,7 +447,42 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 <p><strong>Demostració</strong></p>
 <p>
 <script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot f)(x)-(K \cdot f)(a)}{x-a}=\lim_{x\to a} \frac{K\cdot (f(x)-f(a)}{x-a}=\lim_{x\to a} K \cdot  \lim_{x\to a} \frac{f(x)-f(a)}{x-a}=K \cdot f^\prime (a)</script>
-</p></div>
+</p>
+<h3 id="taula-de-derivades">Taula de derivades</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Funció</th>
+<th align="left">Derivada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Suma</td>
+<td align="left">
+<script type="math/tex; mode=display">(f(x)+g(x))\prime=f\prime(x)+g\prime(x)</script>
+</td>
+</tr>
+<tr>
+<td align="left">Producte per un nombre</td>
+<td align="left">
+<script type="math/tex; mode=display">(K\cdot f(x))\prime=K \cdot f\prime(x)</script>
+</td>
+</tr>
+<tr>
+<td align="left">Producte</td>
+<td align="left">
+<script type="math/tex; mode=display">(f(x)\cdot g(x))\prime=f\prime(x)\cdot g(x)+f(x)\cdot g\prime (x)</script>
+</td>
+</tr>
+<tr>
+<td align="left">Quocient</td>
+<td align="left">
+<script type="math/tex; mode=display">\Big(\frac{f(x)}{g(x)}\Big)\prime=\frac{f\prime(x)\cdot g(x)+f(x)\cdot g\prime(x)}{g(x)^2}</script>
+</td>
+</tr>
+</tbody>
+</table></div>
         
     </div>
 
