@@ -66,7 +66,7 @@ $$f^{\prime}(-2)=\lim_{x\to -2} \frac{f(x)-f(-2)}{x+2}=\lim_{x\to -2} \frac{2x+4
 
 ###Interpretació geomètrica de la derivada
 
-Anem a veure si amb un dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:
+Anem a veure si amb un altre dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:
 
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/bd7R3xbq/width/814/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="814px" height="700px" style="border:0px;"> </iframe>
 
@@ -219,9 +219,10 @@ $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{x^2+1-a^
 Per tant: $f^\prime (x)=2x$ és la derivada de $f(x)=x^2+1$.
 
 
-###Derivació o càlcul de Derivades
+##Regles de derivació
 
-Tot seguit llistarem i demostrarem una sèrie de regles. Això ens permetrà tenir un llistat de derivades per les funcions més comunes.
+Aplicant la definició de derivada (càlcul del límit), podem llistar les derivades de les funcions més comunes. Demostrarem les 4 primeres regles de derivació i la resta les posarem en una taula. En aquest [enllaç](https://www.khanacademy.org/math/ap-calculus-bc/bc-derivative-rules) trobareu més informació de les regles de derivació així com els vídeos amb la seva demostració.
+
 
 ####Regla 1
 
@@ -255,3 +256,12 @@ $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(f+g)(x)
 **Demostració**
 
 $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot f)(x)-(K \cdot f)(a)}{x-a}=\lim_{x\to a} \frac{K\cdot (f(x)-f(a)}{x-a}=\lim_{x\to a} K \cdot  \lim_{x\to a} \frac{f(x)-f(a)}{x-a}=K \cdot f^\prime (a)$$
+
+###Taula de derivades
+
+| Funció     | Derivada |
+| :------------- |:------------- |
+| Suma      |$$(f(x)+g(x))\prime=f\prime(x)+g\prime(x)$$|
+| Producte per un nombre      |$$(K\cdot f(x))\prime=K \cdot f\prime(x)$$|
+| Producte      |$$(f(x)\cdot g(x))\prime=f\prime(x)\cdot g(x)+f(x)\cdot g\prime (x)$$|
+| Quocient      |$$\Big(\frac{f(x)}{g(x)}\Big)\prime=\frac{f\prime(x)\cdot g(x)+f(x)\cdot g\prime(x)}{g(x)^2}$$|
