@@ -304,7 +304,7 @@ $$f(x)\prime=cos \big( ln(x+1)\big)\cdot \Big(ln(x+1)\Big)\prime=cos \big( ln(x+
 
 **Exemple 3: Derivació logarítmica**
 
-Troba la derivada de la funció següent: $f(x)=x^sin(x)$.
+Troba la derivada de la funció següent: $f(x)=x^{sin(x)}$.
 
 A vegades cal aplicar *trucs* per poder derivar algunes funcions. Quan tenim funcions a l'exponent, el més pràctic és treure el logaritme a banda i banda de l'expressió donada i derivar després:
 
