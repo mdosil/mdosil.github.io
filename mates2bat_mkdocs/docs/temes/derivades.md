@@ -224,36 +224,36 @@ Per tant: $f^\prime (x)=2x$ és la derivada de $f(x)=x^2+1$.
 Aplicant la definició de derivada (càlcul del límit), podem llistar les derivades de les funcions més comunes. Demostrarem les 4 primeres regles de derivació i la resta les posarem en una taula. En aquest [enllaç](https://www.khanacademy.org/math/ap-calculus-bc/bc-derivative-rules) trobareu més informació de les regles de derivació així com els vídeos amb la seva demostració.
 
 
-####Regla 1
+**Regla 1**
 
 >Si $f(x)=k$, $k\in \mathbb{R} \Rightarrow f^\prime(x)=0$
 
-**Demostració**
+*Demostració*
 
 $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{c-c}{x-a}=\lim_{x\to a} \frac{0}{x-a}=\lim_{x\to a} 0= 0$$
 
-####Regla 2
+**Regla 2**
 
 >Si $f(x)=x \Rightarrow f^\prime(x)=1$
 
-**Demostració**
+*Demostració*
 
 $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{x-a}{x-a}=\lim_{x\to a} 1=1$$
 
-####Regla 3
+**Regla 3**
 
 >Si $f$ i $g$ són funcions derivables $\Rightarrow f+g$ també és derivable i es compleix: $(f+g)^\prime (x)=f^\prime(x)+g^\prime(x)$.
 
-**Demostració**
+*Demostració*
 
 $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(f+g)(x)-(f+g)(a)}{x-a}=\lim_{x\to a} \frac{f(x)+g(x)-f(a)-g(a)}{x-a}=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{g(x)-g(a)}{x-a}=f^\prime(a)+g^\prime(a) \forall a$$
 
 
-####Regla 4
+**Regla 4**
 
 >Si $f$ és una funció derivable $\Rightarrow K\cdot f$ on $K \in \mathbb{R}$ també és derivable i es compleix: $(K\cdot f)^\prime (x)=K \cdot f^\prime(x)$.
 
-**Demostració**
+*Demostració*
 
 $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot f)(x)-(K \cdot f)(a)}{x-a}=\lim_{x\to a} \frac{K\cdot (f(x)-f(a)}{x-a}=\lim_{x\to a} K \cdot  \lim_{x\to a} \frac{f(x)-f(a)}{x-a}=K \cdot f^\prime (a)$$
 
@@ -261,7 +261,21 @@ $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot 
 
 | Funció     | Derivada |
 | :------------- |:------------- |
+| Constant      |$$(k)\prime=0 \forall k \in \mathbb{R}$$|
+| Identitat      |$$x\prime=1 $$|
 | Suma      |$$(f(x)+g(x))\prime=f\prime(x)+g\prime(x)$$|
-| Producte per un nombre      |$$(K\cdot f(x))\prime=K \cdot f\prime(x)$$|
+| Producte per un nombre      |$$(k\cdot f(x))\prime=k \cdot f\prime(x)$$|
 | Producte      |$$(f(x)\cdot g(x))\prime=f\prime(x)\cdot g(x)+f(x)\cdot g\prime (x)$$|
 | Quocient      |$$\Big(\frac{f(x)}{g(x)}\Big)\prime=\frac{f\prime(x)\cdot g(x)+f(x)\cdot g\prime(x)}{g(x)^2}$$|
+| Potència      |$$(x^n)\prime=n\cdot x^{n-1}$$|
+| Composició (regla de la cadena)|$$\big(f(g(x))\big)\prime=f\prime\big(g(x)\big)\cdot g\prime(x)$$|
+| Trigonomètriques      |$$\big(\sin(x)\big)\prime=\cos(x)$$|
+|       |$$\big(\cos(x)\big)\prime=-\sin(x)$$|
+|      |$$\big(\tan(x)\big)\prime=1+\tan^2(x)$$|
+| Inverses Trigonomètriques      |$$\big(arcsin(x)\big)\prime=\frac{1}{\sqrt{1-x^2}}$$|
+|       |$$\big(arccos(x)\big)\prime=-\frac{1}{\sqrt{1-x^2}}$$|
+|      |$$\big(arctan(x)\big)\prime=\frac{1}{1+x^2}$$|
+|Exponencials|$$\big(e^x\big)\prime=e^x$$|
+||$$\big(a^x\big)\prime=a^x\cdot ln(a)$$|
+|Logarítmiques| $$\big(ln(x)\big)\prime=\frac{1}{x}$$|
+||$$\big(log_a(x)\big)\prime=\frac{1}{x}\cdot \frac{1}{ln(a)}$$|
