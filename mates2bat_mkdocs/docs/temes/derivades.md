@@ -279,3 +279,71 @@ $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot 
 ||$$\big(a^x\big)\prime=a^x\cdot ln(a)$$|
 |Logarítmiques| $$\big(ln(x)\big)\prime=\frac{1}{x}$$|
 ||$$\big(log_a(x)\big)\prime=\frac{1}{x}\cdot \frac{1}{ln(a)}$$|
+
+###Exemples
+
+**Exemple 1: Derivada d'un quocient**
+
+Troba la derivada de la funció següent: $f(x)=\frac{x^2}{sin(x)}$.
+
+Com que és un quocient:
+
+\begin{align}
+f(x)\prime&=\frac{(x^2)\prime\cdot sin(x)+x^2\cdot \big(sin(x)\big)\prime}{sin^2(x)} \\
+&=\frac{2x\cdot sin(x)+x^2\cdot cos(x)}{sin^2(x)}=\frac{2x+x^2\cdot tan(x)}{sin(x)}
+\end{align}
+
+**Exemple 2: Derivada d'una funció composta**
+
+Troba la derivada de la funció següent: $f(x)=sin(ln(x+1))$.
+
+Veiem que aquest és el resultat de la composició de dues funcions, la funció $sin(x)$ i la funció $ln(x+1)$. Per tant, primer apliquem la regla de derivació de la funció sinus i llavors derivem la segona funció:
+
+$$f(x)\prime=cos \big( ln(x+1)\big)\cdot \Big(ln(x+1)\Big)\prime=cos \big( ln(x+1)\big)\cdot \frac{1}{x+1}$$
+
+
+**Exemple 3: Derivació logarítmica**
+
+Troba la derivada de la funció següent: $f(x)=x^sin(x)$.
+
+A vegades cal aplicar *trucs* per poder derivar algunes funcions. Quan tenim funcions a l'exponent, el més pràctic és treure el logaritme a banda i banda de l'expressió donada i derivar després:
+
+\begin{align}
+f(x)&=x^{sin(x)}\\
+ln\big(f(x)\big)&=sin(x)\cdot ln(x)\\
+\frac{1}{f(x)} \cdot f(x)\prime&=cos(x)\cdot ln(x)+sin x \cdot \frac{1}{x}\\
+f(x)\prime&=f(x)\cdot \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
+f(x)\prime&=x^{sin(x)} \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
+\end{align}
+
+##Derivació successiva
+
+El procés de càlcul de la derivada es pot dur a terme moltes vegades. De fet, si prenem la definició de la derivada com a límit, tenim que:
+
+
+
+\begin{align}
+f(x)\prime &= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+f(x)\prime \prime &= \lim_{h\to 0} \frac{f(x+h)\prime -f(x)\prime }{h}\\
+f(x)\prime \prime \prime &= \lim_{h\to 0} \frac{f(x+h)\prime\prime -f(x) \prime \prime}{h}\\
+.\\
+.\\
+.\\
+f(x)^{n} &= \lim_{h\to 0} \frac{f(x+h)^{n-1}-f(x)^{n-1}}{h}\\
+\end{align}
+
+on $f(x)^{n}$ és la derivada $n$-èssima de $f(x)$.
+
+
+**Exemple 4: Calcula la derivada d'ordre n de la funció: f(x)=ln(x+1)**
+
+\begin{align}
+f(x)\prime &= \frac{1}{x+1}\\
+f(x)\prime \prime &= \frac{-1}{(x+1)^2}\\
+f(x)\prime \prime \prime &= \frac{2(x+1)}{(x+1)^4}=\frac{2}{(x+1)^3}\\
+f(x)^4&= \frac{-2\cdot 3 (x+1)^2}{(x+1)^6}=\frac{-3 !}{(x+1)^4}\\
+.\\
+.\\
+.\\
+f(x)^{n} &=\frac{(-1)^{n+1}(n-1)!}{(x+1)^n}\\
+\end{align}
