@@ -77,13 +77,98 @@
         }, 
         {
             "location": "/temes/funcions/", 
-            "text": "Tema 2: Funcions cont\u00ednues i derivables", 
+            "text": "Tema 2: Funcions cont\u00ednues i derivables\n\n\nIntroducci\u00f3\n\n\nDefininici\u00f3 de funci\u00f3 cont\u00ednua\n\n\nDefinici\u00f3 funci\u00f3 derivable\n\n\nTeoremes sobre funcions cont\u00ednues\n\n\nPrincipi de conservaci\u00f3 del signe\n\n\nTeorema de Bolzano\n\n\nTeorema dels valors intermitjos\n\n\nTeoremes sobre funcions derivables\n\n\nTeorema de Rolle\n\n\nTeorema del valor mitj\u00e0\n\n\nTeorema de Cauchy\n\n\nAplicacions a l'estudi d'una funci\u00f3\n\n\nCreixement i decreixement\n\n\nM\u00e0xims i m\u00ednims\n\n\nPunts d'inflexi\u00f3\n\n\nAplicacions al c\u00e0lcul de l\u00edmits\n\n\nRegla de l'\u00b4H\u00f4pital", 
             "title": "2. Funcions cont\u00ednues i derivables"
         }, 
         {
             "location": "/temes/funcions/#tema-2-funcions-continues-i-derivables", 
             "text": "", 
             "title": "Tema 2: Funcions cont\u00ednues i derivables"
+        }, 
+        {
+            "location": "/temes/funcions/#introduccio", 
+            "text": "", 
+            "title": "Introducci\u00f3"
+        }, 
+        {
+            "location": "/temes/funcions/#defininicio-de-funcio-continua", 
+            "text": "", 
+            "title": "Defininici\u00f3 de funci\u00f3 cont\u00ednua"
+        }, 
+        {
+            "location": "/temes/funcions/#definicio-funcio-derivable", 
+            "text": "", 
+            "title": "Definici\u00f3 funci\u00f3 derivable"
+        }, 
+        {
+            "location": "/temes/funcions/#teoremes-sobre-funcions-continues", 
+            "text": "", 
+            "title": "Teoremes sobre funcions cont\u00ednues"
+        }, 
+        {
+            "location": "/temes/funcions/#principi-de-conservacio-del-signe", 
+            "text": "", 
+            "title": "Principi de conservaci\u00f3 del signe"
+        }, 
+        {
+            "location": "/temes/funcions/#teorema-de-bolzano", 
+            "text": "", 
+            "title": "Teorema de Bolzano"
+        }, 
+        {
+            "location": "/temes/funcions/#teorema-dels-valors-intermitjos", 
+            "text": "", 
+            "title": "Teorema dels valors intermitjos"
+        }, 
+        {
+            "location": "/temes/funcions/#teoremes-sobre-funcions-derivables", 
+            "text": "", 
+            "title": "Teoremes sobre funcions derivables"
+        }, 
+        {
+            "location": "/temes/funcions/#teorema-de-rolle", 
+            "text": "", 
+            "title": "Teorema de Rolle"
+        }, 
+        {
+            "location": "/temes/funcions/#teorema-del-valor-mitja", 
+            "text": "", 
+            "title": "Teorema del valor mitj\u00e0"
+        }, 
+        {
+            "location": "/temes/funcions/#teorema-de-cauchy", 
+            "text": "", 
+            "title": "Teorema de Cauchy"
+        }, 
+        {
+            "location": "/temes/funcions/#aplicacions-a-lestudi-duna-funcio", 
+            "text": "", 
+            "title": "Aplicacions a l'estudi d'una funci\u00f3"
+        }, 
+        {
+            "location": "/temes/funcions/#creixement-i-decreixement", 
+            "text": "", 
+            "title": "Creixement i decreixement"
+        }, 
+        {
+            "location": "/temes/funcions/#maxims-i-minims", 
+            "text": "", 
+            "title": "M\u00e0xims i m\u00ednims"
+        }, 
+        {
+            "location": "/temes/funcions/#punts-dinflexio", 
+            "text": "", 
+            "title": "Punts d'inflexi\u00f3"
+        }, 
+        {
+            "location": "/temes/funcions/#aplicacions-al-calcul-de-limits", 
+            "text": "", 
+            "title": "Aplicacions al c\u00e0lcul de l\u00edmits"
+        }, 
+        {
+            "location": "/temes/funcions/#regla-de-l-hopital", 
+            "text": "", 
+            "title": "Regla de l'\u00b4H\u00f4pital"
         }, 
         {
             "location": "/temes/aplicacionsderivades/", 
