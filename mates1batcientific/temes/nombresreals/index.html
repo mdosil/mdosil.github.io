@@ -206,14 +206,19 @@
                 <li class="third-level"><a href="#inequacions">Inequacions</a></li>
             
         
-            <li class="second-level"><a href="#potencies">Potències</a></li>
+            <li class="second-level"><a href="#valor-absolut-distancia-entorn">Valor absolut. Distància. Entorn</a></li>
             
                 <li class="third-level"><a href="#propietats">Propietats</a></li>
             
         
-            <li class="second-level"><a href="#radicals">Radicals</a></li>
+            <li class="second-level"><a href="#potencies">Potències</a></li>
             
                 <li class="third-level"><a href="#propietats_1">Propietats</a></li>
+            
+        
+            <li class="second-level"><a href="#radicals">Radicals</a></li>
+            
+                <li class="third-level"><a href="#propietats_2">Propietats</a></li>
             
                 <li class="third-level"><a href="#extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</a></li>
             
@@ -228,7 +233,7 @@
         
             <li class="second-level"><a href="#logaritmes">Logaritmes</a></li>
             
-                <li class="third-level"><a href="#propietats_2">Propietats</a></li>
+                <li class="third-level"><a href="#propietats_3">Propietats</a></li>
             
                 <li class="third-level"><a href="#canvi-de-base">Canvi de base</a></li>
             
@@ -258,7 +263,7 @@ Un <a href="https://en.wikipedia.org/wiki/Real_number">nombre real</a> és aquel
 <h2 id="recta-real">Recta real</h2>
 <p>Representar nombres sobre la recta real és ben fàcil si són racionals. Si estem parlant d'enters, els sabrem situar sobre la recta sense problema. Però què passa quan hem de situar per exemple, <script type="math/tex">\frac{3}{7}</script> sobre la recta real? Hi ha varis mètodes. El mètode més ràpid és agafar la unitat, fer-ne 7 parts i agafar-ne 3. El mètode més exacte és utilitzant la tècnica de dibuixar un segment des del 0 amb un angle qualsevol i dividir-lo en 7 parts iguals. Seguidament, uneixes l'última part amb l'<script type="math/tex">1</script> de la recta real i traces línies paral.leles a aquesta que passin per les altres divisions. Els punts d'intersecció amb la recta real i aquestes rectes paral.leles et donaran les diferents fraccions <script type="math/tex">\frac{1}{7}</script>, <script type="math/tex">\frac{2}{7}</script>, <script type="math/tex">\frac{3}{7}</script>, etc.</p>
 <p><img alt="*Representació de \frac{3}{7} sobre la recta real*" src="../img/fraccions_recta_real_1.png" /></p>
-<p>Per representar radicals irracionals sobre la recta real, cal utilitzar el <a href="https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores">teorema de Pitàgores</a>. A la figura següent s'hi pot veure la representació gràfica de <script type="math/tex">\sqrt{2}</script>. </p>
+<p>Per representar radicals irracionals sobre la recta real, cal utilitzar el <a href="https://ca.wikipedia.org/wiki/Teorema_de_Pit%C3%A0gores">teorema de Pitàgores</a>. A la figura següent s'hi pot veure la representació gràfica de <script type="math/tex">\sqrt{2}</script>.</p>
 <p><img alt="*Representació de \sqrt{2} sobre la recta real*" src="../img/arrel_de_dos_1.png" /></p>
 <h3 id="intervals">Intervals</h3>
 <p><a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_reales-JS/index.htm">Podem entendre un interval com una regió de la recta real</a>. Agafem com a exemple , un de senzill: <em>Els nombres més grans que <script type="math/tex">4</script></em>. Si ho representem sobre la recta real obtenim:</p>
@@ -317,10 +322,66 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 </p>
 <p><img alt="fig1.6" src="../img/interval6_rectareal_1.png" /></p>
 <p>Aquí no hem parlat de les inequacions de segon grau i una incògnita, per exemple: <script type="math/tex"> 2x^2-5x+3 > 4</script>. Per resoldre aquest tipus d'inequacions cal primer resoldre l'equació de segon grau. En <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_inequacions-JS/index.htm">aquest enllaç</a> hi podeu trobar el procediment.</p>
+<h2 id="valor-absolut-distancia-entorn">Valor absolut. Distància. Entorn</h2>
+<p>De cursos anteriors sabem que el <strong>valor absolut</strong> d'un nombre consisteix en prescindir del seu signe, és a dir: <script type="math/tex">|-3|=|+3|=3</script>, i és per tant, positiu.</p>
+<p>El valor absolut però es defineix tècnicament com <em>la distància d'un nombre a l'origen de coordenades</em>. Per tant, <script type="math/tex">|x|</script> és la distància de <script type="math/tex">x</script> al <script type="math/tex">0</script> de la recta real, i que <script type="math/tex">|-3|=|+3|=3</script> vol dir que tant el <script type="math/tex">+3</script> com el <script type="math/tex">-3</script> es troben a <script type="math/tex">3</script> unitats de distància de l'origen.</p>
+<p>Prenent això com a exemple, la <strong>distància</strong> <script type="math/tex">d</script> entre dos nombres de la recta real <script type="math/tex">a</script> i <script type="math/tex">b</script> es defineix com:</p>
+<p>
+<script type="math/tex; mode=display">d_{a,b}=|b-a|=|a-b|</script>
+</p>
+<p>i és per tant, sempre un nombre positiu.</p>
+<h3 id="propietats">Propietats</h3>
+<p>La distància compleix també les propietats següents:</p>
+<ol>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">d_{a,b} \ge 0 \forall a,b \in \mathbb{R}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">d_{a,b} = 0 \Leftrightarrow a=b</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">d_{a,b}= d_{b,a}</script>
+</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>
+<script type="math/tex">d_{a,b} \le  d_{a,c}+ d_{c,b} \forall a, b, c  \in \mathbb{R}</script>
+</p>
+</blockquote>
+</li>
+</ol>
+<p>De la mateixa manera podem definir un <strong>entorn</strong> <script type="math/tex">B</script> d'un punt <script type="math/tex">a</script> i radi <script type="math/tex">r</script> com aquell segment de la recta real format pels punts que estan a una distància de <script type="math/tex">a</script> menor que <script type="math/tex">r</script>:</p>
+<p>
+<script type="math/tex; mode=display">B(a;r)=\{x \in \mathbb{R} | d(x,a) < r\}</script>
+</p>
+<p>o dit d'una altra manera:</p>
+<p>
+<script type="math/tex; mode=display">|x-a|<r</script>
+</p>
+<p><strong>Exemple 4</strong></p>
+<p>Trobeu aquells punts que es troben a una distància de 3 menor que 5 unitats.</p>
+<p>Ens estan demanant que resolem la inequació següent:</p>
+<p>
+<script type="math/tex; mode=display">|x-5|<3</script>
+</p>
+<p>Només cal trobar un entorn amb centre <script type="math/tex">5</script> i sumar i restar 3 unitats a esquerra i dreta. La solució d'aquesta inequació és l'interval <script type="math/tex">(2,8)</script>:</p>
+<p><img alt="*Solució a la inequació |x-5|&lt;3*" src="../img/exemple4_1.png" /></p>
 <h2 id="potencies">Potències</h2>
 <p>Una potència és una expressió del tipus <script type="math/tex">a^b</script> on <script type="math/tex">a</script> és la base i <script type="math/tex">b</script> l'exponent, ambdós nombres reals. No cal afegir que <script type="math/tex">a^b</script> significa multiplicar <script type="math/tex">a</script>
 <script type="math/tex">b</script> vegades per ell mateix. En <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_cat_radicals-JS/index.htm">aquest enllaç</a> hi podreu repassar el capítol de potències i radicals de 4t d'ESO.</p>
-<h3 id="propietats">Propietats</h3>
+<h3 id="propietats_1">Propietats</h3>
 <ol>
 <li>
 <blockquote>
@@ -388,7 +449,7 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <script type="math/tex; mode=display"> \sqrt[n]{a^m}= a^{\frac{n}{m}}</script>
 </p>
 <p>D'aquesta manera, <script type="math/tex">\sqrt{2}=2^{\frac{1}{2}}</script>.</p>
-<h3 id="propietats_1">Propietats</h3>
+<h3 id="propietats_2">Propietats</h3>
 <p>Com ja hem explicat, els radicals són potències d'exponent fraccionari. Per tant, les seves propietats deriven de les propietats de les potències:</p>
 <ol>
 <li>
@@ -429,13 +490,13 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 </ol>
 <h3 id="extraccio-i-introduccio-de-factors-en-un-radical">Extracció i introducció de factors en un radical</h3>
 <p>Per introduir nombres dins d'un radical, s'ha d'elevar el nombre a una potència igual a l'índex de l'arrel.</p>
-<p><strong>Exemple 4</strong></p>
+<p><strong>Exemple 5</strong></p>
 <p>Introdueix tots els factors dins de l'arrel:</p>
 <p>
 <script type="math/tex; mode=display">3^5 \cdot 2^8 \cdot 7^3 \cdot \sqrt[3]{2^5 \cdot 7}= \sqrt[3]{(3^5)^3 \cdot (2^8)^3 \cdot (7^3)^3 \cdot 2^5 \cdot 7}=\sqrt[3]{3^{15} \cdot 2^{24} \cdot 7^9 \cdot 2^5 \cdot 7}=\sqrt[3]{2^{29} \cdot 3^{15} \cdot 7^{10}}</script>
 </p>
 <p>Per extreure factors d'un radical, primer cal mirar si l'exponent del radicand és més gran que l'índex. Si és així, es podrà treure a fora el factor dividint l'exponent per l'índex del radical. A fora de l'arrel hi quedarà el nombre elevat al quocient de la divisió anterior, i a dins, el nombre elevat al residu de la divisió. Si no tenim el radicand expressat com a producte de factors de nombres primers, caldrà fer abans aquesta operació. Fixeu-vos en l'exemple següent.</p>
-<p><strong>Exemple 5</strong></p>
+<p><strong>Exemple 6</strong></p>
 <p>Treu tots els factors que puguis del radical:</p>
 <p>
 <script type="math/tex; mode=display">\sqrt[3]{120000}=\sqrt[3]{2^6 \cdot 3 \cdot 5^4}=2^2 \cdot 5 \cdot \sqrt[3]{3 \cdot 5}</script>
@@ -443,29 +504,29 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <h3 id="sumes-i-restes">Sumes i restes</h3>
 <p>Diem que dos radicals són <strong>semblants</strong> si tenen el mateix índex i el mateix radicand. Per exemple <script type="math/tex">2 \sqrt [5]{3}</script> i <script type="math/tex">\sqrt[5]{3}</script> són semblants però no ho són amb <script type="math/tex">\sqrt{3}</script>.</p>
 <p>Només es poden sumar o restar radicals si són semblants.</p>
-<p><strong>Exemple 6</strong></p>
+<p><strong>Exemple 7</strong></p>
 <p>
 <script type="math/tex; mode=display">2\sqrt[5]{21}+4 \sqrt[5]{21}=6 \sqrt[5]{21}</script>
 </p>
 <h3 id="multiplicacions-i-divisions">Multiplicacions i divisions</h3>
 <p>Per multiplicar o dividir radicals han de tenir el <strong>mateix índex</strong>. Si tenen diferent índex els hem de reduir a <strong>índex comú</strong> tal i com fem amb les fraccions. Llavors es multipliquen o divideixen els radicands.</p>
-<p><strong>Exemple 7</strong></p>
+<p><strong>Exemple 8</strong></p>
 <p>
 <script type="math/tex; mode=display">\sqrt[3]{5}\cdot \sqrt{8}=\sqrt[6]{5^2}\cdot\sqrt[6]{8^3}=\sqrt[6]{5^2\cdot 8^3}</script>
 </p>
 <h3 id="arrel-duna-arrel">Arrel d'una arrel</h3>
 <p>Per treure l'arrel d'una arrel, es multipliquen els índexs.</p>
-<p><strong>Exemple 8</strong></p>
+<p><strong>Exemple 9</strong></p>
 <p>
 <script type="math/tex; mode=display">\sqrt[7]{\sqrt[3]{4}}=\sqrt[21]{4}</script>
 </p>
 <h3 id="racionalitzacio">Racionalització</h3>
 <p>En general no es considera elegant donar com a resultat un radical en un denominador. És per això que sempre que tinguem radicals en el denominador d'una fracció s'han d'intentar buscar fraccions equivalents. Mireu els exemples següents.</p>
-<p><strong>Exemple 9</strong></p>
+<p><strong>Exemple 10</strong></p>
 <p>
 <script type="math/tex; mode=display">\frac{2}{\sqrt[3]{5}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5}\cdot \sqrt[3]{5^2}}=\frac{2 \cdot \sqrt[3]{5^2}}{\sqrt[3]{5^3}}=\frac{2\cdot\sqrt[3]{5^2}}{5}</script>
 </p>
-<p><strong>Exemple 10</strong></p>
+<p><strong>Exemple 11</strong></p>
 <p>Si en el denominador hi tenim una suma o una resta que contingui radicals, multiplicarem la fracció a dalt i a baix pel conjugat (si és suma, multiplicarem per la mateixa expressió restada i viceversa).</p>
 <p>
 <script type="math/tex; mode=display">\frac{5}{1+\sqrt{3}}=\frac{5}{1+\sqrt{3}}\cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}=\frac{5(1-\sqrt{3})}{1^2-(\sqrt{3})^2}=\frac{5(1-\sqrt{3})}{-2}=-\frac{5}{2}(1-\sqrt{3})</script>
@@ -482,7 +543,7 @@ x & \in \lbrack \frac{21}{19}, +\infty)
 <p>
 <script type="math/tex; mode=display">log_a{b}=x \Leftrightarrow a^x=b</script>
 </p>
-<h3 id="propietats_2">Propietats</h3>
+<h3 id="propietats_3">Propietats</h3>
 <ol>
 <li>
 <blockquote>
@@ -618,7 +679,7 @@ log_a q =y \Rightarrow a^y=q \\
 <p>
 <script type="math/tex; mode=display">log_a x = \frac{log_b x}{log_b a}</script>
 </p>
-<p><strong>Exemple 11</strong></p>
+<p><strong>Exemple 12</strong></p>
 <p>Per calcular el <script type="math/tex">log_5{10}</script> a la calculadora, haurem de fer doncs:</p>
 <p>
 <script type="math/tex; mode=display">log_5{10}=\frac{log 10}{log 5}= \frac{1}{log 5}</script>
