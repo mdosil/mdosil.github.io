@@ -284,6 +284,23 @@ f(a) \cdot f(b)<0
 </p>
 <iframe scrolling="no" title="Teorema de Bolzano" src="https://www.geogebra.org/material/iframe/id/syyBEjue/width/400/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="400px" height="500px" style="border:0px;"> </iframe>
 
+<p>La condició de <em>continuïtat</em> en l'interval és totalment necessària. Si la funció no és contínua, el teorema no té perquè ser cert.</p>
+<p>Aquest teorema ens és útil per a trobar arrels (zeros) d'una funció en un determinat interval.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Prova que l'equació <script type="math/tex">x^3-3x+1=0</script> té una arrel en l'interval <script type="math/tex">[1,2]</script>. Calculeu-la amb un error més petit que una dècima.</p>
+<p>Veiem que: <script type="math/tex">f(x)=-1</script> i <script type="math/tex">f(x)=3</script>. Per tant, ha d'existir un punt <script type="math/tex">c \in [1,2]</script> on es compleixi que <script type="math/tex">f(c)=0</script>. Utilitzarem el mètode de tempteig per a trobar una aproximació a aquest punt:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f(1.5)<0 \rightarrow c \in [1.5,2]\\
+f(1.7)>0 \rightarrow c \in [1.5,1.7]\\
+f(1.6)>0 \rightarrow c \in [1.5,1.6]\\
+f(1.55)>0 \rightarrow c \in [1.5,1.55]\\
+f(1.52)<0 \rightarrow c \in [1.52,1.55]\\
+f(1.53)<0 \rightarrow c \in [1.53,1.55]\\
+f(1.54)>0 \rightarrow c \in [1.53,1.54]\\
+\end{align}</script>
+</p>
+<p>Per tant, el valor <script type="math/tex">c</script> que estem buscant és <script type="math/tex">c=1.53...</script>, el <script type="math/tex">3</script> és xifra significativa, per tant, ja l'hem trobat amb un error més petit que una dècima.</p>
 <h3 id="teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</h3>
 <h2 id="teoremes-sobre-funcions-derivables">Teoremes sobre funcions derivables</h2>
 <h3 id="teorema-de-rolle">Teorema de Rolle</h3>
