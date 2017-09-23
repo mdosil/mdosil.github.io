@@ -192,14 +192,12 @@
         
             <li class="second-level"><a href="#introduccio">Introducció</a></li>
             
-                <li class="third-level"><a href="#defininicio-de-funcio-continua">Defininició de funció contínua</a></li>
+                <li class="third-level"><a href="#funcio-continua">Funció contínua</a></li>
             
-                <li class="third-level"><a href="#definicio-funcio-derivable">Definició funció derivable</a></li>
+                <li class="third-level"><a href="#funcio-derivable">Funció derivable</a></li>
             
         
             <li class="second-level"><a href="#teoremes-sobre-funcions-continues">Teoremes sobre funcions contínues</a></li>
-            
-                <li class="third-level"><a href="#principi-de-conservacio-del-signe">Principi de conservació del signe</a></li>
             
                 <li class="third-level"><a href="#teorema-de-bolzano">Teorema de Bolzano</a></li>
             
@@ -236,11 +234,56 @@
 
 <h1 id="tema-2-funcions-continues-i-derivables">Tema 2: Funcions contínues i derivables</h1>
 <h2 id="introduccio">Introducció</h2>
-<h3 id="defininicio-de-funcio-continua">Defininició de funció contínua</h3>
-<h3 id="definicio-funcio-derivable">Definició funció derivable</h3>
+<h3 id="funcio-continua">Funció contínua</h3>
+<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/limits/">curs anterior</a> es va dir que una <em>funció era contínua en un punt <script type="math/tex">x=a</script></em> si existia el seu límit i coincidia amb la seva imatge:</p>
+<p>
+<script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a \Leftrightarrow \lim_{x\to a^{-}}f(x)=\lim_{x\to a^{+}}f(x)=f(a)</script>
+</p>
+<p>Així doncs, una funció serà <em>contínua en un interval tancat <script type="math/tex">[a,b]</script></em> si:</p>
+<ul>
+<li>És contínua <script type="math/tex">\forall x \in (a,b)</script>
+</li>
+<li>
+<script type="math/tex">\lim_{x\to a^{+} }f(x)=f(a)</script>
+</li>
+<li>
+<script type="math/tex">\lim_{x\to b^{-} }f(x)=f(b)</script>
+</li>
+</ul>
+<h3 id="funcio-derivable">Funció derivable</h3>
+<p>Del <a href="http://mdosil.cat/mates2batcientific/temes/derivades/">tema anterior</a> se'n dedueix que una <em>funció és derivable en un punt <script type="math/tex">x=a</script></em> si existeixen les derivades laterals <script type="math/tex">f^\prime (a)^{-}</script> i <script type="math/tex">f^\prime (a)^{+}</script> i coincideixen:</p>
+<p>
+<script type="math/tex; mode=display">f^\prime (a)^{-}= f^\prime (a)^{+}</script>
+</p>
+<p>on:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f^\prime (a)^{-}=\lim_{x\to a^{-} } \frac{f(x)-f(a)}{x-a}\\
+f^\prime (a)^{+}=\lim_{x\to a^{+} } \frac{f(x)-f(a)}{x-a}
+\end{align}</script>
+</p>
+<p>De la mateixa manera, una funció és <em>derivable en un interval tancat <script type="math/tex">[a,b]</script></em> si:</p>
+<ul>
+<li>És derivable <script type="math/tex">\forall x \in (a,b)</script>
+</li>
+<li>Existeixen <script type="math/tex">f^\prime (a)^{+}</script> i <script type="math/tex">f^\prime (b)^{-}</script>
+</li>
+</ul>
 <h2 id="teoremes-sobre-funcions-continues">Teoremes sobre funcions contínues</h2>
-<h3 id="principi-de-conservacio-del-signe">Principi de conservació del signe</h3>
 <h3 id="teorema-de-bolzano">Teorema de Bolzano</h3>
+<p>Sigui <script type="math/tex">f(x)</script> una funció contínua en un interval tancat <script type="math/tex">[a,b]</script>. Si <script type="math/tex">f(a)</script> i <script type="math/tex">f(b)</script> tenen signes oposats (<script type="math/tex">f(a)\cdot f(b)<0</script>) podem assegurar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">[a,b]</script> on <script type="math/tex">f(c)=0</script> (la funció talla l'eix de les <script type="math/tex">x</script>):</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } [a,b] \\
+f(a) \cdot f(b)<0
+\end{aligned}
+\right\}
+\rightarrow \exists c \in (a,b) | f(c)=0 }
+</script>
+</p>
+<iframe scrolling="no" title="Teorema de Bolzano" src="https://www.geogebra.org/material/iframe/id/syyBEjue/width/400/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="400px" height="500px" style="border:0px;"> </iframe>
+
 <h3 id="teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</h3>
 <h2 id="teoremes-sobre-funcions-derivables">Teoremes sobre funcions derivables</h2>
 <h3 id="teorema-de-rolle">Teorema de Rolle</h3>
