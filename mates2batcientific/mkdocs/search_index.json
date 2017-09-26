@@ -257,13 +257,18 @@
         }, 
         {
             "location": "/misc/misc/", 
-            "text": "Miscel.l\u00e0nia\n\n\nEn aquest apartat hi podeu trobar alguns exercicis i les toolbox utilitzades per a treballar aspectes concrets de les matem\u00e0tiques de 2n de batxillerat.", 
+            "text": "Miscel.l\u00e0nia\n\n\nEn aquest apartat hi podeu trobar alguns exercicis i les toolbox utilitzades per a treballar aspectes concrets de les matem\u00e0tiques de 2n de batxillerat.\n\n\nToolbox\n\n\n\n\n\n\n\n\nTema\n\n\nEnlla\u00e7 al document\n\n\n\n\n\n\n\n\n\n\nDerivades\n\n\nToolbox", 
             "title": "Miscel.l\u00e0nia"
         }, 
         {
             "location": "/misc/misc/#miscellania", 
             "text": "En aquest apartat hi podeu trobar alguns exercicis i les toolbox utilitzades per a treballar aspectes concrets de les matem\u00e0tiques de 2n de batxillerat.", 
             "title": "Miscel.l\u00e0nia"
+        }, 
+        {
+            "location": "/misc/misc/#toolbox", 
+            "text": "Tema  Enlla\u00e7 al document      Derivades  Toolbox", 
+            "title": "Toolbox"
         }, 
         {
             "location": "/sobre/", 
