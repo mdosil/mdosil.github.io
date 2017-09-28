@@ -235,7 +235,7 @@
 <h1 id="tema-2-funcions-continues-i-derivables">Tema 2: Funcions contínues i derivables</h1>
 <h2 id="introduccio">Introducció</h2>
 <h3 id="funcio-continua">Funció contínua</h3>
-<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/limits/">curs anterior</a> es va dir que una <em>funció era contínua en un punt <script type="math/tex">x=a</script></em> si existia el seu límit i coincidia amb la seva imatge:</p>
+<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/limits/">curs anterior</a> vam veure que una <em>funció era contínua en un punt <script type="math/tex">x=a</script></em> si existia el seu límit i coincidia amb la seva imatge:</p>
 <p>
 <script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a \Leftrightarrow \lim_{x\to a^{-}}f(x)=\lim_{x\to a^{+}}f(x)=f(a)</script>
 </p>
@@ -284,7 +284,7 @@ f(a) \cdot f(b)<0
 </p>
 <iframe scrolling="no" title="Teorema de Bolzano" src="https://www.geogebra.org/material/iframe/id/syyBEjue/width/400/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="400px" height="500px" style="border:0px;"> </iframe>
 
-<p>La condició de <em>continuïtat</em> en l'interval és totalment necessària. Si la funció no és contínua, el teorema no té perquè ser cert.</p>
+<p>La condició de <em>continuïtat</em> en l'interval <strong>és totalment necessària</strong>. Si la funció no és contínua, el teorema no té perquè ser cert.</p>
 <p>Aquest teorema ens és útil per a trobar arrels (zeros) d'una funció en un determinat interval.</p>
 <p><strong>Exemple 1</strong></p>
 <p>Prova que l'equació <script type="math/tex">x^3-3x+1=0</script> té una arrel en l'interval <script type="math/tex">[1,2]</script>. Calculeu-la amb un error més petit que una dècima.</p>
@@ -301,7 +301,56 @@ f(1.54)&>0 \rightarrow c \in [1.53,1.54]\\
 \end{align}</script>
 </p>
 <p>Per tant, el valor <script type="math/tex">c</script> que estem buscant és <script type="math/tex">c=1.53...</script>, el <script type="math/tex">3</script> és xifra significativa, per tant, ja l'hem trobat amb un error més petit que una dècima.</p>
+<p><strong>Exemple 2</strong></p>
+<p>Demostreu que hi ha un número real <script type="math/tex">x</script> tal que el seu cosinus és igual a la mateixa <script type="math/tex">x</script>. Doneu una aproximació d'aquest valor.</p>
+<p>D'entrada l'enunciat d'aquest problema ens sembla molt extrany. Anem a interpretar-lo. Hem de resoldre:</p>
+<p>
+<script type="math/tex; mode=display">\cos(x)=x</script>
+</p>
+<p>Considerem ara la funció <script type="math/tex">f(x)=\cos(x)-x</script>. Si trobem dos punts d'aquesta funció que tinguin signes oposats, com que <script type="math/tex">f(x)</script> és contínua, podem garantir, pel teorema de Bolzano que la funció tindrà un arrel (zero) dins d'aquest interval, i per tant es complirà:</p>
+<p>
+<script type="math/tex">f(x)=\cos(x)-x=0</script>.</p>
+<p>Veiem que:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f(0)&=\cos(0)-0=1 >0\\
+f\Big(\frac{\pi}{2}\Big)&=\cos\Big(\frac{\pi}{2}\Big)-\frac{\pi}{2}=-\frac{\pi}{2} <0\\
+\end{align}</script>
+</p>
+<p>Per tant, podem afirmar que existeix un punt <script type="math/tex">a</script> dins l'interval <script type="math/tex">(0,\frac{\pi}{2})</script> tal que <script type="math/tex">f(a)=0</script>, o sigui que el seu cosinus és igual a ell mateix:</p>
+<p>
+<script type="math/tex; mode=display">\cos(a)-a=0 \rightarrow \cos(a)=a</script>
+</p>
+<p>Per trobar aquest valor, haurem d'aplicar el mètode de tempteig:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f\Big(\frac{\pi}{4}\Big)&<0 \rightarrow a \in \Big[0,\frac{\pi}{4}\Big]\\
+f\Big(\frac{\pi}{8}\Big)&>0 \rightarrow a \in \Big[\frac{\pi}{8},\frac{\pi}{4}\Big]\\
+f\Big(\frac{\pi}{5}\Big)&>0 \rightarrow a \in \Big[\frac{\pi}{5},\frac{\pi}{4}\Big]\\
+&.\\
+&.\\
+&.\\
+&.
+\end{align}</script>
+</p>
+<p>El valor que estem buscant està entre <script type="math/tex">\Big[\frac{\pi}{5},\frac{\pi}{4}\Big]</script>
+</p>
 <h3 id="teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</h3>
+<p>El Teorema dels valors intermitjos és una generalització del Teorema de Bolzano:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } [a,b] \\
+f(a) < c < f(b)
+\end{aligned}
+\right\}
+\rightarrow \exists x \in (a,b) | f(x)=c }
+</script>
+</p>
+<p>Dit d'una altra manera: <em>la funció pren tots els valors intermitjos entre <script type="math/tex">f(a)</script> i <script type="math/tex">f(b)</script></em>.</p>
+<iframe scrolling="no" title="Teorema dels valors intermitjos" src="https://www.geogebra.org/material/iframe/id/vUcujT6h/width/412/height/652/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="412px" height="652px" style="border:0px;"> </iframe>
+
+<p>Igual que en el Teorema de Bolzano, si la funció no és contínua en l'interval, el teorema no té perquè ser cert.</p>
 <h2 id="teoremes-sobre-funcions-derivables">Teoremes sobre funcions derivables</h2>
 <h3 id="teorema-de-rolle">Teorema de Rolle</h3>
 <h3 id="teorema-del-valor-mitja">Teorema del valor mitjà</h3>
