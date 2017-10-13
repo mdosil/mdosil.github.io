@@ -203,6 +203,8 @@
             
                 <li class="third-level"><a href="#teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</a></li>
             
+                <li class="third-level"><a href="#teorema-de-weierstrass">Teorema de Weierstrass</a></li>
+            
         
             <li class="second-level"><a href="#teoremes-sobre-funcions-derivables">Teoremes sobre funcions derivables</a></li>
             
@@ -271,7 +273,7 @@ f^\prime (a)^{+}=\lim_{x\to a^{+} } \frac{f(x)-f(a)}{x-a}
 </ul>
 <h2 id="teoremes-sobre-funcions-continues">Teoremes sobre funcions contínues</h2>
 <h3 id="teorema-de-bolzano">Teorema de Bolzano</h3>
-<p>Sigui <script type="math/tex">f(x)</script> una funció contínua en un interval tancat <script type="math/tex">[a,b]</script>. Si <script type="math/tex">f(a)</script> i <script type="math/tex">f(b)</script> tenen signes oposats (<script type="math/tex">f(a)\cdot f(b)<0</script>) podem assegurar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">[a,b]</script> on <script type="math/tex">f(c)=0</script> (la funció talla l'eix de les <script type="math/tex">x</script>):</p>
+<p>Sigui <script type="math/tex">f(x)</script> una funció <strong>contínua</strong> en un interval tancat <script type="math/tex">[a,b]</script>. Si <script type="math/tex">f(a)</script> i <script type="math/tex">f(b)</script> tenen signes oposats (<script type="math/tex">f(a)\cdot f(b)<0</script>) podem assegurar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">[a,b]</script> on <script type="math/tex">f(c)=0</script> (la funció talla l'eix de les <script type="math/tex">x</script>):</p>
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
@@ -286,6 +288,7 @@ f(a) \cdot f(b)<0
 
 <p>La condició de <em>continuïtat</em> en l'interval <strong>és totalment necessària</strong>. Si la funció no és contínua, el teorema no té perquè ser cert.</p>
 <p>Aquest teorema ens és útil per a trobar arrels (zeros) d'una funció en un determinat interval.</p>
+<p>Cal també notar que el Teorema de Bolzano ens diu que com a mínim la funció talla en un punt, però n'hi poden haver més, de punts de tall.</p>
 <p><strong>Exemple 1</strong></p>
 <p>Prova que l'equació <script type="math/tex">x^3-3x+1=0</script> té una arrel en l'interval <script type="math/tex">[1,2]</script>. Calculeu-la amb un error més petit que una dècima.</p>
 <p>Veiem que: <script type="math/tex">f(x)=-1</script> i <script type="math/tex">f(x)=3</script>. Per tant, ha d'existir un punt <script type="math/tex">c \in [1,2]</script> on es compleixi que <script type="math/tex">f(c)=0</script>. Utilitzarem el mètode de tempteig per a trobar una aproximació a aquest punt:</p>
@@ -351,8 +354,35 @@ f(a) < c < f(b)
 <iframe scrolling="no" title="Teorema dels valors intermitjos" src="https://www.geogebra.org/material/iframe/id/vUcujT6h/width/412/height/652/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="412px" height="652px" style="border:0px;"> </iframe>
 
 <p>Igual que en el Teorema de Bolzano, si la funció no és contínua en l'interval, el teorema no té perquè ser cert.</p>
+<h3 id="teorema-de-weierstrass">Teorema de Weierstrass</h3>
+<p>Si <script type="math/tex">f(x)</script> és una funció contínua en un interval <em>compacte</em> (tancat i acotat) <script type="math/tex">[a,b]</script>, podem assegurar que sempre hi haurà com a mínim un <strong>màxim absolut</strong> i un <strong>mínim absolut</strong> de la funció <script type="math/tex">f(x)</script> dins l'interval <script type="math/tex">[a,b]</script>. Això és:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {
+f(x) \mbox{ contínua en } [a,b] \rightarrow \exists x_1, x_2 \in [a,b] | f(x_1) \le f(x) \le f(x_2) }
+</script>
+</p>
+<p>la funció <script type="math/tex">f(x)</script> transcorre entre els valors de <script type="math/tex">f(x_1)</script> i <script type="math/tex">f(x_2)</script>.</p>
+<iframe scrolling="no" title="Teorema de Weierstrass" src="https://www.geogebra.org/material/iframe/id/ZsuUzP38/width/774/height/394/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="774px" height="394px" style="border:0px;"> </iframe>
+
+<p>En el cas del gràfic, <script type="math/tex">x_1</script> és mínim absolut i <script type="math/tex">x_2</script> màxim absolut.</p>
 <h2 id="teoremes-sobre-funcions-derivables">Teoremes sobre funcions derivables</h2>
+<p>Anem a veure alguns teoremes que compleixen les funcions derivables.</p>
 <h3 id="teorema-de-rolle">Teorema de Rolle</h3>
+<p>Sigui <script type="math/tex">f(x)</script> una funció <strong>contínua</strong> en un interval tancat <script type="math/tex">[a,b]</script> i <strong>derivable</strong> en <script type="math/tex">(a,b)</script>. Si <script type="math/tex">f(a)= f(b)</script> podem assegurar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">(a,b)</script> on <script type="math/tex">f^\prime(c)=0</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } [a,b] \\
+f(x) \mbox{ derivable en } (a,b) \\
+f(a)=f(b)
+\end{aligned}
+\right\}
+\rightarrow \exists c \in (a,b) | f^\prime(c)=0 }
+</script>
+</p>
+<iframe scrolling="no" title="Teorema de Rolle" src="https://www.geogebra.org/material/iframe/id/uD8Tkr8s/width/517/height/654/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="517px" height="654px" style="border:0px;"> </iframe>
+
 <h3 id="teorema-del-valor-mitja">Teorema del valor mitjà</h3>
 <h3 id="teorema-de-cauchy">Teorema de Cauchy</h3>
 <h2 id="aplicacions-a-lestudi-duna-funcio">Aplicacions a l'estudi d'una funció</h2>
