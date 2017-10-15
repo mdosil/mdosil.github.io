@@ -88,7 +88,7 @@
                         
                             
 <li >
-    <a href="../aplicacionsderivades/">3. Aplicacions de la derivada</a>
+    <a href="../aplicacionsderivades/">3. Estudi de les característiques de una funció. Problemes optimització</a>
 </li>
 
                         
@@ -201,7 +201,7 @@
             
                 <li class="third-level"><a href="#teorema-de-bolzano">Teorema de Bolzano</a></li>
             
-                <li class="third-level"><a href="#teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</a></li>
+                <li class="third-level"><a href="#teorema-dels-valors-intermitjos">Teorema dels Valors intermitjos</a></li>
             
                 <li class="third-level"><a href="#teorema-de-weierstrass">Teorema de Weierstrass</a></li>
             
@@ -210,23 +210,23 @@
             
                 <li class="third-level"><a href="#teorema-de-rolle">Teorema de Rolle</a></li>
             
-                <li class="third-level"><a href="#teorema-del-valor-mitja">Teorema del valor mitjà</a></li>
+                <li class="third-level"><a href="#teorema-del-valor-mig-de-lagrange">Teorema del Valor mig (de Lagrange)</a></li>
             
                 <li class="third-level"><a href="#teorema-de-cauchy">Teorema de Cauchy</a></li>
             
         
-            <li class="second-level"><a href="#aplicacions-a-lestudi-duna-funcio">Aplicacions a l'estudi d'una funció</a></li>
+            <li class="second-level"><a href="#aplicacions-de-la-derivada-a-lestudi-duna-funcio">Aplicacions de la derivada a l'estudi d'una funció</a></li>
             
                 <li class="third-level"><a href="#creixement-i-decreixement">Creixement i decreixement</a></li>
             
-                <li class="third-level"><a href="#maxims-i-minims">Màxims i mínims</a></li>
+                <li class="third-level"><a href="#maxims-i-minims-locals">Màxims i mínims locals</a></li>
             
                 <li class="third-level"><a href="#punts-dinflexio">Punts d'inflexió</a></li>
             
         
             <li class="second-level"><a href="#aplicacions-al-calcul-de-limits">Aplicacions al càlcul de límits</a></li>
             
-                <li class="third-level"><a href="#regla-de-l-hopital">Regla de l'´Hôpital</a></li>
+                <li class="third-level"><a href="#regla-de-lhopital">Regla de l'Hôpital</a></li>
             
         
     
@@ -338,8 +338,8 @@ f\Big(\frac{\pi}{5}\Big)&>0 \rightarrow a \in \Big[\frac{\pi}{5},\frac{\pi}{4}\B
 </p>
 <p>El valor que estem buscant està entre <script type="math/tex">\Big[\frac{\pi}{5},\frac{\pi}{4}\Big]</script>
 </p>
-<h3 id="teorema-dels-valors-intermitjos">Teorema dels valors intermitjos</h3>
-<p>El Teorema dels valors intermitjos és una generalització del Teorema de Bolzano:</p>
+<h3 id="teorema-dels-valors-intermitjos">Teorema dels Valors intermitjos</h3>
+<p>El Teorema dels Valors intermitjos és una generalització del Teorema de Bolzano:</p>
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
@@ -381,16 +381,117 @@ f(a)=f(b)
 \rightarrow \exists c \in (a,b) | f^\prime(c)=0 }
 </script>
 </p>
+<p>Podeu trobar-ne la demostració a la <a href="https://es.wikipedia.org/wiki/Teorema_de_Rolle">wikipèdia</a>.</p>
 <iframe scrolling="no" title="Teorema de Rolle" src="https://www.geogebra.org/material/iframe/id/uD8Tkr8s/width/517/height/654/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="517px" height="654px" style="border:0px;"> </iframe>
 
-<h3 id="teorema-del-valor-mitja">Teorema del valor mitjà</h3>
+<h3 id="teorema-del-valor-mig-de-lagrange">Teorema del Valor mig (de Lagrange)</h3>
+<p>Sigui una funció contínua <script type="math/tex">f(x)</script> en un interval tancat <script type="math/tex">[a,b]</script> i derivable en <script type="math/tex">(a,b)</script>. Llavors podem afirmar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">(a,b)</script> que la seva derivada (o el que és el mateix, el pendent de la recta tangent a <script type="math/tex">x=c</script>) és igual al pendent de la recta <em>secant</em> que uneix els punts <script type="math/tex">(a, f(a))</script> i <script type="math/tex">(b, f(b))</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } [a,b] \\
+f(x) \mbox{ derivable en } (a,b)
+\end{aligned}
+\right\}
+\rightarrow \exists c \in (a,b) | f^\prime(c)= \frac{f(b)-f(a)}{b-a}}
+</script>
+</p>
+<p>on <script type="math/tex">m_{ab}=\frac{f(b)-f(a)}{b-a}</script> és el pendent de la recta secant que uneix els punts <script type="math/tex">(a, f(a))</script> i <script type="math/tex">(b, f(b))</script>. La demostració d'aquest teorema es pot trobar a la <a href="https://es.wikipedia.org/wiki/Teorema_del_valor_medio">wikipèdia</a>.</p>
+<p>Fixem-nos que el Teorema de Rolle enunciat abans és un cas particular del Teorema del Valor mig: si <script type="math/tex">f(a)=f(b)</script>, la recta secant que uneix els punts <script type="math/tex">(a, f(a))</script> i <script type="math/tex">(b, f(b))</script> és <em>horitzonal</em> i en conseqüència, té pendent <script type="math/tex">0</script>. Per tant, el punt <script type="math/tex">c</script> en aquest cas, tindrà derivada <script type="math/tex">0</script>.</p>
+<iframe scrolling="no" title="Teorema del Valor mig (de Lagrange)" src="https://www.geogebra.org/material/iframe/id/ZmEMysaT/width/556/height/525/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="556px" height="525px" style="border:0px;"> </iframe>
+
 <h3 id="teorema-de-cauchy">Teorema de Cauchy</h3>
-<h2 id="aplicacions-a-lestudi-duna-funcio">Aplicacions a l'estudi d'una funció</h2>
+<p>Siguin <script type="math/tex">f(x)</script> i <script type="math/tex">g(x)</script> funcions contínues en un interval tancat <script type="math/tex">[a,b]</script> i derivables en <script type="math/tex">(a,b)</script>. Llavors podem afirmar que existeix un punt <script type="math/tex">c</script> de l'interval <script type="math/tex">(a,b)</script> on es compleix: <script type="math/tex">\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^\prime(c)}{g^\prime(c)}</script>.</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ i } g(x) \mbox{ contínues en } [a,b] \\
+f(x)  \mbox{ i } g(x)\mbox{ derivables en } (a,b)
+\end{aligned}
+\right\}
+\rightarrow \exists c \in (a,b) | \frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^\prime(c)}{g^\prime(c)}}
+</script>
+</p>
+<p>La demostració del Teorema de Cauchy es pot trobar a la <a href="https://es.wikipedia.org/wiki/Teorema_del_valor_medio_de_Cauchy">wikipèdia</a>.</p>
+<p>Notem que el Teorema del Valor mig (de Lagrange) és un cas particular del Teorema de Cauchy en que <script type="math/tex">g(x)=x</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\left.\begin{aligned}
+g(b)=b \\
+g(a)=a \\
+g^\prime(x)=1
+\end{aligned}
+\right\}
+\rightarrow \frac{f(b)-f(a)}{b-a}=f^\prime(c)
+</script>
+</p>
+<h2 id="aplicacions-de-la-derivada-a-lestudi-duna-funcio">Aplicacions de la derivada a l'estudi d'una funció</h2>
+<p>Els teoremes anteriorment anunciats ens permeten aplicar-los a l'estudi d'una funció. Ens fixarem aquí en 3 de les característiques de les funcions, el creixement i decreixement, els extrems locals i els punts d'inflexió.</p>
 <h3 id="creixement-i-decreixement">Creixement i decreixement</h3>
-<h3 id="maxims-i-minims">Màxims i mínims</h3>
+<p>En apartats anteriors vèiem que la derivada en un punt és el pendent de la recta tangent a la funció en aquest punt. Per tant, si la funció és creixent en aquest punt, el pendent de la recta tangent serà positiu (i per tant la derivada també). D'altra banda, si la funció és decreixent en aquest punt, el pendent de la recta tangent serà negatiu així com la seva derivada:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } x=a \\
+f^\prime(a) > 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ és creixent en } x=a}
+</script>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua en } x=a \\
+f^\prime(a) < 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ és decreixent en } x=a}
+</script>
+</p>
+<p>Les implicacions al revés no són certes: per exemple, si una funció és derivable en <script type="math/tex">x=a</script> i és creixent en aquest punt, no podem afirmar que la derivada sigui positiva en aquest punt. Com veurem més endavant, aquesta derivada pot ser també <script type="math/tex">0</script>. Per exemple, la funció <script type="math/tex">f(x)=x^3</script> té derivada zero en <script type="math/tex">x=0</script> i en canvi és creixent en aquest punt:</p>
+<iframe scrolling="no" title="Creixement i decreixement d'una funció" src="https://www.geogebra.org/material/iframe/id/fdrEZM84/width/528/height/399/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="528px" height="399px" style="border:0px;"> </iframe>
+
+<h3 id="maxims-i-minims-locals">Màxims i mínims locals</h3>
+<p>Per tal que hi hagi un màxim o un mínim d'una funció derivable <script type="math/tex">f(x)</script> en un punt <script type="math/tex">x=a</script> necessàriament la derivada de la funció en aquest punt ha de ser zero: <script type="math/tex">f^\prime(a)=0</script>, perquè en cas contrari, la funció seria creixent o decreixent en aquest punt, com acabem de veure:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ té un extrem local } x=a \\
+f(x) \mbox{ és derivable en } x=a
+\end{aligned}
+\right\}
+\rightarrow f^\prime(a)=0}
+</script>
+</p>
+<p>La condició que la derivada valgui <script type="math/tex">0</script> és una <em>condició necessària</em> per tal que en el punt <script type="math/tex">x=a</script> hi pugui haver un extrem local (màxim o mínim).Aquests punts s'anomenen <strong>punts singulars</strong> o <strong>punts estacionaris</strong>.</p>
+<p>Tot i això, aquesta no s és una <em>condició suficient</em>. Això vol dir que el fet que la derivada valgui zero en un punt no ens diu que en aquell punt hi hagi un extrem local. La funció <script type="math/tex">f(x)=x^3</script> té derivada <script type="math/tex">0</script> en <script type="math/tex">x=0</script> i en canvi no té un màxim ni un mínim en aquest punt:</p>
+<iframe scrolling="no" title="ics al cub no extrem local" src="https://www.geogebra.org/material/iframe/id/tTtNVqkG/width/525/height/514/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="525px" height="514px" style="border:0px;"> </iframe>
+
+<p>Per saber si un extrem local és màxim o mínim haurem de fer un estudi del signe de la segona derivada. Es pot demostrar que:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ derivable en } x=a \\
+f^\prime(a) = 0 \\
+f^{\prime \prime}(a) < 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ té un màxim local en } x=a}
+</script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ derivable en } x=a \\
+f^\prime(a) = 0 \\
+f^{\prime \prime}(a) > 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ té un mínim local en } x=a}
+</script>
+</p>
 <h3 id="punts-dinflexio">Punts d'inflexió</h3>
 <h2 id="aplicacions-al-calcul-de-limits">Aplicacions al càlcul de límits</h2>
-<h3 id="regla-de-l-hopital">Regla de l'´Hôpital</h3></div>
+<h3 id="regla-de-lhopital">Regla de l'Hôpital</h3></div>
         
     </div>
 
