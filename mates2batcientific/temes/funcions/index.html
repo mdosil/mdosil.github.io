@@ -221,6 +221,8 @@
             
                 <li class="third-level"><a href="#maxims-i-minims-locals">Màxims i mínims locals</a></li>
             
+                <li class="third-level"><a href="#concavitat-i-convexitat">Concavitat i convexitat</a></li>
+            
                 <li class="third-level"><a href="#punts-dinflexio">Punts d'inflexió</a></li>
             
         
@@ -432,7 +434,7 @@ g^\prime(x)=1
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
-f(x) \mbox{ contínua en } x=a \\
+f(x) \mbox{ contínua i derivable en } x=a \\
 f^\prime(a) > 0
 \end{aligned}
 \right\}
@@ -440,7 +442,7 @@ f^\prime(a) > 0
 </script>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
-f(x) \mbox{ contínua en } x=a \\
+f(x) \mbox{ contínua i derivable en } x=a \\
 f^\prime(a) < 0
 \end{aligned}
 \right\}
@@ -463,14 +465,14 @@ f(x) \mbox{ és derivable en } x=a
 </script>
 </p>
 <p>La condició que la derivada valgui <script type="math/tex">0</script> és una <em>condició necessària</em> per tal que en el punt <script type="math/tex">x=a</script> hi pugui haver un extrem local (màxim o mínim).Aquests punts s'anomenen <strong>punts singulars</strong> o <strong>punts estacionaris</strong>.</p>
-<p>Tot i això, aquesta no s és una <em>condició suficient</em>. Això vol dir que el fet que la derivada valgui zero en un punt no ens diu que en aquell punt hi hagi un extrem local. La funció <script type="math/tex">f(x)=x^3</script> té derivada <script type="math/tex">0</script> en <script type="math/tex">x=0</script> i en canvi no té un màxim ni un mínim en aquest punt:</p>
+<p>Tot i això, aquesta no és una <em>condició suficient</em>. Això vol dir que el fet que la derivada valgui zero en un punt no ens diu que en aquell punt hi hagi un extrem local. La funció <script type="math/tex">f(x)=x^3</script> té derivada <script type="math/tex">0</script> en <script type="math/tex">x=0</script> i en canvi no té un màxim ni un mínim en aquest punt:</p>
 <iframe scrolling="no" title="ics al cub no extrem local" src="https://www.geogebra.org/material/iframe/id/tTtNVqkG/width/525/height/514/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="525px" height="514px" style="border:0px;"> </iframe>
 
 <p>Per saber si un extrem local és màxim o mínim haurem de fer un estudi del signe de la segona derivada. Es pot demostrar que:</p>
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
-f(x) \mbox{ derivable en } x=a \\
+f(x) \mbox{ contínua i derivable en } x=a \\
 f^\prime(a) = 0 \\
 f^{\prime \prime}(a) < 0
 \end{aligned}
@@ -481,7 +483,7 @@ f^{\prime \prime}(a) < 0
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
-f(x) \mbox{ derivable en } x=a \\
+f(x) \mbox{ contínua i derivable en } x=a \\
 f^\prime(a) = 0 \\
 f^{\prime \prime}(a) > 0
 \end{aligned}
@@ -489,7 +491,71 @@ f^{\prime \prime}(a) > 0
 \rightarrow f(x) \mbox{ té un mínim local en } x=a}
 </script>
 </p>
+<p>En cas que la segona derivada fos també <script type="math/tex">0</script>, <script type="math/tex">f^{\prime \prime}(a)=0</script>, hauríem de continuar derivant. Si la tercera és no nul.la, no hi ha extrem local en <script type="math/tex">x=a</script>. Si és zero hauríem de buscar la quarta derivada. En cas que fos positiva, en <script type="math/tex">x=a</script> hi hauria un mínim local, i si fos negativa un màxim local. Si la quarta fos també zero, hauríem de continuar el procés. Com a regla general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f^\prime (a)&=0 \rightarrow
+\begin{cases} f^{\prime \prime} (a)>0 \rightarrow \mbox{ mínim local en } x=a \\
+     f^{\prime \prime} (a)<0 \rightarrow \mbox{ màxim local en } x=a \\
+     f^{\prime \prime} (a)=0 \rightarrow
+     \begin{cases} f^{\prime \prime \prime} (a)\ne 0 \rightarrow \mbox{ no hi ha extrem local en } x=a \\
+          f^{\prime \prime \prime} (a)=0 \rightarrow
+          \begin{cases} f^{iv} (a) > 0 \rightarrow \mbox{ mínim local en } x=a \\
+          f^{iv} (a) < 0 \rightarrow \mbox{ màxim local en } x=a \\
+               f^{iv} (a)=0 \rightarrow
+                 \begin{cases}
+                 ...
+                 \end{cases}
+              \end{cases}
+         \end{cases}
+    \end{cases}
+    \end{align}</script>
+</p>
+<p>Resumint: si <script type="math/tex">n</script> és la primera derivada no nul.la en <script type="math/tex">x=a</script>: <script type="math/tex">f^{n}(a)\ne 0 </script> llavors:</p>
+<ul>
+<li>Si <script type="math/tex">n</script> és imparell <strong>no hi ha extrem local</strong></li>
+<li>Si <script type="math/tex">n</script> és parell:
+<script type="math/tex; mode=display">\begin{align}
+f^n(a)>0 \rightarrow \mbox{ mínim local en }x=a\\
+f^n(a)<0 \rightarrow \mbox{ màxim local en }x=a
+\end{align}</script>
+</li>
+</ul>
+<h3 id="concavitat-i-convexitat">Concavitat i convexitat</h3>
+<p>Per saber si una funció és cóncava o convexa en un punt, cal buscar el signe de la segona derivada:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua i dues vegades derivable en } x=a \\
+f^{\prime \prime}(a) > 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ és còncava en } x=a}
+</script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ contínua i dues vegades derivable en } x=a \\
+f^{\prime \prime}(a) < 0
+\end{aligned}
+\right\}
+\rightarrow f(x) \mbox{ és convexa en } x=a}
+</script>
+</p>
+<p>Si ens fixem bé, en el cas de mínims locals, la funció és sempre còncava en el punt (segona derivada positiva) i en el cas de màxims, sempre és convexa (segona derivada negativa).</p>
 <h3 id="punts-dinflexio">Punts d'inflexió</h3>
+<p>Un punt d'inflexió és aquell punt on la funció passa de ser còncava a convexa o a l'inrevés. La funció <script type="math/tex">f(x)=x^3</script> de l'exemple anterior té doncs un punt d'inflexió convex-còncau en <script type="math/tex">x=0</script>. Per trobar aquests punts haurem d'aplicar un procediment semblant a l'emprat quan buscàvem els màxims i els mínims locals. Es pot demostrar que:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+f(x) \mbox{ té un punt d'inflexió } x=a \\
+f(x) \mbox{ dues vegades derivable en } x=a
+\end{aligned}
+\right\}
+\rightarrow f^{\prime \prime}(a)=0}
+</script>
+</p>
 <h2 id="aplicacions-al-calcul-de-limits">Aplicacions al càlcul de límits</h2>
 <h3 id="regla-de-lhopital">Regla de l'Hôpital</h3></div>
         
