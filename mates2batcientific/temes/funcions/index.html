@@ -228,7 +228,7 @@
         
             <li class="second-level"><a href="#aplicacions-al-calcul-de-limits">Aplicacions al càlcul de límits</a></li>
             
-                <li class="third-level"><a href="#regla-de-lhopital">Regla de l'Hôpital</a></li>
+                <li class="third-level"><a href="#regla-de-lhopital-pel-cas-frac00">Regla de l'Hôpital pel cas \frac{0}{0}</a></li>
             
         
     
@@ -521,6 +521,35 @@ f^n(a)<0 \rightarrow \mbox{ màxim local en }x=a
 \end{align}</script>
 </li>
 </ul>
+<p><strong>Exemple 3</strong></p>
+<p>Digues si la funció <script type="math/tex">f(x)=(x-1)^4</script> té algun extrem local.</p>
+<ul>
+<li>Busquem la primera derivada i la igualem a zero:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">f^\prime(x)=3(x-1)^3=0 \rightarrow  x=1 \mbox{ punt singular}</script>
+</p>
+<ul>
+<li>Busquem la segona derivada i l'avaluem en <script type="math/tex">x=1</script>:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">f^{\prime \prime}(x)=9(x-1)^2 \rightarrow  f^{\prime \prime}(1)=0 \mbox{ cal buscar la 3a derivada}</script>
+</p>
+<ul>
+<li>Busquem la tercera derivada i l'avaluem en <script type="math/tex">x=1</script>:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">f^{\prime \prime \prime}(x)=18(x-1) \rightarrow  f^{\prime \prime \prime}(1)=0 \mbox{ cal buscar la 4a derivada}</script>
+</p>
+<ul>
+<li>Busquem la quarta derivada i l'avaluem en <script type="math/tex">x=1</script>:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">f^{iv}(x)=18 \rightarrow  f^{iv}(1)=18 > 0 \mbox{ en } x=1 \mbox{ hi ha un mínim local }</script>
+</p>
+<p>Anem a representar la funció per a comprovar-ho:</p>
+<iframe scrolling="no" title="minim local" src="https://www.geogebra.org/material/iframe/id/AsATwqXC/width/434/height/609/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="434px" height="609px" style="border:0px;"> </iframe>
+
 <h3 id="concavitat-i-convexitat">Concavitat i convexitat</h3>
 <p>Per saber si una funció és cóncava o convexa en un punt, cal buscar el signe de la segona derivada:</p>
 <p>
@@ -544,8 +573,9 @@ f^{\prime \prime}(a) < 0
 </script>
 </p>
 <p>Si ens fixem bé, en el cas de mínims locals, la funció és sempre còncava en el punt (segona derivada positiva) i en el cas de màxims, sempre és convexa (segona derivada negativa).</p>
+<p>En l'exemple anterior, la segona derivada de la funció <script type="math/tex">f(x)=9(x-1)^2</script> sempre és positiva (excepte en el punt <script type="math/tex">x=1</script> que val zero). Per tant, podem afirmar que la funció serà còncava en tot el seu domini.</p>
 <h3 id="punts-dinflexio">Punts d'inflexió</h3>
-<p>Un punt d'inflexió és aquell punt on la funció passa de ser còncava a convexa o a l'inrevés. La funció <script type="math/tex">f(x)=x^3</script> de l'exemple anterior té doncs un punt d'inflexió convex-còncau en <script type="math/tex">x=0</script>. Per trobar aquests punts haurem d'aplicar un procediment semblant a l'emprat quan buscàvem els màxims i els mínims locals. Es pot demostrar que:</p>
+<p>Un punt d'inflexió és aquell punt on la funció passa de ser còncava a convexa o a l'inrevés. Es pot demostrar que:</p>
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black] {\left.\begin{aligned}
@@ -556,8 +586,58 @@ f(x) \mbox{ dues vegades derivable en } x=a
 \rightarrow f^{\prime \prime}(a)=0}
 </script>
 </p>
+<p>Com a regla general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f^{\prime \prime} (a)&=0 \rightarrow
+\begin{cases} f^{\prime \prime \prime} (a) \ne 0 \rightarrow \mbox{ punt d'inflexió en } x=a \\
+     f^{\prime \prime \prime} (a)=0 \rightarrow
+     \begin{cases} f^{iv} (a)\ne 0 \rightarrow \mbox{ no hi ha punt d'inflexió en } x=a \mbox{ (la funció o bé és còncava o convexa en aquest punt) }\\
+          f^{iv} (a)=0 \rightarrow
+          \begin{cases} f^{v} (a) \ne 0 \rightarrow \mbox{ punt d'inflexió } x=a \\
+               f^{v} (a)=0 \rightarrow
+                 \begin{cases}
+                 ...
+                 \end{cases}
+              \end{cases}
+         \end{cases}
+    \end{cases}
+    \end{align}</script>
+</p>
+<p>En general:</p>
+<p>si <script type="math/tex">n</script> és la primera derivada (després de la segona) no nul.la en <script type="math/tex">x=a</script>: <script type="math/tex">f^{n}(a)\ne 0 </script> llavors:</p>
+<ul>
+<li>Si <script type="math/tex">n</script> és imparell <strong><script type="math/tex">a</script> és punt d'inflexió</strong></li>
+<li>Si <script type="math/tex">n</script> és parell: <strong><script type="math/tex">a</script> NO és punt d'inflexió</strong> (la funció serà còncava o convexa en aquest punt).  </li>
+</ul>
+<p>La funció <script type="math/tex">f(x)=x^3</script> de l'exemple anterior té doncs un punt d'inflexió convex-còncau en <script type="math/tex">x=0</script>, ja que <script type="math/tex">f^{\prime \prime \prime} (x)=6 \ne 0</script> és la primera derivada diferent de zero i té índex imparell.</p>
 <h2 id="aplicacions-al-calcul-de-limits">Aplicacions al càlcul de límits</h2>
-<h3 id="regla-de-lhopital">Regla de l'Hôpital</h3></div>
+<p>El <a href="http://mdosil.cat/mates2batcientific/temes/funcions/#teorema-de-cauchy">Teorema de Cauchy</a> ens servirà per a calcular límits amb dues indeterminacions concretes que abans no podíem calcular. Anem a veure-ho seguidament.</p>
+<h3 id="regla-de-lhopital-pel-cas-frac00">Regla de l'Hôpital pel cas <script type="math/tex">\frac{0}{0}</script>
+</h3>
+<p>Considerem dues funcions <script type="math/tex">f(x)</script> i <script type="math/tex">g(x)</script> contínues i derivables en un entorn del punt <script type="math/tex">x=a</script> de radi <script type="math/tex">r</script>: <script type="math/tex">E_a(r)</script>. Suposem també que <script type="math/tex">f(a)=g(a)=0</script> i que existeix el límit <script type="math/tex">\lim_{x\to a} \frac{f^\prime(x)}{g^\prime(x)}</script>. Considerem ara el límit:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} \frac{f(x)}{g(x)}</script>
+</p>
+<p>Aquest límit, com que hem imposat la condició <script type="math/tex">f(a)=g(a)=0</script> és indeterminat:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} \frac{f(x)}{g(x)}=\frac{0}{0}=IND</script>
+</p>
+<p>En aquest cas, es pot <a href="https://ca.wikipedia.org/wiki/Regla_de_L%27Hôpital#Demostraci.C3.B3">demostrar</a> que aquest límit existeix i coincideix amb el límit del quocient de derivades:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a} \frac{f^\prime(x)}{g^\prime(x)}}
+</script>
+</p>
+<p><strong>Exemple 4</strong></p>
+<p>Calcula el límit:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} \frac{x^3\sin x}{(1-\cos x)^2}=\frac{0}{0} IND</script>
+</p>
+<p>Apliquem l'Hôpital ja que <script type="math/tex">f(0)=g(0)=0</script> on <script type="math/tex">f(x)=x^3 \sin x</script> i <script type="math/tex">g(x)=(1-\cos x)^2</script>. Aquestes dues funcions són contínues i derivables en tot el seu domini. Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} \frac{x^3\sin x}{(1-\cos x)^2}= \lim_{x \to 0} \frac{-x^3 \sin x +3x^2 \cos x+6x \sin x+3x^2 \cos x}{2(1-\cos x)\cos x + 2 (\sin x)^2}=\frac{0}{2}=0</script>
+</p></div>
         
     </div>
 
