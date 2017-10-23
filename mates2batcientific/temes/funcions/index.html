@@ -694,7 +694,47 @@ f^{\prime \prime} (a)&=0 \rightarrow
 \end{align}</script>
 </p>
 <p>Cal trobar ara el signe de l'infinit:</p>
-<p><strong>Exemple 8</strong></p></div>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\mbox{Signe }\infty \rightarrow
+\begin{cases} \lim_{x\to 0^+} (x^2 \cos x+ 2x \sin x)=0^+\\
+\lim_{x\to 0^-} (x^2 \cos x+ 2x \sin x)=0^+
+    \end{cases}
+    \end{align}</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} \Big(\frac{1}{x^2}-\frac{1}{\sin x}\Big)=+\infty</script>
+</p>
+<p><strong>Exemple 8</strong></p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} (\sin x)^x=0^0</script>
+</p>
+<p>Fem un canvi de variable i apliquem logaritmes a banda i banda:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 0} (\sin x)^x &=  a\\
+ln \Big( \lim_{x\to 0} (\sin x)^x \Big) &= ln a\\
+\lim_{x\to 0} ln \Big((\sin x)^x \Big) &= ln a\\
+\lim_{x\to 0} x \cdot ( ln  (\sin x) ) &= 0 \cdot (-\infty)\\
+\end{align}</script>
+</p>
+<p>Fem una transformació algebraica a l'expressió de la funció per poder aplicar la regla de l'Hôpital:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 0} x \cdot ( ln (\sin x)) &=  \lim_{x\to 0} \frac{ln (\sin x)}{\frac{1}{x}}=\frac{\infty}{\infty}\xrightarrow[]{Hôpital}\\
+&=\lim_{x\to 0}\frac{\frac{1}{\sin x}\cdot \cos x}{\frac{-1}{x^2}}=\lim_{x\to 0}\frac{-x^2 \cos x}{\sin x}=\frac{0}{0}\xrightarrow[]{Hôpital}\\
+&=\lim_{x\to 0}\frac{-2x \cos x+x^2 \sin x}{\cos x}=\frac{0}{1}=0
+\end{align}</script>
+</p>
+<p>Ara ens cal desfer el canvi de variable per acabar d'avaluar el límit:</p>
+<p>
+<script type="math/tex; mode=display">ln a = 0 \rightarrow a=e^0=1</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} (\sin x)^x=1</script>
+</p></div>
         
     </div>
 
