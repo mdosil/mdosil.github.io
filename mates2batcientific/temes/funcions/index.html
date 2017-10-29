@@ -637,11 +637,15 @@ f^{\prime \prime} (a)&=0 \rightarrow
 <p><strong>Exemple 4</strong></p>
 <p>Calcula el límit:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to 0} \frac{x^3\sin x}{(1-\cos x)^2}=\frac{0}{0} IND</script>
+<script type="math/tex; mode=display">\lim_{x\to 0} \frac{\ln(\cos 3x)}{\ln (\cos 2x)}=\frac{0}{0} IND</script>
 </p>
-<p>Apliquem l'Hôpital ja que <script type="math/tex">f(0)=g(0)=0</script> on <script type="math/tex">f(x)=x^3 \sin x</script> i <script type="math/tex">g(x)=(1-\cos x)^2</script>. Aquestes dues funcions són contínues i derivables en tot el seu domini. Per tant:</p>
+<p>Apliquem l'Hôpital ja que <script type="math/tex">f(0)=g(0)=0</script> on <script type="math/tex">f(x)=\ln(\cos 3x)</script> i <script type="math/tex">g(x)=\ln (\cos 2x)</script>. Aquestes dues funcions són contínues i derivables en tot el seu domini. Per tant:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to 0} \frac{x^3\sin x}{(1-\cos x)^2}= \lim_{x \to 0} \frac{-x^3 \sin x +3x^2 \cos x+6x \sin x+3x^2 \cos x}{2(1-\cos x)\cos x + 2 (\sin x)^2}=\frac{0}{2}=0</script>
+<script type="math/tex; mode=display">\lim_{x\to 0} \frac{\ln(\cos 3x)}{\ln (\cos 2x)} = \lim_{x \to 0} \frac{\frac{-3\sin 3x}{\cos 3x}}{\frac{-2\sin 2x}{\cos 2x}}=\lim_{x \to 0} \frac{3 \sin 3x \cdot \cos 2x}{2 \cos 3x \cdot \sin 2x}=\lim_{x \to 0} \frac{3 \tan 3x}{2 \tan 2x }=\frac{0}{0}</script>
+</p>
+<p>Tornem a aplicar la regla de l'Hôpital una segona vegada i tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 0} \frac{\ln(\cos 3x)}{\ln (\cos 2x)} = \lim_{x\to 0} \frac{3(1+\tan^2 3x)\cdot 3}{2(1+\tan^2 2x)\cdot 2}=\frac{9}{4}</script>
 </p>
 <h3 id="regla-de-lhopital-pel-cas-fracinftyinfty">Regla de l'Hôpital pel cas <script type="math/tex">\frac{\infty}{\infty}</script>
 </h3>
@@ -682,7 +686,7 @@ f^{\prime \prime} (a)&=0 \rightarrow
 <p><strong>Exemple 6</strong></p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-\lim_{x\to 1^+} ln(x-1) &=0 \cdot (-\infty)=\lim_{x\to 1^+} \frac{ln(x-1)}{\frac{1}{x-1}}=\frac{\infty}{\infty}\xrightarrow[]{Hôpital}\\
+\lim_{x\to 1^+} (x-1)ln(x-1) &=0 \cdot (-\infty)=\lim_{x\to 1^+} \frac{ln(x-1)}{\frac{1}{x-1}}=\frac{\infty}{\infty}\xrightarrow[]{Hôpital}\\
 &=lim_{x\to 1^+} \frac{\frac{1}{x-1}}{\frac{-1}{(x-1)^2}}=lim_{x\to 1^+} \frac{-(x-1)^2}{x-1}=0
 \end{align}</script>
 </p>
