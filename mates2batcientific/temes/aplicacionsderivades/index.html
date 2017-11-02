@@ -136,7 +136,7 @@
                         
                             
 <li >
-    <a href="../ditanciesangles/">11. Distàncies i angles</a>
+    <a href="../distanciesangles/">11. Distàncies i angles</a>
 </li>
 
                         
@@ -202,6 +202,12 @@
             
                 <li class="third-level"><a href="#signe-de-la-funcio">Signe de la funció</a></li>
             
+                <li class="third-level"><a href="#simetries">Simetries</a></li>
+            
+                <li class="third-level"><a href="#assimptotes">Assímptotes</a></li>
+            
+                <li class="third-level"><a href="#creixement-i-decreixement">Creixement i decreixement</a></li>
+            
         
             <li class="second-level"><a href="#problemes-doptimitzacio">Problemes d'optimització.</a></li>
             
@@ -218,9 +224,133 @@
 <script type="math/tex; mode=display">f(x)=\frac{x^2-2x+2}{x-1}</script>
 </p>
 <h3 id="domini">Domini</h3>
-<p>El domini dependrà de cada funció</p>
+<p>El domini dependrà de cada funció. Si voleu fer un repàs sobre dominis dels diferents tipus de funcions, podeu repassar els <a href="http://mdosil.cat/mates1batcientific/temes/funcions/#domini-duna-funcio">apunts de l'any passat</a>.</p>
+<p>En el cas del nostre exemple, el domini són tots els nombres reals menys aquells punts que anul.len el denominador:</p>
+<p>
+<script type="math/tex; mode=display">D=\mathbb{R}-{1}</script>
+</p>
 <h3 id="signe-de-la-funcio">Signe de la funció</h3>
-<p>bla bla</p>
+<p>Ens interessa agafar el pla cartesià i ratllar aquelles zones a les quals no hi hagi funció. Per fer-ho, ens caldrà trobar els zeros de la funció i ajuntar-los amb els punts que <strong>no són del domini</strong> i dividir el pla en sectors. Llavors prendrem un punt de cada un dels sectors i mirarem el signe de la funció. Si la funció és contínua, podrem assegurar que el signe es manté en cada regió.</p>
+<p>Pel que fa a la nostra funció:</p>
+<p>Per trobar-ne els zeros cal resoldre l'equació:</p>
+<p>
+<script type="math/tex; mode=display">x^2-2x+2=0 \rightarrow x= \frac{2 \pm \sqrt{4-8}}{2}= \nexists</script>
+</p>
+<p>Com que la funció no s'anul.la mai, només cal que dividim el pla en dos intervals de <script type="math/tex">x</script> i mirem quin signe hi té la funció allà:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+(-\infty, 1) &\rightarrow f(0)<0 \\
+(1, +\infty) &\rightarrow f(2)>0 \\
+  \end{align}</script>
+</p>
+<p>Per tant, començarem la nostra representació gràfica assenyalant el punt que no és del domini i la regió on no hi ha funció (pintada en blau):</p>
+<iframe scrolling="no" title="signe d'una funció" src="https://www.geogebra.org/material/iframe/id/x8XEmYzc/width/513/height/440/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="513px" height="440px" style="border:0px;"> </iframe>
+
+<h3 id="simetries">Simetries</h3>
+<p>A vegades és útil d'estudiar les simetries de les funcions, ja que si una funció és simètrica només ens cal representar-ne un tros. Anem a recordar el dos tipus de simetries que existeixen:</p>
+<ul>
+<li>
+<p>Una funció és <strong>parell</strong> si és simètrica respecte l'eix de les ordenades. Algebraicament vol dir que compleix: <script type="math/tex">f(x)=f(-x)</script>. Un exemple de funció parell és: <script type="math/tex">f(x)=x^2</script>. A la pràctica, si pleguem la funció per l'eix de les <script type="math/tex">y</script> les dues parts coincideixen.</p>
+</li>
+<li>
+<p>Una funció és <strong>senar</strong> si és simètrica respecte l'origen de coordenades i es compleix que: <script type="math/tex">f(x)=-f(-x)</script>. Un exemple n'és <script type="math/tex">f(x)=x^3</script>. A la pràctica vol dir que si pleguem primer la funció per l'eix de les <script type="math/tex">x</script> i després per l'eix de les <script type="math/tex">y</script> les branques de la gràfica coincideixen.</p>
+</li>
+</ul>
+<p>En el cas del nostre exemple:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f(x) &\ne f(-x) \\
+f(x) &\ne - f(-x) \\
+  \end{align}</script>
+</p>
+<p>Per tant, no hi ha simetries.</p>
+<h3 id="assimptotes">Assímptotes</h3>
+<p>El <a href="http://mdosil.cat/mates1batcientific/temes/limits/#discontinuitat-assimptotica">curs passat</a> vam parlar de les assímptotes horitzontals i verticals d'una funció molt breument. Una funció qualsevol pot tenir 3 tipus d'assímptotes:</p>
+<ul>
+<li><strong>Verticals</strong>. Això passa si al calcular el límit quan ens acostem a cert valor de <script type="math/tex">x</script> el resultat és infinit. Calculem aquests límits amb punts que no pertanyen al domimi de la funció. Si <script type="math/tex">a</script> no pertany al domini de <script type="math/tex">f(x)</script> llavors:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a }f(x)=\pm \infty</script>
+</p>
+<ul>
+<li><strong>Horitzontals</strong>. Per trobar les assímptotes horitzontals cal mirar què val el límit de la funció a <script type="math/tex">+\infty</script> i a <script type="math/tex">-\infty</script>:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\mbox{ si } \lim_{x\to +\infty}f(x)=a &\rightarrow \mbox{ en }y=a \mbox{ hi ha una assímptota horitzontal per la dreta}  \\
+\mbox{ si } \lim_{x\to -\infty}f(x)=a &\rightarrow \mbox{ en }y=a \mbox{ hi ha una assímptota horitzontal per l'esquerra}  \\
+  \end{align}</script>
+</p>
+<ul>
+<li><strong>Oblícues</strong>. Una assímptota oblícua tindrà l'equació d'una recta: <script type="math/tex">y=mx+n</script>. Hi ha assímptotes oblícues sempre que no n'hi hagi d'horitzontals. Ens caldrà doncs, trobar els paràmetres <script type="math/tex">m</script> i <script type="math/tex">n</script> de la manera següent:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+m&= \lim_{x\to +\infty} \frac{f(x)}{x}\\
+ n&= \lim_{x\to +\infty} (f(x)-mx)\\
+  \end{align}</script>
+</p>
+<p>Tornem a la funció <script type="math/tex">f(x)=\frac{x^2-2x+2}{x-1}</script>:</p>
+<ul>
+<li>Assímptotes verticals. És possible que en tingui perquè el punt <script type="math/tex">x=1</script> no pertany al domini. Anem a veure-ho:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 1} \frac{x^2-2x+2}{x-1}=\frac{1}{0}=\infty</script>
+</p>
+<p>Caldrà veure ara el signe d'aquest infinit:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1^-} \frac{x^2-2x+2}{x-1}&=\frac{1}{0^-}=-\infty\\
+\lim_{x\to 1^+} \frac{x^2-2x+2}{x-1}&=\frac{1}{0^+}=+\infty\\
+\end{align}</script>
+</p>
+<p>Per tant, en x=1 té una assímptota vertical per l'esquerra cap a <script type="math/tex">-\infty</script> i una vertical per la dreta cap a <script type="math/tex">+\infty</script>
+</p>
+<ul>
+<li>Assímptotes horitzonals:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to +\infty} \frac{x^2-2x+2}{x-1}&=+\infty\\
+\lim_{x\to -\infty} \frac{x^2-2x+2}{x-1}&=-\infty\\
+  \end{align}</script>
+</p>
+<p>No hi ha assímptotes horitzontals.</p>
+<ul>
+<li>Assímptotes oblícues:</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+m&=\lim_{x\to +\infty} \frac{f(x)}{x}=\lim_{x\to +\infty} \Big(\frac{x^2-2x+2}{x^2-x}\Big)=1\\
+n&=\lim_{x\to +\infty} \Big(f(x)-mx \Big)=\lim_{x\to +\infty} \Big(\frac{x^2-2x+2}{x-1}-x\Big)=\lim_{x\to +\infty} \Big(\frac{x^2-2x+2-x(x-1)}{x-1}\Big)=\lim_{x\to +\infty}\frac{-x+2}{x-1}=-1\\
+  \end{align}</script>
+</p>
+<p>Hi ha una assímptota oblícua en <script type="math/tex">y=x-1</script>.</p>
+<p>Anem a dibuixar la recta de l'assímptota oblícua:</p>
+<iframe scrolling="no" title="assímptotes d'una funció" src="https://www.geogebra.org/material/iframe/id/MxRupWf6/width/513/height/440/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="513px" height="440px" style="border:0px;"> </iframe>
+
+<h3 id="creixement-i-decreixement">Creixement i decreixement</h3>
+<p>Vèiem en el <a href="http://mdosil.cat/mates2batcientific/temes/funcions/#creixement-i-decreixement">tema anterior</a> que el creixement i decreixement d'una funció el determinava el signe de la 1a derivada. El procediment serà el següent:</p>
+<ul>
+<li>Calculem la derivada de la funció</li>
+<li>Busquem els punts pels quals <script type="math/tex">f^\prime (x)=0</script>
+</li>
+<li>Partim les <script type="math/tex">x</script> en diferents intervals, agafant els punts que no són del domini i els zeros de la derivada primera.</li>
+<li>Calculem el signe de la derivada en cadascun dels intervals per saber si la funció creix o decreix (si <script type="math/tex">f^\prime (x)>0</script> la funció serà creixent en l'interval, en cas contrari, decreixent).</li>
+</ul>
+<p>Per la nostra funció <script type="math/tex">f(x)=\frac{x^2-2x+2}{x-1}</script>:</p>
+<p>
+<script type="math/tex; mode=display">f^\prime(x)=\frac{x^2-2x}{(x-1)^2}\rightarrow \frac{x^2-2x}{(x-1)^2}=0 \rightarrow x_1=0, x_2=2}</script>
+</p>
+<p>Hem trobat 2 punts singulars on la derivada s'anul.la. Agafem aquests punts, juntament amb el punt que no era del domini (<script type="math/tex">x=1</script>) i construïm 4 intervals. A cadascun d'ells triem un punt i comprovem el signe de la 1a derivada:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+(-\infty,0)&\rightarrow f^\prime(-1)>0\rightarrow f(x) \mbox{ és creixent}\\
+(0,1)&\rightarrow f^\prime(\frac{1}{2})<0\rightarrow f(x) \mbox{ és decreixent}\\
+(1,2)&\rightarrow f^\prime(\frac{3}{2})<0\rightarrow f(x) \mbox{ és decreixent}\\
+(2,+\infty)&\rightarrow f^\prime(3)>0\rightarrow f(x) \mbox{ és creixent}\\
+  \end{align}</script>
+</p>
 <h2 id="problemes-doptimitzacio">Problemes d'optimització.</h2></div>
         
     </div>
