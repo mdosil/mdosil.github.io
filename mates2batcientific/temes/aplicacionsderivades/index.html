@@ -211,7 +211,7 @@
                 <li class="third-level"><a href="#grafica-de-la-funcio">Gràfica de la funció</a></li>
             
         
-            <li class="second-level"><a href="#problemes-doptimitzacio">Problemes d'optimització.</a></li>
+            <li class="second-level"><a href="#problemes-doptimitzacio">Problemes d'optimització</a></li>
             
         
     
@@ -381,7 +381,60 @@ f^{\prime \prime}(2)>0 \rightarrow \mbox{ mínim local en el punt} (2, 2)\\
 <p>Amb totes les dades que hem anat obtenint dels passos anteriors, ja estem en disposició de dibuixar la funció. És possible que hàgim de buscar un parell de punts més per poder-la traçar amb més precisió, també.</p>
 <iframe scrolling="no" title="funció f(x)=(x^-2x+2)/(x-1)" src="https://www.geogebra.org/material/iframe/id/wWK3agWB/width/543/height/439/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="543px" height="439px" style="border:0px;"> </iframe>
 
-<h2 id="problemes-doptimitzacio">Problemes d'optimització.</h2></div>
+<h2 id="problemes-doptimitzacio">Problemes d'optimització</h2>
+<p>Els problemes d'optimització es treballen aquí perquè s'utilitza la derivada i les propietats de les funcions per a maximitzar o minimitzar una quantitat donada. <a href="http://www.sangakoo.com/ca/temes/optimitzacio">D'exemples n'hi ha molts</a> i cada problema té les seves pròpies característiques. Tota manera, cal seguir un procediment ordenat de resolució:</p>
+<ol>
+<li>Comprensió de l'enunciat i si cal dibuix esquemàtic (sobretot si el problema involucra quantitats geomètriques)</li>
+<li>Determinació de les variables del problema</li>
+<li>Planteig de la funció a optimitzar</li>
+<li>Incorporació d'informació extra per a simplificar la funció a optimitzar</li>
+<li>Derivar la funció a optimitzar respecte la variable corresponent i trobar el punt pel qual la funció es maximitza o minimitza (segons sigui el cas).</li>
+<li>Interpretació del resultat i solució.</li>
+</ol>
+<p>Intentarem seguir aquest esquema en l'exemple següent:</p>
+<p><strong>Exemple 1</strong></p>
+<p>Entre tots els cilindres de volum <script type="math/tex">4\pi</script> trobeu el que suposi menys cost a l'hora de construir-lo.</p>
+<ol>
+<li>Entenem que menys cost a l'hora de construir-lo vol dir que tingui la mínima superfície possible amb el mateix volum, que és <script type="math/tex">4\pi</script>. Anem a fer un dibuix esquemàtic:</li>
+</ol>
+<iframe scrolling="no" title="cilindre" src="https://www.geogebra.org/material/iframe/id/rjbzB79s/width/489/height/413/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="489px" height="413px" style="border:0px;"> </iframe>
+
+<ol>
+<li>Les variables del problema en aquest cas són el radi <script type="math/tex">R</script> i l'alçada <script type="math/tex">H</script>.</li>
+<li>La funció a optimitzar serà la despesa total de material a l'hora de construir-lo i això depèn de l'àrea total del cilindre:</li>
+</ol>
+<p>
+<script type="math/tex; mode=display">A(R,H)=2\pi R^2+2\pi R H</script>
+</p>
+<ol>
+<li>La nostra funció depèn de dues variables, però tenim una informació suplementària que ens dóna l'enunciat que fa que en puguem eliminar una. Sabem que el volum total del cilindre és <script type="math/tex">4\pi</script>. Per tant:</li>
+</ol>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+V&=\pi R^2 H = 4\pi \rightarrow H=\frac{4}{R^2}\\
+A(R)&= 2 \pi R^2+ 2 \pi R \cdot \frac{4}{R^2}=2 \pi R^2+\frac{8\pi}{R}
+\end{align}</script>
+</p>
+<p>I ara tenim que la funció a optimitzar només depèn d'un paràmetre, <script type="math/tex">R</script>.</p>
+<ol>
+<li>Derivem la funció, igualem la primera derivada a zero i mirem per a quins valors la segona derivada és positiva (es tracta de <strong>minimitzar</strong> la superfície):</li>
+</ol>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+A^\prime(R)&= 4 \pi R-\frac{8\pi}{R^2}=\frac{4\pi R^3-8\pi}{R^2}\\
+A^\prime(R)&=0 \rightarrow 4\pi R^3-8\pi=0 \rightarrow ... \rightarrow R=\sqrt[3]{2}\\
+A^{\prime \prime} (R)=\frac{12\pi R^2 \cdot R^2-2R(4\pi R^3-8\pi)}{R^4}=...=\frac{4\pi R^3+16 \pi}{R^3}\\
+A^{\prime \prime}(\sqrt[3]{2})>0\rightarrow \mbox{ En } R=\sqrt[3]{2} \mbox{ hi ha un mínim local}
+\end{align}</script>
+</p>
+<p>Substituïm i trobem el valor de l'alçada del cilindre per aquest radi:</p>
+<p>
+<script type="math/tex; mode=display">H=\frac{4}{R^2}=\frac{4}{\sqrt[3]{2^2}}=...=2\sqrt[3]{2}</script>
+</p>
+<ol>
+<li>El cilindre que minimitza l'àrea i que té volum <script type="math/tex">4\pi</script> té dimensions: <script type="math/tex">H=2\sqrt[3]{2}</script> i <script type="math/tex">R=\sqrt[3]{2}</script>
+</li>
+</ol></div>
         
     </div>
 
