@@ -252,8 +252,13 @@
         }, 
         {
             "location": "/temes/integrals/", 
-            "text": "", 
+            "text": "Tema 4: Integrals", 
             "title": "4. Integrals"
+        }, 
+        {
+            "location": "/temes/integrals/#tema-4-integrals", 
+            "text": "", 
+            "title": "Tema 4: Integrals"
         }, 
         {
             "location": "/temes/matrius/", 
