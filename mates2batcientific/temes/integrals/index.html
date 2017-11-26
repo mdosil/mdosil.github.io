@@ -335,6 +335,21 @@ F(x)&=\frac{x^3}{3}+5 \mbox{ també ho és}
 </tr>
 </tbody>
 </table>
+<p><strong>Exemple 2</strong></p>
+<p>Anem a calcular <script type="math/tex">\int \frac{1}{2x} dx</script>. Tal i com hem vist a dalt, totes les primitives d'una funció difereixen en una constant. Però aquí sembla que no es compleixi aquesta regla. Podem integrar aquesta funció de dues maneres diferents:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\int \frac{1}{2x} dx =
+\begin{cases} \frac{1}{2}\int 2 \frac{1}{2x}dx = \frac{1}{2} \ln (2x)+C\\
+\frac{1}{2} \int {1}{x} dx=\frac{1}{2} \ln x +C
+    \end{cases}
+    \end{align}</script>
+</p>
+<p>Semblaria que les dues funcions són diferents i que hi hauria dues primitives per a la mateixa funció. Però veiem que són la mateixa i només difereixen en una constant. Aplicant les lleis dels logaritmes a la primera expressió tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\frac{1}{2} \ln (2x)+C=\frac{1}{2}(\ln 2 + \ln x)+C=\frac{\ln 2}{2}+ \frac{1}{2} \ln x +C = \frac{1}{2} \ln x + C^\prime</script>
+</p>
+<p>ja que <script type="math/tex">\ln 2</script> és un nombre real. Per tant, acabem de veure que les dues primitives són la mateixa i només difereixen en una constant.</p>
 <h3 id="taula-dalgunes-integrals-indefinides-quasi-immediates">Taula d'algunes integrals indefinides quasi-immediates</h3>
 <p>Considerem <script type="math/tex">u(x)</script> una funció qualsevol. Llavors:</p>
 <table>
@@ -406,31 +421,31 @@ F(x)&=\frac{x^3}{3}+5 \mbox{ també ho és}
 </li>
 </ol>
 <h3 id="mes-exemples-dintegrals-indefinides-quasi-immediates">Més exemples d'integrals indefinides quasi-immediates</h3>
-<p><strong>Exemple 2</strong></p>
+<p><strong>Exemple 3</strong></p>
 <p>
 <script type="math/tex; mode=display">\int \cot x dx=\int \frac{\cos x}{\sin x}dx=\int \frac{1}{\sin x}\cdot \cos x dx=\ln (\sin x) + C</script>
 </p>
-<p><strong>Exemple 3</strong></p>
+<p><strong>Exemple 4</strong></p>
 <p>
 <script type="math/tex; mode=display">\int \tan x dx=\int \frac{\sin x}{\cos x}dx= -\int \frac{1}{\cos x}\cdot (-\sin x) dx=-\ln (\cos x) + C</script>
 </p>
-<p><strong>Exemple 4</strong></p>
+<p><strong>Exemple 5</strong></p>
 <p>
 <script type="math/tex; mode=display">\int \frac{x}{3x^2+5} dx=\frac{1}{6} \int \frac{6x}{3x^2+5} dx = \frac{1}{6} \ln(3x^2+5) + C</script>
 </p>
-<p><strong>Exemple 5</strong></p>
+<p><strong>Exemple 6</strong></p>
 <p>
 <script type="math/tex; mode=display">\int x \sqrt[3]{3x^2+1}dx=\int x (3x^2+1)^{\frac{1}{3}}dx=\frac{1}{6} \int 6x (3x^2+1)^\frac{1}{3} dx= \frac{1}{6}\cdot \frac{3(3x^2+1)^{\frac{4}{3}}}{4} + C=...=\frac{1}{8} \cdot (3x^2+1) \sqrt[3]{3x^2+1}+C</script>
 </p>
-<p><strong>Exemple 6</strong></p>
+<p><strong>Exemple 7</strong></p>
 <p>
 <script type="math/tex; mode=display">\int \frac{\ln x}{x} dx=\int \ln x \cdot \frac{1}{x} dx=\frac{\ln^2 x}{2}+C</script>
 </p>
-<p><strong>Exemple 7</strong></p>
+<p><strong>Exemple 8</strong></p>
 <p>
 <script type="math/tex; mode=display">\int \frac{dx}{(x-a)^n}=\int (x-a)^{-n} dx=\frac{(x-a)^{-n+1}}{-n+1}  + C=\frac{1}{(1-n)(x-a)^{n-1}}+C</script>
 </p>
-<p><strong>Exemple 8</strong></p>
+<p><strong>Exemple 9</strong></p>
 <p>Aquesta és una generalització d'integral del tipus <script type="math/tex">\tan^{-1}</script>. Considerant <script type="math/tex">b>0</script> i <script type="math/tex">c>0</script>:</p>
 <p>
 <script type="math/tex; mode=display">\int \frac{1}{b+cx^2} dx=\int \frac{\frac{1}{b}}{1+(\frac{\sqrt{c}x}{\sqrt{b}})^2}dx=\frac{1}{b}\frac{\sqrt{b}}{\sqrt{c}}\int \frac{\frac{\sqrt{c}}{\sqrt{b}}}{1+(\frac{\sqrt{c}x}{\sqrt{b}})^2}dx=\frac{1}{\sqrt{bc}} tan ^{-1}(\frac{\sqrt{c}x}{\sqrt{b}})+C</script>
