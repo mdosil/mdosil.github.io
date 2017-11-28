@@ -488,39 +488,45 @@ P(x)=S(x)Q(x)+R(x)\\
 <p>
 <script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx=\int (x+1)dx+ \int \frac{3x-2}{x^2-x-2} dx= \frac{x^2}{2}+x+\int \frac{3x-2}{x^2-x-2} dx</script>
 </p>
-<p>Per calcular la última integral, anem a veure si podem expressar el numerador com a derivada del denominador i així obtenir una integral del tipus logaritme neperià:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-\int \frac{3x-2}{x^2-x-2} dx&=\frac{3}{2}\int \frac{2}{3} \frac{3x-2}{x^2-x-2}dx=\frac{3}{2}\int \frac{2(x-\frac{2}{3})}{x^2-x-2}dx\\
-&=\frac{3}{2} \int \frac{2x-\frac{4}{3}}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-1-\frac{1}{3}}{x^2-x-2}dx\\
-&=\frac{3}{2}\Big[ \int \frac{2x-1}{x^2-x-2}dx-\frac{1}{3}\int \frac{1}{x^2-x-2}dx\Big]\\
-&=\frac{3}{2} \ln (x^2-x-2)-\frac{1}{2} \int \frac{1}{x^2-x-2}dx
-\end{align}</script>
-</p>
-<p>I aquesta última integral l'aprendrem a calcular a l'apartat següent.</p>
+<p>Per calcular la última integral, ens caldrà passar a l'apartat següent.</p>
 <h4 id="integrals-racionals-amb-el-grau-del-numerador-mes-petit-que-el-grau-del-denominador-fraccions-propies">Integrals racionals amb el grau del numerador més petit que el grau del denominador (fraccions pròpies)</h4>
 <p>Treballarem amb l'exemple anterior per explicar-ho.</p>
-<p>Volem calcular <script type="math/tex">\int \frac{1}{x^2-x-2}dx</script>
+<p>Volem calcular <script type="math/tex">\int \frac{3x-2}{x^2-x-2}dx</script>
 </p>
 <p>El que farem és descomposar el denominador en factors i expressar la fracció anterior com una suma de dues fraccions algebraiques on el denominador és un polinomi de grau 1. Si busquem les arrels de <script type="math/tex">x^2-x-2</script> veiem que són <script type="math/tex">2</script> i <script type="math/tex">-1</script>. Per tant:</p>
 <p>
-<script type="math/tex; mode=display">\frac{1}{x^2-x-2}=\frac{1}{(x+1)(x-2)}</script>
+<script type="math/tex; mode=display">\frac{3x-2}{x^2-x-2}=\frac{3x-2}{(x+1)(x-2)}</script>
 </p>
 <h5 id="expansio-en-fraccions-parcials">Expansió en fraccions parcials</h5>
-<p>El que farem ara és expressar aquesta fracció com a suma de fraccions parcials. Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
+<p>Primer comprovarem que el numerador no sigui la derivada del denominador (o que quasi ho sigui i només hi falti multiplicar per un nombre com a l'exemple 11). Si fos així, ja hauríem acabat.</p>
+<p>En cas contrari, expressarem aquesta fracció com a suma de fraccions parcials. Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
 <p>Si tenim en compte l'exemple anterior:</p>
 <p>
-<script type="math/tex; mode=display">\begin{align}
-\frac{1}{(x+1)(x-2)}=&\frac{A}{x+1}+\frac{B}{x-2}\\
-1=&A(x-2)+B(x+1)
-\end{align}</script>
+<script type="math/tex; mode=display">\frac{3x-2}{(x+1)(x-2)}=\frac{A}{x-2}+\frac{B}{x+1}</script>
+</p>
+<p>I si ho multipliquem tot per <script type="math/tex">(x+1)(x-2)</script> tenim que:</p>
+<p>
+<script type="math/tex; mode=display">3x-2=A(x+1)+B(x-2)</script>
 </p>
 <p>Per trobar les constants <script type="math/tex">A</script> i <script type="math/tex">B</script> substituïm <script type="math/tex">x</script> per dos valors fàcils de trobar i resolem el sistema:</p>
 <p>
 <script type="math/tex; mode=display">\left.\begin{aligned}
-x=0\rightarrow 1=-2A+B \\
-x=1\rightarrow 1=-A+2B
+x=2\rightarrow 6-2=3A+0B \\
+x=-1\rightarrow -3-2=-2A-3B
 \end{aligned}\right\rbrace</script>
+</p>
+<p>La solució del sistema és <script type="math/tex">A=\frac{4}{3}</script> i <script type="math/tex">B=\frac{5}{3}</script>.</p>
+<p>Per tant, tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\frac{3x-2}{(x+1)(x-2)}=\frac{\frac{4}{3}}{x-2}+\frac{\frac{5}{3}}{x+1}</script>
+</p>
+<p>I això ens permet calcular la nostra integral com a suma d'integrals quasi immediates:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{3x-2}{x^2-x-2}dx=\frac{4}{3}\int \frac{1}{x-2}dx+\frac{5}{3}\int \frac{1}{x+1}dx=-\frac{4}{3} \ln (x-2)+\frac{5}{3} \ln (x+1)+C</script>
+</p>
+<p>Per tant, la integral que volíem calcular al principi en donarà:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx = \frac{1}{2}x^2+x+\frac{4}{3} \ln(x-2) + \frac{5}{3} \ln(x+1)+C</script>
 </p>
 <h3 id="integracio-per-parts">Integració per parts</h3>
 <h3 id="metode-de-substitucio-o-de-canvi-de-variables">Mètode de substitució o de canvi de variables</h3>
