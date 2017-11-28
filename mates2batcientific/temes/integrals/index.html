@@ -506,9 +506,24 @@ P(x)=S(x)Q(x)+R(x)\\
 <script type="math/tex; mode=display">\frac{1}{x^2-x-2}=\frac{1}{(x+1)(x-2)}</script>
 </p>
 <h5 id="expansio-en-fraccions-parcials">Expansió en fraccions parcials</h5>
-<p>Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
-<h5 id="metode-de-completar-quadrats">Mètode de completar quadrats</h5>
-<p>Aquest mètode s'utilitza per integrar funcions racionals on el grau del numerador és <script type="math/tex">0</script> i el denominador és <script type="math/tex">2</script>. La idea és transformar-ho amb una integral del tipus <script type="math/tex">tan^-1</script>.</p>
+<p>El que farem ara és expressar aquesta fracció com a suma de fraccions parcials. Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
+<p>Si tenim en compte l'exemple anterior:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{1}{(x+1)(x-2)}=&\frac{A}{x+1}+\frac{B}{x-2}\\
+1=&A(x-2)+B(x+1)
+\end{align}</script>
+</p>
+<p>Per trobar les constants <script type="math/tex">A</script> i <script type="math/tex">B</script> substituïm <script type="math/tex">x</script> per dos valors fàcils de trobar i resolem el sistema:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+x=0\rightarrow 1=-2A+B \\
+x=1\rightarrow 1=-A+2B
+\end{aligned}
+\right\}
+</script>
+</p>
 <h3 id="integracio-per-parts">Integració per parts</h3>
 <h3 id="metode-de-substitucio-o-de-canvi-de-variables">Mètode de substitució o de canvi de variables</h3>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
