@@ -528,6 +528,37 @@ x=-1\rightarrow -3-2=-2A-3B
 <p>
 <script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx = \frac{1}{2}x^2+x+\frac{4}{3} \ln(x-2) + \frac{5}{3} \ln(x+1)+C</script>
 </p>
+<p>En general, per l'expansió en fraccions parcials d'una fracció pròpia, seguirem les normes següents:</p>
+<ol>
+<li>Per cada factor lineal del denominador, utilitzarem una constant dividit per aquest factor i una altra constant dividida per una potència d'aquest factor si aquest es repeteix (arrels múltiples)</li>
+<li>Per cada factor quadràtic irreductible del denominador (com per exemple <script type="math/tex">x^2+1</script>), utilitzarem un terme lienal dividit per aquest factor i un altre per si el factor es repeteix.</li>
+</ol>
+<p>Alguns exemples:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{1}{(x+1)(x^2+2)}&=\frac{A}{x+1}+\frac{Bx+C}{x^2+2}\\
+\frac{x^2-4}{x^2(x^2+1)^2}&=\frac{A}{x}+\frac{B}{x^2}+\frac{Cx+D}{x^2+1}+\frac{Ex+F}{(x^2+1)^2}\\
+\end{align}</script>
+</p>
+<h5 id="completant-quadrats">Completant quadrats</h5>
+<p>Donada una fracció on el grau del numerador és <script type="math/tex">0</script> i el del denominador és grau <script type="math/tex">2</script>, intentarem expressar el denominador com a un terme quadràtic més una constant i així obtindrem una integral del tipus <script type="math/tex">tan^{-1}</script>. Anem a veure un exemple:</p>
+<p><strong>Exemple 13</strong></p>
+<p>
+<script type="math/tex; mode=display">\int \frac{1}{4x^2-4x+5} dx</script>
+</p>
+<p>Transformem d'aquesta manera el denominador:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+4x^2-4x+5&=4(x^2-x)+5\\
+&=4(x^2-x+\frac{1}{4}-\frac{1}{4})+5\\
+&=4[(x-\frac{1}{2})^2-\frac{1}{4}]+5\\
+&=4(x-\frac{1}{2})^2+4
+\end{align}</script>
+</p>
+<p>Llavors:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{1}{4x^2-4x+5} dx=\frac{1}{4}\int \frac{1}{1+(x-\frac{1}{2})^2}=\frac{1}{4} tan^{-1}(x-\frac{1}{2})+C</script>
+</p>
 <h3 id="integracio-per-parts">Integració per parts</h3>
 <h3 id="metode-de-substitucio-o-de-canvi-de-variables">Mètode de substitució o de canvi de variables</h3>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
