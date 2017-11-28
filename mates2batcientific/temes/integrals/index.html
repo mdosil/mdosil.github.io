@@ -468,20 +468,31 @@ F(x)&=\frac{x^3}{3}+5 \mbox{ també ho és}
 <script type="math/tex; mode=display">\int \frac{x^2-2x}{x^3-3x^2+1} dx=\frac{1}{3}\int \frac{3x^2-6x}{x^3-3x^2+1} dx = \frac{1}{3}\ln(x^3-3x^2+1)+C</script>
 </p>
 <h4 id="integrals-racionals-amb-el-grau-del-numerador-mes-gran-que-el-grau-del-denominador-fraccions-impropies">Integrals racionals amb el grau del numerador més gran que el grau del denominador (fraccions impròpies)</h4>
-<p>Si en una fracció algebraica <script type="math/tex">\frac{P(x)}{Q(x)}</script> el grau de <script type="math/tex">P</script> és major que el grau de <script type="math/tex">Q</script> diem que la fracció és <strong>impròpia</strong>. Per a integrar una expressió d'aquest tipus ens caldrà transformar-la primer en una fracció on el grau de <script type="math/tex">P</script> sigui més petit que el de <script type="math/tex">Q</script> (fracció <strong>pròpia</strong>). Per a fer-ho, recordem la divisió de polinomis i la seva prova:</p>
+<p>Si en una fracció algebraica <script type="math/tex">\frac{P(x)}{Q(x)}</script> el grau de <script type="math/tex">P</script> és major que el grau de <script type="math/tex">Q</script> diem que la fracció és <strong>impròpia</strong>. Per a integrar una expressió d'aquest tipus ens caldrà transformar-la primer en una fracció on el grau de <script type="math/tex">P</script> sigui més petit que el de <script type="math/tex">Q</script> (fracció <strong>pròpia</strong>). Per a fer-ho, recordem la divisió de polinomis i la seva prova. Donats dos polinomis <script type="math/tex">P(x)</script> i <script type="math/tex">Q(x)</script> la seva divisió dóna un quocient <script type="math/tex">S(x)</script> i un reste <script type="math/tex">R(x)</script>. Llavors sempre es compleix que:</p>
 <p>
-<script type="math/tex; mode=display">\begin{center}
-\begin{tabular}{ |c|c|c|c| }
-\hline
-col1 & col2 & col3 \\
-\hline
-\multirow{3}{4em}{Multiple row} & cell2 & cell3 \\
-& cell5 & cell6 \\
-& cell8 & cell9 \\
-\hline
-\end{tabular}
-\end{center}</script>
+<script type="math/tex; mode=display">\begin{align}
+P(x)=S(x)Q(x)+R(x)\\
+\frac{P(x)}{Q(x)}=S(x)+\frac{R(x)}{Q(x)}
+\end{align}</script>
 </p>
+<p>i si grau <script type="math/tex">P(x)></script> grau <script type="math/tex">Q(x)</script> llavors sempre es compleix que grau <script type="math/tex">R(x)></script> grau <script type="math/tex">Q(x)</script>. Això és el que haurem de fer abans d'integrar una fracció algebraica amb grau del numerador més gran que el grau de denominador. Anem a veure'n un exemple.</p>
+<p><strong>Exemple 12</strong></p>
+<p>
+<script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx</script>
+</p>
+<p>Com que és una fracció impròpia, fem la divisió de polinomis i calculem el quocient i el reste. Aplicant l'expressió anterior obtenim que:</p>
+<p>
+<script type="math/tex; mode=display">\frac{x^3-4}{x^2-x-2}=(x+1)+\frac{3x-2}{x^2-x-2}</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx=\int (x+1)dx+ \int \frac{3x-2}{x^2-x-2} dx= \frac{x^2}{2}+x+\int \frac{3x-2}{x^2-x-2} dx</script>
+</p>
+<p>Per calcular la última integral, anem a veure si podem expressar el numerador com a derivada del denominador i així obtenir una integral del tipus logaritme neperià:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{3x-2}{x^2-x-2} dx=\frac{3}{2}\int \frac{2}{3} \frac{3x-2}{x^2-x-2}dx=\frac{3}{2}\int \frac{2(x-\frac{2}{3})}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-\frac{4}{3}}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-1-\frac{1}{3}}{x^2-x-2}dx=\frac{3}{2}\Big[ \int \frac{2x-1}{x^2-x-2}dx-\frac{1}{3}\int \frac{1}{x^2-x-2}dx\Big]=\frac{3}{2} \ln (x^2-x-2)-\frac{1}{3} \int \frac{1}{x^2-x-2}dx</script>
+</p>
+<p>I aquesta última integral l'aprendrem a calcular a l'apartat següent.</p>
 <h4 id="integrals-racionals-amb-el-grau-del-numerador-mes-petit-que-el-grau-del-denominador-fraccions-propies">Integrals racionals amb el grau del numerador més petit que el grau del denominador (fraccions pròpies)</h4>
 <h5 id="expansio-en-fraccions-parcials">Expansió en fraccions parcials</h5>
 <p>Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
