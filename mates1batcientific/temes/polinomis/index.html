@@ -269,7 +269,7 @@
 <script type="math/tex">P(x)+Q(x)</script>
 </li>
 <li>
-<script type="math/tex">P(x)+Q(x)</script>
+<script type="math/tex">P(x)-Q(x)</script>
 </li>
 <li>
 <script type="math/tex">P(x)\cdot Q(x)</script>
@@ -376,7 +376,7 @@
 <!-------------------------------------------------->
 
 <h2 id="arrels-dun-polinomi">Arrels d'un polinomi</h2>
-<p>Diem que <script type="math/tex">a</script> és <strong>arrel</strong> de <script type="math/tex">P(x)</script> si el residu de dividir <script type="math/tex">P(x)</script> per <script type="math/tex">(x-a)</script> és <script type="math/tex">0</script>. De fet, això és el mateix que dir que <script type="math/tex">P(x)</script> és <strong>divisible</strong> per <script type="math/tex">(x-a)</script>. </p>
+<p>Diem que <script type="math/tex">a</script> és <strong>arrel</strong> de <script type="math/tex">P(x)</script> si el residu de dividir <script type="math/tex">P(x)</script> per <script type="math/tex">(x-a)</script> és <script type="math/tex">0</script>. De fet, això és el mateix que dir que <script type="math/tex">P(x)</script> és <strong>divisible</strong> per <script type="math/tex">(x-a)</script>.</p>
 <p>D'altra banda, dir que <script type="math/tex">a</script> és arrel d'un polinomi és equivalent que dir que <script type="math/tex">a</script> és solució de l'equació <script type="math/tex">P(x)=0</script>. Anem-ho a veure. Com que el residu és zero, si apliquem la prova de la divisió obtenim:</p>
 <p>
 <script type="math/tex; mode=display">P(x)=(x-a)\cdot Q(x)</script>
@@ -407,7 +407,7 @@
 <p>Es pot demostrar també que:</p>
 <blockquote>
 <p>Si <script type="math/tex">a</script> és arrel entera de <script type="math/tex">P(x) \Rightarrow</script>
-<script type="math/tex">a</script> és <strong>divisor del terme independent</strong> del polinomi. </p>
+<script type="math/tex">a</script> és <strong>divisor del terme independent</strong> del polinomi.</p>
 </blockquote>
 <p><strong>Demostració</strong></p>
 <p>Considerem el polinomi <script type="math/tex">P(x)=a_n x^n+ a_{n-1} x^{n-1}+...+a_1 x+a_0</script>. Sigui <script type="math/tex">b</script> arrel de <script type="math/tex">P(x)</script> llavors es compleix:</p>
@@ -426,10 +426,10 @@
 <p>Tal i com hem vist, calcular les arrels d'un polinomi <script type="math/tex">P(x)</script> és equivalent a resoldre l'equació <script type="math/tex">P(x)=0</script>. En general, i pel <a href="https://ca.wikipedia.org/wiki/Teorema_fonamental_de_l%27%C3%A0lgebra">teorema fonamental de l'àlgebra</a>, se sap que un polinomi té tantes arrels com grau té el polinomi. Com que nosaltres només buscarem arrels enteres, un polinomi de grau <script type="math/tex">n</script> tindrà com a màxim <script type="math/tex">n</script> arrels enteres.</p>
 <h4 id="el-grau-de-px-3">El grau de <script type="math/tex">P(x) < 3</script>
 </h4>
-<p>En aquest cas, solucionarem l'equació de primer grau o de segon grau que se'n deriva. Les arrels del polinomi són les solucions de l'equació de segon grau. </p>
+<p>En aquest cas, solucionarem l'equació de primer grau o de segon grau que se'n deriva. Les arrels del polinomi són les solucions de l'equació de segon grau.</p>
 <h4 id="el-grau-de-px3">El grau de <script type="math/tex">P(x)>3</script>
 </h4>
-<p>Llavors haurem d'aplicar altres tècniques per trobar les arrels. Tal i com hem vist, aquestes arrels seran divisors del terme independent (el contrari no és cert, els divisors del terme independent d'un polinomi no sempre són arrels). </p>
+<p>Llavors haurem d'aplicar altres tècniques per trobar les arrels. Tal i com hem vist, aquestes arrels seran divisors del terme independent (el contrari no és cert, els divisors del terme independent d'un polinomi no sempre són arrels).</p>
 <p>Una manera de fer-ho seria trobar totes les arrels del polinomi i llavors provar si el valor numèric del polinomi per cadascuna d'elles és zero. A la pràctica aquest mètode és una mica feixuc i el que fem és, un cop tenim els divisors del terme independent, dividim <script type="math/tex">P(x)</script> per cadascun d'ells amb Ruffini, i si el residu ens dóna zero, això voldrà dir que són arrels del polinomi. En aquest procés, quan arribem a un polinomi de grau 2, llavors resulta més ràpid resoldre l'equació de segon grau que se'n deriva.</p>
 <p><strong>Exemple 4</strong></p>
 <p>Troba les arrels de <script type="math/tex">P(x)=x^3-6x^2+11x-6</script>
@@ -476,7 +476,7 @@
 <p>Comprovem que podem treure factor comú:</p>
 <p>
 <script type="math/tex; mode=display">P(x)=x^7-x^6-4x^4=x^4(x^3-x^2-4)</script>.</p>
-<p>Anem a factoritzar ara el segon factor: <script type="math/tex">x^3-x^2-4</script>. Veiem que no correspon a cap identitat notable. El pas següent és mirar els divisors del terme independent i provar quins són arrels del polinomi. </p>
+<p>Anem a factoritzar ara el segon factor: <script type="math/tex">x^3-x^2-4</script>. Veiem que no correspon a cap identitat notable. El pas següent és mirar els divisors del terme independent i provar quins són arrels del polinomi.</p>
 <p>Divisors del terme independent: <script type="math/tex">\pm 1</script>, <script type="math/tex">\pm 2</script>, <script type="math/tex">\pm 4</script>. Provem cada cas, o bé per Ruffini comprovant que el residu de fer la divisió de <script type="math/tex">x^3-x^2-4</script> per <script type="math/tex">(x-a)</script> és zero o bé aplicant el Teorema del Residu i calculant el valor numèric del polinomi quan <script type="math/tex">x=a</script>. Si ho fem, veiem que només quan <script type="math/tex">a=2</script> el residu esdevé zero:</p>
 <p>
 <script type="math/tex; mode=display">
