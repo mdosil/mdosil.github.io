@@ -490,10 +490,21 @@ P(x)=S(x)Q(x)+R(x)\\
 </p>
 <p>Per calcular la última integral, anem a veure si podem expressar el numerador com a derivada del denominador i així obtenir una integral del tipus logaritme neperià:</p>
 <p>
-<script type="math/tex; mode=display">\int \frac{3x-2}{x^2-x-2} dx=\frac{3}{2}\int \frac{2}{3} \frac{3x-2}{x^2-x-2}dx=\frac{3}{2}\int \frac{2(x-\frac{2}{3})}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-\frac{4}{3}}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-1-\frac{1}{3}}{x^2-x-2}dx=\frac{3}{2}\Big[ \int \frac{2x-1}{x^2-x-2}dx-\frac{1}{3}\int \frac{1}{x^2-x-2}dx\Big]=\frac{3}{2} \ln (x^2-x-2)-\frac{1}{3} \int \frac{1}{x^2-x-2}dx</script>
+<script type="math/tex; mode=display">\begin{align}
+\int \frac{3x-2}{x^2-x-2} dx&=\frac{3}{2}\int \frac{2}{3} \frac{3x-2}{x^2-x-2}dx=\frac{3}{2}\int \frac{2(x-\frac{2}{3})}{x^2-x-2}dx\\
+&=\frac{3}{2} \int \frac{2x-\frac{4}{3}}{x^2-x-2}dx=\frac{3}{2} \int \frac{2x-1-\frac{1}{3}}{x^2-x-2}dx\\
+&=\frac{3}{2}\Big[ \int \frac{2x-1}{x^2-x-2}dx-\frac{1}{3}\int \frac{1}{x^2-x-2}dx\Big]=\frac{3}{2} \ln (x^2-x-2)-\frac{1}{2} \int \frac{1}{x^2-x-2}dx
+\end{align}</script>
 </p>
 <p>I aquesta última integral l'aprendrem a calcular a l'apartat següent.</p>
 <h4 id="integrals-racionals-amb-el-grau-del-numerador-mes-petit-que-el-grau-del-denominador-fraccions-propies">Integrals racionals amb el grau del numerador més petit que el grau del denominador (fraccions pròpies)</h4>
+<p>Treballarem amb l'exemple anterior per explicar-ho.</p>
+<p>Volem calcular <script type="math/tex">\int \frac{1}{x^2-x-2}dx</script>
+</p>
+<p>El que farem és descomposar el denominador en factors i expressar la fracció anterior com una suma de dues fraccions algebraiques on el denominador és un polinomi de grau 1. Si busquem les arrels de <script type="math/tex">x^2-x-2</script> veiem que són <script type="math/tex">2</script> i <script type="math/tex">-1</script>. Per tant:</p>
+<p>
+<script type="math/tex; mode=display">\frac{1}{x^2-x-2}=\frac{1}{(x+1)(x-2)}</script>
+</p>
 <h5 id="expansio-en-fraccions-parcials">Expansió en fraccions parcials</h5>
 <p>Aquest mètode és útil per descomposar una fracció algebraica com a suma de fraccions on el numerador té grau <script type="math/tex">0</script> i el denominador grau <script type="math/tex">1</script>. El resultat de la integral esdevé una suma de logaritmes.</p>
 <h5 id="metode-de-completar-quadrats">Mètode de completar quadrats</h5>
