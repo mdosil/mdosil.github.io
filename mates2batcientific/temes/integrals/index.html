@@ -560,6 +560,36 @@ x=-1&\rightarrow -3-2=-2A-3B
 <script type="math/tex; mode=display">\int \frac{1}{4x^2-4x+5} dx=\frac{1}{4}\int \frac{1}{1+(x-\frac{1}{2})^2}=\frac{1}{4} tan^{-1}(x-\frac{1}{2})+C</script>
 </p>
 <h3 id="integracio-per-parts">Integració per parts</h3>
+<p>La integració per parts la utilitzarem sempre que haguem d'integrar un producte de dues funcions diferents com per exemple:
+- Polinomis i trigonomètriques
+- Polinomis i exponencials
+- Polinomis i logarítmiques
+- Trigonomètriques i exponencials
+- Trigonomètriques i logarítmiques
+- etc.</p>
+<p>Per mostrar la regla d'integració per parts, partirem de la regla de derivació del producte de dues funcions <script type="math/tex">f(x)\cdot g(x)</script>:</p>
+<p>
+<script type="math/tex; mode=display">(f(x)g(x))^\prime=f^prime(x)g(x)+f(x)g(x)^\prime</script>
+</p>
+<p>Si aïllem el terme <script type="math/tex">f(x)g^\prime(x)</script> i prenem integrals a banda i banda obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\int f(x)g^\prime(x)=\int(f(x)g(x))^\prime-\int f^\prime(x)g(x) </script>
+</p>
+<p>per tant:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] { \int f(x)g^\prime(x)=f(x)g(x)-\int f^\prime(x)g(x)}
+</script>
+</p>
+<p><strong>Exemple 14</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\int x^2 \sin x dx &=
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\underbrace{u'-P(x)u^2-Q(x)u-R(x)}_{\text{=0, since~<script type="math/tex">u</script> is a particular solution.}}</script>
+</p>
 <h3 id="metode-de-substitucio-o-de-canvi-de-variables">Mètode de substitució o de canvi de variables</h3>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
 <h2 id="integrals-definides">Integrals definides</h2>
