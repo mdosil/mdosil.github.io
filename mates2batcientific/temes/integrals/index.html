@@ -595,6 +595,27 @@ x=-1&\rightarrow -3-2=-2A-3B
 \end{align}</script>
 </p>
 <h3 id="metode-de-substitucio-o-de-canvi-de-variables">Mètode de substitució o de canvi de variables</h3>
+<p>Quan hem d'integrar funcions combinades que a simple vista resulten complicades, el mètode de canvi de variable és molt útil. A vegades resulta difícil, però amb la pràctica, s'acaba trobant el canvi adient. El canvi consistirà en substituir l'expressió de <script type="math/tex">x</script> per una variable que li direm <script type="math/tex">t</script>, per exemple. De manera que:</p>
+<p>
+<script type="math/tex; mode=display">t=f(x)\rightarrow dt=f^\prime(x)dx</script>
+</p>
+<p>D'altres vegades el que farem és substituir x per una expressió de <script type="math/tex">t</script>:</p>
+<p>
+<script type="math/tex; mode=display">x=f(t)\rightarrow dx=f^\prime(t)dt</script>
+</p>
+<p>Ho veurem a través d'exemples perquè quedi més clar.</p>
+<p><strong>Exemple 16</strong></p>
+<p>
+<script type="math/tex; mode=display">\int \frac{dx}{x\sqrt{x^2-1}}</script>
+</p>
+<p>Per a calcular aquesta integral, aplicarem el canvi de variable que se'ns pot ocòrrer més immediat:</p>
+<p>
+<script type="math/tex; mode=display">t=\sqrt{x^2-1}\rightarrow dt=\frac{1}{2\sqrt{x^2-1}}\cdot 2x dx =\frac{x}{\sqrt{x^2-1}}dx\rightarrow dx=\frac{dt\sqrt{x^2-1}}{x}=\frac{dt\cdot t}{x}</script>
+</p>
+<p>Si practiquem aquesta substitució a la integral de dalt obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{dx}{x\sqrt{x^2-1}}=\int \frac{dt\cdot t}{x}\cdot \frac{1}{x\cdot t}=\int \frac{1}{1+t^2}dt=tan^{-1}(t)+C=tan^{-1}(x^2-1)+C=</script>
+</p>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
 <h2 id="integrals-definides">Integrals definides</h2>
 <h3 id="definicio">Definició</h3>
