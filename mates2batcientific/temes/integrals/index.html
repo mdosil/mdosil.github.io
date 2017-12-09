@@ -640,11 +640,42 @@ x=-1&\rightarrow -3-2=-2A-3B
 <p>Ara ens cal desfer el canvi de variable. Abans de fer-ho apliquem la fòrmula del sinus de l'angle doble, <script type="math/tex">\sin 2t=2 \sin t \cos t</script>, a l'expressió anterior:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-\int \sqrt{16-x^2}dx&=...=4\cdot 2\sin t \cos t+8t+C=8 \sin t \sqrt(1-\sin^2 t)+8 t +C\\
+\int \sqrt{16-x^2}dx=...&=4\cdot 2\sin t \cos t+8t+C=8 \sin t \sqrt(1-\sin^2 t)+8 t +C\\
 &=8 \sin \big( \sin^{-1} \frac{x}{4}\big)\sqrt{1-\sin^2\big(sin^{-1}\frac{x}{4}\big)}+8 \sin^{-1}\frac{x}{4}+C\\
 &=2x\sqrt{1-\big(\frac{x}{4}\big)^2}+8 \sin^{-1}\frac{x}{4}+C=2x\sqrt{\frac{16-x^2}{16}}+8 \sin^{-1}\frac{x}{4}+C\\
 &=\frac{x}{2}\sqrt{16-x^2}+8 \sin^{-1}\frac{x}{4}+C
 \end{align}</script>
+</p>
+<p><strong>Exemple 18</strong></p>
+<p>Anem a veure un exemple d'integral de funció racional amb exponencials. En general, aquest tipus de funcions admeten el canvi <script type="math/tex">e^x=t</script>:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{1+e^x}{1-e^x}dx</script>
+</p>
+<p>Amb aquest canvi:</p>
+<p>
+<script type="math/tex; mode=display">t=e^x\rightarrow dt=e^x dx \rightarrow dx=\frac{dt}{e^x}=\frac{dt}{t}</script>
+</p>
+<p>Llavors tenim:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{1+e^x}{1-e^x}dx = \int \frac{1+t}{1-t}\cdot \frac{dt}{t}=\int \frac{1+t}{t(1-t)}dt</script>
+</p>
+<p>Hem transformat la integral en una integral racional pròpia. Caldrà doncs fer la descomposició en fraccions parcials:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{1+t}{t(1-t)}&=\frac{A}{t}+\frac{B}{1-t}\\
+1+t &=A(1-t)+B t\\
+...\\
+A&=1\\
+B&=2\\
+\end{align}</script>
+</p>
+<p>Tornem a la integral:</p>
+<p>
+<script type="math/tex; mode=display">\int \frac{1+e^x}{1-e^x}dx =...=\int \frac{1}{t} dt+\int \frac{2}{1-t}dt=\ln t - 2 \ln (1-t)+C</script>
+</p>
+<p>Si desfem el canvi:</p>
+<p>
+<script type="math/tex; mode=display"> \int \frac{1+e^x}{1-e^x}dx = \ln e^x -2 \ln (1-e^x)+C=\ln \Big(\frac{e^x}{(1-e^x)^2} \Big)+C</script>
 </p>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
 <h2 id="integrals-definides">Integrals definides</h2>
