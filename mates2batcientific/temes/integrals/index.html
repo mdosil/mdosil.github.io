@@ -617,11 +617,11 @@ x=-1&\rightarrow -3-2=-2A-3B
 <script type="math/tex; mode=display">\int \frac{dx}{x\sqrt{x^2-1}}=\int \frac{dt\cdot t}{x}\cdot \frac{1}{x\cdot t}=\int \frac{1}{1+t^2}dt=tan^{-1}(t)+C=tan^{-1}(x^2-1)+C</script>
 </p>
 <p><strong>Exemple 17</strong></p>
-<p>Anem a veure un canvi de variable molt útil per integrals del tipus <script type="math/tex">\int \sqrt{a^2-x^2}dx</script>. Per a fer aquestes integrals emprarem el canvi de variable: <strong><script type="math/tex">x= a \sin t</script></strong> . Anem a calcular:</p>
+<p>Anem a veure un canvi de variable molt útil per integrals del tipus <script type="math/tex">\int \sqrt{a^2-x^2}dx</script>. Per a fer aquestes integrals emprarem el canvi: <strong><script type="math/tex">x= a \sin t</script></strong> . Anem a calcular:</p>
 <p>
 <script type="math/tex; mode=display">\int \sqrt{16-x^2} dx</script>
 </p>
-<p>Fem el canvi de variable:</p>
+<p>Així doncs:</p>
 <p>
 <script type="math/tex; mode=display">x=4\sin t \rightarrow dx=4 \cos t dt</script>
 </p>
@@ -637,9 +637,14 @@ x=-1&\rightarrow -3-2=-2A-3B
 <p>
 <script type="math/tex; mode=display">\int \sqrt{16-x^2}dx=...=16\int \frac{\cos 2t+1}{2} dt=8 \int \cos 2t dt + 8 \int dt= 4\int 2 \cos 2t dt + 8 \int dt=4 \sin 2t + 8t+C</script>
 </p>
-<p>Ara ens cal desfer el canvi de variable. Abans de fer-ho apliquem la fòrmula del sinus de l'angle doble (<script type="math/tex">\sin 2t=2 \sin t \cos t</script>)a l'expressió anterior:</p>
+<p>Ara ens cal desfer el canvi de variable. Abans de fer-ho apliquem la fòrmula del sinus de l'angle doble, <script type="math/tex">\sin 2t=2 \sin t \cos t</script>, a l'expressió anterior:</p>
 <p>
-<script type="math/tex; mode=display">\int \sqrt{16-x^2}dx=...=4\cdot 2\sin t \cos t+8t+C=8 \sin t \sqrt(1-\sin^2 t)+8 t +C=8 \sin \big( \sin^{-1} \frac{x}{4}\big)\sqrt{1-\sin^2\big(sin^{-1}\frac{x}{4}\big)}+8 \sin^{-1}\frac{x}{4}+C=2x\sqrt{1-\big(\frac{x}{4}\big)^2}+8 \sin^{-1}\frac{x}{4}+C=2x\sqrt{\frac{16-x^2}{16}}+8 \sin^{-1}\frac{x}{4}+C =\frac{x}{2}\sqrt{16-x^2}+8 \sin^{-1}\frac{x}{4}+C</script>
+<script type="math/tex; mode=display">\begin{align}
+\int \sqrt{16-x^2}dx&=...=4\cdot 2\sin t \cos t+8t+C=8 \sin t \sqrt(1-\sin^2 t)+8 t +C\\
+&=8 \sin \big( \sin^{-1} \frac{x}{4}\big)\sqrt{1-\sin^2\big(sin^{-1}\frac{x}{4}\big)}+8 \sin^{-1}\frac{x}{4}+C\\
+&=2x\sqrt{1-\big(\frac{x}{4}\big)^2}+8 \sin^{-1}\frac{x}{4}+C=2x\sqrt{\frac{16-x^2}{16}}+8 \sin^{-1}\frac{x}{4}+C\\
+&=\frac{x}{2}\sqrt{16-x^2}+8 \sin^{-1}\frac{x}{4}+C
+\end{align}</script>
 </p>
 <h3 id="integrals-trigonometriques">Integrals trigonomètriques</h3>
 <h2 id="integrals-definides">Integrals definides</h2>
