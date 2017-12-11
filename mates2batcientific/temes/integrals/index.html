@@ -716,6 +716,19 @@ Per a fer aquestes integrals, utilitzarem la fórmula trigonomètrica <a href="h
 <script type="math/tex; mode=display">\int \sin^4 x dx=...=\frac{1}{4}x+\frac{1}{32}\sin 4x+\frac{1}{8} x -\frac{1}{4}\sin 2x+C=\frac{3}{8} x +\frac{1}{32}\sin 4x-\frac{1}{4}\sin 2x+C</script>
 </p>
 <h4 id="integrals-del-tipus-int-sinp-x-cdot-cosp-x-dx-on-p-i-q-son-exponents-almenys-un-dells-senar">Integrals del tipus <script type="math/tex">\int \sin^P x \cdot \cos^P x dx</script> on <script type="math/tex">p</script> i <script type="math/tex">q</script> són exponents almenys un d'ells senar.</h4>
+<p>D'aquestes integrals algunes poden ser quasi immediates, com per exemple:</p>
+<p>
+<script type="math/tex; mode=display">\int \sin^4 x \cos x dx= \frac{\sin^5x}{5}+C</script>
+</p>
+<p>Per altres integrals, intentarem de transformar-les de tal manera que esdevinguin quasi immediates com la que acabem de veure. Anem a veure un exemple:</p>
+<p><strong>Exemple 21</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\int \sin^3 x \cos^5 x dx&= \int \cos \sin^3 x \cos ^4 x dx=\int \cos x \sin^3 x (1-\sin^2 x)^2 dx\\
+\int \cos x \sin^3 x (1+\sin^4 x-2\sin^2x)dx=\int \cos x \sin^3 x dx+\int \cos x \sin^7x dx - 2 \int \cos x \sin^5 x dx\\
+&=\frac{\sin^4 x}{4}+\frac{\sin^8 x}{8}-\frac{\sin^6 x}{6}+C
+\end{align}</script>
+</p>
 <h4 id="integrals-racionals-amb-sin-x-i-cos-x">Integrals racionals amb <script type="math/tex">\sin x</script> i <script type="math/tex">\cos x</script>
 </h4>
 <h2 id="integrals-definides">Integrals definides</h2>
