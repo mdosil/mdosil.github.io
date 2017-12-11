@@ -697,7 +697,24 @@ Per a fer aquestes integrals, utilitzarem la fórmula trigonomètrica <a href="h
 </p>
 <p>Anem a veure un parell d'exemples:</p>
 <p><strong>Exemple 19</strong></p>
-<p>$$$\int \sin^2 x dx=\int \frac{1-\cos 2x}{2}dx=\int \frac{1}{2}dx -\frac{1}{2}\int \cos 2x dx=\frac{1}{2}x-\frac{1}{4}\sin 2x +C$</p>
+<p>
+<script type="math/tex; mode=display">\int \sin^2 x dx=\int \frac{1-\cos 2x}{2}dx=\int \frac{1}{2}dx -\frac{1}{2}\int \cos 2x dx=\frac{1}{2}x-\frac{1}{4}\sin 2x +C</script>
+</p>
+<p><strong>Exemple 20</strong></p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\int \sin^4 x dx&=\int (\sin^2 x)^2 dx=\int \Big(\frac{1-\cos2x}{2}\Big)^2 dx=\int \frac{1+\cos^2 2x - \cos 2x}{4}dx\\
+&=\frac{1}{4}\int dx + \frac{1}{4} \int \cos^2 2x dx -\frac{1}{2}\int \cos 2x dx
+\end{align}</script>
+</p>
+<p>Per resoldre la integral del mig, caldrà tornar a aplicar el mateix mètode i expressar el quadrat del cosinus en funció de l'angle doble:</p>
+<p>
+<script type="math/tex; mode=display">\int \cos^2 2x dx=\int \frac{\cos 4x +1}{2} dx = \frac{1}{2}\frac{1}{4}\int 4 \cos 4x dx + \frac{1}{2} \int dx= \frac{1}{8}\sin 4x+\frac{1}{2}x +C</script>
+</p>
+<p>Per tant, la integral que volíem resoldre esdevé:</p>
+<p>
+<script type="math/tex; mode=display">\int \sin^4 x dx=...=\frac{1}{4}x+\frac{1}{32}\sin 4x+\frac{1}{8} x -\frac{1}{4}\sin 2x+C=\frac{3}{8} x +\frac{1}{32}\sin 4x-\frac{1}{4}\sin 2x+C</script>
+</p>
 <h4 id="integrals-del-tipus-int-sinp-x-cdot-cosp-x-dx-on-p-i-q-son-exponents-almenys-un-dells-senar">Integrals del tipus <script type="math/tex">\int \sin^P x \cdot \cos^P x dx</script> on <script type="math/tex">p</script> i <script type="math/tex">q</script> són exponents almenys un d'ells senar.</h4>
 <h4 id="integrals-racionals-amb-sin-x-i-cos-x">Integrals racionals amb <script type="math/tex">\sin x</script> i <script type="math/tex">\cos x</script>
 </h4>
