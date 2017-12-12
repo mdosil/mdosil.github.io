@@ -735,7 +735,50 @@ Per a fer aquestes integrals, utilitzarem la fórmula trigonomètrica <a href="h
 <p>
 <script type="math/tex; mode=display">t=\tan \frac{x}{2}</script>
 </p>
-<p>Per altra banda ens trobarem amb més freqüència integrals amb <script type="math/tex">\sin</script> i <script type="math/tex">\cos</script> que no pas amb <script type="math/tex">\tan</script>. El que podem fer és transformar aquest canvi per a cada cas utilitzant les identitats trigonomètriques.</p>
+<p>Per altra banda ens trobarem amb més freqüència integrals amb <script type="math/tex">\sin</script> i <script type="math/tex">\cos</script> que no pas amb <script type="math/tex">\tan</script>. El que podem fer és transformar aquest canvi per a cada cas utilitzant les identitats trigonomètriques. Per expressar el <script type="math/tex">\sin</script> i <script type="math/tex">\cos</script> en funció de <script type="math/tex">t</script>, utilitzarem les expressions següents:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+t=\tan{x}{2}=\frac{\sin frac{x}{2}}{\cos \frac{x}{2}}\\
+\sin^2 \frac{x}{2}+\cos^2 \frac{x}{2}=1
+\end{align}</script>
+</p>
+<p>El que volem ara és deduir, amb aquest canvi de variable, com es transformen <script type="math/tex">\sin x</script> i <script type="math/tex">\cos x</script>. Partim de l'expressió següent per deduir-ho:</p>
+<p>
+<script type="math/tex; mode=display">\sin^2 \frac{x}{2}+ \cos^2 \frac{x}{2}=1</script>
+</p>
+<p>Sabem també que: <script type="math/tex">\sin \frac{x}{2}=t \cos \frac{x}{2}</script>. Si substituïm això a l'expressió anterior obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\big(t \cos \frac{x}{2}\big)^2+\cos^2 \frac{x}{2}=1\rightarrow (t^2+1) \cos^2 \frac{x}{2}=1\rightarrow \cos^2 \frac{x}{2}=\frac{1}{t^2+1}</script>
+</p>
+<p>Guardem-nos aquest resultat i anem a veure com expressar <script type="math/tex">\sin \frac{x}{2}</script> en funció de <script type="math/tex">t</script>. Sabem que:</p>
+<p>
+<script type="math/tex; mode=display">\sin \frac{x}{2}=t \cos \frac{x}{2}</script>
+</p>
+<p>Si elevem al quadrat obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\sin^2 \frac{x}{2}=t^2 \cos^2\frac{x}{2}=\frac{t^2}{t^2+1}</script>
+</p>
+<p>També ens guardem aquest resultat. Ara tenim expressats el quadrat del cosinus i del sinus de l'angle meitat en funció de <script type="math/tex">t</script>. Aplicant les fòrmules del sinus i cosinus de <a href="http://mdosil.cat/mates1batcientific/temes/trigonometria/#sinus-i-cosinus-de-langle-doble">l'angle doble</a> obtenim que:</p>
+<p>
+<script type="math/tex; mode=display">\cos x= cos 2 \frac{x}{2}=\cos^2 \frac{x}{2}-\sin^2 \frac{x}{2}=\frac{1}{t^2+1}-\frac{t^2}{t^2+1}=\frac{1-t^2}{t^2+1}</script>
+</p>
+<p>Si fem el mateix per el sinus:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\sin x&= \sin 2 \frac{x}{2}=2 \sin \frac{x}{2} \cos {x}{2}=\frac{2 \sin \frac{x}{2}\cos \frac{x}{2}\cos \frac{x}{2}}{\cos \frac{x}{2}}\\
+&=2 \tan \frac{x}{2}\cos^2 \frac{x}{2}=2t \frac{1}{t^2+1}=\frac{2t}{t^2+1}
+\end{align}</script>
+</p>
+<p>Per tant, ja ho tenim. Ara només ens falta expressar el diferencial:</p>
+<p>
+<script type="math/tex; mode=display">t=\tan \frac{x}{2} \rightarrow dt=(1+\tan^2 \frac{x}{2})\frac{1}{2}dx\rightarrow dx=\frac{2dt}{1+\tan^2 \frac{x}{2}}=\frac{2dt}{1+t^2}</script>
+</p>
+<p>Resumint:</p>
+<p>
+<script type="math/tex; mode=display">
+\bbox[5px,border:2px solid black] {\sin x=\frac{2t}{t^2+1}\\ \cos x=\frac{1-t^2}{t^2+1}\\ dx=\frac{2dt}{1+t^2}}
+</script>
+</p>
 <h2 id="integrals-definides">Integrals definides</h2>
 <h3 id="definicio">Definició</h3>
 <h3 id="propietats">propietats</h3>
