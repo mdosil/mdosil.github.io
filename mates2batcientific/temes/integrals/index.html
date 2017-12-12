@@ -765,7 +765,7 @@ t=\tan \frac{x}{2}=\frac{\sin \frac{x}{2}}{\cos \frac{x}{2}}\\
 <p>Si fem el mateix per el sinus:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-\sin x&= \sin 2 \frac{x}{2}=2 \sin \frac{x}{2} \cos {x}{2}=\frac{2 \sin \frac{x}{2}\cos \frac{x}{2}\cos \frac{x}{2}}{\cos \frac{x}{2}}\\
+\sin x&= \sin 2 \frac{x}{2}=2 \sin \frac{x}{2} \cos \frac{x}{2}=\frac{2 \sin \frac{x}{2}\cos \frac{x}{2}\cos \frac{x}{2}}{\cos \frac{x}{2}}\\
 &=2 \tan \frac{x}{2}\cos^2 \frac{x}{2}=2t \frac{1}{t^2+1}=\frac{2t}{t^2+1}
 \end{align}</script>
 </p>
@@ -775,9 +775,23 @@ t=\tan \frac{x}{2}=\frac{\sin \frac{x}{2}}{\cos \frac{x}{2}}\\
 </p>
 <p>Resumint:</p>
 <p>
-<script type="math/tex; mode=display">
-\bbox[5px,border:2px solid black] {\sin x=\frac{2t}{t^2+1}\\ \cos x=\frac{1-t^2}{t^2+1}\\ dx=\frac{2dt}{1+t^2}}
-</script>
+<script type="math/tex; mode=display">\begin{align}
+t=\tan \frac{x}{2}\\
+\sin x&=\frac{2t}{t^2+1}\\
+\cos x&=\frac{1-t^2}{t^2+1}\\
+dx&=\frac{2dt}{1+t^2}
+\end{align}</script>
+</p>
+<p><strong>Exemple 22</strong></p>
+<p>
+<script type="math/tex; mode=display">\int \frac{5}{1-\cos x}dx</script>
+</p>
+<p>Per a calcular-la farem el canvi anterior:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\int \frac{5}{1-\cos x}dx&= \int \frac{5}{1-\frac{1-t^2}{1+t^2}}\frac{2dt}{1+t^2}=\int \frac{10 dt}{\frac{2t^2}{1+t^2}(1+t^2)}\\
+&=5\int t^{-2}dt=-\frac{5}{t}+C=-\frac{5}{\tan \frac{x}{2}}+C
+\end{align}</script>
 </p>
 <h2 id="integrals-definides">Integrals definides</h2>
 <h3 id="definicio">Definició</h3>
