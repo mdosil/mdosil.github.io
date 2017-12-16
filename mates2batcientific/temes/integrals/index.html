@@ -833,7 +833,27 @@ Una primera aproximació seria dividir l'interval <script type="math/tex">[a,b]<
 </li>
 </ol>
 <h3 id="area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</h3>
-<p>D'aquesta manera podem calcular les àrees de regions delimitades per corbes evaluant només la primitiva de la funció entre els 2 punts els quals volem calcular l'àrea.</p>
+<p>D'aquesta manera podem calcular les àrees de regions delimitades per corbes evaluant només la primitiva de la funció entre els 2 punts els quals volem calcular l'àrea. Evidentment que l'àrea és una quantitat positiva. Per tant, per a calcular àrees caldrà tenir una sèrie de precaucions:</p>
+<ol>
+<li>Donat un interval <script type="math/tex">[a,b]</script>, caldrà dividir la funció <script type="math/tex">f(x)</script> en tants trossos com canvis de signe hi hagi a la funció.</li>
+<li>En cadascun d'aquests intervals, l'àrea serà <em>el valor absolut</em> de la integral definida entre els seus extrems.</li>
+</ol>
+<p>Veiem-ho en dos exemples concrets.</p>
+<p><strong>Exemple 23</strong></p>
+<p>Calcula l'àrea del recinte limitat per la funció <script type="math/tex">f(x)=\sin x</script> i l'eix de les abcisses entre els punts <script type="math/tex">0</script> i <script type="math/tex">2\pi</script>.</p>
+<iframe scrolling="no" title="integral de sinx entre 0 i 2pi" src="https://www.geogebra.org/material/iframe/id/tB2ryvFM/width/500/height/300/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="300px" style="border:0px;"> </iframe>
+
+<p>Per a calcular l'àrea haurem de dividir el gràfic entre dues regions: <script type="math/tex">R_1=[0,\pi]</script> i <script type="math/tex">R_2=[\pi, 2\pi]</script> ja que la funció s'anul.la en <script type="math/tex">x=\pi</script>. Anem a calcular cadascuna de les àrees.</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+R_1=\int_{0}^{\pi} \sin x dx= [- \cos x]_{0}^{\pi}=-\cos \pi+\cos 0=2\\
+R_2=|\int_{\pi}^{2\pi} \sin x dx|= |[- \cos x]_{\pi}^{2\pi}|=|-\cos 2\pi+\cos \pi|=2\\
+\end{align}</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">A_{total}=R_1+R_2=4</script>
+</p>
 <h2 id="calcul-de-volums">Càlcul de volums</h2>
 <h2 id="integrals-impropies">Integrals impròpies</h2>
 <h2 id="integracio-numerica">Integració numèrica</h2></div>
