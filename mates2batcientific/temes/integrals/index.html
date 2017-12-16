@@ -800,6 +800,16 @@ Una primera aproximació seria dividir l'interval <script type="math/tex">[a,b]<
 <p>Si sumem l'àrea dels rectangles superiors (suma de les bases per les altures de cadascun d'aquests rectangles) obtindríem una bona aproximació per excés de l'àrea sota la corba de la funció. Podríem fer el mateix sumant l'àrea dels rectangles inferiors, i n'obtindríem una aproximació per defecte. L'exemple següent ens dóna una idea de com serien aquests càlculs utilitzant la funció <script type="math/tex">f(x)=x^2+2</script> entre dos punts concrets:</p>
 <iframe scrolling="no" title="integral definida" src="https://www.geogebra.org/material/iframe/id/TJscyCMT/width/717/height/585/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="717px" height="585px" style="border:0px;"> </iframe>
 
+<p>Si feu anar el lliscador per augmentar el nombre de rectangles, veureu que cada vegada la diferència entre l'àrea dels rectangles grans i l'àrea dels rectangles petits es fa més petita i s'aproxima més a l'àrea que hi ha sota la corba.</p>
+<p>Així doncs, donada una funció contínua <script type="math/tex">f(x)</script> en un interval tancat <script type="math/tex">[a,b]</script>, l'àrea definida sota la corba de la funció <script type="math/tex">f(x)</script> entre els punts <script type="math/tex">a</script> i <script type="math/tex">b</script> es defineix com:</p>
+<p>
+<script type="math/tex; mode=display">\int_{a}^{b} f(x)dx</script>
+</p>
+<p>de fet, aquesta integral és el límit de les sumes de les àrees de tots els rectangles quan l'amplada d'aquests (<script type="math/tex">h</script>) es fa molt petita. Si considerem que l'altura dels rectangles grans en cada interval és <script type="math/tex">M_i</script> i la dels rectangles petits <script type="math/tex">m_i</script> tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\mbox{ Àrea sota la corba}= \lim_{h\rightarrow 0} \sum_{x_i=a}^{x_i=b} h \cdot m_i=\lim_{h\rightarrow 0} \sum_{x_i=a}^{x_i=b} h \cdot M_i=\int_{a}^{b} f(x) dx</script>
+</p>
+<p>De fet, en matemàtiques, quan parlem d'una distància molt petita, l'anomenem <em>diferencial</em>. Per tant, <script type="math/tex">dx</script> és una distància molt petita en l'eix de les abcisses. I quan aquests intervals es fan molt i molt petits, l'alçada del rectangle esdevé <script type="math/tex">f(x)</script>, d'aquí que <script type="math/tex">f(x)\cdot dx</script> sigui l'àrea d'un rectangle molt petit de base <script type="math/tex">dx</script> i alçada <script type="math/tex">f(x)</script>. I el símbol d'integral, en realitat és un sumatori de totes les àrees en l'interval.</p>
 <h3 id="propietats">propietats</h3>
 <h2 id="calcul-darees-de-regions-limitades-per-corbes">Càlcul d'àrees de regions limitades per corbes</h2>
 <h3 id="trapezi-mixtilini">Trapezi mixtilini</h3>
