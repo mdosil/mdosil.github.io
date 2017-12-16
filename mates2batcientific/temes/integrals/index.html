@@ -220,12 +220,9 @@
             
                 <li class="third-level"><a href="#area-sota-la-corba-duna-funcio">Àrea sota la corba d'una funció</a></li>
             
-                <li class="third-level"><a href="#propietats">propietats</a></li>
+                <li class="third-level"><a href="#teorema-fonamental-del-calcul-i-regla-de-barrow">Teorema fonamental del càlcul i regla de Barrow</a></li>
             
-        
-            <li class="second-level"><a href="#calcul-darees-de-regions-limitades-per-corbes">Càlcul d'àrees de regions limitades per corbes</a></li>
-            
-                <li class="third-level"><a href="#trapezi-mixtilini">Trapezi mixtilini</a></li>
+                <li class="third-level"><a href="#propietats-de-la-integral-definida">Propietats de la integral definida</a></li>
             
                 <li class="third-level"><a href="#area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</a></li>
             
@@ -810,9 +807,32 @@ Una primera aproximació seria dividir l'interval <script type="math/tex">[a,b]<
 <script type="math/tex; mode=display">\mbox{ Àrea sota la corba}= \lim_{h\rightarrow 0} \sum_{x_i=a}^{x_i=b} h \cdot m_i=\lim_{h\rightarrow 0} \sum_{x_i=a}^{x_i=b} h \cdot M_i=\int_{a}^{b} f(x) dx</script>
 </p>
 <p>De fet, en matemàtiques, quan parlem d'una distància molt petita, l'anomenem <em>diferencial</em>. Per tant, <script type="math/tex">dx</script> és una distància molt petita en l'eix de les abcisses. I quan aquests intervals es fan molt i molt petits, l'alçada del rectangle esdevé <script type="math/tex">f(x)</script>, d'aquí que <script type="math/tex">f(x)\cdot dx</script> sigui l'àrea d'un rectangle molt petit de base <script type="math/tex">dx</script> i alçada <script type="math/tex">f(x)</script>. I el símbol d'integral, en realitat és un sumatori de totes les àrees en l'interval.</p>
-<h3 id="propietats">propietats</h3>
-<h2 id="calcul-darees-de-regions-limitades-per-corbes">Càlcul d'àrees de regions limitades per corbes</h2>
-<h3 id="trapezi-mixtilini">Trapezi mixtilini</h3>
+<p>La figura delimitada per l'eix de les abcisses, les dues rectes <script type="math/tex">x=a</script> i <script type="math/tex">x=b</script> i la corba de la funció <script type="math/tex">f(x)</script> s'anomena <strong>trapezi mixtilini</strong>.</p>
+<h3 id="teorema-fonamental-del-calcul-i-regla-de-barrow">Teorema fonamental del càlcul i regla de Barrow</h3>
+<p>El <a href="https://es.khanacademy.org/math/integral-calculus/fundamental-theorem-of-calculus-ic">Teorema fonamental del càlcul</a> ens diu que donada una funció contínua <script type="math/tex">f(t)</script> en un interval tancat <script type="math/tex">[a,b]</script>, si definim la funció àrea sota la corba de <script type="math/tex">f(x)</script> com <script type="math/tex">F(x)=\int_{a}^{x} f(t) dt</script>, llavors, aquesta funció és una primitiva de <script type="math/tex">f(x)</script>:</p>
+<p>
+<script type="math/tex; mode=display">\frac{dF}{dx}=\frac{d}{dx}\int_{a}^{x} f(t)dt=f(x)</script>
+</p>
+<iframe scrolling="no" title="teorema fonamental del càlcul" src="https://www.geogebra.org/material/iframe/id/HtD8KNNp/width/500/height/632/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="632px" style="border:0px;"> </iframe>
+
+<p>Això ens diu que qualsevol funció contínua <script type="math/tex">f(x)</script> té una primitiva o antiderivada <script type="math/tex">F(x)</script> i estableix una connexió entre derivades i integrals.</p>
+<p>D'aquest teorema també se'n pot deduir la <strong>Regla de Barrow</strong> que ens diu com podem calcular la integral definida entre 2 punts <script type="math/tex">a</script> i <script type="math/tex">b</script>:</p>
+<p>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black] {\left.\begin{aligned}
+\int_{a}^{b} f(x)dx= F(b)-F(a)}</script>
+</p>
+<h3 id="propietats-de-la-integral-definida">Propietats de la integral definida</h3>
+<p>Es pot demostrar que les integrals definides compleixen les propietats següents:</p>
+<ol>
+<li>
+<script type="math/tex">\int_{a}^{b} k \cdot f(x)dx= k\cdot \int_{a}^{b} f(x) dx</script>
+</li>
+<li>
+<script type="math/tex">\int_{a}^{b} f(x)\pm g(x)dx= \int_{a}^{b} f(x) dx \pm \int_{a}^{b} g(x) dx</script>
+</li>
+<li>Si <script type="math/tex">c \in [a,b]</script> llavors: <script type="math/tex">\int_{a}^{b} f(x) dx=\int_{a}^{c} f(x) dx+\int_{c}^{b} f(x) dx</script>
+</li>
+</ol>
 <h3 id="area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</h3>
 <h2 id="calcul-de-volums">Càlcul de volums</h2>
 <h2 id="integrals-impropies">Integrals impròpies</h2>
