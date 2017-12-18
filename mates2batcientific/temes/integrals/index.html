@@ -227,15 +227,6 @@
                 <li class="third-level"><a href="#area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</a></li>
             
         
-            <li class="second-level"><a href="#calcul-de-volums">Càlcul de volums</a></li>
-            
-        
-            <li class="second-level"><a href="#integrals-impropies">Integrals impròpies</a></li>
-            
-        
-            <li class="second-level"><a href="#integracio-numerica">Integració numèrica</a></li>
-            
-        
     
     </ul>
 </div></div>
@@ -854,9 +845,20 @@ R_2=|\int_{\pi}^{2\pi} \sin x dx|= |[- \cos x]_{\pi}^{2\pi}|=|-\cos 2\pi+\cos \p
 <p>
 <script type="math/tex; mode=display">A_{total}=R_1+R_2=4</script>
 </p>
-<h2 id="calcul-de-volums">Càlcul de volums</h2>
-<h2 id="integrals-impropies">Integrals impròpies</h2>
-<h2 id="integracio-numerica">Integració numèrica</h2></div>
+<p>Quan hem de calcular l'àrea delimitada per dues o més funcions, haurem de buscar el punt de tall de les funcions, dividir l'àrea en les diferents regions, calcular les integrals definides i sumar els resultats positius de cada regió. Anem a veure un exemple d'això.</p>
+<p><strong>Exemple 24</strong></p>
+<p>Calcula l'àrea compresa entre les funcions <script type="math/tex">f(x)=x^2</script> i la funció <script type="math/tex">g(x)=x</script>.</p>
+<p>Dibuixem aquestes gràfiques:</p>
+<iframe scrolling="no" title="Àrea delimitada per dues funcions" src="https://www.geogebra.org/material/iframe/id/fYFaWTyr/width/487/height/505/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="487px" height="505px" style="border:0px;"> </iframe>
+
+<p>Primer ens caldrà trobar els punts de tall de les dues funcions. Ens caldrà resoldre l'equació:</p>
+<p>
+<script type="math/tex; mode=display">x^2=x \right arrow x(x-1)=0\rightarrow x=0; x=1</script>
+</p>
+<p>Fixeu-vos que podem interpretar l'àrea com la resta de dues integrals definides:</p>
+<p>
+<script type="math/tex; mode=display">A_{regió}=|\int_{0}^{1} x dx|-|\int_{0}^{1} x^2 dx|=|[\frac{x^2}{2}]_{0}^{1}|-|[\frac{x^3}{3}]_{0}^{1}|=\frac{1}{6}</script>
+</p></div>
         
     </div>
 
