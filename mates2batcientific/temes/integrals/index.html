@@ -224,7 +224,9 @@
             
                 <li class="third-level"><a href="#propietats-de-la-integral-definida">Propietats de la integral definida</a></li>
             
-                <li class="third-level"><a href="#area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</a></li>
+                <li class="third-level"><a href="#area-de-recintes-limitats-per-una-funcio-entre-dos-punts">Àrea de recintes limitats per una funció entre dos punts.</a></li>
+            
+                <li class="third-level"><a href="#area-de-recintes-limitats-per-mes-duna-funcio-continua">Àrea de recintes limitats per més d'una funció contínua</a></li>
             
         
     
@@ -823,13 +825,13 @@ Una primera aproximació seria dividir l'interval <script type="math/tex">[a,b]<
 <li>Si <script type="math/tex">c \in [a,b]</script> llavors: <script type="math/tex">\int_{a}^{b} f(x) dx=\int_{a}^{c} f(x) dx+\int_{c}^{b} f(x) dx</script>
 </li>
 </ol>
-<h3 id="area-de-recintes-limitats-per-funcions-continues">Àrea de recintes limitats per funcions contínues</h3>
+<h3 id="area-de-recintes-limitats-per-una-funcio-entre-dos-punts">Àrea de recintes limitats per una funció entre dos punts.</h3>
 <p>D'aquesta manera podem calcular les àrees de regions delimitades per corbes evaluant només la primitiva de la funció entre els 2 punts els quals volem calcular l'àrea. Evidentment que l'àrea és una quantitat positiva. Per tant, per a calcular àrees caldrà tenir una sèrie de precaucions:</p>
 <ol>
 <li>Donat un interval <script type="math/tex">[a,b]</script>, caldrà dividir la funció <script type="math/tex">f(x)</script> en tants trossos com canvis de signe hi hagi a la funció.</li>
 <li>En cadascun d'aquests intervals, l'àrea serà <em>el valor absolut</em> de la integral definida entre els seus extrems.</li>
 </ol>
-<p>Veiem-ho en dos exemples concrets.</p>
+<p>Veiem-ho en un exemple concret.</p>
 <p><strong>Exemple 23</strong></p>
 <p>Calcula l'àrea del recinte limitat per la funció <script type="math/tex">f(x)=\sin x</script> i l'eix de les abcisses entre els punts <script type="math/tex">0</script> i <script type="math/tex">2\pi</script>.</p>
 <iframe scrolling="no" title="integral de sinx entre 0 i 2pi" src="https://www.geogebra.org/material/iframe/id/tB2ryvFM/width/500/height/300/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="300px" style="border:0px;"> </iframe>
@@ -845,7 +847,12 @@ R_2=|\int_{\pi}^{2\pi} \sin x dx|= |[- \cos x]_{\pi}^{2\pi}|=|-\cos 2\pi+\cos \p
 <p>
 <script type="math/tex; mode=display">A_{total}=R_1+R_2=4</script>
 </p>
-<p>Quan hem de calcular l'àrea delimitada per dues o més funcions, haurem de buscar el punt de tall de les funcions, dividir l'àrea en les diferents regions, calcular les integrals definides i sumar els resultats positius de cada regió. Anem a veure un exemple d'això.</p>
+<h3 id="area-de-recintes-limitats-per-mes-duna-funcio-continua">Àrea de recintes limitats per més d'una funció contínua</h3>
+<p>Quan hem de calcular l'àrea delimitada per dues o més funcions, aquest procés és una mica més llarg:
+1. Primer ens caldrà buscar els punts de tall de les funcions. Si són dues, només ens cal igualar les seves expressions algebraiques i aïllar la <script type="math/tex">x</script>. Aquests punts ens defineixen els extrems de la integral definida.
+2. Podem representar esquemàticament les funcions per saber, en l'interval definit pels punts de tall, quina és la funció més gran.
+3. Calcularem l'àrea sota cada funció entre els 2 punts de tall, calculant la integral definida, en valor absolut.
+4. Per trobar l'àrea resultant, en el cas de dues funcions, només ens cal restar les àrees sota les corbes, posant la corba més gran al davant,</p>
 <p><strong>Exemple 24</strong></p>
 <p>Calcula l'àrea compresa entre les funcions <script type="math/tex">f(x)=x^2</script> i la funció <script type="math/tex">g(x)=x</script>.</p>
 <p>Dibuixem aquestes gràfiques:</p>
