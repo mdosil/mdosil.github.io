@@ -388,13 +388,13 @@ B_{2x3}=\begin{pmatrix}
 <p><strong>Matriu unitat</strong></p>
 <p>És una matriu diagonal on tots els elements de la diagonal principal són <script type="math/tex">1</script>:</p>
 <p>
-<script type="math/tex; mode=display">\begin{pmatrix}
+<script type="math/tex; mode=display">\mathbb{1}_{3x3}=\begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0\\
 0 & 0 & 1
 \end{pmatrix}
 \quad
-\begin{pmatrix}
+\mathbb{1}_{4x4}=\begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0 \\
@@ -615,32 +615,33 @@ b_{n1}
 </li>
 <li>
 <p>Element neutre</p>
-<p>És la matriu unitat: qualsevol matriu multiplicada per la matriu unitat és ella mateixa.</p>
+<p>És la matriu unitat: qualsevol matriu multiplicada per la matriu unitat és ella mateixa:</p>
+<p>
+<script type="math/tex; mode=display">A \cdot \mathbb{1}= \mathbb{1} \cdot A=A</script>
+</p>
 <p><strong>Exemple 5</strong></p>
-</li>
-</ol>
 <p>
 <script type="math/tex; mode=display">
-   \begin{pmatrix}
-   2 & 3 & 4\\
-   0 & 1 & -2 \\
-   1 & 2 & 1
-   \end{pmatrix}
-   \cdot
-   \begin{pmatrix}
-   1 & 0 & 0\\
-   0 & 1 & 0\\
-   0 & 0 & 1
-   \end{pmatrix}
-   =
-   \begin{pmatrix}
-   2 & 3 & 4\\
-   0 & 1 & -2\\
-   1 & 2 & 1
-   \end{pmatrix}
-   </script>
+\begin{pmatrix}
+2 & 3 & 4\\
+0 & 1 & -2 \\
+1 & 2 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+2 & 3 & 4\\
+0 & 1 & -2\\
+1 & 2 & 1
+\end{pmatrix}
+</script>
 </p>
-<ol>
+</li>
 <li>
 <p>Element invers</p>
 <p>Donada una matriu <script type="math/tex">A</script>, la seva matriu inversa és aquella matriu <script type="math/tex">A^{-1}</script> tal que:</p>
