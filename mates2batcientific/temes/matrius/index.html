@@ -576,7 +576,78 @@ b_{n1}
 </script>
 </p>
 <h4 id="producte-general-de-matrius">Producte general de Matrius</h4>
+<p>Per tal que el producte de dues matrius <script type="math/tex">A</script> i <script type="math/tex">B</script> estigui definitm necessitem que <strong>el nombre de columnes de la matriu <script type="math/tex">A</script> sigui igual al nombre de files de la matriu <script type="math/tex">B</script></strong>. D'altra banda, si el producte <script type="math/tex">A\cdot B</script> està definit, el producte <script type="math/tex">B \cdot A</script> no té perquè estar-ho.</p>
+<p><strong>Exemple 4</strong></p>
+<p>
+<script type="math/tex; mode=display">
+\begin{pmatrix}
+2 & 3 & -4\\
+-1 & 4 & 6
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+5 & 1 & 1\\
+4 & -2 & 0 \\
+0 & 3 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+22 & -16 & 2\\
+11 & 9 & -1
+\end{pmatrix}
+</script>
+</p>
+<p>Fixeu-vos que en aquest cas el producte invers no està definit perquè la segona matriu té 3 columnes i la primera dies files i per tant no es podrien multiplicar. Si les matrius són quadrades del mateix ordre els productes sempre estan definits.</p>
 <h4 id="propietats-del-producte-de-matrius">Propietats del producte de matrius</h4>
+<ol>
+<li>
+<p>Associativa</p>
+<p>
+<script type="math/tex; mode=display">(A\cdot B)C\cdot=A\cdot (B\cdot  C)</script>
+</p>
+</li>
+<li>
+<p>Commutativa</p>
+<p>No la verifica. En general:</p>
+<p>
+<script type="math/tex; mode=display">A\cdot B\ne B\cdot A</script>
+</p>
+</li>
+<li>
+<p>Element neutre</p>
+</li>
+</ol>
+<p>És la matriu unitat: qualsevol matriu multiplicada per la matriu unitat és ella mateixa.</p>
+<p><strong>Exemple 5</strong></p>
+<p>
+<script type="math/tex; mode=display">
+   \begin{pmatrix}
+   2 & 3 & 4\\
+   0 & 1 & -2 \\
+   1 & 2 & 1
+   \end{pmatrix}
+   \cdot
+   \begin{pmatrix}
+   1 & 0 & 0\\
+   0 & 1 & 0\\
+   0 & 0 & 1
+   \end{pmatrix}
+   =
+   \begin{pmatrix}
+   2 & 3 & 4\\
+   0 & 1 & -2\\
+   1 & 2 & 1
+   \end{pmatrix}
+   </script>
+</p>
+<ol>
+<li>Element invers</li>
+</ol>
+<p>Donada una matriu <script type="math/tex">A</script>, la seva matriu inversa és aquella matriu <script type="math/tex">A^_{-1}</script> tal que:</p>
+<p>
+<script type="math/tex; mode=display">A\cdot A^{-1}=\mathbb{I}</script>
+</p>
+<p>No totes les matrius tenen inversa. El càlcul de la matriu inversa el deixem per a més endavant.</p>
 <h2 id="determinants-dordre-dos">Determinants d'ordre dos</h2>
 <h3 id="propietats-dels-determinants-dordre-dos">Propietats dels determinants d'ordre dos</h3>
 <h2 id="determinants-dordre-tres">Determinants d'ordre tres</h2>
