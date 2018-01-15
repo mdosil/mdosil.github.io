@@ -211,9 +211,9 @@
         
             <li class="second-level"><a href="#determinants-dordre-tres">Determinants d'ordre tres</a></li>
             
-                <li class="third-level"><a href="#propietats-dels-determinants">Propietats dels determinants</a></li>
-            
                 <li class="third-level"><a href="#calcul-de-determinants-dordre-tres-desenvolupant-per-una-fila-o-una-columna">Càlcul de determinants d'ordre tres desenvolupant per una fila o una columna</a></li>
+            
+                <li class="third-level"><a href="#propietats-dels-determinants">Propietats dels determinants</a></li>
             
         
             <li class="second-level"><a href="#determinants-dordre-mes-gran-que-tres">Determinants d'ordre més gran que tres</a></li>
@@ -707,7 +707,7 @@ a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33}
 \end{vmatrix}
-=a_{11} \cdot a_{22} \cdot a_{33}+ a_{31} \cdot a_{12} \cdot a_{23} + a_{21} \cdot a_{32} \cdot a_{13}- a_{13} \cdot a_{22} \cdot a_{31} - a_{12} \cdot a_{23} \cdot a_{31} - a_{21} \cdot a_{32} \cdot a_{13}
+=a_{11} \cdot a_{22} \cdot a_{33}+ a_{21} \cdot a_{32} \cdot a_{13} + a_{12} \cdot a_{23} \cdot a_{31}- a_{13} \cdot a_{22} \cdot a_{31} - a_{11} \cdot a_{23} \cdot a_{32} - a_{21} \cdot a_{12} \cdot a_{33}
 </script>
 </p>
 <p><strong>Exemple 6</strong></p>
@@ -728,8 +728,35 @@ a_{31} & a_{32} & a_{33}
 =10-9-40-(75+12+4)=-130
 </script>
 </p>
-<h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <h3 id="calcul-de-determinants-dordre-tres-desenvolupant-per-una-fila-o-una-columna">Càlcul de determinants d'ordre tres desenvolupant per una fila o una columna</h3>
+<p>Podem transformar el càlcul de determinants d'ordre 3 de la manera següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{vmatrix}
+=a_{11} \cdot a_{22} \cdot a_{33}+ a_{21} \cdot a_{32} \cdot a_{13} + a_{12} \cdot a_{23} \cdot a_{31}- a_{13} \cdot a_{22} \cdot a_{31} - a_{11} \cdot a_{23} \cdot a_{32} - a_{21} \cdot a_{12} \cdot a_{33}\\
+=a_{11}(a_{22}a_{33}-a_{32}a_23)-a_{12}(a_{21}a_{33}-a_{31}a_{23})+a_{13}(a_{21}a_{32}-a_{22}a_{31})=\\
+a_{11}
+\begin{vmatrix}
+a_{22} & a_{23}\\
+a_{32} & a_{33}
+\end{vmatrix}
+- a_{12}
+\begin{vmatrix}
+a_{21} & a_{23}\\
+a_{31} & a_{33}
+\end{vmatrix}
++a_{13}
+\begin{vmatrix}
+a_{21} & a_{21}\\
+a_{31} & a_{32}
+\end{vmatrix}
+</script>
+</p>
+<h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <h2 id="determinants-dordre-mes-gran-que-tres">Determinants d'ordre més gran que tres</h2>
 <h2 id="triangulacio-de-determinants">Triangulació de Determinants</h2>
 <h2 id="aplicacions-dels-determinants">Aplicacions dels Determinants</h2>
