@@ -781,8 +781,8 @@ a_{31} & a_{32}
 </p>
 <h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <ol>
-<li>Si sumem un mateix element a una fila el determinant es pot separar en 2:</li>
-</ol>
+<li>
+<p>Si sumem un mateix element a una fila el determinant es pot separar en 2:</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
@@ -804,9 +804,9 @@ k_3 & a_{32} & a_{33}
 \end{vmatrix}
 </script>
 </p>
-<ol>
-<li>Si multipliquem tota una columna d'una matriu per un mateix nombre, per calcular el determinant podem treure el nombre a fora i multiplicar-lo al final, després de calcular el determinant:</li>
-</ol>
+</li>
+<li>
+<p>Si multipliquem tota una columna d'una matriu per un mateix nombre, per calcular el determinant podem treure el nombre a fora i multiplicar-lo al final, després de calcular el determinant:</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
@@ -822,8 +822,51 @@ a_{31} & a_{32} & a_{33}
 \end{vmatrix}
 </script>
 </p>
-<ol>
-<li>El determinant d'una matriu amb dues columnes iguals és zero.</li>
+</li>
+<li>
+<p>El determinant d'una matriu amb dues columnes o dues files iguals és zero.</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11} & a_{11} & a_{13}\\
+a_{21} & a_{21} & a_{23}\\
+a_{31} & a_{22} & a_{33}
+\end{vmatrix}
+=0
+</script>
+</p>
+</li>
+<li>
+<p>El determinant d'una matriu amb una columna o fila de zeros és zero.</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11} & 0 & a_{13}\\
+a_{21} & 0 & a_{23}\\
+a_{31} & 0 & a_{33}
+\end{vmatrix}
+=0
+</script>
+</p>
+</li>
+<li>
+<p>Si tenim una matriu quadrada i intercanviem dues files (o dues columnes) el determinant esdevé el mateix però canviat de signe.</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+k\cdot a_{11} & a_{12} & a_{13}\\
+k\cdot a_{21} & a_{22} & a_{23}\\
+k\cdot a_{31} & a_{32} & a_{33}
+\end{vmatrix}
+=-
+\begin{vmatrix}
+a_{12} & a_{11} & a_{13}\\
+a_{22} & a_{21} & a_{23}\\
+a_{32} & a_{31} & a_{33}
+\end{vmatrix}
+</script>
+</p>
+</li>
 </ol>
 <h2 id="determinants-dordre-mes-gran-que-tres">Determinants d'ordre més gran que tres</h2>
 <h2 id="triangulacio-de-determinants">Triangulació de Determinants</h2>
