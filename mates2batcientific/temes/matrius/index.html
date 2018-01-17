@@ -782,43 +782,45 @@ a_{31} & a_{32}
 <h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <ol>
 <li>
-<p>Si sumem un mateix element a una fila el determinant es pot separar en 2:</p>
+<p>El determinant de la matriu unitat és <script type="math/tex">1</script>.</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
-a_{11}+k_1 & a_{12} & a_{13}\\
-a_{21}+k_2 & a_{22} & a_{23}\\
-a_{31}+k_3 & a_{32} & a_{33}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
 \end{vmatrix}
-=
-\begin{vmatrix}
-a_{11} & a_{12} & a_{13}\\
-a_{21} & a_{22} & a_{23}\\
-a_{31} & a_{32} & a_{33}
-\end{vmatrix}
-+
-\begin{vmatrix}
-k_1 & a_{12} & a_{13}\\
-k_2 & a_{22} & a_{23}\\
-k_3 & a_{32} & a_{33}
-\end{vmatrix}
+=1
 </script>
 </p>
 </li>
 <li>
-<p>Si multipliquem tota una columna d'una matriu per un mateix nombre, per calcular el determinant podem treure el nombre a fora i multiplicar-lo al final, després de calcular el determinant:</p>
+<p>El determinant d'una matriu diagonal és el producte dels elements de la diagonal principal.</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
-k\cdot a_{11} & a_{12} & a_{13}\\
-k\cdot a_{21} & a_{22} & a_{23}\\
-k\cdot a_{31} & a_{32} & a_{33}
+a_{11} & 0 & 0\\
+0 & a_{22} & 0\\
+0 & 0 & a_{33}
 \end{vmatrix}
-=k\cdot
+=a_{11}\cdot a_{22} \cdot a_{33}
+</script>
+</p>
+</li>
+<li>
+<p>El determinant d'una matriu és igual al determinant de la seva transposta.</p>
+<p>
+<script type="math/tex; mode=display">
 \begin{vmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33}
+\end{vmatrix}
+=
+\begin{vmatrix}
+a_{11} & a_{21} & a_{31}\\
+a_{12} & a_{22} & a_{32}\\
+a_{13} & a_{23} & a_{33}
 \end{vmatrix}
 </script>
 </p>
@@ -868,45 +870,43 @@ a_{32} & a_{31} & a_{33}
 </p>
 </li>
 <li>
-<p>El determinant de la matriu unitat és <script type="math/tex">1</script>.</p>
+<p>Si multipliquem tota una columna d'una matriu per un mateix nombre, per calcular el determinant podem treure el nombre a fora i multiplicar-lo al final, després de calcular el determinant:</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1
+k\cdot a_{11} & a_{12} & a_{13}\\
+k\cdot a_{21} & a_{22} & a_{23}\\
+k\cdot a_{31} & a_{32} & a_{33}
 \end{vmatrix}
-=1
-</script>
-</p>
-</li>
-<li>
-<p>El determinant d'una matriu diagonal és el producte dels elements de la diagonal principal.</p>
-<p>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-a_{11} & 0 & 0\\
-0 & a_{22} & 0\\
-0 & 0 & a_{33}
-\end{vmatrix}
-=a_{11}\cdot a_{22} \cdot a_{33}
-</script>
-</p>
-</li>
-<li>
-<p>El determinant d'una matriu és igual al determinant de la seva transposta.</p>
-<p>
-<script type="math/tex; mode=display">
+=k\cdot
 \begin{vmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33}
 \end{vmatrix}
+</script>
+</p>
+</li>
+<li>
+<p>Si sumem un mateix element a una fila el determinant es pot separar en 2:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11}+k_1 & a_{12} & a_{13}\\
+a_{21}+k_2 & a_{22} & a_{23}\\
+a_{31}+k_3 & a_{32} & a_{33}
+\end{vmatrix}
 =
 \begin{vmatrix}
-a_{11} & a_{21} & a_{31}\\
-a_{12} & a_{22} & a_{32}\\
-a_{13} & a_{23} & a_{33}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{vmatrix}
++
+\begin{vmatrix}
+k_1 & a_{12} & a_{13}\\
+k_2 & a_{22} & a_{23}\\
+k_3 & a_{32} & a_{33}
 \end{vmatrix}
 </script>
 </p>
@@ -918,7 +918,7 @@ a_{13} & a_{23} & a_{33}
  \begin{vmatrix}
  a_{11} & a_{12} & \alpha \cdot a_{11} + \beta \cdot a_{12}\\
  a_{21} & a_{22} & \alpha \cdot a_{21} + \beta \cdot a_{22}\\
- a_{31} & a_{32} \alpha \cdot a_{31} + \beta \cdot a_{32}&
+ a_{31} & a_{32} & \alpha \cdot a_{31} + \beta \cdot a_{32}&
  \end{vmatrix}
  =0
  </script>
@@ -937,7 +937,7 @@ a_{13} & a_{23} & a_{33}
  \begin{vmatrix}
  a_{11} & a_{12} & a_{13}+\alpha \cdot a_{11} + \beta \cdot a_{12}\\
  a_{21} & a_{22} & a_{23}+\alpha \cdot a_{21} + \beta \cdot a_{22}\\
- a_{31} & a_{32} a_{33}+\alpha \cdot a_{31} + \beta \cdot a_{32}&
+ a_{31} & a_{32} & a_{33}+\alpha \cdot a_{31} + \beta \cdot a_{32}&
  \end{vmatrix}
  </script>
 </p>
