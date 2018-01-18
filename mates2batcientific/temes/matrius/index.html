@@ -756,7 +756,6 @@ a_{31} & a_{32}
 \end{vmatrix}
 \end{align}</script>
 </p>
-<p>Intentarem d'expressar això d'una manera més formal. Definim <script type="math/tex">\alpha_{ij}</script> com el <strong>menor complementari</strong> d'un element <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script> com aquell determinant d'ordre <script type="math/tex">2</script> que s'obté en eliminar la fila <script type="math/tex">i</script> i la columna <script type="math/tex">j</script> de la matriu <script type="math/tex">A</script>. També definim <script type="math/tex">A_{ij}</script> com <strong>l'adjunt d'un element</strong> <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script>: és el seu menor complementari <script type="math/tex">\alpha_{ij}</script> afectat d'un signe determinant per la seva situació en la matriu segons:</p>
 <p><strong>Exemple 7</strong></p>
 <p>
 <script type="math/tex; mode=display">
@@ -780,6 +779,45 @@ a_{31} & a_{32}
 =-1
 </script>
 </p>
+<h4 id="adjunt-dun-element-a_ij-matriu-adjunta">Adjunt d'un element <script type="math/tex">a_{ij}</script>. Matriu adjunta</h4>
+<p>Intentarem d'expressar això d'una manera més formal. Definim <script type="math/tex">\alpha_{ij}</script> com el <strong>menor complementari</strong> d'un element <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script> com aquell determinant d'ordre <script type="math/tex">2</script> que s'obté en eliminar la fila <script type="math/tex">i</script> i la columna <script type="math/tex">j</script> de la matriu <script type="math/tex">A</script>. També definim <script type="math/tex">A_{ij}</script> com <strong>l'adjunt d'un element</strong> <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script>: és el seu menor complementari <script type="math/tex">\alpha_{ij}</script> afectat d'un signe determinant per la seva situació en la matriu segons:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{pmatrix}
++ & - & +\\
+- & + & -\\
++ & - & +
+\end{pmatrix}
+</script>
+</p>
+<p>Per tant, l'adjunt d'un element <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script> es calcularà segons:</p>
+<p>
+<script type="math/tex; mode=display">A_{ij}=\alpha_{ij}(-1)^{i+j} </script>
+</p>
+<p>D'aquesta manera també es pot definir la <strong>matriu adjunta</strong> d'una matriu <script type="math/tex">A</script>, <script type="math/tex">Adj(A)</script> com aquella matriu que té per elements els adjunts de cada element de la matriu original:</p>
+<p>
+<script type="math/tex; mode=display">
+ Adj(A)=
+ \begin{pmatrix}
+ A_{11} & A_{12} & A_{13}\\
+ A_{21} & A_{22} & A_{23}\\
+ A_{31} & A_{32} & A_{33}
+ \end{pmatrix}
+</script>
+</p>
+<p>Així doncs, quan calculem el determinant d'una matriu desenvolupant per una fila (o una columna), estem calculant la suma de tots el productes dels elements d'una fila (o columna) multiplicada pels seus adjunts:</p>
+<p>
+<script type="math/tex; mode=display">
+|A|=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{vmatrix}
+\xrightarrow[1a fila]{} a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}
+</script>
+</p>
+<p>Si multipliquem els elements d'una fila (o columna) pels adjunts d'una altra fila (o columna) el valor sempre és zero.</p>
 <h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <ol>
 <li>
