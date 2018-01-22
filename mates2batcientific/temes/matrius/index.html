@@ -1165,6 +1165,14 @@ a_{41} & a_{42} & a_{43} & a_{44}\\
 <p><strong>Nota</strong></p>
 <p>S'ha d'anar molt alerta en calcular el determinant d'una matriu per triangulació. A vegades quan apliquem la propietat <script type="math/tex">11</script> dels determinants l'apliquem malament: si una fila o columna li sumem una combinació lineal de les altres (o sigui, li sumem o restem les altres multiplicades per algun nombre) el determinant no varia, però si canviem aquesta fila per ella mateixa multiplicada per un nombre més una combinació lineal de les altres, el determinant es queda afectat pel nombre que l'hem multiplicat (tal i com s'explica a la propietat <script type="math/tex">8</script> dels determinants).</p>
 <h2 id="matriu-inversa-duna-matriu-quadrada">Matriu inversa d'una matriu quadrada</h2>
+<p>Recordem que, donada una matriu quadrada <script type="math/tex">A</script> d'ordre <script type="math/tex">n</script>, la seva matriu inversa és aquella que multiplicada per <script type="math/tex">A</script> ens dóna la matriu identitat:</p>
+<p>
+<script type="math/tex; mode=display">A\cdot A^{-1}=A^{-1}\cdot A=\mathbb{1}</script>
+</p>
+<p>Si la matriu té determinant no nul, <script type="math/tex">|A|\ne 0</script>, la matriu inversa <script type="math/tex">A^{-1}</script> en aquest cas es calcula segons:</p>
+<p>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{A^{-1}=\frac{ 1 }{ |A| }\cdot \big(Adj(A)\big)^T}</script>
+</p>
 <h2 id="rang-duna-matriu">Rang d'una matriu</h2></div>
         
     </div>
