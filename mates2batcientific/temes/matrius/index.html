@@ -1200,7 +1200,77 @@ A_{31} & A_{32} & A_{33} &...& A_{3n}\\
 . & . & . &.& .\\
 A_{n1} & A_{n2} & A_{n3} &...& A_{nn}\\
 \end{pmatrix}
+\quad
+(Adj(A))^T=
+\begin{pmatrix}
+A_{11} & A_{21} & A_{31} &...& A_{n1}\\
+A_{12} & A_{22} & A_{32} &...& A_{n2}\\
+A_{13} & A_{23} & A_{33} &...& A_{n3}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+A_{1n} & A_{1n} & A_{3n} &...& A_{nn}\\
+\end{pmatrix}
 </script>
+</p>
+<p>Veiem què obtenim en multiplicar <script type="math/tex">A</script> per la transposta de la seva matriu adjunta:</p>
+<p>
+<script type="math/tex; mode=display">
+A\cdot (Adj(A))^T)=
+A=\begin{pmatrix}
+a_{11} & a_{12} & a_{13} &...& a_{1n}\\
+a_{21} & a_{22} & a_{23} &...& a_{2n}\\
+a_{31} & a_{32} & a_{33} &...& a_{3n}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+a_{n1} & a_{n2} & a_{n3} &...& a_{nn}\\
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+A_{11} & A_{21} & A_{31} &...& A_{n1}\\
+A_{12} & A_{22} & A_{32} &...& A_{n2}\\
+A_{13} & A_{23} & A_{33} &...& A_{n3}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+A_{1n} & A_{1n} & A_{3n} &...& A_{nn}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_{11}A_{11}+a_{12}A_{12}+...+a_{1n}A_{1n} & 0 & 0 &...& 0\\
+0 & a_{11}A_{11}+a_{12}A_{12}+...+a_{1n}A_{1n} & 0 &...& 0\\
+0 & 0 & a_{11}A_{11}+a_{12}A_{12}+...+a_{1n}A_{1n} &...& 0\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+0 & 0 & 0 &...& a_{11}A_{11}+a_{12}A_{12}+...+a_{1n}A_{1n}\\
+\end{pmatrix}
+</script>
+</p>
+<p>Veiem que el que apareix a la diagonal de la lmatriu és el <strong>desenvolupament del determinant de <script type="math/tex">A</script></strong> (que és la suma dels elements de la matriu multiplicada pels seus adjunts), per tant:</p>
+<p>
+<script type="math/tex; mode=display">
+A\cdot (Adj(A))^T)=
+\begin{pmatrix}
+|A| & 0 & 0 &...& 0\\
+0 & |A| & 0 &...& 0\\
+0 & 0 &|A|&...& 0\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+0 & 0 & 0 &...&|A|\\
+\end{pmatrix}
+=|A|\cdot \mathbb{1}_{nxn}
+</script>
+on <script type="math/tex">\mathbb{1}_{nxn}</script> és la matriu identitat <script type="math/tex">nxn</script>.
+Si <script type="math/tex">|A|\ne 0</script> això és pot expressar com:</p>
+<p>
+<script type="math/tex; mode=display">A\cdot \frac{(Adj(A))^T)}{|A|}=\mathbb{1}_{nxn}</script>
+</p>
+<p>i per tant, necessàriament, si multipliquem alguna cosa per <script type="math/tex">A</script> i obtenim la matriu identitat, aquest factor ha de ser l'invers de la matriu <script type="math/tex">A</script>:</p>
+<p>
+<script type="math/tex; mode=display">A^{-1}=\frac{(Adj(A))^T)}{|A|}</script>
 </p>
 <h2 id="rang-duna-matriu">Rang d'una matriu</h2></div>
         
