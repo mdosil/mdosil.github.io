@@ -224,6 +224,8 @@
         
             <li class="second-level"><a href="#matriu-inversa-duna-matriu-quadrada">Matriu inversa d'una matriu quadrada</a></li>
             
+                <li class="third-level"><a href="#demostracio">Demostració</a></li>
+            
         
             <li class="second-level"><a href="#rang-duna-matriu">Rang d'una matriu</a></li>
             
@@ -1172,6 +1174,33 @@ a_{41} & a_{42} & a_{43} & a_{44}\\
 <p>Si la matriu té determinant no nul, <script type="math/tex">|A|\ne 0</script>, la matriu inversa <script type="math/tex">A^{-1}</script> en aquest cas es calcula segons:</p>
 <p>
 <script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{A^{-1}=\frac{ 1 }{ |A| }\cdot \big(Adj(A)\big)^T}</script>
+</p>
+<h3 id="demostracio">Demostració</h3>
+<p>
+<script type="math/tex">A</script> és una matriu d'ordre <script type="math/tex">n</script>. Veiem quina forma té la seva matriu adjunta i la transposta de la matriu adjunta:</p>
+<p>
+<script type="math/tex; mode=display">
+A=\begin{pmatrix}
+a_{11} & a_{12} & a_{13} &...& a_{1n}\\
+a_{21} & a_{22} & a_{23} &...& a_{2n}\\
+a_{31} & a_{32} & a_{33} &...& a_{3n}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+a_{n1} & a_{n2} & a_{n3} &...& a_{nn}\\
+\end{pmatrix}
+\quad
+Adj(A)=
+\begin{pmatrix}
+A_{11} & A_{12} & A_{13} &...& A_{1n}\\
+A_{21} & A_{22} & A_{23} &...& A_{2n}\\
+A_{31} & A_{32} & A_{33} &...& A_{3n}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+A_{n1} & A_{n2} & A_{n3} &...& A_{nn}\\
+\end{pmatrix}
+</script>
 </p>
 <h2 id="rang-duna-matriu">Rang d'una matriu</h2></div>
         
