@@ -231,6 +231,10 @@
             
                 <li class="third-level"><a href="#definicions">Definicions</a></li>
             
+                <li class="third-level"><a href="#teorema">Teorema</a></li>
+            
+                <li class="third-level"><a href="#metode-per-calcular-el-rang">Mètode per calcular el rang</a></li>
+            
         
     
     </ul>
@@ -1483,14 +1487,121 @@ A_{33}=
 <p>El podem orlar de dues maneres, afegint-hi la fila 3 i la columna 3 o la fila 3 i la columna 4:</p>
 <p>
 <script type="math/tex; mode=display"> \left|
-\begin{array}{cc:c}
+\begin{array}{cc|c}
   2&3&-3\\
   1&0&2\\
   \hline
   4&1&0
 \end{array}
-\right| </script>
-</p></div>
+\right|
+\qquad
+\left|
+\begin{array}{cc|c}
+  2&3&4\\
+  1&0&1\\
+  \hline
+  4&1&3
+\end{array}
+\right|
+</script>
+</p>
+<h3 id="teorema">Teorema</h3>
+<blockquote>
+<p>El rang d'una matriu coincideix amb l'ordre més gran del menor no nul de la matriu.</p>
+</blockquote>
+<p>En l'exemple anterior, el rang de la matriu no pot ser més gran que 3 (ja que tenim com a màxim 3 files): <script type="math/tex">Rang(A)\le 3</script>. Si trobem un menor d'ordre 3 no nul, podrem afirmar que el rang és 3. Si fos zero, hauríem de trobar tots els menors d'ordre 2 i mirar si són no nuls. I així seguir el procés fins a ordre 1, que de fet, si una matriu té algun element no nul, el rang com a mínim serà 1.</p>
+<p>En l'exemple, hem trobat un menor d'ordre 3 diferent de zero:</p>
+<p>
+<script type="math/tex; mode=display"> \left|
+\begin{array}{cc|c}
+  2&3&-3\\
+  1&0&2\\
+  \hline
+  4&1&0
+\end{array}
+\right|
+=17
+</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">Rang(A)=3</script>
+</p>
+<p>Es pot demostrar també, que:</p>
+<blockquote>
+<p>Si tots els menors d'una matriu d'ordre <script type="math/tex">k</script> són <script type="math/tex">0</script>, els d'ordre <script type="math/tex">k+1</script> també ho són.</p>
+</blockquote>
+<p>A la pràctica això vol dir que si tots els menors són zero, el rang serà una unitat inferior i no cal mirar els menors d'ordre superior, perquè segur que també seran zero.</p>
+<p>Si utilitzant totes les possibilitats d'orlar un menor fem servir la mateixa fila però diferents columnes (o al revés) i veiem que tots els determinants són zero, podem afirmar que la fila (o columna) amb la que hem orlat el menor és combinació lineal de les files (o columnes) del menor. Veurem això amb més claredat a l'exemple 10.</p>
+<h3 id="metode-per-calcular-el-rang">Mètode per calcular el rang</h3>
+<ol>
+<li>Si la matriu té un element diferent de <script type="math/tex">0</script> el rang serà com a mínim 1.</li>
+<li>A continuació orlem aquest menor d'ordre 1 fins a trobar un menor d'ordre 2 diferent de zero. Si tots els d'ordre 2 són zero, el rang de la matriu és 1.</li>
+<li>Orlem aquest menor d'ordre 2 fins a trobar-ne un d'ordre 3 diferent de zero. Si tots els d'ordre 3 són zero, el rang de la matriu és 2.</li>
+<li>En general, si trobem menors no nuls, continuem aquest procés fins a trobar un menor d'ordre <script type="math/tex">k</script> tal que al orlar-lo amb les files i columnes que queden tots els menors d'ordre <script type="math/tex">k+1</script> són nuls. Aleshores el rang de la matriu <script type="math/tex">A</script> serà <script type="math/tex">k</script>.</li>
+</ol>
+<p><strong>Exemple 10</strong></p>
+<p>Trobeu el rang de la matriu:</p>
+<p>
+<script type="math/tex; mode=display">
+A=
+\begin{pmatrix}
+2 & -2 & -8 & -1 & 1\\
+2 & 2 & 3 & 1 & 0\\
+12 & 8 & 7 & 4 & 1\\
+8 & 4 & 1 & 2 & 1
+\end{pmatrix}
+</script>
+</p>
+<p>Menors d'ordre 1:</p>
+<p>
+<script type="math/tex; mode=display">|2|\ne 0</script>
+</p>
+<p>El rang com a mínim és 1. Trobem ara un menor d'ordre 2 no nul:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+2 & -2\\
+2 & 2
+\end{vmatrix}
+=8
+</script>
+</p>
+<p>Per tant, el rang com a mínim és 2.</p>
+<p>Anem a orlar aquest menor de totes les maneres possibles. Si ho fem, trobarem 3 menors d'ordre 3:</p>
+<p>
+<script type="math/tex; mode=display"> \left|
+\begin{array}{cc|c}
+  2&2&-8\\
+  2&2&3\\
+  \hline
+  12&8&7
+\end{array}
+\right|
+=0
+\qquad
+\left|
+\begin{array}{cc|c}
+  2&2&-1\\
+  2&2&1\\
+  \hline
+  12&8&4
+\end{array}
+\right|
+=0
+\left|
+\begin{array}{cc|c}
+  2&2&1\\
+  2&2&0\\
+  \hline
+  12&8&1
+\end{array}
+\right|
+=0
+</script>
+</p>
+<p>Hem orlat el menor d'ordre 2 sempre amb la fila 3 canviant les columnes i veiem que tots són zero. Per tant, podem afirmar que la fila 3 és una combinació lineal de les files 1 i 2.</p>
+<p>Si orléssim el menor de la mateixa manera que hem fet però amb els elements de la fila 4, veuríem que també són zero i per tant, podem afirmar que la fila 4 és també combinació lineal de les files 1 i 2. Com que no hi ha cap altre menor orlat d'ordre 3, podem afirmar que el rang de la matriu és 2.</p></div>
         
     </div>
 
