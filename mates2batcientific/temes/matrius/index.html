@@ -229,6 +229,8 @@
         
             <li class="second-level"><a href="#rang-duna-matriu">Rang d'una matriu</a></li>
             
+                <li class="third-level"><a href="#definicions">Definicions</a></li>
+            
         
     
     </ul>
@@ -1412,7 +1414,61 @@ A_{33}=
 \end{pmatrix}
 </script>
 </p>
-<h2 id="rang-duna-matriu">Rang d'una matriu</h2></div>
+<h2 id="rang-duna-matriu">Rang d'una matriu</h2>
+<h3 id="definicions">Definicions</h3>
+<h4 id="rang-duna-matriu_1">Rang d'una matriu</h4>
+<p>Definim el rang d'una matriu com el nombre màxim de vectors fila (o vectors columna) linealment independents de la matriu.</p>
+<p>A la pràctica vol dir quantes files o columnes no són combinació lineal de les files o columnes restants. La matriu identitat <script type="math/tex">3x3</script> (tot zeros menys la diagonal amb <script type="math/tex">1</script>) té rang 3 perquè cap fila (o columna) és combinació lineal de les altres dues.</p>
+<h4 id="menor">Menor</h4>
+<p>Donada una matriu <script type="math/tex">A</script>, anomenem menor al determinant de tota matriu quadrada que es pot formar amb els elements de la matriu <strong>respectant la distribució de files i columnes de la matriu</strong>.</p>
+<p>Per exemple, donada la matriu següent:</p>
+<p>
+<script type="math/tex; mode=display">A=
+\begin{pmatrix}
+2 & 3 & -3 & 4\\
+1 & 0 & 2 & 1\\
+4 & 1 & 0 & 3
+\end{pmatrix}
+</script>
+</p>
+<p>Podem trobar 3 menors d'ordre 2:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+2 & 1\\
+3 & 0
+\end{vmatrix}
+=-3
+\qquad
+\begin{vmatrix}
+3 & 4\\
+1 & 3
+\end{vmatrix}
+=5
+\qquad
+\begin{vmatrix}
+2 & -3\\
+1 & 2
+\end{vmatrix}
+=7
+</script>
+</p>
+<p>I 2 menors d'ordre 3:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+2 & 3 & 4\\
+1 & 0 & 1\\
+4 & 1 & 3
+\end{vmatrix}
+=5
+\qquad
+\begin{vmatrix}
+3 & -3 & 4\\
+0 & 2 & 1\\
+1 & 0 & 3
+\end{vmatrix}
+=7
+</script>
+</p></div>
         
     </div>
 
