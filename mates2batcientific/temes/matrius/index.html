@@ -1536,8 +1536,7 @@ A_{33}=
 <h3 id="metode-per-calcular-el-rang">Mètode per calcular el rang</h3>
 <ol>
 <li>Si la matriu té un element diferent de <script type="math/tex">0</script> el rang serà com a mínim 1.</li>
-<li>A continuació orlem aquest menor d'ordre 1 fins a trobar un menor d'ordre 2 diferent de zero. Si tots els d'ordre 2 són zero, el rang de la matriu és 1.</li>
-<li>Orlem aquest menor d'ordre 2 fins a trobar-ne un d'ordre 3 diferent de zero. Si tots els d'ordre 3 són zero, el rang de la matriu és 2.</li>
+<li>A continuació orlem aquest menor d'ordre 1 fins a trobar un menor d'ordre 2 diferent de zero. En aquest cas, podem afirmar que el rang com a mínim és 2. Si tots els d'ordre 2 són zero, el rang de la matriu és 1 i ja hauríem acabat.</li>
 <li>En general, si trobem menors no nuls, continuem aquest procés fins a trobar un menor d'ordre <script type="math/tex">k</script> tal que al orlar-lo amb les files i columnes que queden tots els menors d'ordre <script type="math/tex">k+1</script> són nuls. Aleshores el rang de la matriu <script type="math/tex">A</script> serà <script type="math/tex">k</script>.</li>
 </ol>
 <p><strong>Exemple 10</strong></p>
@@ -1572,7 +1571,7 @@ A=
 <p>
 <script type="math/tex; mode=display"> \left|
 \begin{array}{cc|c}
-  2&2&-8\\
+  2&2-&-8\\
   2&2&3\\
   \hline
   12&8&7
@@ -1582,7 +1581,7 @@ A=
 \qquad
 \left|
 \begin{array}{cc|c}
-  2&2&-1\\
+  2&-2&-1\\
   2&2&1\\
   \hline
   12&8&4
@@ -1591,7 +1590,7 @@ A=
 =0
 \left|
 \begin{array}{cc|c}
-  2&2&1\\
+  2&-2&1\\
   2&2&0\\
   \hline
   12&8&1
