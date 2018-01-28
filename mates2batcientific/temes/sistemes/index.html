@@ -227,10 +227,10 @@
 <p>
 <script type="math/tex; mode=display">
 \begin{cases}
-a_{11}x_1+a_{12}x_2+...+a_{1n}x_n=b_1\\
-a_{21}x_1+a_{22}x_2+...+a_2n}x_n=b_2\\
-...\\
-a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n=b_m\\
+a_{11}x_1+a_{12}x_2+...+a_{1n}x_n&=b_1\\
+a_{21}x_1+a_{22}x_2+...+a_2n}x_n&=b_2\\
+..&.\\
+a_{m1}x_1+a_{m2}x_2+...+a_{mn}x_n&=b_m
 \end{cases}
 </script>
 </p>
@@ -262,14 +262,14 @@ a_{m1} & a_{m2} & a_{m3} &...& a_{mn} & b_m\\
 <p>Trobar solució per un sistema significa trobar els valors de les incògnites <script type="math/tex">x_{1}, x_{2},..., x_{n}</script> que fan certes totes i cadascuna de les igualtats. Això no sempre és possible, és per això que es classifiquen el sistemes segons:</p>
 <ul>
 <li>
-<p>Sistemes compatibles. Són aquells que tenen solució. Podem trobar també dos casos:</p>
+<p><strong>Sistemes compatibles</strong>. Són aquells que tenen solució. Podem trobar també dos casos:</p>
 <ul>
-<li>Sistemes compatibles determinats. Tenen una <strong>única solució</strong> (això és, un únic conjunt de valors <script type="math/tex">x_{1}, x_{2},..., x_{n}</script> que satisfà totes les igualtats).</li>
-<li>Sistemes compatibles indeterminats. Tenen <strong>infinites solucions</strong>.</li>
+<li><strong>Sistemes compatibles determinats</strong>. Tenen una <strong>única solució</strong> (això és, un únic conjunt de valors <script type="math/tex">x_{1}, x_{2},..., x_{n}</script> que satisfà totes les igualtats).</li>
+<li><strong>Sistemes compatibles indeterminats</strong>. Tenen <strong>infinites solucions</strong>.</li>
 </ul>
 </li>
 <li>
-<p>Sistemes incompatibles. No tenen solució.</p>
+<p><strong>Sistemes incompatibles</strong>. No tenen solució.</p>
 </li>
 </ul>
 <p>Pel que fa a les solucions, diem que dos sistemes són <strong>equivalents</strong> si tenen la mateixa solució.</p>
@@ -302,6 +302,41 @@ x_{n}\\
 \end{pmatrix}
 \quad
 B=\begin{pmatrix}
+b_{1}\\
+b_{2}\\
+b_{3}\\
+. \\
+. \\
+. \\
+b_{n}\\
+\end{pmatrix}
+</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">
+A\cdot X=B \rightarrow
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} &...& a_{1n}\\
+a_{21} & a_{22} & a_{23} &...& a_{2n}\\
+a_{31} & a_{32} & a_{33} &...& a_{3n}\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+. & . & . &.& .\\
+a_{m1} & a_{m2} & a_{m3} &...& a_{mn}\\
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+x_{1}\\
+x_{2}\\
+x_{3}\\
+. \\
+. \\
+. \\
+x_{n}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
 b_{1}\\
 b_{2}\\
 b_{3}\\
