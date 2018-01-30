@@ -364,7 +364,7 @@ X &= A^{-1}\cdot B
 <p>Troba la solució del sistema lineal següent:</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{cases} 2x+y-z=3 \\ x-y+z=1 \\ ... \\ 3x+y=4 \end{cases}
+\begin{cases} 2x+y-z=3 \\ x-y+z=1 \\ 3x+y=4 \end{cases}
 </script>
 </p>
 <p>Primer de tot expressarem la matriu i matriu ampliada del sistema:</p>
@@ -383,6 +383,28 @@ MA=\begin{pmatrix}
 \end{pmatrix}
 </script>
 </p>
+<p>Ens cal ara estudiar el rang de la matriu <script type="math/tex">A</script> i la matriu <script type="math/tex">MA</script> per veure si el sistema té solució o no. Com que ja tenim un element diferent de zero, el rang de la matriu <script type="math/tex">A</script> com a mínim és 1. Anem a buscar un menor d'ordre dos no nul:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+2 & 1\\
+1 & -1
+\end{vmatrix}
+=-3 \ne 0
+</script>
+</p>
+<p>El rang per tant, com a mínim és 2. Anem a calcular el determinant de la matriu:</p>
+<p>
+<script type="math/tex; mode=display">
+A=\begin{vmatrix}
+2 & 1 & -1\\
+1 & -1 & 1\\
+3 & 1 & 0
+\end{vmatrix}
+=-3\ne 0
+</script>
+</p>
+<p>Veiem que rang<script type="math/tex">A=3</script> i necessàriament serà igual al rang de la matriu ampliada (perquè conté el menor de la matriu <script type="math/tex">A</script> a dins). Per tant, aquest sistema és compatible determinat. Anem ara a trobar la solució. En forma matricial sabem que:</p>
 <h3 id="metode-de-gauss">Mètode de Gauss</h3>
 <h3 id="metode-de-cramer">Mètode de Cramer</h3>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
