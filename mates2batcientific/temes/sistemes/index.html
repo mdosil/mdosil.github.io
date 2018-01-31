@@ -404,7 +404,77 @@ A=\begin{vmatrix}
 =-3\ne 0
 </script>
 </p>
-<p>Veiem que rang<script type="math/tex">A=3</script> i necessàriament serà igual al rang de la matriu ampliada (perquè conté el menor de la matriu <script type="math/tex">A</script> a dins). Per tant, aquest sistema és compatible determinat. Anem ara a trobar la solució. En forma matricial sabem que:</p>
+<p>Veiem que rang<script type="math/tex">A=3</script> i necessàriament serà igual al rang de la matriu ampliada (perquè conté el menor de la matriu <script type="math/tex">A</script> a dins). Per tant, aquest sistema és compatible determinat. Anem ara a trobar la solució. En forma matricial:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{pmatrix}
+2 & 1 & -1\\
+1 & -1 & 1\\
+3 & 1 & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+x \\
+y\\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+3\\
+1\\
+4
+\end{pmatrix}
+</script>
+</p>
+<p>Per trobar la solució cal que fem: <script type="math/tex">X=A^{-1}\cdot B</script>. Anem a buscar primer la inversa de la matriu, <script type="math/tex">A^{-1}=\frac{ 1 }{ |A| } Adj(A)^{T}</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+Adj(A)=\begin{pmatrix}
+-1 & 3 & 4\\
+-1 & 3 & 1\\
+2 & -3 & -3
+\end{pmatrix}
+\Rightarrow
+Adj(A)^{T}=\begin{pmatrix}
+-1 & -1 & 2\\
+3 & 3 & -3\\
+4 & 1 & -3
+\end{pmatrix}
+\Rightarrow
+A^{-1}=\frac{ -1 }{ 3 }\begin{pmatrix}
+-1 & -1 & 2\\
+3 & 3 & -3\\
+4 & 1 & -3
+\end{pmatrix}
+</script>
+</p>
+<p>Per tant:</p>
+<p>
+<script type="math/tex; mode=display">
+X=
+\frac{ -1 }{ 3 }\begin{pmatrix}
+-1 & -1 & 2\\
+3 & 3 & -3\\
+4 & 1 & -3
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+3\\
+1\\
+4
+\end{pmatrix}
+=
+\begin{pmatrix}
+-4/3\\
+0\\
+-1/3
+\end{pmatrix}
+</script>
+</p>
+<p>La solució d'aquest sistema és:</p>
+<p>
+<script type="math/tex; mode=display">x=\frac{ -4 }{ 3 }\qquad y=0 \qquad z=\frac{ -1 }{ 3 }</script>
+</p>
 <h3 id="metode-de-gauss">Mètode de Gauss</h3>
 <h3 id="metode-de-cramer">Mètode de Cramer</h3>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
