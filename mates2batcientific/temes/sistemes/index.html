@@ -488,16 +488,7 @@ X=
 </ol>
 <p><strong>Exemple 2</strong></p>
 <p>Resol el sistema anterior pel mètode de Gauss.</p>
-<p>Ja hem vist que és un sistema compatible determinat. Anem a triangular doncs la matriu ampliada:</p>
-<p>
-<script type="math/tex; mode=display">
-MA=\begin{pmatrix}
-2 & 1 & -1 & 3\\
-1 & -1 & 1 & 1\\
-3 & 1 & 0 & 4
-\end{pmatrix}
-</script>
-</p>
+<p>Ja hem vist que és un sistema compatible determinat. Anem a triangular doncs la matriu:</p>
 <p>
 <script type="math/tex; mode=display"> \left(
 \begin{array}{ccc|c}
@@ -507,6 +498,49 @@ MA=\begin{pmatrix}
 \end{array}
 \right)
 </script>
+</p>
+<p>Intercanviem les files 1 i 2:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  2 & 1 & -1 & 3\\
+  3 & 1 & 0 & 4
+\end{array}
+\right)
+</script>
+</p>
+<p>A la fila 2 li restem dues vegades la fila 1 i a la fila 3 li restem 3 vegades la fila 1:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  0 & 3 & -3 & 1\\
+  0 & 4 & -3 & 1
+\end{array}
+\right)
+</script>
+</p>
+<p>Finalment, a la fila 3 li restem <script type="math/tex">\frac{ 4 }{ 3 }</script> la fila 2:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  0 & 3 & -3 & 1\\
+  0 & 0 & 1 & \frac{ -1 }{ 3 }
+\end{array}
+\right)
+</script>
+</p>
+<p>Tornem a escriure l'equació:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} x-y+z=1 \\ 3y-3z=1 \\ z=-\frac{ 1 }{ 3 } \end{cases}
+</script>
+</p>
+<p>Ja hem trobat la última incògnita. Ara farem una substitució retroactiva: substituïnt <script type="math/tex">z</script> a la segona equació obtindrem <script type="math/tex">y</script>. I finalment ens quedarà substituir <script type="math/tex">z</script> i <script type="math/tex">y</script> a la primera equació per obtenir <script type="math/tex">x</script>. Amb això tenim que:</p>
+<p>
+<script type="math/tex; mode=display">x=\frac{ -4 }{ 3 }\qquad y=0 \qquad z=\frac{ -1 }{ 3 }</script>
 </p>
 <h3 id="metode-de-cramer">Mètode de Cramer</h3>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
