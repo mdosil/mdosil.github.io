@@ -477,6 +477,37 @@ X=
 <script type="math/tex; mode=display">x=\frac{ -4 }{ 3 }\qquad y=0 \qquad z=\frac{ -1 }{ 3 }</script>
 </p>
 <h3 id="metode-de-gauss">Mètode de Gauss</h3>
+<p>El mètode de Gauss es basa en la <a href="http://mdosil.cat/mates2batcientific/temes/matrius/#triangulacio-de-matrius">triangulació de matrius</a> que havíem vist en el tema anterior. Farem el següent:</p>
+<ol>
+<li>Escriurem la matriu <script type="math/tex">A</script> de coeficients (cal vigilar que les incògnites estiguin aliniades de tal manera que la mateixa columna d'una matriu correspongui a una mateixa incògnita) i la matriu ampliada del sistema afegint la columna de termes independents, <script type="math/tex">MA</script>.</li>
+<li>Amb la matriu ampliada, intentarem aconseguir que l'element <script type="math/tex">a_{11}</script>, el coeficient de la primera equació i la primera incògnita, sigui <script type="math/tex">1</script>. Si no ho és, intentarem aconseguir-ho amb operacions fila o operacions columna.</li>
+<li>Primer de tot, mitjançant operacions fila i columna, aconseguirem que els elements sota <script type="math/tex">a_{11}</script> siguin zero.</li>
+<li>Un cop aconseguit això, farem el mateix a la segona columna per obtenir els elements <script type="math/tex">a_{12}</script> i <script type="math/tex">a_{22}</script> diferents de zero i la resta de la columna zero.</li>
+<li>Continuarem el procediment fins aconseguir una matriu triangular (tot i que treballem amb la matriu ampliada).</li>
+<li>Expressarem la matriu altra vegada en forma d'equació lineal i trobarem les incògnites successives substituïnt de baix a dalt, tal i com veurem amb l'exemple següent.</li>
+</ol>
+<p><strong>Exemple 2</strong></p>
+<p>Resol el sistema anterior pel mètode de Gauss.</p>
+<p>Ja hem vist que és un sistema compatible determinat. Anem a triangular doncs la matriu ampliada:</p>
+<p>
+<script type="math/tex; mode=display">
+MA=\begin{pmatrix}
+2 & 1 & -1 & 3\\
+1 & -1 & 1 & 1\\
+3 & 1 & 0 & 4
+\end{pmatrix}
+</script>
+</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  2 & 1 & -1 & 3\\
+  1 & -1 & 1 & 1\\
+  3 & 1 & 0 & 4
+\end{array}
+\right)
+</script>
+</p>
 <h3 id="metode-de-cramer">Mètode de Cramer</h3>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
 <h2 id="discussio-de-sistemes">Discussió de sistemes</h2></div>
