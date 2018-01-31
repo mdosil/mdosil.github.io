@@ -535,14 +535,22 @@ X=
 <p>Tornem a escriure l'equació:</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{cases} x-y+z=& 1 \\ 3y-3z =& 1 \\ z=& -\frac{ 1 }{ 3 } \end{cases}
+\begin{cases} x-y+z= 1 \\ 3y-3z = 1 \\ z= -\frac{ 1 }{ 3 } \end{cases}
 </script>
 </p>
 <p>Ja hem trobat la última incògnita. Ara farem una substitució retroactiva: substituïnt <script type="math/tex">z</script> a la segona equació obtindrem <script type="math/tex">y</script>. I finalment ens quedarà substituir <script type="math/tex">z</script> i <script type="math/tex">y</script> a la primera equació per obtenir <script type="math/tex">x</script>. Amb això tenim que:</p>
 <p>
 <script type="math/tex; mode=display">x=\frac{ -4 }{ 3 }\qquad y=0 \qquad z=\frac{ -1 }{ 3 }</script>
 </p>
+<p>Aquest sistema era de fàcil solució perquè era compatible determinat. Si després de resoldre ens trobem amb una fila de zeros, voldrà dir que una equació és combinació lineal de les altres dues, per tant, hi ha més incògnites que equacions i el sistema seria compatible indeterminat. Per acabar, si arribem a una igualtat del tipus <script type="math/tex">0=b</script>, tindríem que el sistema és incompatible.</p>
 <h3 id="metode-de-cramer">Mètode de Cramer</h3>
+<p>Un sistema quadrat <script type="math/tex">nxn</script> direm que és de Cramer si el determinant de la matriu de coeficients és diferent de zero: <script type="math/tex">|A|\ne 0</script> (i per tant el sistema és compatible determinat).</p>
+<p>Per simplicitat, anem a explicar-ho per un sistema 3x3 de 3 equacions i 3 incògnites. Sigui <script type="math/tex">\Delta_{x}</script> el determinant que s'aconsegueix substituïnt al determinant de la matriu de coeficients la primera columna per la de termes independents. El mateix per <script type="math/tex">\Delta_{y}</script> (determinant que s'aconsegueix substituïnt al determinant de la matriu de coeficients la segona coluimna per la de termes independents) i <script type="math/tex">Delta_{z}</script>. La solució del sistema d'equacions ve donada per les expressions:</p>
+<p>
+<script type="math/tex; mode=display">
+x=\frac{ \Delta_{x} }{ |A| }\qquad y=\frac{ \Delta_{y} }{ |A| }\qquad z=\frac{ \Delta_{z} }{ |A| }
+</script>
+</p>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
 <h2 id="discussio-de-sistemes">Discussió de sistemes</h2></div>
         
