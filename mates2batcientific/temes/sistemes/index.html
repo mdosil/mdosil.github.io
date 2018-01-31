@@ -487,7 +487,7 @@ X=
 <li>Expressarem la matriu altra vegada en forma d'equació lineal i trobarem les incògnites successives substituïnt de baix a dalt, tal i com veurem amb l'exemple següent.</li>
 </ol>
 <p><strong>Exemple 2</strong></p>
-<p>Resol el sistema anterior pel mètode de Gauss.</p>
+<p>Resol el sistema de l'exemple 1 pel mètode de Gauss.</p>
 <p>Ja hem vist que és un sistema compatible determinat. Anem a triangular doncs la matriu:</p>
 <p>
 <script type="math/tex; mode=display"> \left(
@@ -549,6 +549,37 @@ X=
 <p>
 <script type="math/tex; mode=display">
 x=\frac{ \Delta_{x} }{ |A| }\qquad y=\frac{ \Delta_{y} }{ |A| }\qquad z=\frac{ \Delta_{z} }{ |A| }
+</script>
+</p>
+<p><strong>Exemple 3</strong></p>
+<p>Resol el sistema de l'exemple 1 pel mètode de Cramer.</p>
+<p>De l'exemple 1 teníem:</p>
+<p>
+<script type="math/tex; mode=display">|A|=-3\ne 0</script>
+</p>
+<p>Anem a trobar el resultat de les incògnites:</p>
+<p>
+<script type="math/tex; mode=display">
+x=\frac{ \begin{vmatrix}
+3 & 1 & -1\\
+1 & -1 & 1\\
+4 & 1 & 0
+\end{vmatrix} }{ |A| }
+=-\frac{ 4 }{ 3 }
+\qquad
+y=\frac{ \begin{vmatrix}
+2 & 3 & -1\\
+1 & 1 & 1\\
+3 & 4 & 0
+\end{vmatrix} }{ |A| }
+=0
+\qquad
+z=\frac{ \begin{vmatrix}
+2 & 1 & 3\\
+1 & -1 & 1\\
+3 & 1 & 4
+\end{vmatrix} }{ |A| }
+=-\frac{ 1 }{ 3 }
 </script>
 </p>
 <h2 id="metode-de-resolucio-general-de-sistemes">Mètode de resolució general de Sistemes</h2>
