@@ -213,6 +213,9 @@
             <li class="second-level"><a href="#metode-de-resolucio-general-de-sistemes">Mètode de resolució general de sistemes</a></li>
             
         
+            <li class="second-level"><a href="#sistemes-homogenis">Sistemes homogenis</a></li>
+            
+        
             <li class="second-level"><a href="#discussio-de-sistemes-segons-el-valor-dun-parametre">Discussió de sistemes segons el valor d'un paràmetre</a></li>
             
         
@@ -749,7 +752,43 @@ Per tant, el rang de <script type="math/tex">A</script> com a mínim és 2. Anem
 z=\lambda \qquad y=\frac{ 2-6\lambda }{ 5 } \qquad x=\frac{ 1-7\lambda }{ 5 }
 </script>
 </p>
-<p><strong>Exemple 6: sistema homogeni</strong></p>
+<h2 id="sistemes-homogenis">Sistemes homogenis</h2>
+<p>Els sistemes homogenis són aquells els quals els termes independents són sempre zero. Així doncs, la matriu ampliada serà igual a la matriu més una columna de zeros. Això vol dir que el rang de la matriu i la matriu ampliada són iguals i per tant, els sistemes homogenis, sempre són compatibles.</p>
+<p>D'altra banda, aquests sistemes sempre tenen la solució on totes les incògnites són 0 (solució trivial). Ens caldrà només estudiar el rang de la matriu, si aquest és igual al nombre d'incògnites, el sistema és compatible determinat i la solució no és altra que la solució trivial. Si el rang de la matriu és menor al nombre d'incògnites, el sistema serà compatible indeterminat i llavors caldrà expressar les solucions en funció de paràmetres.</p>
+<p><strong>Exemple 6</strong></p>
+<p>Resol el sistema següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} x-y+z=0 \\ 2x+y-z=0 \\ y+z=0 \end{cases}
+</script>
+</p>
+<p>Anem a estudiar el rang de la matriu de coeficients <script type="math/tex">A</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & -1\\
+2 & 1
+\end{vmatrix}
+=4
+</script>
+</p>
+<p>El rang com a mínim és 2. Anem a calcular el menor d'ordre 3:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & -1 & 1\\
+2 & 1 & -1\\
+0 & 1 & 1
+\end{vmatrix}
+=6
+</script>
+</p>
+<p>Per tant, el rang de la matriu i de la matriu ampliada és 3, el sistema és compatible determinat. La seva solució és la solució trivial:</p>
+<p>
+<script type="math/tex; mode=display">
+x=0 \qquad y=0 \qquad z=0
+</script>
+</p>
 <h2 id="discussio-de-sistemes-segons-el-valor-dun-parametre">Discussió de sistemes segons el valor d'un paràmetre</h2>
 <h2 id="problemes">Problemes</h2></div>
         
