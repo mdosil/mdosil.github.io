@@ -213,7 +213,7 @@
             <li class="second-level"><a href="#metode-de-resolucio-general-de-sistemes">Mètode de resolució general de sistemes</a></li>
             
         
-            <li class="second-level"><a href="#discussio-de-sistemes">Discussió de sistemes</a></li>
+            <li class="second-level"><a href="#discussio-de-sistemes-segons-el-valor-dun-parametre">Discussió de sistemes segons el valor d'un paràmetre</a></li>
             
         
             <li class="second-level"><a href="#problemes">Problemes</a></li>
@@ -593,14 +593,164 @@ z=\frac{ \begin{vmatrix}
 <li>Si el sistema és compatible determinat (Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA=</script> nombre d'incògnites) utilitzarem qualsevol dels 3 mètodes, tot i que el mètode de Cramer sovint és el més ràpid.</li>
 <li>Si el sistema és compatible indeterminat (Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA <</script> nombre d'incògnites) sortirà una solució amb paràmetres. En aquest cas el mètode més pràctic és el de Gauss tot i que també es podria arribar a resoldre per Cramer (el mètode de la inversa no perquè el determinant de la matriu és zero).</li>
 </ol>
-<p><strong>Exemple 4</strong></p>
+<p>En l'exemple 1, vèiem un sistema compatible determinat. Anem a veure ara un parell d'exemples pels altres 2 tipus de sistemes.</p>
+<p><strong>Exemple 4 : sistema incompatible</strong></p>
 <p>Resol el sistema següent:</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{cases} 2x-4y+6z=2 \\ y+2z=-3 \\ x-3y+z=4 \end{cases}
+\begin{cases} 2x+3y+z=4 \\ x-2y+z=-2 \\ 8x+5y+5z=1 \end{cases}
 </script>
 </p>
-<h2 id="discussio-de-sistemes">Discussió de sistemes</h2>
+<p>Anem a construir la matriu <script type="math/tex">A</script> i la matriu ampliada, <script type="math/tex">MA</script>. A partir d'aquí, estudiarem els seus rangs.</p>
+<p>
+<script type="math/tex; mode=display">
+A=\begin{pmatrix}
+2 & 3 & 1\\
+1 & -2 & 1\\
+8 & 5 & 5
+\end{pmatrix}
+\qquad
+MA=\begin{pmatrix}
+2 & 3 & 1 & 4\\
+1 & -2 & 1 & -2\\
+8 & 5 & 5 & 1
+\end{pmatrix}
+</script>
+</p>
+<p>El rang de la matriu <script type="math/tex">A</script> com a mínim és 1 perquè té un element diferent de zero. Orlem l'element <script type="math/tex">a_{11}</script> i mirem si té algun menor d'ordre 2 diferent de zero:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+2 & 3\\
+1 & -2
+\end{vmatrix}
+=-7
+</script>
+Per tant, el rang de <script type="math/tex">A</script> com a mínim és 2. Anem a calcular el menor d'ordre 3:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+2 & 3 & 1\\
+1 & -2 & 1\\
+8 & 5 & 5
+\end{vmatrix}
+=0
+</script>
+</p>
+<p>La matriu <script type="math/tex">A</script> té rang 2. Anem a orlar el menor d'ordre 2 amb la columna de termes independents per veure quin rang té la matriu ampliada:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+2 & 3 & 4\\
+1 & -2 & -2\\
+8 & 5 & 1
+\end{vmatrix}
+=15
+</script>
+</p>
+<p>Veiem que el rang de la matriu ampliada és 3. Com que els 2 rangs no són iguals, tenim un <strong>sistema incompatible</strong>.</p>
+<p>A la pràctica, si l'haguéssim intentat resoldre per Gauss sense mirar els rangs, després de triangular ens hagués quedat alguna igualtat del tipus <script type="math/tex">0=k</script> on <script type="math/tex">k</script> és un nombre diferent de zero. Com que aquesta igualtat mai pot ser certa, el sistema és incompatible.</p>
+<p><strong>Exemple 5: sistema compatible indeterminat</strong></p>
+<p>Resol el sistema següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} x+2y+z=1 \\ 2x-y-4z=0 \\ 3x+y-3z=1 \end{cases}
+</script>
+</p>
+<p>Anem a construir la matriu <script type="math/tex">A</script> i la matriu ampliada, <script type="math/tex">MA</script>. A partir d'aquí, estudiarem els seus rangs.</p>
+<p>
+<script type="math/tex; mode=display">
+A=\begin{pmatrix}
+1 & 2 & 1\\
+2 & -1 & -4\\
+3 & 1 & -3
+\end{pmatrix}
+\qquad
+MA=\begin{pmatrix}
+1 & 2 & 1 & 1\\
+2 & -1 & -4 & 0\\
+3 & 1 & -3 & 1
+\end{pmatrix}
+</script>
+</p>
+<p>El rang de la matriu <script type="math/tex">A</script> com a mínim és 1 perquè té un element diferent de zero. Orlem l'element <script type="math/tex">a_{11}</script> i mirem si té algun menor d'ordre 2 diferent de zero:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & 2\\
+2 & -1
+\end{vmatrix}
+=-5
+</script>
+Per tant, el rang de <script type="math/tex">A</script> com a mínim és 2. Anem a calcular el menor d'ordre 3:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & 2 & 1\\
+2 & -1 & -4\\
+3 & 1 & -3
+\end{vmatrix}
+=0
+</script>
+</p>
+<p>La matriu <script type="math/tex">A</script> té rang 2. Anem a orlar el menor d'ordre 2 amb la columna de termes independents per veure quin rang té la matriu ampliada:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & 2 & 1\\
+2 & -1 & 0\\
+3 & 1 & 1
+\end{vmatrix}
+=0
+</script>
+</p>
+<p>Veiem que el rang de la matriu ampliada també és 2. Els dos rangs són iguals però són més petits que el nombre d'incògnites, que és 3. Per tant és un sistema compatible indeterminat amb un paràmetre. Anem a resoldre el sistema pel mètode de Gauss i expressarem les solucions possibles en funció d'aquest paràmetre.</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & 2 & 1 & 1\\
+  2 & -1 & -4 & 0\\
+  3 & 1 & -3 & 1
+\end{array}
+\right)
+</script>
+</p>
+<p>A la fila 2 li restem dues vegades la fila 1 i a la fila 3 li restem 3 vegades la fila 1:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & 2 & 1 & 1\\
+  0 & -5 & -6 & -2\\
+  0 & -5 & -6 & -2
+\end{array}
+\right)
+</script>
+</p>
+<p>I ara a la fila 3 li restem la fila 2:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & 2 & 1 & 1\\
+  0 & -5 & -6 & -2\\
+  0 & 0 & 0 & 0
+\end{array}
+\right)
+</script>
+</p>
+<p>Veiem que obtenim una fila de zeros. Això sempre passa quan el sistema és compatible indeterminat. Aquest sistema ens queda:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} x+2y+z=1 \\ -5y+2z=-2 \end{cases}
+</script>
+</p>
+<p>Com que el rang és 2 i tenim 3 incògnites, això voldrà dir que hi ha un paràmetre (nombre real). El que es fa és assignar aquest paràmetre a una de les variables i expressar les altres en funció d'aquest valor. En el nostre cas, farem:</p>
+<p>
+<script type="math/tex; mode=display">
+z=\lambda \qquad y=\frac{ 2\lambda+2 }{ 5 } \qquad x=\frac{ 1-9\lambda }{ 5 }
+</script>
+</p>
+<p><strong>Exemple 6: sistema homogeni</strong></p>
+<h2 id="discussio-de-sistemes-segons-el-valor-dun-parametre">Discussió de sistemes segons el valor d'un paràmetre</h2>
 <h2 id="problemes">Problemes</h2></div>
         
     </div>
