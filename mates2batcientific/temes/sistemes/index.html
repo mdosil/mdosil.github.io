@@ -790,6 +790,153 @@ x=0 \qquad y=0 \qquad z=0
 </script>
 </p>
 <h2 id="discussio-de-sistemes-segons-el-valor-dun-parametre">Discussió de sistemes segons el valor d'un paràmetre</h2>
+<p>Anem a il.lustrar aquest punt amb un exemple extret de les PAU juny 2014.</p>
+<p>Considera el sistema següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} (k-1)y+(k^2-1)z=0 \\ (4k+1)x-y-7z=1 \\ x+y+z=0 \end{cases}
+</script>
+</p>
+<p>on <script type="math/tex">k \in \mathbb{R}</script>
+</p>
+<ol>
+<li>Discutiu el sistema d'equacions lineals en funció dels valors de <script type="math/tex">k</script>.</li>
+<li>Resoleu el sistema per <script type="math/tex">k=1</script>
+</li>
+</ol>
+<p>Escrivim la matriu <script type="math/tex">A</script> i la matriu ampliada, <script type="math/tex">MA</script>. Anem a estudiar el rang d'ambdues i aplicarem el teorema de Rouché Frobënius per a saber de quin tipus és segons les seves solucions.</p>
+<p>
+<script type="math/tex; mode=display">
+A=\begin{pmatrix}
+0 & k-1 & k^2-1\\
+4k+1 & -1 & -7\\
+1 & 1 & 1
+\end{pmatrix}
+\qquad
+MA=\begin{pmatrix}
+0 & k-1 & k^2-1 & 0\\
+4k+1 & -1 & -7 & 1\\
+1 & 1 & 1 & 0
+\end{pmatrix}
+</script>
+</p>
+<p>El rang de la matriu <script type="math/tex">A</script> com a mínm és 1. Veiem ara si té algun menor d'ordre 2 diferent de zero:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+-1 & -7\\
+1 & 1
+\end{vmatrix}
+=5
+</script>
+</p>
+<p>El rang com a mínim és 2. Anem a calcular el menor d'ordre 3. Ho fem desenvolupant per la 1a fila:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+0 & k-1 & k^2-1\\
+4k+1 & -1 & -7\\
+1 & 1 & 1
+\end{vmatrix}
+=-(k-1)
+\begin{vmatrix}
+4k+1 & -7 \\
+1 & 1
+\end{vmatrix}
++(k^2-1)
+\begin{vmatrix}
+4k+1 & -1 \\
+1 & 1
+\end{vmatrix}
+=(1-k)(4k+1+7)+(k^2-1)(4k+1+1)=...=(k-1)(4k^2+2k-6)
+</script>
+</p>
+<p>En aquest punt hem de distinguir entre 2 casos. Hi ha el cas en que el determinant de la matriu és zero (i això voldrà dir que el rang de la matriu <script type="math/tex">A</script> és 2) i el cas que aquest determinant és diferent de zero:</p>
+<p>Si <script type="math/tex">|A|=0</script> tenim que:</p>
+<p>
+<script type="math/tex; mode=display">(k-1)(4k^2+2k-6)=0 \rightarrow k=1 \qquad k=-\frac{ 3 }{ 2 } </script>
+</p>
+<p>Anem a desglossar els 3 casos:</p>
+<ul>
+<li>
+<p>
+<script type="math/tex">k=1</script>:
+    Caldrà estudiar el rang de la matriu ampliada. Fem <script type="math/tex">k=1</script> i orlem el menor d'ordre 2 amb la columna de termes independents:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+0 & 0 & 0\\
+-1 & -7 & 1\\
+1 & 1 & 0
+\end{vmatrix}
+=0
+</script>
+</p>
+<p>En aquest cas, el rang de la matriu ampliada també és 2. Per tant:</p>
+<p><strong>Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA=2 \rightarrow</script> Sistema Compatible Indeterminat</strong></p>
+</li>
+<li>
+<p>
+<script type="math/tex">k=-\frac{3}{2}</script>:</p>
+<p>Anem a veure el rang de la matriu ampliada. Fem <script type="math/tex">k=-\frac{ 3 }{ 2 }</script> i orlem el menor d'ordre 2 amb la columna de termes independents:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+-\frac{ 5 }{ 2 }  & \frac{ 5 }{ 4 } & 0\\
+-1 & -7 & 1\\
+1 & 1 & 0
+\end{vmatrix}
+=\frac{ 15 }{ 4 } \ne 0
+</script>
+</p>
+<p>En aquest cas, el rang de la matriu ampliada és 3. Per tant:</p>
+<p><strong>Rang <script type="math/tex">A\ne</script> Rang <script type="math/tex">MA \rightarrow</script> Sistema Incompatible</strong></p>
+</li>
+<li>
+<p>
+<script type="math/tex">k \ne 1 & k\ne -\frac{ 3 }{ 2 }</script>:</p>
+<p><strong>Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA=3\rightarrow</script> Sistema Compatible Determinat</strong></p>
+</li>
+</ul>
+<p>Anem a resoldre el sistema per <script type="math/tex">k=1</script>. Ho farem pel mètode de Gauss:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  0 & 0 & 0 & 0\\
+  5 & -1 & -7 & 1\\
+  1 & 1 & 1 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & 1 & 1 & 0\\
+  5 & -1 & -7 & 1\\
+  0 & 0 & 0 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & 1 & 1 & 0\\
+  0 & -6 & -12 & 1\\
+  0 & 0 & 0 & 0
+\end{array}
+\right)
+</script>
+</p>
+<p>Això dóna lloc al sistema:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{cases} x+y+z=0 \\ -6y-12z=1 \end{cases}
+</script>
+</p>
+<p>El sistema és compatible indeterminat amb un paràmetre. Si agafem <script type="math/tex">z=\lambda</script> tenim la solució:</p>
+<p>
+<script type="math/tex; mode=display">
+z=\lambda \qquad y=\frac{ -12\lambda-1 }{ 6 } \qquad x=\frac{ 6\lambda+1 }{ 6 }
+</script>
+</p>
 <h2 id="problemes">Problemes</h2></div>
         
     </div>
