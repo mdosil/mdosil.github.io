@@ -357,8 +357,41 @@ K x E &\rightarrow E \\
 </p>
 <p>Per solucionar aquesta equació cal resoldre el sistema:</p>
 <p>
-<script type="math/tex; mode=display">\begin{cases} \lambda_1-\lambda_2+\lambda_3=0 \\ \lambda_1+5\lambda_2+\3lambda_3=0 \\ \lambda_2+\lambda_3=0 \end{cases}</script>
+<script type="math/tex; mode=display">\begin{cases} \lambda_1-\lambda_2+\lambda_3=0 \\ \lambda_1+5\lambda_2+3\lambda_3=0 \\ \lambda_2+\lambda_3=0 \end{cases}</script>
 </p>
+<p>És un sistema homogeni. Tal com vam veure (al tema passat)[http://mdosil.cat/mates2batcientific/temes/sistemes/#sistemes-homogenis], els sistemes homogenis sempre són compatibles. Ara només caldrà veure si és:</p>
+<ul>
+<li>Compatible determinat. En aquest cas la solució és trivial amb totes les constants zero. Llavors el conjunt de vectors serà linealment independent.
+*Compatible indeterminat. Hi ha infinites solucions i algunes d'elles no són igual a zero. Això voldrà dir que algun vector és combinació lineal dels altres i per tant els conjunt de vectors és linealment dependent.</li>
+</ul>
+<p>Anem a resoldre el sistema pel mètode de Gauss:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 0\\
+  1 & 5 & 3 & 0\\
+  2 & 0 & 2 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 0\\
+  0 & 6 & 2 & 1\\
+  0 & 2 & 0 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & 1 & -1 & 0\\
+  0 & 2 & 6 & 1\\
+  0 & 0 & 2 & 0
+\end{array}
+\right)
+</script>
+</p>
+<p>El sistema és compatible determinat amb la solució trivial <script type="math/tex">\ambda_1=\lambda_2=\lambda_3=0</script> per tant són vectors linealment independents.</p>
 <h3 id="bases-dun-espai-vectorial">Bases d'un espai vectorial</h3>
 <h3 id="producte-escalar">Producte escalar</h3>
 <h3 id="producte-vectorial">Producte vectorial</h3></div>
