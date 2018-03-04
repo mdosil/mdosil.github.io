@@ -406,24 +406,111 @@ B&=(b_1,b_2,b_3)\\
 <h3 id="bases-dun-espai-vectorial">Bases d'un espai vectorial</h3>
 <p>Anem a definir què és una base d'un espai vectorial:</p>
 <blockquote>
-<p>Donats 3 vectors <script type="math/tex">\overrightarrow{ u }_1,\overrightarrow{ u }_2,\overrightarrow{ u }_3,</script> direm que són base de <script type="math/tex">\mathbb{R}^3</script> si compleixen les condicions següents:</p>
+<p>Donats 3 vectors <script type="math/tex">\overrightarrow{ u }_1,\overrightarrow{ u }_2,\overrightarrow{ u }_3,</script> direm que són base d'un espai vectorial <script type="math/tex">E</script> si compleixen les condicions següents:</p>
 <ul>
 <li>Són linealment independents</li>
-<li>Generen tot l'espai vectorial <script type="math/tex">\mathbb{R}^3</script>: Qualsevol vector de <script type="math/tex">\mathbb{R}^3</script> es pot expressar com a combinació lineal de tots ells.</li>
+<li>Generen tot l'espai vectorial <script type="math/tex">E</script>: Qualsevol vector de <script type="math/tex">E</script> es pot expressar com a combinació lineal de tots ells.</li>
 </ul>
 </blockquote>
-<h4 id="base-canonica">Base canònica</h4>
+<h4 id="base-canonica-de-mathbbr3">Base canònica de <script type="math/tex">\mathbb{R}^3</script>
+</h4>
 <p>La base canònica de <script type="math/tex">\mathbb{R}^3</script> són els 3 vectors unitaris i ortogonals entre ells:</p>
-<p>\beginalign
-\overrightarrow{ i }=(1,0,0)\
-\overrightarrow{ j }=(0,1,0)\
-\overrightarrow{ k }=(0,0,1)\
-\endalign</p>
-<h4 id="components-dun-vector-en-una-base">Components d'un vector en una base</h4>
-<p>Descomposar un vector en una base voldrà dir escriure el vector com a combinació lineal de la base. Els escalars obtinguts els anomenarem components del vector en aquella base.</p>
-<p><strong>Exemple 2</strong></p>
-<p>Donat el vector de components <script type="math/tex">\overrightarrow{ v }=(9,6,-4)</script> en la base canònica, troba les seves components en la base <script type="math/tex"><(2,3,0,(3,1,-2),(1,1,0))></script>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\overrightarrow{ i }&=(1,0,0)\\
+\overrightarrow{ j }&=(0,1,0)\\
+\overrightarrow{ k }&=(0,0,1)\\
+\end{align}</script>
 </p>
+<p><strong>Exemple 2</strong></p>
+<p>El conjunt de vectors <script type="math/tex"><(2,1,1),(-1,-2,0),(1,-1,1)></script> formen base?</p>
+<p>Veure si formen base és el mateix que demostrar que són linealment independents, o sigui, que cap d'ells es pot expressar com a combinació lineal dels altres dos.</p>
+<p>Tal com hem dit, la solució a l'equació:</p>
+<p>
+<script type="math/tex; mode=display">a(2,1,1)+b(-1,-2,0)+c(1,-1,1)=(0,0,0)</script>
+</p>
+<p>haurà de ser <script type="math/tex">a=0, b=0 i c=0</script> (solució trivial) en cas que formin base. Si trobem alguna solució amb paràmetres diferents de zero llavors podem afirmar que com a mínim un dels vectors és combinació lineal dels altres dos, i per tant, no formen base.</p>
+<p>L'equació vectorial anterior dóna lloc al sistema homogeni:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} 2a-b+c=0 \\ a-2b-c=0 \\ a+c=0 \end{cases}</script>
+</p>
+<p>Resolem-lo pel mètode de Gauss (ja canviem l'ordre de la 1a i la 2a equació):</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  1 & -2 & -1 & 0\\
+  2 & -1 & 1 & 0\\
+  1 & 0 & 1 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & -2 & 1 & 0\\
+  0 & 3 & 3 & 0\\
+  0 & 2 & 2 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & -2 & -1 & 0\\
+  0 & 1 & 1 & 0\\
+  0 & 2 & 2 & 0
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc|c}
+  1 & -2 & -1 & 0\\
+  0 & 1 & 1 & 0\\
+  0 & 0 & 0 & 0
+\end{array}
+\right)
+</script>
+</p>
+<p>És un sistema compatible indeterminat. Tenim 2 equacions i 3 incògnites, per tant, hi ha infinites solucions pels paràmetres, i per això, segur que alguna tindrà els 3 paràmetres diferents de zero. Podem afirmar doncs, que els 3 vectors <strong>no formen base</strong>  ja que podem expressar un d'ells com a combianció lineal dels altres dos. Anem a veure-ho ara.</p>
+<p>Acabem de resoldre el sistema:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} a-2b-c=0 \\ b+c=0  \end{cases}</script>
+</p>
+<p>Si fem que <script type="math/tex">c=\lambda, \lambda \in \mathbb{ R }</script>, llavors:</p>
+<p>
+<script type="math/tex; mode=display">a=-\lambda, b=-\lambda, c=\lambda \forall \lambda \in \mathbb{R}</script>
+</p>
+<p>Si agafem el valor <script type="math/tex">\lambda=1</script> llavors:</p>
+<p>
+<script type="math/tex; mode=display">a=-1, b=-1, c=1</script>
+</p>
+<p>i la combinació lineal seria:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+-1(2,1,1)-1(-1,-2,0)+1(1,-1,1)&=(0,0,0)\\
+-1(2,1,1)&=(-1,-2,0)-1(1,-1,1)+(0,0,0)\\
+(2,1,1)&=-1(-1,-2,0)+1(1,-1,1)\\
+\end{align}</script>
+</p>
+<h4 id="components-dun-vector-en-una-base">Components d'un vector en una base</h4>
+<p>Descomposar un vector en una base voldrà dir escriure el vector com a combinació lineal de la base. Els escalars obtinguts els anomenarem <strong>components del vector en aquella base</strong>. Es pot demostrar que donada una base, les components del vector en aquella base <strong>són úniques</strong>.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Donat el vector de components <script type="math/tex">\overrightarrow{ v }=(9,6,-4)</script> en la base canònica, troba les seves components en la base <script type="math/tex"><(2,3,0,(3,1,-2),(1,1,0))></script>.</p>
+<p>Podem expressar el vector donat com:</p>
+<p>
+<script type="math/tex; mode=display">(9,6,-4)=9(1,0,0)+6(0,1,0)-4(0,0,1)</script>
+</p>
+<p>Anem a expressar-lo en la base donada. Això vol dir que hem de trobar uns escalars <script type="math/tex">a</script>, <script type="math/tex">b</script> i <script type="math/tex">c</script> que compleixin:</p>
+<p>
+<script type="math/tex; mode=display">(9,6,4)=a(2,3,0)+b(3,1,-2)+c(1,1,0)</script>
+</p>
+<p>Això dóna lloc al sistema:</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} 2a+3b+c=9 \\ 3a+b+c=6 \\ -2b=-4  \end{cases}</script>
+</p>
+<p>Que com que és esglaonat el podem solucionar tranquil.lament i trobem que:</p>
+<p>
+<script type="math/tex; mode=display">a=1, b=2, c=1</script>
+</p>
+<p>Per tant, el vector <script type="math/tex">\overrightarrow{ v }</script> té components <script type="math/tex">(1,2,1)</script> en la base <script type="math/tex"><(2,3,0,(3,1,-2),(1,1,0))></script>.</p>
 <h3 id="producte-escalar">Producte escalar</h3>
 <h3 id="producte-vectorial">Producte vectorial</h3></div>
         
