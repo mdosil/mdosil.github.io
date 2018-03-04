@@ -403,6 +403,31 @@ B&=(b_1,b_2,b_3)\\
 <li>Dos vectors no alineats són linealment independents</li>
 <li>Tres vectors coplanaris (en el mateix pla) són linealment dependents, perquè siguin independents no han de formar part del mateix pla.</li>
 </ul>
+<p>Hi ha una altra manera de veure si un conjunt de vectors és linealment dependent o independent:</p>
+<ul>
+<li>
+<p>Si <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script> són 2 vectors a <script type="math/tex">\mathbb{ R }^3</script>:</p>
+<ul>
+<li>
+<p>Si el rang de la matriu obtinguda al posar com a columnes les components dels 2 vectors és 1, llavors els vectors són proporcionals i per tant, linealment dependents.</p>
+</li>
+<li>
+<p>Si el rang d'aquesta matriu és 2, els vectors no són proporcionals (tenen direccions diferents) i per tant són linealment independents.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Si <script type="math/tex">\overrightarrow{ u }</script>, <script type="math/tex">\overrightarrow{ v }</script> i <script type="math/tex">\overrightarrow{ w }</script> són 3 vectors a <script type="math/tex">\mathbb{ R }^3</script>:</p>
+<ul>
+<li>
+<p>Si el <strong>determinant</strong> de la matriu obtinguda al posar com a columnes les components dels 3 vectors és 0, voldrà dir que el rang de la matriu és més petit que 3, i per tant, com a mínim un dels vectors és combinació lineal dels altres 2, són linealment dependents. De fet, en aquest cas els vectors són coplanaris (estan dins el mateix pla).</p>
+</li>
+<li>
+<p>Si el <strong>determinant</strong> de la matriu obtinguda al posar com a columnes les components dels 3 vectors és diferent de zero, voldrà dir que el rang de la matriu és 3, i el conjunt de vectors és linealment independent.</p>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="bases-dun-espai-vectorial">Bases d'un espai vectorial</h3>
 <p>Anem a definir què és una base d'un espai vectorial:</p>
 <blockquote>
@@ -412,7 +437,7 @@ B&=(b_1,b_2,b_3)\\
 <li>Generen tot l'espai vectorial <script type="math/tex">E</script>: Qualsevol vector de <script type="math/tex">E</script> es pot expressar com a combinació lineal de tots ells.</li>
 </ul>
 </blockquote>
-<p>El nombre de vectors necessaris per formar una base d'un espai vectorial s'anomena <strong>dimensió</strong>.</p>
+<p>El nombre de vectors linealment independents necessaris per formar una base d'un espai vectorial s'anomena <strong>dimensió</strong>.</p>
 <h4 id="bases-a-mathbbr3">Bases a <script type="math/tex">\mathbb{R}^3</script>
 </h4>
 <p>En l'espai <script type="math/tex">\mathbb{R}^3</script> qualsevol conjunt de <script type="math/tex">3</script> vectors que siguin <strong>linealment independents</strong> formaran base. La base més utilitzada però és <strong>la base canònica</strong> amb els 3 vectors unitaris i ortogonals entre ells:</p>
@@ -430,7 +455,7 @@ B&=(b_1,b_2,b_3)\\
 <p>
 <script type="math/tex; mode=display">a(2,1,1)+b(-1,-2,0)+c(1,-1,1)=(0,0,0)</script>
 </p>
-<p>haurà de ser <script type="math/tex">a=0, b=0 i c=0</script> (solució trivial) en cas que formin base. Si trobem alguna solució amb paràmetres diferents de zero llavors podem afirmar que com a mínim un dels vectors és combinació lineal dels altres dos, i per tant, no formen base.</p>
+<p>haurà de ser <script type="math/tex">a=0</script>, <script type="math/tex">b=0</script> i <script type="math/tex">c=0</script> (solució trivial) en cas que formin base. Si trobem alguna solució amb paràmetres diferents de zero llavors podem afirmar que com a mínim un dels vectors és combinació lineal dels altres dos, i per tant, no formen base.</p>
 <p>L'equació vectorial anterior dóna lloc al sistema homogeni:</p>
 <p>
 <script type="math/tex; mode=display">\begin{cases} 2a-b+c=0 \\ a-2b-c=0 \\ a+c=0 \end{cases}</script>
@@ -470,7 +495,7 @@ B&=(b_1,b_2,b_3)\\
 \right)
 </script>
 </p>
-<p>És un sistema compatible indeterminat. Tenim 2 equacions i 3 incògnites, per tant, hi ha infinites solucions pels paràmetres, i per això, segur que alguna tindrà els 3 paràmetres diferents de zero. Podem afirmar doncs, que els 3 vectors <strong>no formen base</strong>  ja que podem expressar un d'ells com a combianció lineal dels altres dos. Anem a veure-ho ara.</p>
+<p>És un sistema compatible indeterminat. Tenim 2 equacions i 3 incògnites, per tant, hi ha infinites solucions pels paràmetres, i per això, segur que alguna tindrà els 3 paràmetres diferents de zero. Podem afirmar doncs, que els 3 vectors <strong>no formen base</strong>  ja que podem expressar un d'ells com a combinació lineal dels altres dos. Anem a veure-ho ara.</p>
 <p>Acabem de resoldre el sistema:</p>
 <p>
 <script type="math/tex; mode=display">\begin{cases} a-2b-c=0 \\ b+c=0  \end{cases}</script>
