@@ -205,11 +205,20 @@
             
                 <li class="third-level"><a href="#bases-dun-espai-vectorial">Bases d'un espai vectorial</a></li>
             
-                <li class="third-level"><a href="#producte-escalar">Producte escalar</a></li>
+        
+            <li class="second-level"><a href="#producte-escalar">Producte escalar</a></li>
             
-                <li class="third-level"><a href="#producte-vectorial">Producte vectorial</a></li>
+                <li class="third-level"><a href="#propietats-del-producte-escalar">Propietats del producte escalar</a></li>
             
-                <li class="third-level"><a href="#producte-mixt">Producte mixt</a></li>
+                <li class="third-level"><a href="#projeccio-dun-vector-sobre-un-altre">Projecció d'un vector sobre un altre</a></li>
+            
+        
+            <li class="second-level"><a href="#producte-vectorial">Producte vectorial</a></li>
+            
+                <li class="third-level"><a href="#propietats-del-producte-vectorial">Propietats del producte vectorial</a></li>
+            
+        
+            <li class="second-level"><a href="#producte-mixt">Producte mixt</a></li>
             
         
             <li class="second-level"><a href="#interpretacions-geometriques">Interpretacions geomètriques</a></li>
@@ -544,7 +553,7 @@ B&=(b_1,b_2,b_3)\\
 <script type="math/tex; mode=display">a=1, b=2, c=1</script>
 </p>
 <p>Per tant, el vector <script type="math/tex">\overrightarrow{ v }</script> té components <script type="math/tex">(1,2,1)</script> en la base <script type="math/tex"><(2,3,0,(3,1,-2),(1,1,0))></script>.</p>
-<h3 id="producte-escalar">Producte escalar</h3>
+<h2 id="producte-escalar">Producte escalar</h2>
 <p>Considerem ara dos vectors qualssevol de <script type="math/tex">\mathbb{ R }^3</script>. Podem afirmar que amb 2 vectors aquests estaran en el mateix pla. Si anomenem els 2 vectors <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script>, definim el producte escalar com:</p>
 <p>
 <script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{\overrightarrow{ u }\cdot \overrightarrow{ v }=|\overrightarrow{ u }|\cdot |\overrightarrow{ v }|\cdot \cos (\alpha)}</script>
@@ -555,7 +564,7 @@ B&=(b_1,b_2,b_3)\\
 <p>
 <script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{\overrightarrow{ u }\cdot \overrightarrow{ v }=u_1\cdot v_1+u_2\cdot v_2+u_3\cdot v_3}</script>
 </p>
-<h4 id="propietats-del-producte-escalar">Propietats del producte escalar</h4>
+<h3 id="propietats-del-producte-escalar">Propietats del producte escalar</h3>
 <ul>
 <li>Commutativa: <script type="math/tex">\overrightarrow{ u }\cdot \overrightarrow{ v }=\overrightarrow{ v }\cdot \overrightarrow{ u }</script>
 </li>
@@ -565,7 +574,7 @@ B&=(b_1,b_2,b_3)\\
 </li>
 </ul>
 <p>Recordem que el producte escalar de dos vectors ortogonals (perpendiculars) és zero, i el producte escalar de dos vectors paral.lels és màxim igual al producte de mòduls.</p>
-<h4 id="projeccio-dun-vector-sobre-un-altre">Projecció d'un vector sobre un altre</h4>
+<h3 id="projeccio-dun-vector-sobre-un-altre">Projecció d'un vector sobre un altre</h3>
 <p>Considerem els vectors del gràfic <script type="math/tex">\overrightarrow{ AB }</script> i <script type="math/tex">\overrightarrow{ AC }</script>.</p>
 <iframe scrolling="no" title="Projecció d'un vector sobre un altre a R3" src="https://www.geogebra.org/material/iframe/id/Vb2kRbK8/width/600/height/719/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="719px" style="border:0px;"> </iframe>
 
@@ -580,7 +589,7 @@ B&=(b_1,b_2,b_3)\\
 <script type="math/tex; mode=display">\overrightarrow{ a }_{\overrightarrow{ b }}=\frac{ \overrightarrow{ a }\cdot \overrightarrow{ b }}{ |\overrightarrow{ b }| }=\overrightarrow{ a }\cdot \overrightarrow{ u }_{\overrightarrow{ b }}</script>
 </p>
 <p>on <script type="math/tex">\overrightarrow{ u }_{\overrightarrow{ b }}</script> és un vector unitari amb la mateixa direcció i sentit que <script type="math/tex">\overrightarrow{ b }</script>.</p>
-<h3 id="producte-vectorial">Producte vectorial</h3>
+<h2 id="producte-vectorial">Producte vectorial</h2>
 <p>Donats dos vectors <script type="math/tex">\overrightarrow{ u }=(u_1,u_2,u_3)</script> i <script type="math/tex">\overrightarrow{ v }=(v_1,v_2,v_3)</script>, el producte vectorial d'aquests dos vectors és un vector <script type="math/tex">\overrightarrow{ w }=\overrightarrow{ u } x \overrightarrow{ v }</script> perpendicular als vectors <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script>. Es pot demostrar que els components del vector producte vectorial es troben calculant el determinant següent:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -593,7 +602,18 @@ v_1 & v_2 & v_3
 </script>
 </p>
 <p>on <script type="math/tex">\overrightarrow{ i }=(1,0,0)</script>, <script type="math/tex">\overrightarrow{ j }=(0,1,0)</script> i <script type="math/tex">\overrightarrow{ k }=(0,0,1)</script>.</p>
-<h3 id="producte-mixt">Producte mixt</h3>
+<h3 id="propietats-del-producte-vectorial">Propietats del producte vectorial</h3>
+<ol>
+<li>El mòdul del producte vectorial es calcula segons: <script type="math/tex">|\overrightarrow{ u } x \overrightarrow{ v }|=|\overrightarrow{ u }|x|\overrightarrow{ v }|\cdot \sin(\overrightarrow{ u },\overrightarrow{ v })</script>
+</li>
+<li>El producte vectorial és anticommutatiu: <script type="math/tex">\overrightarrow{ u } x \overrightarrow{ v }=-\overrightarrow{ v } x \overrightarrow{ u }</script>
+</li>
+<li>Associativa respecte el producte per un escalar: <script type="math/tex">k\cdot (\overrightarrow{ u } x \overrightarrow{ v })= (k\cdot \overrightarrow{ u }) x \overrightarrow{ v }</script>
+</li>
+<li>Distributiva respecte la suma: <script type="math/tex">\overrightarrow{ u } x (\overrightarrow{ v } + \overrightarrow{ w })= \overrightarrow{ u } x \overrightarrow{ v } +\overrightarrow{ u } x \overrightarrow{ w }</script>
+</li>
+</ol>
+<h2 id="producte-mixt">Producte mixt</h2>
 <h2 id="interpretacions-geometriques">Interpretacions geomètriques</h2></div>
         
     </div>
