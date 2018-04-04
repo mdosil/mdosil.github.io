@@ -234,7 +234,7 @@
 </li>
 <li>
 <p><strong>Equació implícita o cartesiana</strong></p>
-<p>Finalment, si agrupem les equacions anteriors dos a dos, obtindrem un sistema de 3 equacions i 3 incògnites compatible indeterminat. Això vol dir que podem prescindir d'una de les equacions. I si anomenem <script type="math/tex">A, A^{\prime}</script>, <script type="math/tex">B, B^{\prime}</script>, <script type="math/tex">C, C^{\prime}</script>, els coeficients de les variables <script type="math/tex">x</script>, <script type="math/tex">y</script> i <script type="math/tex">z</script> respectivament, i <script type="math/tex">D, D^{\prime}</script> els termes independents, podem reescriure les equacions anteriors com:</p>
+<p>Finalment, si agrupem les equacions anteriors dos a dos, obtindrem un sistema de 3 equacions i 3 incògnites compatible indeterminat (ho haurà de ser perquè la recta té només 2 dimensions, per tant, alguna de les equacions haurà de ser combinació lineal de les altres dues). Això vol dir que podem prescindir d'una de les equacions. I si anomenem <script type="math/tex">A, A^{\prime}</script>, <script type="math/tex">B, B^{\prime}</script>, <script type="math/tex">C, C^{\prime}</script>, els coeficients de les variables <script type="math/tex">x</script>, <script type="math/tex">y</script> i <script type="math/tex">z</script> respectivament, i <script type="math/tex">D, D^{\prime}</script> els termes independents, podem reescriure les equacions anteriors com:</p>
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black]{\begin{cases} Ax+By+Cz+D&=0 \\ A^{\prime}x+B^{\prime}y+C^{\prime}z+D^{\prime}&=0  \end{cases} }
@@ -263,6 +263,19 @@
 <p>
 <script type="math/tex; mode=display">
 \bbox[5px,border:2px solid black]{\begin{cases} x=a+\alpha u_1 +\beta v_1 \\ y=b+\alpha u_2+ \beta v_2 \\ z=c+\alpha u_3 + \beta v_3 \end{cases} }
+</script>
+3. <strong>Equació general, implícita o cartesiana</strong></p>
+<p>Hi ha diverses maneres d'arribar a aquesta equació. Si pensem en la primera equació que hem escrit (vectorial) i passem el punt <script type="math/tex">P</script> restant a la banda esquerra de l'equació obtenim:</p>
+<p>
+<script type="math/tex; mode=display">X-P=\alpha \overrightarrow{ u }+ \beta \overrightarrow{ v }</script>
+</p>
+<p>que dit d'una altra manera significa que el vector <script type="math/tex">\overrightarrow{ PX }</script> és combinació lineal dels vectors <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script>. Com que <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script> són linealment independents per construcció, això és el mateix que dir que el rang de la matriu formada per les components dels vectors <script type="math/tex">\overrightarrow{ PX }</script>, <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script> ha de ser necessàriament 2, i per tant, el determinant d'aquesta matriu ha de ser zero:</p>
+<p>
+<script type="math/tex; mode=display">Det(\overrightarrow{ PX }, \overrightarrow{ u }, \overrightarrow{ v })=\begin{vmatrix}
+x-a & u_1 & v_1 \\
+y-b & u_2 & v_2\\
+z-c & u_3 & v_3
+\end{pmatrix}=0
 </script>
 </p>
 </li>
