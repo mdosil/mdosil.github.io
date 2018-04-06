@@ -195,6 +195,12 @@
             
                 <li class="third-level"><a href="#equacions-dels-plans-xy-zy-i-xz">Equacions dels plans xy, zy i xz</a></li>
             
+                <li class="third-level"><a href="#punts-coplanaris">Punts coplanaris</a></li>
+            
+                <li class="third-level"><a href="#vectors-coplanaris">Vectors coplanaris</a></li>
+            
+                <li class="third-level"><a href="#rectes-complanaries">Rectes complanàries</a></li>
+            
         
             <li class="second-level"><a href="#posicio-relativa-de-dues-rectes">Posició relativa de dues rectes</a></li>
             
@@ -385,6 +391,30 @@ z-3 & -6 & -2
 </tr>
 </tbody>
 </table>
+<h3 id="punts-coplanaris">Punts coplanaris</h3>
+<p>Donats 3 punts de <script type="math/tex">\mathbb{ R }^3</script> aquests sempre seran coplanaris. En cas de tenir-ne més, caldrà comprovar si existeix un pla que els contingui a tots.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Determina si els punts <script type="math/tex">A=(2,3,0)</script>, <script type="math/tex">B(4,5,-1)</script>, <script type="math/tex">C=(3,2,3)</script> i <script type="math/tex">D=(0,-1,-2)</script> són coplanaris.</p>
+<p>El que farem és trobar l'equació del pla que conté els 3 primers punts i mirarem si el quart punt hi pertany. Per trobar l'equació del pla, utilitzem el procediment explicat anteriorment per trobar l'equació general del pla. Calculem els vectors:</p>
+<p>
+<script type="math/tex; mode=display">\overrightarrow{ AB }=(2,2,-1)\qquad \overrightarrow{ AC }=(1,-1,3)</script>
+</p>
+<p>Donat un punt qualsevol del pla <script type="math/tex">X=(x,y,z)</script>, els vectors <script type="math/tex">\overrightarrow{ AX }</script>, <script type="math/tex">\overrightarrow{ AB }</script> i <script type="math/tex">\overrightarrow{ AC }</script> seran coplanaris si són linealment dependents, o el que és el mateix, el seu determinant és zero:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+x-2 & 2 & 1 \\
+y-3 & 2 & -1\\
+z & -1 & 3
+\end{vmatrix}=0\rightarrow 5x-7y-4z+11=0
+</script>
+</p>
+<p>Aquesta és l'equació del pla que conté els 3 primers punts. Ara, per saber si el quart punt pertany al pla, només cal substituir les coordenades de <script type="math/tex">D</script> en l'equació d'aquest i veure si la compleix:</p>
+<p>
+<script type="math/tex; mode=display">5\cdot 0-7\cdot (-1)-4\cdot(-2)+11\ne 0</script>
+</p>
+<p>Com que no compleix l'equació del pla, podem afirmar que els 4 punts no són coplanaris.</p>
+<h3 id="vectors-coplanaris">Vectors coplanaris</h3>
+<h3 id="rectes-complanaries">Rectes complanàries</h3>
 <h2 id="posicio-relativa-de-dues-rectes">Posició relativa de dues rectes</h2>
 <h3 id="interseccio-entre-dues-rectes">Intersecció entre dues rectes</h3>
 <h3 id="angle-entre-dues-rectes">Angle entre dues rectes</h3>
