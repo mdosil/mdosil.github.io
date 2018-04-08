@@ -204,8 +204,6 @@
         
             <li class="second-level"><a href="#posicio-relativa-de-dues-rectes">Posició relativa de dues rectes</a></li>
             
-                <li class="third-level"><a href="#interseccio-entre-dues-rectes">Intersecció entre dues rectes</a></li>
-            
                 <li class="third-level"><a href="#angle-entre-dues-rectes">Angle entre dues rectes</a></li>
             
         
@@ -442,7 +440,22 @@ z & -1 & 3
 </p>
 <p>Els 3 vectors són linealment independents. Per tant, les dues rectes no són coplanàries.</p>
 <h2 id="posicio-relativa-de-dues-rectes">Posició relativa de dues rectes</h2>
-<h3 id="interseccio-entre-dues-rectes">Intersecció entre dues rectes</h3>
+<p>Donades dues rectes a l'espai <script type="math/tex">r</script> i <script type="math/tex">s</script>, amb vectors directors <script type="math/tex">\overrightarrow{ u }</script> i <script type="math/tex">\overrightarrow{ v }</script> respectivament, ens podem trobar amb 4 situacions diferents:</p>
+<ol>
+<li>Que siguin coincidents: els vectors directors són iguals o proporcionals i agafant un punt qualsevol de la primera recta comprovem que també compleix l'equació de la segona recta.</li>
+<li>Que siguin paral.leles no coincidents: els vectors directors són iguals o proporcionals però agafant un punt qualsevol de la primera recta comprovem que no compleix l'equació de la segona recta.</li>
+<li>Que siguin secants: els vectors directors no són paral.lels. El determinant resultant de posar en columnes el vector \overrightarrow{ u }<script type="math/tex">, </script>\overrightarrow{ v }<script type="math/tex"> i un tercer vector format per 2 punts (un de cada recta) és </script>0$ (el rang de la matriu és 2 i per tant, les dues rectes són coplanàries i es tallen).</li>
+<li>Que es creuin:  els vectors directors no són paral.lels. El determinant resultant de posar en columnes el vector \overrightarrow{ u }<script type="math/tex">, </script>\overrightarrow{ v }<script type="math/tex"> i un tercer vector format per 2 punts (un de cada recta) és diferent de </script>0$ (el rang de la matriu és 3 i per tant, les dues rectes es troben en plans diferents i no es tallen).</li>
+<li>Que siguin perpendiculars: el producte escalar dels seus vectors és zero: <script type="math/tex">\overrightarrow{ u }\cdot \overrightarrow{ v }=0</script>. Aquestes dues rectes no tenen perquè tallar-se. Són un cas particular de l'apartat 4 o de l'apartat 5.</li>
+</ol>
+<p>També podem considerar la posició relativa de dues rectes agafant les equacions implícites de cadascuna. En aquest cas, obtindrem un sistema de <script type="math/tex">4</script> equacions i <script type="math/tex">3</script> incògnites que haurem de solucionar. Ens podem trobar en 4 casos diferents:</p>
+<ol>
+<li>El sistema és compatible determinat: té una única solució. Aquesta solució són les coordenades <script type="math/tex">(x,y,z)</script> del punt de tall de les dues rectes. Les rectes són secants.</li>
+<li>El sistema és incompatible: no té solució. En auqest cas les rectes poden creuar-se o ser paral.leles. Caldrà comprovar si els vectors directors de cadascuna de les rectes són proporcionals o no per determinar-ne cada cas.</li>
+<li>El sistema és compatible indeterminat: té infinites solucions. Les rectes són coincidents.</li>
+</ol>
+<p><strong>Exemple 5</strong></p>
+<p>Troba la posició relativa de les rectes:</p>
 <h3 id="angle-entre-dues-rectes">Angle entre dues rectes</h3>
 <h2 id="posicio-relativa-entre-rectes-i-plans">Posició relativa entre rectes i plans</h2>
 <h2 id="posicio-relativa-de-dos-plans">Posició relativa de dos plans</h2>
