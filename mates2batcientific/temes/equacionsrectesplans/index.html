@@ -463,6 +463,59 @@ z & -1 & 3
 <p>
 <script type="math/tex; mode=display">\frac{ x-3 }{ 1 }=\frac{ y-2 }{ 2 }=\frac{ z -3 }{ -1 }\rightarrow r\equiv \begin{cases}  2x-y=4 \\ y+2z=8 \end{cases} </script>
 </p>
+<p>Agafem les 4 equacions de les dues rectes i resolem el sistema 4<script type="math/tex">\times</script>3 (4 equacions i 3 incògnites):</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases}  3x+z=0\\ 2x+y=-1 \\ 2x-y=4 \\ y+2z=8  \end{cases} </script>
+</p>
+<p>Si utilitzem <a href="http://mdosil.cat/mates2batcientific/temes/sistemes/#metode-de-gauss">el mètode de Gauss</a>:</p>
+<p>
+<script type="math/tex; mode=display"> \left(
+\begin{array}{ccc|c}
+  3 & 0 & 1 & 0\\
+  2 & 1 & 0 & -1\\
+  2 & -1 & 0 & 4\\
+  0 & 1 & 2 & 8
+\end{array}
+\right)
+=
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  2 & 1 & 0 & -1\\
+  2 & -1 & 0 & 4\\
+  0 & 1 & 2 & 8
+\end{array}
+\right)
+=
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  0 & 3 & -2 & -3\\
+  0 & 1 & -2 & 2\\
+  0 & 1 & 2 & 8
+\end{array}
+\right)
+=
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  0 & 1 & -2 & 2\\
+  0 & 3 & -2 & -3\\
+  0 & 1 & 2 & 8
+\end{array}
+\right)
+=
+\begin{array}{ccc|c}
+  1 & -1 & 1 & 1\\
+  0 & 1 & -2 & 2\\
+  0 & 0 & 4 & -9\\
+  0 & 0 & 4 & 6
+\end{array}
+\right)
+</script>
+</p>
+<p>Veiem que el sistema és incompatible. Les rectes o bé són paral.leles o es creuen. Per veure en quin dels casos ens trobem, caldrà veure els vectors directors (que podem deduir de les equacions del principi). En el cas de <script type="math/tex">r</script> el vector director és immediat: <script type="math/tex">\overrightarrow{ u }=(1,2,-1)</script>. Pel que fa a la recta <script type="math/tex">s</script>, per trobar el vector director caldrà transformar l'equació implícita en contínua. Per fer-ho aïllem la <script type="math/tex">x</script> de les dues equacions i igualem:</p>
+<p>
+<script type="math/tex; mode=display">x=\frac{ y+1 }{ -2 }=\frac{ z }{ -3 }</script>
+</p>
+<p>Per tant, el vector director de la recta <script type="math/tex">s</script> és: <script type="math/tex">\overrightarrow{ v }=(1,-2,-3)</script>. Veiem que els 2 vectors no són proporcionals. Per tant, les rectes es creuen.</p>
 <h3 id="angle-entre-dues-rectes">Angle entre dues rectes</h3>
 <h2 id="posicio-relativa-entre-rectes-i-plans">Posició relativa entre rectes i plans</h2>
 <h2 id="posicio-relativa-de-dos-plans">Posició relativa de dos plans</h2>
