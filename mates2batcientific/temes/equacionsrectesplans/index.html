@@ -656,6 +656,34 @@ z & -1 & 3
 <p>El feix de plans d'aresta <script type="math/tex">r</script> ve determinat per tots aquells plans que es tallen en una mateixa línia de punts determinada per la recta. Per tant, la seva equació serà necessàriament <strong>combinació lineal</strong> de les equacions dels dos plans inicials:</p>
 <p>
 <script type="math/tex; mode=display">\alpha (A_1x+B_1y+C_1z+D_1)+ \beta (A_2x+B_2y+C_2z+D_2)=0 \forall \alpha, \beta \in \mathbb{ R }</script>
+</p>
+<p>En el cas que <script type="math/tex">\beta \ne 0</script>, podem dividir l'expressió anterior per <script type="math/tex">\beta</script> i obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\frac{ \alpha }{ \beta } (A_1x+B_1y+C_1z+D_1)+ A_2x+B_2y+C_2z+D_2=0</script>
+</p>
+<p>I si fem un canvi de nom, <script type="math/tex">\lambda \equiv \frac{ \alpha }{ \beta }</script>:</p>
+<p>
+<script type="math/tex; mode=display">\lambda (A_1x+B_1y+C_1z+D_1)+ A_2x+B_2y+C_2z+D_2=0</script>
+</p>
+<p>és l'equació del feix de plans d'aresta <script type="math/tex">r</script>.</p>
+<p>En el cas que <script type="math/tex">\beta</script> fos zero, només hi hauria un pla en el feix, i aquest seria lògicament <script type="math/tex">\pi_1</script>.</p>
+<p><strong>Exemple 9</strong></p>
+<p>Troba l'equació del pla que conté la recta:</p>
+<p>
+<script type="math/tex; mode=display">r: \begin{cases} 3x+z&=0 \\ 2x+y=-1&=0  \end{cases}</script>
+</p>
+<p>i que passa pel punt <script type="math/tex">P(1,0,0)</script>.</p>
+<p>L'equació de la recta <script type="math/tex">r</script> està formada per les equacions de dos plans. Primer de tot ens caldrà comprovar si el punt <script type="math/tex">P</script> que ens donen forma part d'algun dels dos plans substituïnt les seves coordenades en l'equació de cadascun dels plans (i en aquest cas ja hauríem acabat). Veiem que no compleix cap de les equacions, per tant, ens caldrà escriure el feix de plans d'aresta <script type="math/tex">r</script> i trobar la combinació lineal que passa pel punt <script type="math/tex">P</script>. El feix de plans ve donat per l'expressió:</p>
+<p>
+<script type="math/tex; mode=display">\lambda (3x+z)+ 2x+y+1=0</script>
+</p>
+<p>Si substituïm les coordenades del punt <script type="math/tex">P</script> en l'expressió anterior obtenim:</p>
+<p>
+<script type="math/tex; mode=display">\lambda (3\cdot 1+0)+2\cdot 1+1=0\rightarrow \lambda= -1</script>
+</p>
+<p>Per tant, el pla que ens demanen és:</p>
+<p>
+<script type="math/tex; mode=display">x-y-z-1=0</script>
 </p></div>
         
     </div>
