@@ -446,7 +446,7 @@ D_{f\cdot g}&=A \cap B
 <p>En l'exemple anterior:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-y&=(f\cdot g)(x)=\frac{x^2-1}{x}\cdot \frac{x+1}{x-1}=\frac{(x^2-1)(x+1)}{x(x-1)}=...=\frac{x^2+2x+1}{x}\\
+y&=(f\cdot g)(x)=\frac{x^2-1}{x}\cdot \frac{x+1}{x-1}=\frac{(x-1)(x+1)^2}{x(x-1)}=\\
 D_{f\cdot g}&=\mathbb{R}-\{0,1\}
 \end{align}</script>
 </p>
@@ -461,10 +461,12 @@ D_{f/g}&=A \cap B - \{ x \mbox{ pels quals g(x)=0}\}
 <p>En l'exemple anterior:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-y&=\Big(\frac{f}{g}\Big)(x)=\frac{x^2-1}{x}\div \frac{x+1}{x-1}=\frac{(x^2-1)(x-1)}{x(x+1)}=...=\frac{(x-1)^2}{x}=\frac{x^2-2x+1}{x}\\
+y&=\Big(\frac{f}{g}\Big)(x)=\frac{x^2-1}{x}\div \frac{x+1}{x-1}=\frac{(x-1)^2(x+1)}{x(x+1)}\\
 D_{f/g}&=\mathbb{R}-\{0,1, -1\}
 \end{align}</script>
 </p>
+<p><strong>Nota</strong></p>
+<p>Quan el resultat de fer un producte o quocient de funcions obtenim una fracció algebraica, <strong>no es poden simplificar factors</strong>, ja en en fer-ho obtindríem una funció resultant on el domimni seria menys restrictiu que el de les funcions originals. A part, quan fem això estem eliminant de la funció resultant els casos <script type="math/tex">\frac{ 0 }{ 0 }</script> que són indeterminants.</p>
 <h3 id="composicio-de-funcions">Composició de funcions</h3>
 <p>Sigui una funció:</p>
 <p>
