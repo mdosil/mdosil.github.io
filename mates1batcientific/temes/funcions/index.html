@@ -446,7 +446,7 @@ D_{f\cdot g}&=A \cap B
 <p>En l'exemple anterior:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-y&=(f\cdot g)(x)=\frac{x^2-1}{x}\cdot \frac{x+1}{x-1}=\frac{(x-1)(x+1)^2}{x(x-1)}=\\
+y&=(f\cdot g)(x)=\frac{x^2-1}{x}\cdot \frac{x+1}{x-1}=\frac{(x-1)(x+1)^2}{x(x-1)}\\
 D_{f\cdot g}&=\mathbb{R}-\{0,1\}
 \end{align}</script>
 </p>
@@ -466,7 +466,7 @@ D_{f/g}&=\mathbb{R}-\{0,1, -1\}
 \end{align}</script>
 </p>
 <p><strong>Nota</strong></p>
-<p>Quan el resultat de fer un producte o quocient de funcions obtenim una fracció algebraica, <strong>no es poden simplificar factors</strong>, ja en en fer-ho obtindríem una funció resultant on el domimni seria menys restrictiu que el de les funcions originals. A part, quan fem això estem eliminant de la funció resultant els casos <script type="math/tex">\frac{ 0 }{ 0 }</script> que són indeterminats.</p>
+<p>Quan el resultat de fer un producte o quocient de funcions obtenim una fracció algebraica, <strong>no es poden simplificar factors</strong>, ja en en fer-ho obtindríem una funció resultant on el domini seria menys restrictiu que el de les funcions originals. A part, quan fem això estem eliminant de la funció resultant els casos <script type="math/tex">\frac{ 0 }{ 0 }</script> que són indeterminats.</p>
 <h3 id="composicio-de-funcions">Composició de funcions</h3>
 <p>Sigui una funció:</p>
 <p>
@@ -529,12 +529,14 @@ D_{g \circ f}&=D_f=\mathbb{R}
 <p>Primer hem de comprovar que el recorregut de <script type="math/tex">g</script> està dins el domini de <script type="math/tex">f</script>. De l'apartat anterior veiem que sí. Per tant, com que <script type="math/tex">R_g \subseteq D_f</script>, podem calcular la seva composició.</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-y&=(f \circ g)(x)=f(g(x))=f(\sqrt{x+1})=(\sqrt{x+1})^2=x+1\\
+y&=(f \circ g)(x)=f(g(x))=f(\sqrt{x+1})=(\sqrt{x+1})^2\\
 D_{f \circ g}&=D_g=[-1, + \infty]
 \end{align}</script>
 </p>
 </li>
 </ol>
+<p><strong>Nota</strong></p>
+<p>Com en el cas d'operacions amb funcions, a la composició tampoc podem simplificar (com hem vist en l'exemple anterior). El domini de la funció composta és el domini de la primera funció (i si simplifiquéssim hi hauria el perill d'augmentar aquest domini).</p>
 <h2 id="funcio-inversa">Funció inversa</h2>
 <p>Donada una funció real <script type="math/tex">f</script> anomenarem inversa de <script type="math/tex">f</script> i ho representarem com <script type="math/tex">f^{-1}</script> a tota funció <script type="math/tex">g</script> tal que:</p>
 <p>
