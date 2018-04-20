@@ -216,12 +216,13 @@
                 <li class="third-level"><a href="#angle-entre-recta-i-pla">Angle entre recta i pla</a></li>
             
         
-            <li class="second-level"><a href="#posicio-relativa-de-dos-plans">Posició relativa de dos plans</a></li>
+            <li class="second-level"><a href="#posicio-relativa-entre-plans">Posició relativa entre plans</a></li>
             
-                <li class="third-level"><a href="#angle-entre-dos-plans">Angle entre dos plans</a></li>
+                <li class="third-level"><a href="#posicio-relativa-de-dos-plans">Posició relativa de dos plans</a></li>
             
-        
-            <li class="second-level"><a href="#feix-de-plans-daresta-r">Feix de plans d'aresta r</a></li>
+                <li class="third-level"><a href="#posicio-relativa-de-3-plans">Posició relativa de 3 plans</a></li>
+            
+                <li class="third-level"><a href="#feix-de-plans-daresta-r">Feix de plans d'aresta r</a></li>
             
         
     
@@ -603,7 +604,8 @@ z & -1 & 3
 <p>
 <script type="math/tex; mode=display">\sin \alpha=\frac{ |8+15-8| }{ \sqrt{4+9+16}\cdot \sqrt{ 16+25+4 }}=...\simeq 0.4152\rightarrow \alpha= 24^0 32^\prime</script>
 </p>
-<h2 id="posicio-relativa-de-dos-plans">Posició relativa de dos plans</h2>
+<h2 id="posicio-relativa-entre-plans">Posició relativa entre plans</h2>
+<h3 id="posicio-relativa-de-dos-plans">Posició relativa de dos plans</h3>
 <p>Donats dos plans: <script type="math/tex">\pi_1 \equiv A_1x+B_1y+C_1z+D_1=0</script> i <script type="math/tex">\pi_2 \equiv A_2x+B_2y+C_2z+D_2=0</script>, ens podem trobar amb 3 casos diferents:</p>
 <ol>
 <li>
@@ -645,13 +647,23 @@ z & -1 & 3
 <p>
 <script type="math/tex; mode=display">x-y-2z=0</script>
 </p>
-<h3 id="angle-entre-dos-plans">Angle entre dos plans</h3>
+<h3 id="posicio-relativa-de-3-plans">Posició relativa de 3 plans</h3>
+<p>Si l'equació general de 3 3 plans, obtenim un sistema <script type="math/tex">3\times 3</script>. Per saber-ne la posició relativa només ens caldrà recordar el que vam aprendre sobre <a href="http://mdosil.cat/mates2batcientific/temes/sistemes/#metode-de-resolucio-general-de-sistemes">el tipus de sistemes</a> estudiant el rang de la matriu de coeficients, <script type="math/tex">A</script> i de la matriu ampliada, <script type="math/tex">MA</script>:</p>
+<ol>
+<li>
+<script type="math/tex">Rang A=Rang MA=3\rightarrow</script> El sistema és compatible determinat i té una única solució, els plans es tallen en un punt.</li>
+<li>
+<script type="math/tex">Rang A=Rang MA=2\rightarrow</script> El sistema és compatible indeterminat i té infinites solucions, els plans es tallen en una recta.</li>
+<li>
+<script type="math/tex">Rang A \neq Rang MA\rightarrow</script> El sistema és incompatible i no té solució, els plans no es tallen. Aquí poden passar vàries possibilitats, per exemple que siguin paral.lels, que es tallin dos a dos...</li>
+</ol>
+<h4 id="angle-entre-dos-plans">Angle entre dos plans</h4>
 <p>L'angle <script type="math/tex">\alpha</script> entre dos plans ve donat per l'angle entre els seus vectors normals (que és el mateix que l'angle entre dos dels seus vectors directors).</p>
 <p>Si considerem dos plans d'equacions: <script type="math/tex">\pi_1 \equiv A_1x+B_1y+C_1z+D_1=0</script> i <script type="math/tex">\pi_2 \equiv A_2x+B_2y+C_2z+D_2=0</script> amb vectors normals <script type="math/tex">\overrightarrow{ n_1 }=(A_1,B_1,C_1)</script> i <script type="math/tex">\overrightarrow{ n_2 }=(A_2,B_2,C_2)</script> tenim que:</p>
 <p>
 <script type="math/tex; mode=display">\cos(\alpha)=\frac{ |\overrightarrow{ n_1 }\cdot \overrightarrow{ n_2 }| }{ |\overrightarrow{ n_1 }|\cdot |\overrightarrow{ n_2 }|}=\frac{ |A_1 A_2+B_1 B_2+ C_1 C_2+ D_1 D_2| }{ \sqrt{ A_1^2+B_1^2+C_1^2 }\cdot \sqrt{ A_2^2+B_2^2+C_2^2 }}</script>
 </p>
-<h2 id="feix-de-plans-daresta-r">Feix de plans d'aresta r</h2>
+<h3 id="feix-de-plans-daresta-r">Feix de plans d'aresta r</h3>
 <p>Donats dos plans d'equacions <script type="math/tex">\pi_1 \equiv A_1x+B_1y+C_1z+D_1=0</script> i <script type="math/tex">\pi_2 \equiv A_2x+B_2y+C_2z+D_2=0</script>, el sistema format per les dues equacions representarà l'equació d'una recta si aquests dos plans no són paral.lels. Dit d'una altra manera, el sistema que formen haurà de ser <strong>compatible determinat</strong> amb 1 paràmetre.</p>
 <p>El feix de plans d'aresta <script type="math/tex">r</script> ve determinat per tots aquells plans que es tallen en una mateixa línia de punts determinada per la recta. Per tant, la seva equació serà necessàriament <strong>combinació lineal</strong> de les equacions dels dos plans inicials:</p>
 <p>
