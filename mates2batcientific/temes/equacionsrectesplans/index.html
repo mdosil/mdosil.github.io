@@ -681,6 +681,72 @@ z & -1 & 3
 \right)
 </script>
 </p>
+<p>Calculem ara el determinant de la matriu <script type="math/tex">A</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+|A|=-a^3-3a-2
+</script>
+</p>
+<p>Si l'igualem a zero, veiem que s'anul.la pels valors <script type="math/tex">a=-2</script> i <script type="math/tex">a=1</script>. Per tant, podem definir 2 casos:</p>
+<ol>
+<li>
+<p>Si <script type="math/tex">a \neq 0</script> i <script type="math/tex">a \neq 1</script>:</p>
+<p>Ens trobem que Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA=3</script>. Per tant el sistema és compatible determinant i els 3 plans es tallen en un punt.</p>
+</li>
+<li>
+<p>Si <script type="math/tex">a=-2</script>:</p>
+<p>
+<script type="math/tex; mode=display"> A=\left(
+\begin{array}{ccc}
+ 1 & 1 & -2\\
+ 2 & -2 & 0\\
+ -2 & 1 & 1
+\end{array}
+\right)
+\qquad
+\left(
+\begin{array}{ccc|c}
+1 & 1 & -2 & 1\\
+2 & -2 & 0 & 1\\
+-2 & 1 & 1 & 1
+\end{array}
+\right)
+</script>
+</p>
+<p>Si orlem el menor d'ordre 2 amb el vector columna dels termes independents de la matriu ampliada obtenim que:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+1 & 1 & 1 \\
+2 & -2 & 1\\
+-2 & 1 & 1
+\end{vmatrix}=-9
+</script>
+</p>
+<p>Per tant, en aquest cas, Rang <script type="math/tex">A=2</script>, Rang <script type="math/tex">MA=3</script>. Com que no coincideixen el sistema és incompatible i els plans no es tallen. Per veure la seva posició relativa, mirem els coeficients dels plans i veiem que no són proporcionals. Aleshores els plans estallen 2 a 2.</p>
+</li>
+<li>
+<p>Si <script type="math/tex">a=1</script>:</p>
+<p>
+<script type="math/tex; mode=display"> A=\left(
+\begin{array}{ccc}
+ 1 & 1 & 1\\
+ 2 & 1 & 0\\
+ 1 & 1 & 1
+\end{array}
+\right)
+\qquad
+\left(
+\begin{array}{ccc|c}
+1 & 1 & 1 & 1\\
+2 & 1 & 0 & 1\\
+1 & 1 & 1 & 1
+\end{array}
+\right)
+</script>
+</p>
+<p>Aquí, Rang <script type="math/tex">A=</script> Rang <script type="math/tex">MA=2</script>, per tant el sistema és compatible indeterminat i els 3 plans es tallen en una recta. De fet, ja veiem que el primer i el tercer pla són coincidents.</p>
+</li>
+</ol>
 <h4 id="angle-entre-dos-plans">Angle entre dos plans</h4>
 <p>L'angle <script type="math/tex">\alpha</script> entre dos plans ve donat per l'angle entre els seus vectors normals (que és el mateix que l'angle entre dos dels seus vectors directors).</p>
 <p>Si considerem dos plans d'equacions: <script type="math/tex">\pi_1 \equiv A_1x+B_1y+C_1z+D_1=0</script> i <script type="math/tex">\pi_2 \equiv A_2x+B_2y+C_2z+D_2=0</script> amb vectors normals <script type="math/tex">\overrightarrow{ n_1 }=(A_1,B_1,C_1)</script> i <script type="math/tex">\overrightarrow{ n_2 }=(A_2,B_2,C_2)</script> tenim que:</p>
