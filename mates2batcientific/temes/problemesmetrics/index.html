@@ -214,6 +214,37 @@
 <script type="math/tex; mode=display">d(A,B)=|\sqrt{ (b_1-a_1)^2+ (b_2-a_2)^2+(b_3-a_3)^2}|</script>
 </p>
 <h2 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h2>
+<p>Donat un punt <script type="math/tex">P(a,b,c)</script> i una recta <script type="math/tex">r</script> qualsevol, la distància d'aquest punt a la recta s'obté calculant <strong>la projecció ortogonal del punt <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script>, el punt <script type="math/tex">P^\prime</script></strong>. La distància serà el mòdul del vector <script type="math/tex">\overrightarrow{ P^{\prime}P }</script>.</p>
+<iframe scrolling="no" title="distancia punt - recta R3" src="https://www.geogebra.org/material/iframe/id/dyat7TWz/width/700/height/719/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="719px" style="border:0px;"> </iframe>
+
+<p>Aquesta distància es pot calcular de moltes maneres. Ho farem amb un exemple concret i el resoldrem de 3 maneres completament diferents.</p>
+<p><strong>Exemple 1</strong></p>
+<p>Troba la distància del punt <script type="math/tex">P(5,6,1)</script> a la recta <script type="math/tex">r:\frac{ x }{ 1 }=\frac{ y-1 }{ 1 }=\frac{ z+1 }{ 4 }</script>.</p>
+<ol>
+<li>
+<p>Expressem la recta amb l'equació paramètrica, expressem la projecció <script type="math/tex">P^\prime</script> en funció del paràmetre i exigim que el vector <script type="math/tex">\overrightarrow{ P^{prime}P}</script> sigui perpendicular amb el vector director de la recta, <script type="math/tex">\overrightarrow{ v }</script>.</p>
+<p>La recta que ens donen té doncs la forma:</p>
+<p>
+<script type="math/tex; mode=display">r: \begin{cases} x&=\lambda \\ y&=1+\lambda \\ z&=-1+4\lambda  \end{cases}</script>
+</p>
+<p>Per tant, qualsevol punt de la recta <script type="math/tex">r</script>, i <script type="math/tex">P^{\prime}</script> en particular, tindrà la forma:</p>
+<p>
+<script type="math/tex; mode=display">P^{\prime}=(\lambda,1+\lambda,-1+4\lambda)</script>
+</p>
+<p>Si calculem ara la distància entre <script type="math/tex">P</script> i <script type="math/tex">P^{\prime}</script> a través del mòdul del vector <script type="math/tex">|\overrightarrow{ P^{prime}P}|</script>, tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\overrightarrow{ P^{prime}P}(5-\lambda,6-1-\lambda,1+1-4\lambda)=(5-\lambda,5+\lambda,2-4\lambda)</script>
+</p>
+<p>Alhora, aquest vector és perpendicular al vector director de la recta, <script type="math/tex">\overrightarrow{ v }=(1,1,4)</script>. Per tant, el seu producte escalar serà zero:</p>
+<p>
+<script type="math/tex; mode=display">\overrightarrow{ v }\cdot \overrightarrow{ P^{prime}P }=1(5-\lambda)+1(5-\lambda)+4(2-4\lambda)=0 \rightarrow \lambda = 1</script>
+</p>
+<p>Per tant, la projecció de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script> és: <script type="math/tex">\overrightarrow{ P^{prime}}=(1,2,3)</script> i la distància del punt a la recta és:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=|\overrightarrow{ P^{prime}P}|=sqrt{ (5-1)^2+(6-2)^2+(3-1)^2 }=6</script>
+</p>
+</li>
+</ol>
 <h2 id="distancia-dun-punt-a-un-pla">Distància d'un punt a un pla</h2>
 <h2 id="distancia-entre-dues-rectes">Distància entre dues rectes</h2>
 <h2 id="distancia-duna-recta-a-un-pla">Distància d'una recta a un pla</h2>
