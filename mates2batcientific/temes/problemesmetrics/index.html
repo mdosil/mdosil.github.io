@@ -309,7 +309,77 @@
 <script type="math/tex; mode=display">(x^\prime , y^\prime , z^ {\prime} )=(\frac{ x+x^{\prime \prime} }{ 2 },\frac{ y+y^{\prime \prime} }{ 2 }, \frac{ z+z^{\prime \prime} }{ 2 })</script>
 </p>
 <h2 id="distancia-entre-dues-rectes">Distància entre dues rectes</h2>
-<p>Si les dues rectes es tallen, la distància serà zero. Aquest cas només té sentit plantejar-lo per dues rectes que són paral.leles o es creuen. Per tant, primer caldrà estudiar <a href="http://mdosil.cat/mates2batcientific/temes/equacionsrectesplans/#posicio-relativa-de-dues-rectes">la posició relativa entre les dues rectes</a> per determinar el que s'ha de fer després.</p>
+<p>Si les dues rectes es tallen, la distància serà zero. Aquest cas només té sentit plantejar-lo per dues rectes que són paral.leles o es creuen. Per tant, primer caldrà estudiar <a href="http://mdosil.cat/mates2batcientific/temes/equacionsrectesplans/#posicio-relativa-de-dues-rectes">la posició relativa entre les dues rectes</a> per determinar el que s'ha de fer després. Ho veurem tot a través d'un exemple.</p>
+<p><strong>Exemple 2</strong></p>
+<p>Troba la distància entre les rectes <script type="math/tex">r:\frac{ x-1 }{ 2 }=\frac{ y }{ 1 }=\frac{ z-2 }{ 0 }</script> i <script type="math/tex">s:\frac{ x }{ 1 }=\frac{ y }{ 1 }=\frac{ z }{ 1 }</script>.</p>
+<ol>
+<li>
+<p>Posició relativa de les dues rectes</p>
+<p>Agafem els 2 vectors directors de <script type="math/tex">r</script> i <script type="math/tex">s</script>, <script type="math/tex">\overrightarrow{ u }=(2,1,0)</script> i <script type="math/tex">\overrightarrow{ v }=(1,1,1)</script>. Juntament amb un punt de <script type="math/tex">r</script>, <script type="math/tex">P=(1,0,2)</script> i un punt de <script type="math/tex">s</script>, <script type="math/tex">Q=(0,0,1)</script>, creem el vector <script type="math/tex">\overrightarrow{ PQ }=(-1,0,-1)</script>. Amb aquests 3 vectors, mirem quin és el determinant de la matriu <script type="math/tex">3x3</script>. Si aquest determinant és diferent de zero, voldrà dir que el rang és 3 i les rectes es creuen:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+-1 & 2 & 1 \\
+0 & 1 & 1\\
+-1 & 0 & 1
+\end{vmatrix}=-2
+</script>
+</p>
+<p>Per tant, les rectes es creuen.</p>
+</li>
+<li>
+<p>Considerem la recta <script type="math/tex">t</script> perpendicular a <script type="math/tex">r</script> i a <script type="math/tex">s</script>.</p>
+</li>
+</ol>
+<p>Aquesta recta tindrà de vector director <script type="math/tex">\overrightarrow{ w }</script> que serà perpendicular alhora a <script type="math/tex">\overrightarrow{ u }</script> i a <script type="math/tex">\overrightarrow{ v }</script>:</p>
+<p>
+<script type="math/tex; mode=display">\overrightarrow{ w }=\begin{vmatrix}
+   i & j & k \\
+   2 & 1 & 0\\
+   1 & 1 & 1
+   \end{vmatrix}=(1,-2,1)
+   </script>
+</p>
+<ol>
+<li>
+<p>Trobem l'equació del pla <script type="math/tex">\pi</script> que conté la recta <script type="math/tex">t</script> i la recta <script type="math/tex">s</script>
+</p>
+<p>Tenim 2 vectors que pertanyen en aquest pla, el vector <script type="math/tex">\overrightarrow{ w }</script> de <script type="math/tex">t</script> i el vector <script type="math/tex">\overrightarrow{ v }</script> de <script type="math/tex">s</script>. Només ens falta agafar un punt del pla per trobar-ne l'equació. Com a punt del pla podem agafar el punt <script type="math/tex">Q=(0,0,1)</script> de <script type="math/tex">s</script>. Per tant, el pla tindrà com a equació:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+x-0 & 1 & 1 \\
+y-0 & -2 & 1\\
+z-1 & 1 & 1
+\end{vmatrix}=0 \rightarrow -3x+3z-3=0 \rightarrow x-z+1=0
+</script>
+</p>
+</li>
+<li>
+<p>Busquem la intersecció del pla <script type="math/tex">\pi</script> amb la primera recta, <script type="math/tex">r</script>. Això ens donarà un punt, diguem-li <script type="math/tex">A</script>.</p>
+</li>
+</ol>
+<p>Expressem l'equació de <script type="math/tex">r</script> de forma paramètrica i substituïm els valors de <script type="math/tex">x</script>, <script type="math/tex">y</script> i <script type="math/tex">z</script> en l'equació del pla:</p>
+<p>
+<script type="math/tex; mode=display">r: \begin{cases} x&=1+2\lambda \\ y&=\lambda \\ z&=2  \end{cases}\rightarrow (1+2\lambda)-2+1=0 \rightarrow \lambda=0</script>
+</p>
+<p>Per tant, substituïnt el valor de <script type="math/tex">\lambda</script> a l'equació paramètrica de <script type="math/tex">r</script> trobem que el punt <script type="math/tex">A</script> té coordenades:</p>
+<p>
+<script type="math/tex; mode=display">A=(1,0,2)</script>
+</p>
+<p>Que casualment coincideix amb <script type="math/tex">P</script>.</p>
+<ol>
+<li>
+<p>Trobem l'equació de la recta <script type="math/tex">t</script>:</p>
+<p>
+<script type="math/tex; mode=display">\frac{ x-1 }{ 1 }=\frac{ y-0 }{ -2 }= \frac{ z-2 }{ 1 }</script>
+</p>
+</li>
+<li>
+<p>La distància entre les rectes <script type="math/tex">r</script> i <script type="math/tex">s</script> és la distància de <script type="math/tex">A</script> a la recta <script type="math/tex">s</script>:</p>
+<p>
+<script type="math/tex; mode=display">d(r,s)=d(P,s)=\frac{ |\overrightarrow{ PQ }\times \overrightarrow{ v }| }{ |\overrightarrow{ v }| }=\frac{ |(-1,0,-1)\times (1,1,1)| }{ \sqrt{ 1+1+1 }=\frac{ \sqrt{ 6 }{ 3 }u \approx 0.82 </script>
+</p>
+</li>
+</ol>
 <h2 id="distancia-duna-recta-a-un-pla">Distància d'una recta a un pla</h2>
 <h2 id="distancia-entre-dos-plans">Distància entre dos plans</h2></div>
         
