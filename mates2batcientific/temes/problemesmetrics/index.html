@@ -385,6 +385,40 @@ i & j & k \\
 <p>
 <script type="math/tex; mode=display">d(r,s)=\frac{ |\overrightarrow{ PQ } \cdot (\overrightarrow{ u }\times \overrightarrow{ v })|}{ |\overrightarrow{ u }\times \overrightarrow{ v }| }</script>
 </p>
+<p>També podíem haver fet aquest problema d'una altra manera. Anem a veure-ho a sota.</p>
+<ol>
+<li>
+<p>Trobem l'equació d'un pla <script type="math/tex">\pi</script> que conté la recta de sota, <script type="math/tex">s</script>. Per trobar-lo, com que les dues rectes ja hem comprovat prèviament que es creuen, agafo els 2 vectors directors de <script type="math/tex">r</script> i <script type="math/tex">s</script> i el punt <script type="math/tex">Q</script> de <script type="math/tex">s</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{vmatrix}
+x-0 & 2 & 1 \\
+y-0 & 1 & 1\\
+z-1 & 0 & 1
+\end{vmatrix}=0 \rightarrow x-2y+z-1=0
+</script>
+</p>
+</li>
+<li>
+<p>Per trobar la distància entre <script type="math/tex">r</script> i <script type="math/tex">s</script> nomes ens cal trobar la distància entre <script type="math/tex">P</script> i la seva projecció ortogonal sobre el pla <script type="math/tex">\pi</script>, <script type="math/tex">P^{\prime}</script>. Per fer-ho, calculem la recta perpendicular al pla <script type="math/tex">\pi</script> que passa per <script type="math/tex">P</script>, <script type="math/tex">t</script>. Aquesta tindrà vector director <script type="math/tex">\overrightarrow{ w }=\overrightarrow{ n }=(1,-2,1)</script>:</p>
+<p>
+<script type="math/tex; mode=display">
+t:\begin{cases} x=1+\lambda  \\ y=-2 \lambda \\ z= 2+ \lambda  \end{cases}
+</script>
+</p>
+</li>
+<li>
+<p>El punt <script type="math/tex">P^{\prime}</script> serà la intersecció entre <script type="math/tex">t</script> i el pla <script type="math/tex">\pi</script>. Qualsevol punt de <script type="math/tex">t</script> té la forma: <script type="math/tex">P^{\prime}=(1+\lambda,-2\lambda,2+\lambda)</script>. Si ho substituïm a l'equació de <script type="math/tex">\pi</script>:</p>
+<p>
+<script type="math/tex; mode=display">(1+\lambda)-2(-2\lambda)+(2+\lambda)-1=0\rightarrow \lambda=-\frac{ 1 }{ 3 }</script>
+</p>
+</li>
+<li>
+<p>La distància entre les dures rectes serà el mòdul del vector <script type="math/tex">\overrightarrow{ PP^{prime} }</script>:</p>
+<p>
+<script type="math/tex; mode=display">P^{\prime}=(\frac{ 2 }{ 3 },\frac{ 2 }{ 3 },\frac{ 5 }{ 3 })\rightarrow |\overrightarrow{ P P^{\prime} }=\sqrt{ (\frac{ 2 }{ 3 }-1)^2+ (\frac{ 2 }{ 3 }-0)^2 + (\frac{ 5 }{ 3 }-2)^2 }|=\frac{ \sqrt{ 6} }{ 3 }</script>
+</p>
+</li>
+</ol>
 <h2 id="distancia-duna-recta-a-un-pla">Distància d'una recta a un pla</h2>
 <p>Si la recta i el pla es tallen, o la recta està dins el pla, llavors la distància també serà zero. Per tant, primer caldrà trobar <a href="http://mdosil.cat/mates2batcientific/temes/equacionsrectesplans/#posicio-relativa-entre-rectes-i-plans">la posició relativa</a> entre la recta i el pla.</p>
 <p>Si són paral.lels no coincidents, l'únic que haurem de fer és agafar un punt de la recta i calcular <a href="http://mdosil.cat/mates2batcientific/temes/problemesmetrics/#distancia-dun-punt-a-un-pla">la distància del punt al pla donat</a>.</p>
