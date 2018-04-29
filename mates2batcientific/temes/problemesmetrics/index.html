@@ -201,6 +201,8 @@
         
             <li class="second-level"><a href="#distancia-duna-recta-a-un-pla">Distància d'una recta a un pla</a></li>
             
+                <li class="third-level"><a href="#projeccio-duna-recta-sobre-un-pla">Projecció d'una recta sobre un pla</a></li>
+            
         
             <li class="second-level"><a href="#distancia-entre-dos-plans">Distància entre dos plans</a></li>
             
@@ -422,6 +424,33 @@ t:\begin{cases} x=1+\lambda  \\ y=-2 \lambda \\ z= 2+ \lambda  \end{cases}
 <h2 id="distancia-duna-recta-a-un-pla">Distància d'una recta a un pla</h2>
 <p>Si la recta i el pla es tallen, o la recta està dins el pla, llavors la distància també serà zero. Per tant, primer caldrà trobar <a href="http://mdosil.cat/mates2batcientific/temes/equacionsrectesplans/#posicio-relativa-entre-rectes-i-plans">la posició relativa</a> entre la recta i el pla.</p>
 <p>Si són paral.lels no coincidents, l'únic que haurem de fer és agafar un punt de la recta i calcular <a href="http://mdosil.cat/mates2batcientific/temes/problemesmetrics/#distancia-dun-punt-a-un-pla">la distància del punt al pla donat</a>.</p>
+<h3 id="projeccio-duna-recta-sobre-un-pla">Projecció d'una recta sobre un pla</h3>
+<p>Donat un pla <script type="math/tex">\pi</script> i una recta <script type="math/tex">r</script> qualsevol, es pot calcular la seva projecció sobre el pla. Diguem que és com si calculéssim l'ombra de la recta sobre el pla. Ho veurem a través d'un exemple.</p>
+<p><strong>Exemple 3</strong></p>
+<p>Calcula la projecció de la recta <script type="math/tex">r:\begin{cases} x=-4+6\lambda  \\ y=3  \\ z= 5-5 \lambda  \end{cases}</script> sobre el pla <script type="math/tex">\pi: z=3</script>.</p>
+<p>Primer de tot cal comprovar la posició relativa entre la recta i el pla. El vector director de la recta és <script type="math/tex">\overrightarrow{ v }=(6,0,-5)</script> i el vector normal del pla és <script type="math/tex">\overrightarrow{ n }=(0,0,1)</script>. Veiem que no són paral.lels, per tant, la recta i el pla es tallen.</p>
+<p>Per calcular la projecció de la recta sobre el pla, primer de tot calcularem la projecció d'un punt <script type="math/tex">P</script> de la recta sobre el pla, <script type="math/tex">P^{\prime}</script>. Llavors, calcularem el punt de tall de la recta <script type="math/tex">r</script> amb el pla <script type="math/tex">\pi</script>. Amb aquests 2 punts, ja en tindrem prou per trobar la projecció de la recta <script type="math/tex">r</script> sobre el pla <script type="math/tex">\pi</script>, <script type="math/tex">r^{prime}</script>.</p>
+<p>L'equació de la recta <script type="math/tex">t</script> que és perpendicular a <script type="math/tex">\pi</script> i passa per <script type="math/tex">P</script> té vector director <script type="math/tex">\overrightarrow{ n }</script> i és:</p>
+<p>
+<script type="math/tex">t:\begin{cases} x=-4  \\ y=3  \\ z= 5+ \lambda  \end{cases}</script>
+</p>
+<p>Per trobar <script type="math/tex">P^\prime</script> només ens cal trobar la intersecció de <script type="math/tex">t</script> amb <script type="math/tex">\pi</script>:</p>
+<p>
+<script type="math/tex; mode=display">5+\lambda=3\rightarrow \lambda=-2 \rightarrow P^{\prime}=(-4,3,3)</script>.</p>
+<p>Ara trobarem el punt <script type="math/tex">C</script> d'intersecció de <script type="math/tex">r</script> amb el pla <script type="math/tex">pi</script> i tindrem el segon punt. Si substituïm l'equació paramètrica de <script type="math/tex">r</script> a l'equació del pla obtenim:</p>
+<p>
+<script type="math/tex; mode=display">5-5\lambda=3\rightarrow \lambda=\frac{ 2 }{ 5 }\rightarrow C=(-\frac{ 8 }{ 5 },3,3)</script>
+</p>
+<p>Llavors, l'equació de la projecció de <script type="math/tex">r</script> sobre el pla <script type="math/tex">\pi</script>, o sigui <script type="math/tex">r^\prime</script> la podem trobar amb els punts <script type="math/tex">P^{\prime}=(-4,3,3)</script> i C=(-\frac{ 8 }{ 5 },3,3)$$. Calculeu el seu vector director:</p>
+<p>
+<script type="math/tex; mode=display">\overrightarrow{ v^\prime }=overrightarrow{ P^\prime C =(-\frac{ 12 }{ 5 },0,0)}</script>
+</p>
+<p>Per tant, l'equació de la recta és:</p>
+<p>
+<script type="math/tex">r^\prime:\begin{cases} x=-4-\frac{ 12 }{ 5 }\lambda  \\ y=3  \\ z= 3  \end{cases}</script>
+</p>
+<iframe scrolling="no" title="Projeccio recta sobre pla R3" src="https://www.geogebra.org/material/iframe/id/bkb2ztfK/width/700/height/719/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="719px" style="border:0px;"> </iframe>
+
 <h2 id="distancia-entre-dos-plans">Distància entre dos plans</h2>
 <p>Aquí funcionarà una mica igual. Caldrà primer estudiar-ne <a href="http://mdosil.cat/mates2batcientific/temes/equacionsrectesplans/#posicio-relativa-entre-plans">la seva posició relativa</a>. Si els plans són coincidents o es tallen, la distància serà zero. Si els plans són paral.lels, s'agafarà un punt qualsevol d'un dels plans i es calcularà la distància d'aquest punt a l'altre pla.</p></div>
         
