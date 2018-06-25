@@ -2,8 +2,7 @@
 
 | Bloc 1: Anàlisi   |      Bloc 2: Àlgebra      |  Bloc 3: Geometria a l'espai |
 |----------|--------------|------- |
-| [1. Derivades](temes/derivades.md)  |   [6. Matrius i determinants](temes/matrius.md) | [8. Vectors a l'espai](temes/vectors.md) |
-| [2. Funcions contínues i derivables](temes/funcions.md) |  [7. Sistemes d'equacions](temes/sistemes.md)  | [9. Equacions de rectes i plans](temes/equacionsrectesplans.md)|
-| [3. Aplicacions de la derivada](temes/aplicacionsderivades.md)  |    | [10. Posició relativa de rectes i plans](temes/posicionsrectesplans.md)|
-| [4. Integrals indefinides](temes/integralsindefinides.md)   |    | [11. Distàncies i angles](temes/distanciesangles.md) |
-| [5. Integrals definides](temes/integralsdefinides.md) |    | |
+| [1. Derivades](temes/derivades.md)  |   [5. Matrius i determinants](temes/matrius.md) | [7. Vectors a l'espai](temes/vectors.md) |
+| [2. Funcions contínues i derivables](temes/funcions.md) |  [6. Sistemes d'equacions](temes/sistemes.md)  | [8. Rectes i plans](temes/equacionsrectesplans.md)|
+| [3. Estudi de les característiques d'una funció. Problemes d'optimització](temes/aplicacionsderivades.md)  |    |[9. Problemes mètrics](temes/problemesmetrics.md)|
+| [4. Integrals](temes/integrals.md)   |    |  |

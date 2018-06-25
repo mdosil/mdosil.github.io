@@ -162,8 +162,8 @@ $$f(x)= \begin{cases} 2x^2-3x-1 \mbox{ si } x \le -1 \\
 
 Anem a veure si és derivable en aquests punts. Calcularem la derivada a partir del límit i en els casos que la funció estigui definida de manera diferent per la dreta i per l'esquerra dels punts calcularem els límits laterals.
 
-$$f^{\prime}(-1)= \lim_{x\to -1} \frac{f(x)-f(-1)}{x+1} \begin{cases} \lim_{x\to -1^+} \frac{4x+1-4}{x+1}= \lim_{x\to -1^+} \frac{4x-3}{x+1}=\frac{-7}{0}=+\infty\\
-     \mbox {no cal buscar el límit lateral per l'esquerra perquè al no existir l'altre límit lateral, el límit no existeix}
+$$f^{\prime}(-1)= \lim_{x\to -1} \frac{f(x)-f(-1)}{x+1} \begin{cases} \lim_{x\to -1^+} \frac{4x+1-4}{x+1}= \lim_{x\to -1^+} \frac{4x+4}{x+1}=4\\
+     \lim_{x\to -1^-} \frac{(2x^2-3x-1)-(2(-1)^2-3(-1)-1)}{x+1}= \lim_{x\to -1^+} \frac{2x^2-3x-5}{x+1}=\lim_{x\to -1^+} \frac{(2x-5)(x+1)}{x+1}=-7
     \end{cases}$$
 
 $f(x)$ no és derivable en $x=-1$.
@@ -202,7 +202,7 @@ Si mireu la representació gràfica de la funció i què passa en aquests punts 
 
 ###Definició de funció derivada
 
-Sigui $f$ una funció real de domini $A$ i **derivable** en tot $a \in A$. Anomenem **funció derivada de $f$** (o derivada de $f$) a aquella funció que representem per $f^\prime$ de domini $A$ que associa a tot element d'$A$ la derivada d'aquesta funció en aquest punt:
+Sigui $f$ una funció real de domini $A$ i **contínua** en tot $a \in A$. Anomenem **funció derivada de $f$** (o derivada de $f$) a aquella funció que representem per $f^\prime$ de domini $A$ que associa a tot element d'$A$ la derivada d'aquesta funció en aquest punt:
 
 \begin{align}
 f^\prime : A & \rightarrow \mathbb{R} \\
@@ -261,48 +261,49 @@ $$f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot 
 
 | Funció     | Derivada |
 | :------------- |:------------- |
-| Constant      |$$(k)\prime=0 \forall k \in \mathbb{R}$$|
-| Identitat      |$$x\prime=1 $$|
-| Suma      |$$(f(x)+g(x))\prime=f\prime(x)+g\prime(x)$$|
-| Producte per un nombre      |$$(k\cdot f(x))\prime=k \cdot f\prime(x)$$|
-| Producte      |$$(f(x)\cdot g(x))\prime=f\prime(x)\cdot g(x)+f(x)\cdot g\prime (x)$$|
-| Quocient      |$$\Big(\frac{f(x)}{g(x)}\Big)\prime=\frac{f\prime(x)\cdot g(x)+f(x)\cdot g\prime(x)}{g(x)^2}$$|
-| Potència      |$$(x^n)\prime=n\cdot x^{n-1}$$|
-| Composició (regla de la cadena)|$$\big(f(g(x))\big)\prime=f\prime\big(g(x)\big)\cdot g\prime(x)$$|
-| Trigonomètriques      |$$\big(\sin(x)\big)\prime=\cos(x)$$|
-|       |$$\big(\cos(x)\big)\prime=-\sin(x)$$|
-|      |$$\big(\tan(x)\big)\prime=1+\tan^2(x)$$|
-| Inverses Trigonomètriques      |$$\big(arcsin(x)\big)\prime=\frac{1}{\sqrt{1-x^2}}$$|
-|       |$$\big(arccos(x)\big)\prime=-\frac{1}{\sqrt{1-x^2}}$$|
-|      |$$\big(arctan(x)\big)\prime=\frac{1}{1+x^2}$$|
-|Exponencials|$$\big(e^x\big)\prime=e^x$$|
-||$$\big(a^x\big)\prime=a^x\cdot ln(a)$$|
-|Logarítmiques| $$\big(ln(x)\big)\prime=\frac{1}{x}$$|
-||$$\big(log_a(x)\big)\prime=\frac{1}{x}\cdot \frac{1}{ln(a)}$$|
+| Constant      |$$(k)^{\prime}=0 \forall k \in \mathbb{R}$$|
+| Identitat      |$$x^{\prime}=1 $$|
+| Suma      |$$(f(x)+g(x))^{\prime}=f^{\prime}(x)+g^{\prime}(x)$$|
+| Producte per un nombre      |$$(k\cdot f(x))^{\prime}=k \cdot f^{\prime}(x)$$|
+| Potència      |$$(x^n)^{\prime}=n\cdot x^{n-1}$$|
+|Polinomi:  |$[a_n x^n+a_{n-1}x^{n-1}+...+a_2 x^2+a_1 x+a_0]^\prime=n\cdot a_n x^{n-1}+(n-1)\cdot a_{n-1}x^{n-2}+...+2\cdot a_2 x+a_1$|
+| Producte      |$$(f(x)\cdot g(x))^{\prime}=f^{\prime}(x)\cdot g(x)+f(x)\cdot g^{\prime} (x)$$|
+| Quocient      |$$\Big(\frac{f(x)}{g(x)}\Big)^{\prime}=\frac{f^{\prime}(x)\cdot g(x)-f(x)\cdot g^{\prime}(x)}{g(x)^2}$$|
+| Trigonomètriques      |$$\big(\sin(x)\big)^{\prime}=\cos(x)$$|
+|       |$$\big(\cos(x)\big)^{\prime}=-\sin(x)$$|
+|      |$$\big(\tan(x)\big)^{\prime}=1+\tan^2(x)$$|
+| Inverses Trigonomètriques      |$$\big(arcsin(x)\big)^{\prime}=\frac{1}{\sqrt{1-x^2}}$$|
+|       |$$\big(arccos(x)\big)^{\prime}=-\frac{1}{\sqrt{1-x^2}}$$|
+|      |$$\big(arctan(x)\big)^{\prime}=\frac{1}{1+x^2}$$|
+| Composició (regla de la cadena)|$$\big(f(g(x))\big)^{\prime}=f^{\prime}\big(g(x)\big)\cdot g^{\prime}(x)$$|
+|Exponencials|$$\big(e^x\big)^{\prime}=e^x$$|
+||$$\big(a^x\big)^{\prime}=a^x\cdot ln(a)$$|
+|Logarítmiques| $$\big(ln(x)\big)^{\prime}=\frac{1}{x}$$|
+||$$\big(log_a(x)\big)^{\prime}=\frac{1}{x}\cdot \frac{1}{ln(a)}$$|
 
 ###Exemples
 
-**Exemple 1: Derivada d'un quocient**
+**Exemple 6: Derivada d'un quocient**
 
 Troba la derivada de la funció següent: $f(x)=\frac{x^2}{sin(x)}$.
 
 Com que és un quocient:
 
 \begin{align}
-f(x)\prime&=\frac{(x^2)\prime\cdot sin(x)+x^2\cdot \big(sin(x)\big)\prime}{sin^2(x)} \\
-&=\frac{2x\cdot sin(x)+x^2\cdot cos(x)}{sin^2(x)}=\frac{2x+x^2\cdot tan(x)}{sin(x)}
+f(x)^{^{\prime}}&=\frac{(x^2)^{\prime}\cdot sin(x)-x^2\cdot \big(sin(x)\big)^{\prime}}{sin^2(x)} \\
+&=\frac{2x\cdot sin(x)-x^2\cdot cos(x)}{sin^2(x)}=\frac{2x-x^2\cdot tan(x)}{sin(x)}
 \end{align}
 
-**Exemple 2: Derivada d'una funció composta**
+**Exemple 7: Derivada d'una funció composta**
 
 Troba la derivada de la funció següent: $f(x)=sin(ln(x+1))$.
 
 Veiem que aquest és el resultat de la composició de dues funcions, la funció $sin(x)$ i la funció $ln(x+1)$. Per tant, primer apliquem la regla de derivació de la funció sinus i llavors derivem la segona funció:
 
-$$f(x)\prime=cos \big( ln(x+1)\big)\cdot \Big(ln(x+1)\Big)\prime=cos \big( ln(x+1)\big)\cdot \frac{1}{x+1}$$
+$$f(x)^{\prime}=cos \big( ln(x+1)\big)\cdot \Big(ln(x+1)\Big)^{\prime}=cos \big( ln(x+1)\big)\cdot \frac{1}{x+1}$$
 
 
-**Exemple 3: Derivació logarítmica**
+**Exemple 8: Derivació logarítmica**
 
 Troba la derivada de la funció següent: $f(x)=x^{sin(x)}$.
 
@@ -311,9 +312,9 @@ A vegades cal aplicar *trucs* per poder derivar algunes funcions. Quan tenim fun
 \begin{align}
 f(x)&=x^{sin(x)}\\
 ln\big(f(x)\big)&=sin(x)\cdot ln(x)\\
-\frac{1}{f(x)} \cdot f(x)\prime&=cos(x)\cdot ln(x)+sin x \cdot \frac{1}{x}\\
-f(x)\prime&=f(x)\cdot \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
-f(x)\prime&=x^{sin(x)} \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
+\frac{1}{f(x)} \cdot f(x)^{\prime}&=cos(x)\cdot ln(x)+sin x \cdot \frac{1}{x}\\
+f(x)^{\prime}&=f(x)\cdot \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
+f(x)^{\prime}&=x^{sin(x)} \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
 \end{align}
 
 ##Derivació successiva
@@ -323,9 +324,9 @@ El procés de càlcul de la derivada es pot dur a terme moltes vegades. De fet, 
 
 
 \begin{align}
-f(x)\prime &= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
-f(x)\prime \prime &= \lim_{h\to 0} \frac{f(x+h)\prime -f(x)\prime }{h}\\
-f(x)\prime \prime \prime &= \lim_{h\to 0} \frac{f(x+h)\prime\prime -f(x) \prime \prime}{h}\\
+f(x)^{\prime} &= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+f(x)^{\prime \prime} &= \lim_{h\to 0} \frac{f(x+h)^{\prime} -f(x)^{\prime} }{h}\\
+f(x)^{\prime \prime \prime} &= \lim_{h\to 0} \frac{f(x+h)^{\prime \prime} -f(x) ^{\prime \prime}}{h}\\
 .\\
 .\\
 .\\
@@ -335,13 +336,13 @@ f(x)^{n} &= \lim_{h\to 0} \frac{f(x+h)^{n-1}-f(x)^{n-1}}{h}\\
 on $f(x)^{n}$ és la derivada $n$-èssima de $f(x)$.
 
 
-**Exemple 4: Calcula la derivada d'ordre n de la funció: f(x)=ln(x+1)**
+**Exemple 9: Calcula la derivada d'ordre n de la funció: f(x)=ln(x+1)**
 
 \begin{align}
-f(x)\prime &= \frac{1}{x+1}\\
-f(x)\prime \prime &= \frac{-1}{(x+1)^2}\\
-f(x)\prime \prime \prime &= \frac{2(x+1)}{(x+1)^4}=\frac{2}{(x+1)^3}\\
-f(x)^4&= \frac{-2\cdot 3 (x+1)^2}{(x+1)^6}=\frac{-3 !}{(x+1)^4}\\
+f(x)^{\prime} &= \frac{1}{x+1}\\
+f(x)^{\prime \prime} &= \frac{-1}{(x+1)^2}\\
+f(x)^{\prime \prime \prime} &= \frac{2(x+1)}{(x+1)^4}=\frac{2}{(x+1)^3}\\
+f(x)^4&= \frac{-2\cdot 3 (x+1)^2}{(x+1)^6}=\frac{-6}{(x+1)^4}\\
 .\\
 .\\
 .\\
