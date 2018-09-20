@@ -216,11 +216,11 @@
 <h3 id="definicio-de-derivada-duna-funcio-en-un-punt">Definició de derivada d'una funció en un punt</h3>
 <p>Donada una funció real <script type="math/tex">f</script> i un punt d'abcissa <script type="math/tex">x=a</script>, <script type="math/tex">a \in \mathbb{R}</script>, on <script type="math/tex">a \in D_f</script>, considerem el límit següent:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
+<script type="math/tex; mode=display">\lim\limits_{h\to 0} \frac{f(a+h)-f(a)}{h}</script>
 </p>
 <p>si aquest límit existeix s'anomena <strong>derivada de la funció <script type="math/tex">f</script> en <script type="math/tex">x=a</script>, <script type="math/tex">f^{\prime} (a)</script></strong>:</p>
 <p>
-<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}}</script>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim\limits_{h\to 0} \frac{f(a+h)-f(a)}{h}}</script>
 </p>
 <iframe scrolling="no" title="interpretació geometric derivada (1)" src="https://www.geogebra.org/material/iframe/id/rcP7SKNk/width/639/height/393/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="639px" height="393px" style="border:0px;"> </iframe>
 
@@ -233,12 +233,12 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
     \end{align}</script>
 </p>
 <p>
-<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}}</script>
+<script type="math/tex; mode=display">\bbox[5px,border:2px solid black]{f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}}</script>
 </p>
 <p><strong>Exemple 1</strong></p>
 <p>Donada <script type="math/tex">f(x)=7x-3</script> calculeu <script type="math/tex">f^{\prime}(a) \forall a \in \mathbb{R}</script>.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{7x-3-(7a-3)}{x-a}=\lim_{x\to a} \frac{7(x-a)}{x-a}=7</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{7x-3-(7a-3)}{x-a}=\lim\limits_{x\to a} \frac{7(x-a)}{x-a}=7</script>
 </p>
 <p><strong>Exemple 2</strong></p>
 <p>Esbrineu si existeix la derivada en els punts <script type="math/tex">x=0</script>, <script type="math/tex">x=2</script> i <script type="math/tex">x=-2</script> de la funció a trossos:</p>
@@ -249,16 +249,16 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 </p>
 <p>Per calcular la derivada en aquests punts, el que haurem de fer és calcular els límits anteriors per <script type="math/tex">x\to 0</script>, <script type="math/tex">x\to 2</script> i <script type="math/tex">x \to -2</script>.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(0)=\lim_{x\to 0} \frac{f(x)-f(0)}{x-0}=?\Rightarrow\begin{cases} \lim_{x\to 0^{+}} \frac{f(x)-f(0)}{x-0}= \lim_{x\to 0^{+}} \frac{x-1-1}{x}=\lim_{x\to 0^{+}} \frac{x-2}{x}=\frac{-2}{0}=-\infty\\
-     \lim_{x\to 0^{-}} \frac{f(x)-f(0)}{x-0}=\lim_{x\to 0^{-}} \frac{2x}{x}=2
+<script type="math/tex; mode=display">f^{\prime}(0)=\lim\limits_{x\to 0} \frac{f(x)-f(0)}{x-0}=?\Rightarrow\begin{cases} \lim\limits_{x\to 0^{+}} \frac{f(x)-f(0)}{x-0}= \lim\limits_{x\to 0^{+}} \frac{x-1-1}{x}=\lim\limits_{x\to 0^{+}} \frac{x-2}{x}=\frac{-2}{0}=-\infty\\
+     \lim\limits_{x\to 0^{-}} \frac{f(x)-f(0)}{x-0}=\lim\limits_{x\to 0^{-}} \frac{2x}{x}=2
     \end{cases}</script>
 </p>
 <p>Veiem que els límits laterals no coincideixen. Per tant, el límit no es pot calcular, o sigui que <strong><script type="math/tex">f^{\prime}(0)=\nexists</script></strong></p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(2)=\lim_{x\to 2} \frac{f(x)-f(2)}{x-2}=\lim_{x\to 2} \frac{x-1-1}{x-2}=\lim_{x\to 2} \frac{x-2}{x-2}=1</script>
+<script type="math/tex; mode=display">f^{\prime}(2)=\lim\limits_{x\to 2} \frac{f(x)-f(2)}{x-2}=\lim\limits_{x\to 2} \frac{x-1-1}{x-2}=\lim\limits_{x\to 2} \frac{x-2}{x-2}=1</script>
 </p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(-2)=\lim_{x\to -2} \frac{f(x)-f(-2)}{x+2}=\lim_{x\to -2} \frac{2x+4}{x+2}=\lim_{x\to -2} \frac{2(x+2)}{x+2}=2</script>
+<script type="math/tex; mode=display">f^{\prime}(-2)=\lim\limits_{x\to -2} \frac{f(x)-f(-2)}{x+2}=\lim\limits_{x\to -2} \frac{2x+4}{x+2}=\lim\limits_{x\to -2} \frac{2(x+2)}{x+2}=2</script>
 </p>
 <h3 id="interpretacio-geometrica-de-la-derivada">Interpretació geomètrica de la derivada</h3>
 <p>Anem a veure si amb un altre dibuix entenem què és això de la derivada. Fixeu-vos amb el gràfic següent:</p>
@@ -272,7 +272,7 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 <p>Si ens fixem aquesta fórmula és molt semblant a la de la definició de la derivada d'una funció en el punt <script type="math/tex">a</script>, <script type="math/tex">f^{\prime}(a)</script>. La diferència està en el <strong>límit</strong>.</p>
 <p>Si ara anem acostant cada vegada més el punt <script type="math/tex">B</script> al punt <script type="math/tex">A</script>, veiem que aquesta recta secant, en <strong>el límit</strong> que <script type="math/tex">A=B</script> es converteix en una <strong>recta tangent en <script type="math/tex">x=a</script></strong>, i per tant:</p>
 <blockquote>
-<p>La derivada en <script type="math/tex">x=a</script> de <script type="math/tex">f(x)</script>, <script type="math/tex">f^\prime(a)</script>, és <strong>el pendent de la recta tangent a la gràfica de la funció en el punt <script type="math/tex">x=a</script></strong>  i es calcula a partir del límit: <script type="math/tex">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
+<p>La derivada en <script type="math/tex">x=a</script> de <script type="math/tex">f(x)</script>, <script type="math/tex">f^\prime(a)</script>, és <strong>el pendent de la recta tangent a la gràfica de la funció en el punt <script type="math/tex">x=a</script></strong>  i es calcula a partir del límit: <script type="math/tex">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
 </p>
 </blockquote>
 <p>Per tant, també podem assegurar que si en <script type="math/tex">x=a</script> la funció és <strong>creixent(pendent positiu) <script type="math/tex">\Rightarrow f^{\prime}(a)>0</script></strong>, i al revés, si en <script type="math/tex">x=a</script> la funció és <strong>decreixent (pendent negatiu)<script type="math/tex">\Rightarrow f^{\prime}(a)<0</script></strong>.</p>
@@ -294,7 +294,7 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 </p>
 <p>Anem a calcular la derivada de la funció <script type="math/tex">f</script> en <script type="math/tex">x=1</script>:</p>
 <p>
-<script type="math/tex; mode=display">m=f^{\prime}(1)=\lim_{x\to 1} \frac{f(x)-f(1)}{x-1}=\frac{3x^2-5x+2-0}{x-1}=1</script>
+<script type="math/tex; mode=display">m=f^{\prime}(1)=\lim\limits_{x\to 1} \frac{f(x)-f(1)}{x-1}=\frac{3x^2-5x+2-0}{x-1}=1</script>
 </p>
 <p>Per tant, l'equació de la recta tangent a <script type="math/tex">f(x)</script> en <script type="math/tex">x=1</script> és:</p>
 <p>
@@ -319,19 +319,19 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 <p><strong>Demostració</strong></p>
 <p>Que una funció sigui derivable en el punt <script type="math/tex">x=a</script> vol dir que està definida la seva derivada i en particular existeix el límit:</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}</script>
 </p>
 <p>Si existeix el límit del quocient anterior, podem fer:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to a} \big(f(x)-f(a)\big)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot (x-a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot \lim_{x\to a}(x-a)=f^{\prime}(a)\cdot 0=0</script>
+<script type="math/tex; mode=display">\lim\limits_{x\to a} \big(f(x)-f(a)\big)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot (x-a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}\cdot \lim\limits_{x\to a}(x-a)=f^{\prime}(a)\cdot 0=0</script>
 </p>
 <p>Per tant es compleix que:</p>
 <p>
-<script type="math/tex; mode=display"> \lim_{x\to a} \big(f(x)-f(a)\big)=0 \Rightarrow \lim_{x\to a} f(x)-\lim_{x\to a}f(a)=0 \Rightarrow \lim_{x\to a} f(x)=\lim_{x\to a}f(a)=f(a)</script>
+<script type="math/tex; mode=display"> \lim\limits_{x\to a} \big(f(x)-f(a)\big)=0 \Rightarrow \lim\limits_{x\to a} f(x)-\lim\limits_{x\to a}f(a)=0 \Rightarrow \lim\limits_{x\to a} f(x)=\lim\limits_{x\to a}f(a)=f(a)</script>
 </p>
 <p>I arribem a la definició de funció contínua en un punt <script type="math/tex">x=a</script>: existeix el límit de la funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">a</script> i aquest límit és igual a la imatge de <script type="math/tex">a</script>, <script type="math/tex">f(a)</script>:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to a} f(x)=f(a)</script>
+<script type="math/tex; mode=display">\lim\limits_{x\to a} f(x)=f(a)</script>
 </p>
 <p><strong>Exemple 4</strong></p>
 <p>Digues si la funció a trossos</p>
@@ -349,33 +349,33 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 </ol>
 <p>Anem a veure si és derivable en aquests punts. Calcularem la derivada a partir del límit i en els casos que la funció estigui definida de manera diferent per la dreta i per l'esquerra dels punts calcularem els límits laterals.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(-1)= \lim_{x\to -1} \frac{f(x)-f(-1)}{x+1} \begin{cases} \lim\limits_{x\to -1^+} \frac{4x+1-4}{x+1}= \lim_{x\to -1^+} \frac{4x-3}{x+1}=-\infty\\
-     \lim_{x\to -1^-} \frac{(2x^2-3x-1)-(2(-1)^2-3(-1)-1)}{x+1}= \lim_{x\to -1^+} \frac{2x^2-3x-5}{x+1}=\lim_{x\to -1^+} \frac{(2x-5)(x+1)}{x+1}=-7
+<script type="math/tex; mode=display">f^{\prime}(-1)= \lim\limits_{x\to -1} \frac{f(x)-f(-1)}{x+1} \begin{cases} \lim\limits\lim\limitsits_{x\to -1^+} \frac{4x+1-4}{x+1}= \lim\limits_{x\to -1^+} \frac{4x-3}{x+1}=-\infty\\
+     \lim\limits_{x\to -1^-} \frac{(2x^2-3x-1)-(2(-1)^2-3(-1)-1)}{x+1}= \lim\limits_{x\to -1^+} \frac{2x^2-3x-5}{x+1}=\lim\limits_{x\to -1^+} \frac{(2x-5)(x+1)}{x+1}=-7
     \end{cases}</script>
 </p>
 <p>
 <script type="math/tex">f(x)</script> no és derivable en <script type="math/tex">x=-1</script>.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(0)= \lim_{x\to 0} \frac{f(x)-f(0)}{x-0}= \lim_{x\to 0} \frac{4x+1-1}{x}=4</script>
+<script type="math/tex; mode=display">f^{\prime}(0)= \lim\limits_{x\to 0} \frac{f(x)-f(0)}{x-0}= \lim\limits_{x\to 0} \frac{4x+1-1}{x}=4</script>
 </p>
 <p><strong><script type="math/tex">f(x)</script> és derivable en <script type="math/tex">x=0</script></strong> i <script type="math/tex">f^{\prime}(0)=4</script>.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(2)= \lim_{x\to 2} \frac{f(x)-f(2)}{x-2} \begin{cases} \lim_{x\to 2^+} \frac{9-9}{x-2}= 0\\
-    \lim_{x\to 2^-} \frac{4x+1-9}{x-2}= \lim_{x\to 2^-} \frac{4(x-2)}{x-2}=4
+<script type="math/tex; mode=display">f^{\prime}(2)= \lim\limits_{x\to 2} \frac{f(x)-f(2)}{x-2} \begin{cases} \lim\limits_{x\to 2^+} \frac{9-9}{x-2}= 0\\
+    \lim\limits_{x\to 2^-} \frac{4x+1-9}{x-2}= \lim\limits_{x\to 2^-} \frac{4(x-2)}{x-2}=4
     \end{cases}</script>
 </p>
 <p>
 <script type="math/tex">f(x)</script> no és derivable en <script type="math/tex">x=2</script> ja que els límits laterals no coincideixen.</p>
 <p>En els casos que la funció és derivable la funció serà contínua en aquests punts. Per tant, <strong>en <script type="math/tex">x=0</script> la funció és contínua i derivable</strong>. Però pot ser que no sigui derivable i en canvi, sí que sigui contínua. Anem a veure què passa en <script type="math/tex">x=-1</script> i <script type="math/tex">x=2</script>:</p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to -1} f(x)=\begin{cases} \lim_{x\to -1^+} (4x+1)= -3\\
-     \lim_{x\to -1^-} (2x^2-3x-1)= 4
+<script type="math/tex; mode=display">\lim\limits_{x\to -1} f(x)=\begin{cases} \lim\limits_{x\to -1^+} (4x+1)= -3\\
+     \lim\limits_{x\to -1^-} (2x^2-3x-1)= 4
     \end{cases}</script>
 </p>
 <p>Com que els límits laterals no coincideixen <strong><script type="math/tex">f(x)</script> no és derivable ni contínua en <script type="math/tex">x=-1</script></strong></p>
 <p>
-<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=\begin{cases} \lim_{x\to 2^+} 9= 9\\
-     \lim_{x\to 2^-} (4x+1)= 9
+<script type="math/tex; mode=display">\lim\limits_{x\to 2} f(x)=\begin{cases} \lim\limits_{x\to 2^+} 9= 9\\
+     \lim\limits_{x\to 2^-} (4x+1)= 9
     \end{cases}</script>
 </p>
 <p>Com que els límits laterals sí que coincideixen <strong><script type="math/tex">f(x)</script> no és derivable però sí contínua en <script type="math/tex">x=-1</script></strong></p>
@@ -388,13 +388,13 @@ a+h&=x \rightarrow \begin{cases} h=x-a \\
 <p>
 <script type="math/tex; mode=display">\begin{align}
 f^\prime : A & \rightarrow \mathbb{R} \\
-x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
+x & \rightarrow y=f^\prime (x)= \lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}
 \end{align}</script>
 </p>
 <p><strong>Exemple 5</strong></p>
 <p>Calcula la funció derivada de la funció <script type="math/tex">f(x)=x^2+1</script>.</p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{x^2+1-a^2-1}{x-a}=lim_{x\to a} \frac{(x+a)(x-a)}{x-a}=a+a=2a \forall a \in \mathbb{R}</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{x^2+1-a^2-1}{x-a}=lim_{x\to a} \frac{(x+a)(x-a)}{x-a}=a+a=2a \forall a \in \mathbb{R}</script>
 </p>
 <p>Per tant: <script type="math/tex">f^\prime (x)=2x</script> és la derivada de <script type="math/tex">f(x)=x^2+1</script>.</p>
 <h2 id="regles-de-derivacio">Regles de derivació</h2>
@@ -406,7 +406,7 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 </blockquote>
 <p><em>Demostració</em></p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{c-c}{x-a}=\lim_{x\to a} \frac{0}{x-a}=\lim_{x\to a} 0= 0</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{c-c}{x-a}=\lim\limits_{x\to a} \frac{0}{x-a}=\lim\limits_{x\to a} 0= 0</script>
 </p>
 <p><strong>Regla 2</strong></p>
 <blockquote>
@@ -415,7 +415,7 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 </blockquote>
 <p><em>Demostració</em></p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{x-a}{x-a}=\lim_{x\to a} 1=1</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{x-a}{x-a}=\lim\limits_{x\to a} 1=1</script>
 </p>
 <p><strong>Regla 3</strong></p>
 <blockquote>
@@ -423,7 +423,7 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 </blockquote>
 <p><em>Demostració</em></p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(f+g)(x)-(f+g)(a)}{x-a}=\lim_{x\to a} \frac{f(x)+g(x)-f(a)-g(a)}{x-a}=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{g(x)-g(a)}{x-a}=f^\prime(a)+g^\prime(a) \forall a</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{(f+g)(x)-(f+g)(a)}{x-a}=\lim\limits_{x\to a} \frac{f(x)+g(x)-f(a)-g(a)}{x-a}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{g(x)-g(a)}{x-a}=f^\prime(a)+g^\prime(a) \forall a</script>
 </p>
 <p><strong>Regla 4</strong></p>
 <blockquote>
@@ -431,7 +431,7 @@ x & \rightarrow y=f^\prime (x)= \lim_{x\to a} \frac{f(x)-f(a)}{x-a}
 </blockquote>
 <p><em>Demostració</em></p>
 <p>
-<script type="math/tex; mode=display">f^{\prime}(a)=\lim_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim_{x\to a} \frac{(K\cdot f)(x)-(K \cdot f)(a)}{x-a}=\lim_{x\to a} \frac{K\cdot (f(x)-f(a)}{x-a}=\lim_{x\to a} K \cdot  \lim_{x\to a} \frac{f(x)-f(a)}{x-a}=K \cdot f^\prime (a)</script>
+<script type="math/tex; mode=display">f^{\prime}(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a} \frac{(K\cdot f)(x)-(K \cdot f)(a)}{x-a}=\lim\limits_{x\to a} \frac{K\cdot (f(x)-f(a)}{x-a}=\lim\limits_{x\to a} K \cdot  \lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a}=K \cdot f^\prime (a)</script>
 </p>
 <h3 id="taula-de-derivades">Taula de derivades</h3>
 <table>
@@ -590,13 +590,13 @@ f(x)^{\prime}&=x^{sin(x)} \Big(cos(x)\cdot ln(x)+\frac{1}{x}\cdot sin(x)\Big)\\
 <p>El procés de càlcul de la derivada es pot dur a terme moltes vegades. De fet, si prenem la definició de la derivada com a límit, tenim que:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-f(x)^{\prime} &= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
-f(x)^{\prime \prime} &= \lim_{h\to 0} \frac{f(x+h)^{\prime} -f(x)^{\prime} }{h}\\
-f(x)^{\prime \prime \prime} &= \lim_{h\to 0} \frac{f(x+h)^{\prime \prime} -f(x) ^{\prime \prime}}{h}\\
+f(x)^{\prime} &= \lim\limits_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+f(x)^{\prime \prime} &= \lim\limits_{h\to 0} \frac{f(x+h)^{\prime} -f(x)^{\prime} }{h}\\
+f(x)^{\prime \prime \prime} &= \lim\limits_{h\to 0} \frac{f(x+h)^{\prime \prime} -f(x) ^{\prime \prime}}{h}\\
 .\\
 .\\
 .\\
-f(x)^{n} &= \lim_{h\to 0} \frac{f(x+h)^{n-1}-f(x)^{n-1}}{h}\\
+f(x)^{n} &= \lim\limits_{h\to 0} \frac{f(x+h)^{n-1}-f(x)^{n-1}}{h}\\
 \end{align}</script>
 </p>
 <p>on <script type="math/tex">f(x)^{n}</script> és la derivada <script type="math/tex">n</script>-èssima de <script type="math/tex">f(x)</script>.</p>
