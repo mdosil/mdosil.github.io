@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    <title>12. Funcions trigonomètriques - Matemàtiques 1r batxillerat</title>
-
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
-    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/base.css" rel="stylesheet">
-    <link href="../../css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/highlight.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>12. Funcions trigonomètriques - Matemàtiques 1r batxillerat</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script>
-    WebFont.load({
-        google: {
-            families: ['Open Sans', 'PT Sans']
-        }
-    });
-    </script>
+    <body>
 
-    
-</head>
-
-<body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
-            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -51,119 +38,70 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            
-
-            <!-- Main title -->
             <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
-            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
-                
-                
                     <li >
                         <a href="../..">Home</a>
                     </li>
-                
-                
-                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                        
                             
 <li >
     <a href="../nombresreals/">1. Nombres reals</a>
 </li>
-
-                        
                             
 <li >
     <a href="../trigonometria/">2. Trigonometria</a>
 </li>
-
-                        
                             
 <li >
     <a href="../complexos/">3. Nombres complexos</a>
 </li>
-
-                        
                             
 <li >
     <a href="../polinomis/">4. Polinomis</a>
 </li>
-
-                        
                             
 <li >
     <a href="../vectors/">5. Vectors en el pla</a>
 </li>
-
-                        
                             
 <li >
     <a href="../rectes/">6. Rectes en el pla</a>
 </li>
-
-                        
                             
 <li >
     <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
 </li>
-
-                        
                             
 <li >
     <a href="../successions/">8. Successions</a>
 </li>
-
-                        
                             
 <li >
     <a href="../funcions/">9. Funcions</a>
 </li>
-
-                        
                             
 <li >
     <a href="../limits/">10. Límits i continuïtat de funcions</a>
 </li>
-
-                        
                             
 <li >
     <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
 </li>
-
-                        
                             
 <li class="active">
     <a href="./">12. Funcions trigonomètriques</a>
 </li>
-
-                        
                         </ul>
                     </li>
-                
-                
-                
-                    <li >
-                        <a href="../../misc/misc/">Miscel.lània</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../sobre/">Llicència</a>
-                    </li>
-                
-                
                 </ul>
-            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -171,397 +109,275 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                
                     <li >
                         <a rel="next" href="../funcioexponencial/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../../misc/misc/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
-                
-                
             </ul>
         </div>
     </div>
 </div>
 
-    <div class="container">
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="first-level active"><a href="#tema-12-funcions-trigonometriques">Tema 12: Funcions trigonomètriques</a></li>
-        
-            <li class="second-level"><a href="#la-funcio-sinus">La funció sinus</a></li>
-            
-                <li class="third-level"><a href="#definicio">Definició</a></li>
-            
-                <li class="third-level"><a href="#representacio-grafica">Representació gràfica</a></li>
-            
-                <li class="third-level"><a href="#propietats">Propietats</a></li>
-            
-        
-            <li class="second-level"><a href="#la-funcio-cosinus">La funció cosinus</a></li>
-            
-                <li class="third-level"><a href="#definicio_1">Definició</a></li>
-            
-                <li class="third-level"><a href="#representacio-grafica_1">Representació gràfica</a></li>
-            
-                <li class="third-level"><a href="#propietats_1">Propietats</a></li>
-            
-        
-            <li class="second-level"><a href="#la-funcio-tangent">La funció tangent</a></li>
-            
-                <li class="third-level"><a href="#definicio_2">Definició</a></li>
-            
-                <li class="third-level"><a href="#representacio-grafica_2">Representació gràfica</a></li>
-            
-                <li class="third-level"><a href="#propietats_2">Propietats</a></li>
-            
-        
-            <li class="second-level"><a href="#les-funcions-trigonometriques-inverses">Les funcions trigonomètriques inverses</a></li>
-            
-                <li class="third-level"><a href="#la-funcio-arc-sinus">La funció arc sinus</a></li>
-            
-                <li class="third-level"><a href="#la-funcio-arc-cosinus">La funció arc cosinus</a></li>
-            
-                <li class="third-level"><a href="#la-funcio-arc-tangent">La funció arc tangent</a></li>
-            
-        
-    
+        <li class="main active"><a href="#tema-12-funcions-trigonometriques">Tema 12: Funcions trigonomètriques</a></li>
+            <li><a href="#la-funcio-sinus">La funció sinus</a></li>
+            <li><a href="#la-funcio-cosinus">La funció cosinus</a></li>
+            <li><a href="#la-funcio-tangent">La funció tangent</a></li>
+            <li><a href="#les-funcions-trigonometriques-inverses">Les funcions trigonomètriques inverses</a></li>
     </ul>
 </div></div>
-        <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="tema-12-funcions-trigonometriques">Tema 12: Funcions trigonomètriques</h1>
 <h2 id="la-funcio-sinus">La funció sinus</h2>
 <h3 id="definicio">Definició</h3>
 <p>La funció sinus és aquella funció que a cada nombre real se li associa el valor del sinus de l'angle en <strong>radiants</strong>:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-sin:& \mathbb{R} \rightarrow [-1,1] \\
-&x \rightarrow y=sin (x)\\
-&0 \rightarrow sin(0)=0\\
-&\frac{\pi}{2} \rightarrow sin(\frac{\pi}{2})=1\\
-&\pi \rightarrow sin(\pi)=0\\
-&\frac{3\pi}{2} \rightarrow sin(\frac{3\pi}{2})=-1\\
-&.\\
-&.\\
-&.\\
-\end{align}</script>
-</p>
-<p>A partir d'aquí ja podem deduir que el domini són tots els nombres reals i el recorregut és l'interval de <script type="math/tex">-1</script> a <script type="math/tex">1</script> ja que el sinus d'un angle està entre aquests dos valors:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-D_f&=\mathbb{R}\\
-R_f&=[-1,1]
-\end{align}</script>
-</p>
+<p>\begin{align}
+sin:&amp; \mathbb{R} \rightarrow [-1,1] \
+&amp;x \rightarrow y=sin (x)\
+&amp;0 \rightarrow sin(0)=0\
+&amp;\frac{\pi}{2} \rightarrow sin(\frac{\pi}{2})=1\
+&amp;\pi \rightarrow sin(\pi)=0\
+&amp;\frac{3\pi}{2} \rightarrow sin(\frac{3\pi}{2})=-1\
+&amp;.\
+&amp;.\
+&amp;.\
+\end{align}</p>
+<p>A partir d'aquí ja podem deduir que el domini són tots els nombres reals i el recorregut és l'interval de $-1$ a $1$ ja que el sinus d'un angle està entre aquests dos valors:</p>
+<p>\begin{align}
+D_f&amp;=\mathbb{R}\
+R_f&amp;=[-1,1]
+\end{align}</p>
 <h3 id="representacio-grafica">Representació gràfica</h3>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/asB5hGdD/width/830/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="830px" height="700px" style="border:0px;"> </iframe>
 
-<p>Veiem que la representació gràfica dóna lloc a una funció que s'anomena <strong>corba sinusoide</strong>. És una funció <strong>periòdica</strong> on <script type="math/tex">T=2\pi</script>. Si recordem el que vam aprendre en el <a href="http://mdosil.cat/mates1batcientific/temes/trigonometria/">Tema 2</a> podrem entendre moltes coses que passen en aquesta representació:</p>
+<p>Veiem que la representació gràfica dóna lloc a una funció que s'anomena <strong>corba sinusoide</strong>. És una funció <strong>periòdica</strong> on $T=2\pi$. Si recordem el que vam aprendre en el <a href="http://mdosil.cat/mates1batcientific/temes/trigonometria/">Tema 2</a> podrem entendre moltes coses que passen en aquesta representació:</p>
 <ul>
-<li>
-<script type="math/tex">sin (2\pi)=sin(\pi)=0</script>
-</li>
-<li>
-<script type="math/tex">sin (\frac{\pi}{2})=1</script>
-</li>
-<li>Els angles del 1r i del 2n quadrants tenen <script type="math/tex">sin>0</script>.</li>
-<li>Els angles del 2n i del 4t quadrants tenen <script type="math/tex">sin<0</script>.</li>
+<li>$sin (2\pi)=sin(\pi)=0$</li>
+<li>$sin (\frac{\pi}{2})=1$</li>
+<li>Els angles del 1r i del 2n quadrants tenen $sin&gt;0$.</li>
+<li>Els angles del 2n i del 4t quadrants tenen $sin&lt;0$.</li>
 </ul>
 <h3 id="propietats">Propietats</h3>
 <ol>
-<li>El domini de la funció sinus són tots els nombres reals: <script type="math/tex">D_{sin(x)}=\mathbb{R}</script>
-</li>
-<li>El recorregut està entre <script type="math/tex">1</script> i <script type="math/tex">-1</script> ja que no hi pot haver cap angle que tingui sinus inferior o superior a aquests valors:  <script type="math/tex">R_{sin(x)}=[-1,1]</script>
-</li>
-<li>És una funció periòdica amb període <script type="math/tex">T=2\pi</script>: <script type="math/tex">sin(x)=sin(x+2k\pi) \mbox{ on } k \in \mathbb{Z}</script>
-</li>
-<li>És contínua en <script type="math/tex">\mathbb{R}</script>
-</li>
-<li>És creixent en els intervals <script type="math/tex">(-\frac{\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És decreixent en els intervals <script type="math/tex">(\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>El sinus d'angles suplementaris és el mateix: <script type="math/tex">sin(x)=sin(\pi-x)</script>
-</li>
-<li>El sinus dels angles <script type="math/tex">x</script> i <script type="math/tex">x+\pi</script> té signe contrari: <script type="math/tex">sin(x)=-sin(\pi+x)</script>
-</li>
-<li>El sinus d'angles oposats són oposats: <script type="math/tex">sin(x)=-sin(-x)</script>
-</li>
+<li>El domini de la funció sinus són tots els nombres reals: $D_{sin(x)}=\mathbb{R}$</li>
+<li>El recorregut està entre $1$ i $-1$ ja que no hi pot haver cap angle que tingui sinus inferior o superior a aquests valors:  $R_{sin(x)}=[-1,1]$</li>
+<li>És una funció periòdica amb període $T=2\pi$: $sin(x)=sin(x+2k\pi) \mbox{ on } k \in \mathbb{Z}$</li>
+<li>És contínua en $\mathbb{R}$</li>
+<li>És creixent en els intervals $(-\frac{\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>És decreixent en els intervals $(\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>El sinus d'angles suplementaris és el mateix: $sin(x)=sin(\pi-x)$</li>
+<li>El sinus dels angles $x$ i $x+\pi$ té signe contrari: $sin(x)=-sin(\pi+x)$</li>
+<li>El sinus d'angles oposats són oposats: $sin(x)=-sin(-x)$</li>
 </ol>
 <p><strong>Exemple 1</strong></p>
-<p>Representa en els mateixos eixos de coordenades les funcions <script type="math/tex">f(x)=sinx</script>, <script type="math/tex">g(x)=sin(3x)</script>, <script type="math/tex">h(x)=sin(x+\pi)</script> i <script type="math/tex">j(x)=2sin(x)</script>. Estudia després els aspectes següents:</p>
+<p>Representa en els mateixos eixos de coordenades les funcions $f(x)=sinx$, $g(x)=sin(3x)$, $h(x)=sin(x+\pi)$ i $j(x)=2sin(x)$. Estudia després els aspectes següents:</p>
 <ul>
-<li>La relació entre <script type="math/tex">f(x)</script> i <script type="math/tex">g(x)</script>
-</li>
-<li>La relació entre <script type="math/tex">f(x)</script> i <script type="math/tex">h(x)</script>
-</li>
-<li>La relació entre <script type="math/tex">j(x)</script> i <script type="math/tex">f(x)</script>.</li>
+<li>La relació entre $f(x)$ i $g(x)$</li>
+<li>La relació entre $f(x)$ i $h(x)$</li>
+<li>La relació entre $j(x)$ i $f(x)$.</li>
 </ul>
-<p>Si comparem <script type="math/tex">f(x)</script> i <script type="math/tex">g(x)</script> veiem que el nombre que multiplica la incògnita determina el període: el període s'escurça en aquest factor, o sigui, la segona funció varia 3 vegades més ràpid: en el primer cas, <script type="math/tex">T=2\pi</script> i en el segon <script type="math/tex">T=\frac{2\pi}{3}</script>. <strong>L'amplitud</strong> (la distància entre els màxims i els mínims de la funció) és en ambdós casos la mateixa, o sigui, <script type="math/tex">2</script>, ja que el recorregut en les dues funcions és el mateix, <script type="math/tex">R_f=R_g=[-1,1]</script>.</p>
+<p>Si comparem $f(x)$ i $g(x)$ veiem que el nombre que multiplica la incògnita determina el període: el període s'escurça en aquest factor, o sigui, la segona funció varia 3 vegades més ràpid: en el primer cas, $T=2\pi$ i en el segon $T=\frac{2\pi}{3}$. <strong>L'amplitud</strong> (la distància entre els màxims i els mínims de la funció) és en ambdós casos la mateixa, o sigui, $2$, ja que el recorregut en les dues funcions és el mateix, $R_f=R_g=[-1,1]$.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/FxVP85SK/width/700/height/291/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="700px" height="291px" style="border:0px;"> </iframe>
 
-<p>En el segon cas, veiem que ambdues funcions són <em>oposades</em>, quan <script type="math/tex">f</script> aconsegueix el màxim, <script type="math/tex">h</script> està en el seu mínim. Això és perquè els signes del sinus de dos angles separats <script type="math/tex">\pi</script> unitats són <strong>iguals però de signe contrari</strong>. Aquí podem fer una observació més, el fet d'afegir un sumand a la variable <script type="math/tex">x</script> vol dir que:</p>
+<p>En el segon cas, veiem que ambdues funcions són <em>oposades</em>, quan $f$ aconsegueix el màxim, $h$ està en el seu mínim. Això és perquè els signes del sinus de dos angles separats $\pi$ unitats són <strong>iguals però de signe contrari</strong>. Aquí podem fer una observació més, el fet d'afegir un sumand a la variable $x$ vol dir que:</p>
 <ul>
-<li>En el cas de tenir <script type="math/tex">sin(x+k)</script>, <script type="math/tex">k \in \mathbb{R}^+</script>, la funció <script type="math/tex">sin(x)</script> es desplaçaria <script type="math/tex">k</script> unitats cap a <strong>l'esquerra</strong></li>
-<li>En el cas de tenir <script type="math/tex">sin(x-k)</script>, <script type="math/tex">k \in \mathbb{R}^+</script>, la funció <script type="math/tex">sin(x)</script> es desplaçaria <script type="math/tex">k</script> unitats cap a <strong>la dreta</strong></li>
+<li>En el cas de tenir $sin(x+k)$, $k \in \mathbb{R}^+$, la funció $sin(x)$ es desplaçaria $k$ unitats cap a <strong>l'esquerra</strong></li>
+<li>En el cas de tenir $sin(x-k)$, $k \in \mathbb{R}^+$, la funció $sin(x)$ es desplaçaria $k$ unitats cap a <strong>la dreta</strong></li>
 </ul>
 <p>En qualsevol cas les funcions mantenen l'amplitud (el recorregut és el mateix) i el període.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/JcvDYwWc/width/700/height/291/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="700px" height="291px" style="border:0px;"> </iframe>
 
-<p>En el tercer cas, el fet de multiplicar la funció <script type="math/tex">sin(x)</script> per <script type="math/tex">2</script> provoca un augment en l'amplitud de la funció: <script type="math/tex">R_f=[-1,1]</script> i <script type="math/tex">R_j=[-2,2]</script>. Tot i això, es <strong>conserven el període i la posició dels màxims i els mínims</strong>.</p>
+<p>En el tercer cas, el fet de multiplicar la funció $sin(x)$ per $2$ provoca un augment en l'amplitud de la funció: $R_f=[-1,1]$ i $R_j=[-2,2]$. Tot i això, es <strong>conserven el període i la posició dels màxims i els mínims</strong>.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/ZeYnwwvy/width/700/height/300/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="700px" height="300px" style="border:0px;"> </iframe>
 
 <h2 id="la-funcio-cosinus">La funció cosinus</h2>
 <h3 id="definicio_1">Definició</h3>
 <p>La funció cosinus és aquella funció que a cada nombre real se li associa el valor del cosinus de l'angle en <strong>radiants</strong>:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-cos:& \mathbb{R} \rightarrow [-1,1] \\
-&x \rightarrow y=cos (x)\\
-&0 \rightarrow cos(0)=1\\
-&\frac{\pi}{2} \rightarrow cos(\frac{\pi}{2})=0\\
-&\pi \rightarrow cos(\pi)=-1\\
-&\frac{3\pi}{2} \rightarrow cos(\frac{3\pi}{2})=0\\
-&.\\
-&.\\
-&.\\
-\end{align}</script>
-</p>
+<p>\begin{align}
+cos:&amp; \mathbb{R} \rightarrow [-1,1] \
+&amp;x \rightarrow y=cos (x)\
+&amp;0 \rightarrow cos(0)=1\
+&amp;\frac{\pi}{2} \rightarrow cos(\frac{\pi}{2})=0\
+&amp;\pi \rightarrow cos(\pi)=-1\
+&amp;\frac{3\pi}{2} \rightarrow cos(\frac{3\pi}{2})=0\
+&amp;.\
+&amp;.\
+&amp;.\
+\end{align}</p>
 <p>El seu domini i el seu recorregut són els mateixos que la funció sinus:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-D_f&=\mathbb{R}\\
-R_f&=[-1,1]
-\end{align}</script>
-</p>
+<p>\begin{align}
+D_f&amp;=\mathbb{R}\
+R_f&amp;=[-1,1]
+\end{align}</p>
 <h3 id="representacio-grafica_1">Representació gràfica</h3>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/N83bumcF/width/830/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="830px" height="700px" style="border:0px;"> </iframe>
 
-<p>Si mireu el gràfic es pot veure que la funció sinus i la cosinus són molt iguals. De fet, la funció cosinus és igual que la funció sinus (en verd clar) però desplaçada <script type="math/tex">\frac{\pi}{2}</script> unitats cap a la dreta.</p>
+<p>Si mireu el gràfic es pot veure que la funció sinus i la cosinus són molt iguals. De fet, la funció cosinus és igual que la funció sinus (en verd clar) però desplaçada $\frac{\pi}{2}$ unitats cap a la dreta.</p>
 <p>D'aquí també podem deduir que:</p>
 <ul>
-<li>
-<script type="math/tex">cos (2\pi)=-cos(\pi)=1</script>
-</li>
-<li>
-<script type="math/tex">cos (\frac{\pi}{2})= cos (\frac{3\pi}{2})=0</script>
-</li>
-<li>Els angles del 1r i del 4t quadrants tenen <script type="math/tex">cos>0</script>.</li>
-<li>Els angles del 2n i del 3r quadrants tenen <script type="math/tex">cos<0</script>.</li>
+<li>$cos (2\pi)=-cos(\pi)=1$</li>
+<li>$cos (\frac{\pi}{2})= cos (\frac{3\pi}{2})=0$</li>
+<li>Els angles del 1r i del 4t quadrants tenen $cos&gt;0$.</li>
+<li>Els angles del 2n i del 3r quadrants tenen $cos&lt;0$.</li>
 </ul>
 <h3 id="propietats_1">Propietats</h3>
 <ol>
-<li>El domini de la funció cosinus són tots els nombres reals: <script type="math/tex">D_{cos(x)}=\mathbb{R}</script>
-</li>
-<li>El recorregut està entre <script type="math/tex">1</script> i <script type="math/tex">-1</script>, igual que la funció sinus.</li>
-<li>És una funció periòdica amb període <script type="math/tex">T=2\pi</script>: <script type="math/tex">cos(x)=cos(x+2k\pi) \mbox{ on } k \in \mathbb{Z}</script>
-</li>
-<li>És contínua en <script type="math/tex">\mathbb{R}</script>
-</li>
-<li>És creixent en els intervals <script type="math/tex">(\pi+2k\pi,2\pi+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És decreixent en els intervals <script type="math/tex">(0+2k\pi,\pi+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>Els punts de tall amb l'eix <script type="math/tex">x</script> són <script type="math/tex">x=\frac{\pi}{2}+k\pi</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És còncava de <script type="math/tex">(\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És convexa de <script type="math/tex">(\frac{-\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>Els punts d'inflexió coincideixen amb els punts de tall amb l'eix <script type="math/tex">x</script>
-</li>
-<li>El cosinus d'angles suplementaris són oposats: <script type="math/tex">cos(x)=-cos(\pi-x)</script>
-</li>
-<li>El cosinus dels angles <script type="math/tex">x</script> i <script type="math/tex">x+\pi</script> té signe contrari: <script type="math/tex">cos(x)=-cos(\pi+x)</script>
-</li>
-<li>El cosinus d'angles oposats són iguals: <script type="math/tex">cos(x)=cos(-x)</script>
-</li>
+<li>El domini de la funció cosinus són tots els nombres reals: $D_{cos(x)}=\mathbb{R}$</li>
+<li>El recorregut està entre $1$ i $-1$, igual que la funció sinus.</li>
+<li>És una funció periòdica amb període $T=2\pi$: $cos(x)=cos(x+2k\pi) \mbox{ on } k \in \mathbb{Z}$</li>
+<li>És contínua en $\mathbb{R}$</li>
+<li>És creixent en els intervals $(\pi+2k\pi,2\pi+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>És decreixent en els intervals $(0+2k\pi,\pi+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>Els punts de tall amb l'eix $x$ són $x=\frac{\pi}{2}+k\pi$, $k \in \mathbb{Z}$</li>
+<li>És còncava de $(\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>És convexa de $(\frac{-\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi)$, $k \in \mathbb{Z}$</li>
+<li>Els punts d'inflexió coincideixen amb els punts de tall amb l'eix $x$</li>
+<li>El cosinus d'angles suplementaris són oposats: $cos(x)=-cos(\pi-x)$</li>
+<li>El cosinus dels angles $x$ i $x+\pi$ té signe contrari: $cos(x)=-cos(\pi+x)$</li>
+<li>El cosinus d'angles oposats són iguals: $cos(x)=cos(-x)$</li>
 </ol>
 <h2 id="la-funcio-tangent">La funció tangent</h2>
 <h3 id="definicio_2">Definició</h3>
 <p>La funció tangent és aquella funció que a cada nombre real se li associa el valor de la tangent de l'angle en <strong>radiants</strong>:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-tan:& \mathbb{R} \rightarrow \mathbb{R} \\
-&x \rightarrow y=tan (x)\\
-&0 \rightarrow tan(0)=\frac{sin 0}{cos 0}=0\\
-&\frac{\pi}{2} \rightarrow tan(\frac{\pi}{2})=\nexists \\
-&\pi \rightarrow tan(\pi)=0\\
-&\frac{3\pi}{2} \rightarrow tan(\frac{3\pi}{2})=\nexists \\
-&.\\
-&.\\
-&.\\
-\end{align}</script>
-</p>
+<p>\begin{align}
+tan:&amp; \mathbb{R} \rightarrow \mathbb{R} \
+&amp;x \rightarrow y=tan (x)\
+&amp;0 \rightarrow tan(0)=\frac{sin 0}{cos 0}=0\
+&amp;\frac{\pi}{2} \rightarrow tan(\frac{\pi}{2})=\nexists \
+&amp;\pi \rightarrow tan(\pi)=0\
+&amp;\frac{3\pi}{2} \rightarrow tan(\frac{3\pi}{2})=\nexists \
+&amp;.\
+&amp;.\
+&amp;.\
+\end{align}</p>
 <p>Aquí veiem que hi haurà variacions en el domini i el recorregut respecte les funcions sinus i cosinus. Aquells angles que tinguin el sinus igual a zero no tindran la tangent definida, per tant, aquests punts s'han de treure del domini.</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-D_f&=\mathbb{R}-\{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}\}\\
-R_f&=\mathbb{R}
-\end{align}</script>
-</p>
+<p>\begin{align}
+D_f&amp;=\mathbb{R}-{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}}\
+R_f&amp;=\mathbb{R}
+\end{align}</p>
 <h3 id="representacio-grafica_2">Representació gràfica</h3>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/dtKu2BHW/width/830/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="830px" height="700px" style="border:0px;"> </iframe>
 
-<p>Veiem que la funció tangent també és periòdica però en els punts que no són del domini (els múltiples de <script type="math/tex">\frac{\pi}{2}</script>) hi han <strong>assímptotes verticals</strong>.</p>
+<p>Veiem que la funció tangent també és periòdica però en els punts que no són del domini (els múltiples de $\frac{\pi}{2}$) hi han <strong>assímptotes verticals</strong>.</p>
 <h3 id="propietats_2">Propietats</h3>
 <ol>
-<li>El domini de la funció cosinus són tots els nombres reals menys els múltiples de <script type="math/tex">\frac{\pi}{2}</script>: <script type="math/tex">D_f=\mathbb{R}-\{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}\}</script>
-</li>
-<li>El recorregut són tots els nombres reals: <script type="math/tex">R_f=\mathbb{R}</script>
-</li>
-<li>És una funció periòdica amb període <script type="math/tex">T=\pi</script>: <script type="math/tex">tan(x)=tan(x+k\pi) \mbox{ on } k \in \mathbb{Z}</script>
-</li>
-<li>Té discontinuïtats assimptòtiques en els punts <script type="math/tex">x=\frac{(2k+1)\pi}{2}</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
+<li>El domini de la funció cosinus són tots els nombres reals menys els múltiples de $\frac{\pi}{2}$: $D_f=\mathbb{R}-{\frac{(2k+1)\pi}{2} | k \in \mathbb{Z}}$</li>
+<li>El recorregut són tots els nombres reals: $R_f=\mathbb{R}$</li>
+<li>És una funció periòdica amb període $T=\pi$: $tan(x)=tan(x+k\pi) \mbox{ on } k \in \mathbb{Z}$</li>
+<li>Té discontinuïtats assimptòtiques en els punts $x=\frac{(2k+1)\pi}{2}$, $k \in \mathbb{Z}$</li>
 <li>És creixent en tot el seu domini</li>
-<li>Els punts de tall amb l'eix <script type="math/tex">x</script> són <script type="math/tex">x=k\pi</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És còncava de <script type="math/tex">(0+k\pi,\frac{\pi}{2}+k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>És convexa de <script type="math/tex">(\frac{\pi}{2}+k\pi,\pi+k\pi)</script>, <script type="math/tex">k \in \mathbb{Z}</script>
-</li>
-<li>Els punts d'inflexió coincideixen amb els punts de tall amb l'eix <script type="math/tex">x</script>
-</li>
-<li>Les tangents d'angles suplementaris són oposades: <script type="math/tex">tan(x)=-tan(\pi-x)</script>
-</li>
-<li>Les tangents dels angles <script type="math/tex">x</script> i <script type="math/tex">x+\pi</script> són iguals: <script type="math/tex">tan(x)=tan(\pi+x)</script>
-</li>
-<li>Les tangents d'angles oposats són oposades: <script type="math/tex">tan(x)=-tan(-x)</script>
-</li>
+<li>Els punts de tall amb l'eix $x$ són $x=k\pi$, $k \in \mathbb{Z}$</li>
+<li>És còncava de $(0+k\pi,\frac{\pi}{2}+k\pi)$, $k \in \mathbb{Z}$</li>
+<li>És convexa de $(\frac{\pi}{2}+k\pi,\pi+k\pi)$, $k \in \mathbb{Z}$</li>
+<li>Els punts d'inflexió coincideixen amb els punts de tall amb l'eix $x$</li>
+<li>Les tangents d'angles suplementaris són oposades: $tan(x)=-tan(\pi-x)$</li>
+<li>Les tangents dels angles $x$ i $x+\pi$ són iguals: $tan(x)=tan(\pi+x)$</li>
+<li>Les tangents d'angles oposats són oposades: $tan(x)=-tan(-x)$</li>
 </ol>
 <h2 id="les-funcions-trigonometriques-inverses">Les funcions trigonomètriques inverses</h2>
-<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/funcions/#funcio-inversa">tema 9</a> vam veure que una funció tenia inversa només quan aquesta era <strong>bijectiva</strong>. És evident que les funcions trigonomètriques que hem estudiat no són bijectives, perquè si tracem una línia horitzontal a les seves gràfiques, aquesta talla en més d'un punt: per una <script type="math/tex">y</script> donada existeix més d'una <script type="math/tex">x</script>. Per tant, caldrà aplicar algun <em>truc</em> per trobar les funcions inverses de les trigonomètriques. Per fer-ho, restringirem el càlcul de la funció inversa <strong>en un interval del domini, on la funció sigui bijectiva</strong>.</p>
+<p>En el <a href="http://mdosil.cat/mates1batcientific/temes/funcions/#funcio-inversa">tema 9</a> vam veure que una funció tenia inversa només quan aquesta era <strong>bijectiva</strong>. És evident que les funcions trigonomètriques que hem estudiat no són bijectives, perquè si tracem una línia horitzontal a les seves gràfiques, aquesta talla en més d'un punt: per una $y$ donada existeix més d'una $x$. Per tant, caldrà aplicar algun <em>truc</em> per trobar les funcions inverses de les trigonomètriques. Per fer-ho, restringirem el càlcul de la funció inversa <strong>en un interval del domini, on la funció sigui bijectiva</strong>.</p>
 <h3 id="la-funcio-arc-sinus">La funció arc sinus</h3>
 <h4 id="definicio_3">Definició</h4>
-<p>Abans de definir la funció <script type="math/tex">arcsin (x)</script> o <script type="math/tex">sin^{-1}(x)</script>, definim la <strong>funció sinus restringida</strong> com aquella funció que compleix:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-sin:[-\frac{\pi}{2},\frac{\pi}{2}] & \rightarrow [-1,1] \\
-x &\rightarrow y=sin (x)
-\end{align}</script>
-</p>
-<p>Veiem que hem restringit el domini de la funció a l'interval <script type="math/tex">[-\frac{\pi}{2},\frac{\pi}{2}]</script> i el recorregut continua essent el mateix que la funció sinus complerta. En aquest interval de <script type="math/tex">x</script> la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
-<p>Definim la funció <strong><script type="math/tex">arcsin (x)</script> o <script type="math/tex">sin^{-1}(x)</script></strong> com aquella funció que a cada nombre entre <script type="math/tex">-1</script> i <script type="math/tex">1</script> li fa correspondre el seu angle en radiants:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-arcsin:[-1,1] & \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}] \\
-x & \rightarrow y=arcsin (x) \leftrightarrow x=sin (y)\\
-0 & \rightarrow 0\\
-\frac{1}{2} & \rightarrow \frac{\pi}{6}(30^o)
-\end{align}</script>
-</p>
+<p>Abans de definir la funció $arcsin (x)$ o $sin^{-1}(x)$, definim la <strong>funció sinus restringida</strong> com aquella funció que compleix:</p>
+<p>\begin{align}
+sin:[-\frac{\pi}{2},\frac{\pi}{2}] &amp; \rightarrow [-1,1] \
+x &amp;\rightarrow y=sin (x)
+\end{align}</p>
+<p>Veiem que hem restringit el domini de la funció a l'interval $[-\frac{\pi}{2},\frac{\pi}{2}]$ i el recorregut continua essent el mateix que la funció sinus complerta. En aquest interval de $x$ la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
+<p>Definim la funció <strong>$arcsin (x)$ o $sin^{-1}(x)$</strong> com aquella funció que a cada nombre entre $-1$ i $1$ li fa correspondre el seu angle en radiants:</p>
+<p>\begin{align}
+arcsin:[-1,1] &amp; \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}] \
+x &amp; \rightarrow y=arcsin (x) \leftrightarrow x=sin (y)\
+0 &amp; \rightarrow 0\
+\frac{1}{2} &amp; \rightarrow \frac{\pi}{6}(30^o)
+\end{align}</p>
 <h4 id="representacio-grafica_3">Representació gràfica</h4>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/c26yPBrk/width/500/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="500px" height="400px" style="border:0px;"> </iframe>
 
-<p>Veiem que la funció <script type="math/tex">arcsin (x)</script> és contínua i creixent en tot el seu domini. També és simètrica respecte la bisectriu del 1r i 3r quadrants amb la funció <script type="math/tex">sin (x)</script>, la seva inversa.</p>
+<p>Veiem que la funció $arcsin (x)$ és contínua i creixent en tot el seu domini. També és simètrica respecte la bisectriu del 1r i 3r quadrants amb la funció $sin (x)$, la seva inversa.</p>
 <h3 id="la-funcio-arc-cosinus">La funció arc cosinus</h3>
 <h4 id="definicio_4">Definició</h4>
-<p>Abans de definir la funció <script type="math/tex">arccos (x)</script> o <script type="math/tex">cos^{-1}(x)</script>, definim la <strong>funció cosinus restringida</strong> com aquella funció que compleix:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-cos:[0,\pi] & \rightarrow [-1,1] \\
-x &\rightarrow y=cos (x)
-\end{align}</script>
-</p>
-<p>Veiem que hem restringit el domini de la funció a l'interval <script type="math/tex">[0,\pi]</script> i el recorregut continua essent el mateix que la funció cosinus complerta. En aquest interval de <script type="math/tex">x</script> la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
-<p>Definim la funció <strong><script type="math/tex">arccos (x)</script> o <script type="math/tex">cos^{-1}(x)</script></strong> com aquella funció que a cada nombre entre <script type="math/tex">-1</script> i <script type="math/tex">1</script> li fa correspondre el seu angle en radiants:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-arccos:[-1,1] & \rightarrow [0,\pi] \\
-x & \rightarrow y=arccos (x) \leftrightarrow x=cos (y)\\
-0 & \rightarrow \frac{\pi}{2}\\
-\frac{1}{2} & \rightarrow \frac{\pi}{6}(60^o)
-\end{align}</script>
-</p>
+<p>Abans de definir la funció $arccos (x)$ o $cos^{-1}(x)$, definim la <strong>funció cosinus restringida</strong> com aquella funció que compleix:</p>
+<p>\begin{align}
+cos:[0,\pi] &amp; \rightarrow [-1,1] \
+x &amp;\rightarrow y=cos (x)
+\end{align}</p>
+<p>Veiem que hem restringit el domini de la funció a l'interval $[0,\pi]$ i el recorregut continua essent el mateix que la funció cosinus complerta. En aquest interval de $x$ la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
+<p>Definim la funció <strong>$arccos (x)$ o $cos^{-1}(x)$</strong> com aquella funció que a cada nombre entre $-1$ i $1$ li fa correspondre el seu angle en radiants:</p>
+<p>\begin{align}
+arccos:[-1,1] &amp; \rightarrow [0,\pi] \
+x &amp; \rightarrow y=arccos (x) \leftrightarrow x=cos (y)\
+0 &amp; \rightarrow \frac{\pi}{2}\
+\frac{1}{2} &amp; \rightarrow \frac{\pi}{6}(60^o)
+\end{align}</p>
 <h4 id="representacio-grafica_4">Representació gràfica</h4>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/u2KarMB8/width/500/height/400/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="500px" height="400px" style="border:0px;"> </iframe>
 
-<p>Veiem que la funció <script type="math/tex">arccos (x)</script> és contínua i decreixent en tot el seu domini. També és simètrica respecte la bisectriu del 1r i 3r quadrants amb la funció <script type="math/tex">cos (x)</script>, la seva inversa.</p>
+<p>Veiem que la funció $arccos (x)$ és contínua i decreixent en tot el seu domini. També és simètrica respecte la bisectriu del 1r i 3r quadrants amb la funció $cos (x)$, la seva inversa.</p>
 <h3 id="la-funcio-arc-tangent">La funció arc tangent</h3>
-<p>Abans de definir la funció <script type="math/tex">arctan (x)</script> o <script type="math/tex">tan^{-1}(x)</script>, definim la <strong>funció tangent restringida</strong> com aquella funció que compleix:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-tan:[-\frac{\pi}{2},\frac{\pi}{2}] & \rightarrow \mathbb{R} \\
-x &\rightarrow y=tan (x)
-\end{align}</script>
-</p>
-<p>Veiem que hem restringit el domini de la funció a l'interval <script type="math/tex">[-\frac{\pi}{2},\frac{\pi}{2}]</script> i el recorregut continua essent el mateix que la funció tangent complerta. En aquest interval de <script type="math/tex">x</script> la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
-<p>Definim la funció <strong><script type="math/tex">arctan (x)</script> o <script type="math/tex">tan^{-1}(x)</script></strong> com aquella funció que a cada nombre <strong>real</strong> li fa correspondre el seu angle en radiants:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-arctan:\mathbb{R} & \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}] \\
-x & \rightarrow y=arctan (x) \leftrightarrow x=tan (y)\\
-0 & \rightarrow 0\\
-1 & \rightarrow \frac{\pi}{4}(45^o)
-\end{align}</script>
-</p>
-<p>El domini d'aquesta funció són <strong>tots els nombres reals</strong> i el recorregut està restringit a l'interval <script type="math/tex">(-\frac{\pi}{2},\frac{\pi}{2})</script>.</p>
+<p>Abans de definir la funció $arctan (x)$ o $tan^{-1}(x)$, definim la <strong>funció tangent restringida</strong> com aquella funció que compleix:</p>
+<p>\begin{align}
+tan:[-\frac{\pi}{2},\frac{\pi}{2}] &amp; \rightarrow \mathbb{R} \
+x &amp;\rightarrow y=tan (x)
+\end{align}</p>
+<p>Veiem que hem restringit el domini de la funció a l'interval $[-\frac{\pi}{2},\frac{\pi}{2}]$ i el recorregut continua essent el mateix que la funció tangent complerta. En aquest interval de $x$ la funció sí que és bijectiva, per tant, podrem calcular-ne la inversa.</p>
+<p>Definim la funció <strong>$arctan (x)$ o $tan^{-1}(x)$</strong> com aquella funció que a cada nombre <strong>real</strong> li fa correspondre el seu angle en radiants:</p>
+<p>\begin{align}
+arctan:\mathbb{R} &amp; \rightarrow [-\frac{\pi}{2},\frac{\pi}{2}] \
+x &amp; \rightarrow y=arctan (x) \leftrightarrow x=tan (y)\
+0 &amp; \rightarrow 0\
+1 &amp; \rightarrow \frac{\pi}{4}(45^o)
+\end{align}</p>
+<p>El domini d'aquesta funció són <strong>tots els nombres reals</strong> i el recorregut està restringit a l'interval $(-\frac{\pi}{2},\frac{\pi}{2})$.</p>
 <h4 id="representacio-grafica_5">Representació gràfica</h4>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/fTUcPqBW/width/830/height/700/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="830px" height="700px" style="border:0px;"> </iframe>
 
-<p>La funció <script type="math/tex">arctan (x)</script> és contínua i creixent en tot el seu domini (<script type="math/tex">D=\mathbb{R}</script>). ÉS còncava de <script type="math/tex">(\infty,0)</script> i convexa de <script type="math/tex">(0,+\infty)</script>. No té màxims ni mínims, i té un punt d'inflexió en el <script type="math/tex">(0,0)</script> que és l'únic punt de tall amb els eixos. També té dues assímptotes horitzontals:</p>
-<p>
-<script type="math/tex; mode=display">\begin{align}
-\lim_{x\to - \infty} arctan(x)&=-\frac{\pi}{2} \rightarrow \mbox{ Assímptota horitzontal en } y=-\frac{\pi}{2} \mbox{ cap a } - \infty\\
-\lim_{x\to + \infty} arctan(x)&=\frac{\pi}{2} \rightarrow \mbox{ Assímptota horitzontal en } y=\frac{\pi}{2} \mbox{ cap a } + \infty\\
-\end{align}</script>
-</p></div>
-        
-    </div>
+<p>La funció $arctan (x)$ és contínua i creixent en tot el seu domini ($D=\mathbb{R}$). ÉS còncava de $(\infty,0)$ i convexa de $(0,+\infty)$. No té màxims ni mínims, i té un punt d'inflexió en el $(0,0)$ que és l'únic punt de tall amb els eixos. També té dues assímptotes horitzontals:</p>
+<p>\begin{align}
+\lim_{x\to - \infty} arctan(x)&amp;=-\frac{\pi}{2} \rightarrow \mbox{ Assímptota horitzontal en } y=-\frac{\pi}{2} \mbox{ cap a } - \infty\
+\lim_{x\to + \infty} arctan(x)&amp;=\frac{\pi}{2} \rightarrow \mbox{ Assímptota horitzontal en } y=\frac{\pi}{2} \mbox{ cap a } + \infty\
+\end{align}</p></div>
+        </div>
 
-    <footer class="col-md-12 text-center">
-        <hr>
-        <p>
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
-    </footer>
-
-    <script src="../../js/jquery-1.10.2.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
-    <script src="../../js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-    var base_url = '../..';
-    </script>
-    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-    <script src="../../js/base.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">Close</span>
-                    </button>
-                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        From here you can search these documents. Enter your search terms below.
-                    </p>
-                    <form role="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                        </div>
-                    </form>
-                    <div id="mkdocs-search-results"></div>
-                </div>
-                <div class="modal-footer">
-                </div>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
     </div>
+</div>
 
     </body>
-
 </html>
