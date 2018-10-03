@@ -1,9 +1,9 @@
-[submodule "mates1bat_mkdocs/docs"]
-	path = mates1bat_mkdocs/docs
-	url = https://github.com/mdosil/mates1bat.git
 [submodule "docs"]
 	path = docs
 	url = https://github.com/mdosil/mates2bat.git
 [submodule "mates2_mkdocs/docs"]
 	path = mates2_mkdocs/docs
 	url = https://github.com/mdosil/mates2bat.git
+[submodule "mates1_mkdocs/docs"]
+	path = mates1_mkdocs/docs
+	url = https://github.com/mdosil/mates1bat.git
