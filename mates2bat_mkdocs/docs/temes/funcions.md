@@ -61,7 +61,7 @@ __Exemple 1__
 
 Prova que l'equació $x^3-3x+1=0$ té una arrel en l'interval $[1,2]$. Calculeu-la amb un error més petit que una dècima.
 
-Veiem que: $f(x)=-1$ i $f(x)=3$. Per tant, ha d'existir un punt $c \in [1,2]$ on es compleixi que $f(c)=0$. Utilitzarem el mètode de tempteig per a trobar una aproximació a aquest punt:
+Veiem que: $f(1)=-1$ i $f(2)=3$. Per tant, ha d'existir un punt $c \in [1,2]$ on es compleixi que $f(c)=0$. Utilitzarem el mètode de tempteig per a trobar una aproximació a aquest punt:
 
 
 \begin{align}
