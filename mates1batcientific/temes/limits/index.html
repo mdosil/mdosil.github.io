@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>10. Límits i continuïtat de funcions - Matemàtiques 1r batxillerat</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <title>10. Límits i continuïtat de funcions - Matemàtiques 1r batxillerat</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script> 
-    </head>
 
-    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
+            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -38,70 +51,119 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+
+            <!-- Main title -->
             <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
+                
+                
                     <li >
                         <a href="../..">Home</a>
                     </li>
+                
+                
+                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                        
                             
 <li >
     <a href="../nombresreals/">1. Nombres reals</a>
 </li>
+
+                        
                             
 <li >
     <a href="../trigonometria/">2. Trigonometria</a>
 </li>
+
+                        
                             
 <li >
     <a href="../complexos/">3. Nombres complexos</a>
 </li>
+
+                        
                             
 <li >
     <a href="../polinomis/">4. Polinomis</a>
 </li>
+
+                        
                             
 <li >
     <a href="../vectors/">5. Vectors en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../rectes/">6. Rectes en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
 </li>
+
+                        
                             
 <li >
     <a href="../successions/">8. Successions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcions/">9. Funcions</a>
 </li>
+
+                        
                             
 <li class="active">
     <a href="./">10. Límits i continuïtat de funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
 </li>
+
+                        
                         </ul>
                     </li>
+                
+                
+                
+                    <li >
+                        <a href="../../misc/misc/">Miscel.lània</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../sobre/">Llicència</a>
+                    </li>
+                
+                
                 </ul>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -109,6 +171,7 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
                     <li >
                         <a rel="next" href="../funcions/">
                             <i class="fa fa-arrow-left"></i> Previous
@@ -119,201 +182,289 @@
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
+                
+                
             </ul>
         </div>
     </div>
 </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</a></li>
-            <li><a href="#concepte-de-limit-duna-funcio-en-un-punt">Concepte de límit d'una funció en un punt</a></li>
-            <li><a href="#continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</a></li>
-            <li><a href="#discontinuitats">Discontinuïtats</a></li>
+    
+        <li class="first-level active"><a href="#tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</a></li>
+        
+            <li class="second-level"><a href="#concepte-de-limit-duna-funcio-en-un-punt">Concepte de límit d'una funció en un punt</a></li>
+            
+                <li class="third-level"><a href="#interpretacio-grafica">Interpretació gràfica</a></li>
+            
+                <li class="third-level"><a href="#definicio-de-limit-duna-funcio-en-un-punt">Definició de límit d'una funció en un punt</a></li>
+            
+                <li class="third-level"><a href="#limits-laterals">Límits laterals</a></li>
+            
+                <li class="third-level"><a href="#limits-duna-funcio-a-linfinit-lim_xto-pm-infty-fx">Límits d'una funció a l'infinit (\lim_{x\to \pm \infty} f(x))</a></li>
+            
+                <li class="third-level"><a href="#limits-infinits-lim_xto-a-fxpm-infty">Límits infinits (\lim_{x\to a} f(x)=\pm \infty)</a></li>
+            
+                <li class="third-level"><a href="#metode-per-a-resoldre-indeterminacions-del-tipus-frac00">Mètode per a resoldre indeterminacions del tipus \frac{0}{0}</a></li>
+            
+        
+            <li class="second-level"><a href="#continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</a></li>
+            
+        
+            <li class="second-level"><a href="#discontinuitats">Discontinuïtats</a></li>
+            
+                <li class="third-level"><a href="#discontinuitat-evitable">Discontinuïtat evitable</a></li>
+            
+                <li class="third-level"><a href="#discontinuitat-de-salt">Discontinuïtat de salt</a></li>
+            
+                <li class="third-level"><a href="#discontinuitat-assimptotica">Discontinuïtat assimptòtica</a></li>
+            
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
 
 <h1 id="tema-10-limits-i-continuitat-de-funcions">Tema 10: Límits i continuïtat de funcions</h1>
-<p>En aquest tema estudiarem en detall la continuïtat d'una funció i també què passa en els punts que aquesta és discontínua. Ho farem utilitzant el concepte de límit que ja vam començar a treballar amb les <a href="http://mdosil.cat/mates1batcientific/temes/successions/">successions</a>. D'altra banda, ens fixarem també què passa quan la variable es fa molt petita ($x\rightarrow -\infty$) i quan aquesta es fa molt gran ($x\rightarrow +\infty$).</p>
+<p>En aquest tema estudiarem en detall la continuïtat d'una funció i també què passa en els punts que aquesta és discontínua. Ho farem utilitzant el concepte de límit que ja vam començar a treballar amb les <a href="http://mdosil.cat/mates1batcientific/temes/successions/">successions</a>. D'altra banda, ens fixarem també què passa quan la variable es fa molt petita (<script type="math/tex">x\rightarrow -\infty</script>) i quan aquesta es fa molt gran (<script type="math/tex">x\rightarrow +\infty</script>).</p>
 <h2 id="concepte-de-limit-duna-funcio-en-un-punt">Concepte de límit d'una funció en un punt</h2>
-<p>En el tema de successions, teníem que sempre calculàvem el límit d'una successió $a_n$ quan $n\rightarrow +\infty$. I ens trobàvem amb 3 casos:</p>
-<p>$$
-lim \quad a_n=L \begin{cases} +\infty \
--\infty \
+<p>En el tema de successions, teníem que sempre calculàvem el límit d'una successió <script type="math/tex">a_n</script> quan <script type="math/tex">n\rightarrow +\infty</script>. I ens trobàvem amb 3 casos:</p>
+<p>
+<script type="math/tex; mode=display">
+lim \quad a_n=L \begin{cases} +\infty \\
+-\infty \\
 \mbox{ nombre real }\end{cases}
-$$</p>
-<p>En aquest tema traslladarem el concepte de límit a les funcions. Si tenim una funció $f(x)$ podem plantejar-nos 3 coses:</p>
+</script>
+</p>
+<p>En aquest tema traslladarem el concepte de límit a les funcions. Si tenim una funció <script type="math/tex">f(x)</script> podem plantejar-nos 3 coses:</p>
 <ol>
-<li>Què passa quan $x\rightarrow -\infty$</li>
-<li>Què passa quan $x\rightarrow +\infty$</li>
-<li>Què passa quan $x\rightarrow a$ on $a \in \mathbb{R}$</li>
+<li>Què passa quan <script type="math/tex">x\rightarrow -\infty</script>
+</li>
+<li>Què passa quan <script type="math/tex">x\rightarrow +\infty</script>
+</li>
+<li>Què passa quan <script type="math/tex">x\rightarrow a</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
 </ol>
 <p>Ens fixarem aquí en el primer cas i més endavant ja pensarem què passa amb una funció en els límits infinits.</p>
 <h3 id="interpretacio-grafica">Interpretació gràfica</h3>
 <p>A través d'un exemple molt senzill veurem què vol dir gràficament el límit d'una funció en un punt.</p>
 <p><strong>Exemple 1</strong></p>
-<p>Considerem la funció $y=f(x)=2x+1$. El domini d'aquesta funció són tots els nombres reals. Volem calcular quin és el límit d'aquesta funció quan $x$ s'acosta a $2$. Com que el domini d'aquesta funció són tots els nombres reals, el $2$ tindrà imatge, de fet, $f(2)=2\cdot 2+1=5$. Considerem ara un petit entorn de $2$ que l'anomenem $A$ i mirarem que passa amb les imatges d'aquest entorn. A sota podeu veure'n una representació gràfica.</p>
+<p>Considerem la funció <script type="math/tex">y=f(x)=2x+1</script>. El domini d'aquesta funció són tots els nombres reals. Volem calcular quin és el límit d'aquesta funció quan <script type="math/tex">x</script> s'acosta a <script type="math/tex">2</script>. Com que el domini d'aquesta funció són tots els nombres reals, el <script type="math/tex">2</script> tindrà imatge, de fet, <script type="math/tex">f(2)=2\cdot 2+1=5</script>. Considerem ara un petit entorn de <script type="math/tex">2</script> que l'anomenem <script type="math/tex">A</script> i mirarem que passa amb les imatges d'aquest entorn. A sota podeu veure'n una representació gràfica.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/tM7D6quP/width/600/height/629/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="600px" height="629px" style="border:0px;"> </iframe>
 
-<p>Veiem que si les $x$ estan en un entorn $A$ amb punt central $x=2$ les imatges d'aquest entorn estan en un entorn de centre $y=5$ i radi $r$, això és, en un interval $(5-r,5+r)$. Si fem aquest entorn de $x=2$ cada vegada més petit, podem veure que les imatges cada vegada s'acosten més a $5$. D'aquesta manera podem afirmar que:</p>
-<p>$$\lim_{x\to 2} f(x)=\lim_{x\to 2} (2x+1)=5$$</p>
+<p>Veiem que si les <script type="math/tex">x</script> estan en un entorn <script type="math/tex">A</script> amb punt central <script type="math/tex">x=2</script> les imatges d'aquest entorn estan en un entorn de centre <script type="math/tex">y=5</script> i radi <script type="math/tex">r</script>, això és, en un interval <script type="math/tex">(5-r,5+r)</script>. Si fem aquest entorn de <script type="math/tex">x=2</script> cada vegada més petit, podem veure que les imatges cada vegada s'acosten més a <script type="math/tex">5</script>. D'aquesta manera podem afirmar que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=\lim_{x\to 2} (2x+1)=5</script>
+</p>
 <p>Això, expressat en un altre llenguatge, és:</p>
-<p>$$\lim_{x\to 2} f(x)=5 \Leftrightarrow \exists \text{  un entorn  } A | \text{ si } x \in A \text{ , } x \neq 2 \Rightarrow f(x) \in (5-r, 5+r)$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2} f(x)=5 \Leftrightarrow \exists \text{  un entorn  } A | \text{ si } x \in A \text{ , } x \neq 2 \Rightarrow f(x) \in (5-r, 5+r)</script>
+</p>
 <h3 id="definicio-de-limit-duna-funcio-en-un-punt">Definició de límit d'una funció en un punt</h3>
 <p>Anem a definir més rigorosament el límit d'una funció en un punt:</p>
 <blockquote>
-<p>$$\lim_{x\to a} f(x)=L \Leftrightarrow \forall \text{   entorn } (L-r, L+r) \text{ en l'eix y  } \exists \text{  un entorn } A \text{ d' }a \text{ en l'eix } x | \text{ si } x \in A \text{ , } x \neq a \Rightarrow f(x) \in (L-r, L+r)$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a} f(x)=L \Leftrightarrow \forall \text{   entorn } (L-r, L+r) \text{ en l'eix y  } \exists \text{  un entorn } A \text{ d' }a \text{ en l'eix } x | \text{ si } x \in A \text{ , } x \neq a \Rightarrow f(x) \in (L-r, L+r)</script>
+</p>
 </blockquote>
 <h3 id="limits-laterals">Límits laterals</h3>
 <p>Quan parlem del límit d'una funció en un punt, també podem considerar-ne els límits laterals, què passa amb la funció quan ens acostem al punt per l'esquerra i què passa amb la funció quan ens acostem al punt per la dreta.</p>
-<p>Per estudiar això fixem-nos amb la funció part entera: $y=f(x)=E(x)$, que representem a continuació. Aquesta funció assigna a cada nombre real $x$ el nombre enter $k$ que compleix: $k\le x$.</p>
+<p>Per estudiar això fixem-nos amb la funció part entera: <script type="math/tex">y=f(x)=E(x)</script>, que representem a continuació. Aquesta funció assigna a cada nombre real <script type="math/tex">x</script> el nombre enter <script type="math/tex">k</script> que compleix: <script type="math/tex">k\le x</script>.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/nEMUtsN9/width/520/height/751/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="520px" height="751px" style="border:0px;"> </iframe>
 
-<p>Si estudiem què passa quan ens acostem a $x=1$ per l'esquerra (valors més petits que $1$) i per la dreta (valors més grans que $1$) veiem que obtenim dos resultats diferents:</p>
-<p>\begin{align}
-\lim_{x\to 1^+}&amp;=1 \
-\lim_{x\to 1^-}&amp;=0
-\end{align}</p>
-<p>Quan els límits laterals <strong>no coincideixen</strong>, diem que $\lim_{x\to 1} E(x)=  \nexists$. Per tant:</p>
+<p>Si estudiem què passa quan ens acostem a <script type="math/tex">x=1</script> per l'esquerra (valors més petits que <script type="math/tex">1</script>) i per la dreta (valors més grans que <script type="math/tex">1</script>) veiem que obtenim dos resultats diferents:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1^+}&=1 \\
+\lim_{x\to 1^-}&=0
+\end{align}</script>
+</p>
+<p>Quan els límits laterals <strong>no coincideixen</strong>, diem que <script type="math/tex">\lim_{x\to 1} E(x)=  \nexists</script>. Per tant:</p>
 <blockquote>
-<p>$$\text{Si } \lim_{x\to a-} f(x)=\lim_{x\to a-} f(x)=L \Rightarrow \lim_{x\to a} f(x)=L$$</p>
+<p>
+<script type="math/tex; mode=display">\text{Si } \lim_{x\to a-} f(x)=\lim_{x\to a-} f(x)=L \Rightarrow \lim_{x\to a} f(x)=L</script>
+</p>
 </blockquote>
 <p>en cas contrari (els límits laterals no coincideixen) el límit <strong>no existeix</strong>.</p>
-<h3 id="limits-duna-funcio-a-linfinit-lim_xto-pm-infty-fx">Límits d'una funció a l'infinit $(\lim_{x\to \pm \infty} f(x))$</h3>
-<p>En aquest apartat volem veure què passa amb una funció quan prenem $x$ molt i molt petites $(x\rightarrow - \infty)$ i molt i molt grans $(x\rightarrow + \infty)$. Quan calculem aquests límits, si el resultat és un nombre, podrem assegurar que la funció té una assímptota horitzonal:</p>
+<h3 id="limits-duna-funcio-a-linfinit-lim_xto-pm-infty-fx">Límits d'una funció a l'infinit <script type="math/tex">(\lim_{x\to \pm \infty} f(x))</script>
+</h3>
+<p>En aquest apartat volem veure què passa amb una funció quan prenem <script type="math/tex">x</script> molt i molt petites <script type="math/tex">(x\rightarrow - \infty)</script> i molt i molt grans <script type="math/tex">(x\rightarrow + \infty)</script>. Quan calculem aquests límits, si el resultat és un nombre, podrem assegurar que la funció té una assímptota horitzonal:</p>
 <blockquote>
-<p>Si $\lim_{x\to \pm \infty} f(x)=a \Rightarrow$ en $y=a$ hi ha una assímptota horitzontal</p>
+<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=a \Rightarrow</script> en <script type="math/tex">y=a</script> hi ha una assímptota horitzontal</p>
 </blockquote>
 <p>En canvi,</p>
 <blockquote>
-<p>Si $\lim_{x\to \pm \infty} f(x)=\pm \infty \Rightarrow$ La funció no té assímptotes horitzontals</p>
+<p>Si <script type="math/tex">\lim_{x\to \pm \infty} f(x)=\pm \infty \Rightarrow</script> La funció no té assímptotes horitzontals</p>
 </blockquote>
 <p><strong>Exemple 2</strong></p>
-<p>Estudia els límits infinits de la funció $y=f(x)=\frac{1}{x^2}$</p>
-<p>\begin{align}
-\lim_{x\to - \infty} f(x)&amp;=\frac{1}{(-\infty)^2}=\frac{1}{+\infty}=0\
-\lim_{x\to + \infty} f(x)&amp;=\frac{1}{(+\infty)^2}=\frac{1}{+\infty}=0
-\end{align}</p>
-<p>Per tant, aquesta funció tindrà dues <strong>assímptotes horitzontals</strong> en $y=0$. Anem a veure-ho amb la gràfica:</p>
+<p>Estudia els límits infinits de la funció <script type="math/tex">y=f(x)=\frac{1}{x^2}</script>
+</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to - \infty} f(x)&=\frac{1}{(-\infty)^2}=\frac{1}{+\infty}=0\\
+\lim_{x\to + \infty} f(x)&=\frac{1}{(+\infty)^2}=\frac{1}{+\infty}=0
+\end{align}</script>
+</p>
+<p>Per tant, aquesta funció tindrà dues <strong>assímptotes horitzontals</strong> en <script type="math/tex">y=0</script>. Anem a veure-ho amb la gràfica:</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/XsMhjqhm/width/654/height/666/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="654px" height="666px" style="border:0px;"> </iframe>
 
-<h3 id="limits-infinits-lim_xto-a-fxpm-infty">Límits infinits $(\lim_{x\to a} f(x)=\pm \infty)$</h3>
-<p>Ens interessa veure què els passa a les funcions quan al calcular un límit ens dóna com a resultat $\pm \infty$. Anem a veure-ho a través d'un exemple.</p>
+<h3 id="limits-infinits-lim_xto-a-fxpm-infty">Límits infinits <script type="math/tex">(\lim_{x\to a} f(x)=\pm \infty)</script>
+</h3>
+<p>Ens interessa veure què els passa a les funcions quan al calcular un límit ens dóna com a resultat <script type="math/tex">\pm \infty</script>. Anem a veure-ho a través d'un exemple.</p>
 <p><strong>Exemple 3</strong></p>
-<p>Donada la funció $y=f(x)=\frac{2}{x-1}$ representa-la i estudia què passa quan $x\rightarrow 1$.</p>
-<p>Aquesta és una funció racional amb domini $D=\mathbb{R}-1$. Anem a veure què passa quan ens acostem a 1 per l'esquerra ($\lim_{x\to 1^-} \frac{2}{x-1}$) i per la dreta: ($\lim_{x\to 1^-} \frac{2}{x-1}$). Si ho mirem a través d'una taula de valors:</p>
-<p>$$
+<p>Donada la funció <script type="math/tex">y=f(x)=\frac{2}{x-1}</script> representa-la i estudia què passa quan <script type="math/tex">x\rightarrow 1</script>.</p>
+<p>Aquesta és una funció racional amb domini <script type="math/tex">D=\mathbb{R}-1</script>. Anem a veure què passa quan ens acostem a 1 per l'esquerra (<script type="math/tex">\lim_{x\to 1^-} \frac{2}{x-1}</script>) i per la dreta: (<script type="math/tex">\lim_{x\to 1^-} \frac{2}{x-1}</script>). Si ho mirem a través d'una taula de valors:</p>
+<p>
+<script type="math/tex; mode=display">
 \begin{array}{l|l}
-x &amp; f(x) \
+x & f(x) \\
 \hline
- 0.9 &amp; -20 \
- 0.99 &amp; -200 \
- 0.999 &amp; -2000 \
- 0.9999 &amp; -20000\
+ 0.9 & -20 \\
+ 0.99 & -200 \\
+ 0.999 & -2000 \\
+ 0.9999 & -20000\\
  \hline
- 1.1 &amp; 20 \
- 1.01 &amp; 200 \
- 1.001 &amp; 2000 \
- 1.0001 &amp; 20000
+ 1.1 & 20 \\
+ 1.01 & 200 \\
+ 1.001 & 2000 \\
+ 1.0001 & 20000
 \end{array}
-$$</p>
+</script>
+</p>
 <p>Per tant, de la taula podem deduir:</p>
-<p>\begin{align}
-\lim_{x\to 1^-}\frac{2}{x-1}&amp;=-\infty \
-\lim_{x\to 1^+}\frac{2}{x-1}&amp;=+\infty
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1^-}\frac{2}{x-1}&=-\infty \\
+\lim_{x\to 1^+}\frac{2}{x-1}&=+\infty
+\end{align}</script>
+</p>
 <p>Si representem gràficament aquesta funció veurem què passa de manera més clara:</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/Mc9bYqpQ/width/670/height/590/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="670px" height="590px" style="border:0px;"> </iframe>
 
-<p>Veiem que la funció té una <strong>assímptota vertical per l'esquerra</strong> en $x=1$ i una <strong>assímptota vertical per la dreta</strong> també en $x=1$.</p>
+<p>Veiem que la funció té una <strong>assímptota vertical per l'esquerra</strong> en <script type="math/tex">x=1</script> i una <strong>assímptota vertical per la dreta</strong> també en <script type="math/tex">x=1</script>.</p>
 <blockquote>
-<p>Si $\lim_{x\to \pm a}f(x)=\pm \infty \Rightarrow$ en $x=a$ hi ha una assímptota vertical</p>
+<p>Si <script type="math/tex">\lim_{x\to \pm a}f(x)=\pm \infty \Rightarrow</script> en <script type="math/tex">x=a</script> hi ha una assímptota vertical</p>
 </blockquote>
-<h3 id="metode-per-a-resoldre-indeterminacions-del-tipus-frac00">Mètode per a resoldre indeterminacions del tipus $\frac{0}{0}$</h3>
-<p>Ens podem trobar que com a conseqüència del càlcul d'un límit, ens trobem amb alguna indeterminació. Al tema passat ja vam veure <a href="http://mdosil.cat/mates1batcientific/temes/successions/#calcul-de-limits">com resoldre indeterminacions del tipus</a> $\frac{\infty}{\infty}$, $0\cdot \infty$ i $1^\infty$. Anem a veure aquí una altra indeterminació: $\frac{0}{0}$. En general ens hi trobarem amb fraccions algebraiques. En aquest cas ens caldrà descomposar els polinomis numerador i denominador de les fraccions algebraiques com a  <a href="http://mdosil.cat/mates1batcientific/temes/polinomis/#factoritzacio-de-polinomis">producte de polinomis irreductibles</a>. Això segurament ens permetrà simplificar algun factor i podrem calcular el límit.</p>
+<h3 id="metode-per-a-resoldre-indeterminacions-del-tipus-frac00">Mètode per a resoldre indeterminacions del tipus <script type="math/tex">\frac{0}{0}</script>
+</h3>
+<p>Ens podem trobar que com a conseqüència del càlcul d'un límit, ens trobem amb alguna indeterminació. Al tema passat ja vam veure <a href="http://mdosil.cat/mates1batcientific/temes/successions/#calcul-de-limits">com resoldre indeterminacions del tipus</a> <script type="math/tex">\frac{\infty}{\infty}</script>, <script type="math/tex">0\cdot \infty</script> i <script type="math/tex">1^\infty</script>. Anem a veure aquí una altra indeterminació: <script type="math/tex">\frac{0}{0}</script>. En general ens hi trobarem amb fraccions algebraiques. En aquest cas ens caldrà descomposar els polinomis numerador i denominador de les fraccions algebraiques com a  <a href="http://mdosil.cat/mates1batcientific/temes/polinomis/#factoritzacio-de-polinomis">producte de polinomis irreductibles</a>. Això segurament ens permetrà simplificar algun factor i podrem calcular el límit.</p>
 <p><strong>Exemple 4</strong></p>
 <p>Calcula aquest límit:</p>
-<p>\begin{align}
-\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&amp;=\frac{0}{0}=\text{ind}\
-\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&amp;=\lim_{x\to 1}\sqrt[3]{\frac{(x-1)(x^2+1)}{(x-1)(x^2+x+1)}}=\sqrt[3]{\frac{2}{3}}
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&=\frac{0}{0}=\text{ind}\\
+\lim_{x\to 1}\sqrt[3]{\frac{x^3-x^2+x-1}{x^3-1}}&=\lim_{x\to 1}\sqrt[3]{\frac{(x-1)(x^2+1)}{(x-1)(x^2+x+1)}}=\sqrt[3]{\frac{2}{3}}
+\end{align}</script>
+</p>
 <h2 id="continuitat-duna-funcio-en-un-punt">Continuïtat d'una funció en un punt</h2>
-<p>Intuïtivament una funció és contínua en un punt $a$ quan per dibuixar la gràfica no aixequem el llapis del paper quan passem per aquest punt. Anem a definir-ho d'una manera més formal.</p>
+<p>Intuïtivament una funció és contínua en un punt <script type="math/tex">a</script> quan per dibuixar la gràfica no aixequem el llapis del paper quan passem per aquest punt. Anem a definir-ho d'una manera més formal.</p>
 <blockquote>
-<p>Una funció $f(x)$ és contínua en $x=a$ si s'acompleix alguna de les condicions següents:</p>
+<p>Una funció <script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a</script> si s'acompleix alguna de les condicions següents:</p>
 <ol>
-<li>$\exists f(a)\rightarrow a \in D_f$</li>
-<li>$\exists \lim_{x\to a}f(x)$ i és un nombre</li>
-<li>$\lim_{x\to a \pm }f(x)=f(a)$</li>
+<li>
+<script type="math/tex">\exists f(a)\rightarrow a \in D_f</script>
+</li>
+<li>
+<script type="math/tex">\exists \lim_{x\to a}f(x)</script> i és un nombre</li>
+<li>
+<script type="math/tex">\lim_{x\to a \pm }f(x)=f(a)</script>
+</li>
 </ol>
 </blockquote>
 <p>A partir d'aquí també podem afirmar:</p>
 <blockquote>
-<p>$f(x)$ és contínua en $x=a \Leftrightarrow \lim_{x\to a}f(x)=f(a)$</p>
+<p>
+<script type="math/tex">f(x)</script> és contínua en <script type="math/tex">x=a \Leftrightarrow \lim_{x\to a}f(x)=f(a)</script>
+</p>
 </blockquote>
 <p>Si parlem d'intervals:</p>
 <blockquote>
-<p>$f(x)$ és contínua en un interval $A$ si és contínua en tots els punts d'aquest interval.</p>
+<p>
+<script type="math/tex">f(x)</script> és contínua en un interval <script type="math/tex">A</script> si és contínua en tots els punts d'aquest interval.</p>
 </blockquote>
 <h2 id="discontinuitats">Discontinuïtats</h2>
-<p>Quan el que hem explicat en l'apartat anterior no passa, tindrem que la funció $f(x)$ és discontínua en $x=a$. Hi poden haver 3 tipus de discontinuïtats diferents, anem-les a revisar.</p>
+<p>Quan el que hem explicat en l'apartat anterior no passa, tindrem que la funció <script type="math/tex">f(x)</script> és discontínua en <script type="math/tex">x=a</script>. Hi poden haver 3 tipus de discontinuïtats diferents, anem-les a revisar.</p>
 <h3 id="discontinuitat-evitable">Discontinuïtat evitable</h3>
-<p>S'anomena <strong>discontinuïtat evitable</strong> de $f(x)$ en $x=a$ quan no existeix $f(a)$ però en canvi sí que existeix el seu límit: $\nexists f(a) \text{i} \exists \lim_{x\to a}f(x)$.</p>
-<p>La discontinuïtat es pot evitar assignant-li a $a$ com a imatge el seu límit: $f(a)=\lim_{x\to a}f(x)$. La funció que en resulta s'anomena <em>funció prolongada de $f$ per continuïtat</em>.</p>
-<p>Es pot demostrar que això passa quan <strong>la indeterminació obtinguda en calcular el límit és $\frac{0}{0}$</strong>.</p>
+<p>S'anomena <strong>discontinuïtat evitable</strong> de <script type="math/tex">f(x)</script> en <script type="math/tex">x=a</script> quan no existeix <script type="math/tex">f(a)</script> però en canvi sí que existeix el seu límit: <script type="math/tex">\nexists f(a) \text{i} \exists \lim_{x\to a}f(x)</script>.</p>
+<p>La discontinuïtat es pot evitar assignant-li a <script type="math/tex">a</script> com a imatge el seu límit: <script type="math/tex">f(a)=\lim_{x\to a}f(x)</script>. La funció que en resulta s'anomena <em>funció prolongada de <script type="math/tex">f</script> per continuïtat</em>.</p>
+<p>Es pot demostrar que això passa quan <strong>la indeterminació obtinguda en calcular el límit és <script type="math/tex">\frac{0}{0}</script></strong>.</p>
 <p><strong>Exemple 5</strong></p>
-<p>Anem a estudiar la continuïtat de la funció $f(x)=\frac{x^2-4}{x-2}$ en $x=2$. Si ens hi fixem, el domini de la funció és $D_f=\mathbb{R}-{2}$. Si estudiem una mica més la funció, veiem que:</p>
-<p>$$\lim_{x\to 2}\frac{x^2-4}{x-2}=\frac{0}{0}=\text{ ind } \rightarrow \lim_{x\to 2}\frac{x^2-4}{x-2}=\lim_{x\to 2}\frac{(x-2)(x+2)}{x-2}=\lim_{x\to 2}(x+2)=4$$</p>
-<p>Hi ha una discontinuïtat evitable en $x=2$ tal i com podem veure a la representació gràfica:</p>
+<p>Anem a estudiar la continuïtat de la funció <script type="math/tex">f(x)=\frac{x^2-4}{x-2}</script> en <script type="math/tex">x=2</script>. Si ens hi fixem, el domini de la funció és <script type="math/tex">D_f=\mathbb{R}-{2}</script>. Si estudiem una mica més la funció, veiem que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to 2}\frac{x^2-4}{x-2}=\frac{0}{0}=\text{ ind } \rightarrow \lim_{x\to 2}\frac{x^2-4}{x-2}=\lim_{x\to 2}\frac{(x-2)(x+2)}{x-2}=\lim_{x\to 2}(x+2)=4</script>
+</p>
+<p>Hi ha una discontinuïtat evitable en <script type="math/tex">x=2</script> tal i com podem veure a la representació gràfica:</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/YSe6Grgm/width/766/height/672/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="766px" height="672px" style="border:0px;"> </iframe>
 
-<p>Per prolongar aquesta funció per continuïtat n'hi hauria prou d'assignar: $f(2)=4$.</p>
+<p>Per prolongar aquesta funció per continuïtat n'hi hauria prou d'assignar: <script type="math/tex">f(2)=4</script>.</p>
 <h3 id="discontinuitat-de-salt">Discontinuïtat de salt</h3>
 <p>Tenim una <strong>discontinuïtat de salt</strong> quan els límits laterals d'una funció en un punt no coincideixen:</p>
-<p>$$\lim_{x\to a^-}f(x)\neq \lim_{x\to a^+}f(x)\rightarrow \nexists \lim_{x\to a}f(x)$$</p>
-<p>Llavors el tamany del salt $S$ equivaldrà a la distància entre límits:</p>
-<p>$$S=\lim_{x\to a^+}f(x)-\lim_{x\to a^-}f(x)$$</p>
-<p>En aquest cas pot ser que existeixi o no $f(a)$. Un exemple d'això seria la funció <strong>part entera, $y=f(x)=E(x)$</strong>.</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a^-}f(x)\neq \lim_{x\to a^+}f(x)\rightarrow \nexists \lim_{x\to a}f(x)</script>
+</p>
+<p>Llavors el tamany del salt <script type="math/tex">S</script> equivaldrà a la distància entre límits:</p>
+<p>
+<script type="math/tex; mode=display">S=\lim_{x\to a^+}f(x)-\lim_{x\to a^-}f(x)</script>
+</p>
+<p>En aquest cas pot ser que existeixi o no <script type="math/tex">f(a)</script>. Un exemple d'això seria la funció <strong>part entera, <script type="math/tex">y=f(x)=E(x)</script></strong>.</p>
 <h3 id="discontinuitat-assimptotica">Discontinuïtat assimptòtica</h3>
 <p>Tenim una <strong>discontinuïtat assimptòtica</strong> quan un límit lateral o tots dos tenen com a resultat infinit:</p>
-<p>$$\lim_{x\to a^+}f(x)=\infty \text{ i/o } \lim_{x\to a^-}f(x)=\infty$$</p>
-<p>En aquest cas podem afirmar que en $x=a$ hi ha una <strong>assímptota vertical</strong>.</p>
-<p>Es pot demostrar que això passa quan <strong>$\lim_{x\to a}f(x)=\frac{A}{0}$</strong>.</p>
+<p>
+<script type="math/tex; mode=display">\lim_{x\to a^+}f(x)=\infty \text{ i/o } \lim_{x\to a^-}f(x)=\infty</script>
+</p>
+<p>En aquest cas podem afirmar que en <script type="math/tex">x=a</script> hi ha una <strong>assímptota vertical</strong>.</p>
+<p>Es pot demostrar que això passa quan <strong><script type="math/tex">\lim_{x\to a}f(x)=\frac{A}{0}</script></strong>.</p>
 <p>L'exemple 2 i l'exemple 3 il.lustren aquest cas.</p></div>
-        </div>
+        
+    </div>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     </body>
+
 </html>

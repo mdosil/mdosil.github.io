@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>6. Rectes en el pla - Matemàtiques 1r batxillerat</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <title>6. Rectes en el pla - Matemàtiques 1r batxillerat</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script> 
-    </head>
 
-    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
+            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -38,70 +51,119 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+
+            <!-- Main title -->
             <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
+                
+                
                     <li >
                         <a href="../..">Home</a>
                     </li>
+                
+                
+                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                        
                             
 <li >
     <a href="../nombresreals/">1. Nombres reals</a>
 </li>
+
+                        
                             
 <li >
     <a href="../trigonometria/">2. Trigonometria</a>
 </li>
+
+                        
                             
 <li >
     <a href="../complexos/">3. Nombres complexos</a>
 </li>
+
+                        
                             
 <li >
     <a href="../polinomis/">4. Polinomis</a>
 </li>
+
+                        
                             
 <li >
     <a href="../vectors/">5. Vectors en el pla</a>
 </li>
+
+                        
                             
 <li class="active">
     <a href="./">6. Rectes en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
 </li>
+
+                        
                             
 <li >
     <a href="../successions/">8. Successions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcions/">9. Funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../limits/">10. Límits i continuïtat de funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
 </li>
+
+                        
                         </ul>
                     </li>
+                
+                
+                
+                    <li >
+                        <a href="../../misc/misc/">Miscel.lània</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../sobre/">Llicència</a>
+                    </li>
+                
+                
                 </ul>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -109,6 +171,7 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
                     <li >
                         <a rel="next" href="../vectors/">
                             <i class="fa fa-arrow-left"></i> Previous
@@ -119,242 +182,362 @@
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
+                
+                
             </ul>
         </div>
     </div>
 </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</a></li>
-            <li><a href="#equacions-de-la-recta">Equacions de la recta</a></li>
-            <li><a href="#posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</a></li>
-            <li><a href="#angle-entre-dues-rectes">Angle entre dues rectes</a></li>
-            <li><a href="#distancies">Distàncies</a></li>
+    
+        <li class="first-level active"><a href="#tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</a></li>
+        
+            <li class="second-level"><a href="#equacions-de-la-recta">Equacions de la recta</a></li>
+            
+                <li class="third-level"><a href="#equacio-vectorial">Equació vectorial</a></li>
+            
+                <li class="third-level"><a href="#equacions-parametriques">Equacions paramètriques</a></li>
+            
+                <li class="third-level"><a href="#equacio-continua">Equació contínua</a></li>
+            
+                <li class="third-level"><a href="#equacio-general-o-implicita">Equació general o implícita</a></li>
+            
+                <li class="third-level"><a href="#equacio-explicita">Equació explícita</a></li>
+            
+        
+            <li class="second-level"><a href="#posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</a></li>
+            
+                <li class="third-level"><a href="#rectes-paralleles">Rectes paral.leles</a></li>
+            
+                <li class="third-level"><a href="#rectes-coincidents">Rectes coincidents</a></li>
+            
+                <li class="third-level"><a href="#rectes-perpendiculars">Rectes perpendiculars</a></li>
+            
+        
+            <li class="second-level"><a href="#angle-entre-dues-rectes">Angle entre dues rectes</a></li>
+            
+        
+            <li class="second-level"><a href="#distancies">Distàncies</a></li>
+            
+                <li class="third-level"><a href="#distancia-entre-dos-punts">Distància entre dos punts</a></li>
+            
+                <li class="third-level"><a href="#distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</a></li>
+            
+                <li class="third-level"><a href="#distancia-entre-dues-rectes">Distància entre dues rectes</a></li>
+            
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
 
 <h1 id="tema-6-rectes-en-el-pla">Tema 6: Rectes en el pla</h1>
 <p>Aquest curs començarem amb la <a href="https://es.wikipedia.org/wiki/Geometr%C3%ADa_anal%C3%ADtica">geometria analítica</a> en el pla. Aquesta part de la geometria estudia els objectes geoomètrics en el pla cartesià.</p>
 <h2 id="equacions-de-la-recta">Equacions de la recta</h2>
-<p>En cursos anteriors ja havíem representat rectes en el pla cartesià mitjançant la seva expressió afí $y=f(x)=mx+n$, on $m$ era el pendent de la recta i $n$ l'ordenada a l'origen. Aquest curs veurem altres expressions de la recta que ens seran útils en situacions analítiques diferents.</p>
+<p>En cursos anteriors ja havíem representat rectes en el pla cartesià mitjançant la seva expressió afí <script type="math/tex">y=f(x)=mx+n</script>, on <script type="math/tex">m</script> era el pendent de la recta i <script type="math/tex">n</script> l'ordenada a l'origen. Aquest curs veurem altres expressions de la recta que ens seran útils en situacions analítiques diferents.</p>
 <h3 id="equacio-vectorial">Equació vectorial</h3>
-<p>Podem expressar qualsevol punt d'una recta donat un punt qualsevol d'aquesta i la seva direcció. Sigui $P=(x_0,y_0)$ un punt qualsevol d'una recta $r$ i $\vec{v}=(v_1,v_2)$ un vector amb la direcció de la recta, qualsevol punt $X=(x,y)$ d'aquesta recta es pot expressar com:</p>
+<p>Podem expressar qualsevol punt d'una recta donat un punt qualsevol d'aquesta i la seva direcció. Sigui <script type="math/tex">P=(x_0,y_0)</script> un punt qualsevol d'una recta <script type="math/tex">r</script> i <script type="math/tex">\vec{v}=(v_1,v_2)</script> un vector amb la direcció de la recta, qualsevol punt <script type="math/tex">X=(x,y)</script> d'aquesta recta es pot expressar com:</p>
 <blockquote>
-<p>$$(x,y)=(x_0,y_0)+\lambda(v_1,v_2)$$</p>
+<p>
+<script type="math/tex; mode=display">(x,y)=(x_0,y_0)+\lambda(v_1,v_2)</script>
+</p>
 </blockquote>
-<p>on $\lambda$ és un nombre real. Anomenem aquesta expressió l'<strong>equació vectorial de la recta</strong>, i el vector $\vec{v}=(v_1,v_2)$ és el seu <strong>vector director</strong>.</p>
+<p>on <script type="math/tex">\lambda</script> és un nombre real. Anomenem aquesta expressió l'<strong>equació vectorial de la recta</strong>, i el vector <script type="math/tex">\vec{v}=(v_1,v_2)</script> és el seu <strong>vector director</strong>.</p>
 <iframe scrolling="no" title="Recta Equació Vectorial" src="https://www.geogebra.org/material/iframe/id/pBkqB7h6/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
 <h3 id="equacions-parametriques">Equacions paramètriques</h3>
 <p>Si desenvolupem l'equació vectorial component a component, obtenim les <strong>equacions paramètriques de la recta</strong>:</p>
 <blockquote>
-<p>$$\begin{cases} x = x_0+\lambda v_1 \ y = y_0 + \lambda v_2
-\end{cases}$$</p>
+<p>
+<script type="math/tex; mode=display">\begin{cases} x = x_0+\lambda v_1 \\ y = y_0 + \lambda v_2
+\end{cases}</script>
+</p>
 </blockquote>
 <h3 id="equacio-continua">Equació contínua</h3>
-<p>Si aïllem el paràmetre $\lambda$ de les dues equacions i les igualem, obtenim l'<strong>equació contínua de la recta</strong>:</p>
+<p>Si aïllem el paràmetre <script type="math/tex">\lambda</script> de les dues equacions i les igualem, obtenim l'<strong>equació contínua de la recta</strong>:</p>
 <blockquote>
-<p>$$\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}</script>
+</p>
 </blockquote>
-<p>Aquesta forma de l'equació només és possible si les coordenades del vector director de la recta $\vec{v}=(v_1,v_2)$ són diferents de zero.</p>
+<p>Aquesta forma de l'equació només és possible si les coordenades del vector director de la recta <script type="math/tex">\vec{v}=(v_1,v_2)</script> són diferents de zero.</p>
 <h3 id="equacio-general-o-implicita">Equació general o implícita</h3>
 <p>Si continuem operant, i ho passem tot al costat esquerra i igualem a zero obtenim que:</p>
-<p>$$v_2(x-x_0)=v_1(y-y_0)\rightarrow v_2 x-v_1 y-v_2 x_0 + v_1 y_0=0$$</p>
+<p>
+<script type="math/tex; mode=display">v_2(x-x_0)=v_1(y-y_0)\rightarrow v_2 x-v_1 y-v_2 x_0 + v_1 y_0=0</script>
+</p>
 <p>I si fem les definicions següents:</p>
-<p>$$\begin{cases} A \equiv v_2 \
-B \equiv -v_1 \
+<p>
+<script type="math/tex; mode=display">\begin{cases} A \equiv v_2 \\
+B \equiv -v_1 \\
 C \equiv (-v_2 x_0+v_1 y_0)
 \end{cases}
-$$</p>
+</script>
+</p>
 <p>tenim l'<strong>equació general o implícita</strong> de la recta:</p>
 <blockquote>
-<p>$$Ax+By+C=0$$</p>
+<p>
+<script type="math/tex; mode=display">Ax+By+C=0</script>
+</p>
 </blockquote>
-<p>Per trobar un punt que pertanyi a aquesta recta n'hi ha prou per donar un valor arbitrari a $x$ i calcular-ne la $y$. El vector director de la recta serà (tenint en compte la substitució anteriorment feta):</p>
-<p>$$\vec{v}=(-B,A)$$</p>
+<p>Per trobar un punt que pertanyi a aquesta recta n'hi ha prou per donar un valor arbitrari a <script type="math/tex">x</script> i calcular-ne la <script type="math/tex">y</script>. El vector director de la recta serà (tenint en compte la substitució anteriorment feta):</p>
+<p>
+<script type="math/tex; mode=display">\vec{v}=(-B,A)</script>
+</p>
 <h3 id="equacio-explicita">Equació explícita</h3>
-<p>A partir d'aquí podem aïllar $y$ en un costat i trobar l'equació explícita de la recta amb la que començàvem el capítol:</p>
-<p>$$y=-\frac{A}{B}x-\frac{C}{B}$$</p>
+<p>A partir d'aquí podem aïllar <script type="math/tex">y</script> en un costat i trobar l'equació explícita de la recta amb la que començàvem el capítol:</p>
+<p>
+<script type="math/tex; mode=display">y=-\frac{A}{B}x-\frac{C}{B}</script>
+</p>
 <p>Si redefinim els coeficients obtenim:</p>
-<p>$$y=mx+n \begin{cases} m \equiv -\frac{A}{B} \
-n \equiv -\frac{C}{B} \
+<p>
+<script type="math/tex; mode=display">y=mx+n \begin{cases} m \equiv -\frac{A}{B} \\
+n \equiv -\frac{C}{B} \\
 \end{cases}
-$$</p>
-<p>Anem a veure ara què representa el pendent $m$:</p>
-<p>$$m=-\frac{A}{B}=\frac{v_2}{v_1}$$</p>
-<p>El pendent és el quocient entre les components $y$ i $x$ del vector director de la recta, i si mirem el gràfic següent:</p>
+</script>
+</p>
+<p>Anem a veure ara què representa el pendent <script type="math/tex">m</script>:</p>
+<p>
+<script type="math/tex; mode=display">m=-\frac{A}{B}=\frac{v_2}{v_1}</script>
+</p>
+<p>El pendent és el quocient entre les components <script type="math/tex">y</script> i <script type="math/tex">x</script> del vector director de la recta, i si mirem el gràfic següent:</p>
 <iframe scrolling="no" title="Recta Equació Explícita i pendent" src="https://www.geogebra.org/material/iframe/id/WZZHw3bZ/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
-<p>Veiem que <strong>el pendent $m$ és la tangent de l'angle que forma el vector director de la recta amb l'eix $OX$</strong>. Això vol dir que per rectes paral.leles a l'eix $OX$ el seu pendent serà $tg (0^o)=0$ i per rectes paral.leles a l'eix $OY$ el seu pendent serà màxim: $tg ( 90^0)=\infty$.</p>
+<p>Veiem que <strong>el pendent <script type="math/tex">m</script> és la tangent de l'angle que forma el vector director de la recta amb l'eix <script type="math/tex">OX</script></strong>. Això vol dir que per rectes paral.leles a l'eix <script type="math/tex">OX</script> el seu pendent serà <script type="math/tex">tg (0^o)=0</script> i per rectes paral.leles a l'eix <script type="math/tex">OY</script> el seu pendent serà màxim: <script type="math/tex">tg ( 90^0)=\infty</script>.</p>
 <h2 id="posicions-relatives-entre-dues-rectes">Posicions relatives entre dues rectes</h2>
 <h3 id="rectes-paralleles">Rectes paral.leles</h3>
-<p>En cursos anteriors havíem vist que dues rectes eren paral.leles si tenien el mateix pendent, o sigui, igual $m$. Ara que ja coneixem els vectors també podem dir que dues rectes són paral.leles <strong>si tenen el mateix vector director o si els seus vectors directors són linealment dependents</strong> (l'un és l'altre multiplicat per un nombre).
+<p>En cursos anteriors havíem vist que dues rectes eren paral.leles si tenien el mateix pendent, o sigui, igual <script type="math/tex">m</script>. Ara que ja coneixem els vectors també podem dir que dues rectes són paral.leles <strong>si tenen el mateix vector director o si els seus vectors directors són linealment dependents</strong> (l'un és l'altre multiplicat per un nombre).
 Anem-ho a veure algebraicament:</p>
-<p>\begin{align}
-    r:&amp; \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \Rightarrow m_r=\frac{A}{-B}=\frac{-A}{B}\
-    s:&amp; \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime) \Rightarrow m_s=\frac{A^\prime}{-B^\prime}=\frac{-A^\prime}{B^\prime}
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    r:& \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \Rightarrow m_r=\frac{A}{-B}=\frac{-A}{B}\\
+    s:& \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime) \Rightarrow m_s=\frac{A^\prime}{-B^\prime}=\frac{-A^\prime}{B^\prime}
+\end{align}</script>
+</p>
 <p>Seran <strong>paral.leles</strong> si:</p>
-<p>\begin{align}
-m_r&amp;=m_s\
--\frac{A}{B}&amp;=-\frac{A^\prime}{B^\prime} \
-\frac{A}{A^\prime}&amp;=\frac{B}{B^\prime}
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+m_r&=m_s\\
+-\frac{A}{B}&=-\frac{A^\prime}{B^\prime} \\
+\frac{A}{A^\prime}&=\frac{B}{B^\prime}
+\end{align}</script>
+</p>
 <p>Òbviament si aquesta igualtat no es compleix les rectes seran <strong>secants</strong> i caldrà buscar el seu punt de tall resolent el sistema d'equacions.</p>
 <h3 id="rectes-coincidents">Rectes coincidents</h3>
 <p>Si a més a més es compleix:</p>
-<p>$$\frac{A}{A^\prime}=\frac{B}{B^\prime}=\frac{C}{C^\prime}$$</p>
-<p>$r$ i $s$ seran la mateixa recta.</p>
+<p>
+<script type="math/tex; mode=display">\frac{A}{A^\prime}=\frac{B}{B^\prime}=\frac{C}{C^\prime}</script>
+</p>
+<p>
+<script type="math/tex">r</script> i <script type="math/tex">s</script> seran la mateixa recta.</p>
 <p><strong>Exemple 1</strong></p>
-<p>Troba l'equació de la recta $s$ que passa pel punt $P(4,3)$ i és paral.lela a la recta $r$: $5x+3y+6=0$.</p>
-<p>El vector director de la recta $r$ és $\vec{v_r}=(-B,A)=(-3,5)$. Si la recta $s$ és paral.lela necessàriament ha de tenir el mateix vector director, pertant, $A$ i $B$ seran les mateixes:</p>
-<p>$$5x+3y+C=0$$</p>
-<p>La $C$ la trobarem subtituint a l'equació el punt donat:</p>
-<p>$$P(3,4)\Rightarrow 5\cdot 4+3\cdot 3+C=0 \Rightarrow C=-29$$</p>
-<p>Per tant, l'equació de la recta és: $5x+3y-29=0$</p>
+<p>Troba l'equació de la recta <script type="math/tex">s</script> que passa pel punt <script type="math/tex">P(4,3)</script> i és paral.lela a la recta <script type="math/tex">r</script>: <script type="math/tex">5x+3y+6=0</script>.</p>
+<p>El vector director de la recta <script type="math/tex">r</script> és <script type="math/tex">\vec{v_r}=(-B,A)=(-3,5)</script>. Si la recta <script type="math/tex">s</script> és paral.lela necessàriament ha de tenir el mateix vector director, pertant, <script type="math/tex">A</script> i <script type="math/tex">B</script> seran les mateixes:</p>
+<p>
+<script type="math/tex; mode=display">5x+3y+C=0</script>
+</p>
+<p>La <script type="math/tex">C</script> la trobarem subtituint a l'equació el punt donat:</p>
+<p>
+<script type="math/tex; mode=display">P(3,4)\Rightarrow 5\cdot 4+3\cdot 3+C=0 \Rightarrow C=-29</script>
+</p>
+<p>Per tant, l'equació de la recta és: <script type="math/tex">5x+3y-29=0</script>
+</p>
 <iframe scrolling="no" title="Recta paral.lela a una altra que passa per un punt" src="https://www.geogebra.org/material/iframe/id/UD2erWMP/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
 <h3 id="rectes-perpendiculars">Rectes perpendiculars</h3>
 <p>Tornem a considerar dues rectes i anem a veure què ha de passar per tal que siguin perpendiculars:</p>
-<p>\begin{align}
-    r:&amp; \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \
-    s:&amp; \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime)
-\end{align}</p>
-<p>$r$ i $s$ seran rectes perpendiculars si els seus <strong>vectors directors són ortogonals</strong>, això és, formen un angle de $90^o$. S'haurà de complir, per tant, que el seu producte escalar sigui zero. Això és:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+    r:& \quad Ax+By+C=0 \Rightarrow \vec{v_r}=(-B,A) \\
+    s:& \quad A^\prime x+ B^\prime y+ C^ \prime= 0 \Rightarrow \vec{v_s}=(-B^\prime,A^\prime)
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">r</script> i <script type="math/tex">s</script> seran rectes perpendiculars si els seus <strong>vectors directors són ortogonals</strong>, això és, formen un angle de <script type="math/tex">90^o</script>. S'haurà de complir, per tant, que el seu producte escalar sigui zero. Això és:</p>
 <blockquote>
-<p>$$\vec{v_r}\cdot\vec{v_s}=AA^\prime+B B^\prime=0$$</p>
+<p>
+<script type="math/tex; mode=display">\vec{v_r}\cdot\vec{v_s}=AA^\prime+B B^\prime=0</script>
+</p>
 </blockquote>
 <p>Donada una recta qualsevol, per trobar-ne una recta perpendicular només caldrà escriure un vector director que al efectuar el producte escalar doni zero.</p>
 <p><strong>Exemple 2</strong></p>
-<p>Troba l'equació de la recta perpendicular a la recta $r:2x+3y-5=0$ que passa pel punt $P(1,2)$.</p>
-<p>El vector director de la recta $r$ és $\vec{v}(-3,2)$. Un vector ortogonal a $\vec{v}$ seria $\vec{u}=(2,3)$ ja que el seu producte escalar dóna zero: $\vec{u}\cdot \vec{v}=-3\cdot 2+2\cdot (3)=0$.</p>
-<p>Per tant, la recta perpendicular tindria $B=-2$ i $A=3$. Ara només ens falta demanar que passi pel punt $P(1,2)$ per trobar $C$:</p>
-<p>$$3x-2y+C=0\rightarrow 3\cdot 1-2\cdot 2+C=0\rightarrow C=1$$</p>
+<p>Troba l'equació de la recta perpendicular a la recta <script type="math/tex">r:2x+3y-5=0</script> que passa pel punt <script type="math/tex">P(1,2)</script>.</p>
+<p>El vector director de la recta <script type="math/tex">r</script> és <script type="math/tex">\vec{v}(-3,2)</script>. Un vector ortogonal a <script type="math/tex">\vec{v}</script> seria <script type="math/tex">\vec{u}=(2,3)</script> ja que el seu producte escalar dóna zero: <script type="math/tex">\vec{u}\cdot \vec{v}=-3\cdot 2+2\cdot (3)=0</script>.</p>
+<p>Per tant, la recta perpendicular tindria <script type="math/tex">B=-2</script> i <script type="math/tex">A=3</script>. Ara només ens falta demanar que passi pel punt <script type="math/tex">P(1,2)</script> per trobar <script type="math/tex">C</script>:</p>
+<p>
+<script type="math/tex; mode=display">3x-2y+C=0\rightarrow 3\cdot 1-2\cdot 2+C=0\rightarrow C=1</script>
+</p>
 <p>Per tant, la recta que estem buscant és:</p>
-<p>$$3x-2y+1=0$$</p>
+<p>
+<script type="math/tex; mode=display">3x-2y+1=0</script>
+</p>
 <h4 id="projeccio-ortogonal-dun-punt-sobre-una-recta">Projecció ortogonal d'un punt sobre una recta</h4>
-<p>Donats un punt $P$ que no pertant a una recta i una recta $r$ qualsevol, sempre podem trobar la <em>projecció ortogonal</em> d'aquest punt sobre la recta. Ho entendrem millor amb un dibuix:</p>
+<p>Donats un punt <script type="math/tex">P</script> que no pertant a una recta i una recta <script type="math/tex">r</script> qualsevol, sempre podem trobar la <em>projecció ortogonal</em> d'aquest punt sobre la recta. Ho entendrem millor amb un dibuix:</p>
 <iframe scrolling="no" title="Projecció ortogonal d'un punt sobre una recta" src="https://www.geogebra.org/material/iframe/id/n9yNGwkW/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
-<p><strong>$P_0$ és la projecció ortogonal de $P$ sobre la recta $r$</strong>. També això ens dóna un punt <strong>$P^\prime$ que és el punt simètric de $P$ sobre la recta $r$</strong>. $P$ i $P^\prime$ estan a la mateixa distància de la recta $r$.</p>
-<p>Per trobar $P_0$ i $P^\prime$ farem el següent:</p>
+<p><strong><script type="math/tex">P_0</script> és la projecció ortogonal de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. També això ens dóna un punt <strong><script type="math/tex">P^\prime</script> que és el punt simètric de <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script></strong>. <script type="math/tex">P</script> i <script type="math/tex">P^\prime</script> estan a la mateixa distància de la recta <script type="math/tex">r</script>.</p>
+<p>Per trobar <script type="math/tex">P_0</script> i <script type="math/tex">P^\prime</script> farem el següent:</p>
 <ol>
-<li>Buscarem l'equació de la <strong>recta perpendicular</strong> a $r$ que passa per $P$.</li>
-<li>Buscarem el punt de tall de les dues rectes resolent el sistema d'equacions i ja tindrem $P_0$</li>
-<li>Per trobar les coordenades de $P^\prime$ utilitzarem la fórmula del punt mig d'un segment que vam veure en el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">tema anterior</a>.</li>
+<li>Buscarem l'equació de la <strong>recta perpendicular</strong> a <script type="math/tex">r</script> que passa per <script type="math/tex">P</script>.</li>
+<li>Buscarem el punt de tall de les dues rectes resolent el sistema d'equacions i ja tindrem <script type="math/tex">P_0</script>
+</li>
+<li>Per trobar les coordenades de <script type="math/tex">P^\prime</script> utilitzarem la fórmula del punt mig d'un segment que vam veure en el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">tema anterior</a>.</li>
 </ol>
 <p>Anem a veure-ho amb un exemple.</p>
 <p><strong>Exemple 3</strong></p>
-<p>Troba la projecció ortogonal del punt $P(1,2)$ sobre la recta $r:3x+2y-1=0$.</p>
+<p>Troba la projecció ortogonal del punt <script type="math/tex">P(1,2)</script> sobre la recta <script type="math/tex">r:3x+2y-1=0</script>.</p>
 <!--        s:Ax+By+C=0 & \vec{v}_s(-B,A)-->
 
-<p>$$
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-r&amp;:3x+2y-1=0 \rightarrow \vec{v}_r(-2,3)\
-s&amp;:Ax+By+C=0 \rightarrow \vec{v}_s(-B,A)
+r&:3x+2y-1=0 \rightarrow \vec{v}_r(-2,3)\\
+s&:Ax+By+C=0 \rightarrow \vec{v}_s(-B,A)
 \end{aligned}
-\right}
+\right\}
 \vec{v}_r \cdot \vec{v}_s=0 \rightarrow 2B+3A=0 \rightarrow\text{ Solució possible: } B=-3, A=2
-$$</p>
-<p>Per tant, tindríem que $s:2x-3y+C=0$, per trobar $C$ només cal substituir el punt $P(1,2)$ en l'equació i obtindrem que $C=4$.</p>
-<p>L'equació de la recta $s$ és $2x-3y+4=0$.</p>
-<p>Ara ens cal trobar la projecció ortogonal del punt $P$ sobre la recta $r$, això és, el punt de tall de les dues rectes. Ens cal solucionar el sistema següent:</p>
-<p>$$
+</script>
+</p>
+<p>Per tant, tindríem que <script type="math/tex">s:2x-3y+C=0</script>, per trobar <script type="math/tex">C</script> només cal substituir el punt <script type="math/tex">P(1,2)</script> en l'equació i obtindrem que <script type="math/tex">C=4</script>.</p>
+<p>L'equació de la recta <script type="math/tex">s</script> és <script type="math/tex">2x-3y+4=0</script>.</p>
+<p>Ara ens cal trobar la projecció ortogonal del punt <script type="math/tex">P</script> sobre la recta <script type="math/tex">r</script>, això és, el punt de tall de les dues rectes. Ens cal solucionar el sistema següent:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-3x+2y-1&amp;=0\
-2x-3y+4&amp;=0
+3x+2y-1&=0\\
+2x-3y+4&=0
 \end{aligned}
-\right}
+\right\}
 \rightarrow ... \rightarrow x=\frac{-5}{13}, y=\frac{14}{13}
-$$</p>
-<p>$P_0=(\frac{-5}{13},\frac{14}{13})$</p>
-<p>D'aquí també podem trobar el punt simètric de $P$ respecte la recta $r$, $P^\prime$. Del tema anterior sabem que per trobar el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">punt mig d'un segment</a> només ens cal saber les coordenades dels punts dels extrems. Les coordenades del punt mig es troben fent la semisuma de les components x i y dels punts extrems. Anem a veure-ho en aquest cas:</p>
-<p>$$
+</script>
+</p>
+<p>
+<script type="math/tex">P_0=(\frac{-5}{13},\frac{14}{13})</script>
+</p>
+<p>D'aquí també podem trobar el punt simètric de <script type="math/tex">P</script> respecte la recta <script type="math/tex">r</script>, <script type="math/tex">P^\prime</script>. Del tema anterior sabem que per trobar el <a href="http://mdosil.cat/mates1batcientific/temes/vectors/#aplicacions-geometriques">punt mig d'un segment</a> només ens cal saber les coordenades dels punts dels extrems. Les coordenades del punt mig es troben fent la semisuma de les components x i y dels punts extrems. Anem a veure-ho en aquest cas:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-P &amp;=(1,2)\
-P_0 &amp;=\Big(\frac{-5}{13},\frac{14}{13}\Big)\
-P^\prime &amp;=(x,y)
+P &=(1,2)\\
+P_0 &=\Big(\frac{-5}{13},\frac{14}{13}\Big)\\
+P^\prime &=(x,y)
 \end{aligned}
-\right}
+\right\}
 \rightarrow \Big(\frac{-5}{13}, \frac{14}{13}\Big)=\Big(\frac{1+x}{2},\frac{2+y}{2}\Big)\rightarrow ... \rightarrow P^\prime=\Big(\frac{-23}{13},\frac{2}{13}\Big)
-$$</p>
-<p>Per tant el punt simètric de $P$ respecte la recta $r$ és $P^\prime=\Big(\frac{-23}{13},\frac{2}{13}\Big)$</p>
+</script>
+</p>
+<p>Per tant el punt simètric de <script type="math/tex">P</script> respecte la recta <script type="math/tex">r</script> és <script type="math/tex">P^\prime=\Big(\frac{-23}{13},\frac{2}{13}\Big)</script>
+</p>
 <h2 id="angle-entre-dues-rectes">Angle entre dues rectes</h2>
-<p>Donades dues rectes $r$ i $s$, si són secants podem definir l'angle entre elles dues com l'angle $\alpha \le 90^o$:</p>
+<p>Donades dues rectes <script type="math/tex">r</script> i <script type="math/tex">s</script>, si són secants podem definir l'angle entre elles dues com l'angle <script type="math/tex">\alpha \le 90^o</script>:</p>
 <iframe scrolling="no" title="Angle entre dues rectes en el pla" src="https://www.geogebra.org/material/iframe/id/Wyu7Byfy/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
-<p>o sigui, dels dos angles que es formen, el més petit. Si ens hi fixem, es compleix que: $\alpha=180-\beta$. Com que $cos(\alpha)=-cos(180-\alpha)$, per trobar l'angle apliquem la fórmula del producte escalar entre dos vectors i demanem que el cosinus sigui positiu:</p>
-<p>$$cos \alpha=\frac{|\vec{u}\cdot \vec{v}|}{|\vec{u}|\cdot|\vec{v}|}$$</p>
-<p>on $\vec{u}$ i $\vec{v}$ són els vectors directors de les rectes $r$ i $s$ respectivament.</p>
+<p>o sigui, dels dos angles que es formen, el més petit. Si ens hi fixem, es compleix que: <script type="math/tex">\alpha=180-\beta</script>. Com que <script type="math/tex">cos(\alpha)=-cos(180-\alpha)</script>, per trobar l'angle apliquem la fórmula del producte escalar entre dos vectors i demanem que el cosinus sigui positiu:</p>
+<p>
+<script type="math/tex; mode=display">cos \alpha=\frac{|\vec{u}\cdot \vec{v}|}{|\vec{u}|\cdot|\vec{v}|}</script>
+</p>
+<p>on <script type="math/tex">\vec{u}</script> i <script type="math/tex">\vec{v}</script> són els vectors directors de les rectes <script type="math/tex">r</script> i <script type="math/tex">s</script> respectivament.</p>
 <h2 id="distancies">Distàncies</h2>
 <h3 id="distancia-entre-dos-punts">Distància entre dos punts</h3>
-<p>La distància entre dos punts es defineix com el mòdul del vector entre aquests dos punts. Si tenim un punt $P(x_0,y_0)$ i un punt $Q(x_1,y_1)$ la distància entre $P$ i $Q$ es defineix com:</p>
+<p>La distància entre dos punts es defineix com el mòdul del vector entre aquests dos punts. Si tenim un punt <script type="math/tex">P(x_0,y_0)</script> i un punt <script type="math/tex">Q(x_1,y_1)</script> la distància entre <script type="math/tex">P</script> i <script type="math/tex">Q</script> es defineix com:</p>
 <blockquote>
-<p>$$d(P,Q)=|\vec{PQ}|=|\sqrt{(x_1-x_0)^2+(y_1-y_0)^2}|$$</p>
+<p>
+<script type="math/tex; mode=display">d(P,Q)=|\vec{PQ}|=|\sqrt{(x_1-x_0)^2+(y_1-y_0)^2}|</script>
+</p>
 </blockquote>
 <h3 id="distancia-dun-punt-a-una-recta">Distància d'un punt a una recta</h3>
-<p>Es defineix la distància d'un punt $P$ a una recta $r:Ax+By+C=0$ com la longitud del segment perpendicular que uneix el punt amb la recta.
-Per calcular-la n'hi hauria prou amb trobar la projecció ortogonal del punt sobre la recta, diem-li $P^\prime$, i fer el mòdul del vector entre els 2 punts, o sigui $|\vec{PP^{\prime}}|$. Això potser resultaria una mica llarg i existeix una fòrmula més compacta per trobar-ho. Anem-la a deduir. Fixem-nos amb el dibuix de sota:</p>
+<p>Es defineix la distància d'un punt <script type="math/tex">P</script> a una recta <script type="math/tex">r:Ax+By+C=0</script> com la longitud del segment perpendicular que uneix el punt amb la recta.
+Per calcular-la n'hi hauria prou amb trobar la projecció ortogonal del punt sobre la recta, diem-li <script type="math/tex">P^\prime</script>, i fer el mòdul del vector entre els 2 punts, o sigui <script type="math/tex">|\vec{PP^{\prime}}|</script>. Això potser resultaria una mica llarg i existeix una fòrmula més compacta per trobar-ho. Anem-la a deduir. Fixem-nos amb el dibuix de sota:</p>
 <iframe scrolling="no" title="Distància entre un punt i una recta" src="https://www.geogebra.org/material/iframe/id/GSFVBDY7/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
-<p>A part dels punt $P(x_0,y_0)$ i la seva projecció ortogonal sobre $r$, $P'$, considerem també un punt $Q(x_1,y_1)$ pertanyent a la recta. El triangle $QP^\prime P$ és rectangle en $P^\prime$. Sabent això tenim que:</p>
-<p>$$d(P,r)=d(P,P^\prime)=|\vec{PP^\prime}|=||\vec{QP}|\cdot cos \alpha|$$</p>
-<p>on $\alpha$ és l'angle que forma el segment $\overline{PP^\prime}$ amb el segment $\overline{QP}$.</p>
-<p>Considerem ara un vector unitari (mòdul 1) perpendicular a $r$, diem-li $\vec{u}$.</p>
-<p>Si ens tornem a fixar en el gràfic, el vector $\vec{QP}$ i el vector $\vec{u}$ formen un angle $\beta=\alpha$. Per tant, si ara calculem el producte dels vectors $\vec{QP}$ i $\vec{u}$ tenim que:</p>
-<p>$$\vec{QP}\cdot \vec{u}=|\vec{QP}|\cdot |\vec{u}|\cdot cos \alpha=|\vec{QP}|cos \alpha$$</p>
-<p>ja que $|\vec{u}|=1$ perquè és unitari.</p>
+<p>A part dels punt <script type="math/tex">P(x_0,y_0)</script> i la seva projecció ortogonal sobre <script type="math/tex">r</script>, <script type="math/tex">P'</script>, considerem també un punt <script type="math/tex">Q(x_1,y_1)</script> pertanyent a la recta. El triangle <script type="math/tex">QP^\prime P</script> és rectangle en <script type="math/tex">P^\prime</script>. Sabent això tenim que:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=d(P,P^\prime)=|\vec{PP^\prime}|=||\vec{QP}|\cdot cos \alpha|</script>
+</p>
+<p>on <script type="math/tex">\alpha</script> és l'angle que forma el segment <script type="math/tex">\overline{PP^\prime}</script> amb el segment <script type="math/tex">\overline{QP}</script>.</p>
+<p>Considerem ara un vector unitari (mòdul 1) perpendicular a <script type="math/tex">r</script>, diem-li <script type="math/tex">\vec{u}</script>.</p>
+<p>Si ens tornem a fixar en el gràfic, el vector <script type="math/tex">\vec{QP}</script> i el vector <script type="math/tex">\vec{u}</script> formen un angle <script type="math/tex">\beta=\alpha</script>. Per tant, si ara calculem el producte dels vectors <script type="math/tex">\vec{QP}</script> i <script type="math/tex">\vec{u}</script> tenim que:</p>
+<p>
+<script type="math/tex; mode=display">\vec{QP}\cdot \vec{u}=|\vec{QP}|\cdot |\vec{u}|\cdot cos \alpha=|\vec{QP}|cos \alpha</script>
+</p>
+<p>ja que <script type="math/tex">|\vec{u}|=1</script> perquè és unitari.</p>
 <p>Si ajuntem les dues expressions anteriors tenim que:</p>
-<p>$$d(P,r)=|\vec{QP}\cdot \vec{u}|$$</p>
-<p>D'altra banda, si $\vec{v}=(-B,A)$ és el vector director de $r$, perquè $\vec{u}$ sigui unitari i perpendicular a $\vec{v}$ (això és, $\vec{u}\cdot \vec{v}=0$) ha de tenir necessàriament la forma:</p>
-<p>$$\vec{u}=\frac{1}{\sqrt{A^2+B^2}}(A,B)=\Big( \frac{A}{\sqrt{A^2+B^2}}, \frac{B}{\sqrt{A^2+B^2}} \Big)$$</p>
-<p>Agafant $\vec{QP}=(x_0-x_1,y_0-y_1)$ i substituïnt això a l'expressió de la distància tenim que:</p>
-<p>$$d(P,r)=|\vec{QP}\cdot \vec{u}|=|\frac{A}{\sqrt{A^2+B^2}}\cdot (x_0-x_1)+\frac{B}{\sqrt{A^2+B^2}}\cdot (y_0-y_1)|=\frac{|Ax_0+By_0-Ax_1-By_1|}{\sqrt{A^2+B^2}}=\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}$$</p>
-<p>ja que si $Q(x_1,y_1) \in r$ necessàriament ha de complir l'equació de la recta: $Ax_1+By_1+C=0 \rightarrow C=-Ax_1-By_1$.</p>
-<p>Així doncs, la distància d'un punt $P(x_0,y_0)$ a una recta $r:Ax+By+C=0$ ve donada per:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=|\vec{QP}\cdot \vec{u}|</script>
+</p>
+<p>D'altra banda, si <script type="math/tex">\vec{v}=(-B,A)</script> és el vector director de <script type="math/tex">r</script>, perquè <script type="math/tex">\vec{u}</script> sigui unitari i perpendicular a <script type="math/tex">\vec{v}</script> (això és, <script type="math/tex">\vec{u}\cdot \vec{v}=0</script>) ha de tenir necessàriament la forma:</p>
+<p>
+<script type="math/tex; mode=display">\vec{u}=\frac{1}{\sqrt{A^2+B^2}}(A,B)=\Big( \frac{A}{\sqrt{A^2+B^2}}, \frac{B}{\sqrt{A^2+B^2}} \Big)</script>
+</p>
+<p>Agafant <script type="math/tex">\vec{QP}=(x_0-x_1,y_0-y_1)</script> i substituïnt això a l'expressió de la distància tenim que:</p>
+<p>
+<script type="math/tex; mode=display">d(P,r)=|\vec{QP}\cdot \vec{u}|=|\frac{A}{\sqrt{A^2+B^2}}\cdot (x_0-x_1)+\frac{B}{\sqrt{A^2+B^2}}\cdot (y_0-y_1)|=\frac{|Ax_0+By_0-Ax_1-By_1|}{\sqrt{A^2+B^2}}=\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}</script>
+</p>
+<p>ja que si <script type="math/tex">Q(x_1,y_1) \in r</script> necessàriament ha de complir l'equació de la recta: <script type="math/tex">Ax_1+By_1+C=0 \rightarrow C=-Ax_1-By_1</script>.</p>
+<p>Així doncs, la distància d'un punt <script type="math/tex">P(x_0,y_0)</script> a una recta <script type="math/tex">r:Ax+By+C=0</script> ve donada per:</p>
 <blockquote>
-<p>$$\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}</script>
+</p>
 </blockquote>
 <h3 id="distancia-entre-dues-rectes">Distància entre dues rectes</h3>
-<p>Si les dues rectes es tallen, la seva distància serà $0$. En cas de tenir dues rectes paral.leles (ho sabrem si els seus vectors directors són proporcionals, o sigui, linealment dependents), calcularem la seva distància a partir de la fòrmula anterior. Només ens caldrà saber l'equació d'una de les rectes i un punt que pertanyi a una de les dues rectes.</p>
+<p>Si les dues rectes es tallen, la seva distància serà <script type="math/tex">0</script>. En cas de tenir dues rectes paral.leles (ho sabrem si els seus vectors directors són proporcionals, o sigui, linealment dependents), calcularem la seva distància a partir de la fòrmula anterior. Només ens caldrà saber l'equació d'una de les rectes i un punt que pertanyi a una de les dues rectes.</p>
 <p>Segons el gràfic:</p>
-<p>$$d(r,s)=d(P,r)=d(Q,s)$$</p>
+<p>
+<script type="math/tex; mode=display">d(r,s)=d(P,r)=d(Q,s)</script>
+</p>
 <iframe scrolling="no" title="Distància entre dues rectes paral.leles" src="https://www.geogebra.org/material/iframe/id/eVkATtDX/width/600/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe></div>
-        </div>
+        
+    </div>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     </body>
+
 </html>

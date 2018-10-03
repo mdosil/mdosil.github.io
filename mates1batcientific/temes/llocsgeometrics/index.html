@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>7. Llocs geomètrics - Matemàtiques 1r batxillerat</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <title>7. Llocs geomètrics - Matemàtiques 1r batxillerat</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script> 
-    </head>
 
-    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
+            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -38,70 +51,119 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+
+            <!-- Main title -->
             <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
+                
+                
                     <li >
                         <a href="../..">Home</a>
                     </li>
+                
+                
+                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                        
                             
 <li >
     <a href="../nombresreals/">1. Nombres reals</a>
 </li>
+
+                        
                             
 <li >
     <a href="../trigonometria/">2. Trigonometria</a>
 </li>
+
+                        
                             
 <li >
     <a href="../complexos/">3. Nombres complexos</a>
 </li>
+
+                        
                             
 <li >
     <a href="../polinomis/">4. Polinomis</a>
 </li>
+
+                        
                             
 <li >
     <a href="../vectors/">5. Vectors en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../rectes/">6. Rectes en el pla</a>
 </li>
+
+                        
                             
 <li class="active">
     <a href="./">7. Llocs geomètrics</a>
 </li>
+
+                        
                             
 <li >
     <a href="../successions/">8. Successions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcions/">9. Funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../limits/">10. Límits i continuïtat de funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
 </li>
+
+                        
                         </ul>
                     </li>
+                
+                
+                
+                    <li >
+                        <a href="../../misc/misc/">Miscel.lània</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../sobre/">Llicència</a>
+                    </li>
+                
+                
                 </ul>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -109,6 +171,7 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
                     <li >
                         <a rel="next" href="../rectes/">
                             <i class="fa fa-arrow-left"></i> Previous
@@ -119,24 +182,64 @@
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
+                
+                
             </ul>
         </div>
     </div>
 </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tema-7-llocs-geometrics">Tema 7: Llocs geomètrics</a></li>
-            <li><a href="#introduccio">Introducció</a></li>
-            <li><a href="#la-circumferencia">La circumferència</a></li>
-            <li><a href="#la-parabola">La paràbola</a></li>
-            <li><a href="#lellipse">L'el.lipse</a></li>
-            <li><a href="#lhiperbola">L'hipèrbola</a></li>
-            <li><a href="#excentricitat-duna-corba-conica">Excentricitat d'una corba cònica</a></li>
+    
+        <li class="first-level active"><a href="#tema-7-llocs-geometrics">Tema 7: Llocs geomètrics</a></li>
+        
+            <li class="second-level"><a href="#introduccio">Introducció</a></li>
+            
+        
+            <li class="second-level"><a href="#la-circumferencia">La circumferència</a></li>
+            
+                <li class="third-level"><a href="#posicions-relatives-entre-recta-i-circumferencia">Posicions relatives entre recta i circumferència</a></li>
+            
+                <li class="third-level"><a href="#posicions-relatives-entre-circumferencies">Posicions relatives entre circumferències</a></li>
+            
+                <li class="third-level"><a href="#posicions-relatives-entre-un-punt-i-una-circumferencia">Posicions relatives entre un punt i una circumferència</a></li>
+            
+        
+            <li class="second-level"><a href="#la-parabola">La paràbola</a></li>
+            
+                <li class="third-level"><a href="#equacio-reduida-de-la-parabola">Equació reduïda de la paràbola</a></li>
+            
+                <li class="third-level"><a href="#equacio-de-la-parabola-deix-parallel-a-leix-dabscisses-o-dordenades">Equació de la paràbola d'eix paral.lel a l'eix d'abscisses o d'ordenades</a></li>
+            
+        
+            <li class="second-level"><a href="#lellipse">L'el.lipse</a></li>
+            
+                <li class="third-level"><a href="#relacio-entre-els-parametres-a-b-i-c-duna-ellipse">Relació entre els paràmetres a, b i c d'una el.lipse</a></li>
+            
+                <li class="third-level"><a href="#equacio-reduida-de-lellipse">Equació reduïda de l'el.lipse</a></li>
+            
+                <li class="third-level"><a href="#equacio-duna-ellipse-amb-eixos-parallels-als-eixos-de-coordenades">Equació d'una el.lipse amb eixos paral.lels als eixos de coordenades</a></li>
+            
+        
+            <li class="second-level"><a href="#lhiperbola">L'hipèrbola</a></li>
+            
+                <li class="third-level"><a href="#equacio-reduida-duna-hiperbola">Equació reduïda d'una hipèrbola</a></li>
+            
+                <li class="third-level"><a href="#assimptotes-duna-hiperbola-amb-centre-lorigen-de-coordenades">Assímptotes d'una hipèrbola amb centre l'origen de coordenades</a></li>
+            
+                <li class="third-level"><a href="#equacio-duna-hiperbola-amb-eixos-parallels-als-eixos-de-coordenades">Equació d'una hipèrbola amb eixos paral.lels als eixos de coordenades</a></li>
+            
+        
+            <li class="second-level"><a href="#excentricitat-duna-corba-conica">Excentricitat d'una corba cònica</a></li>
+            
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
 
 <h1 id="tema-7-llocs-geometrics">Tema 7: Llocs geomètrics</h1>
 <h2 id="introduccio">Introducció</h2>
@@ -148,150 +251,190 @@
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2575689/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>Considerem ara una circumferència de centre $C(a,b)$ i radi $r$. Anem a veure quina equació han de complir els punts d'aquesta circumferència, $P(x,y)$. Si pensem en el triangle rectangle anterior, el catet de la base mesura necessàriament $x-a$ i el catet de l'altura $y-b$. Si apliquem el teorema de Pitàgores es compleix que:</p>
+<p>Considerem ara una circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script>. Anem a veure quina equació han de complir els punts d'aquesta circumferència, <script type="math/tex">P(x,y)</script>. Si pensem en el triangle rectangle anterior, el catet de la base mesura necessàriament <script type="math/tex">x-a</script> i el catet de l'altura <script type="math/tex">y-b</script>. Si apliquem el teorema de Pitàgores es compleix que:</p>
 <blockquote>
-<p>$$(x-a)^2+(x-b)^2=r^2$$</p>
+<p>
+<script type="math/tex; mode=display">(x-a)^2+(x-b)^2=r^2</script>
+</p>
 </blockquote>
-<p>Aquesta és l'<strong>equació reduïda de la circumferència de centre $C(a,b)$ i radi $r$</strong>.</p>
+<p>Aquesta és l'<strong>equació reduïda de la circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script></strong>.</p>
 <p>Si desenvolupem aquesta equació fent els quadrats obtenim:</p>
-<p>$$
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-x^2+y^2-2ax-2by+a^2+b^2-r^2&amp;=0\
-m \equiv -2a \
-n \equiv -2b \
+x^2+y^2-2ax-2by+a^2+b^2-r^2&=0\\
+m \equiv -2a \\
+n \equiv -2b \\
 p \equiv a^2+b^2-r^2
 \end{aligned}
-\right}
+\right\}
 \rightarrow x^2+y^2+mx+ny+p=0
-$$</p>
-<p>Per tant, amb aquesta nova forma de l'equació d'una circumferència, <strong>l'equació general</strong>, els coeficients de $x$ i $y$ ens donen el centre de la circumferència $C(a,b)$ i el terme independent $p$ ens donarà el radi.</p>
+</script>
+</p>
+<p>Per tant, amb aquesta nova forma de l'equació d'una circumferència, <strong>l'equació general</strong>, els coeficients de <script type="math/tex">x</script> i <script type="math/tex">y</script> ens donen el centre de la circumferència <script type="math/tex">C(a,b)</script> i el terme independent <script type="math/tex">p</script> ens donarà el radi.</p>
 <p><strong>Exemple 1</strong></p>
-<p>Troba el centre i el radi de la circumferència: $x^2+y^2-4x+2y-4=0$.</p>
-<p>Els coeficients de $x$ i de $y$ ens donaran el centre de la circumferència:</p>
-<p>\begin{align}
--4=-2a \rightarrow a=2\
+<p>Troba el centre i el radi de la circumferència: <script type="math/tex">x^2+y^2-4x+2y-4=0</script>.</p>
+<p>Els coeficients de <script type="math/tex">x</script> i de <script type="math/tex">y</script> ens donaran el centre de la circumferència:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+-4=-2a \rightarrow a=2\\
 2=-2b \rightarrow b=-1
-\end{align}</p>
-<p>El centre és doncs el punt $C(2,-1)$. Anem a veure quin serà el radi. Això bé donat pel terme independent de l'equació:</p>
-<p>$$-4=a^2+b^2-r^2 \rightarrow -4= 4+1-r^2 \rightarrow r=\sqrt{9}=3$$</p>
+\end{align}</script>
+</p>
+<p>El centre és doncs el punt <script type="math/tex">C(2,-1)</script>. Anem a veure quin serà el radi. Això bé donat pel terme independent de l'equació:</p>
+<p>
+<script type="math/tex; mode=display">-4=a^2+b^2-r^2 \rightarrow -4= 4+1-r^2 \rightarrow r=\sqrt{9}=3</script>
+</p>
 <h3 id="posicions-relatives-entre-recta-i-circumferencia">Posicions relatives entre recta i circumferència</h3>
-<p>Donades una recta i una circumferència, ens podem trobar en 3 situacions diferents. El que farem serà resoldre el sistema de dues equacions i dues incògnites format per l'equació de la circumferència per una banda i l'equació de la recta per l'altra. Si considerem que la circumferència té centre $C(a,b)$ i radi $r$ i la recta l'anomenem $s$ tenim que una circumferència i una recta poden ser:</p>
+<p>Donades una recta i una circumferència, ens podem trobar en 3 situacions diferents. El que farem serà resoldre el sistema de dues equacions i dues incògnites format per l'equació de la circumferència per una banda i l'equació de la recta per l'altra. Si considerem que la circumferència té centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script> i la recta l'anomenem <script type="math/tex">s</script> tenim que una circumferència i una recta poden ser:</p>
 <ol>
 <li>
 <p><strong>Exteriors</strong>, no es tallen:</p>
 <ol>
 <li>el sistema no té solució</li>
-<li>$d(C,s)&gt;r$</li>
+<li>
+<script type="math/tex">d(C,s)>r</script>
+</li>
 </ol>
 </li>
 <li>
 <p><strong>Tangents</strong>, la recta toca a la circumferència en només un punt:</p>
 <ol>
-<li>el sistema té només una solució (parella de valors $(x,y)$</li>
-<li>$d(C,s)=r$</li>
+<li>el sistema té només una solució (parella de valors <script type="math/tex">(x,y)</script>
+</li>
+<li>
+<script type="math/tex">d(C,s)=r</script>
+</li>
 </ol>
 </li>
 <li>
 <p><strong>Secants</strong>, la recta talla a la circumferència en dos punts:</p>
 <ol>
-<li>El sistema té dues solucions o parelles de valors $(x,y)$</li>
-<li>$d(C,s)&lt;r$</li>
-<li>En aquest cas, diem que la distància entre la circumferència i la recta és $0$ perquè són secants.</li>
+<li>El sistema té dues solucions o parelles de valors <script type="math/tex">(x,y)</script>
+</li>
+<li>
+<script type="math/tex">d(C,s)<r</script>
+</li>
+<li>En aquest cas, diem que la distància entre la circumferència i la recta és <script type="math/tex">0</script> perquè són secants.</li>
 </ol>
 </li>
 </ol>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2577927/width/1938/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <h3 id="posicions-relatives-entre-circumferencies">Posicions relatives entre circumferències</h3>
-<p>Considerem dues circumferències amb centres $C$ i $C^\prime$ i radis $r$ i $r^\prime$ respectivament. Les seves equacions formen un sistema de segon grau. Ens podem trobar amb 5 casos diferents:</p>
+<p>Considerem dues circumferències amb centres <script type="math/tex">C</script> i <script type="math/tex">C^\prime</script> i radis <script type="math/tex">r</script> i <script type="math/tex">r^\prime</script> respectivament. Les seves equacions formen un sistema de segon grau. Ens podem trobar amb 5 casos diferents:</p>
 <ol>
 <li>
 <p>Les circumferències són <strong>exteriors</strong>, no es tallen:</p>
 <ol>
 <li>el sistema no té solució</li>
-<li>$d(C,C^\prime)&gt;r+r^\prime$</li>
+<li>
+<script type="math/tex">d(C,C^\prime)>r+r^\prime</script>
+</li>
 </ol>
 </li>
 <li>
 <p>Les circumferències són <strong>interiors</strong>:</p>
 <ol>
 <li>el sistema no té solució</li>
-<li>$d(C,C^\prime)&lt;r-r^\prime$</li>
-<li>Un cas particular serien les circumferències concèntriques si $C=C^\prime$</li>
+<li>
+<script type="math/tex">d(C,C^\prime)<r-r^\prime</script>
+</li>
+<li>Un cas particular serien les circumferències concèntriques si <script type="math/tex">C=C^\prime</script>
+</li>
 </ol>
 </li>
 <li>
 <p>Les circumferències són <strong>tangents exteriors</strong>:</p>
 <ol>
 <li>El sistema té una solució</li>
-<li>$d(C,C^\prime)=r+r^\prime$</li>
+<li>
+<script type="math/tex">d(C,C^\prime)=r+r^\prime</script>
+</li>
 </ol>
 </li>
 <li>Les circumferències són <strong>tangents interiors</strong>:<ol>
 <li>El sistema té una solució</li>
-<li>$d(C,C^\prime)=r-r^\prime$</li>
+<li>
+<script type="math/tex">d(C,C^\prime)=r-r^\prime</script>
+</li>
 </ol>
 </li>
 <li>Les circumferències són <strong>secants</strong>:<ol>
 <li>El sistema té dues solucions</li>
-<li>$r-r^\prime&lt;d(C,C^\prime)&lt;r+r^\prime$</li>
+<li>
+<script type="math/tex">r-r^\prime<d(C,C^\prime)<r+r^\prime</script>
+</li>
 </ol>
 </li>
 </ol>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2607485/width/1920/height/941/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p><strong>Exemple 2</strong></p>
-<p>Trobeu la posició relativa entre les circumferències $x^2+y^2=4$ i $(x-3)^2+(y+5)^2=5$.</p>
-<p>La primera circumferència té centre el punt $C(0,0)$ i radi "r=2" i la segona té centre el punt $C^\prime(3,-5)$ i radi $r^\prime=\sqrt{5}$. Si solucionem el sistema veurem que és incompatible. Com que no té solució ara només ens cal veure si són exteriors o interiors:</p>
-<p>$$
+<p>Trobeu la posició relativa entre les circumferències <script type="math/tex">x^2+y^2=4</script> i <script type="math/tex">(x-3)^2+(y+5)^2=5</script>.</p>
+<p>La primera circumferència té centre el punt <script type="math/tex">C(0,0)</script> i radi "r=2" i la segona té centre el punt <script type="math/tex">C^\prime(3,-5)</script> i radi <script type="math/tex">r^\prime=\sqrt{5}</script>. Si solucionem el sistema veurem que és incompatible. Com que no té solució ara només ens cal veure si són exteriors o interiors:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-d(C,C^\prime)=|\vec{C C^\prime}|=\sqrt{(3-0)^2+(-5-0)^2}=\sqrt{34}\sim 5.83\
+d(C,C^\prime)=|\vec{C C^\prime}|=\sqrt{(3-0)^2+(-5-0)^2}=\sqrt{34}\sim 5.83\\
 r+r^\prime=2+\sqrt{5}\sim 4.47
 \end{aligned}
-\right}
-\rightarrow d(C,C^\prime) &gt; r+r^\prime \rightarrow \text{són exteriors}
-$$</p>
+\right\}
+\rightarrow d(C,C^\prime) > r+r^\prime \rightarrow \text{són exteriors}
+</script>
+</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2607581/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <h3 id="posicions-relatives-entre-un-punt-i-una-circumferencia">Posicions relatives entre un punt i una circumferència</h3>
-<p>En el cas d'un punt $P(x,y)$ i una circumferència de radi $r$ i centre $C(a,b)$ ens podem trobar 3 casos:</p>
+<p>En el cas d'un punt <script type="math/tex">P(x,y)</script> i una circumferència de radi <script type="math/tex">r</script> i centre <script type="math/tex">C(a,b)</script> ens podem trobar 3 casos:</p>
 <ol>
-<li>El punt és exterior a la circumferència: $d(P,C)&gt;r$</li>
-<li>El punt pertany a la circumferència: $d(P,C)=r$</li>
-<li>El punt és interior a la circumferènccia: $d(P,C)&lt;r$</li>
+<li>El punt és exterior a la circumferència: <script type="math/tex">d(P,C)>r</script>
+</li>
+<li>El punt pertany a la circumferència: <script type="math/tex">d(P,C)=r</script>
+</li>
+<li>El punt és interior a la circumferènccia: <script type="math/tex">d(P,C)<r</script>
+</li>
 </ol>
 <p><strong>Exemple 3</strong></p>
-<p>Donat el punt $P(9,-1)$ exterior a la circumferència $x^2+(y+4)^2=9$, trobeu les rectes tangents a la circumferència des d'aquest punt.</p>
+<p>Donat el punt <script type="math/tex">P(9,-1)</script> exterior a la circumferència <script type="math/tex">x^2+(y+4)^2=9</script>, trobeu les rectes tangents a la circumferència des d'aquest punt.</p>
 <p>Anem a veure si entenem el problema. Sempre que tinguem  un punt exterior a una circumferència es poden traçar dues rectes tangents des del punt fins a la circumferència.</p>
 <ol>
 <li>
-<p>Per començar ens cal trobar l'equació del <em>feix de rectes</em> que passen pel punt $P(9,-1)$:</p>
+<p>Per començar ens cal trobar l'equació del <em>feix de rectes</em> que passen pel punt <script type="math/tex">P(9,-1)</script>:</p>
 <ul>
-<li>Sabem que l'equació de la recta té la forma $y=mx+n$. Totes les rectes que passen pel punt $P(9,-1)$ tenen la forma:</li>
+<li>Sabem que l'equació de la recta té la forma <script type="math/tex">y=mx+n</script>. Totes les rectes que passen pel punt <script type="math/tex">P(9,-1)</script> tenen la forma:</li>
 </ul>
-<p>$$-1=9m+n \Rightarrow n=-1-9m \Rightarrow y=mx-1-9m \Rightarrow y=m(x-9)+1 \Rightarrow m(x-9)-y-1=0$$</p>
+<p>
+<script type="math/tex; mode=display">-1=9m+n \Rightarrow n=-1-9m \Rightarrow y=mx-1-9m \Rightarrow y=m(x-9)+1 \Rightarrow m(x-9)-y-1=0</script>
+</p>
 </li>
 <li>
 <p>Una manera de solucionar el problema és <strong>exigir que la distància de la recta al centre de la circumferència sigui igual al radi</strong> i d'aquesta manera ens assegurem que recta i circumferència són tangents.</p>
 <ul>
 <li>Anem a imposar aquesta condició:</li>
 </ul>
-<p>$$d(recta, C)=\frac{|m(0-9)+4-1|}{\sqrt{m^2+(-1)^2}}=3$$</p>
+<p>
+<script type="math/tex; mode=display">d(recta, C)=\frac{|m(0-9)+4-1|}{\sqrt{m^2+(-1)^2}}=3</script>
+</p>
 <ul>
 <li>Per a solucionar una equació amb valors absolut hem de considerar els 2 casos possibles:</li>
 </ul>
-<p>$$\frac{|3-9m|}{\sqrt{m^2+1}}=3 \begin{cases} \frac{3-9m}{\sqrt{m^2+1}}=3 \ \frac{3-9m}{\sqrt{m^2+1}}=-3
-  \end{cases}$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{|3-9m|}{\sqrt{m^2+1}}=3 \begin{cases} \frac{3-9m}{\sqrt{m^2+1}}=3 \\ \frac{3-9m}{\sqrt{m^2+1}}=-3
+  \end{cases}</script>
+</p>
 <ul>
 <li>Agafem i desenvolupem la solució positiva:</li>
 </ul>
-<p>\begin{align}
-  \frac{3-9m}{\sqrt{m^2+1}}&amp;=3\
-  (3-9m)^2&amp;=(3\sqrt{m^2+1})^2\
-  81m^2-54m+9&amp;=9m^2+9\
-  72m^2-54m&amp;=0\
-  18m(4m-3)&amp;=0 \begin{cases} m=0 \ m=\frac{3}{4} \end{cases}
-  \end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+  \frac{3-9m}{\sqrt{m^2+1}}&=3\\
+  (3-9m)^2&=(3\sqrt{m^2+1})^2\\
+  81m^2-54m+9&=9m^2+9\\
+  72m^2-54m&=0\\
+  18m(4m-3)&=0 \begin{cases} m=0 \\ m=\frac{3}{4} \end{cases}
+  \end{align}</script>
+</p>
 <ul>
 <li>Fixeu-vos que si agafem l'opció negativa obtenim les mateixes solucions, ja que a l'elevar al quadrat el signe negatiu esdevé positiu.</li>
 </ul>
@@ -301,26 +444,30 @@ $$</p>
 <ul>
 <li>Solucionem el sistema per substitució:</li>
 </ul>
-<p>$$
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-y=m(x-9)-1\
+y=m(x-9)-1\\
 x^2+(y+4)^2=9
 \end{aligned}
-\right}
+\right\}
 \Rightarrow x^2+\Big( m(x-9)-1+4 \Big)^2=9 \Rightarrow ... \Rightarrow (1+m^2)x^2+2m(3-9m)x+(3-9m)^2-9=0
-$$</p>
+</script>
+</p>
 <ul>
-<li>Ara ens cal exigir que només hi hagi una parella de valors $(x,y)$ que siguin solució. Per fer-ho, igualarem el discriminant de l'equació de segon grau ($b^2-4ac$) a zero:</li>
+<li>Ara ens cal exigir que només hi hagi una parella de valors <script type="math/tex">(x,y)</script> que siguin solució. Per fer-ho, igualarem el discriminant de l'equació de segon grau (<script type="math/tex">b^2-4ac</script>) a zero:</li>
 </ul>
-<p>\begin{align}
-\Big(2m(3-9m)\Big)^2-4(1+m^2)\Big((3-9m)^2-9\Big)&amp;=0\
-4m^2(3-9m)^2-(4+4m^2)(9+81m^2-54m-9)&amp;=0\
-4m^2(9+81m^2-54m)-324 m^2+216m-324 m^4+216 m^3&amp;=0\
-36m^2+324m^4-216m^3-324 m^2+216m-324 m^4+216m^3&amp;=0\
-216m-288m^2&amp;=0\
--72m(4m-3)&amp;=0\
-m(4m-3)&amp;=0 \begin{cases} m=0 \ m=\frac{3}{4} \end{cases}
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\Big(2m(3-9m)\Big)^2-4(1+m^2)\Big((3-9m)^2-9\Big)&=0\\
+4m^2(3-9m)^2-(4+4m^2)(9+81m^2-54m-9)&=0\\
+4m^2(9+81m^2-54m)-324 m^2+216m-324 m^4+216 m^3&=0\\
+36m^2+324m^4-216m^3-324 m^2+216m-324 m^4+216m^3&=0\\
+216m-288m^2&=0\\
+-72m(4m-3)&=0\\
+m(4m-3)&=0 \begin{cases} m=0 \\ m=\frac{3}{4} \end{cases}
+\end{align}</script>
+</p>
 <ul>
 <li>Evidentment obtenim la mateixa solució.</li>
 </ul>
@@ -329,303 +476,390 @@ m(4m-3)&amp;=0 \begin{cases} m=0 \ m=\frac{3}{4} \end{cases}
 <p>Tant si triem l'opció 1 o la 2, ens caldrà finalment trobar l'equacions de les rectes tangents:</p>
 </li>
 </ol>
-<p>$$
-y=m(x-9)-1 \begin{cases} m=0 \Rightarrow n=-1 \Rightarrow y= -1 \ m=\frac{3}{4} \Rightarrow n=-\frac{31}{4} \Rightarrow y= \frac{3}{4}x-\frac{31}{4} \end{cases}
-$$</p>
+<p>
+<script type="math/tex; mode=display">
+y=m(x-9)-1 \begin{cases} m=0 \Rightarrow n=-1 \Rightarrow y= -1 \\ m=\frac{3}{4} \Rightarrow n=-\frac{31}{4} \Rightarrow y= \frac{3}{4}x-\frac{31}{4} \end{cases}
+</script>
+</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2625505/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <h4 id="potencia-dun-punt-respecte-duna-circumferencia">Potència d'un punt respecte d'una circumferència</h4>
 <p>Considerem un punt exterior a una circumferència i tracem dues secants d'aquest punt a la circumferència tal i com mostra el dibuix.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2639115/width/1920/height/934/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>Considerem els triangles $PAB^\prime$ i $PA^\prime B$. Els angles inscrits a la circumferència $B^\prime$ i $A^\prime$ són iguals, $B^\prime=A^\prime$ ja que abarquen el mateix arc de circumferència $\widehat{BA}$. Com que els dos triangles comparteixen un angle $P$, i tenen 2 angles iguals, el tercer ha de ser necessàriament igual (la suma d'angles d'un triangle és sempre $180^o$): $B=A$.</p>
+<p>Considerem els triangles <script type="math/tex">PAB^\prime</script> i <script type="math/tex">PA^\prime B</script>. Els angles inscrits a la circumferència <script type="math/tex">B^\prime</script> i <script type="math/tex">A^\prime</script> són iguals, <script type="math/tex">B^\prime=A^\prime</script> ja que abarquen el mateix arc de circumferència <script type="math/tex">\widehat{BA}</script>. Com que els dos triangles comparteixen un angle <script type="math/tex">P</script>, i tenen 2 angles iguals, el tercer ha de ser necessàriament igual (la suma d'angles d'un triangle és sempre <script type="math/tex">180^o</script>): <script type="math/tex">B=A</script>.</p>
 <p>Per tant, si dos triangles tenen els seus 3 angles iguals 2 a 2 vol dir que són <a href="http://recursostic.educacion.es/secundaria/edad/4esomatematicasB_cat/semejanza/quincena6_contenidos_1c.htm">triangles semblants</a> i en conseqüència els seus costats seran proporcionals:</p>
-<p>$$\frac{PA}{PB}=\frac{PB^\prime}{PA^\prime}\Rightarrow PA\cdot PA^\prime=PB\cdot PB^\prime$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{PA}{PB}=\frac{PB^\prime}{PA^\prime}\Rightarrow PA\cdot PA^\prime=PB\cdot PB^\prime</script>
+</p>
 <p>Aquest producte de distàncies es defineix com a la <strong>potència d'un punt respecte una circumferència</strong>:</p>
-<p>$$p=PA\cdot PA^\prime$$</p>
-<p>Considerem ara una recta secant des d'un punt exterior $P(x_0,y_0)$ que passi pel centre d'una circumferència de centre $C(a,b)$ i radi $r$. Definim $d$ com la distància del punt $P$ al centre $C$.</p>
+<p>
+<script type="math/tex; mode=display">p=PA\cdot PA^\prime</script>
+</p>
+<p>Considerem ara una recta secant des d'un punt exterior <script type="math/tex">P(x_0,y_0)</script> que passi pel centre d'una circumferència de centre <script type="math/tex">C(a,b)</script> i radi <script type="math/tex">r</script>. Definim <script type="math/tex">d</script> com la distància del punt <script type="math/tex">P</script> al centre <script type="math/tex">C</script>.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2642273/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>La potència del punt $P$ respecte la circumferència és:</p>
-<p>$$
+<p>La potència del punt <script type="math/tex">P</script> respecte la circumferència és:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-p&amp;=PA\cdot PA^\prime=(d-r)(d+r)=d^2-r^2\
-d&amp;=|\vec{CP}|=\sqrt{(x_0-a)^2+(y_0-b)^2}
+p&=PA\cdot PA^\prime=(d-r)(d+r)=d^2-r^2\\
+d&=|\vec{CP}|=\sqrt{(x_0-a)^2+(y_0-b)^2}
 \end{aligned}
-\right}
+\right\}
 \Rightarrow p=d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2
-$$</p>
+</script>
+</p>
 <p>Per tant, la potència d'un punt respecte una circumferència ens dóna idea de la situació del punt respecte la circumferència:</p>
-<p>$$  p=d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2 \begin{cases} d&gt;r\rightarrow p&gt;0 \Rightarrow \text{p és exterior} \
-d&lt;r\rightarrow p&lt;0 \Rightarrow \text{p és interior} \ d=r\rightarrow p=0 \Rightarrow \text{p pertany a la circumferència}
-\end{cases}$$</p>
+<p>
+<script type="math/tex; mode=display">  p=d^2-r^2=(x_0-a)^2+(y_0-b)^2-r^2 \begin{cases} d>r\rightarrow p>0 \Rightarrow \text{p és exterior} \\
+d<r\rightarrow p<0 \Rightarrow \text{p és interior} \\ d=r\rightarrow p=0 \Rightarrow \text{p pertany a la circumferència}
+\end{cases}</script>
+</p>
 <h2 id="la-parabola">La paràbola</h2>
-<p>A 4t d'eso havíeu treballat les paràboles com la representació gràfica <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_funciones2-JS/index.htm">d'una funció polinòmica de segon grau</a> del tipus $y=f(x)=ax^2+bx+c$. Vèiem que la paràbola és una funció amb simetria parell i que té un vèrtex amb abcissa $(x=-\frac{b}{2a})$.</p>
+<p>A 4t d'eso havíeu treballat les paràboles com la representació gràfica <a href="http://proyectodescartes.org/EDAD/materiales_didacticos/EDAD_4eso_B_funciones2-JS/index.htm">d'una funció polinòmica de segon grau</a> del tipus <script type="math/tex">y=f(x)=ax^2+bx+c</script>. Vèiem que la paràbola és una funció amb simetria parell i que té un vèrtex amb abcissa <script type="math/tex">(x=-\frac{b}{2a})</script>.</p>
 <blockquote>
-<p>La paràbola també es pot entendre però com el <strong>lloc geomètric</strong> dels punts del pla que equidisten d'un punt $F$ anomenat <strong>focus</strong> i d'una recta $r$ anomenada <strong>directriu</strong>.</p>
+<p>La paràbola també es pot entendre però com el <strong>lloc geomètric</strong> dels punts del pla que equidisten d'un punt <script type="math/tex">F</script> anomenat <strong>focus</strong> i d'una recta <script type="math/tex">r</script> anomenada <strong>directriu</strong>.</p>
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2657653/width/986/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>Si mirem al dibuix hi podem veure els elements següents:</p>
 <ol>
-<li><strong>Eix de la paràbola</strong>: és la recta perpendicular a la directriu que passa pel focus. En el cas específic del dibuix és l'eix $x$.</li>
-<li><strong>Vèrtex de la paràbola</strong>: és el punt d'intersecció de la paràbola amb el seu eix. En aquest cas és el punt $(0,0)$.</li>
-<li><strong>Paràmetre</strong>: és la distància del focus $F$ a la directriu $r$. L'anomenem <strong>$p$</strong>.</li>
+<li><strong>Eix de la paràbola</strong>: és la recta perpendicular a la directriu que passa pel focus. En el cas específic del dibuix és l'eix <script type="math/tex">x</script>.</li>
+<li><strong>Vèrtex de la paràbola</strong>: és el punt d'intersecció de la paràbola amb el seu eix. En aquest cas és el punt <script type="math/tex">(0,0)</script>.</li>
+<li><strong>Paràmetre</strong>: és la distància del focus <script type="math/tex">F</script> a la directriu <script type="math/tex">r</script>. L'anomenem <strong><script type="math/tex">p</script></strong>.</li>
 </ol>
 <h3 id="equacio-reduida-de-la-parabola">Equació reduïda de la paràbola</h3>
-<p>Fixem-nos ara en una paràbola com la del dibuix que té el seu eix situat sobre l'eix de les abscisses i el vèrtex a l'origen de coordenades. Com que els punts de la paràbola, i el vèrtex en particular, compleixen la propietat que equidisten del focus i de la directriu, podem afirmar que les coordenades del focus són $F(\frac{p}{2},0)$ i l'equació de la recta directriu és $r:x=-\frac{p}{2}$.</p>
-<p>Si $P(x,y)$ és un punt qualsevol de la paràbola es compleix que: $d(P,r)=d(P,F)$:</p>
-<p>$$
+<p>Fixem-nos ara en una paràbola com la del dibuix que té el seu eix situat sobre l'eix de les abscisses i el vèrtex a l'origen de coordenades. Com que els punts de la paràbola, i el vèrtex en particular, compleixen la propietat que equidisten del focus i de la directriu, podem afirmar que les coordenades del focus són <script type="math/tex">F(\frac{p}{2},0)</script> i l'equació de la recta directriu és <script type="math/tex">r:x=-\frac{p}{2}</script>.</p>
+<p>Si <script type="math/tex">P(x,y)</script> és un punt qualsevol de la paràbola es compleix que: <script type="math/tex">d(P,r)=d(P,F)</script>:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-d(P,r)&amp;=\frac{|x+\frac{p}{2}|}{\sqrt{0^2+1}}\
-d(P,F)&amp;=|\vec{FP}|=\sqrt{(x-\frac{p}{2})^2+y^2}
+d(P,r)&=\frac{|x+\frac{p}{2}|}{\sqrt{0^2+1}}\\
+d(P,F)&=|\vec{FP}|=\sqrt{(x-\frac{p}{2})^2+y^2}
 \end{aligned}
-\right}
+\right\}
 \Rightarrow |x+\frac{p}{2}|=\sqrt{(x-\frac{p}{2})^2+y^2} \Rightarrow x^2+px+\frac{p^2}{4}=x^2-px+\frac{p^2}{4}+y^2
-$$</p>
+</script>
+</p>
 <p>Si simplifiquem tenim <strong>l'equació reduïda de la paràbola</strong>:</p>
 <blockquote>
-<p>$$y^2=2px$$</p>
+<p>
+<script type="math/tex; mode=display">y^2=2px</script>
+</p>
 </blockquote>
-<p>En cas que l'eix estigui situat sobre <strong>l'eix d'ordenades</strong>, el focus seria <strong>$F(0,\frac{p}{2})$</strong> i l'equació de la recta directriu seria <strong>$r:y=-\frac{p}{2}$</strong>. L'equació reduïda de la paràbola seria llavors:</p>
+<p>En cas que l'eix estigui situat sobre <strong>l'eix d'ordenades</strong>, el focus seria <strong><script type="math/tex">F(0,\frac{p}{2})</script></strong> i l'equació de la recta directriu seria <strong><script type="math/tex">r:y=-\frac{p}{2}</script></strong>. L'equació reduïda de la paràbola seria llavors:</p>
 <blockquote>
-<p>$$x^2=2py$$</p>
+<p>
+<script type="math/tex; mode=display">x^2=2py</script>
+</p>
 </blockquote>
 <h3 id="equacio-de-la-parabola-deix-parallel-a-leix-dabscisses-o-dordenades">Equació de la paràbola d'eix paral.lel a l'eix d'abscisses o d'ordenades</h3>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2657815/width/1600/height/951/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>Considerem ara que l'eix de la paràbola és paral.lel a l'eix d'abscisses. El vèrtex ha passat de ser el punt $(0,0)$ al punt $(x_0,y_0)$. Si comparem la nova paràbola amb l'anterior, amb eix l'eix de les abscisses i vèrtex el punt $(0,0)$ veiem que els punts $P(x,y)$ de la nova paràbola seran els de la paràbola anterior $P^\prime(x^\prime, y^\prime)$ però amb una translació $x_0$ en $x$ i $y_0$ en $y$:</p>
-<p>$$
+<p>Considerem ara que l'eix de la paràbola és paral.lel a l'eix d'abscisses. El vèrtex ha passat de ser el punt <script type="math/tex">(0,0)</script> al punt <script type="math/tex">(x_0,y_0)</script>. Si comparem la nova paràbola amb l'anterior, amb eix l'eix de les abscisses i vèrtex el punt <script type="math/tex">(0,0)</script> veiem que els punts <script type="math/tex">P(x,y)</script> de la nova paràbola seran els de la paràbola anterior <script type="math/tex">P^\prime(x^\prime, y^\prime)</script> però amb una translació <script type="math/tex">x_0</script> en <script type="math/tex">x</script> i <script type="math/tex">y_0</script> en <script type="math/tex">y</script>:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-x&amp;=x^\prime+x_0\
-y&amp;=y^\prime+y_0\
+x&=x^\prime+x_0\\
+y&=y^\prime+y_0\\
 \end{aligned}
-\right}
-$$</p>
-<p>Per tant, si l'equació de la paràbola "vella" era $y^{\prime 2}=2px^\prime$ si fem el canvi anterior obtenim:</p>
+\right\}
+</script>
+</p>
+<p>Per tant, si l'equació de la paràbola "vella" era <script type="math/tex">y^{\prime 2}=2px^\prime</script> si fem el canvi anterior obtenim:</p>
 <blockquote>
-<p>$$(y-y_0)^2=2p(x-x_0)$$</p>
+<p>
+<script type="math/tex; mode=display">(y-y_0)^2=2p(x-x_0)</script>
+</p>
 </blockquote>
-<p>que és l'<strong>equació d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i amb vèrtex el punt $(x_0,y_0)$</strong>. Si intercanviem $x$ i $y$ obtenim l'equació d'una paràbola amb eix paral.lel a l'eix d'ordenades:</p>
+<p>que és l'<strong>equació d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i amb vèrtex el punt <script type="math/tex">(x_0,y_0)</script></strong>. Si intercanviem <script type="math/tex">x</script> i <script type="math/tex">y</script> obtenim l'equació d'una paràbola amb eix paral.lel a l'eix d'ordenades:</p>
 <blockquote>
-<p>$$(x-x_0)=2p(y-y_0)$$</p>
+<p>
+<script type="math/tex; mode=display">(x-x_0)=2p(y-y_0)</script>
+</p>
 </blockquote>
 <p>Si desenvolupem les dues expressions anteriors obtenim <strong>l'equació general de la paràbola</strong>:</p>
-<p>\begin{align}
-(y-y_0)^2&amp;=2p(x-x_0)\
-y^2+y_0^2-2yy_0&amp;=2px-2px_0\
--2px&amp;=-y^2+2y_0y-y_0^2-2px_0\
-2px&amp;=y^2-2y_0y+y_0^2+2px_0\
-x&amp;=\frac{1}{2p}y^2-\frac{y_0}{p}y+\big( \frac{y_0^2}{2p}+x_0 \big)
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+(y-y_0)^2&=2p(x-x_0)\\
+y^2+y_0^2-2yy_0&=2px-2px_0\\
+-2px&=-y^2+2y_0y-y_0^2-2px_0\\
+2px&=y^2-2y_0y+y_0^2+2px_0\\
+x&=\frac{1}{2p}y^2-\frac{y_0}{p}y+\big( \frac{y_0^2}{2p}+x_0 \big)
+\end{align}</script>
+</p>
 <blockquote>
-<p>$$x=ay^2+by+c$$</p>
+<p>
+<script type="math/tex; mode=display">x=ay^2+by+c</script>
+</p>
 </blockquote>
 <p>que és l'equació general d'una paràbola amb l'eix paral.lel a l'eix d'abscisses i on</p>
-<p>\begin{align}
-a&amp;=\frac{1}{2p}\
-b&amp;=-\frac{y_0}{p}\
-c&amp;=\frac{y_0^2}{2p}+x_0
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a&=\frac{1}{2p}\\
+b&=-\frac{y_0}{p}\\
+c&=\frac{y_0^2}{2p}+x_0
+\end{align}</script>
+</p>
 <p>El mateix podem fer amb una paràbola amb eix paral.lel a l'eix d'ordenades:</p>
 <blockquote>
-<p>$$y=ax^2+bx+c$$</p>
+<p>
+<script type="math/tex; mode=display">y=ax^2+bx+c</script>
+</p>
 </blockquote>
 <h2 id="lellipse">L'el.lipse</h2>
 <blockquote>
-<p>L'el.lipse és el lloc geomètric de punts del pla que la suma de distàncies a dos punts fixos anomenats focus és constant i es designa $2a$.</p>
+<p>L'el.lipse és el lloc geomètric de punts del pla que la suma de distàncies a dos punts fixos anomenats focus és constant i es designa <script type="math/tex">2a</script>.</p>
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2669619/width/1920/height/933/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>Si mirem el dibuix, podem llistar aquí les característiques de l'el.lipse:</p>
 <ol>
-<li>Focus: punts $F$ i $F^\prime$ sobre l'eix x.</li>
-<li>Distància focal: distància entre els 2 focus. Es designa per $2c$: $|\vec{F^\prime F}|=2c$</li>
-<li>Radis vectors: són els dos segments que uneixen qualsevol punt de l'el.lipse amb cadascun dels focus. La suma dels 2 radis vectors, per definició, és $2a$.</li>
+<li>Focus: punts <script type="math/tex">F</script> i <script type="math/tex">F^\prime</script> sobre l'eix x.</li>
+<li>Distància focal: distància entre els 2 focus. Es designa per <script type="math/tex">2c</script>: <script type="math/tex">|\vec{F^\prime F}|=2c</script>
+</li>
+<li>Radis vectors: són els dos segments que uneixen qualsevol punt de l'el.lipse amb cadascun dels focus. La suma dels 2 radis vectors, per definició, és <script type="math/tex">2a</script>.</li>
 <li>Eix focal: recta que passa pels 2 Focus</li>
-<li>Eix major: és el segment que uneix els punts més allunyats de l'el.lipse, $A$ i $A^\prime$.</li>
-<li>Eix menor: és el segment que uneix els punts més propers de l'el.lipse, $B$ i $B^\prime$.</li>
-<li>Centre: és el punt mig del segment $\overline{FF^\prime}$.</li>
-<li>Vèrtexs: són els punts d'interesecció dels eixos amb l'el.lipse: $A$, $A^\prime$, $B$, $B^\prime$.</li>
-<li>Excentricitat: $e=\frac{c}{a}$.</li>
+<li>Eix major: és el segment que uneix els punts més allunyats de l'el.lipse, <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>.</li>
+<li>Eix menor: és el segment que uneix els punts més propers de l'el.lipse, <script type="math/tex">B</script> i <script type="math/tex">B^\prime</script>.</li>
+<li>Centre: és el punt mig del segment <script type="math/tex">\overline{FF^\prime}</script>.</li>
+<li>Vèrtexs: són els punts d'interesecció dels eixos amb l'el.lipse: <script type="math/tex">A</script>, <script type="math/tex">A^\prime</script>, <script type="math/tex">B</script>, <script type="math/tex">B^\prime</script>.</li>
+<li>Excentricitat: <script type="math/tex">e=\frac{c}{a}</script>.</li>
 </ol>
-<p>Anem a veure quina és la distància entre els dos punts $A$ i $A^\prime$. Com que pertanyen a l'el.lipse compleixen que la suma de les seves distàncies als focus és $2a$:</p>
-<p>$$
+<p>Anem a veure quina és la distància entre els dos punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>. Com que pertanyen a l'el.lipse compleixen que la suma de les seves distàncies als focus és <script type="math/tex">2a</script>:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-\overline{AF}+\overline{AF^\prime}&amp;=2a\
-\overline{A^\prime F}+\overline{A^\prime F^\prime}&amp;=2a
+\overline{AF}+\overline{AF^\prime}&=2a\\
+\overline{A^\prime F}+\overline{A^\prime F^\prime}&=2a
 \end{aligned}
-\right} \overline{AF}+\overline{AF^\prime}+\overline{A^\prime F}+\overline{A^\prime F^\prime}=4a
-$$</p>
-<p>Però també es compleix que: $\overline{AF}+\overline{A^\prime F}=\overline{AF}+\overline{F A^\prime}= \overline{A A^\prime}$. El mateix passa amb: $\overline{AF^\prime}+\overline{A^\prime F^\prime}=\overline{AF^\prime}+\overline{F^\prime A^\prime}= \overline{A A^\prime}$</p>
-<p>Per tant, si posem això a l'expressió de dalt, trobem que la distància entre els punts $A$ i $A^\prime$ és:</p>
-<p>$$d(A A^\prime)=2a$$</p>
-<p>Podem fer un procediment anàleg pels punts $B$ i $B^\prime$ i obtindrem:</p>
-<p>$$d(B B^\prime)=2b$$</p>
-<p>D'aquí es dedueix també que l'excentricitat d'una el.lipse és un nombre entre $0$ i $1$, ja que $c&lt;a$:</p>
-<p>$$0&lt;e=\frac{c}{a}&lt;1$$</p>
-<h3 id="relacio-entre-els-parametres-a-b-i-c-duna-ellipse">Relació entre els paràmetres $a$, $b$ i $c$ d'una el.lipse</h3>
+\right\} \overline{AF}+\overline{AF^\prime}+\overline{A^\prime F}+\overline{A^\prime F^\prime}=4a
+</script>
+</p>
+<p>Però també es compleix que: <script type="math/tex">\overline{AF}+\overline{A^\prime F}=\overline{AF}+\overline{F A^\prime}= \overline{A A^\prime}</script>. El mateix passa amb: <script type="math/tex">\overline{AF^\prime}+\overline{A^\prime F^\prime}=\overline{AF^\prime}+\overline{F^\prime A^\prime}= \overline{A A^\prime}</script>
+</p>
+<p>Per tant, si posem això a l'expressió de dalt, trobem que la distància entre els punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script> és:</p>
+<p>
+<script type="math/tex; mode=display">d(A A^\prime)=2a</script>
+</p>
+<p>Podem fer un procediment anàleg pels punts <script type="math/tex">B</script> i <script type="math/tex">B^\prime</script> i obtindrem:</p>
+<p>
+<script type="math/tex; mode=display">d(B B^\prime)=2b</script>
+</p>
+<p>D'aquí es dedueix també que l'excentricitat d'una el.lipse és un nombre entre <script type="math/tex">0</script> i <script type="math/tex">1</script>, ja que <script type="math/tex">c<a</script>:</p>
+<p>
+<script type="math/tex; mode=display">0<e=\frac{c}{a}<1</script>
+</p>
+<h3 id="relacio-entre-els-parametres-a-b-i-c-duna-ellipse">Relació entre els paràmetres <script type="math/tex">a</script>, <script type="math/tex">b</script> i <script type="math/tex">c</script> d'una el.lipse</h3>
 <p>Si ens fixem una mica més en detall amb l'el.lipse podem veure que:</p>
 <ul>
 <li>
-<p>Com que el punt $B$ pertany a l'el.lipse compleix: $\overline{BF^\prime}+\overline{BF}=2a\Rightarrow BF^\prime=BF=a$</p>
+<p>Com que el punt <script type="math/tex">B</script> pertany a l'el.lipse compleix: <script type="math/tex">\overline{BF^\prime}+\overline{BF}=2a\Rightarrow BF^\prime=BF=a</script>
+</p>
 </li>
 <li>
-<p>Si ens fixem en l'eix menor: $\overline{B B^\prime}=2b \Rightarrow \overline{O B^\prime}=\overline{OB}=b$</p>
+<p>Si ens fixem en l'eix menor: <script type="math/tex">\overline{B B^\prime}=2b \Rightarrow \overline{O B^\prime}=\overline{OB}=b</script>
+</p>
 </li>
 </ul>
-<p>Com que $a$, $b$ i $c$ formen un triangle rectangle es relacionen a través del Teorema de Pitàgores:</p>
+<p>Com que <script type="math/tex">a</script>, <script type="math/tex">b</script> i <script type="math/tex">c</script> formen un triangle rectangle es relacionen a través del Teorema de Pitàgores:</p>
 <blockquote>
-<p>$$a^2=b^2+c^2$$</p>
+<p>
+<script type="math/tex; mode=display">a^2=b^2+c^2</script>
+</p>
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2671775/width/800/height/600/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="600px" style="border:0px;"> </iframe>
 
 <h3 id="equacio-reduida-de-lellipse">Equació reduïda de l'el.lipse</h3>
-<p>Considerem una el.lipse centrada en l'origen de coordenades i amb els seus eixos coincidents amb els eixos cartesians, com la del dibuixa anterior. Si $P(x,y)$ és un punt que pertany a l'el.lipse i $F'(-c,0)$ i $F(c,0)$ són els focus de l'el.lipse es compleix que:</p>
-<p>$$
+<p>Considerem una el.lipse centrada en l'origen de coordenades i amb els seus eixos coincidents amb els eixos cartesians, com la del dibuixa anterior. Si <script type="math/tex">P(x,y)</script> és un punt que pertany a l'el.lipse i <script type="math/tex">F'(-c,0)</script> i <script type="math/tex">F(c,0)</script> són els focus de l'el.lipse es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-d(P,F)+d(P,F^\prime)&amp;=2a\
-d(P,F)=|\vec{PF}|=\sqrt{(x-c)^2+y^2}\
+d(P,F)+d(P,F^\prime)&=2a\\
+d(P,F)=|\vec{PF}|=\sqrt{(x-c)^2+y^2}\\
 d(P,F^\prime)=|\vec{PF^\prime}|=\sqrt{(x+c)^2+y^2}
 \end{aligned}
-\right} \sqrt{(x-c)^2+y^2}+\sqrt{(x+c)^2+y^2}=2a
-$$</p>
+\right\} \sqrt{(x-c)^2+y^2}+\sqrt{(x+c)^2+y^2}=2a
+</script>
+</p>
 <p>Deixem un radical en una banda i elevem al quadrat a banda i banda i operem:</p>
-<p>\begin{align}
-\Big(\sqrt{(x-c)^2+y^2} \Big)^2&amp;=\Big(2a-\sqrt{(x+c)^2+y^2} \Big)^2 \
-(x-c)^2+y^2&amp;=4a^2+(x+c)^2+y^2-4a\sqrt{(x+c)^2+y^2}\
-4a \sqrt{(x+c)^2+y^2}&amp;=4a^2+x^2+c^2+2xc-x^2-c^2+2xc\
-4a \sqrt{(x+c)^2+y^2}&amp;=4a^2+4xc\
-\Big( a \sqrt{(x+c)^2+y^2}\Big)^2&amp;=(a^2+xc)^2\
-a^2 \Big( (x+c)^2+y^2  \Big)&amp;=a^4+x^2c^2+2a^2 xc\
-a^2 \Big( x^2+c^2+2xc+y^2  \Big)&amp;=a^4+x^2c^2+2a^2 xc\
-a^2x^2+a^2c^2+2a^2xc+a^2y^2&amp;=a^4+x^2c^2+2a^2xc\
-(a^2-c^2)x^2+a^2y^2&amp;=a^2(a^2-c^2)
-\end{align}</p>
-<p>Com que es compleix $a^2=b^2+c^2$, llavors l'expressió anterior es transforma:</p>
-<p>$$b^2x^2+a^2y^2=a^2b^2$$</p>
-<p>Si dividim a banda i banda per $a^2b^2$:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\Big(\sqrt{(x-c)^2+y^2} \Big)^2&=\Big(2a-\sqrt{(x+c)^2+y^2} \Big)^2 \\
+(x-c)^2+y^2&=4a^2+(x+c)^2+y^2-4a\sqrt{(x+c)^2+y^2}\\
+4a \sqrt{(x+c)^2+y^2}&=4a^2+x^2+c^2+2xc-x^2-c^2+2xc\\
+4a \sqrt{(x+c)^2+y^2}&=4a^2+4xc\\
+\Big( a \sqrt{(x+c)^2+y^2}\Big)^2&=(a^2+xc)^2\\
+a^2 \Big( (x+c)^2+y^2  \Big)&=a^4+x^2c^2+2a^2 xc\\
+a^2 \Big( x^2+c^2+2xc+y^2  \Big)&=a^4+x^2c^2+2a^2 xc\\
+a^2x^2+a^2c^2+2a^2xc+a^2y^2&=a^4+x^2c^2+2a^2xc\\
+(a^2-c^2)x^2+a^2y^2&=a^2(a^2-c^2)
+\end{align}</script>
+</p>
+<p>Com que es compleix <script type="math/tex">a^2=b^2+c^2</script>, llavors l'expressió anterior es transforma:</p>
+<p>
+<script type="math/tex; mode=display">b^2x^2+a^2y^2=a^2b^2</script>
+</p>
+<p>Si dividim a banda i banda per <script type="math/tex">a^2b^2</script>:</p>
 <blockquote>
-<p>$$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</script>
+</p>
 </blockquote>
-<p>Si l'eix focal està situat sobre l'eix de les ordenades, les coordenades dels focus són $F(0,c)$ i $F^\prime(0,-c)$ i l'equació esdevé:</p>
+<p>Si l'eix focal està situat sobre l'eix de les ordenades, les coordenades dels focus són <script type="math/tex">F(0,c)</script> i <script type="math/tex">F^\prime(0,-c)</script> i l'equació esdevé:</p>
 <blockquote>
-<p>$$\frac{x^2}{b^2}+\frac{y^2}{a^2}=1$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{x^2}{b^2}+\frac{y^2}{a^2}=1</script>
+</p>
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2672599/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <h3 id="equacio-duna-ellipse-amb-eixos-parallels-als-eixos-de-coordenades">Equació d'una el.lipse amb eixos paral.lels als eixos de coordenades</h3>
-<p>Igual que passava amb el cas de la paràbola, podem escriure l'equació d'una el.lipse amb eixos paral.lels als eixos d'ordenades i centre el punt $C(x_0,y_0)$. Llavors aplicarem una translació igual que fèiem abans:</p>
-<p>\begin{align}
-\frac{(x-x_o)^2}{a^2}+\frac{(y-y_0)^2}{b^2}&amp;=1 \text{   Eix focal paral.lel a l'eix d'abscisses}\
-\frac{(x-x_o)^2}{b^2}+\frac{(y-y_0)^2}{a^2}&amp;=1 \text{   Eix focal paral.lel a l'eix d'ordenades}
-\end{align}</p>
+<p>Igual que passava amb el cas de la paràbola, podem escriure l'equació d'una el.lipse amb eixos paral.lels als eixos d'ordenades i centre el punt <script type="math/tex">C(x_0,y_0)</script>. Llavors aplicarem una translació igual que fèiem abans:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{(x-x_o)^2}{a^2}+\frac{(y-y_0)^2}{b^2}&=1 \text{   Eix focal paral.lel a l'eix d'abscisses}\\
+\frac{(x-x_o)^2}{b^2}+\frac{(y-y_0)^2}{a^2}&=1 \text{   Eix focal paral.lel a l'eix d'ordenades}
+\end{align}</script>
+</p>
 <h2 id="lhiperbola">L'hipèrbola</h2>
 <blockquote>
-<p>L'hipèrbola és el lloc geomètric format pel conjunt de punts del pla que la diferència entre les distàncies d'aquest punt a dos punts fixos anomenats focus és constant i igual a $2a$.</p>
+<p>L'hipèrbola és el lloc geomètric format pel conjunt de punts del pla que la diferència entre les distàncies d'aquest punt a dos punts fixos anomenats focus és constant i igual a <script type="math/tex">2a</script>.</p>
 </blockquote>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2699703/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
 <p>La hipèrbola té els elements següents:</p>
 <ul>
-<li>Focus de la hipèrbola: són els punts $F$ i $F^\prime$. La distància entre els 2 focus s'anomena $2c$.</li>
-<li>Vèrtexs de la hipèrbola: els punts $A$ i $A^\prime$. La distància entre els vèrtexs és $2a$.</li>
-<li>Eix real: recta que uneix els punts $A$ i $A^\prime$.</li>
-<li>Eix focal: és la recta que uneix els punts $F$ i $F^\prime$.</li>
-<li>Eix imaginari: mediatriu del segment $\overline{FF^\prime}$.</li>
-<li>Centre $O$: punt mitjà del segment $\overline{FF^\prime}$.</li>
-<li>Excentricitat: $e=\frac{c}{a}$. Com que mirant el dibuix $c&gt;a \Rightarrow e&gt;1$.</li>
+<li>Focus de la hipèrbola: són els punts <script type="math/tex">F</script> i <script type="math/tex">F^\prime</script>. La distància entre els 2 focus s'anomena <script type="math/tex">2c</script>.</li>
+<li>Vèrtexs de la hipèrbola: els punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>. La distància entre els vèrtexs és <script type="math/tex">2a</script>.</li>
+<li>Eix real: recta que uneix els punts <script type="math/tex">A</script> i <script type="math/tex">A^\prime</script>.</li>
+<li>Eix focal: és la recta que uneix els punts <script type="math/tex">F</script> i <script type="math/tex">F^\prime</script>.</li>
+<li>Eix imaginari: mediatriu del segment <script type="math/tex">\overline{FF^\prime}</script>.</li>
+<li>Centre <script type="math/tex">O</script>: punt mitjà del segment <script type="math/tex">\overline{FF^\prime}</script>.</li>
+<li>Excentricitat: <script type="math/tex">e=\frac{c}{a}</script>. Com que mirant el dibuix <script type="math/tex">c>a \Rightarrow e>1</script>.</li>
 </ul>
 <h3 id="equacio-reduida-duna-hiperbola">Equació reduïda d'una hipèrbola</h3>
-<p>Anem a trobar com hem fet fins ara l'equació d'una hipèrbola amb centre l'origen de coordenades, eix focal l'eix de les abscisses i eix imaginari l'eix de les ordenades. Si $P(x,y)$ és un punt que pertany a la hipèrbola i $F'(-c,0)$ i $F(c,0)$ són els focus es compleix que:</p>
-<p>$$
+<p>Anem a trobar com hem fet fins ara l'equació d'una hipèrbola amb centre l'origen de coordenades, eix focal l'eix de les abscisses i eix imaginari l'eix de les ordenades. Si <script type="math/tex">P(x,y)</script> és un punt que pertany a la hipèrbola i <script type="math/tex">F'(-c,0)</script> i <script type="math/tex">F(c,0)</script> són els focus es compleix que:</p>
+<p>
+<script type="math/tex; mode=display">
 \left.\begin{aligned}
-d(P,F^\prime)-d(P,F)&amp;=2a\
-d(P,F^\prime)=|\vec{PF^\prime}|=\sqrt{(x+c)^2+y^2}\
+d(P,F^\prime)-d(P,F)&=2a\\
+d(P,F^\prime)=|\vec{PF^\prime}|=\sqrt{(x+c)^2+y^2}\\
 d(P,F)=|\vec{PF}|=\sqrt{(x-c)^2+y^2}
 \end{aligned}
-\right} \sqrt{(x+c)^2+y^2}-\sqrt{(x-c)^2+y^2}=2a
-$$</p>
-<p>(En aquest cas hem exigit que $d(P,F^\prime)-d(P,F)=2a$, però obtindríem el mateix resultat si exigim que $d(P,F)-d(P,F^\prime)=2a$)</p>
+\right\} \sqrt{(x+c)^2+y^2}-\sqrt{(x-c)^2+y^2}=2a
+</script>
+</p>
+<p>(En aquest cas hem exigit que <script type="math/tex">d(P,F^\prime)-d(P,F)=2a</script>, però obtindríem el mateix resultat si exigim que <script type="math/tex">d(P,F)-d(P,F^\prime)=2a</script>)</p>
 <p>Deixem un radical en una banda i elevem al quadrat a banda i banda i operem:</p>
-<p>\begin{align}
-\Big(\sqrt{(x+c)^2+y^2} \Big)^2&amp;=\Big(2a+\sqrt{(x-c)^2+y^2} \Big)^2 \
-(x+c)^2+y^2&amp;=4a^2+(x-c)^2+y^2+4a\sqrt{(x-c)^2+y^2}\
-x^2+c^2+2xc&amp;=4a^2+x^2+c^2-2xc+4a\sqrt{(x-c)^2+y^2}\
-\Big(4xc-4a^2 \Big)^2&amp;=\Big ( 4a \sqrt{(x-c)^2+y^2}\Big)^2\
-x^2c^2+a^4-2xca^2&amp;=a^2\Big( (x-c)^2+y^2\Big)\
-x^2c^2+a^4-2xca^2&amp;=a^2x^2+a^2c^2-2xca^2+a^2y^2\
-x^2(c^2-a^2)-a^2y^2&amp;=a^2(c^2-a^2)
-\end{align}</p>
-<p>Com que es compleix $a^2=b^2+c^2$ (mireu la representació gràfica), llavors l'expressió anterior es transforma:</p>
-<p>$$b^2x^2-a^2y^2=a^2b^2$$</p>
-<p>Si dividim a banda i banda per $a^2b^2$:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\Big(\sqrt{(x+c)^2+y^2} \Big)^2&=\Big(2a+\sqrt{(x-c)^2+y^2} \Big)^2 \\
+(x+c)^2+y^2&=4a^2+(x-c)^2+y^2+4a\sqrt{(x-c)^2+y^2}\\
+x^2+c^2+2xc&=4a^2+x^2+c^2-2xc+4a\sqrt{(x-c)^2+y^2}\\
+\Big(4xc-4a^2 \Big)^2&=\Big ( 4a \sqrt{(x-c)^2+y^2}\Big)^2\\
+x^2c^2+a^4-2xca^2&=a^2\Big( (x-c)^2+y^2\Big)\\
+x^2c^2+a^4-2xca^2&=a^2x^2+a^2c^2-2xca^2+a^2y^2\\
+x^2(c^2-a^2)-a^2y^2&=a^2(c^2-a^2)
+\end{align}</script>
+</p>
+<p>Com que es compleix <script type="math/tex">a^2=b^2+c^2</script> (mireu la representació gràfica), llavors l'expressió anterior es transforma:</p>
+<p>
+<script type="math/tex; mode=display">b^2x^2-a^2y^2=a^2b^2</script>
+</p>
+<p>Si dividim a banda i banda per <script type="math/tex">a^2b^2</script>:</p>
 <blockquote>
-<p>$$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{x^2}{a^2}-\frac{y^2}{b^2}=1</script>
+</p>
 </blockquote>
-<p>Si l'eix focal està situat sobre l'eix de les ordenades, les coordenades dels focus són $F(0,c)$ i $F^\prime(0,-c)$ i l'equació esdevé:</p>
+<p>Si l'eix focal està situat sobre l'eix de les ordenades, les coordenades dels focus són <script type="math/tex">F(0,c)</script> i <script type="math/tex">F^\prime(0,-c)</script> i l'equació esdevé:</p>
 <blockquote>
-<p>$$\frac{y^2}{a^2}-\frac{x^2}{b^2}=1$$</p>
+<p>
+<script type="math/tex; mode=display">\frac{y^2}{a^2}-\frac{x^2}{b^2}=1</script>
+</p>
 </blockquote>
 <h3 id="assimptotes-duna-hiperbola-amb-centre-lorigen-de-coordenades">Assímptotes d'una hipèrbola amb centre l'origen de coordenades</h3>
 <p>Mireu el gràfic següent:</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2718789/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>Hi hem representat dues hipèrboles, en blau la hipèrbola $\frac{x^2}{4}-\frac{y^2}{9}=1$ i en negre la hipèrbola $\frac{y^2}{4}-\frac{x^2}{9}=1$. Si us hi fixeu, cada una d'elles té dues assímptotes tal i com s'indica el dibuix. En general, les hipèrboles amb centre l'origen de coordenades tenen les <strong>assímptotes</strong>:</p>
+<p>Hi hem representat dues hipèrboles, en blau la hipèrbola <script type="math/tex">\frac{x^2}{4}-\frac{y^2}{9}=1</script> i en negre la hipèrbola <script type="math/tex">\frac{y^2}{4}-\frac{x^2}{9}=1</script>. Si us hi fixeu, cada una d'elles té dues assímptotes tal i com s'indica el dibuix. En general, les hipèrboles amb centre l'origen de coordenades tenen les <strong>assímptotes</strong>:</p>
 <ul>
-<li>$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\Rightarrow y=\pm\frac{b}{a}x$</li>
-<li>$\frac{y^2}{a^2}-\frac{x^2}{b^2}=1\Rightarrow y=\pm\frac{a}{b}x$</li>
+<li>
+<script type="math/tex">\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\Rightarrow y=\pm\frac{b}{a}x</script>
+</li>
+<li>
+<script type="math/tex">\frac{y^2}{a^2}-\frac{x^2}{b^2}=1\Rightarrow y=\pm\frac{a}{b}x</script>
+</li>
 </ul>
 <h3 id="equacio-duna-hiperbola-amb-eixos-parallels-als-eixos-de-coordenades">Equació d'una hipèrbola amb eixos paral.lels als eixos de coordenades</h3>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2700029/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe>
 
-<p>Igual que passava amb el cas de l'el.lipse, podem escriure l'equació d'una hipèrbola amb eixos paral.lels als eixos d'ordenades i centre el punt $C(x_0,y_0)$. Llavors aplicarem una translació igual que fèiem abans:</p>
-<p>\begin{align}
-\frac{(x-x_0)^2}{a^2}-\frac{(y-y_0)^2}{b^2}&amp;=1 \text{   Eix focal paral.lel a l'eix d'abscisses}\
-\frac{(y-y_0)^2}{a^2}-\frac{(x-x_0)^2}{b^2}&amp;=1 \text{   Eix focal paral.lel a l'eix d'ordenades}
-\end{align}</p>
+<p>Igual que passava amb el cas de l'el.lipse, podem escriure l'equació d'una hipèrbola amb eixos paral.lels als eixos d'ordenades i centre el punt <script type="math/tex">C(x_0,y_0)</script>. Llavors aplicarem una translació igual que fèiem abans:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\frac{(x-x_0)^2}{a^2}-\frac{(y-y_0)^2}{b^2}&=1 \text{   Eix focal paral.lel a l'eix d'abscisses}\\
+\frac{(y-y_0)^2}{a^2}-\frac{(x-x_0)^2}{b^2}&=1 \text{   Eix focal paral.lel a l'eix d'ordenades}
+\end{align}</script>
+</p>
 <h2 id="excentricitat-duna-corba-conica">Excentricitat d'una corba cònica</h2>
-<p>L'excentricitat és un paràmentre que ens dóna idea del tipus de corba cònica de la qual estem parlant. L'hem definida només per l'el.lipse i la hipèrbola com el quocient: $e=\frac{c}{a}$. Aquest paràmetre ens permet entendre la transició entre una cònica i una altra:</p>
+<p>L'excentricitat és un paràmentre que ens dóna idea del tipus de corba cònica de la qual estem parlant. L'hem definida només per l'el.lipse i la hipèrbola com el quocient: <script type="math/tex">e=\frac{c}{a}</script>. Aquest paràmetre ens permet entendre la transició entre una cònica i una altra:</p>
 <ul>
-<li><strong>$e=0$</strong>: La cònica té un sol focus del qual equidisten tots els punts. Estem en el cas de la <strong>circumferència</strong> i el focus n'ès el centre.</li>
-<li><strong>$0&lt;e&lt;1$</strong>: El focus es desdobla en 2 i el cercle es deforma per esdevenir una <strong>el.lipse</strong>. A mida que la distància entre focus creix, augmenta l'excentricitat i l'el.lipse es va allargant.</li>
-<li><strong>$e=1$</strong>: En el límit que els dos focus es separen infinitament, l'el.lipse es trenca per un costat i es transforma en una <strong>paràbola</strong>.</li>
-<li><strong>$e&gt;1$</strong>: La paràbola es transforma en dues branques i esdevé una <strong>hipèrbola</strong>.</li>
+<li><strong><script type="math/tex">e=0</script></strong>: La cònica té un sol focus del qual equidisten tots els punts. Estem en el cas de la <strong>circumferència</strong> i el focus n'ès el centre.</li>
+<li><strong><script type="math/tex">0<e<1</script></strong>: El focus es desdobla en 2 i el cercle es deforma per esdevenir una <strong>el.lipse</strong>. A mida que la distància entre focus creix, augmenta l'excentricitat i l'el.lipse es va allargant.</li>
+<li><strong><script type="math/tex">e=1</script></strong>: En el límit que els dos focus es separen infinitament, l'el.lipse es trenca per un costat i es transforma en una <strong>paràbola</strong>.</li>
+<li><strong><script type="math/tex">e>1</script></strong>: La paràbola es transforma en dues branques i esdevé una <strong>hipèrbola</strong>.</li>
 </ul>
 <p>Podem veure fàcilment aquesta transició en l'animació següent. L'animació s'ha extret d'aquest <a href="http://corbesconiques.blogspot.com.es/">enllaç</a>.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2700315/width/800/height/500/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800px" height="500px" style="border:0px;"> </iframe></div>
-        </div>
+        
+    </div>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     </body>
+
 </html>

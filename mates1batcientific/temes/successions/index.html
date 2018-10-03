@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>8. Successions - Matemàtiques 1r batxillerat</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <title>8. Successions - Matemàtiques 1r batxillerat</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script> 
-    </head>
 
-    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
+            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -38,70 +51,119 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+
+            <!-- Main title -->
             <a class="navbar-brand" href="../..">Matemàtiques 1r batxillerat</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
+                
+                
                     <li >
                         <a href="../..">Home</a>
                     </li>
+                
+                
+                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Temes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                        
                             
 <li >
     <a href="../nombresreals/">1. Nombres reals</a>
 </li>
+
+                        
                             
 <li >
     <a href="../trigonometria/">2. Trigonometria</a>
 </li>
+
+                        
                             
 <li >
     <a href="../complexos/">3. Nombres complexos</a>
 </li>
+
+                        
                             
 <li >
     <a href="../polinomis/">4. Polinomis</a>
 </li>
+
+                        
                             
 <li >
     <a href="../vectors/">5. Vectors en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../rectes/">6. Rectes en el pla</a>
 </li>
+
+                        
                             
 <li >
     <a href="../llocsgeometrics/">7. Llocs geomètrics</a>
 </li>
+
+                        
                             
 <li class="active">
     <a href="./">8. Successions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcions/">9. Funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../limits/">10. Límits i continuïtat de funcions</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcioexponencial/">11. Funció exponencial i logarítmica</a>
 </li>
+
+                        
                             
 <li >
     <a href="../funcionstrigonometriques/">12. Funcions trigonomètriques</a>
 </li>
+
+                        
                         </ul>
                     </li>
+                
+                
+                
+                    <li >
+                        <a href="../../misc/misc/">Miscel.lània</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../sobre/">Llicència</a>
+                    </li>
+                
+                
                 </ul>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -109,6 +171,7 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
                     <li >
                         <a rel="next" href="../llocsgeometrics/">
                             <i class="fa fa-arrow-left"></i> Previous
@@ -119,54 +182,117 @@
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
+                
+                
             </ul>
         </div>
     </div>
 </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tema-8-successions">Tema 8: Successions</a></li>
-            <li><a href="#introduccio">Introducció</a></li>
-            <li><a href="#successions-aritmetiques">Successions aritmètiques</a></li>
-            <li><a href="#successions-geometriques">Successions geomètriques</a></li>
-            <li><a href="#successions-monotones">Successions monòtones</a></li>
-            <li><a href="#successions-fitades">Successions fitades</a></li>
-            <li><a href="#limit-duna-succesio">Límit d'una succesió</a></li>
-            <li><a href="#calcul-de-limits">Càlcul de límits</a></li>
+    
+        <li class="first-level active"><a href="#tema-8-successions">Tema 8: Successions</a></li>
+        
+            <li class="second-level"><a href="#introduccio">Introducció</a></li>
+            
+                <li class="third-level"><a href="#definicio">Definició</a></li>
+            
+                <li class="third-level"><a href="#terme-general">Terme general</a></li>
+            
+        
+            <li class="second-level"><a href="#successions-aritmetiques">Successions aritmètiques</a></li>
+            
+                <li class="third-level"><a href="#terme-general_1">Terme general</a></li>
+            
+                <li class="third-level"><a href="#suma-dels-n-termes">Suma dels n termes</a></li>
+            
+        
+            <li class="second-level"><a href="#successions-geometriques">Successions geomètriques</a></li>
+            
+                <li class="third-level"><a href="#terme-general_2">Terme general</a></li>
+            
+                <li class="third-level"><a href="#suma-dels-n-termes_1">Suma dels n termes</a></li>
+            
+                <li class="third-level"><a href="#suma-dels-infinits-termes-amb-r1">Suma dels infinits termes amb |r|&lt;1</a></li>
+            
+        
+            <li class="second-level"><a href="#successions-monotones">Successions monòtones</a></li>
+            
+        
+            <li class="second-level"><a href="#successions-fitades">Successions fitades</a></li>
+            
+        
+            <li class="second-level"><a href="#limit-duna-succesio">Límit d'una succesió</a></li>
+            
+                <li class="third-level"><a href="#definicio-de-limit">Definició de límit</a></li>
+            
+                <li class="third-level"><a href="#operacions-amb-successions">Operacions amb Successions</a></li>
+            
+        
+            <li class="second-level"><a href="#calcul-de-limits">Càlcul de límits</a></li>
+            
+                <li class="third-level"><a href="#limit-dun-quocient">Límit d'un quocient</a></li>
+            
+                <li class="third-level"><a href="#limit-duna-potencia">Límit d'una potència</a></li>
+            
+                <li class="third-level"><a href="#operacions-amb-infty">Operacions amb \infty</a></li>
+            
+                <li class="third-level"><a href="#indeterminacions">Indeterminacions</a></li>
+            
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
 
 <h1 id="tema-8-successions">Tema 8: Successions</h1>
 <h2 id="introduccio">Introducció</h2>
 <p>Segur que tots coneixeu la <a href="https://ca.wikipedia.org/wiki/Successi%C3%B3_de_Fibonacci">successió de Fibonacci</a>, que comença amb dos uns i cada terme s'obté sumant els dos anteriors:</p>
-<p>$$1,1,2,3,5,8,13,21,34,55,...$$</p>
+<p>
+<script type="math/tex; mode=display">1,1,2,3,5,8,13,21,34,55,...</script>
+</p>
 <p>En aquest tema estudiarem en profunditat el món de les successions o també conegudes com a progressions. Segur que algunes coses ja us sonaran de l'eso, però hi afegirem coses noves com és ara el concepte de <em>límit</em> que apareixerà també al llarg dels temes següents.</p>
 <h3 id="definicio">Definició</h3>
-<p>Una successió és una llista ordenada de nombres reals. De fet, tècnicament és una <strong>aplicació entre el conjunt dels nombres naturals i els nombres reals</strong>, de tal manera que a cada nombre natural $n$ i fa correspondre un nombre real $a_n$:</p>
-<p>\begin{align}
-f:\mathbb{N} &amp;\rightarrow \mathbb{R}\
-n &amp;\rightarrow a_n
-\end{align}</p>
-<p>$n$ és l'índex de l'element de la successió que estem parlant (lloc, per entendre'ns), i $a_n$ és el <strong>terme</strong> de la successió que ocupa el lloc $n$.</p>
+<p>Una successió és una llista ordenada de nombres reals. De fet, tècnicament és una <strong>aplicació entre el conjunt dels nombres naturals i els nombres reals</strong>, de tal manera que a cada nombre natural <script type="math/tex">n</script> i fa correspondre un nombre real <script type="math/tex">a_n</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+f:\mathbb{N} &\rightarrow \mathbb{R}\\
+n &\rightarrow a_n
+\end{align}</script>
+</p>
+<p>
+<script type="math/tex">n</script> és l'índex de l'element de la successió que estem parlant (lloc, per entendre'ns), i <script type="math/tex">a_n</script> és el <strong>terme</strong> de la successió que ocupa el lloc <script type="math/tex">n</script>.</p>
 <p><strong>Exemple 1</strong></p>
 <p>Anem a veure alguns exemples de successions:</p>
 <ol>
-<li>$2,4,6,8,10,12,14,.....$</li>
-<li>$3,6,12,24,48,96,......$</li>
-<li>$1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5},...$</li>
+<li>
+<script type="math/tex">2,4,6,8,10,12,14,.....</script>
+</li>
+<li>
+<script type="math/tex">3,6,12,24,48,96,......</script>
+</li>
+<li>
+<script type="math/tex">1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5},...</script>
+</li>
 </ol>
-<p>En la primera successió, $a_1=2$, $a_2=4$ i així successivament. En la segona, $a_1=3$ i $a_2=6$ i en la tercera, $a_1=1$, $a_2=\frac{1}{2}$.</p>
+<p>En la primera successió, <script type="math/tex">a_1=2</script>, <script type="math/tex">a_2=4</script> i així successivament. En la segona, <script type="math/tex">a_1=3</script> i <script type="math/tex">a_2=6</script> i en la tercera, <script type="math/tex">a_1=1</script>, <script type="math/tex">a_2=\frac{1}{2}</script>.</p>
 <h3 id="terme-general">Terme general</h3>
-<p>El terme general d'una successió és l'expressió algebraica que em dóna el terme $a_n$ en funció del paràmetre $n$. D'aquesta manera, el terme general ens permet trobar qualsevol terme de la successió. Només ens cal substituir $n$ pel nombre natural desitjat.</p>
+<p>El terme general d'una successió és l'expressió algebraica que em dóna el terme <script type="math/tex">a_n</script> en funció del paràmetre <script type="math/tex">n</script>. D'aquesta manera, el terme general ens permet trobar qualsevol terme de la successió. Només ens cal substituir <script type="math/tex">n</script> pel nombre natural desitjat.</p>
 <p><strong>Exemple 2</strong></p>
 <p>En l'exemple anterior, podem trobar el terme general fàcilment sense haver de pensar gaire:</p>
 <ol>
-<li>$a_n=2n$</li>
-<li>$a_n=3\cdot 2^{n-1}$</li>
-<li>$a_n=\frac{1}{n}$</li>
+<li>
+<script type="math/tex">a_n=2n</script>
+</li>
+<li>
+<script type="math/tex">a_n=3\cdot 2^{n-1}</script>
+</li>
+<li>
+<script type="math/tex">a_n=\frac{1}{n}</script>
+</li>
 </ol>
 <p>De fet, una sucessió es pot definir de 3 maneres diferents:</p>
 <ol>
@@ -177,196 +303,253 @@ n &amp;\rightarrow a_n
 <p>A continuació veurem les característiques de dues de les successions més típiques, les aritmètiques i les geomètriques.</p>
 <h2 id="successions-aritmetiques">Successions aritmètiques</h2>
 <p>Una successió aritmètica és aquella que cada terme s'obté sumant una quantitat fixa anomenada <strong>diferència</strong> a l'anterior:</p>
-<p>$$a_n=a_{n-1}+d$$</p>
+<p>
+<script type="math/tex; mode=display">a_n=a_{n-1}+d</script>
+</p>
 <p>Donada una successió de termes, sabrem que és una progressió aritmètica si restant dos termes consecutius sempre obtenim el mateix valor.</p>
 <h3 id="terme-general_1">Terme general</h3>
 <p>Anem a veure com obtenim el terme general d'una progressió aritmètica.</p>
-<p>\begin{align}
-a_1&amp;=a_1\
-a_2&amp;=a_1+d\
-a_3&amp;=a_2+d=a_1+2d\
-a_4&amp;=a_3+d=a_1+3d\
-&amp;................\
-a_n&amp;=a_{n-1}+d=a_1+(n-1)d
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=a_1\\
+a_2&=a_1+d\\
+a_3&=a_2+d=a_1+2d\\
+a_4&=a_3+d=a_1+3d\\
+&................\\
+a_n&=a_{n-1}+d=a_1+(n-1)d
+\end{align}</script>
+</p>
 <p>Per tant, el terme general d'una successió aritmètica és:</p>
 <blockquote>
-<p>$$a_n=a_{n-1}+d=a_1+(n-1)d$$</p>
+<p>
+<script type="math/tex; mode=display">a_n=a_{n-1}+d=a_1+(n-1)d</script>
+</p>
 </blockquote>
-<h3 id="suma-dels-n-termes">Suma dels $n$ termes</h3>
-<p>De la mateixa manera podem deduir la fòrmula de la suma dels $n$ termes d'una successió geomètrica. Per sumar els $n$ primers termes d'una successió aritmètica tenim:</p>
-<p>\begin{align}
-S_n&amp;=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n\
-S_n&amp;=a_n+a_{n-1}+a_{n-2}+...+a_3+a_2+a_1\
+<h3 id="suma-dels-n-termes">Suma dels <script type="math/tex">n</script> termes</h3>
+<p>De la mateixa manera podem deduir la fòrmula de la suma dels <script type="math/tex">n</script> termes d'una successió geomètrica. Per sumar els <script type="math/tex">n</script> primers termes d'una successió aritmètica tenim:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n\\
+S_n&=a_n+a_{n-1}+a_{n-2}+...+a_3+a_2+a_1\\
 \hline
-2S_n&amp;=(a_1+a_n)+(a_2+a_{n-1})+(a_3+a_{n-2})+...+(a_{n-2}+a_3)+(a_{n-1}+a_2)+(a_1+a_n)
-\end{align}</p>
+2S_n&=(a_1+a_n)+(a_2+a_{n-1})+(a_3+a_{n-2})+...+(a_{n-2}+a_3)+(a_{n-1}+a_2)+(a_1+a_n)
+\end{align}</script>
+</p>
 <p>Fixem-nos amb les sumes dels termes entre parèntesi. Veiem que la primera suma i la última són iguals. Anem a veure què passa amb les del mig:</p>
-<p>\begin{align}
-a_2&amp;=a_1+d\
-a_{n-1}&amp;=a_n-d\
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_2&=a_1+d\\
+a_{n-1}&=a_n-d\\
 \hline
-a_2+a_{n-1}&amp;=a_1+a_n
-\end{align}</p>
+a_2+a_{n-1}&=a_1+a_n
+\end{align}</script>
+</p>
 <p>El mateix passa amb els altres termes:</p>
-<p>\begin{align}
-a_3&amp;=a_2+d\
-a_{n-2}&amp;=a_{n-1}-d\
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_3&=a_2+d\\
+a_{n-2}&=a_{n-1}-d\\
 \hline
-a_3+a_{n-2}&amp;=a_2+a_{n-1}=a_1+a_n
-\end{align}</p>
-<p>Per tant, si anem sumant termes equidistants de la successió sempre ens dóna com a resultat $a_1+a_n$. Amb això, aplicat a la primera operació obtenim:</p>
-<p>$$2S_n=(a_1+a_n)n$$</p>
+a_3+a_{n-2}&=a_2+a_{n-1}=a_1+a_n
+\end{align}</script>
+</p>
+<p>Per tant, si anem sumant termes equidistants de la successió sempre ens dóna com a resultat <script type="math/tex">a_1+a_n</script>. Amb això, aplicat a la primera operació obtenim:</p>
+<p>
+<script type="math/tex; mode=display">2S_n=(a_1+a_n)n</script>
+</p>
 <p>Per tant, la <strong>suma dels n termes d'una successió aritmètica és</strong>:</p>
 <blockquote>
-<p>$$S_n=\frac{a_1+a_n}{2}\cdot n$$</p>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_1+a_n}{2}\cdot n</script>
+</p>
 </blockquote>
 <p><strong>Exemple 3</strong></p>
-<p>Troba el terme general de la successió: $2,4,6,8,...$ troba també la suma dels $50$ primers nombres parells.</p>
-<p>Per la successió anterior veiem que és aritmètica de diferència $d=2$. Per tant, anem a trobar-ne el terme general:</p>
-<p>\begin{align}
-a_n&amp;=a_1+(n-1)d\
-a_n&amp;=2+(n-1)2\
-a_n&amp;=2n
-\end{align}</p>
+<p>Troba el terme general de la successió: <script type="math/tex">2,4,6,8,...</script> troba també la suma dels <script type="math/tex">50</script> primers nombres parells.</p>
+<p>Per la successió anterior veiem que és aritmètica de diferència <script type="math/tex">d=2</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1+(n-1)d\\
+a_n&=2+(n-1)2\\
+a_n&=2n
+\end{align}</script>
+</p>
 <p>Per trobar la suma dels 50 primers nombres parells només cal aplicar la fòrmula:</p>
-<p>\begin{align}
-S_n&amp;=\frac{a_1+a_n}{2}\cdot n \
-S_n&amp;=\frac{2+2n}{2}\cdot n\
-S_n&amp;=(1+n)\cdot n=n^2+n\
-S_50&amp;=50^2+50=2550
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=\frac{a_1+a_n}{2}\cdot n \\
+S_n&=\frac{2+2n}{2}\cdot n\\
+S_n&=(1+n)\cdot n=n^2+n\\
+S_50&=50^2+50=2550
+\end{align}</script>
+</p>
 <h2 id="successions-geometriques">Successions geomètriques</h2>
 <p>Una successió geomètrica és una successió de nombres reals en els quals el quocient entre dos termes consecutius de la successió és constant i s'anomena <strong>raó</strong>. El que és el mateix, obtenim un terme multiplicant l'anterior per la raó:</p>
-<p>$$a_{n+1}=a_n\cdot r$$</p>
+<p>
+<script type="math/tex; mode=display">a_{n+1}=a_n\cdot r</script>
+</p>
 <h3 id="terme-general_2">Terme general</h3>
 <p>Anem a veure com obtenim el terme general d'una progressió geomètrica.</p>
-<p>\begin{align}
-a_1&amp;=a_1\
-a_2&amp;=a_1\cdot r\
-a_3&amp;=a_2\cdot r=a_1 \cdot r^2\
-a_4&amp;=a_3\cdot r=a_1\cdot r^3\
-&amp;................\
-a_n&amp;=a_1 \cdot r^{n-1}
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=a_1\\
+a_2&=a_1\cdot r\\
+a_3&=a_2\cdot r=a_1 \cdot r^2\\
+a_4&=a_3\cdot r=a_1\cdot r^3\\
+&................\\
+a_n&=a_1 \cdot r^{n-1}
+\end{align}</script>
+</p>
 <p>Per tant, el terme general d'una successió geomètrica és:</p>
 <blockquote>
-<p>$$a_n=a_1 \cdot r^{n-1}$$</p>
+<p>
+<script type="math/tex; mode=display">a_n=a_1 \cdot r^{n-1}</script>
+</p>
 </blockquote>
-<h3 id="suma-dels-n-termes_1">Suma dels $n$ termes</h3>
-<p>Anem a deduir ara la suma dels $n$ termes d'una successió geomètrica:</p>
-<p>$$S_n=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n$$</p>
-<p>Multipliquem a banda i banda per la raó $r$:</p>
-<p>\begin{align}
-S_n\cdot r&amp;=a_1\cdot r+a_2\cdot r+a_3\cdot r+...+a_{n-2}\cdot r+a_{n-1}\cdot r+a_n \cdot r\
-S_n\cdot r&amp;=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r
-\end{align}</p>
+<h3 id="suma-dels-n-termes_1">Suma dels <script type="math/tex">n</script> termes</h3>
+<p>Anem a deduir ara la suma dels <script type="math/tex">n</script> termes d'una successió geomètrica:</p>
+<p>
+<script type="math/tex; mode=display">S_n=a_1+a_2+a_3+...+a_{n-2}+a_{n-1}+a_n</script>
+</p>
+<p>Multipliquem a banda i banda per la raó <script type="math/tex">r</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n\cdot r&=a_1\cdot r+a_2\cdot r+a_3\cdot r+...+a_{n-2}\cdot r+a_{n-1}\cdot r+a_n \cdot r\\
+S_n\cdot r&=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r
+\end{align}</script>
+</p>
 <p>Si restem les dues expressions anteriors:</p>
-<p>\begin{align}
-S_n\cdot r&amp;=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r\
--S_n&amp;=-a_1-a_2-a_3-...-a_{n-2}-a_{n-1}-a_n\
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n\cdot r&=a_2+a_3+a_4+...+a_{n-1}+a_n+a_n\cdot r\\
+-S_n&=-a_1-a_2-a_3-...-a_{n-2}-a_{n-1}-a_n\\
 \hline
-S_n\cdot r-S_n&amp;=-a_1+a_n\cdot r\
-S_n(r-1)&amp;=a_n\cdot r-a_1
-\end{align}</p>
-<p>Per tant, la suma dels $n$ termes d'una progressió geomètrica és:</p>
+S_n\cdot r-S_n&=-a_1+a_n\cdot r\\
+S_n(r-1)&=a_n\cdot r-a_1
+\end{align}</script>
+</p>
+<p>Per tant, la suma dels <script type="math/tex">n</script> termes d'una progressió geomètrica és:</p>
 <blockquote>
-<p>$$S_n=\frac{a_n\cdot r-a_1}{r-1}=\frac{a_1\cdot r^n-a_1}{r-1}=\frac{a_1(r^n-1)}{r-1}$$</p>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_n\cdot r-a_1}{r-1}=\frac{a_1\cdot r^n-a_1}{r-1}=\frac{a_1(r^n-1)}{r-1}</script>
+</p>
 </blockquote>
 <p><strong>Exemple 4</strong></p>
-<p>Troba el terme general de la successió: $2,6,18,54,...$ troba també la suma dels $10$ primers termes de la successió</p>
-<p>Per la successió anterior veiem que és geomètrica de raó $r=3$. Per tant, anem a trobar-ne el terme general:</p>
-<p>\begin{align}
-a_n&amp;=a_1 \cdot r^{n-1}\
-a_n&amp;=2\cdot 3^{n-1}\
-\end{align}</p>
+<p>Troba el terme general de la successió: <script type="math/tex">2,6,18,54,...</script> troba també la suma dels <script type="math/tex">10</script> primers termes de la successió</p>
+<p>Per la successió anterior veiem que és geomètrica de raó <script type="math/tex">r=3</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1 \cdot r^{n-1}\\
+a_n&=2\cdot 3^{n-1}\\
+\end{align}</script>
+</p>
 <p>Per trobar la suma dels 10 primers termes només cal aplicar la fòrmula:</p>
-<p>\begin{align}
-S_n&amp;=\frac{a_1(r^n-1)}{r-1}\
-S_n&amp;=\frac{2(3^n-1)}{2}\
-S_n&amp;=3^n-1\
-S_10&amp;=3^10-1=59048
-\end{align}</p>
-<h3 id="suma-dels-infinits-termes-amb-r1">Suma dels infinits termes amb $|r|&lt;1$</h3>
-<p>Recordem l'expressió de la suma dels $n$ termes d'una progressió geomètrica:</p>
-<p>$$S_n=\frac{a_1(r^n-1)}{r-1}$$</p>
-<p>Si $n$ es fa molt gran, com que $|r|&lt;1$, quan l'elevem a un nombre molt gran, $r^n\rightarrow 0$. Per tant, la <strong>suma dels infinits termes</strong> d'una progressió geomètrica si $|r|&lt;1$ esdevé:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_n&=\frac{a_1(r^n-1)}{r-1}\\
+S_n&=\frac{2(3^n-1)}{2}\\
+S_n&=3^n-1\\
+S_10&=3^10-1=59048
+\end{align}</script>
+</p>
+<h3 id="suma-dels-infinits-termes-amb-r1">Suma dels infinits termes amb <script type="math/tex">|r|<1</script>
+</h3>
+<p>Recordem l'expressió de la suma dels <script type="math/tex">n</script> termes d'una progressió geomètrica:</p>
+<p>
+<script type="math/tex; mode=display">S_n=\frac{a_1(r^n-1)}{r-1}</script>
+</p>
+<p>Si <script type="math/tex">n</script> es fa molt gran, com que <script type="math/tex">|r|<1</script>, quan l'elevem a un nombre molt gran, <script type="math/tex">r^n\rightarrow 0</script>. Per tant, la <strong>suma dels infinits termes</strong> d'una progressió geomètrica si <script type="math/tex">|r|<1</script> esdevé:</p>
 <blockquote>
-<p>$$S_{\infty}=\frac{-a_1}{r-1}=\frac{a_1}{1-r}$$</p>
+<p>
+<script type="math/tex; mode=display">S_{\infty}=\frac{-a_1}{r-1}=\frac{a_1}{1-r}</script>
+</p>
 </blockquote>
 <p><strong>Exemple 5</strong></p>
-<p>Troba el terme general de la successió: $\frac{1}{2},\frac{1}{4}, \frac{1}{8}, \frac{1}{16}...$ troba també la suma dels $\infty$ termes.</p>
-<p>Per la successió anterior veiem que és geomètrica de raó $r=\frac{1}{2}$. Per tant, anem a trobar-ne el terme general:</p>
-<p>\begin{align}
-a_n&amp;=a_1 \cdot r^{n-1}\
-a_n&amp;=\frac{1}{2}\cdot \big(\frac{1}{2}\big)^{n-1}\
-a_n&amp;=\big(\frac{1}{2}\big)^n
-\end{align}</p>
-<p>Per trobar la suma dels $\infty$ primers termes només cal aplicar la fòrmula:</p>
-<p>\begin{align}
-S_{\infty}&amp;=\frac{a_1}{1-r}\
-S_{\infty}&amp;=\frac{\frac{1}{2}}{1-\frac{1}{2}}\
-S_{\infty}&amp;=2\
-\end{align}</p>
+<p>Troba el terme general de la successió: <script type="math/tex">\frac{1}{2},\frac{1}{4}, \frac{1}{8}, \frac{1}{16}...</script> troba també la suma dels <script type="math/tex">\infty</script> termes.</p>
+<p>Per la successió anterior veiem que és geomètrica de raó <script type="math/tex">r=\frac{1}{2}</script>. Per tant, anem a trobar-ne el terme general:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n&=a_1 \cdot r^{n-1}\\
+a_n&=\frac{1}{2}\cdot \big(\frac{1}{2}\big)^{n-1}\\
+a_n&=\big(\frac{1}{2}\big)^n
+\end{align}</script>
+</p>
+<p>Per trobar la suma dels <script type="math/tex">\infty</script> primers termes només cal aplicar la fòrmula:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+S_{\infty}&=\frac{a_1}{1-r}\\
+S_{\infty}&=\frac{\frac{1}{2}}{1-\frac{1}{2}}\\
+S_{\infty}&=2\\
+\end{align}</script>
+</p>
 <h2 id="successions-monotones">Successions monòtones</h2>
 <p>Anem a veure com són les successions estudiant-ne els seus termes. Ens podem trobar en diferents casos:</p>
 <ol>
-<li>Diem que una successió $a_n$ és <strong>creixent</strong> si $a_{n+1}&gt;a_{n}$ per a qualsevol valor de $n$.</li>
-<li>Diem que una successió $a_n$ és <strong>decreixent</strong> si $a_{n+1}&lt;a_{n}$ per a qualsevol valor de $n$.</li>
-<li>Diem que una successió $a_n$ és <strong>constant</strong> si $a_{n+1}=a_{n}$ per a qualsevol valor de $n$.</li>
-<li>Diem que una sucessió és <strong>oscil.lant</strong> si per exemple $a_1<a_2$, $a_2>a_3$, $a_3<a_4$, $a_4>a_5$, etc.</li>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>creixent</strong> si <script type="math/tex">a_{n+1}>a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>decreixent</strong> si <script type="math/tex">a_{n+1}<a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una successió <script type="math/tex">a_n</script> és <strong>constant</strong> si <script type="math/tex">a_{n+1}=a_{n}</script> per a qualsevol valor de <script type="math/tex">n</script>.</li>
+<li>Diem que una sucessió és <strong>oscil.lant</strong> si per exemple <script type="math/tex">a_1<a_2</script>, <script type="math/tex">a_2>a_3</script>, <script type="math/tex">a_3<a_4</script>, <script type="math/tex">a_4>a_5</script>, etc.</li>
 <li>Podem trobar també sucessions que no siguin cap de les anteriors.</li>
 </ol>
 <blockquote>
 <p>Si una successió és creixent o decreixent direm que és una sucessió <strong>monótona</strong>.</p>
 </blockquote>
-<p>També podeu sentir que una sucessió és <strong>estrictament</strong> creixent (o decreixent). Ho serà si $a_{n+1}&gt;a_n$ ($a_{n+1}&lt;a_n$), en canvi si es compleix que $a_{n+1}\ge a_n$ ($a_{n+1} \le a_n$) llavors diem que la successió és creixent (o decreixent).</p>
+<p>També podeu sentir que una sucessió és <strong>estrictament</strong> creixent (o decreixent). Ho serà si <script type="math/tex">a_{n+1}>a_n</script> (<script type="math/tex">a_{n+1}<a_n</script>), en canvi si es compleix que <script type="math/tex">a_{n+1}\ge a_n</script> (<script type="math/tex">a_{n+1} \le a_n</script>) llavors diem que la successió és creixent (o decreixent).</p>
 <p><strong>Exemple 6</strong></p>
-<p>Demostreu que la successió $a_n=\frac{n}{n+1}$ és monòtona creixent.</p>
+<p>Demostreu que la successió <script type="math/tex">a_n=\frac{n}{n+1}</script> és monòtona creixent.</p>
 <p>Per fer-ho, hem de veure que:</p>
-<p>\begin{align}
-a_{n+1}&amp;\ge a_n\
-\frac{n+1}{(n+1)+1} &amp;\ge \frac{n}{n+1}\
-\frac{n+1}{n+2} &amp;\ge \frac{n}{n+1}\
-(n+1)^2 &amp;\ge n(n+2)\
-n^2+2n+1&amp;\ge n^2+n\
-1&amp;\ge0
-\end{align}</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_{n+1}&\ge a_n\\
+\frac{n+1}{(n+1)+1} &\ge \frac{n}{n+1}\\
+\frac{n+1}{n+2} &\ge \frac{n}{n+1}\\
+(n+1)^2 &\ge n(n+2)\\
+n^2+2n+1&\ge n^2+n\\
+1&\ge0
+\end{align}</script>
+</p>
 <p>Veiem que sí que es compleix la desigualtat. Per tant, és una successió monòtona creixent.</p>
 <h2 id="successions-fitades">Successions fitades</h2>
 <p>Anem a definir un parell de conceptes:</p>
 <ol>
-<li>Diem que una successió està <strong>fitada inferiorment</strong> si tots els membres de la successió són més grans o iguals que un nombre real $k$: $a_n\ge k, \forall n \in \mathbb{N}, k\in \mathbb{R}$.Diem que $k$ és una <strong>fita inferior</strong> de la successió.</li>
-<li>Diem que una successió està <strong>superiorment</strong> si tots els membres de la successió són més petits o iguals que un nombre real $k$: $a_n\le k, \forall n \in \mathbb{N}, k\in \mathbb{R}$. Diem que $k$ és una <strong>fita superior</strong> de la successió.</li>
+<li>Diem que una successió està <strong>fitada inferiorment</strong> si tots els membres de la successió són més grans o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\ge k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>.Diem que <script type="math/tex">k</script> és una <strong>fita inferior</strong> de la successió.</li>
+<li>Diem que una successió està <strong>superiorment</strong> si tots els membres de la successió són més petits o iguals que un nombre real <script type="math/tex">k</script>: <script type="math/tex">a_n\le k, \forall n \in \mathbb{N}, k\in \mathbb{R}</script>. Diem que <script type="math/tex">k</script> és una <strong>fita superior</strong> de la successió.</li>
 <li>Si una successió està fitada superiorment i inferiorment diem que és una successió <strong>fitada</strong>.</li>
 </ol>
 <p><strong>Exemple 7</strong></p>
-<p>Demostreu que la successió $a_n=\frac{n^2+1}{n}$ no està fitada.</p>
-<p>Per demostrar això hem de veure que donat un valor de $k$ arbitràriament gran sempre podem trobar un valor de $n$ pel qual el terme $a_n$ sigui més gran que $k$.</p>
+<p>Demostreu que la successió <script type="math/tex">a_n=\frac{n^2+1}{n}</script> no està fitada.</p>
+<p>Per demostrar això hem de veure que donat un valor de <script type="math/tex">k</script> arbitràriament gran sempre podem trobar un valor de <script type="math/tex">n</script> pel qual el terme <script type="math/tex">a_n</script> sigui més gran que <script type="math/tex">k</script>.</p>
 <p>Veiem que:</p>
-<p>$$a_n=\frac{n^2+1}{n}=n+\frac{1}{n}$$</p>
-<p>Dels dos sumands anteriors, ja veiem que el segon es fa molt petit fins arribar quasi a $0$, però el primer sumand, $n$ pot créixer arbritràriament. Per tant, acabem de demostrar que la successió anterior no està fitada.</p>
+<p>
+<script type="math/tex; mode=display">a_n=\frac{n^2+1}{n}=n+\frac{1}{n}</script>
+</p>
+<p>Dels dos sumands anteriors, ja veiem que el segon es fa molt petit fins arribar quasi a <script type="math/tex">0</script>, però el primer sumand, <script type="math/tex">n</script> pot créixer arbritràriament. Per tant, acabem de demostrar que la successió anterior no està fitada.</p>
 <h2 id="limit-duna-succesio">Límit d'una succesió</h2>
-<p>En l'apartat anterior hem vist que existeixen successions fitades inferiorment i fitades superiorment. Pensem en un exemple  concret de successió decreixent: $a_n=\frac{1}{n}$. Si escrivim uns quants termes: $1,\frac{1}{2}, \frac{1}{3}, \frac{1}{4},...$. Veiem que a mida que $n$ es fa molt gran, els termes cada vegada són més petits. Aquesta successió és evidentment fitada. Anem a pensar ara algunes fites inferiors. Una fita inferior seria $k_1=-1$ perquè tots els termes de la successió són més grans que aquest nombre. Una altra fita inferior també podria ser $k_2=-2$, perquè es dóna el mateix cas. Però quina seria la <strong>més gran</strong> de les fites inferiors quan $n$ es fa molt gran? Si ho pensem una mica veiem que és $K=0$.</p>
-<p>En l'exemple anterior de successió decreixent, veiem que tots els termes s'acosten cada vegada més a $0$ quan $n$ es fa molt gran. Diem doncs que el <strong>límit</strong> de la successió $a_n=\frac{1}{n}$ és 0.</p>
-<p>El mateix podem fer amb una successió creixent, si aquesta està fitada superiorment, la <strong>més petita</strong> de les fites superiors és el límit de la sucessió quan $n$ es fa molt i molt gran. Podries donar algun exemple?</p>
+<p>En l'apartat anterior hem vist que existeixen successions fitades inferiorment i fitades superiorment. Pensem en un exemple  concret de successió decreixent: <script type="math/tex">a_n=\frac{1}{n}</script>. Si escrivim uns quants termes: <script type="math/tex">1,\frac{1}{2}, \frac{1}{3}, \frac{1}{4},...</script>. Veiem que a mida que <script type="math/tex">n</script> es fa molt gran, els termes cada vegada són més petits. Aquesta successió és evidentment fitada. Anem a pensar ara algunes fites inferiors. Una fita inferior seria <script type="math/tex">k_1=-1</script> perquè tots els termes de la successió són més grans que aquest nombre. Una altra fita inferior també podria ser <script type="math/tex">k_2=-2</script>, perquè es dóna el mateix cas. Però quina seria la <strong>més gran</strong> de les fites inferiors quan <script type="math/tex">n</script> es fa molt gran? Si ho pensem una mica veiem que és <script type="math/tex">K=0</script>.</p>
+<p>En l'exemple anterior de successió decreixent, veiem que tots els termes s'acosten cada vegada més a <script type="math/tex">0</script> quan <script type="math/tex">n</script> es fa molt gran. Diem doncs que el <strong>límit</strong> de la successió <script type="math/tex">a_n=\frac{1}{n}</script> és 0.</p>
+<p>El mateix podem fer amb una successió creixent, si aquesta està fitada superiorment, la <strong>més petita</strong> de les fites superiors és el límit de la sucessió quan <script type="math/tex">n</script> es fa molt i molt gran. Podries donar algun exemple?</p>
 <h3 id="definicio-de-limit">Definició de límit</h3>
 <p>Hi ha una manera més formal de definir límit d'una successió. Anem a veure-ho.</p>
 <blockquote>
-<p>Donada una sucessió de nombres reals ${a_n}$, diem que $l$ és el <strong>límit</strong> d'aquesta successió si per qualsevol nombre real $\epsilon&gt;0$ existeix un enter positiu $N$ depenent de $\epsilon$ tal que: per $n \ge N \Rightarrow |a_n-l|&lt;\epsilon$.</p>
+<p>Donada una sucessió de nombres reals <script type="math/tex">{a_n}</script>, diem que <script type="math/tex">l</script> és el <strong>límit</strong> d'aquesta successió si per qualsevol nombre real <script type="math/tex">\epsilon>0</script> existeix un enter positiu <script type="math/tex">N</script> depenent de <script type="math/tex">\epsilon</script> tal que: per <script type="math/tex">n \ge N \Rightarrow |a_n-l|<\epsilon</script>.</p>
 </blockquote>
 <p>Dit amb paraules planeres, a partir d'un cert índex de la successió, la diferència entre els termes i el límit es fa arbitràriament petita. Això s'escriu de la següent manera:</p>
 <blockquote>
-<p>$$\lim_{n\to\infty} a_n=l$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty} a_n=l</script>
+</p>
 </blockquote>
 <p>No totes les successions tenen un límit. En l'exemple anterior, veiem clarament que:</p>
-<p>$$\lim_{n\to\infty}\frac{1}{n}=0$$</p>
-<p>Però si considerem la successió $a_n=n\Rightarrow 1,2,3,4,5,6,....$ veiem de seguida que:</p>
-<p>$$\lim_{n\to\infty}n=+\infty$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{1}{n}=0</script>
+</p>
+<p>Però si considerem la successió <script type="math/tex">a_n=n\Rightarrow 1,2,3,4,5,6,....</script> veiem de seguida que:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}n=+\infty</script>
+</p>
 <p>Aquest límit no és numèric, la successió <em>tendeix a més infinit</em>, que no és cap nombre.</p>
 <p>D'aquí podem deduir vàries coses:</p>
 <ol>
-<li>Diem que una sucessió és <strong>convergent</strong> si té com a límit un nombre real. Si el límit és $\pm \infty$ diem que la sucessió és <strong>divergent</strong>.</li>
+<li>Diem que una sucessió és <strong>convergent</strong> si té com a límit un nombre real. Si el límit és <script type="math/tex">\pm \infty</script> diem que la sucessió és <strong>divergent</strong>.</li>
 <li>Les successions creixents i fitades superioment sempre tenen límit. Aquest límit és la més petita de les fites superiors.</li>
 <li>De la mateixa manera, les succesions decreixents i fitades inferiorment també tenen límit. Aquest límit és la més gran de les fites inferiors.</li>
 </ol>
@@ -374,165 +557,251 @@ n^2+2n+1&amp;\ge n^2+n\
 <ol>
 <li>
 <p>Suma de successions</p>
-<p>Donades dues successions ${a_n}$ i ${b_n}$, la successió suma s'obté sumant terme a terme les successions:</p>
-<p>$${a_n+b_n}={a_n}+{b_n}$$</p>
+<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script>, la successió suma s'obté sumant terme a terme les successions:</p>
+<p>
+<script type="math/tex; mode=display">\{a_n+b_n\}=\{a_n\}+\{b_n\}</script>
+</p>
 </li>
 <li>
 <p>Diferència de successions</p>
-<p>Donades dues successions ${a_n}$ i ${b_n}$ podem calcular la successió diferència restant terme a terme les successions:</p>
-<p>$${a_n-b_n}={a_n}-{b_n}$$</p>
+<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> podem calcular la successió diferència restant terme a terme les successions:</p>
+<p>
+<script type="math/tex; mode=display">\{a_n-b_n\}=\{a_n\}-\{b_n\}</script>
+</p>
 </li>
 <li>
 <p>Producte de successions</p>
-<p>Donades dues successions ${a_n}$ i ${b_n}$, la successió producte s'obté multiplicant terme a terme les successions:</p>
-<p>$${a_n \cdot b_n}={a_n}\cdot {b_n}$$</p>
+<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script>, la successió producte s'obté multiplicant terme a terme les successions:</p>
+<p>
+<script type="math/tex; mode=display">\{a_n \cdot b_n\}=\{a_n\}\cdot \{b_n\}</script>
+</p>
 </li>
 <li>
 <p>Quocient de successions</p>
-<p>Donades dues successions ${a_n}$ i ${b_n}$, <strong>amb la condició que ${b_n}$ no s'anul.li en cap terme</strong>, la successió quocient s'obté dividint terme a terme les successions:</p>
-<p>$${ \frac{a_n}{b_n} } = \frac{ { a_n } }{ { b_n } }$$</p>
+<p>Donades dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script>, <strong>amb la condició que <script type="math/tex">\{b_n\}</script> no s'anul.li en cap terme</strong>, la successió quocient s'obté dividint terme a terme les successions:</p>
+<p>
+<script type="math/tex; mode=display">\{ \frac{a_n}{b_n} \} = \frac{ \{ a_n \} }{ \{ b_n \} }</script>
+</p>
 <p>Com sabem si una sucessió quocient s'anul.la alguna vegada? Doncs buscant els zeros en el denominador.</p>
 </li>
 </ol>
 <p><strong>Exemple 7</strong></p>
-<p>Troba les successions suma, diferència, producte i quocient de:  ${a_n}=n-3$ i ${b_n}=\frac{1}{n+2}$:</p>
-<p>\begin{align}
-a_n+b_n &amp;= n-3+\frac{1}{n+2}=\frac{(n-3)(n+2)+1}{n+2}=\frac{n^2+2n-3n-6+1}{n+2}=\frac{n^2-n-5}{n+2}\
-a_n-b_n &amp;= n-3-\frac{1}{n+2}=\frac{(n-3)(n+2)-1}{n+2}=\frac{n^2+2n-3n-6-1}{n+2}=\frac{n^2-n-7}{n+2}\
-a_n \cdot b_n &amp;= (n-3)\cdot \frac{1}{n+2}=\frac{n-3}{n+2}\
-\frac{a_n}{b_n} &amp;= (n-3)\div \frac{1}{n+2}=(n-3)(n+2)
-\end{align}</p>
+<p>Troba les successions suma, diferència, producte i quocient de:  <script type="math/tex">\{a_n\}=n-3</script> i <script type="math/tex">\{b_n\}=\frac{1}{n+2}</script>:</p>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_n+b_n &= n-3+\frac{1}{n+2}=\frac{(n-3)(n+2)+1}{n+2}=\frac{n^2+2n-3n-6+1}{n+2}=\frac{n^2-n-5}{n+2}\\
+a_n-b_n &= n-3-\frac{1}{n+2}=\frac{(n-3)(n+2)-1}{n+2}=\frac{n^2+2n-3n-6-1}{n+2}=\frac{n^2-n-7}{n+2}\\
+a_n \cdot b_n &= (n-3)\cdot \frac{1}{n+2}=\frac{n-3}{n+2}\\
+\frac{a_n}{b_n} &= (n-3)\div \frac{1}{n+2}=(n-3)(n+2)
+\end{align}</script>
+</p>
 <blockquote>
 <p>NOTA:</p>
 <p>Si dues successions són <strong>convergents</strong> ,la successió suma, diferència, producte o quocient que se'n resulti també serà <strong>convergent</strong>.</p>
 </blockquote>
 <h2 id="calcul-de-limits">Càlcul de límits</h2>
-<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, si dues successions ${a_n}$ i ${b_n}$ són convergents, que és el mateix que dir que existeix el seu límit, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també seran convergents i tindran un límit segons:</p>
+<p>Estudiarem aquí diferents mètodes per al càlcul de límits. Veient les operacions amb successions explicades anteriorment, si dues successions <script type="math/tex">\{a_n\}</script> i <script type="math/tex">\{b_n\}</script> són convergents, que és el mateix que dir que existeix el seu límit, les successions obtingudes de fer-ne la suma, la diferència, el producte i el quocient també seran convergents i tindran un límit segons:</p>
 <ol>
-<li>$\lim_{n\to\infty}(a_n\pm b_n)=\lim_{n\to\infty}a_n\pm \lim_{n\to\infty}b_n$</li>
-<li>$\lim_{n\to\infty}(a_n\cdot b_n)=\lim_{n\to\infty}a_n\cdot \lim_{n\to\infty}b_n$</li>
-<li>$\lim_{n\to\infty}(\frac{a_n}{b_n})=\frac{\lim_{n\to\infty}a_n}{\lim_{n\to\infty}b_n}$</li>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(a_n\pm b_n)=\lim_{n\to\infty}a_n\pm \lim_{n\to\infty}b_n</script>
+</li>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(a_n\cdot b_n)=\lim_{n\to\infty}a_n\cdot \lim_{n\to\infty}b_n</script>
+</li>
+<li>
+<script type="math/tex">\lim_{n\to\infty}(\frac{a_n}{b_n})=\frac{\lim_{n\to\infty}a_n}{\lim_{n\to\infty}b_n}</script>
+</li>
 </ol>
 <h3 id="limit-dun-quocient">Límit d'un quocient</h3>
-<p>Volem calcular el límit d'una expressió del tipus $\frac{P(n)}{Q(n)}$ on $P$ i $Q$ són polinomis en $n$. Abans de calcular-ho fem un pas previ i anem a calcular què val el límit d'una expressió del tipus: $\frac{A}{n^P}$ on $A \in \mathbb{R}$ i $p \in \mathbb{N}$.</p>
+<p>Volem calcular el límit d'una expressió del tipus <script type="math/tex">\frac{P(n)}{Q(n)}</script> on <script type="math/tex">P</script> i <script type="math/tex">Q</script> són polinomis en <script type="math/tex">n</script>. Abans de calcular-ho fem un pas previ i anem a calcular què val el límit d'una expressió del tipus: <script type="math/tex">\frac{A}{n^P}</script> on <script type="math/tex">A \in \mathbb{R}</script> i <script type="math/tex">p \in \mathbb{N}</script>.</p>
 <p>Recordeu que:</p>
-<p>$$\lim_{n\to\infty}\frac{1}{n}=0$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{1}{n}=0</script>
+</p>
 <p>per tant:</p>
-<p>$$\lim_{n\to\infty}\frac{A}{n^P}=0=\lim_{n\to\infty}(A\cdot \frac{1}{n}\cdot \frac{1}{n}\cdot \frac{1}{n}... \text{p vegades})=A\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}...\text{p vegades}=A\cdot 0 \cdot 0 \cdot 0 \cdot 0...=0$$</p>
-<p>Així doncs, el mètode per calcular un límit del tipus $\lim_{n\to\infty}\frac{P(n)}{Q(n)}$ serà dividir numerador i denominador per <strong>la màxima potència de $n$</strong>. Anem a veure un exemple.</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{A}{n^P}=0=\lim_{n\to\infty}(A\cdot \frac{1}{n}\cdot \frac{1}{n}\cdot \frac{1}{n}... \text{p vegades})=A\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}\cdot \lim_{n\to\infty} \frac{1}{n}...\text{p vegades}=A\cdot 0 \cdot 0 \cdot 0 \cdot 0...=0</script>
+</p>
+<p>Així doncs, el mètode per calcular un límit del tipus <script type="math/tex">\lim_{n\to\infty}\frac{P(n)}{Q(n)}</script> serà dividir numerador i denominador per <strong>la màxima potència de <script type="math/tex">n</script></strong>. Anem a veure un exemple.</p>
 <p><strong>Exemple 8</strong></p>
-<p>$$\lim_{n\to\infty}\frac{3n^3+4n^2-8n+7}{2n^3-8n^2+n-8}=\lim_{n\to\infty}\frac{3n^3/n^3+4n^2/n^3-8n/n^3+7/n^3}{2n^3/n^3-8n^2/n^3+n/n^3-8/n^3}=\lim_{n\to\infty}\frac{3+4/n-8/n^2+7/n^3}{2-8/n+1/n^2-8/n^3}=\frac{3+0-0+0}{2-0+0-0}=\frac{3}{2}$$</p>
-<p>D'aquí es poden deduir 3 coses quan calculem $\lim_{n\to\infty}\frac{P(n)}{Q(n)}$:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\frac{3n^3+4n^2-8n+7}{2n^3-8n^2+n-8}=\lim_{n\to\infty}\frac{3n^3/n^3+4n^2/n^3-8n/n^3+7/n^3}{2n^3/n^3-8n^2/n^3+n/n^3-8/n^3}=\lim_{n\to\infty}\frac{3+4/n-8/n^2+7/n^3}{2-8/n+1/n^2-8/n^3}=\frac{3+0-0+0}{2-0+0-0}=\frac{3}{2}</script>
+</p>
+<p>D'aquí es poden deduir 3 coses quan calculem <script type="math/tex">\lim_{n\to\infty}\frac{P(n)}{Q(n)}</script>:</p>
 <ol>
-<li>Si grau $P(n)=$grau $Q(n)$, el límit del quocient és el quocient de coeficients dels termes de major grau de $P(n)$ i $Q(n)$, com a l'exemple anterior.</li>
-<li>Si grau $P(n)&gt;$grau $Q(n)$, el límit del quocient és $\pm \infty$ depenent del signe del coeficient de més grau del numerador i del signe del coeficent de més grau del denominador.</li>
-<li>Si grau $P(n)&lt;$grau $Q(n)$, el límit del quocient és 0.</li>
+<li>Si grau <script type="math/tex">P(n)=</script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és el quocient de coeficients dels termes de major grau de <script type="math/tex">P(n)</script> i <script type="math/tex">Q(n)</script>, com a l'exemple anterior.</li>
+<li>Si grau <script type="math/tex">P(n)></script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és <script type="math/tex">\pm \infty</script> depenent del signe del coeficient de més grau del numerador i del signe del coeficent de més grau del denominador.</li>
+<li>Si grau <script type="math/tex">P(n)<</script>grau <script type="math/tex">Q(n)</script>, el límit del quocient és 0.</li>
 </ol>
-<p><em>Nota: A partir d'ara prescidirem del símbol $n\to\infty$ en el càlcul dels límits</em></p>
+<p><em>Nota: A partir d'ara prescidirem del símbol <script type="math/tex">n\to\infty</script> en el càlcul dels límits</em></p>
 <h3 id="limit-duna-potencia">Límit d'una potència</h3>
 <blockquote>
-<p>$$lim(a_n)^{b_n}=\big(lim \qquad a_n \big)^{lim \qquad b_n}$$</p>
+<p>
+<script type="math/tex; mode=display">lim(a_n)^{b_n}=\big(lim \qquad a_n \big)^{lim \qquad b_n}</script>
+</p>
 </blockquote>
 <p><strong>Exemple 9</strong></p>
-<p>$$lim \Big( \sqrt{\frac{7-n}{n^2+1}} \Big)^{\frac{n-2}{n}}=lim \sqrt{\frac{7-n}{n^2+1}}=lim \big( \frac{7-n}{n^2+1}\big)^{\frac{1}{2}}=0^\frac{1}{2}=0$$</p>
-<h3 id="operacions-amb-infty">Operacions amb $\infty$</h3>
-<p>Quan calculem el límit d'una successió composta (això és, una successió que s'ha obtingut operant dues o més successions) ens podem trobar que a l'hora de calcular-ne el resultat ens surti algun $\infty$. A continuació llistem els casos més comuns i la seva resolució:</p>
+<p>
+<script type="math/tex; mode=display">lim \Big( \sqrt{\frac{7-n}{n^2+1}} \Big)^{\frac{n-2}{n}}=lim \sqrt{\frac{7-n}{n^2+1}}=lim \big( \frac{7-n}{n^2+1}\big)^{\frac{1}{2}}=0^\frac{1}{2}=0</script>
+</p>
+<h3 id="operacions-amb-infty">Operacions amb <script type="math/tex">\infty</script>
+</h3>
+<p>Quan calculem el límit d'una successió composta (això és, una successió que s'ha obtingut operant dues o més successions) ens podem trobar que a l'hora de calcular-ne el resultat ens surti algun <script type="math/tex">\infty</script>. A continuació llistem els casos més comuns i la seva resolució:</p>
 <ol>
-<li>$a\pm \infty=\pm \infty$ on $a \in \mathbb{R}$</li>
-<li>$\infty + \infty = + \infty$</li>
-<li>$-\infty - \infty = - \infty$</li>
-<li>$\frac{a}{\pm \infty}=0$ on $a \in \mathbb{R}$</li>
-<li>$\frac{a}{0}=\infty$ on $a \in \mathbb{R}$</li>
-<li>$+\infty \cdot (-\infty)=-\infty$</li>
-<li>$+\infty \cdot (+\infty)=+\infty$</li>
-<li>$a\cdot (\pm \infty)=\pm \infty$ on $a \in \mathbb{R}$</li>
+<li>
+<script type="math/tex">a\pm \infty=\pm \infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">\infty + \infty = + \infty</script>
+</li>
+<li>
+<script type="math/tex">-\infty - \infty = - \infty</script>
+</li>
+<li>
+<script type="math/tex">\frac{a}{\pm \infty}=0</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">\frac{a}{0}=\infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
+<li>
+<script type="math/tex">+\infty \cdot (-\infty)=-\infty</script>
+</li>
+<li>
+<script type="math/tex">+\infty \cdot (+\infty)=+\infty</script>
+</li>
+<li>
+<script type="math/tex">a\cdot (\pm \infty)=\pm \infty</script> on <script type="math/tex">a \in \mathbb{R}</script>
+</li>
 </ol>
 <h3 id="indeterminacions">Indeterminacions</h3>
 <p>No obstant, hi ha un tipus d'expressions que matemàticament no es poden calcular. S'anomenen <strong>indeterminacions</strong>. Aquestes són:</p>
 <ol>
-<li>$\frac{\infty}{\infty}$</li>
-<li>$\frac{0}{0}$</li>
-<li>$\infty-\infty$</li>
-<li>$0\cdot \infty$</li>
-<li>$1^\infty$</li>
-<li>$0^0$</li>
-<li>$\infty^0$</li>
+<li>
+<script type="math/tex">\frac{\infty}{\infty}</script>
+</li>
+<li>
+<script type="math/tex">\frac{0}{0}</script>
+</li>
+<li>
+<script type="math/tex">\infty-\infty</script>
+</li>
+<li>
+<script type="math/tex">0\cdot \infty</script>
+</li>
+<li>
+<script type="math/tex">1^\infty</script>
+</li>
+<li>
+<script type="math/tex">0^0</script>
+</li>
+<li>
+<script type="math/tex">\infty^0</script>
+</li>
 </ol>
-<p>Cadascuna d'aquestes indeterminacions té un mètode concret de resolució. Per exemple, en el cas de fraccions algebraiques com les de l'exemple 8, si substituïm $n$ per $\infty$ a la seva expressió obtenim la indeterminació  $\frac{\infty}{\infty}$ però ja hem vist que aquesta es pot resoldre dividint numerador i denominador per la potència màxima de $n$. Aquí només veurem com resoldre les indeterminacions $\infty -\infty$ i $1^\infty$.</p>
-<h4 id="indeterminacio-infty-infty">Indeterminació $\infty-\infty$</h4>
+<p>Cadascuna d'aquestes indeterminacions té un mètode concret de resolució. Per exemple, en el cas de fraccions algebraiques com les de l'exemple 8, si substituïm <script type="math/tex">n</script> per <script type="math/tex">\infty</script> a la seva expressió obtenim la indeterminació  <script type="math/tex">\frac{\infty}{\infty}</script> però ja hem vist que aquesta es pot resoldre dividint numerador i denominador per la potència màxima de <script type="math/tex">n</script>. Aquí només veurem com resoldre les indeterminacions <script type="math/tex">\infty -\infty</script> i <script type="math/tex">1^\infty</script>.</p>
+<h4 id="indeterminacio-infty-infty">Indeterminació <script type="math/tex">\infty-\infty</script>
+</h4>
 <p>En general la resoldrem multiplicant i dividint pel conjugat. Vegem-ne un exemple.</p>
 <p><strong>Exemple 10</strong></p>
-<p>\begin{align}
-lim(\sqrt{n+1}-\sqrt{n})&amp;=\sqrt{+\infty}-\sqrt{+\infty}=+\infty-\infty=ind\
-&amp;=lim\frac{(\sqrt{n+1}-\sqrt{n})(\sqrt{n+1}+\sqrt{n})}{\sqrt{n+1}+\sqrt{n}}\
-&amp;=lim\frac{(\sqrt{n+1})^2-(\sqrt{n})^2}{\sqrt{n+1}+\sqrt{n}}\
-&amp;=lim\frac{n+1-n}{\sqrt{n+1}+\sqrt{n}}\
-&amp;=lim\frac{1}{\sqrt{n+1}+\sqrt{n}}\
-&amp;=\frac{1}{\infty + \infty}=0\
-\end{align}</p>
-<h4 id="indeterminacio-1infty">Indeterminació $1^\infty$</h4>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+lim(\sqrt{n+1}-\sqrt{n})&=\sqrt{+\infty}-\sqrt{+\infty}=+\infty-\infty=ind\\
+&=lim\frac{(\sqrt{n+1}-\sqrt{n})(\sqrt{n+1}+\sqrt{n})}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{(\sqrt{n+1})^2-(\sqrt{n})^2}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{n+1-n}{\sqrt{n+1}+\sqrt{n}}\\
+&=lim\frac{1}{\sqrt{n+1}+\sqrt{n}}\\
+&=\frac{1}{\infty + \infty}=0\\
+\end{align}</script>
+</p>
+<h4 id="indeterminacio-1infty">Indeterminació <script type="math/tex">1^\infty</script>
+</h4>
 <p>Anem a veure quina forma té el límit següent:</p>
-<p>$$\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=(1+0)^{+\infty}=1^{+\infty}=ind$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=(1+0)^{+\infty}=1^{+\infty}=ind</script>
+</p>
 <p>Primer de tot, per a calcular aquest límit, mirarem si la successió és fitada i en cas afirmatiu, si és convergent. Calculem ara els 10 primers termes:</p>
-<p>\begin{align}
-a_1&amp;=\Big(1+\frac{1}{1} \Big)^1=2\
-a_2&amp;=\Big(1+\frac{1}{2} \Big)^2=\Big(\frac{3}{2}\Big)^2=\frac{9}{4}=2.25\
-a_3&amp;=\Big(1+\frac{1}{3} \Big)^3=\Big(\frac{4}{3}\Big)^3=\frac{64}{27}\sim 2.3703\
-a_4&amp;=\Big(1+\frac{1}{4} \Big)^4=\Big(\frac{5}{4}\Big)^4=\frac{625}{256}\sim 2.4414\
-a_5&amp;=\Big(1+\frac{1}{5} \Big)^5=\Big(\frac{6}{5}\Big)^5=\frac{7776}{3125}=2.48832\
-a_6&amp;=\Big(1+\frac{1}{6} \Big)^6=\Big(\frac{6}{5}\Big)^6=\frac{117649}{46656}\sim 2.5216\
-a_7&amp;=\Big(1+\frac{1}{7} \Big)^7=\Big(\frac{8}{7}\Big)^7=\frac{2097152}{823543}\sim 2.5464\
-a_8&amp;=\Big(1+\frac{1}{8}\Big)^8=\Big(\frac{9}{8}\Big)^8=\frac{43046721}{16777216}\sim 2.5657\
-a_9&amp;=\Big(1+\frac{1}{9} \Big)^9=\Big(\frac{10}{9}\Big)^9=\frac{10^9}{387420490}\sim 2.5811\
-a_10&amp;=\Big(1+\frac{1}{10} \Big)^10=\Big(\frac{11}{10}\Big)^{10}=1.1^{10}\sim 2.5937\
+<p>
+<script type="math/tex; mode=display">\begin{align}
+a_1&=\Big(1+\frac{1}{1} \Big)^1=2\\
+a_2&=\Big(1+\frac{1}{2} \Big)^2=\Big(\frac{3}{2}\Big)^2=\frac{9}{4}=2.25\\
+a_3&=\Big(1+\frac{1}{3} \Big)^3=\Big(\frac{4}{3}\Big)^3=\frac{64}{27}\sim 2.3703\\
+a_4&=\Big(1+\frac{1}{4} \Big)^4=\Big(\frac{5}{4}\Big)^4=\frac{625}{256}\sim 2.4414\\
+a_5&=\Big(1+\frac{1}{5} \Big)^5=\Big(\frac{6}{5}\Big)^5=\frac{7776}{3125}=2.48832\\
+a_6&=\Big(1+\frac{1}{6} \Big)^6=\Big(\frac{6}{5}\Big)^6=\frac{117649}{46656}\sim 2.5216\\
+a_7&=\Big(1+\frac{1}{7} \Big)^7=\Big(\frac{8}{7}\Big)^7=\frac{2097152}{823543}\sim 2.5464\\
+a_8&=\Big(1+\frac{1}{8}\Big)^8=\Big(\frac{9}{8}\Big)^8=\frac{43046721}{16777216}\sim 2.5657\\
+a_9&=\Big(1+\frac{1}{9} \Big)^9=\Big(\frac{10}{9}\Big)^9=\frac{10^9}{387420490}\sim 2.5811\\
+a_10&=\Big(1+\frac{1}{10} \Big)^10=\Big(\frac{11}{10}\Big)^{10}=1.1^{10}\sim 2.5937\\
 ...
-\end{align}</p>
-<p>Si calculéssim més termes veuríem que és una successió <em>monòtona creixent i fitada</em>. Podríem establir $3$ com a fita superior i $2$ com a fita inferior. Per tant, aquesta successió ha de tenir <em>límit</em>. Es pot demostrar que el <strong>límit existeix i és el nombre $e=2.71828...$</strong>. Per tant:</p>
+\end{align}</script>
+</p>
+<p>Si calculéssim més termes veuríem que és una successió <em>monòtona creixent i fitada</em>. Podríem establir <script type="math/tex">3</script> com a fita superior i <script type="math/tex">2</script> com a fita inferior. Per tant, aquesta successió ha de tenir <em>límit</em>. Es pot demostrar que el <strong>límit existeix i és el nombre <script type="math/tex">e=2.71828...</script></strong>. Per tant:</p>
 <blockquote>
-<p>$$\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=e$$</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{n}\Big)^n=e</script>
+</p>
 </blockquote>
-<p>La indeterminació $1^\infty$ engloba a totes les indeterminacions: $1^{+\infty}$, $1^{-\infty}$, $(-1)^{+\infty}$ i $(-1)^{-\infty}$. Quan donada una successió $a_n$ el seu límit és alguna de les indeterminacions anteriors, intentarem transformar $a_n$ amb una expressió del tipus $\Big( 1+\frac{1}{A} \Big)^A$ on $A$ és una expressió algebraica en $n$. Això ho fem perquè llavors:</p>
-<p>$$\lim_{n\to\infty}\Big( 1+ \frac{1}{A}\Big)^A=e$$</p>
+<p>La indeterminació <script type="math/tex">1^\infty</script> engloba a totes les indeterminacions: <script type="math/tex">1^{+\infty}</script>, <script type="math/tex">1^{-\infty}</script>, <script type="math/tex">(-1)^{+\infty}</script> i <script type="math/tex">(-1)^{-\infty}</script>. Quan donada una successió <script type="math/tex">a_n</script> el seu límit és alguna de les indeterminacions anteriors, intentarem transformar <script type="math/tex">a_n</script> amb una expressió del tipus <script type="math/tex">\Big( 1+\frac{1}{A} \Big)^A</script> on <script type="math/tex">A</script> és una expressió algebraica en <script type="math/tex">n</script>. Això ho fem perquè llavors:</p>
+<p>
+<script type="math/tex; mode=display">\lim_{n\to\infty}\Big( 1+ \frac{1}{A}\Big)^A=e</script>
+</p>
 <p>Anem a veure'n un exemple per entendre-ho millor:</p>
 <p><strong>Exemple 11</strong></p>
-<p>\begin{align}
-\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &amp;=1^{+\infty}=ind\
-\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &amp;=\lim_{n\to\infty}\Big( 1+\frac{n+1}{n+2}-1\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{-1}{n+2}\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{n^2+3}\
-&amp;=\lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{(n^2+3)\cdot \frac{n+2}{-1}\cdot \frac{-1}{n+2}}\
-&amp;=e^{\lim_{n\to\infty}(n^2+3)\cdot \frac{-1}{n+2}}=e^{\lim_{n\to\infty}\frac{-n^2-3}{n+2}}=e^{-\infty}=\frac{1}{+\infty}=0
-\end{align}</p></div>
-        </div>
+<p>
+<script type="math/tex; mode=display">\begin{align}
+\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &=1^{+\infty}=ind\\
+\lim_{n\to\infty}\Big( \frac{n+1}{n+2}\Big) ^{n^2+3} &=\lim_{n\to\infty}\Big( 1+\frac{n+1}{n+2}-1\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{-1}{n+2}\Big) ^{n^2+3} = \lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{n^2+3}\\
+&=\lim_{n\to\infty}\Big( 1+\frac{1}{\frac{n+2}{-1}}\Big) ^{(n^2+3)\cdot \frac{n+2}{-1}\cdot \frac{-1}{n+2}}\\
+&=e^{\lim_{n\to\infty}(n^2+3)\cdot \frac{-1}{n+2}}=e^{\lim_{n\to\infty}\frac{-n^2-3}{n+2}}=e^{-\infty}=\frac{1}{+\infty}=0
+\end{align}</script>
+</p></div>
+        
+    </div>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     </body>
+
 </html>
