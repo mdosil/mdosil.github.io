@@ -3,8 +3,8 @@
 
 #Script per pujar els htmls updatejats a la web
 ROOT='/Users/mdosil/github/mdosil.github.io'
-MATES1BAT_FOLDER=mates1bat_mkdocs
-MATES2BAT_FOLDER=mates2bat_mkdocs
+MATES1BAT_FOLDER=mates1_mkdocs
+MATES2BAT_FOLDER=mates2_mkdocs
 
 # update web content and update modules to the latest
 # content
