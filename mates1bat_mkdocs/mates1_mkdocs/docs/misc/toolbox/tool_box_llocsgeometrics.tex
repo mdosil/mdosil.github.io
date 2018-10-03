@@ -1,0 +1,51 @@
+\documentclass[a4paper,landscape]{article}
+\usepackage{fancyhdr}
+\usepackage[catalan]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+\usepackage{array}% http://ctan.org/pkg/array
+\usepackage{multirow}
+\setlength\extrarowheight{12pt}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+\rhead{TOOLBOX}
+\lhead{Tema 7. Llocs geomètrics}
+\lfoot{Institut de Vilafant. Matemàtiques 1r batxillerat}
+\rfoot{\thepage}
+ 
+\begin{document}
+	\author{Mireia Dosil}
+	\date{text}
+
+
+ 
+ 
+\begin{center}
+	\begin{tabular}{ | l | c | c | l |}
+		\hline
+		Lloc geomètric & excentricitat & Equació & Altres \\ \hline
+		Circumferència & 0 & $(x-x_0)^2+(y-y_0)^2=r^2$ & $C(x_0,y_0)$, radi $r$ \\
+		\hline
+		\multirow{4}{*}{Paràbola} & \multirow{4}{*}{1} & $y^2=2px$ & $V(0,0)$, $F(\frac{p}{2},0)$, $r:x=-\frac{p}{2}$ \\ \cline{3-4}
+		& &  $x^2=2py$ & $V(0,0)$, $F(0,\frac{p}{2})$, $r:y=-\frac{p}{2}$  \\ \cline{3-4}
+		& &  $(y-y_0)^2=2p(x-x_0)$ & $V(x_0,y_0)$, $F(x_0+\frac{p}{2},y_0)$, $r:x=x_0-\frac{p}{2}$  \\ \cline{3-4}
+		& &  $(x-x_0)^2=2p(y-y_0)$ & $V(x_0,y_0)$, $F(x_0,y_0+\frac{p}{2})$, $r:y=y_0-\frac{p}{2}$  \\ \cline{3-4}
+		\hline
+		\multirow{4}{*}{El.lipse} & \multirow{4}{*}{$0<e<1$} & $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ & $F(c,0)$, $F^\prime(-c,0)$, $a^2=b^2+c^2$  \\ \cline{3-4}
+		& & $\frac{x^2}{b^2}+\frac{y^2}{a^2}=1$ & $F(0,c)$, $F^\prime(0,-c)$  \\ \cline{3-4}
+		& & $\frac{(x-x_0)^2}{a^2}+\frac{(y-y_0)^2}{b^2}=1$ & $F(c+x_0,y_0)$, $F^\prime(-c+x_0,y_0)$\\ \cline{3-4}
+		& & $\frac{(x-x_0)^2}{b^2}+\frac{(y-y_0)^2}{a^2}=1$ & $F(x_0,c+y_0)$, $F^\prime(x_0,-c+y_0)$  \\ \cline{3-4}
+		\hline
+		\multirow{4}{*}{Hipèrbola} & \multirow{4}{*}{$e>1$} & $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ & $F(c,0)$, $F^\prime(-c,0)$, $c^2=a^2+b^2$  \\ \cline{3-4}
+		& & $\frac{y^2}{a^2}-\frac{x^2}{b^2}=1$ & $F(0,c)$, $F^\prime(0,-c)$  \\ \cline{3-4}
+		& & $\frac{(x-x_0)^2}{a^2}-\frac{(y-y_0)^2}{b^2}=1$ & $F(c+x_0,0)$, $F^\prime(-c+x_0,y_0)$\\ \cline{3-4}
+		& & $\frac{(y-y_0)^2}{a^2}+\frac{(x-x_0)^2}{b^2}=1$ & $F(x_0,c+y_0)$, $F^\prime(x_0,-c+y_0)$  \\ \cline{3-4}
+		\hline
+	\end{tabular}
+\end{center}
+
+\end{document}

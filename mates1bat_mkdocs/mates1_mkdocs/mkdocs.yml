@@ -1,0 +1,35 @@
+site_name: Matemàtiques 1r batxillerat
+
+pages:
+- Home: 'index.md'
+- Temes:
+    - '1. Nombres reals': 'temes/nombresreals.md'
+    - '2. Trigonometria': 'temes/trigonometria.md'
+    - '3. Nombres complexos': 'temes/complexos.md'
+    - '4. Polinomis': 'temes/polinomis.md'
+    - '5. Vectors en el pla': 'temes/vectors.md'
+    - '6. Rectes en el pla': 'temes/rectes.md'
+    - '7. Llocs geomètrics': 'temes/llocsgeometrics.md'
+    - '8. Successions': 'temes/successions.md'
+    - '9. Funcions': 'temes/funcions.md'
+    - '10. Límits i continuïtat de funcions': 'temes/limits.md'
+    - '11. Funció exponencial i logarítmica': 'temes/funcioexponencial.md'
+    - '12. Funcions trigonomètriques': 'temes/funcionstrigonometriques.md'
+
+
+- Miscel.lània: misc/misc.md
+- Llicència: sobre.md
+#- Matemàtiques 2n de batxillerat: 'http://mates2batcientific'
+
+theme: cinder
+
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+
+
+markdown_extensions:
+    - mdx_math:
+        enable_dollar_delimiter: True
+    - admonition
