@@ -14,14 +14,11 @@ pages:
     - '9. Problemes mètrics': 'temes/problemesmetrics.md'
 
 
-
 - Miscel.lània: misc/misc.md
 - Llicència: sobre.md
 #- Matemàtiques 1r de batxillerat: 'http://mates1batcientific'
 
 theme: cinder
-
-
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
