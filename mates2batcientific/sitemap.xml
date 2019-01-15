@@ -77,6 +77,14 @@
 
     
     <url>
+     <loc>/mustknow/</loc>
+     <lastmod>2019-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/sobre/</loc>
      <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
