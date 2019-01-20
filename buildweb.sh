@@ -32,7 +32,6 @@ echo '#####################################'
 #echo 'Removing ggb directory'
 #rm -rf $ROOT/mates2batcientific/ggb
 
-
 echo 'Uploading changes to git'
 git add $ROOT/mates1batcientific/*
 git add $ROOT/mates2batcientific/*
