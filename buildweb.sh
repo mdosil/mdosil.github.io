@@ -12,6 +12,8 @@ echo '#####################################'
 echo 'Update modules'
 git pull
 git submodule update --recursive --remote --merge
+git add -u
+git commit -m "update submodules"
 echo '#############################################'
 
 #update the BAT1
