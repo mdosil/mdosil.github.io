@@ -200,17 +200,13 @@
                 <li class="third-level"><a href="#potencia-duna-matriu-quadrada">Potència d'una matriu quadrada</a></li>
             
         
-            <li class="second-level"><a href="#determinants-dordre-dos">Determinants d'ordre dos</a></li>
+            <li class="second-level"><a href="#determinants">Determinants</a></li>
             
-        
-            <li class="second-level"><a href="#determinants-dordre-tres">Determinants d'ordre tres</a></li>
+                <li class="third-level"><a href="#determinants-dordre-dos">Determinants d'ordre dos</a></li>
             
-                <li class="third-level"><a href="#calcul-de-determinants-dordre-tres-desenvolupant-per-una-fila-o-una-columna">Càlcul de determinants d'ordre tres desenvolupant per una fila o una columna</a></li>
+                <li class="third-level"><a href="#determinants-dordre-tres">Determinants d'ordre tres</a></li>
             
-                <li class="third-level"><a href="#propietats-dels-determinants">Propietats dels determinants</a></li>
-            
-        
-            <li class="second-level"><a href="#determinants-dordre-4">Determinants d'ordre 4</a></li>
+                <li class="third-level"><a href="#determinants-dordre-4">Determinants d'ordre 4</a></li>
             
         
             <li class="second-level"><a href="#triangulacio-de-matrius">Triangulació de Matrius</a></li>
@@ -687,7 +683,8 @@ A^3&=A^2\cdot A=A\cdot A \cdot A\\
 A^n&=A\cdot A \cdot A....\cdot A
 \end{align}</script>
 </p>
-<h2 id="determinants-dordre-dos">Determinants d'ordre dos</h2>
+<h2 id="determinants">Determinants</h2>
+<h3 id="determinants-dordre-dos">Determinants d'ordre dos</h3>
 <p>Donada una matriu quadrada <script type="math/tex">2x2</script> podem definir el determinant d'aquesta matriu com l'operació:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -699,7 +696,7 @@ a_{21} & a_{22}
 </script>
 </p>
 <p>El resultat d'un determinant sempre és un nombre real.</p>
-<h2 id="determinants-dordre-tres">Determinants d'ordre tres</h2>
+<h3 id="determinants-dordre-tres">Determinants d'ordre tres</h3>
 <p>També podem definir el determinant d'una matriu d'ordre 3:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -729,7 +726,7 @@ a_{31} & a_{32} & a_{33}
 =10-9-40-(75+12+4)=-130
 </script>
 </p>
-<h3 id="calcul-de-determinants-dordre-tres-desenvolupant-per-una-fila-o-una-columna">Càlcul de determinants d'ordre tres desenvolupant per una fila o una columna</h3>
+<h4 id="calcul-de-determinants-dordre-tres-desenvolupant-per-una-fila-o-una-columna">Càlcul de determinants d'ordre tres desenvolupant per una fila o una columna</h4>
 <p>Podem transformar el càlcul de determinants d'ordre 3 de la manera següent:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
@@ -780,7 +777,7 @@ a_{31} & a_{32}
 =-1
 </script>
 </p>
-<h4 id="adjunt-dun-element-a_ij-matriu-adjunta">Adjunt d'un element <script type="math/tex">a_{ij}</script>. Matriu adjunta</h4>
+<h5 id="adjunt-dun-element-a_ij-matriu-adjunta">Adjunt d'un element <script type="math/tex">a_{ij}</script>. Matriu adjunta</h5>
 <p>Intentarem d'expressar això d'una manera més formal. Definim <script type="math/tex">\alpha_{ij}</script> com el <strong>menor complementari</strong> d'un element <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script> com aquell determinant d'ordre <script type="math/tex">2</script> que s'obté en eliminar la fila <script type="math/tex">i</script> i la columna <script type="math/tex">j</script> de la matriu <script type="math/tex">A</script>. També definim <script type="math/tex">A_{ij}</script> com <strong>l'adjunt d'un element</strong> <script type="math/tex">a_{ij}</script> d'una matriu <script type="math/tex">A</script>: és el seu menor complementari <script type="math/tex">\alpha_{ij}</script> afectat d'un signe determinant per la seva situació en la matriu segons:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -819,7 +816,7 @@ a_{31} & a_{32} & a_{33}
 </script>
 </p>
 <p>Si multipliquem els elements d'una fila (o columna) pels adjunts d'una altra fila (o columna) el valor sempre és zero.</p>
-<h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
+<h4 id="propietats-dels-determinants">Propietats dels determinants</h4>
 <ol>
 <li>
 <p>El determinant de la matriu unitat és <script type="math/tex">1</script>.</p>
@@ -992,7 +989,7 @@ k_3 & a_{32} & a_{33}
 </p>
 </li>
 </ol>
-<h2 id="determinants-dordre-4">Determinants d'ordre 4</h2>
+<h3 id="determinants-dordre-4">Determinants d'ordre 4</h3>
 <p>Sigui <script type="math/tex">A</script> una matriu quadrada d'ordre 4:</p>
 <p>
 <script type="math/tex; mode=display">
