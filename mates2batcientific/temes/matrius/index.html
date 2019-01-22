@@ -200,9 +200,9 @@
             
                 <li class="third-level"><a href="#determinants-dordre-tres">Determinants d'ordre tres</a></li>
             
-                <li class="third-level"><a href="#propietats-dels-determinants">Propietats dels determinants</a></li>
-            
                 <li class="third-level"><a href="#determinants-dordre-4">Determinants d'ordre 4</a></li>
+            
+                <li class="third-level"><a href="#propietats-dels-determinants">Propietats dels determinants</a></li>
             
         
             <li class="second-level"><a href="#triangulacio-de-matrius">Triangulació de Matrius</a></li>
@@ -812,6 +812,55 @@ a_{31} & a_{32} & a_{33}
 </script>
 </p>
 <p>Si multipliquem els elements d'una fila (o columna) pels adjunts d'una altra fila (o columna) el valor sempre és zero.</p>
+<h3 id="determinants-dordre-4">Determinants d'ordre 4</h3>
+<p>Sigui <script type="math/tex">A</script> una matriu quadrada d'ordre 4:</p>
+<p>
+<script type="math/tex; mode=display">
+A=
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14}\\
+a_{21} & a_{22} & a_{23} & a_{24}\\
+a_{31} & a_{32} & a_{33} & a_{34}\\
+a_{41} & a_{42} & a_{43} & a_{44}\\
+\end{pmatrix}
+</script>
+</p>
+<p>Per calcular el seu determinant, ho farem desenvolupant per una fila o una columna:</p>
+<p>
+<script type="math/tex; mode=display">
+|A|=
+\begin{vmatrix}
+a_{11} & a_{12} & a_{13} & a_{14}\\
+a_{21} & a_{22} & a_{23} & a_{24}\\
+a_{31} & a_{32} & a_{33} & a_{34}\\
+a_{41} & a_{42} & a_{43} & a_{44}\\
+\end{vmatrix}
+= a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}+a_{14}A_{14}
+</script>
+</p>
+<p><strong>Exemple 8</strong></p>
+<p>Calcula el determinant següent:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+1 & 0 & 0 & 2\\
+-1 & 3 & 1 & 0\\
+0 & 1 & 2 & 1\\
+1 & 1 & 3 & 1\\
+\end{vmatrix}
+= 1 \begin{vmatrix}
+3 & 1 & 0\\
+1 & 2 & 1\\
+1 & 3 & 1\\
+\end{vmatrix}
+-2 \begin{vmatrix}
+-1 & 3 & 1\\
+0 & 1 & 2\\
+1 & 1 & 3\\
+\end{vmatrix}
+=1(6+1-9-1)-2(-3+6-1+2)=-11
+</script>
+</p>
 <h3 id="propietats-dels-determinants">Propietats dels determinants</h3>
 <ol>
 <li>
@@ -985,55 +1034,6 @@ k_3 & a_{32} & a_{33}
 </p>
 </li>
 </ol>
-<h3 id="determinants-dordre-4">Determinants d'ordre 4</h3>
-<p>Sigui <script type="math/tex">A</script> una matriu quadrada d'ordre 4:</p>
-<p>
-<script type="math/tex; mode=display">
-A=
-\begin{pmatrix}
-a_{11} & a_{12} & a_{13} & a_{14}\\
-a_{21} & a_{22} & a_{23} & a_{24}\\
-a_{31} & a_{32} & a_{33} & a_{34}\\
-a_{41} & a_{42} & a_{43} & a_{44}\\
-\end{pmatrix}
-</script>
-</p>
-<p>Per calcular el seu determinant, ho farem desenvolupant per una fila o una columna:</p>
-<p>
-<script type="math/tex; mode=display">
-|A|=
-\begin{vmatrix}
-a_{11} & a_{12} & a_{13} & a_{14}\\
-a_{21} & a_{22} & a_{23} & a_{24}\\
-a_{31} & a_{32} & a_{33} & a_{34}\\
-a_{41} & a_{42} & a_{43} & a_{44}\\
-\end{vmatrix}
-= a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}+a_{14}A_{14}
-</script>
-</p>
-<p><strong>Exemple 8</strong></p>
-<p>Calcula el determinant següent:</p>
-<p>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-1 & 0 & 0 & 2\\
--1 & 3 & 1 & 0\\
-0 & 1 & 2 & 1\\
-1 & 1 & 3 & 1\\
-\end{vmatrix}
-= 1 \begin{vmatrix}
-3 & 1 & 0\\
-1 & 2 & 1\\
-1 & 3 & 1\\
-\end{vmatrix}
--2 \begin{vmatrix}
--1 & 3 & 1\\
-0 & 1 & 2\\
-1 & 1 & 3\\
-\end{vmatrix}
-=1(6+1-9-1)-2(-3+6-1+2)=-11
-</script>
-</p>
 <h2 id="triangulacio-de-matrius">Triangulació de Matrius</h2>
 <p>Com hem vist a les propietats, el determinant d'una matriu triangular és el producte dels elements de la seva diagonal principal. Per tant, quan hàgim de calcular un determinant d'una matriu, ens interessarà aplicar les propietats per fer la matriu triangular. Un cop tingui aquesta forma, el determinant s'obtindrà fent el producte dels elements de la diagonal principal.</p>
 <p>Donada una matriu quadrada <script type="math/tex">4x4</script>, per triangular-la (zeros sota la diagonal principal) cal seguir el procediment següent:</p>
