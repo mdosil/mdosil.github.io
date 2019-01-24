@@ -1044,7 +1044,7 @@ k_3 & a_{32} & a_{33}
 <li>Ja hem triangulat la matriu.</li>
 </ol>
 <p>Veiem-ho amb el mateix exemple anterior:</p>
-<p><strong>Exemple 8</strong></p>
+<p><strong>Exemple 9</strong></p>
 <p>Calcula el determinant següent triangulant la matriu primer:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -1265,7 +1265,7 @@ Si <script type="math/tex">|A|\ne 0</script> això és pot expressar com:</p>
 <p>
 <script type="math/tex; mode=display">A^{-1}=\frac{(Adj(A))^T)}{|A|}</script>
 </p>
-<p><strong>Exemple 9</strong></p>
+<p><strong>Exemple 10</strong></p>
 <p>Calcula la matriu inversa de:</p>
 <p>
 <script type="math/tex; mode=display">A=
@@ -1319,7 +1319,7 @@ A_{21}=
 -
 \begin{vmatrix}
 5 & 2\\
--1 & -1
+3 & 4
 \end{vmatrix}
 =-14
 \qquad
@@ -1519,14 +1519,14 @@ A_{33}=
 <p>Si tots els menors d'una matriu d'ordre <script type="math/tex">k</script> són <script type="math/tex">0</script>, els d'ordre <script type="math/tex">k+1</script> també ho són.</p>
 </blockquote>
 <p>A la pràctica això vol dir que si tots els menors són zero, el rang serà una unitat inferior i no cal mirar els menors d'ordre superior, perquè segur que també seran zero.</p>
-<p>Si utilitzant totes les possibilitats d'orlar un menor fem servir la mateixa fila però diferents columnes (o al revés) i veiem que tots els determinants són zero, podem afirmar que la fila (o columna) amb la que hem orlat el menor és combinació lineal de les files (o columnes) del menor. Veurem això amb més claredat a l'exemple 10.</p>
+<p>Si utilitzant totes les possibilitats d'orlar un menor fem servir la mateixa fila però diferents columnes (o al revés) i veiem que tots els determinants són zero, podem afirmar que la fila (o columna) amb la que hem orlat el menor és combinació lineal de les files (o columnes) del menor. Veurem això amb més claredat a l'exemple 11.</p>
 <h3 id="metode-per-calcular-el-rang">Mètode per calcular el rang</h3>
 <ol>
 <li>Si la matriu té un element diferent de <script type="math/tex">0</script> el rang serà com a mínim 1.</li>
 <li>A continuació orlem aquest menor d'ordre 1 fins a trobar un menor d'ordre 2 diferent de zero. En aquest cas, podem afirmar que el rang com a mínim és 2. Si tots els d'ordre 2 són zero, el rang de la matriu és 1 i ja hauríem acabat.</li>
 <li>En general, si trobem menors no nuls, continuem aquest procés fins a trobar un menor d'ordre <script type="math/tex">k</script> tal que al orlar-lo amb les files i columnes que queden tots els menors d'ordre <script type="math/tex">k+1</script> són nuls. Aleshores el rang de la matriu <script type="math/tex">A</script> serà <script type="math/tex">k</script>.</li>
 </ol>
-<p><strong>Exemple 10</strong></p>
+<p><strong>Exemple 11</strong></p>
 <p>Trobeu el rang de la matriu:</p>
 <p>
 <script type="math/tex; mode=display">
