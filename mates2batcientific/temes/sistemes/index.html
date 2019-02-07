@@ -263,8 +263,8 @@ a_{m1} & a_{m2} & a_{m3} &...& a_{mn} & b_m\\
 <p>L'enunciat del teorema ens diu el següent:</p>
 <blockquote>
 <p>Un sistema només és <strong>compatible</strong> si rang<script type="math/tex">M</script>=rang<script type="math/tex">MA</script>.</p>
-<p>Si rang<script type="math/tex">M</script>=rang<script type="math/tex">MA</script>=<script type="math/tex">r=n</script>, on <script type="math/tex">n</script> és el nombre d'incògnites, el sistema és <strong>compatible determinat</strong></p>
-<p>Si rang<script type="math/tex">M</script>=rang<script type="math/tex">MA</script>=<script type="math/tex">r<n</script>, el sistema és <strong>compatible indeterminat</strong> amb <script type="math/tex">n-r</script> graus de llibertat.</p>
+<p>Si rang<script type="math/tex">A</script>=rang<script type="math/tex">MA</script>=<script type="math/tex">r=n</script>, on <script type="math/tex">n</script> és el nombre d'incògnites, el sistema és <strong>compatible determinat</strong></p>
+<p>Si rang<script type="math/tex">A</script>=rang<script type="math/tex">MA</script>=<script type="math/tex">r<n</script>, el sistema és <strong>compatible indeterminat</strong> amb <script type="math/tex">n-r</script> graus de llibertat o paràmetres.</p>
 </blockquote>
 <h2 id="notacio-matricial-dun-sistema">Notació matricial d'un sistema</h2>
 <p>Podem expressar el sistema anterior com un producte de dues matrius:</p>
@@ -734,7 +734,7 @@ Per tant, el rang de <script type="math/tex">A</script> com a mínim és 2. Anem
 <p>Com que el rang és 2 i tenim 3 incògnites, això voldrà dir que hi ha un paràmetre (nombre real). El que es fa és assignar aquest paràmetre a una de les variables i expressar les altres en funció d'aquest valor. En el nostre cas, farem:</p>
 <p>
 <script type="math/tex; mode=display">
-z=\lambda \qquad y=\frac{ 2-6\lambda }{ 5 } \qquad x=\frac{ 1-7\lambda }{ 5 }
+z=\lambda \qquad y=\frac{ 2-6\lambda }{ 5 } \qquad x=\frac{ 1+\lambda }{ 5 }
 </script>
 </p>
 <h2 id="sistemes-homogenis">Sistemes homogenis</h2>
@@ -754,7 +754,7 @@ z=\lambda \qquad y=\frac{ 2-6\lambda }{ 5 } \qquad x=\frac{ 1-7\lambda }{ 5 }
 1 & -1\\
 2 & 1
 \end{vmatrix}
-=4
+=3
 </script>
 </p>
 <p>El rang com a mínim és 2. Anem a calcular el menor d'ordre 3:</p>
@@ -812,8 +812,7 @@ MA=\begin{pmatrix}
 -1 & -7\\
 1 & 1
 \end{vmatrix}
-=5
-</script>
+=6</script>
 </p>
 <p>El rang com a mínim és 2. Anem a calcular el menor d'ordre 3. Ho fem desenvolupant per la 1a fila:</p>
 <p>
