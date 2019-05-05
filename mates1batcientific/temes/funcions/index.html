@@ -255,7 +255,7 @@ f:& A \rightarrow B \\
 </p>
 <p>
 <script type="math/tex">A</script> és el conjunt inicial o de partida i i <script type="math/tex">B</script> és el conjunt final o d'arribada. <script type="math/tex">a</script> és l'element original o antiimatge, i <script type="math/tex">b</script> és l'element final o imatge.</p>
-<p><strong>No tots els elements del conjunt final són imatges</strong>. Només oh són els que tenen associat algun element del conjunt inicial.</p>
+<p><strong>No tots els elements del conjunt final són imatges</strong>. Només ho són els que tenen associat algun element del conjunt inicial.</p>
 <p><strong>Exemple 1</strong></p>
 <p>Considerem l'aplicació <script type="math/tex">f</script> entre el conjunt dels naturals <script type="math/tex">\mathbb{N}</script> i els racionals <script type="math/tex">\mathbb{Q}</script> de tal manera que a cada nombre natural <script type="math/tex">n</script> li fa correspondre la meitat de la suma de <script type="math/tex">n</script> i 5. Doneu alguns elements del conjunt inicial i del conjunt final. Doneu algun element que no pertanyi al conjunt inicial. Doneu algun element que no pertanyi al conjunt final.</p>
 <p>
@@ -350,7 +350,7 @@ f:& {\mathbb{R}_0}^+ \rightarrow  {\mathbb{R}_0}^+\\
 <p><strong>Exemple 4</strong></p>
 <p>Calcula el domini de la funció <script type="math/tex">y=f(x)=\frac{x^2-2}{x^2-2x+1}</script>.</p>
 <p>
-<script type="math/tex; mode=display">x^2-2x+1=0 \rightarrow x=\pm 1</script>
+<script type="math/tex; mode=display">x^2-2x+1=0 \rightarrow x=1</script>
 </p>
 <p>
 <script type="math/tex; mode=display">D=\mathbb{R}-\{1\}</script>
@@ -455,7 +455,7 @@ D_{f/g}&=A \cap B - \{ x \mbox{ pels quals g(x)=0}\}
 <p>En l'exemple anterior:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-y&=\Big(\frac{f}{g}\Big)(x)=\frac{x^2-1}{x}\div \frac{x+1}{x-1}=\frac{(x-1)^2(x+1)}{x(x+1)}\\
+y&=\Big(\frac{f}{g}\Big)(x)=\frac{x^2-1}{x}\div \frac{x+1}{x-1}=\frac{(x-1)^2(x-1)}{x(x+1)}\\
 D_{f/g}&=\mathbb{R}-\{0,1, -1\}
 \end{align}</script>
 </p>
@@ -479,7 +479,7 @@ g:& C \rightarrow \mathbb{R} \\
 <p>amb <script type="math/tex">D_g=C</script> i <script type="math/tex">R_g=\mathbb{R}</script>. Si <script type="math/tex">B \subseteq C</script>, o el que és el mateix, les imatges de <script type="math/tex">f</script> estan dins el domini de <script type="math/tex">g</script>, definim la composició de <script type="math/tex">f</script> amb <script type="math/tex">g</script> i ho escrivim com <script type="math/tex">g \circ f</script> (<script type="math/tex">f</script> composat en <script type="math/tex">g</script>) a la funció:</p>
 <p>
 <script type="math/tex; mode=display">\begin{align}
-g\circ f:& A \rightarrow B \\
+g\circ f:& A \rightarrow \mathbb{R} \\
 &x \rightarrow y=(g \circ f)(x)=g(f(x))\\
 D_{g \circ f}&=D_f=A
 \end{align}</script>
