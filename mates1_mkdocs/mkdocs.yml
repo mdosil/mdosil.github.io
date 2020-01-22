@@ -1,6 +1,6 @@
 site_name: Matemàtiques 1r batxillerat
 
-pages:
+nav:
 - Home: 'index.md'
 - Temes:
     - '1. Nombres reals': 'temes/nombresreals.md'

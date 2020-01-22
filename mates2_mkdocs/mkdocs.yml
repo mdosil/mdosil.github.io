@@ -1,6 +1,6 @@
 site_name: Matemàtiques 2n Batxillerat científic
 
-pages:
+nav:
 - Home: 'index.md'
 - Temes:
     - '1. Derivades': 'temes/derivades.md'
