@@ -1,5 +1,7 @@
  #!/bin/bash
 
+LOGFILE='log.txt'
+data | tee -a "$LOGFILE"
 
 #Script per pujar els htmls updatejats a la web
 ROOT='/Users/mdosil/github/mdosil.github.io'
@@ -8,7 +10,7 @@ MATES2BAT_FOLDER=mates2_mkdocs
 
 # update web content and update modules to the latest
 # content
-echo '#####################################' > log.txt 
+echo '#####################################' | tee -a "$LOGFILE"
 echo 'Update modules'
 git pull
 # git submodule update --recursive --remote --merge
