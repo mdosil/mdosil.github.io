@@ -1,6 +1,6 @@
  #!/bin/bash
 
-LOGFILE='log.txt'
+LOGFILE=logs/`date +'%Y-%m-%d-%H-%M'`.txt
 date | tee -a "$LOGFILE"
 
 #Script per pujar els htmls updatejats a la web
@@ -11,19 +11,19 @@ MATES2BAT_FOLDER=mates2_mkdocs
 # update web content and update modules to the latest
 # content
 echo '#####################################' | tee -a "$LOGFILE"
-echo 'Update modules'
-git pull
+echo 'Update modules' | tee -a "$LOGFILE"
+git pull >> $LOGFILE
 # git submodule update --recursive --remote --merge
-git submodule update --recursive --remote >> log.txt
-git add -u
-git commit -m "update submodules"
-echo '#############################################'
+git submodule update --recursive --remote >> $LOGFILE
+git add -u >> $LOGFILE
+git commit -m "update submodules" >> $LOGFILE
+echo '#############################################' | tee -a "$LOGFILE"
 
 #update the BAT1
-cd $ROOT/$MATES1BAT_FOLDER
-pwd
-echo 'Building mates 1 bat site.......'
-mkdocs build --clean -d $ROOT/mates1batcientific
+cd $ROOT/$MATES1BAT_FOLDER 
+pwd >> $LOGFILE
+echo 'Building mates 1 bat site.......' | tee -a "$LOGFILE"
+mkdocs build --clean -d $ROOT/mates1batcientific >> $LOGFILE
 
 #echo '#####################################'
 #echo 'Removing ggb directory'
@@ -31,17 +31,17 @@ mkdocs build --clean -d $ROOT/mates1batcientific
 
 #update the BAT2
 cd $ROOT/$MATES2BAT_FOLDER
-echo 'Building mates 2 bat site.......'
-mkdocs build --clean -d $ROOT/mates2batcientific
-echo '#####################################'
+echo 'Building mates 2 bat site.......' | tee -a "$LOGFILE"
+mkdocs build --clean -d $ROOT/mates2batcientific >> $LOGFILE
+echo '#####################################' | tee -a "$LOGFILE"
 #echo 'Removing ggb directory'
 #rm -rf $ROOT/mates2batcientific/ggb
 
 # echo 'Uploading changes to git'
-git add $ROOT/mates1batcientific/*
-git add $ROOT/mates2batcientific/*
-git commit -m "Automated script uploaded web"
-git push origin master
+git add $ROOT/mates1batcientific/* >> $LOGFILE
+git add $ROOT/mates2batcientific/* >> $LOGFILE
+git commit -m "Automated script uploaded web" >> $LOGFILE
+git push origin master >> $LOGFILE
 
-echo '#####################################'
-echo 'Done!'
+echo '#####################################' | tee -a "$LOGFILE"
+echo 'Done!' | tee -a "$LOGFILE"
