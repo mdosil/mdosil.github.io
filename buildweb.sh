@@ -8,10 +8,15 @@ ROOT='/Users/mdosil/github/mdosil.github.io'
 MATES1BAT_FOLDER=mates1_mkdocs
 MATES2BAT_FOLDER=mates2_mkdocs
 
+# set a LOGFILE
+LOGFILE=$ROOT/logs/`date +'%Y-%m-%d-%H-%M'`.txt
+date | tee -a "$LOGFILE"
+
 # update web content and update modules to the latest
 # content
 echo '#####################################' | tee -a "$LOGFILE"
 echo 'Update modules' | tee -a "$LOGFILE"
+echo "test" >> $LOGFILE
 git pull >> $LOGFILE
 # git submodule update --recursive --remote --merge
 git submodule update --recursive --remote >> $LOGFILE
