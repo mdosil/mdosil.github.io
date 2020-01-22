@@ -1,7 +1,7 @@
  #!/bin/bash
 
 LOGFILE='log.txt'
-data | tee -a "$LOGFILE"
+date | tee -a "$LOGFILE"
 
 #Script per pujar els htmls updatejats a la web
 ROOT='/Users/mdosil/github/mdosil.github.io'
