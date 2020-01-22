@@ -45,4 +45,5 @@ git commit -m "Automated script uploaded web" >> $LOGFILE 2>&1
 git push origin master >> $LOGFILE 2>&1
 
 echo '#####################################' | tee -a "$LOGFILE"
-echo 'Done!' | tee -a "$LOGFILE" 
+green=`tput setaf 2`
+echo "${green}Done!" | tee -a "$LOGFILE" 
