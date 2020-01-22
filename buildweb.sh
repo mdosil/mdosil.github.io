@@ -11,8 +11,8 @@ MATES2BAT_FOLDER=mates2_mkdocs
 echo '#####################################'
 echo 'Update modules'
 git pull
-git submodule update --recursive --remote --merge
-# git submodule update --recursive --remote
+# git submodule update --recursive --remote --merge
+git submodule update --recursive --remote
 git add -u
 git commit -m "update submodules"
 echo '#############################################'
