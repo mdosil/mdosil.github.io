@@ -18,7 +18,7 @@ git pull >> $LOGFILE 2>&1
 git submodule update --recursive --remote >> $LOGFILE 2>&1
 git add -u >> $LOGFILE 2>&1
 git commit -m "update submodules" >> $LOGFILE 2>&1
-echo '#############################################' | tee -a "$LOGFILE"
+echo '#####################################' | tee -a "$LOGFILE"
 
 #update the BAT1
 cd $ROOT/$MATES1BAT_FOLDER 
@@ -44,6 +44,6 @@ git add $ROOT/mates2batcientific/* >> $LOGFILE 2>&1
 git commit -m "Automated script uploaded web" >> $LOGFILE 2>&1
 git push origin master >> $LOGFILE 2>&1
 
-echo '#####################################' | tee -a "$LOGFILE"
+# print output
 green=`tput setaf 2`
 echo "${green}Done!" | tee -a "$LOGFILE" 
