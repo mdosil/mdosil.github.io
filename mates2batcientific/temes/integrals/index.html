@@ -340,7 +340,7 @@ F(x)&=\frac{x^3}{3}+5 \mbox{ també ho és}
 <tbody>
 <tr>
 <td align="left">
-<script type="math/tex; mode=display">\int \frac{1}{u(x)}\cdot u^\prime (x) dx=\ln(x)+C</script>
+<script type="math/tex; mode=display">\int \frac{1}{u(x)}\cdot u^\prime (x) dx=\ln(u(x))+C</script>
 </td>
 <td align="left"></td>
 </tr>
@@ -502,9 +502,9 @@ x=-1&\rightarrow -3-2=0A-3B
 <p>
 <script type="math/tex; mode=display">\int \frac{3x-2}{x^2-x-2}dx=\frac{4}{3}\int \frac{1}{x-2}dx+\frac{5}{3}\int \frac{1}{x+1}dx=-\frac{4}{3} \ln (x-2)+\frac{5}{3} \ln (x+1)+C</script>
 </p>
-<p>Per tant, la integral que volíem calcular al principi en donarà:</p>
+<p>Per tant, la integral que volíem calcular al principi ens donarà:</p>
 <p>
-<script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx = \frac{1}{2}x^2+x+\frac{4}{3} \ln(x-2) + \frac{5}{3} \ln(x+1)+C</script>
+<script type="math/tex; mode=display">\int \frac{x^3-4}{x^2-x-2}dx = \frac{1}{2}x^2+x-\frac{4}{3} \ln(x-2) + \frac{5}{3} \ln(x+1)+C</script>
 </p>
 <p>En general, per l'expansió en fraccions parcials d'una fracció pròpia, seguirem les normes següents:</p>
 <ol>
@@ -790,7 +790,7 @@ Una primera aproximació seria dividir l'interval <script type="math/tex">[a,b]<
 <p>De fet, en matemàtiques, quan parlem d'una distància molt petita, l'anomenem <em>diferencial</em>. Per tant, <script type="math/tex">dx</script> és una distància molt petita en l'eix de les abcisses. I quan aquests intervals es fan molt i molt petits, l'alçada del rectangle esdevé <script type="math/tex">f(x)</script>, d'aquí que <script type="math/tex">f(x)\cdot dx</script> sigui l'àrea d'un rectangle molt petit de base <script type="math/tex">dx</script> i alçada <script type="math/tex">f(x)</script>. I el símbol d'integral, en realitat és un sumatori de totes les àrees en l'interval.</p>
 <p>La figura delimitada per l'eix de les abcisses, les dues rectes <script type="math/tex">x=a</script> i <script type="math/tex">x=b</script> i la corba de la funció <script type="math/tex">f(x)</script> s'anomena <strong>trapezi mixtilini</strong>.</p>
 <h3 id="teorema-fonamental-del-calcul-i-regla-de-barrow">Teorema fonamental del càlcul i regla de Barrow</h3>
-<p>El <a href="https://es.khanacademy.org/math/integral-calculus/fundamental-theorem-of-calculus-ic">Teorema fonamental del càlcul</a> ens diu que donada una funció contínua <script type="math/tex">f(t)</script> en un interval tancat <script type="math/tex">[a,b]</script>, si definim la funció àrea sota la corba de <script type="math/tex">f(x)</script> com <script type="math/tex">F(x)=\int_{a}^{x} f(t) dt</script>, llavors, aquesta funció és una primitiva de <script type="math/tex">f(x)</script>:</p>
+<p>El <a href="https://es.khanacademy.org/math/integral-calculus/ic-integration/ic-ftc-part-1/v/fundamental-theorem-of-calculus">Teorema fonamental del càlcul</a> ens diu que donada una funció contínua <script type="math/tex">f(t)</script> en un interval tancat <script type="math/tex">[a,b]</script>, si definim la funció àrea sota la corba de <script type="math/tex">f(x)</script> com <script type="math/tex">F(x)=\int_{a}^{x} f(t) dt</script>, llavors, aquesta funció és una primitiva de <script type="math/tex">f(x)</script>:</p>
 <p>
 <script type="math/tex; mode=display">\frac{dF}{dx}=\frac{d}{dx}\int_{a}^{x} f(t)dt=f(x)</script>
 </p>
