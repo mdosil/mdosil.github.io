@@ -6,6 +6,7 @@ MATES1BAT_FOLDER=mates1_mkdocs
 MATES2BAT_FOLDER=mates2_mkdocs
 
 # set a LOGFILE
+set -e
 mkdir -p "logs"
 LOGFILE=$ROOT/logs/`date +'%Y-%m-%d-%H-%M'`.txt
 date | tee -a "$LOGFILE"
