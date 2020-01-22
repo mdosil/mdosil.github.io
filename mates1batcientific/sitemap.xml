@@ -1,104 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/temes/nombresreals/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/trigonometria/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/complexos/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/polinomis/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/vectors/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/rectes/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/llocsgeometrics/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/successions/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/funcions/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/limits/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/funcioexponencial/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/funcionstrigonometriques/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
     <url>
-     <loc>/misc/misc/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
-     <loc>/sobre/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
 </urlset>

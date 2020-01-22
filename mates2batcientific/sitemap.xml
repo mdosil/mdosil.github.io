@@ -1,86 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/temes/derivades/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/funcions/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/aplicacionsderivades/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/integrals/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/matrius/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/sistemes/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/vectors/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/equacionsrectesplans/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/temes/problemesmetrics/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
     <url>
-     <loc>/misc/misc/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
-     <loc>/sobre/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
 </urlset>
