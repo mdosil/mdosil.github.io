@@ -8,11 +8,11 @@ MATES2BAT_FOLDER=mates2_mkdocs
 
 # update web content and update modules to the latest
 # content
-echo '#####################################'
+echo '#####################################' > log.txt 
 echo 'Update modules'
 git pull
 # git submodule update --recursive --remote --merge
-git submodule update --recursive --remote
+git submodule update --recursive --remote >> log.txt
 git add -u
 git commit -m "update submodules"
 echo '#############################################'
