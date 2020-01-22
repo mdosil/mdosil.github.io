@@ -576,7 +576,7 @@ b_{n1}
 </script>
 </p>
 <h4 id="producte-general-de-matrius">Producte general de Matrius</h4>
-<p>Per tal que el producte de dues matrius <script type="math/tex">A</script> i <script type="math/tex">B</script> estigui definitm necessitem que <strong>el nombre de columnes de la matriu <script type="math/tex">A</script> sigui igual al nombre de files de la matriu <script type="math/tex">B</script></strong>. D'altra banda, si el producte <script type="math/tex">A\cdot B</script> està definit, el producte <script type="math/tex">B \cdot A</script> no té perquè estar-ho.</p>
+<p>Per tal que el producte de dues matrius <script type="math/tex">A</script> i <script type="math/tex">B</script> estigui definit necessitem que <strong>el nombre de columnes de la matriu <script type="math/tex">A</script> sigui igual al nombre de files de la matriu <script type="math/tex">B</script></strong>. D'altra banda, si el producte <script type="math/tex">A\cdot B</script> està definit, el producte <script type="math/tex">B \cdot A</script> no té perquè estar-ho.</p>
 <p><strong>Exemple 4</strong></p>
 <p>
 <script type="math/tex; mode=display">
@@ -674,7 +674,8 @@ a_{21} & a_{22}
 </p>
 <p>El resultat d'un determinant sempre és un nombre real.</p>
 <h3 id="determinants-dordre-3">Determinants d'ordre 3</h3>
-<p>També podem definir el determinant d'una matriu d'ordre 3:</p>
+<h4 id="calcul-de-determinants-dordre-tres-mitjancant-la-regla-de-sarrus">Càlcul de determinants d'ordre tres mitjançant la regla de Sarrus</h4>
+<p>Podem calcular el determinant d'una matriu d'ordre 3 tal i com es mostra en el procediment següent:</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{vmatrix}
@@ -1352,21 +1353,21 @@ A_{33}=
 <p>Per tant, la matriu adjunta serà:</p>
 <p>
 <script type="math/tex; mode=display">Adj(A)=
-\begin{vmatrix}
+\begin{pmatrix}
 -1 & -6 & 5\\
 -14 & 8 & 1\\
 -3 & 5 & -8
-\end{vmatrix}
+\end{pmatrix}
 </script>
 </p>
 <p>Si la transposem obtenim:</p>
 <p>
 <script type="math/tex; mode=display">(Adj(A))^T=
-\begin{vmatrix}
+\begin{pmatrix}
 -1 & -14 & -3\\
 -6 & 8 & 5\\
 5 & 1 & -8
-\end{vmatrix}
+\end{pmatrix}
 </script>
 </p>
 <p>Així doncs, la inversa de <script type="math/tex">A</script> serà:</p>
